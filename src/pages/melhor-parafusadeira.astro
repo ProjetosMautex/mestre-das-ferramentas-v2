@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorParafusadeira } from '../components/MelhorParafusadeira';
+
+// Aqui você define o SEO da página
+const title = "Melhor Parafusadeira 2026: Testamos as 11 Melhores (Guia)";
+const description = "Guia definitivo com as melhores parafusadeiras de 2026. Analisamos Bosch, DeWalt, WAP e mais para você escolher a ferramenta certa.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <MelhorParafusadeira client:load />
+</Layout>

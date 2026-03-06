@@ -1,0 +1,43 @@
+---
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import { CookieConsent } from '../components/CookieConsent';
+import { ExitIntentPopup } from '../components/ExitIntentPopup';
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Mestre das Ferramentas - O guia definitivo de ferramentas" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="min-h-screen flex flex-col bg-gray-50">
+		<Header client:load />
+
+		<main class="flex-grow">
+			<slot />
+		</main>
+
+		<Footer client:load />
+
+		<CookieConsent client:idle />
+		<ExitIntentPopup client:idle />
+	</body>
+</html>
+
+<style is:global>
+	html {
+		scroll-behavior: smooth;
+	}
+</style>

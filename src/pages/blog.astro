@@ -1,0 +1,18 @@
+---
+// src/pages/blog.astro
+import Layout from '../layouts/Layout.astro';
+import { Blog } from '../components/Blog';
+
+// Você pode definir o título e metadados aqui para passar ao Layout
+const title = "Blog & Reviews | Mestre das Ferramentas";
+const description = "Análises técnicas e comparativos detalhados de ferramentas elétricas.";
+---
+
+<Layout title={title} description={description}>
+  {/* Como o seu Blog.tsx já contém o Header e o Footer dentro dele, 
+      basta renderizar o componente aqui.
+      Usamos client:visible ou client:load se houver algum JS no Lucide React 
+      que precise rodar no navegador, caso contrário, apenas <Blog /> basta.
+  */}
+  <Blog client:load />
+</Layout>

@@ -1,0 +1,9 @@
+---
+// src/pages/contato.astro
+import Layout from '../layouts/Layout.astro';
+import { Contact } from '../components/Contact';
+---
+
+<Layout title="Contato | Mestre das Ferramentas" description="Entre em contato com a equipe do Mestre das Ferramentas.">
+  <Contact client:load />
+</Layout>

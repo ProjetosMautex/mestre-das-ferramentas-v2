@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { About } from '../components/About';
+
+const title = "Sobre Nós | Mestre das Ferramentas";
+const description = "Conheça a equipe de especialistas por trás do Mestre das Ferramentas. Testes reais de parafusadeiras e furadeiras por profissionais.";
+---
+
+<Layout title={title}>
+  <About client:visible />
+</Layout>
