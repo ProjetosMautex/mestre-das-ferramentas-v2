@@ -11,51 +11,64 @@ export const ExitIntentPopup: React.FC = () => {
   const isValidEmail = emailRegex.test(email);
 
   useEffect(() => {
-    const hasShown = sessionStorage.getItem('exitIntentShown');
-    if (hasShown) return;
+    // 1. Bloqueio imediato se já foi mostrado na sessão
+    if (sessionStorage.getItem('exitIntentShown')) return;
 
-    // 1. Lógica para Desktop (Mouse saindo da tela)
+    // 2. Sincronização de Tempo entre páginas
+    const startTimeStr = sessionStorage.getItem('site_entry_time');
+    const startTime = startTimeStr ? parseInt(startTimeStr) : Date.now();
+    
+    if (!startTimeStr) {
+      sessionStorage.setItem('site_entry_time', startTime.toString());
+    }
+
+    const showPopup = () => {
+      if (sessionStorage.getItem('exitIntentShown')) return;
+      setIsVisible(true);
+      sessionStorage.setItem('exitIntentShown', 'true');
+    };
+
+    // Loop de verificação de tempo (20 segundos acumulados)
+    const timer = setInterval(() => {
+      if (Date.now() - startTime >= 20000) {
+        showPopup();
+        clearInterval(timer);
+      }
+    }, 1000);
+
+    // 3. Gatilhos de Saída
     const handleMouseLeave = (e: MouseEvent) => {
       if (e.clientY <= 0) showPopup();
     };
 
-    // 2. Lógica para Mobile (Volta ao navegador/aba)
     const handleVisibilityChange = () => {
-      // Se a página estava escondida (user foi pra home/outra aba) e agora está visível
-      if (document.visibilityState === 'visible') {
+      // Captura tanto sair da aba quanto minimizar
+      if (document.visibilityState === 'hidden') {
         showPopup();
       }
     };
 
-    // 3. Lógica do Botão Voltar (Android/Browser Back)
+    // 4. Lógica do Botão Voltar (Mobile)
+    // Criamos um "estado fantasma" no histórico para interceptar o clique de voltar
     const handlePopState = () => {
       showPopup();
-      // Reinserir o estado para evitar que o usuário saia na próxima tentativa sem o popup
-      window.history.pushState({ exitIntent: true }, '', window.location.href);
     };
 
-    // Inicialização do estado do histórico
-    window.history.pushState({ exitIntent: true }, '', window.location.href);
+    // Adiciona uma entrada no histórico toda vez que o componente carrega em uma nova página
+    // Isso garante que SEMPRE haverá um estado para o "voltar" capturar
+    window.history.pushState({ popup: true }, '');
 
-    // Listeners
     document.addEventListener('mouseleave', handleMouseLeave);
     document.addEventListener('visibilitychange', handleVisibilityChange);
     window.addEventListener('popstate', handlePopState);
 
     return () => {
+      clearInterval(timer);
       document.removeEventListener('mouseleave', handleMouseLeave);
       document.removeEventListener('visibilitychange', handleVisibilityChange);
       window.removeEventListener('popstate', handlePopState);
     };
   }, []);
-
-  const showPopup = () => {
-    // Verifica novamente o sessionStorage para não repetir se já foi disparado por outro evento
-    if (sessionStorage.getItem('exitIntentShown')) return;
-    
-    setIsVisible(true);
-    sessionStorage.setItem('exitIntentShown', 'true');
-  };
 
   const handleClose = () => setIsVisible(false);
 
@@ -127,7 +140,6 @@ export const ExitIntentPopup: React.FC = () => {
                 className="w-full px-4 py-4 bg-white text-gray-900 placeholder-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFD700] text-base font-medium shadow-inner"
                 required
               />
-              
               <button
                 type="submit"
                 disabled={status === 'submitting' || !isValidEmail}
