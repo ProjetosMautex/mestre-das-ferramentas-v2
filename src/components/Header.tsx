@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Search, Menu, X } from 'lucide-react';
+import { Search, X, ArrowRight, Menu } from 'lucide-react';
 import { Logo } from './Logo';
 
 export const Header: React.FC = () => {
@@ -19,12 +19,14 @@ export const Header: React.FC = () => {
     if (!isSearchOpen) setSearchQuery('');
   };
 
-  // Função que executa a busca
+  // Função que executa a busca no Astro
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      // Redireciona para a página de busca passando o parâmetro 'q'
+      // No Astro usamos o window.location para navegar
       window.location.href = `/search?q=${encodeURIComponent(searchQuery.trim())}`;
+      setIsSearchOpen(false);
+      setIsMobileMenuOpen(false);
     }
   };
 
@@ -40,7 +42,7 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
-            <a href="/" className="flex items-center">
+            <a href="/" className="flex items-center" aria-label="Página Inicial">
               <Logo lightMode={true} />
             </a>
           </div>
@@ -61,57 +63,85 @@ export const Header: React.FC = () => {
                   <input
                     ref={searchInputRef}
                     type="text"
-                    className="pl-4 pr-10 py-2 bg-transparent text-white focus:outline-none w-64"
+                    className="pl-4 pr-16 py-2 bg-transparent text-white focus:outline-none w-64"
                     placeholder="O que você procura?"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
+                    aria-label="Campo de pesquisa"
                   />
-                  <button type="submit" className="absolute right-8 text-gray-400 hover:text-[#FFD700]">
-                    <Search size={18} />
-                  </button>
-                  <X className="absolute right-2 cursor-pointer text-gray-400 hover:text-white" onClick={toggleSearch} size={20} />
+                  <div className="absolute right-2 flex items-center gap-2">
+                    {searchQuery.trim() && (
+                      <button type="submit" className="text-[#FFD700] hover:text-white transition-colors" aria-label="Pesquisar">
+                        <ArrowRight size={18} />
+                      </button>
+                    )}
+                    <button type="button" onClick={toggleSearch} className="text-gray-400 hover:text-white" aria-label="Fechar pesquisa">
+                      <X size={20} />
+                    </button>
+                  </div>
                 </form>
               ) : (
-                <button onClick={toggleSearch} className="p-2 text-gray-300 hover:text-[#FFD700]">
+                <button onClick={toggleSearch} className="p-2 text-gray-300 hover:text-[#FFD700] transition-colors" aria-label="Abrir pesquisa">
                   <Search size={24} />
                 </button>
               )}
             </div>
           </div>
 
+          {/* Botão de Menu Mobile Estilizado */}
           <div className="md:hidden">
-            <button onClick={() => setIsMobileMenuOpen(true)} className="text-gray-300">
-              <Menu size={28} />
+            <button 
+              onClick={() => setIsMobileMenuOpen(true)} 
+              className="text-gray-300 font-bold text-sm flex items-center gap-2 border border-gray-600 px-3 py-1.5 rounded hover:bg-gray-800 transition-all active:scale-95"
+            >
+              <Menu size={20} />
+              MENU
             </button>
           </div>
         </div>
       </div>
       
-      {/* Menu Mobile */}
+      {/* Menu Mobile Fullscreen */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#1a1a1a] z-[100] flex flex-col p-6">
+        <div className="fixed inset-0 bg-[#1a1a1a] z-[100] flex flex-col p-6 overflow-y-auto">
           <div className="flex justify-between items-center">
             <Logo lightMode={true} />
-            <X className="text-white" onClick={() => setIsMobileMenuOpen(false)} size={32} />
+            <button onClick={() => setIsMobileMenuOpen(false)} className="text-white p-2 hover:bg-gray-800 rounded-full transition-colors" aria-label="Fechar menu">
+              <X size={32} />
+            </button>
           </div>
           
           {/* Busca no Mobile */}
           <form onSubmit={handleSearchSubmit} className="mt-8 relative">
              <input 
                type="text"
-               className="w-full bg-[#2a2a2a] text-white p-4 rounded-lg border border-gray-700 focus:border-[#FFD700] outline-none"
+               className="w-full bg-[#2a2a2a] text-white p-4 pr-12 rounded-lg border border-gray-700 focus:border-[#FFD700] outline-none transition-all"
                placeholder="Pesquisar ferramentas..."
                value={searchQuery}
                onChange={(e) => setSearchQuery(e.target.value)}
+               aria-label="Campo de pesquisa mobile"
              />
-             <Search className="absolute right-4 top-4 text-gray-500" />
+             <button type="submit" className="absolute right-4 top-4 text-[#FFD700]" aria-label="Pesquisar">
+               {searchQuery.trim() ? <ArrowRight size={24} /> : <Search size={24} className="text-gray-500" />}
+             </button>
           </form>
 
           <nav className="flex flex-col space-y-6 mt-10">
             {menuItems.map((item) => (
-              <a key={item.label} href={item.href} className="text-2xl text-white border-b border-gray-800 pb-2">{item.label}</a>
+              <a 
+                key={item.label} 
+                href={item.href} 
+                className="text-2xl text-white border-b border-gray-800 pb-2 hover:text-[#FFD700] transition-colors" 
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.label}
+              </a>
             ))}
           </nav>
+
+          <div className="mt-auto pt-10 text-center">
+             <p className="text-gray-500 text-sm">© 2026 Mestre das Ferramentas</p>
+          </div>
         </div>
       )}
     </header>
