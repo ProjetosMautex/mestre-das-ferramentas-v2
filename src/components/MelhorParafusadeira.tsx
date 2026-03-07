@@ -658,7 +658,7 @@ export const MelhorParafusadeira: React.FC = () => {
               </div>
               <div className="bg-gray-50 p-6 rounded-xl">
                 <h3 className="font-bold text-lg mb-2">Parafusadeiras e Furadeiras</h3>
-                <p className="text-gray-600 text-sm">Para quem busca versatilidade, a combinação de funções em um único modelo é a solução. O ponto central aqui é unir o torque para parafusar com a força para furar.</p>
+                <p className="text-gray-600 text-sm">Para quem busca versatilidade, a <a href="/melhor-furadeira-e-parafusadeira/" className="text-blue-600 hover:underline font-medium">combinação de funções em um único modelo</a> é a solução. O ponto central aqui é unir o torque para parafusar com a força para furar.</p>
                 <p className="text-gray-600 text-sm mt-2">Na prática, o que acontece é que você economiza espaço e dinheiro, tendo duas ferramentas em uma. Muitos ignoram, mas nem sempre a função furadeira substitui uma furadeira profissional.</p>
               </div>
               <div className="bg-gray-50 p-6 rounded-xl">
