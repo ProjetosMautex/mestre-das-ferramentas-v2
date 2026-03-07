@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorFuradeira } from '../components/MelhorFuradeira';
+---
+
+<Layout 
+  title="Melhor Furadeira 2026: Guia de Compra Completo e Testes"
+  description="Descubra qual a melhor furadeira para sua necessidade. Testamos os principais modelos de 2026 para uso hobby e profissional."
+>
+  <main>
+    {/* A diretiva client:load é OBRIGATÓRIA para o formulário e botões funcionarem */}
+    <MelhorFuradeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

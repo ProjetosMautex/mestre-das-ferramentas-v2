@@ -1,4 +1,3 @@
-// src/data/products.ts
 export const products = {
   "parafusadeira-bosch-gsb-185-li": {
     name: "Parafusadeira Bosch GSB 185-LI",
@@ -47,6 +46,35 @@ export const products = {
   "mondial-fpf-05": {
     name: "Mondial FPF-05",
     link: "https://amzn.to/4sl5A0q"
+  },
+  // --- Novos itens adicionados ---
+  "furadeira-impacto-bosch-850w": {
+    name: "Furadeira de Impacto 850W – Bosch",
+    link: "https://meli.la/15jwuii"
+  },
+  "furadeira-impacto-mondial-650w": {
+    name: "Furadeira de Impacto com Maleta 650W – Mondial",
+    link: "https://amzn.to/4syr5uV"
+  },
+  "furadeira-impacto-makita-760w": {
+    name: "Furadeira Impacto 760W – Makita",
+    link: "https://meli.la/1RrDqEU"
+  },
+  "furadeira-dewalt-dwd502": {
+    name: "DeWalt DWD502",
+    link: "https://meli.la/2Yr6c9u"
+  },
+  "furadeira-bancada-schulz-pratika": {
+    name: "Furadeira de Bancada Pratika – Schulz",
+    link: "https://amzn.to/4rh6v0S"
+  },
+  "furadeira-bosch-gsb-550-re": {
+    name: "Bosch GSB 550 RE",
+    link: "https://meli.la/1fhxrxP"
+  },
+  "furadeira-impacto-skil-570w": {
+    name: "Furadeira de Impacto 570W – Skil",
+    link: "https://meli.la/2k9FC23"
   }
 };
 

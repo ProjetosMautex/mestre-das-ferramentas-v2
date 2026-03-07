@@ -46,34 +46,34 @@ export const HomeContent = () => {
       excerpt: "Cansado de parafusos soltos? Nosso guia revela a parafusadeira ideal para você!"
     },
     {
-      title: "Melhor Furadeira",
+      title: "10 Melhores Furadeiras 2026 teste Real (Bosch, DeWalt e +)",
       url: "/melhor-furadeira",
       image: "/images/blog/melhor-furadeira/melhor-furadeira.webp",
-      excerpt: "Potência e precisão: selecionamos as melhores furadeiras para concreto e madeira."
+      excerpt: "Cansado de furos malfeitos e ferramentas que te deixam na mão? Descubra a furadeira ideal para seus projetos e diga adeus à frustração!"
     },
     {
-      title: "Melhor Parafusadeira Custo Benefício",
+      title: "8 Melhores Parafusadeiras Custo-Benefício 2026 Não Erre",
       url: "/melhor-parafusadeira-custo-beneficio",
       image: "/images/blog/melhor-parafusadeira-custo-beneficio/melhor-parafusadeira-custo-beneficio.webp",
-      excerpt: "Não gaste mais do que o necessário. Veja as melhores opções para o seu bolso."
+      excerpt: "Não compre no escuro. Analisamos as parafusadeiras que realmente entregam potência sem cobrar uma fortuna."
     },
     {
-      title: "Melhor Furadeira e Parafusadeira",
+      title: "As 8 Melhores Furadeiras e Parafusadeiras 2026 (Bosch e +)",
       url: "/melhor-furadeira-e-parafusadeira",
       image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-furadeira-e-parafusadeira.webp",
-      excerpt: "A versatilidade dos combos 2 em 1 que valem a pena ter na sua caixa de ferramentas."
+      excerpt: "Cansado de furadeiras fracas? Descubra AGORA a furadeira e parafusadeira ideal e turbine seus projetos! Clique e acerte na escolha!"
     },
     {
-      title: "Melhores Marcas de Furadeira",
+      title: "10 Melhores Marcas de Furadeira em 2026 Qual Escolher? (Guia de Marcas)",
       url: "/melhores-marcas-de-furadeira",
       image: "/images/blog/melhores-marcas-de-furadeira/melhores-marcas-de-furadeira.webp",
-      excerpt: "Makita, Bosch, DeWalt? Saiba qual marca oferece a melhor garantia e assistência."
+      excerpt: "Qual a melhor furadeira para você? Descubra as marcas que unem força, precisão e durabilidade. Guia essencial para não errar na escolha!"
     },
     {
-      title: "Parafusadeira Black Tools é Boa",
+      title: "Parafusadeira Black Tools é boa? Testei e conto se vale a pena",
       url: "/parafusadeira-black-tools-e-boa/",
       image: "/images/blog/parafusadeira-black-tools-e-boa/parafusadeira-black-tools-e-boa.webp",
-      excerpt: "Análise completa da marca que tem ganhado espaço no mercado nacional."
+      excerpt: "Descubra se a Parafusadeira Black Tools é boa — desempenho e custo-benefício podem surpreender!"
     }
   ];
 
