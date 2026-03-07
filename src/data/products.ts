@@ -36,6 +36,10 @@ export const products = {
     name: "Bosch Go Bivolt",
     link: "https://meli.la/113bGg1"
   },
+  "WAP K21 ID01": {
+    name: "WAP K21 ID01",
+    link: "https://meli.la/2W5ukrx"
+  },
   "makita-impacto": {
     name: "Makita Impacto",
     link: "https://amzn.to/4aRjS35"
