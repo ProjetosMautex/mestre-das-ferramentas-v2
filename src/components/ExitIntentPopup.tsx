@@ -11,16 +11,7 @@ export const ExitIntentPopup: React.FC = () => {
   const isValidEmail = emailRegex.test(email);
 
   useEffect(() => {
-    // 1. Bloqueio imediato se já foi mostrado na sessão
     if (sessionStorage.getItem('exitIntentShown')) return;
-
-    // 2. Sincronização de Tempo entre páginas
-    const startTimeStr = sessionStorage.getItem('site_entry_time');
-    const startTime = startTimeStr ? parseInt(startTimeStr) : Date.now();
-    
-    if (!startTimeStr) {
-      sessionStorage.setItem('site_entry_time', startTime.toString());
-    }
 
     const showPopup = () => {
       if (sessionStorage.getItem('exitIntentShown')) return;
@@ -28,34 +19,26 @@ export const ExitIntentPopup: React.FC = () => {
       sessionStorage.setItem('exitIntentShown', 'true');
     };
 
-    // Loop de verificação de tempo (20 segundos acumulados)
-    const timer = setInterval(() => {
-      if (Date.now() - startTime >= 20000) {
-        showPopup();
-        clearInterval(timer);
-      }
-    }, 1000);
-
-    // 3. Gatilhos de Saída
+    // 1. PC: Detecta saída pelo topo (clientY) ou pela lateral esquerda (clientX)
     const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0) showPopup();
+      if (e.clientY <= 0 || e.clientX <= 0) {
+        showPopup();
+      }
     };
 
+    // 2. MOBILE/PC: Perda de foco (Minimizar, trocar aba ou sair do navegador)
     const handleVisibilityChange = () => {
-      // Captura tanto sair da aba quanto minimizar
       if (document.visibilityState === 'hidden') {
         showPopup();
       }
     };
 
-    // 4. Lógica do Botão Voltar (Mobile)
-    // Criamos um "estado fantasma" no histórico para interceptar o clique de voltar
+    // 3. MOBILE: Interceptar botão voltar
     const handlePopState = () => {
       showPopup();
+      window.history.pushState({ popup: true }, '');
     };
 
-    // Adiciona uma entrada no histórico toda vez que o componente carrega em uma nova página
-    // Isso garante que SEMPRE haverá um estado para o "voltar" capturar
     window.history.pushState({ popup: true }, '');
 
     document.addEventListener('mouseleave', handleMouseLeave);
@@ -63,7 +46,6 @@ export const ExitIntentPopup: React.FC = () => {
     window.addEventListener('popstate', handlePopState);
 
     return () => {
-      clearInterval(timer);
       document.removeEventListener('mouseleave', handleMouseLeave);
       document.removeEventListener('visibilitychange', handleVisibilityChange);
       window.removeEventListener('popstate', handlePopState);
