@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { AffiliateCard } from './AffiliateCard';
+import { BunnerDoMeio } from './BunnerDoMeio';
 import { products, type ProductId } from '../data/products';
 import { Check, X, Info, ShoppingCart, ArrowRight } from 'lucide-react';
 
@@ -213,6 +214,7 @@ export const MelhorParafusadeira: React.FC = () => {
             </section>
 
             {/* DeWalt DCD7781D2 */}
+            <BunnerDoMeio />
             <section id="parafusadeira-dewalt-dcd7781d2" className="scroll-mt-24 pt-8 border-t border-gray-100">
               <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
                 Melhor para concreto: Parafusadeira DeWalt DCD7781D2
