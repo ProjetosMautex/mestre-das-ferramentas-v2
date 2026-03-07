@@ -37,46 +37,46 @@ export const BunnerDoMeio: React.FC = () => {
 
   // Se não for sucesso, mostra o banner com o formulário
   return (
-    <div className="w-full bg-[#1a1a1a] rounded-xl shadow-2xl overflow-hidden border border-gray-800 my-12 p-3 md:p-6">
-      <div className="flex flex-row items-center justify-between gap-2 md:gap-6">
+    <div className="w-full bg-[#1a1a1a] rounded-xl shadow-2xl overflow-hidden border border-gray-800 my-12 p-6 md:p-8">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-6">
         
         {/* Esquerda: Texto */}
-        <div className="flex-1 min-w-0 text-left">
-          <h2 className="text-sm md:text-2xl font-extrabold text-white mb-1 tracking-tight leading-tight">
+        <div className="w-full md:flex-1 text-center md:text-left md:pl-4">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-2 md:mb-1 tracking-tight leading-tight">
             Espera um Pouco!
           </h2>
-          <p className="text-[#FFD700] text-xs md:text-lg font-bold leading-tight">
+          <p className="text-[#FFD700] text-lg md:text-xl font-bold leading-tight">
             Você vai sair sem pegar isso?
           </p>
         </div>
 
         {/* Meio: Imagem */}
-        <div className="flex-shrink-0 mx-2">
+        <div className="flex-shrink-0 mx-0 md:mx-4">
              <img 
               src="/images/design/O Mapa das Parafusadeiras.jpg" 
               alt="Ebook O Mapa das Parafusadeiras" 
-              className="w-20 md:w-32 h-auto rounded shadow-lg transform rotate-2 hover:rotate-0 transition-transform duration-300"
+              className="w-48 md:w-48 h-auto rounded shadow-lg transform rotate-2 hover:rotate-0 transition-transform duration-300"
             />
         </div>
 
         {/* Direita: Formulário */}
-        <div className="flex-1 min-w-0 max-w-[200px] md:max-w-xs">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+        <div className="w-full max-w-sm md:flex-1 md:max-w-sm">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-3 md:gap-2">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Seu e-mail"
-                className="w-full px-2 py-1.5 md:py-2 bg-white text-gray-900 placeholder-gray-500 rounded focus:outline-none focus:ring-1 focus:ring-[#FFD700] text-xs md:text-base font-medium shadow-inner"
+                placeholder="Deixe aqui seu melhor email"
+                className="w-full px-4 py-3 md:py-2 bg-white text-gray-900 placeholder-gray-500 rounded focus:outline-none focus:ring-1 focus:ring-[#FFD700] text-base font-medium shadow-inner"
                 required
               />
               
               <button
                 type="submit"
                 disabled={status === 'submitting' || !isValidEmail}
-                className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-black py-1.5 md:py-2 px-2 rounded text-[10px] md:text-sm uppercase tracking-tighter transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 shadow-[0_2px_8px_rgba(255,215,0,0.3)] whitespace-nowrap"
+                className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-black py-3 md:py-3 px-4 rounded text-base uppercase tracking-tighter transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 shadow-[0_2px_8px_rgba(255,215,0,0.3)] whitespace-nowrap"
               >
-                {status === 'submitting' ? '...' : 'QUERO GRÁTIS'}
+                {status === 'submitting' ? '...' : 'QUERO MEU EBOOK GRATIS'}
               </button>
             </form>
         </div>
