@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorParafusadeiraCustoBeneficio } from '../components/MelhorParafusadeiraCustoBeneficio';
+---
+
+<Layout 
+  title="8 Melhores Parafusadeiras Custo-Benefício 2026 Não Erre"
+  description="Não compre no escuro. Analisamos as parafusadeiras que realmente entregam potência sem cobrar uma fortuna."
+>
+  <main>
+    {/* A diretiva client:load garante que o formulário de captura e botões funcionem */}
+    <MelhorParafusadeiraCustoBeneficio client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

@@ -47,7 +47,6 @@ export const products = {
     name: "Mondial FPF-05",
     link: "https://amzn.to/4sl5A0q"
   },
-  // --- Novos itens adicionados ---
   "furadeira-impacto-bosch-850w": {
     name: "Furadeira de Impacto 850W – Bosch",
     link: "https://meli.la/15jwuii"
@@ -75,6 +74,10 @@ export const products = {
   "furadeira-impacto-skil-570w": {
     name: "Furadeira de Impacto 570W – Skil",
     link: "https://meli.la/2k9FC23"
+  },
+  "Parafusadeira-e-Furadeira-Vonder-12-V": {
+    name: "Parafusadeira Vonder 12 V",
+    link: "https://amzn.to/4svsPoA"
   }
 };
 
