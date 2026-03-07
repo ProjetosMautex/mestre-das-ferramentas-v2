@@ -11,46 +11,38 @@ export const ExitIntentPopup: React.FC = () => {
   const isValidEmail = emailRegex.test(email);
 
   useEffect(() => {
-    if (sessionStorage.getItem('exitIntentShown')) return;
+    const hasShown = sessionStorage.getItem('exitIntentShown');
+    if (hasShown) return;
 
-    const showPopup = () => {
-      if (sessionStorage.getItem('exitIntentShown')) return;
-      setIsVisible(true);
-      sessionStorage.setItem('exitIntentShown', 'true');
+    const handleExitIntent = (e: MouseEvent) => {
+      if (e.clientY <= 0) showPopup();
     };
 
-    // 1. PC: Detecta saída pelo topo (clientY) ou pela lateral esquerda (clientX)
-    const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 || e.clientX <= 0) {
-        showPopup();
-      }
-    };
-
-    // 2. MOBILE/PC: Perda de foco (Minimizar, trocar aba ou sair do navegador)
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'hidden') {
-        showPopup();
-      }
-    };
-
-    // 3. MOBILE: Interceptar botão voltar
     const handlePopState = () => {
-      showPopup();
-      window.history.pushState({ popup: true }, '');
+      if (!sessionStorage.getItem('exitIntentShown')) {
+        showPopup();
+        window.history.pushState({ exitIntent: true }, '', window.location.href);
+      }
     };
 
-    window.history.pushState({ popup: true }, '');
+    if (!hasShown) {
+      window.history.pushState({ exitIntent: true }, '', window.location.href);
+    }
 
-    document.addEventListener('mouseleave', handleMouseLeave);
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+    document.addEventListener('mouseleave', handleExitIntent);
     window.addEventListener('popstate', handlePopState);
 
     return () => {
-      document.removeEventListener('mouseleave', handleMouseLeave);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      document.removeEventListener('mouseleave', handleExitIntent);
       window.removeEventListener('popstate', handlePopState);
     };
   }, []);
+
+  const showPopup = () => {
+    if (sessionStorage.getItem('exitIntentShown')) return;
+    setIsVisible(true);
+    sessionStorage.setItem('exitIntentShown', 'true');
+  };
 
   const handleClose = () => setIsVisible(false);
 
@@ -72,6 +64,7 @@ export const ExitIntentPopup: React.FC = () => {
         ref={popupRef}
         className="relative w-full max-w-lg bg-[#1a1a1a] rounded-2xl shadow-2xl overflow-hidden flex flex-col animate-in zoom-in-95 duration-300 border border-gray-800"
       >
+        {/* Botão Fechar */}
         <button 
           onClick={handleClose}
           className="absolute top-4 right-4 z-50 text-gray-400 hover:text-white transition-colors bg-black/40 rounded-full p-2"
@@ -79,6 +72,7 @@ export const ExitIntentPopup: React.FC = () => {
           <X size={20} />
         </button>
 
+        {/* 1. Parte de Cima: Mensagem de Impacto */}
         <div className="p-6 text-center bg-gradient-to-b from-gray-900 to-[#1a1a1a]">
           <h2 className="text-3xl font-extrabold text-white mb-2 tracking-tight">
             Espera um Pouco!
@@ -88,6 +82,7 @@ export const ExitIntentPopup: React.FC = () => {
           </p>
         </div>
 
+        {/* 2. Parte Central: Imagem do eBook (Mostrando ela toda) */}
         <div className="px-10 pb-4 flex justify-center bg-[#1a1a1a]">
           <div className="relative group max-w-[240px]">
             <img 
@@ -102,6 +97,7 @@ export const ExitIntentPopup: React.FC = () => {
           </div>
         </div>
 
+        {/* 3. Parte de Baixo: Formulário e Chamada */}
         <div className="p-8 pt-2 bg-[#1a1a1a] text-center">
           {status === 'success' ? (
             <div className="py-6 animate-in fade-in zoom-in duration-500">
@@ -122,6 +118,7 @@ export const ExitIntentPopup: React.FC = () => {
                 className="w-full px-4 py-4 bg-white text-gray-900 placeholder-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFD700] text-base font-medium shadow-inner"
                 required
               />
+              
               <button
                 type="submit"
                 disabled={status === 'submitting' || !isValidEmail}
