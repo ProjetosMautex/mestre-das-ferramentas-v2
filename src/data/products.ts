@@ -1,5 +1,9 @@
-// src/data/products.ts
-export const products = {
+export interface Product {
+  name: string;
+  link: string;
+}
+
+export const products: Record<string, Product> = {
   "parafusadeira-bosch-gsb-185-li": {
     name: "Parafusadeira Bosch GSB 185-LI",
     link: "https://meli.la/1tb3Sr1"
@@ -10,7 +14,11 @@ export const products = {
   },
   "parafusadeira-dewalt-dcd7781d2": {
     name: "Parafusadeira DeWalt DCD7781D2",
-    link: "https://amzn.to/4cr6bsV"
+    link: "https://meli.la/2PVMfq3"
+  },
+  "Furadeira-e-Parafusadeira-Dewalt-DCD791D2B2": {
+    name: "Furadeira e Parafusadeira Dewalt DCD791D2B2",
+    link: "https://meli.la/1XEaK89"
   },
   "parafusadeira-vonder-pfv-012i": {
     name: "Parafusadeira Furadeira Vonder Pfv 012i 12 V",
@@ -80,7 +88,6 @@ export const products = {
     name: "Parafusadeira Vonder 12 V",
     link: "https://amzn.to/4svsPoA"
   },
-  // --- Novos Modelos Adicionados ---
   "Parafusadeira-The-Black-Tools-TB-21PX": {
     name: "Parafusadeira-The-Black-Tools-TB-21PX",
     link: "https://meli.la/2sxjJKs"
@@ -96,6 +103,35 @@ export const products = {
   "Bosch GSB 183-LI": {
     name: "Bosch GSB 183-LI",
     link: "https://meli.la/2Ri9QHo"
+  },
+  // --- Novos Modelos DeWalt Adicionados ---
+  "Furadeira-e-Parafusadeira-de-Impacto-Dewalt-DCD996B": {
+    name: "Furadeira e Parafusadeira de Impacto Dewalt DCD996B",
+    link: "https://meli.la/1awD22L"
+  },
+  "Parafusadeira-de-Impacto-a-Bateria-Dewalt-DCF887B": {
+    name: "Parafusadeira de Impacto a Bateria Dewalt DCF887B",
+    link: "https://meli.la/1sJBHgP"
+  },
+  "Parafusadeira-De-Impacto-DEWALT-DCF850B-B3": {
+    name: "Parafusadeira De Impacto DEWALT DCF850B-B3",
+    link: "https://meli.la/2bLWtGv"
+  },
+  "Furadeira-e-Parafusadeira-Dewalt-DCD708D2": {
+    name: "Furadeira e Parafusadeira Dewalt DCD708D2",
+    link: "https://meli.la/1BBbCUL"
+  },
+  "Furadeira-e-Parafusadeira-Dewalt-DCD710D2": {
+    name: "Furadeira e Parafusadeira Dewalt DCD710D2",
+    link: "https://meli.la/12V8Pbo"
+  },
+  "Parafusadeira-para-Drywall-Dewalt-DCF620B": {
+    name: "Parafusadeira para Drywall Dewalt DCF620B",
+    link: "https://meli.la/2Tyo8Ud"
+  },
+  "Parafusadeira-e-Furadeira-Compacta-de-12-Pol.-13mm-–-Dewalt": {
+    name: "Parafusadeira e Furadeira Compacta de 12 Pol. 13mm – Dewalt",
+    link: "https://meli.la/32gXnsy"
   },
   // --- Listas de Principais por Marca ---
   "Principais furadeiras Makita": {

@@ -5,6 +5,7 @@ export interface Article {
   excerpt: string;
 }
 
+
 export const articles: Article[] = [
   {
     title: "Melhor Parafusadeira 2026 Testamos as 11 Melhores (Guia Definitivo)",
@@ -47,6 +48,12 @@ export const articles: Article[] = [
     url: "/como-destravar-parafusadeira",
     image: "/images/blog/melhor-furadeira/como-destravar-parafusadeira.webp",
     excerpt: "Se você já se deparou com uma parafusadeira travada no meio de um projeto, sabe como isso pode ser frustrante. O bom é que essa situação é mais comum do que parece e, na maioria das vezes, tem solução simples."
+  },
+  {
+    title: "As 9 Melhores Parafusadeiras DeWalt em 2026: Modelos testados e aprovados)",
+    url: "/melhor-parafusadeira-dewalt",
+    image: "/images/blog/melhor-furadeira/Melhor-parafusadeira-dewalt.webp",
+    excerpt: "Descubra qual é a melhor parafusadeira DeWalt e escolha o modelo ideal para o seu tipo de projeto."
   },
   {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
