@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoDestravarParafusadeira } from '../components/ComoDestravarParafusadeira';
+---
+
+<Layout 
+  title="Como Destravar Parafusadeira: Guia Passo a Passo Simples"
+  description="Sua parafusadeira travou? Aprenda como destravar o mandril ou o gatilho com dicas simples e seguras para não danificar sua ferramenta."
+>
+  <main>
+    {/* client:load garante que se houver algum vídeo ou acordeão de dúvidas, ele funcione */}
+    <ComoDestravarParafusadeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
