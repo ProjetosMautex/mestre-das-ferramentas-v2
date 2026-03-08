@@ -1,3 +1,4 @@
+// src/data/products.ts
 export const products = {
   "parafusadeira-bosch-gsb-185-li": {
     name: "Parafusadeira Bosch GSB 185-LI",
@@ -78,6 +79,47 @@ export const products = {
   "Parafusadeira-e-Furadeira-Vonder-12-V": {
     name: "Parafusadeira Vonder 12 V",
     link: "https://amzn.to/4svsPoA"
+  },
+  // --- Listas de Principais por Marca ---
+  "Principais furadeiras Makita": {
+    name: "Principais furadeiras Makita",
+    link: "https://mercadolivre.com/sec/15EoGxM"
+  },
+  "Principais furadeiras Bosch": {
+    name: "Principais furadeiras Bosch",
+    link: "https://amzn.to/4aqrU1f"
+  },
+  "Principais furadeiras Dewalt": {
+    name: "Principais furadeiras Dewalt",
+    link: "https://mercadolivre.com/sec/1ZootNt"
+  },
+  "Principais Black & Decker": {
+    name: "Principais Black & Decker",
+    link: "https://amzn.to/4rgm4ab"
+  },
+  "Principais Furadeiras Vonder": {
+    name: "Principais Furadeiras Vonder",
+    link: "https://amzn.to/4tmM594"
+  },
+  "Principais Furadeiras Wap": {
+    name: "Principais Furadeiras Wap",
+    link: "https://amzn.to/4qrTPUB"
+  },
+  "Principais Furadeiras Philco": {
+    name: "Principais Furadeiras Philco",
+    link: "https://amzn.to/4admOa2"
+  },
+  "Principais Furadeiras Mondial": {
+    name: "Principais Furadeiras Mondial",
+    link: "https://amzn.to/4re7WOL"
+  },
+  "Principais Furadeiras Stanley": {
+    name: "Principais Furadeiras Stanley",
+    link: "https://amzn.to/4txsmUb"
+  },
+  "Principais Furadeiras Wesco": {
+    name: "Principais Furadeiras Wesco",
+    link: "https://amzn.to/3Mk86Vy"
   }
 };
 

@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhoresMarcasFuradeira } from '../components/MelhoresMarcasFuradeira';
+---
+
+<Layout 
+  title="10 Melhores Marcas de Furadeira em 2026 Qual Escolher? (Guia de Marcas)"
+  description="Qual a melhor furadeira para você? Descubra as marcas que unem força, precisão e durabilidade. Guia essencial para não errar na escolha!"
+>
+  <main>
+    {/* client:load é necessário para componentes interativos funcionarem */}
+    <MelhoresMarcasFuradeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
