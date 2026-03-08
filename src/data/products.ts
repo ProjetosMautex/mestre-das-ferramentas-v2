@@ -80,6 +80,23 @@ export const products = {
     name: "Parafusadeira Vonder 12 V",
     link: "https://amzn.to/4svsPoA"
   },
+  // --- Novos Modelos Adicionados ---
+  "Parafusadeira-The-Black-Tools-TB-21PX": {
+    name: "Parafusadeira-The-Black-Tools-TB-21PX",
+    link: "https://meli.la/2sxjJKs"
+  },
+  "Parafusadeira-e-furadeira-The-Black-Tools-TB-12E": {
+    name: "Parafusadeira-e-furadeira-The-Black-Tools-TB-12E",
+    link: "https://meli.la/26MzVcc"
+  },
+  "Parafusadeira-e-furadeira-The-Black-Tools-TB12A": {
+    name: "Parafusadeira-e-furadeira-The-Black-Tools-TB12A",
+    link: "https://meli.la/1mVDi1V"
+  },
+  "Bosch GSB 183-LI": {
+    name: "Bosch GSB 183-LI",
+    link: "https://meli.la/2Ri9QHo"
+  },
   // --- Listas de Principais por Marca ---
   "Principais furadeiras Makita": {
     name: "Principais furadeiras Makita",

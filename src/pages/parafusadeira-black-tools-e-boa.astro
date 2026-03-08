@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraBlackToolsEBoa } from '../components/ParafusadeiraBlackToolsEBoa';
+---
+
+<Layout 
+  title="Parafusadeira Black Tools é boa? Testei e conto se vale a pena"
+  description="Descubra se a Parafusadeira Black Tools é boa — desempenho e custo-benefício podem surpreender! Análise completa e testes reais."
+>
+  <main>
+    {/* client:load para garantir que componentes interativos e formulários funcionem */}
+    <ParafusadeiraBlackToolsEBoa client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
