@@ -47,5 +47,11 @@ export const articles: Article[] = [
     url: "/como-destravar-parafusadeira",
     image: "/images/blog/melhor-furadeira/como-destravar-parafusadeira.webp",
     excerpt: "Se você já se deparou com uma parafusadeira travada no meio de um projeto, sabe como isso pode ser frustrante. O bom é que essa situação é mais comum do que parece e, na maioria das vezes, tem solução simples."
+  },
+  {
+    title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
+    url: "/qual-o-melhor-torque-para-parafusadeira",
+    image: "/images/blog/melhor-furadeira/Qual-o-melhor-torque-para-parafusadeira.webp",
+    excerpt: "Descubra para que serve e qual o melhor torque para a parafusadeira"
   }
 ];

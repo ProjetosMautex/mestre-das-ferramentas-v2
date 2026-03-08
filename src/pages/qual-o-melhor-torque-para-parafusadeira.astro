@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { QualOMelhorTorqueParaParafusadeira } from '../components/QualOMelhorTorqueParaParafusadeira';
+---
+
+<Layout 
+  title="Qual o Melhor Torque para Parafusadeira? Guia de Newton-metro (Nm)"
+  description="Entenda o que é o torque (Nm) e saiba como escolher a força certa para cada trabalho, desde móveis delicados até furos em alvenaria."
+>
+  <main>
+    {/* client:load é essencial para tabelas comparativas ou calculadoras de torque que o React possa ter */}
+    <QualOMelhorTorqueParaParafusadeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
