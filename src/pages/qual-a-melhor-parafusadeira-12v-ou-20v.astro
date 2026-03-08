@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { QualAMelhorParafusadeira12vOu20v } from '../components/QualAMelhorParafusadeira12vOu20v';
+---
+
+<Layout 
+  title="Parafusadeira 12V ou 20V: qual é melhor? Testei e explico a diferença real"
+  description="Se você está em busca da parafusadeira ideal para suas necessidades, provavelmente já se deparou com a dúvida entre modelos de 12V e 20V. Descubra qual potência escolher."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <QualAMelhorParafusadeira12vOu20v client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

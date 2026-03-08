@@ -5,7 +5,6 @@ export interface Article {
   excerpt: string;
 }
 
-
 export const articles: Article[] = [
   {
     title: "Melhor Parafusadeira 2026 Testamos as 11 Melhores (Guia Definitivo)",
@@ -50,10 +49,16 @@ export const articles: Article[] = [
     excerpt: "Se você já se deparou com uma parafusadeira travada no meio de um projeto, sabe como isso pode ser frustrante. O bom é que essa situação é mais comum do que parece e, na maioria das vezes, tem solução simples."
   },
   {
-    title: "As 9 Melhores Parafusadeiras DeWalt em 2026: Modelos testados e aprovados)",
+    title: "As 9 Melhores Parafusadeiras DeWalt em 2026: Modelos testados e aprovados",
     url: "/melhor-parafusadeira-dewalt",
     image: "/images/blog/melhor-furadeira/Melhor-parafusadeira-dewalt.webp",
     excerpt: "Descubra qual é a melhor parafusadeira DeWalt e escolha o modelo ideal para o seu tipo de projeto."
+  },
+  {
+    title: "Parafusadeira 12V ou 20V: qual é melhor? Testei e explico a diferença real",
+    url: "/qual-a-melhor-parafusadeira-12v-ou-20v",
+    image: "/images/blog/melhor-furadeira/Qual-a-melhor-parafusadeira-12v-ou-20v.webp",
+    excerpt: "Se você está em busca da parafusadeira ideal para suas necessidades, provavelmente já se deparou com a dúvida entre modelos de 12V e 20V."
   },
   {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
