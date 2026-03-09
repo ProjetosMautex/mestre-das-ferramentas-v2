@@ -44,6 +44,22 @@ export const products: Record<string, Product> = {
     name: "Bosch Go Bivolt",
     link: "https://meli.la/113bGg1"
   },
+  "parafusadeira-wap-bpfi-12k4": {
+    name: "Parafusadeira e Furadeira WAP BPFI 12K4",
+    link: "https://meli.la/1EhouoE"
+  },
+  "furadeira-wap-efpi-1000": {
+    name: "Furadeira de Impacto e Parafusadeira WAP EFPI 1000",
+    link: "https://meli.la/2ec7BXw"
+  },
+  "furadeira-wap-efi600k": {
+    name: "Furadeira de Impacto WAP EFI600K",
+    link: "https://meli.la/1787qHL"
+  },
+  "furadeira-wap-efi850": {
+    name: "Furadeira de Impacto WAP EFI850",
+    link: "https://amzn.to/479U3cr"
+  },
   "WAP K21 ID01": {
     name: "WAP K21 ID01",
     link: "https://meli.la/2W5ukrx"

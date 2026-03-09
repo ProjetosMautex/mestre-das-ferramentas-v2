@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraWapEBoa } from '../components/ParafusadeiraWapEBoa';
+---
+
+<Layout 
+  title="Parafusadeira Wap é boa? Analisamos Potência e Custo-Benefício"
+  description="Descubra se a parafusadeira Wap vale a pena para o seu uso. Testamos os modelos de 12V e 21V para saber se a marca de lavadoras também brilha nas ferramentas."
+>
+  <main>
+    {/* A diretiva client:load garante que interações de FAQ ou botões funcionem */}
+    <ParafusadeiraWapEBoa client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
