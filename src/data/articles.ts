@@ -61,6 +61,12 @@ export const articles: Article[] = [
     excerpt: "Se você está em busca da parafusadeira ideal para suas necessidades, provavelmente já se deparou com a dúvida entre modelos de 12V e 20V."
   },
   {
+    title: "Como usar uma Parafusadeira do jeito certo (guia simples e rápido)",
+    url: "/como-usar-parafusadeira",
+    image: "/images/blog/melhor-furadeira/como-usar-parafusadeira.webp",
+    excerpt: "Se você já se deparou com a necessidade de montagens ou reparos em casa, provavelmente pensou na praticidade de uma parafusadeira."
+  },
+  {
     title: "Parafusadeira WAP é boa? Testei os principais modelos",
     url: "/parafusadeira-wap-e-boa",
     image: "/images/blog/melhor-furadeira/parafusadeira-wap-e-boa.webp",

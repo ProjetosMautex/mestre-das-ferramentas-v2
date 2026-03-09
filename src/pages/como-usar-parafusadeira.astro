@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoUsarParafusadeira } from '../components/ComoUsarParafusadeira';
+---
+
+<Layout 
+  title="Como Usar Parafusadeira: Guia Prático para Iniciantes (Passo a Passo)"
+  description="Aprenda a usar sua parafusadeira do jeito certo. Dicas de segurança, como trocar bits, regular o torque e evitar erros comuns em seus projetos."
+>
+  <main>
+    {/* client:load garante a interatividade de guias visuais ou vídeos integrados */}
+    <ComoUsarParafusadeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
