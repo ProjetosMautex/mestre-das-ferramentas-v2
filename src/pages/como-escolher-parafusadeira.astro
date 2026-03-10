@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoEscolherParafusadeira } from '../components/ComoEscolherParafusadeira';
+---
+
+<Layout 
+  title="Como Escolher Parafusadeira em 2026: Guia Completo para Não Errar"
+  description="Dúvida entre voltagem, torque e marcas? Aprenda como escolher a parafusadeira ideal para o seu perfil, seja você um hobbista ou profissional."
+>
+  <main>
+    {/* O client:load é fundamental para que filtros ou calculadoras no React funcionem */}
+    <ComoEscolherParafusadeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

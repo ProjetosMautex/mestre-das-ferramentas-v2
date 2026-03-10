@@ -73,6 +73,12 @@ export const articles: Article[] = [
     excerpt: "O mercado de ferramentas elétricas está repleto de opções, e as parafusadeiras WAP se destacam como uma escolha popular entre os entusiastas do DIY e profissionais."
   },
   {
+    title: "Como escolher parafusadeira: veja dicas para acertar",
+    url: "/como-escolher-parafusadeira",
+    image: "/images/blog/melhor-furadeira/Como-escolher-parafusadeira.webp",
+    excerpt: "Escolher a parafusadeira ideal pode parecer um desafio, especialmente com tantas opções disponíveis no mercado."
+  },
+  {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
     url: "/qual-o-melhor-torque-para-parafusadeira",
     image: "/images/blog/melhor-furadeira/Qual-o-melhor-torque-para-parafusadeira.webp",
