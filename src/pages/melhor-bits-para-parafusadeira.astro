@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorBitsParaParafusadeira } from '../components/MelhorBitsParaParafusadeira';
+---
+
+<Layout 
+  title="Melhor Bits para Parafusadeira 2026: Guia de Marcas e Resistência"
+  description="Não estrague seus parafusos! Descubra quais são os melhores bits para parafusadeira, a diferença entre PH2, PZ e os modelos de impacto mais duráveis."
+>
+  <main>
+    {/* client:load é essencial aqui para tabelas de tipos de fendas ou guias de compra */}
+    <MelhorBitsParaParafusadeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

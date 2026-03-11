@@ -189,6 +189,39 @@ export const products: Record<string, Product> = {
   "Principais Furadeiras Wesco": {
     name: "Principais Furadeiras Wesco",
     link: "https://amzn.to/3Mk86Vy"
+  },
+  // --- Bits para Parafusadeira ---
+  "Bits Cromo Vanádio 31 Peças ｜ 8ZP": {
+    name: "Bits Cromo Vanádio 31 Peças ｜ 8ZP",
+    link: "https://meli.la/1qo5ezo"
+  },
+  "BOSCH Kit de Pontas e Soquetes para Parafusar com 46 Peças ｜ 2 607 017 399": {
+    name: "BOSCH Kit de Pontas e Soquetes para Parafusar com 46 Peças ｜ 2 607 017 399",
+    link: "https://meli.la/2kcqcL8"
+  },
+  "Jogo de 20 Pontas Para Parafusar Com Estojo DEWALT-DWMTCIR20": {
+    name: "Jogo de 20 Pontas Para Parafusar Com Estojo DEWALT-DWMTCIR20",
+    link: "https://meli.la/1DGV2vf"
+  },
+  "NOVE54 Jogo de Bits/Ponteiras de Precisão 31 Peças ｜ BP 384": {
+    name: "NOVE54 Jogo de Bits/Ponteiras de Precisão 31 Peças ｜ BP 384",
+    link: "https://meli.la/1AEo8Ht"
+  },
+  "DEWALT Jogo 37 Peças para Parafusar com Estojo ｜ DW2163": {
+    name: "DEWALT Jogo 37 Peças para Parafusar com Estojo ｜ DW2163",
+    link: "https://meli.la/31bwEyS"
+  },
+  "BOSCH Kit de Pontas para Parafusar Mini X-Line com 25 Peças ｜ 2 607 017 400": {
+    name: "BOSCH Kit de Pontas para Parafusar Mini X-Line com 25 Peças ｜ 2 607 017 400",
+    link: "https://meli.la/1ehkpkN"
+  },
+  "BOSCH Jogo de Pontas para Parafusar Impact Control 25 mm 8 Peças ｜ 2 608 522 323": {
+    name: "BOSCH Jogo de Pontas para Parafusar Impact Control 25 mm 8 Peças ｜ 2 608 522 323",
+    link: "https://meli.la/1JvBodw"
+  },
+  "GAMMA Jogo de Ponteiras e Soquetes com 45 Peças ｜ G19530AC": {
+    name: "GAMMA Jogo de Ponteiras e Soquetes com 45 Peças ｜ G19530AC",
+    link: "https://meli.la/2KDPPbp"
   }
 };
 

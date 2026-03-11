@@ -91,6 +91,12 @@ export const articles: Article[] = [
     excerpt: "Furar madeira pode parecer uma tarefa complicada, mas com as ferramentas adequadas e um pouco de orientação, você pode fazê-lo de forma simples e segura."
   },
   {
+    title: "Top 8 Melhores Bits para Parafusadeira — testei Bosch, DeWalt e mais",
+    url: "/melhor-bits-para-parafusadeira",
+    image: "/images/blog/melhor-furadeira/melhor-bits-para-parafusadeira.webp",
+    excerpt: "Escolher os bits certos para sua parafusadeira pode fazer toda a diferença na hora de enfrentar um projeto de bricolagem."
+  },
+  {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
     url: "/qual-o-melhor-torque-para-parafusadeira",
     image: "/images/blog/melhor-furadeira/Qual-o-melhor-torque-para-parafusadeira.webp",
