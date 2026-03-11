@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { QualAMelhorParafusadeiraBoschOuDewalt } from '../components/QualAMelhorParafusadeiraBoschOuDewalt';
+---
+
+<Layout 
+  title="Qual a Melhor Parafusadeira: Bosch ou DeWalt? Comparativo Real 2026"
+  description="Bosch ou DeWalt? Colocamos as duas maiores marcas de ferramentas frente a frente. Descubra qual vence em durabilidade, potência e assistência técnica."
+>
+  <main>
+    {/* client:load é vital aqui para carregar as tabelas comparativas interativas */}
+    <QualAMelhorParafusadeiraBoschOuDewalt client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

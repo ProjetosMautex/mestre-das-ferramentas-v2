@@ -79,6 +79,12 @@ export const articles: Article[] = [
     excerpt: "Escolher a parafusadeira ideal pode parecer um desafio, especialmente com tantas opções disponíveis no mercado."
   },
   {
+    title: "Qual a melhor parafusadeira: Bosch ou DeWalt? Comparativo completo",
+    url: "/qual-a-melhor-parafusadeira-bosch-ou-dewalt",
+    image: "/images/blog/melhor-furadeira/Qual-a-melhor-parafusadeira-bosch-ou-dewalt.webp",
+    excerpt: "Na hora de escolher uma parafusadeira, as marcas Bosch e DeWalt costumam estar entre as preferidas dos consumidores. Mas afinal, qual delas realmente se destaca?"
+  },
+  {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
     url: "/qual-o-melhor-torque-para-parafusadeira",
     image: "/images/blog/melhor-furadeira/Qual-o-melhor-torque-para-parafusadeira.webp",
