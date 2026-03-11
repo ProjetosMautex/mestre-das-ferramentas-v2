@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoFurarMadeiraComParafusadeira } from '../components/ComoFurarMadeiraComParafusadeira';
+---
+
+<Layout 
+  title="Como Furar Madeira com Parafusadeira: Guia Prático e Seguro"
+  description="Aprenda o passo a passo de como furar madeira usando sua parafusadeira. Dicas sobre brocas, velocidade correta e como evitar que a madeira rache."
+>
+  <main>
+    {/* client:load é importante caso o componente tenha vídeos explicativos ou acordeões */}
+    <ComoFurarMadeiraComParafusadeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

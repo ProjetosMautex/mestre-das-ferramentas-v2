@@ -85,6 +85,12 @@ export const articles: Article[] = [
     excerpt: "Na hora de escolher uma parafusadeira, as marcas Bosch e DeWalt costumam estar entre as preferidas dos consumidores. Mas afinal, qual delas realmente se destaca?"
   },
   {
+    title: "Como furar madeira com parafusadeira (passo a passo simples e seguro)",
+    url: "/como-furar-madeira-com-parafusadeira",
+    image: "/images/blog/melhor-furadeira/Como-furar-madeira-com-parafusadeira.webp",
+    excerpt: "Furar madeira pode parecer uma tarefa complicada, mas com as ferramentas adequadas e um pouco de orientação, você pode fazê-lo de forma simples e segura."
+  },
+  {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
     url: "/qual-o-melhor-torque-para-parafusadeira",
     image: "/images/blog/melhor-furadeira/Qual-o-melhor-torque-para-parafusadeira.webp",
