@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoFurarParedeComFuradeira } from '../components/ComoFurarParedeComFuradeira';
+---
+
+<Layout 
+  title="Como Furar Parede com Furadeira: Guia Prático e Seguro"
+  description="Medo de furar um cano ou estragar o reboco? Aprenda a técnica correta para furar paredes de alvenaria e concreto com total segurança e precisão."
+>
+  <main>
+    {/* client:load é vital aqui para os avisos de segurança e o passo a passo interativo */}
+    <ComoFurarParedeComFuradeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

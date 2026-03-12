@@ -88,7 +88,7 @@ export const articles: Article[] = [
     title: "Qual a melhor parafusadeira: Bosch ou DeWalt? Comparativo completo",
     url: "/qual-a-melhor-parafusadeira-bosch-ou-dewalt",
     image: "/images/blog/melhor-furadeira/Qual-a-melhor-parafusadeira-bosch-ou-dewalt.webp",
-    excerpt: "Na hora de escolher uma parafusadeira, as marcas Bosch e DeWalt costumam estar entre as preferidas dos consumidores. But afinal, qual delas realmente se destaca?"
+    excerpt: "Na hora de escolher uma parafusadeira, as marcas Bosch e DeWalt costumam estar entre as preferidas dos consumidores. Mas afinal, qual delas realmente se destaca?"
   },
   {
     title: "Como furar madeira com parafusadeira (passo a passo simples e seguro)",
@@ -143,5 +143,11 @@ export const articles: Article[] = [
     url: "/como-usar-furadeira-para-colocar-cortina",
     image: "/images/blog/melhor-furadeira/como-usar-furadeira-para-colocar-cortina_.webp",
     excerpt: "Instalar cortinas pode parecer uma tarefa complicada, mas com a ferramenta certa e um guia simples, você pode transformar qualquer ambiente rapidamente."
+  },
+  {
+    title: "Como furar parede com furadeira: guia simples para não errar",
+    url: "/como-furar-parede-com-furadeira",
+    image: "/images/blog/melhor-furadeira/Como-furar-parede-com-furadeira.webp",
+    excerpt: "Furar uma parede pode parecer uma tarefa simples, mas é preciso ter cuidado para evitar danos e frustrações."
   }
 ];
