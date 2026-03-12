@@ -67,6 +67,12 @@ export const articles: Article[] = [
     excerpt: "Se você já se deparou com a necessidade de montagens ou reparos em casa, provavelmente pensou na praticidade de uma parafusadeira."
   },
   {
+    title: "Como Usar Furadeira: Guia Simples para Quem Está Começando",
+    url: "/como-usar-furadeira",
+    image: "/images/blog/melhor-furadeira/como-usar-furadeira.webp",
+    excerpt: "Se você está começando a se aventurar em projetos de bricolagem, aprender a usar uma furadeira é essencial."
+  },
+  {
     title: "Parafusadeira WAP é boa? Testei os principais modelos",
     url: "/parafusadeira-wap-e-boa",
     image: "/images/blog/melhor-furadeira/parafusadeira-wap-e-boa.webp",
@@ -82,7 +88,7 @@ export const articles: Article[] = [
     title: "Qual a melhor parafusadeira: Bosch ou DeWalt? Comparativo completo",
     url: "/qual-a-melhor-parafusadeira-bosch-ou-dewalt",
     image: "/images/blog/melhor-furadeira/Qual-a-melhor-parafusadeira-bosch-ou-dewalt.webp",
-    excerpt: "Na hora de escolher uma parafusadeira, as marcas Bosch e DeWalt costumam estar entre as preferidas dos consumidores. Mas afinal, qual delas realmente se destaca?"
+    excerpt: "Na hora de escolher uma parafusadeira, as marcas Bosch e DeWalt costumam estar entre as preferidas dos consumidores. But afinal, qual delas realmente se destaca?"
   },
   {
     title: "Como furar madeira com parafusadeira (passo a passo simples e seguro)",

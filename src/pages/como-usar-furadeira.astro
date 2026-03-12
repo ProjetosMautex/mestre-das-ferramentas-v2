@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoUsarFuradeira } from '../components/ComoUsarFuradeira';
+---
+
+<Layout 
+  title="Como Usar Furadeira: Guia Completo para Iniciantes (2026)"
+  description="Aprenda como usar uma furadeira com segurança. Do ajuste do mandril à escolha da broca correta para cada parede, domine sua ferramenta agora."
+>
+  <main>
+    {/* client:load é crucial para componentes educativos que mostram anatomia da ferramenta e segurança */}
+    <ComoUsarFuradeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
