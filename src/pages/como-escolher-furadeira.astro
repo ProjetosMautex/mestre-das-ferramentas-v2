@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoEscolherFuradeira } from '../components/ComoEscolherFuradeira';
+---
+
+<Layout 
+  title="Como Escolher Furadeira: Guia Completo para Não Errar na Compra"
+  description="Dúvidas de qual furadeira comprar? Aprenda a analisar potência, mandril, funções de impacto e se vale a pena investir em modelos a bateria ou cabo."
+>
+  <main>
+    {/* client:load garante a interatividade dos filtros ou comparativos de especificações */}
+    <ComoEscolherFuradeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

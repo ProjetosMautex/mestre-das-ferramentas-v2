@@ -127,6 +127,12 @@ export const articles: Article[] = [
     excerpt: "Apesar de parecerem semelhantes, cada uma tem suas funções específicas e características que atendem a diferentes necessidades."
   },
   {
+    title: "Como Escolher uma Furadeira: O Que Realmente Importa",
+    url: "/como-escolher-furadeira",
+    image: "/images/blog/melhor-furadeira/como-escolher-furadeira.webp",
+    excerpt: "Escolher uma furadeira pode parecer uma tarefa simples, mas a quantidade de modelos e características disponíveis no mercado pode deixar qualquer um confuso."
+  },
+  {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
     url: "/qual-o-melhor-torque-para-parafusadeira",
     image: "/images/blog/melhor-furadeira/Qual-o-melhor-torque-para-parafusadeira.webp",
