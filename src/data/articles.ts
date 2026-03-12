@@ -97,6 +97,12 @@ export const articles: Article[] = [
     excerpt: "Escolher os bits certos para sua parafusadeira pode fazer toda a diferença na hora de enfrentar um projeto de bricolagem."
   },
   {
+    title: "Como tirar parafuso espanado com parafusadeira (guia rápido e fácil)",
+    url: "/como-tirar-parafuso-espanado-com-parafusadeira",
+    image: "/images/blog/melhor-furadeira/como-tirar-parafuso-espanado-com-parafusadeira.webp",
+    excerpt: "Lidar com um parafuso espanado pode ser frustrante. Aprenda técnicas simples para remover parafusos danificados de forma eficiente usando uma parafusadeira."
+  },
+  {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
     url: "/qual-o-melhor-torque-para-parafusadeira",
     image: "/images/blog/melhor-furadeira/Qual-o-melhor-torque-para-parafusadeira.webp",

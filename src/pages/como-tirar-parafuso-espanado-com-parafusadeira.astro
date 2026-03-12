@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoTirarParafusoEspanadoComParafusadeira } from '../components/ComoTirarParafusoEspanadoComParafusadeira';
+---
+
+<Layout 
+  title="Como Tirar Parafuso Espanado com Parafusadeira: 5 Truques Rápidos"
+  description="Parafuso não sai? Aprenda técnicas simples para remover parafusos espanados usando sua parafusadeira, desde o truque do elástico até extratores profissionais."
+>
+  <main>
+    {/* client:load é vital para componentes de tutorial que possuem passos interativos ou vídeos */}
+    <ComoTirarParafusoEspanadoComParafusadeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
