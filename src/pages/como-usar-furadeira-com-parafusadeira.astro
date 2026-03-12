@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoUsarFuradeiraComParafusadeira } from '../components/ComoUsarFuradeiraComParafusadeira';
+---
+
+<Layout 
+  title="Como Usar Furadeira com Parafusadeira: Guia Prático para Iniciantes"
+  description="Sua parafusadeira também fura? Aprenda a configurar o mandril, escolher a broca certa e alternar entre as funções de furar e parafusar com segurança."
+>
+  <main>
+    {/* client:load é importante para componentes que explicam configurações de torque e velocidade */}
+    <ComoUsarFuradeiraComParafusadeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

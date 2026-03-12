@@ -109,6 +109,12 @@ export const articles: Article[] = [
     excerpt: "Se você possui uma parafusadeira, sabe que a bateria é um componente essencial para o seu funcionamento. Aprenda passo a passo como remover e substituir a bateria da sua parafusadeira."
   },
   {
+    title: "Como usar furadeira com parafusadeira: guia simples para não errar",
+    url: "/como-usar-furadeira-com-parafusadeira",
+    image: "/images/blog/melhor-furadeira/como-usar-furadeira-com-parafusadeira.webp",
+    excerpt: "Se você já se deparou com a necessidade de montar um móvel ou fazer uma pequena reforma em casa, provavelmente sentiu a dúvida na hora de usar a furadeira ou a parafusadeira."
+  },
+  {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
     url: "/qual-o-melhor-torque-para-parafusadeira",
     image: "/images/blog/melhor-furadeira/Qual-o-melhor-torque-para-parafusadeira.webp",
