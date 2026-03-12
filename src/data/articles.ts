@@ -82,7 +82,7 @@ export const articles: Article[] = [
     title: "Qual a melhor parafusadeira: Bosch ou DeWalt? Comparativo completo",
     url: "/qual-a-melhor-parafusadeira-bosch-ou-dewalt",
     image: "/images/blog/melhor-furadeira/Qual-a-melhor-parafusadeira-bosch-ou-dewalt.webp",
-    excerpt: "Na hora de escolher uma parafusadeira, as marcas Bosch e DeWalt costumam estar entre as preferidas dos consumidores. Mas afinal, qual delas realmente se destaca?"
+    excerpt: "Na hora de escolher uma parafusadeira, as marcas Bosch e DeWalt costumam estar entre as preferidas dos consumidores. But afinal, qual delas realmente se destaca?"
   },
   {
     title: "Como furar madeira com parafusadeira (passo a passo simples e seguro)",
@@ -113,6 +113,12 @@ export const articles: Article[] = [
     url: "/como-usar-furadeira-com-parafusadeira",
     image: "/images/blog/melhor-furadeira/como-usar-furadeira-com-parafusadeira.webp",
     excerpt: "Se você já se deparou com a necessidade de montar um móvel ou fazer uma pequena reforma em casa, provavelmente sentiu a dúvida na hora de usar a furadeira ou a parafusadeira."
+  },
+  {
+    title: "Qual a Diferença Entre Parafusadeira e Furadeira? Entenda de Uma Vez por Todas",
+    url: "/qual-a-diferenca-entre-parafusadeira-e-furadeira",
+    image: "/images/blog/melhor-furadeira/qual-a-diferenca-entre-parafusadeira-e-furadeira.webp",
+    excerpt: "Apesar de parecerem semelhantes, cada uma tem suas funções específicas e características que atendem a diferentes necessidades."
   },
   {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",

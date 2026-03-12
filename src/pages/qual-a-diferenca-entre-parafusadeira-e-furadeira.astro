@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { QualADiferencaEntreParafusadeiraEFuradeira } from '../components/QualADiferencaEntreParafusadeiraEFuradeira';
+---
+
+<Layout 
+  title="Qual a Diferença entre Parafusadeira e Furadeira? Entenda de vez"
+  description="Furadeira ou Parafusadeira? Descubra as diferenças reais de torque, rotação e mandril. Saiba qual ferramenta escolher para cada tipo de trabalho."
+>
+  <main>
+    {/* client:load é essencial aqui para os gráficos comparativos e tabelas de especificações */}
+    <QualADiferencaEntreParafusadeiraEFuradeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
