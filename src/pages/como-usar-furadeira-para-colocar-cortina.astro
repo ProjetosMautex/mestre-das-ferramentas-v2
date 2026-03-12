@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoUsarFuradeiraParaColocarCortina } from '../components/ComoUsarFuradeiraParaColocarCortina';
+---
+
+<Layout 
+  title="Como Usar Furadeira para Colocar Cortina: Passo a Passo Sem Erros"
+  description="Aprenda como furar a parede corretamente para instalar cortinas. Dicas sobre altura ideal, escolha da bucha e como evitar sujeira na hora de furar."
+>
+  <main>
+    {/* client:load é recomendado para componentes que guiam o usuário através de etapas visuais */}
+    <ComoUsarFuradeiraParaColocarCortina client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
