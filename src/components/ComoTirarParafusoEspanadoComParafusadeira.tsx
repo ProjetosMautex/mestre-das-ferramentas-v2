@@ -13,7 +13,8 @@ export const ComoTirarParafusoEspanadoComParafusadeira = () => {
         <div className="bg-[#1a1a1a] border-b border-gray-800">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 text-center">
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Como tirar parafuso espanado com parafusadeira (guia rápido e fácil)
+              Como tirar parafuso espanado com <br />
+              <span className="text-[#FFD700]">parafusadeira (guia rápido e fácil)</span>
             </h1>
             
             <div className="flex items-center justify-center text-gray-300 mb-8">

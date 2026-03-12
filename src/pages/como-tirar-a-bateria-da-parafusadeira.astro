@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoTirarABateriaDaParafusadeira } from '../components/ComoTirarABateriaDaParafusadeira';
+---
+
+<Layout 
+  title="Como Tirar a Bateria da Parafusadeira: Guia para Diversas Marcas"
+  description="Sua bateria travou? Aprenda como tirar a bateria da parafusadeira Bosch, DeWalt, Makita e outras marcas de forma segura e sem forçar o equipamento."
+>
+  <main>
+    {/* client:load garante que as instruções passo a passo interativas funcionem */}
+    <ComoTirarABateriaDaParafusadeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

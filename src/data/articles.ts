@@ -103,6 +103,12 @@ export const articles: Article[] = [
     excerpt: "Lidar com um parafuso espanado pode ser frustrante. Aprenda técnicas simples para remover parafusos danificados de forma eficiente usando uma parafusadeira."
   },
   {
+    title: "Como tirar e trocar a bateria da parafusadeira — guia rápido e seguro",
+    url: "/como-tirar-a-bateria-da-parafusadeira",
+    image: "/images/blog/melhor-furadeira/como-tirar-a-bateria-da-parafusadeira.webp",
+    excerpt: "Se você possui uma parafusadeira, sabe que a bateria é um componente essencial para o seu funcionamento. Aprenda passo a passo como remover e substituir a bateria da sua parafusadeira."
+  },
+  {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
     url: "/qual-o-melhor-torque-para-parafusadeira",
     image: "/images/blog/melhor-furadeira/Qual-o-melhor-torque-para-parafusadeira.webp",
