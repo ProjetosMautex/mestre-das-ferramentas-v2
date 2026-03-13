@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoSaberSeAFuradeiraE110Ou220 } from '../components/ComoSaberSeAFuradeiraE110Ou220';
+---
+
+<Layout 
+  title="Como Saber se a Furadeira é 110V ou 220V: Guia Rápido e Seguro"
+  description="Não queime sua ferramenta! Aprenda a identificar a voltagem da sua furadeira pela etiqueta, plugue ou cabo antes de ligar na tomada."
+>
+  <main>
+    {/* client:load para garantir que alertas visuais de voltagem funcionem bem */}
+    <ComoSaberSeAFuradeiraE110Ou220 client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

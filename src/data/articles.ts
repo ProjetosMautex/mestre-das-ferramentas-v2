@@ -64,7 +64,7 @@ export const articles: Article[] = [
     title: "Como usar uma Parafusadeira do jeito certo (guia simples e rápido)",
     url: "/como-usar-parafusadeira",
     image: "/images/blog/melhor-furadeira/como-usar-parafusadeira.webp",
-    excerpt: "Se você já se deparou com la necessidade de montagens ou reparos em casa, provavelmente pensou na praticidade de uma parafusadeira."
+    excerpt: "Se você já se deparou com a necessidade de montagens ou reparos em casa, provavelmente pensou na praticidade de uma parafusadeira."
   },
   {
     title: "Como Usar Furadeira: Guia Simples para Quem Está Começando",
@@ -161,5 +161,11 @@ export const articles: Article[] = [
     url: "/como-usar-serra-copo-na-furadeira",
     image: "/images/blog/melhor-furadeira/como-usar-serra-copo-na-furadeira.webp",
     excerpt: "Usar uma serra copo na furadeira pode parecer desafiador, mas com algumas orientações básicas, você pode fazer isso de maneira simples e eficaz."
+  },
+  {
+    title: "Como saber se a furadeira é 110 ou 220? Guia rápido e seguro",
+    url: "/como-saber-se-a-furadeira-e-110-ou-220",
+    image: "/images/blog/melhor-furadeira/como-saber-se-a-furadeira-e-110-ou-220_.webp",
+    excerpt: "Escolher a furadeira certa pode ser um desafio, especialmente quando se trata de saber se ela é 110 ou 220 volts."
   }
 ];
