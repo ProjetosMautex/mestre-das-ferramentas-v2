@@ -149,5 +149,11 @@ export const articles: Article[] = [
     url: "/como-furar-parede-com-furadeira",
     image: "/images/blog/melhor-furadeira/Como-furar-parede-com-furadeira.webp",
     excerpt: "Furar uma parede pode parecer uma tarefa simples, mas é preciso ter cuidado para evitar danos e frustrações."
+  },
+  {
+    title: "Como furar parede de concreto com furadeira: passo a passo simples e seguro",
+    url: "/como-furar-parede-de-concreto-com-furadeira",
+    image: "/images/blog/melhor-furadeira/como-furar-parede-de-concreto-com-furadeira.webp",
+    excerpt: "Furar uma parede de concreto pode parecer uma tarefa desafiadora, mas com a ferramenta certa e algumas orientações, você pode realizar essa tarefa de forma rápida e segura."
   }
 ];

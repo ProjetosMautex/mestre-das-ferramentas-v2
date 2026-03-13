@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoFurarParedeDeConcretoComFuradeira } from '../components/ComoFurarParedeDeConcretoComFuradeira';
+---
+
+<Layout 
+  title="Como Furar Parede de Concreto: Guia para Não Queimar sua Furadeira"
+  description="Encontrou uma viga ou parede de concreto puro? Saiba como configurar sua furadeira, escolher a broca de wídea correta e a técnica para furar superfícies duras."
+>
+  <main>
+    {/* client:load é importante para as dicas de resfriamento da broca e segurança */}
+    <ComoFurarParedeDeConcretoComFuradeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
