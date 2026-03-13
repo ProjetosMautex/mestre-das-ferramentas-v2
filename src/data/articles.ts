@@ -64,7 +64,7 @@ export const articles: Article[] = [
     title: "Como usar uma Parafusadeira do jeito certo (guia simples e rápido)",
     url: "/como-usar-parafusadeira",
     image: "/images/blog/melhor-furadeira/como-usar-parafusadeira.webp",
-    excerpt: "Se você já se deparou com a necessidade de montagens ou reparos em casa, provavelmente pensou na praticidade de uma parafusadeira."
+    excerpt: "Se você já se deparou com la necessidade de montagens ou reparos em casa, provavelmente pensou na praticidade de uma parafusadeira."
   },
   {
     title: "Como Usar Furadeira: Guia Simples para Quem Está Começando",
@@ -155,5 +155,11 @@ export const articles: Article[] = [
     url: "/como-furar-parede-de-concreto-com-furadeira",
     image: "/images/blog/melhor-furadeira/como-furar-parede-de-concreto-com-furadeira.webp",
     excerpt: "Furar uma parede de concreto pode parecer uma tarefa desafiadora, mas com a ferramenta certa e algumas orientações, você pode realizar essa tarefa de forma rápida e segura."
+  },
+  {
+    title: "Como usar serra copo na furadeira: guia simples para não errar",
+    url: "/como-usar-serra-copo-na-furadeira",
+    image: "/images/blog/melhor-furadeira/como-usar-serra-copo-na-furadeira.webp",
+    excerpt: "Usar uma serra copo na furadeira pode parecer desafiador, mas com algumas orientações básicas, você pode fazer isso de maneira simples e eficaz."
   }
 ];

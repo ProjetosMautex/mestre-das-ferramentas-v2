@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoUsarSerraCopoNaFuradeira } from '../components/ComoUsarSerraCopoNaFuradeira';
+---
+
+<Layout 
+  title="Como Usar Serra Copo na Furadeira: Guia Prático e Seguro"
+  description="Quer fazer furos grandes e perfeitos? Aprenda como montar a serra copo, escolher o modelo para cada material e técnicas para não travar a furadeira."
+>
+  <main>
+    {/* client:load é essencial para mostrar a montagem da haste e broca guia */}
+    <ComoUsarSerraCopoNaFuradeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
