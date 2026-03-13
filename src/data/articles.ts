@@ -167,5 +167,11 @@ export const articles: Article[] = [
     url: "/como-saber-se-a-furadeira-e-110-ou-220",
     image: "/images/blog/melhor-furadeira/como-saber-se-a-furadeira-e-110-ou-220_.webp",
     excerpt: "Escolher a furadeira certa pode ser um desafio, especialmente quando se trata de saber se ela é 110 ou 220 volts."
+  },
+  {
+    title: "Como saber se a Parafusadeira DeWalt é original? Guia rápido com sinais reais",
+    url: "/como-saber-se-a-parafusadeira-dewalt-e-original",
+    image: "/images/blog/melhor-furadeira/Como-saber-se-a-parafusadeira-dewalt-e-original.webp",
+    excerpt: "Com tantas opções no mercado, garantir que sua parafusadeira DeWalt é realmente original pode ser um desafio."
   }
 ];

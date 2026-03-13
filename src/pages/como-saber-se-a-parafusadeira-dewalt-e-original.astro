@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoSaberSeAParafusadeiraDewaltEOriginal } from '../components/ComoSaberSeAParafusadeiraDewaltEOriginal';
+---
+
+<Layout 
+  title="Como Saber se a Parafusadeira DeWalt é Original: Guia de Autenticidade"
+  description="Comprou ou vai comprar uma DeWalt e está na dúvida? Aprenda a identificar selos, acabamento e detalhes técnicos que comprovam a originalidade da ferramenta."
+>
+  <main>
+    {/* client:load para garantir que os comparativos visuais e zoom em etiquetas funcionem */}
+    <ComoSaberSeAParafusadeiraDewaltEOriginal client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
