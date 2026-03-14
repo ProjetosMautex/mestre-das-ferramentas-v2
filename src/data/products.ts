@@ -222,6 +222,43 @@ export const products: Record<string, Product> = {
   "GAMMA Jogo de Ponteiras e Soquetes com 45 Peças ｜ G19530AC": {
     name: "GAMMA Jogo de Ponteiras e Soquetes com 45 Peças ｜ G19530AC",
     link: "https://meli.la/2KDPPbp"
+  },
+  // --- Novas Parafusadeiras 20V ---
+  "STANLEY Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ SCD700B": {
+    name: "STANLEY Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ SCD700B",
+    link: "https://meli.la/1ZAjVEL"
+  },
+  "Kit Parafusadeira e Furadeira 20V STANLEY SCD711C1H-BR": {
+    name: "Kit Parafusadeira e Furadeira 20V STANLEY SCD711C1H-BR",
+    link: "https://meli.la/2ipqsf8"
+  },
+  "DEWALT Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ DCD7771D2-BR": {
+    name: "DEWALT Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ DCD7771D2-BR",
+    link: "https://amzn.to/4cMUxc4"
+  },
+  "DEKO Parafusadeira Furadeira de Impacto 3/8″ ｜ DKCD20ID01-5S3": {
+    name: "DEKO Parafusadeira Furadeira de Impacto 3/8″ ｜ DKCD20ID01-5S3",
+    link: "https://meli.la/1n41dQB"
+  },
+  "Parafusadeira DeWalt Max XR DCD996B – Melhor parafusadeira 20V": {
+    name: "Parafusadeira DeWalt Max XR DCD996B – Melhor parafusadeira 20V",
+    link: "https://amzn.to/3NBZv0T"
+  },
+  "VONDER Parafusadeira Furadeira a Bateria 20 V PFV 238 ｜ 60.01.238.000": {
+    name: "VONDER Parafusadeira Furadeira a Bateria 20 V PFV 238 ｜ 60.01.238.000",
+    link: "https://amzn.to/4uxEg12"
+  },
+  "DCA Furadeira e Parafusadeira a Bateria 1/2″ 20 V ｜ ADJZ2050EM": {
+    name: "DCA Furadeira e Parafusadeira a Bateria 1/2″ 20 V ｜ ADJZ2050EM",
+    link: "https://meli.la/1EEMrQE"
+  },
+  "BLACK+DECKER Parafusadeira Furadeira Impacto 3/8″ 20 V ｜ BCD704C1-BR": {
+    name: "BLACK+DECKER Parafusadeira Furadeira Impacto 3/8″ 20 V ｜ BCD704C1-BR",
+    link: "https://amzn.to/472wa6t"
+  },
+  "BLACK+DECKER Parafusadeira Angular 1/4″ 6,35 mm ｜ 9036-BR": {
+    name: "BLACK+DECKER Parafusadeira Angular 1/4″ 6,35 mm ｜ 9036-BR",
+    link: "https://amzn.to/40rTmY6"
   }
 };
 

@@ -173,5 +173,11 @@ export const articles: Article[] = [
     url: "/como-saber-se-a-parafusadeira-dewalt-e-original",
     image: "/images/blog/melhor-furadeira/Como-saber-se-a-parafusadeira-dewalt-e-original.webp",
     excerpt: "Com tantas opções no mercado, garantir que sua parafusadeira DeWalt é realmente original pode ser um desafio."
+  },
+  {
+    title: "Melhor Parafusadeira 20V: top 10 modelos testados em 2026",
+    url: "/melhor-parafusadeira-20v",
+    image: "/images/blog/melhor-furadeira/melhor parafusadeira 20V.webp",
+    excerpt: "Se você está em busca de uma parafusadeira 20V que ofereça potência e praticidade, descubra opções que aliam qualidade e desempenho."
   }
 ];

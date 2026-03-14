@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorParafusadeira20V } from '../components/MelhorParafusadeira20V';
+
+const title = "Melhor Parafusadeira 20V: top 10 modelos testados em 2026";
+const description = "Se você está em busca de uma parafusadeira 20V que ofereça potência e praticidade, descubra opções que aliam qualidade e desempenho em 2026.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <MelhorParafusadeira20V client:load />
+</Layout>
