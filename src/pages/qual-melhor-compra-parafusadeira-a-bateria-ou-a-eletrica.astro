@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { QualMelhorCompraParafusadeiraABateriaOuAEletrica } from '../components/QualMelhorCompraParafusadeiraABateriaOuAEletrica';
+---
+
+<Layout 
+  title="Parafusadeira a Bateria ou Elétrica: Qual a Melhor Compra em 2026?"
+  description="Dúvida entre parafusadeira a bateria ou com fio? Analisamos potência, mobilidade e custo-benefício para você escolher a ferramenta ideal."
+>
+  <main>
+    {/* client:load necessário para garantir a interatividade do componente React */}
+    <QualMelhorCompraParafusadeiraABateriaOuAEletrica client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

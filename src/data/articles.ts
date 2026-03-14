@@ -191,5 +191,11 @@ export const articles: Article[] = [
     url: "/como-tirar-rebite-com-parafusadeira",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/Como-tirar-rebite-com-parafusadeira.webp",
     excerpt: "Se você já se deparou com a necessidade de remover rebites e não sabe como, este guia é para você."
+  },
+  {
+    title: "Parafusadeira a bateria ou elétrica: qual a melhor opção",
+    url: "/qual-melhor-compra-parafusadeira-a-bateria-ou-a-eletrica",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/qual-melhor-compra-parafusadeira-a-bateria-ou-a-eletrica.webp",
+    excerpt: "Ao escolher uma parafusadeira, muitos se perguntam se a versão a bateria ou a elétrica é a melhor."
   }
 ];
