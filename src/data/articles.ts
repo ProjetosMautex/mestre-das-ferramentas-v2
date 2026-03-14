@@ -185,5 +185,11 @@ export const articles: Article[] = [
     url: "/como-aumentar-a-potencia-da-parafusadeira",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/como-aumentar-a-potencia-da-parafusadeira_.webp",
     excerpt: "Se você já ficou na mão durante uma tarefa simples por causa da fraca potência da sua parafusadeira, sabe o quanto isso pode ser frustrante."
+  },
+  {
+    title: "Como Tirar Rebite com Parafusadeira (Passo a Passo Simples e Seguro)",
+    url: "/como-tirar-rebite-com-parafusadeira",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/Como-tirar-rebite-com-parafusadeira.webp",
+    excerpt: "Se você já se deparou com a necessidade de remover rebites e não sabe como, este guia é para você."
   }
 ];
