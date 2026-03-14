@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+// Adicione as chaves { } em volta do nome do componente
+import { ComoAumentarAPotenciaDaParafusadeira } from '../components/ComoAumentarAPotenciaDaParafusadeira';
+---
+
+<Layout 
+  title="Como Aumentar a Potência da Parafusadeira: Dicas e Cuidados"
+  description="Quer extrair o máximo de força da sua ferramenta? Descubra como aumentar a potência da parafusadeira com ajustes técnicos e manutenção correta."
+>
+  <main>
+    <ComoAumentarAPotenciaDaParafusadeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

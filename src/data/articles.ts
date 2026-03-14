@@ -166,7 +166,7 @@ export const articles: Article[] = [
     title: "Como saber se a furadeira é 110 ou 220? Guia rápido e seguro",
     url: "/como-saber-se-a-furadeira-e-110-ou-220",
     image: "/images/blog/melhor-furadeira/como-saber-se-a-furadeira-e-110-ou-220_.webp",
-    excerpt: "Escolher a furadeira certa pode ser um desafio, especialmente quando se trata de saber se ela é 110 ou 220 volts."
+    excerpt: "Escolher a furadeira certa pode ser um desafio, especialmente quando se trata de saber se ela é 110 or 220 volts."
   },
   {
     title: "Como saber se a Parafusadeira DeWalt é original? Guia rápido com sinais reais",
@@ -179,5 +179,11 @@ export const articles: Article[] = [
     url: "/melhor-parafusadeira-20v",
     image: "/images/blog/melhor-furadeira/melhor parafusadeira 20V.webp",
     excerpt: "Se você está em busca de uma parafusadeira 20V que ofereça potência e praticidade, descubra opções que aliam qualidade e desempenho."
+  },
+  {
+    title: "Como aumentar a potência da parafusadeira: Truques simples que funcionam",
+    url: "/como-aumentar-a-potencia-da-parafusadeira",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/como-aumentar-a-potencia-da-parafusadeira_.webp",
+    excerpt: "Se você já ficou na mão durante uma tarefa simples por causa da fraca potência da sua parafusadeira, sabe o quanto isso pode ser frustrante."
   }
 ];
