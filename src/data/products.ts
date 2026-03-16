@@ -64,6 +64,10 @@ export const products: Record<string, Product> = {
     name: "WAP K21 ID01",
     link: "https://meli.la/2W5ukrx"
   },
+  "WAP Kit Parafusadeira e Furadeira + Chave de Impacto à Bateria 1/2″ 21V K21-KT01": {
+    name: "WAP Kit Parafusadeira e Furadeira + Chave de Impacto à Bateria 1/2″ 21V K21-KT01",
+    link: "https://amzn.to/4ba2syQ"
+  },
   "makita-impacto": {
     name: "Makita Impacto",
     link: "https://amzn.to/4aRjS35"

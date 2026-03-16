@@ -199,6 +199,12 @@ export const articles: Article[] = [
     excerpt: "Ao escolher uma parafusadeira, muitos se perguntam se a versão a bateria ou a elétrica é a melhor."
   },
   {
+    title: "Furadeira e Parafusadeira WAP 21V é boa? Testei e te conto tudo",
+    url: "/furadeira-e-parafusadeira-wap-21v-e-boa",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/furadeira-e-parafusadeira-wap-21v-e-boa_.webp",
+    excerpt: "Se você está procurando uma ferramenta versátil para suas tarefas de bricolagem, a furadeira e parafusadeira WAP 21V pode ser uma opção interessante."
+  },
+  {
     title: "5 Melhores Mandris para Furadeira em 2026? Veja o tipo certo pra cada uso",
     url: "/qual-melhor-mandril-para-furadeira",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/qual-melhor-mandril-para-furadeira.webp",
