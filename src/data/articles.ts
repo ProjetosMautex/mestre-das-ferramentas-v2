@@ -209,5 +209,11 @@ export const articles: Article[] = [
     url: "/qual-melhor-mandril-para-furadeira",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/qual-melhor-mandril-para-furadeira.webp",
     excerpt: "Escolher o mandril certo para sua furadeira pode fazer toda a diferença em seus projetos."
+  },
+  {
+    title: "Parafusadeira Vonder é boa? Testei e te conto se vale a pena",
+    url: "/parafusadeira-vonder-e-boa",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/parafusadeira-vonder-e-boa_.webp",
+    excerpt: "Se você está em busca de uma parafusadeira que entregue eficiência e não deixe seu bolso vazio, talvez já tenha ouvido falar da Vonder."
   }
 ];

@@ -284,6 +284,18 @@ export const products: Record<string, Product> = {
   "Mandril de Aperto Rápido (0,8 mm – 10,0 mm) – Vonder": {
     name: "Mandril de Aperto Rápido (0,8 mm – 10,0 mm) – Vonder",
     link: "https://amzn.to/411Sn0W"
+  },
+  "Vonder Parafusadeira/Furadeira PFV 012": {
+    name: "Vonder Parafusadeira/Furadeira PFV 012",
+    link: "https://amzn.to/4shBsDE"
+  },
+  "Vonder Furadeira Parafusadeira pfv 074": {
+    name: "Vonder Furadeira Parafusadeira pfv 074",
+    link: "https://amzn.to/4sFiuq8"
+  },
+  "Vonder Furadeira/Parafusadeira 3/8″ FPV 300": {
+    name: "Vonder Furadeira/Parafusadeira 3/8″ FPV 300",
+    link: "https://amzn.to/3PGl5Ss"
   }
 };
 

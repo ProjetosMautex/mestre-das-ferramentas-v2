@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraVonderEBoa } from '../components/ParafusadeiraVonderEBoa';
+---
+
+<Layout 
+  title="Parafusadeira Vonder é Boa? Avaliação Completa e Modelos Recomendados"
+  description="Quer saber se a parafusadeira Vonder vale a pena? Analisamos a durabilidade, o torque e o custo-benefício dos principais modelos da marca para você decidir."
+>
+  <main>
+    {/* client:load necessário para garantir que o React renderize corretamente no Astro */}
+    <ParafusadeiraVonderEBoa client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
