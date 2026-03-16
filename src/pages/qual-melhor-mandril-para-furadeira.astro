@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { QualMelhorMandrilParaFuradeira } from '../components/QualMelhorMandrilParaFuradeira';
+---
+
+<Layout 
+  title="Qual o Melhor Mandril para Furadeira? Conheça os Tipos e Escolha o Certo"
+  description="Mandril de aperto rápido ou com chave? Descubra qual o melhor mandril para sua furadeira e como essa peça influencia na precisão do seu trabalho."
+>
+  <main>
+    {/* client:load assegura que componentes interativos do React funcionem no ambiente Astro */}
+    <QualMelhorMandrilParaFuradeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

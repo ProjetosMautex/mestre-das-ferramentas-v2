@@ -197,5 +197,11 @@ export const articles: Article[] = [
     url: "/qual-melhor-compra-parafusadeira-a-bateria-ou-a-eletrica",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/qual-melhor-compra-parafusadeira-a-bateria-ou-a-eletrica.webp",
     excerpt: "Ao escolher uma parafusadeira, muitos se perguntam se a versão a bateria ou a elétrica é a melhor."
+  },
+  {
+    title: "5 Melhores Mandris para Furadeira em 2026? Veja o tipo certo pra cada uso",
+    url: "/qual-melhor-mandril-para-furadeira",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/qual-melhor-mandril-para-furadeira.webp",
+    excerpt: "Escolher o mandril certo para sua furadeira pode fazer toda a diferença em seus projetos."
   }
 ];

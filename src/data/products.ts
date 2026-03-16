@@ -259,6 +259,27 @@ export const products: Record<string, Product> = {
   "BLACK+DECKER Parafusadeira Angular 1/4″ 6,35 mm ｜ 9036-BR": {
     name: "BLACK+DECKER Parafusadeira Angular 1/4″ 6,35 mm ｜ 9036-BR",
     link: "https://amzn.to/40rTmY6"
+  },
+  // --- Mandris ---
+  "Mandril-Para-Furadeira-Com-Chave-1-5-13-Mm-Rosca-38-P.-–-Mtx": {
+    name: "Mandril Para Furadeira, Com Chave, 1, 5-13 Mm, Rosca 3/8 P. – Mtx",
+    link: "https://amzn.to/4bITMzw"
+  },
+  "Mandril-com-rosca-aperto-rapido-38″-–-Eda": {
+    name: "Mandril com rosca aperto rápido 3/8″ – Eda",
+    link: "https://amzn.to/4lOs5sR"
+  },
+  "Mandril 3/8″ com Chave (1.5 a 10mm) – Eda 2WU": {
+    name: "Mandril 3/8″ com Chave (1.5 a 10mm) – Eda 2WU",
+    link: "https://meli.la/2ZmbAtN"
+  },
+  "Mandril-para-furadeira-de-aperto-rapido-13mm-–-Bosch": {
+    name: "Mandril para furadeira de aperto rápido 13mm – Bosch",
+    link: "https://amzn.to/473GaMN"
+  },
+  "Mandril de Aperto Rápido (0,8 mm – 10,0 mm) – Vonder": {
+    name: "Mandril de Aperto Rápido (0,8 mm – 10,0 mm) – Vonder",
+    link: "https://amzn.to/411Sn0W"
   }
 };
 
