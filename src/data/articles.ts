@@ -215,5 +215,11 @@ export const articles: Article[] = [
     url: "/parafusadeira-vonder-e-boa",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/parafusadeira-vonder-e-boa_.webp",
     excerpt: "Se você está em busca de uma parafusadeira que entregue eficiência e não deixe seu bolso vazio, talvez já tenha ouvido falar da Vonder."
+  },
+  {
+    title: "Parafusadeira Mondial é boa? Testei e conto se vale a pena",
+    url: "/parafusadeira-mondial-e-boa",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/Parafusadeira-e-Furadeira-–-Mondial.webp",
+    excerpt: "Nos últimos anos, as parafusadeiras se tornaram ferramentas essenciais para quem gosta de DIY ou precisa realizar reparos em casa."
   }
 ];

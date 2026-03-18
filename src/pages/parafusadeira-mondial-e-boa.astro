@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraMondialEBoa } from '../components/ParafusadeiraMondialEBoa';
+---
+
+<Layout 
+  title="Parafusadeira Mondial é Boa? Testamos os Modelos de 12V e 21V"
+  description="Quer saber se a parafusadeira Mondial vale a pena para o seu dia a dia? Analisamos o desempenho, a bateria e o custo-benefício dos principais modelos da marca."
+>
+  <main>
+    {/* client:load garante a interatividade dos componentes React no Astro */}
+    <ParafusadeiraMondialEBoa client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

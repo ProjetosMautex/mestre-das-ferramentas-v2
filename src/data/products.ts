@@ -296,6 +296,18 @@ export const products: Record<string, Product> = {
   "Vonder Furadeira/Parafusadeira 3/8″ FPV 300": {
     name: "Vonder Furadeira/Parafusadeira 3/8″ FPV 300",
     link: "https://amzn.to/3PGl5Ss"
+  },
+  "Parafusadeira e Furadeira Mondial FPF06M": {
+    name: "Parafusadeira e Furadeira Mondial FPF06M",
+    link: "https://amzn.to/4cZak7L"
+  },
+  "Furadeira de Impacto Mondial 550W FI-09": {
+    name: "Furadeira de Impacto Mondial 550W FI-09",
+    link: "https://amzn.to/4bfQXWC"
+  },
+  "Parafusadeira Philco Force 3 em 1 PPF120MF": {
+    name: "Parafusadeira Philco Force 3 em 1 PPF120MF",
+    link: "https://meli.la/1FobRnx"
   }
 };
 
