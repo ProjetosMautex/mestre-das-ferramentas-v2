@@ -98,7 +98,7 @@ export const products: Record<string, Product> = {
   },
   "furadeira-bosch-gsb-550-re": {
     name: "Bosch GSB 550 RE",
-    link: "https://meli.la/1fhxrxP"
+    link: "https://meli.la/2zNWbaK"
   },
   "furadeira-impacto-skil-570w": {
     name: "Furadeira de Impacto 570W – Skil",
@@ -320,6 +320,22 @@ export const products: Record<string, Product> = {
   "BOSCH Parafusadeira Furadeira GSB 12V-30": {
     name: "BOSCH Parafusadeira Furadeira GSB 12V-30",
     link: "https://meli.la/26KBuFG"
+  },
+  "Bosch ｜ Furadeira de Impacto Profissional ｜ GSB 450": {
+    name: "Bosch ｜ Furadeira de Impacto Profissional ｜ GSB 450",
+    link: "https://meli.la/2dupmUu"
+  },
+  "Furadeira de Impacto GSB 13 RE-M": {
+    name: "Furadeira de Impacto GSB 13 RE-M",
+    link: "https://meli.la/2p7vQne"
+  },
+  "Furadeira de Impacto 850 W GSB 16 RE": {
+    name: "Furadeira de Impacto 850 W GSB 16 RE",
+    link: "https://meli.la/1X5tqY6"
+  },
+  "Furadeira de Impacto 870 W GSB 20-2 RE": {
+    name: "Furadeira de Impacto 870 W GSB 20-2 RE",
+    link: "https://meli.la/2EbRRn4"
   }
 };
 

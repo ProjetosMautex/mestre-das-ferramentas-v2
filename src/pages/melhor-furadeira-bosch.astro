@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorFuradeiraBosch } from '../components/MelhorFuradeiraBosch';
+---
+
+<Layout 
+  title="Melhor Furadeira Bosch em 2026: Guia de Compra Completo"
+  description="Buscando a melhor furadeira Bosch? Analisamos os modelos de impacto, GSB e a linha Heavy Duty para você não errar na escolha."
+>
+  <main>
+    {/* client:load garante que componentes interativos do React funcionem no Astro */}
+    <MelhorFuradeiraBosch client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
