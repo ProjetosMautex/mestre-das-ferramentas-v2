@@ -221,5 +221,11 @@ export const articles: Article[] = [
     url: "/parafusadeira-mondial-e-boa",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/Parafusadeira-e-Furadeira-–-Mondial.webp",
     excerpt: "Nos últimos anos, as parafusadeiras se tornaram ferramentas essenciais para quem gosta de DIY ou precisa realizar reparos em casa."
+  },
+  {
+    title: "8 Melhores Parafusadeiras Bosch em 2026: qual modelo vale mais a pena?",
+    url: "/melhor-parafusadeira-bosch",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/Melhor parafusadeira bosch.webp",
+    excerpt: "Com a Bosch se consolidando como uma das principais marcas em parafusadeiras, é hora de conhecer os melhores modelos."
   }
 ];

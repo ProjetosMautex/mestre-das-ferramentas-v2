@@ -308,6 +308,18 @@ export const products: Record<string, Product> = {
   "Parafusadeira Philco Force 3 em 1 PPF120MF": {
     name: "Parafusadeira Philco Force 3 em 1 PPF120MF",
     link: "https://meli.la/1FobRnx"
+  },
+  "Parafusadeira Furadeira de Impacto GSB 180-LI": {
+    name: "Parafusadeira Furadeira de Impacto GSB 180-LI",
+    link: "https://meli.la/1G7v836"
+  },
+  "Parafusadeira/Furadeira Impacto GBS 18V50": {
+    name: "Parafusadeira/Furadeira Impacto GBS 18V50",
+    link: "https://meli.la/1CXbE3f"
+  },
+  "BOSCH Parafusadeira Furadeira GSB 12V-30": {
+    name: "BOSCH Parafusadeira Furadeira GSB 12V-30",
+    link: "https://meli.la/26KBuFG"
   }
 };
 

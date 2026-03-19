@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorParafusadeiraBosch } from '../components/MelhorParafusadeiraBosch';
+---
+
+<Layout 
+  title="Melhor Parafusadeira Bosch em 2026: Guia de Compra Completo"
+  description="Buscando a melhor parafusadeira Bosch? Analisamos os modelos de 12V e 18V, desde a linha Hobby até a Heavy Duty para você não errar na escolha."
+>
+  <main>
+    {/* client:load é fundamental para a interatividade do React no Astro */}
+    <MelhorParafusadeiraBosch client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
