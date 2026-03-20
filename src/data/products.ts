@@ -336,6 +336,30 @@ export const products: Record<string, Product> = {
   "Furadeira de Impacto 870 W GSB 20-2 RE": {
     name: "Furadeira de Impacto 870 W GSB 20-2 RE",
     link: "https://meli.la/2EbRRn4"
+  },
+  "Furadeira Makita HP1640": {
+    name: "Furadeira Makita HP1640",
+    link: "https://meli.la/2DCSieo"
+  },
+  "Furadeira Makita HP1640/1": {
+    name: "Furadeira Makita HP1640/1",
+    link: "https://amzn.to/4bvFdOA"
+  },
+  "Furadeira Makita HP1640KX": {
+    name: "Furadeira Makita HP1640KX",
+    link: "https://amzn.to/4sON9kU"
+  },
+  "Parafusadeira e Furadeira Makita HP333": {
+    name: "Parafusadeira e Furadeira Makita HP333",
+    link: "https://meli.la/1ch14Nu"
+  },
+  "Furadeira e parafusadeira Makita DHP482RAE": {
+    name: "Furadeira e parafusadeira Makita DHP482RAE",
+    link: "https://meli.la/27SDzkm"
+  },
+  "Furadeira e parafusadeira CLX228AX": {
+    name: "Furadeira e parafusadeira CLX228AX",
+    link: "https://meli.la/1T1N4WY"
   }
 };
 

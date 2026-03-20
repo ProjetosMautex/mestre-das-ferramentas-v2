@@ -3,12 +3,14 @@ import { products, type ProductId } from '../data/products';
 import { ShoppingCart } from 'lucide-react';
 
 interface Props {
-  id: ProductId;
+  id?: ProductId;
+  productId?: ProductId;
   compact?: boolean;
 }
 
-export const AffiliateCard: React.FC<Props> = ({ id, compact = false }) => {
-  const product = products[id];
+export const AffiliateCard: React.FC<Props> = ({ id, productId, compact = false }) => {
+  const targetId = id || productId;
+  const product = targetId ? products[targetId] : undefined;
 
   if (!product) return null;
 

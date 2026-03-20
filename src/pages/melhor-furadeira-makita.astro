@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorFuradeiraMakita } from '../components/MelhorFuradeiraMakita';
+---
+
+<Layout 
+  title="Melhor Furadeira Makita em 2026: Guia de Compra e Modelos"
+  description="Procurando a melhor furadeira Makita? Analisamos os modelos de impacto, HP e a linha industrial para você escolher a ferramenta ideal para seu trabalho."
+>
+  <main>
+    {/* client:load garante que os elementos interativos do React funcionem no ambiente Astro */}
+    <MelhorFuradeiraMakita client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
