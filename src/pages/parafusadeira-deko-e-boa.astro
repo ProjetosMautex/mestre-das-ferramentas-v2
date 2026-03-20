@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraDekoEBoa } from '../components/ParafusadeiraDekoEBoa';
+---
+
+<Layout 
+  title="Parafusadeira Deko é Boa? Vale a Pena Comprar no AliExpress ou Brasil?"
+  description="Analisamos a parafusadeira Deko: torque, bateria e durabilidade. Descubra se essa marca chinesa que virou febre no Brasil realmente entrega o que promete."
+>
+  <main>
+    {/* client:load garante que componentes interativos do React funcionem no ambiente Astro */}
+    <ParafusadeiraDekoEBoa client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

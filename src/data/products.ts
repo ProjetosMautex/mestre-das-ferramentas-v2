@@ -364,6 +364,18 @@ export const products: Record<string, Product> = {
   "Modelo da marca Nakasaki": {
     name: "Modelo da marca Nakasaki",
     link: "https://meli.la/1jeozGb"
+  },
+  "parafusadeira-deko-dkbl20id02-s3": {
+    name: "Parafusadeira DEKO-DKBL20ID02-S3",
+    link: "https://meli.la/1ehp9Hz"
+  },
+  "parafusadeira-deko-dkcd20xl01-h5": {
+    name: "Parafusadeira DEKO-DKCD20XL01-H5",
+    link: "https://meli.la/23XyRoS"
+  },
+  "parafusadeira-deko-dkcd12xl01-h5": {
+    name: "Parafusadeira DEKO-DKCD12XL01-H5",
+    link: "https://meli.la/1kB9Huj"
   }
 };
 

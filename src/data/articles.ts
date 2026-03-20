@@ -245,5 +245,11 @@ export const articles: Article[] = [
     url: "/parafusadeira-nakasaki-e-boa",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/parafusadeira-nakasaki-e-boa_.webp",
     excerpt: "Se você está em busca de praticidade e eficiência para seus projetos de bricolagem, provavelmente já ouviu falar da parafusadeira Nakasaki."
+  },
+  {
+    title: "Parafusadeira Deko é boa? Análise da marca",
+    url: "/parafusadeira-deko-e-boa",
+    image: "/images/blog/melhores-marcas-de-furadeira/parafusadeira deko é boa.webp",
+    excerpt: "A Deko é uma marca que tem ganhado atenção no mercado de ferramentas manuais, especialmente por suas parafusadeiras. Descubra se vale a pena investir."
   }
 ];
