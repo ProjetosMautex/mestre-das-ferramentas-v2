@@ -360,6 +360,10 @@ export const products: Record<string, Product> = {
   "Furadeira e parafusadeira CLX228AX": {
     name: "Furadeira e parafusadeira CLX228AX",
     link: "https://meli.la/1T1N4WY"
+  },
+  "Modelo da marca Nakasaki": {
+    name: "Modelo da marca Nakasaki",
+    link: "https://meli.la/1jeozGb"
   }
 };
 

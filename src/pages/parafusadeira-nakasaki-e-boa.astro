@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraNakasakiEBoa } from '../components/ParafusadeiraNakasakiEBoa';
+---
+
+<Layout 
+  title="Parafusadeira Nakasaki é Boa? Avaliação da Ferramenta de Impacto"
+  description="A parafusadeira Nakasaki vale a pena? Analisamos o torque, a duração da bateria e o custo-benefício desta ferramenta que vem ganhando mercado no Brasil."
+>
+  <main>
+    {/* O client:load é essencial para que os componentes interativos do React funcionem no Astro */}
+    <ParafusadeiraNakasakiEBoa client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

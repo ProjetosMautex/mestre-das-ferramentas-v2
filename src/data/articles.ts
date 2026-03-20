@@ -231,7 +231,7 @@ export const articles: Article[] = [
   {
     title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
     url: "/melhor-furadeira-bosch",
-    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor furadeira bosch​.webp",
+    image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch​.webp",
     excerpt: "Escolher a furadeira certa pode fazer toda a diferença em um projeto, seja ele pequeno ou grande."
   },
   {
@@ -239,5 +239,11 @@ export const articles: Article[] = [
     url: "/melhor-furadeira-makita",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-furadeira-makita_.webp",
     excerpt: "Se você está em busca de uma furadeira confiável e potente, as opções da Makita são sempre uma boa escolha."
+  },
+  {
+    title: "Parafusadeira Nakasaki é boa? Testei e te conto se vale a pena",
+    url: "/parafusadeira-nakasaki-e-boa",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/parafusadeira-nakasaki-e-boa_.webp",
+    excerpt: "Se você está em busca de praticidade e eficiência para seus projetos de bricolagem, provavelmente já ouviu falar da parafusadeira Nakasaki."
   }
 ];
