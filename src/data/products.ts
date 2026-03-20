@@ -376,6 +376,30 @@ export const products: Record<string, Product> = {
   "parafusadeira-deko-dkcd12xl01-h5": {
     name: "Parafusadeira DEKO-DKCD12XL01-H5",
     link: "https://meli.la/1kB9Huj"
+  },
+  "Parafusadeira Wesco WS3231U": {
+    name: "Parafusadeira Wesco WS3231U",
+    link: "https://amzn.to/3NvAYuA"
+  },
+  "Parafusadeira Wesco WS2555K": {
+    name: "Parafusadeira Wesco WS2555K",
+    link: "https://amzn.to/3NwZwDq"
+  },
+  "Furadeira de Impacto Wesco WS3174": {
+    name: "Furadeira de Impacto Wesco WS3174",
+    link: "https://meli.la/2FRyESJ"
+  },
+  "Furadeira Wesco WS3176": {
+    name: "Furadeira Wesco WS3176",
+    link: "https://meli.la/2RBj5N4"
+  },
+  "Furadeira Wesco WS3173": {
+    name: "Furadeira Wesco WS3173",
+    link: "https://amzn.to/4sq5Vzu"
+  },
+  "Furadeira e Parafusadeira Wesco WS2390": {
+    name: "Furadeira e Parafusadeira Wesco WS2390",
+    link: "https://meli.la/2sKQB8s"
   }
 };
 

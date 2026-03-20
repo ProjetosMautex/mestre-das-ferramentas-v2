@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FuradeiraEParafusadeiraWescoEBoa } from '../components/FuradeiraEParafusadeiraWescoEBoa';
+---
+
+<Layout 
+  title="Furadeira e Parafusadeira Wesco é Boa? Avaliamos Potência e Durabilidade"
+  description="A Wesco vale a pena? Analisamos os modelos de 750W, 1000W e as opções a bateria de 18V para você descobrir se essa marca é a melhor escolha para seu trabalho."
+>
+  <main>
+    {/* O client:load é obrigatório para que os elementos interativos do React funcionem no Astro */}
+    <FuradeiraEParafusadeiraWescoEBoa client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

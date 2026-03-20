@@ -251,5 +251,11 @@ export const articles: Article[] = [
     url: "/parafusadeira-deko-e-boa",
     image: "/images/blog/melhores-marcas-de-furadeira/parafusadeira deko é boa.webp",
     excerpt: "A Deko é uma marca que tem ganhado atenção no mercado de ferramentas manuais, especialmente por suas parafusadeiras. Descubra se vale a pena investir."
+  },
+  {
+    title: "Furadeira e Parafusadeira Wesco é boa? Testei e conto se vale a pena",
+    url: "/furadeira-e-parafusadeira-wesco-e-boa",
+    image: "/images/blog/melhores-marcas-de-furadeira/furadeira-e-parafusadeira-wesco-e-boa.webp",
+    excerpt: "Você já se perguntou se a furadeira e parafusadeira da Wesco são realmente boas? Com tantas opções no mercado, é compreensível ficar em dúvida sobre qual escolher."
   }
 ];
