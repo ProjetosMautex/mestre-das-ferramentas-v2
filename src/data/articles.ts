@@ -231,7 +231,7 @@ export const articles: Article[] = [
   {
     title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
     url: "/melhor-furadeira-bosch",
-    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor furadeira bosch.webp",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor furadeira bosch​.webp",
     excerpt: "Escolher a furadeira certa pode fazer toda a diferença em um projeto, seja ele pequeno ou grande."
   },
   {
