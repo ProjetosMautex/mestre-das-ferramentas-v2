@@ -464,6 +464,14 @@ export const products: Record<string, Product> = {
   "Parafusadeira e Furadeira Hammer GYPLI120": {
     name: "Parafusadeira e Furadeira Hammer GYPLI120",
     link: "https://amzn.to/4skD3bP"
+  },
+  "Furadeira e Parafusadeira Stanley SCD711C1K": {
+    name: "Furadeira e Parafusadeira Stanley SCD711C1K",
+    link: "https://meli.la/16Twh2c"
+  },
+  "Furadeira e Parafusadeira Stanley SCD121S2K": {
+    name: "Furadeira e Parafusadeira Stanley SCD121S2K",
+    link: "https://amzn.to/4dwyxSY"
   }
 };
 

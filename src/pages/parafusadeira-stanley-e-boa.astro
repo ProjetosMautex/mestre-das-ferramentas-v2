@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraStanleyEBoa } from '../components/ParafusadeiraStanleyEBoa';
+
+const title = "Parafusadeira Stanley é boa? Testei e conto se vale a pena";
+const description = "Se você está em busca de uma ferramenta que facilite seu dia a dia em projetos de montagem e reparo, com certeza já se deparou com a Parafusadeira Stanley. Saiba a verdade aqui!";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <ParafusadeiraStanleyEBoa client:load />
+</Layout>

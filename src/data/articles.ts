@@ -277,6 +277,12 @@ export const articles: Article[] = [
     excerpt: "Se você está em busca de uma furadeira e parafusadeira que una qualidade e preço acessível, a Philco pode ser uma opção interessante."
   },
   {
+    title: "Parafusadeira Stanley é boa? Testei e conto se vale a pena",
+    url: "/parafusadeira-stanley-e-boa",
+    image: "/images/blog/melhores-marcas-de-furadeira/parafusadeira-stanley-e-boa.webp",
+    excerpt: "Se você está em busca de uma ferramenta que facilite seu dia a dia em projetos de montagem e reparo, com certeza já se deparou com a Parafusadeira Stanley."
+  },
+  {
     title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
     url: "/melhor-furadeira-bosch",
     image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch​.webp",
