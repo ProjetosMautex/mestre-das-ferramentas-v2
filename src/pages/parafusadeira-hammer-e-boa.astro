@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraHammerEBoa } from '../components/ParafusadeiraHammerEBoa';
+
+const title = "Parafusadeira Hammer é boa? Testei e conto se vale a pena";
+const description = "Se você está em busca de uma ferramenta confiável para facilitar seus projetos de montagem e reparo, a Parafusadeira Hammer pode ter chamado sua atenção. Confira nossa avaliação completa.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <ParafusadeiraHammerEBoa client:load />
+</Layout>

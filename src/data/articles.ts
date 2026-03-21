@@ -265,6 +265,12 @@ export const articles: Article[] = [
     excerpt: "Se você está em busca de uma furadeira que reúna qualidade e preço justo, com certeza já ouviu falar da Tramontina."
   },
   {
+    title: "Parafusadeira Hammer é boa? Testei e conto se vale a pena",
+    url: "/parafusadeira-hammer-e-boa",
+    image: "/images/blog/melhores-marcas-de-furadeira/parafusadeira-hammer-e-boa.webp",
+    excerpt: "Se você está em busca de uma ferramenta confiável para facilitar seus projetos de montagem e reparo, a Parafusadeira Hammer pode ter chamado sua atenção."
+  },
+  {
     title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
     url: "/melhor-furadeira-bosch",
     image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch​.webp",

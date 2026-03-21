@@ -452,6 +452,18 @@ export const products: Record<string, Product> = {
   "Furadeira Tramontina 42362": {
     name: "Furadeira Tramontina 42362",
     link: "https://amzn.to/3NBXbqE"
+  },
+  "Parafusadeira Hammer PLI-10": {
+    name: "Parafusadeira Hammer PLI-10",
+    link: "https://amzn.to/3PyM1DK"
+  },
+  "Furadeira Hammer GYFI-1000": {
+    name: "Furadeira Hammer GYFI-1000",
+    link: "https://amzn.to/47AmFf9"
+  },
+  "Parafusadeira e Furadeira Hammer GYPLI120": {
+    name: "Parafusadeira e Furadeira Hammer GYPLI120",
+    link: "https://amzn.to/4skD3bP"
   }
 };
 
