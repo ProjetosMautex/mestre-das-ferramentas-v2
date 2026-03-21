@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FuradeiraSkilEBoa } from '../components/FuradeiraSkilEBoa';
+
+const title = "Furadeira Skil é boa? Testei e conto se vale a pena";
+const description = "Nos dias de hoje, escolher a ferramenta certa pode fazer toda a diferença em um projeto. A Furadeira Skil tem se destacado no mercado, prometendo desempenho e praticidade.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <FuradeiraSkilEBoa client:load />
+</Layout>

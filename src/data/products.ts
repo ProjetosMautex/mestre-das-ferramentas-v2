@@ -472,6 +472,10 @@ export const products: Record<string, Product> = {
   "Furadeira e Parafusadeira Stanley SCD121S2K": {
     name: "Furadeira e Parafusadeira Stanley SCD121S2K",
     link: "https://amzn.to/4dwyxSY"
+  },
+  "Furadeira Skil 6600": {
+    name: "Furadeira Skil 6600",
+    link: "https://amzn.to/4bY8iDJ"
   }
 };
 
