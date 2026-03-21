@@ -448,6 +448,10 @@ export const products: Record<string, Product> = {
   "Parafusadeira-DWT-12V": {
     name: "Parafusadeira-DWT-12V",
     link: "https://amzn.to/3PzOBcC"
+  },
+  "Furadeira Tramontina 42362": {
+    name: "Furadeira Tramontina 42362",
+    link: "https://amzn.to/3NBXbqE"
   }
 };
 

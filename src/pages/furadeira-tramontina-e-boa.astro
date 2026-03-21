@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FuradeiraTramontinaEBoa } from '../components/FuradeiraTramontinaEBoa';
+
+const title = "Furadeira Tramontina é boa? Testei e conto se vale a pena";
+const description = "Se você está em busca de uma furadeira que reúna qualidade e preço justo, com certeza já ouviu falar da Tramontina. Saiba se ela vale a pena.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <FuradeiraTramontinaEBoa client:load />
+</Layout>

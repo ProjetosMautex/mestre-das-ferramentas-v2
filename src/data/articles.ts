@@ -259,6 +259,12 @@ export const articles: Article[] = [
     excerpt: "Se você está em busca de ferramentas eficientes para suas tarefas de bricolagem, a furadeira e parafusadeira DWT pode ter chamado sua atenção."
   },
   {
+    title: "Furadeira Tramontina é boa? Testei e conto se vale a pena",
+    url: "/furadeira-tramontina-e-boa",
+    image: "/images/blog/melhores-marcas-de-furadeira/furadeira-tramontina-e-boa.webp",
+    excerpt: "Se você está em busca de uma furadeira que reúna qualidade e preço justo, com certeza já ouviu falar da Tramontina."
+  },
+  {
     title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
     url: "/melhor-furadeira-bosch",
     image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch​.webp",
