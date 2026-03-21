@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FuradeiraEParafusadeiraDwtEBoa } from '../components/FuradeiraEParafusadeiraDwtEBoa';
+---
+
+<Layout 
+  title="Furadeira e Parafusadeira DWT é Boa? Análise Técnica Completa"
+  description="Quer saber se a DWT vale o investimento? Analisamos o torque, a robustez industrial e o custo-benefício dos modelos de 12V, 18V e com fio da marca."
+>
+  <main>
+    {/* client:load é essencial para carregar os componentes interativos do React no Astro */}
+    <FuradeiraEParafusadeiraDwtEBoa client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

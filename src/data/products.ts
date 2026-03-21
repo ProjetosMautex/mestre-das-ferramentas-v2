@@ -424,6 +424,30 @@ export const products: Record<string, Product> = {
   "Furadeira Vonder 450W FSV-450": {
     name: "Furadeira Vonder 450W FSV-450",
     link: "https://amzn.to/4rLpHnM"
+  },
+  "Parafusadeira Dwt Pbd360": {
+    name: "Parafusadeira Dwt Pbd360",
+    link: "https://meli.la/1gwVFCF"
+  },
+  "Furadeira DWT FID-710": {
+    name: "Furadeira DWT FID-710",
+    link: "https://amzn.to/4bBo06q"
+  },
+  "Furadeira DWT FID-550": {
+    name: "Furadeira DWT FID-550",
+    link: "https://amzn.to/479qNm4"
+  },
+  "Furadeira DWT FID-595": {
+    name: "Furadeira DWT FID-595",
+    link: "https://amzn.to/4rO7OVz"
+  },
+  "Furadeira DWT FSD-450": {
+    name: "Furadeira DWT FSD-450",
+    link: "https://amzn.to/47eYe6I"
+  },
+  "Parafusadeira-DWT-12V": {
+    name: "Parafusadeira-DWT-12V",
+    link: "https://amzn.to/3PzOBcC"
   }
 };
 

@@ -229,12 +229,6 @@ export const articles: Article[] = [
     excerpt: "Com a Bosch se consolidando como uma das principais marcas em parafusadeiras, é hora de conhecer os melhores modelos."
   },
   {
-    title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
-    url: "/melhor-furadeira-bosch",
-    image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch​.webp",
-    excerpt: "Escolher a furadeira certa pode fazer toda a diferença em um projeto, seja ele pequeno ou grande."
-  },
-  {
     title: "As 6 Melhores Furadeiras Makita em 2026: compare os modelos mais indicados",
     url: "/melhor-furadeira-makita",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-furadeira-makita_.webp",
@@ -257,6 +251,18 @@ export const articles: Article[] = [
     url: "/furadeira-e-parafusadeira-wesco-e-boa",
     image: "/images/blog/melhores-marcas-de-furadeira/furadeira-e-parafusadeira-wesco-e-boa.webp",
     excerpt: "Você já se perguntou se a furadeira e parafusadeira da Wesco são realmente boas? Com tantas opções no mercado, é compreensível ficar em dúvida sobre qual escolher."
+  },
+  {
+    title: "Furadeira e Parafusadeira DWT é boa? Testei e conto se vale a pena",
+    url: "/furadeira-e-parafusadeira-dwt-e-boa",
+    image: "/images/blog/melhores-marcas-de-furadeira/furadeira-e-parafusadeira-dwt-e-boa.webp",
+    excerpt: "Se você está em busca de ferramentas eficientes para suas tarefas de bricolagem, a furadeira e parafusadeira DWT pode ter chamado sua atenção."
+  },
+  {
+    title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
+    url: "/melhor-furadeira-bosch",
+    image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch​.webp",
+    excerpt: "Escolher a furadeira certa pode fazer toda a diferença em um projeto, seja ele pequeno ou grande."
   },
   {
     title: "Furadeira Titanium é boa? Testei e te conto se vale a pena",
