@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FuradeiraTitaniumEBoa } from '../components/FuradeiraTitaniumEBoa';
+---
+
+<Layout 
+  title="Furadeira Titanium é Boa? Vale a Pena para Uso Doméstico?"
+  description="Analisamos a furadeira e parafusadeira Titanium: torque, bateria e durabilidade. Descubra se essa marca de baixo custo realmente entrega o que promete para pequenos reparos."
+>
+  <main>
+    {/* client:load garante que componentes interativos do React funcionem no Astro */}
+    <FuradeiraTitaniumEBoa client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

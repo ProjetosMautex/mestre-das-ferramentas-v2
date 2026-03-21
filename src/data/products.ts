@@ -400,6 +400,30 @@ export const products: Record<string, Product> = {
   "Furadeira e Parafusadeira Wesco WS2390": {
     name: "Furadeira e Parafusadeira Wesco WS2390",
     link: "https://meli.la/2sKQB8s"
+  },
+  "Parafusadeira Titanium Carbon 5657": {
+    name: "Parafusadeira Titanium Carbon 5657",
+    link: "https://amzn.to/4uXe4gy"
+  },
+  "Parafusadeira e Furadeira 12V com Maleta – Titanium": {
+    name: "Parafusadeira e Furadeira 12V com Maleta – Titanium",
+    link: "https://amzn.to/4bWcqEd"
+  },
+  "Parafusadeira Titanium 21v Impacto Brushless 2 Baterias": {
+    name: "Parafusadeira Titanium 21v Impacto Brushless 2 Baterias",
+    link: "https://amzn.to/3NCl9SD"
+  },
+  "Furadeira de Impacto 500W 3/8” Platina – Titanium": {
+    name: "Furadeira de Impacto 500W 3/8” Platina – Titanium",
+    link: "https://meli.la/1vCzmjC"
+  },
+  "Furadeira de Impacto Black & Decker 500W TM-500": {
+    name: "Furadeira de Impacto Black & Decker 500W TM-500",
+    link: "https://amzn.to/4uJaUww"
+  },
+  "Furadeira Vonder 450W FSV-450": {
+    name: "Furadeira Vonder 450W FSV-450",
+    link: "https://amzn.to/4rLpHnM"
   }
 };
 

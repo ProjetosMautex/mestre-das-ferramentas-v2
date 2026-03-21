@@ -257,5 +257,11 @@ export const articles: Article[] = [
     url: "/furadeira-e-parafusadeira-wesco-e-boa",
     image: "/images/blog/melhores-marcas-de-furadeira/furadeira-e-parafusadeira-wesco-e-boa.webp",
     excerpt: "Você já se perguntou se a furadeira e parafusadeira da Wesco são realmente boas? Com tantas opções no mercado, é compreensível ficar em dúvida sobre qual escolher."
+  },
+  {
+    title: "Furadeira Titanium é boa? Testei e te conto se vale a pena",
+    url: "/furadeira-titanium-e-boa",
+    image: "/images/blog/melhores-marcas-de-furadeira/furadeira titanium é boa​.webp",
+    excerpt: "A Furadeira Titanium ganhou destaque no mercado, prometendo eficiência e durabilidade. Mas será que tudo isso se traduz em uma experiência prática satisfatória?"
   }
 ];
