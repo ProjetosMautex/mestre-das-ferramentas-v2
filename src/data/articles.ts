@@ -271,6 +271,12 @@ export const articles: Article[] = [
     excerpt: "Se você está em busca de uma ferramenta confiável para facilitar seus projetos de montagem e reparo, a Parafusadeira Hammer pode ter chamado sua atenção."
   },
   {
+    title: "Furadeira e Parafusadeira Philco é boa? Testei e conto se vale a pena",
+    url: "/furadeira-e-parafusadeira-philco-e-boa",
+    image: "/images/blog/melhores-marcas-de-furadeira/furadeira-e-parafusadeira-philco-e-boa.webp",
+    excerpt: "Se você está em busca de uma furadeira e parafusadeira que una qualidade e preço acessível, a Philco pode ser uma opção interessante."
+  },
+  {
     title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
     url: "/melhor-furadeira-bosch",
     image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch​.webp",

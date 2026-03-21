@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FuradeiraEParafusadeiraPhilcoEBoa } from '../components/FuradeiraEParafusadeiraPhilcoEBoa';
+
+const title = "Furadeira e Parafusadeira Philco é boa? Testei e conto se vale a pena";
+const description = "Se você está em busca de uma furadeira e parafusadeira que una qualidade e preço acessível, a Philco pode ser uma opção interessante.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <FuradeiraEParafusadeiraPhilcoEBoa client:load />
+</Layout>
