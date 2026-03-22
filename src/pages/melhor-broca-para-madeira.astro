@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorBrocaParaMadeira } from '../components/MelhorBrocaParaMadeira';
+
+const title = "As 9 Melhores Brocas para Madeira em 2026 (Furam Rápido e com Precisão)";
+const description = "Escolher a broca certa para trabalhar com madeira pode fazer toda a diferença em seus projetos.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <MelhorBrocaParaMadeira client:load />
+</Layout>

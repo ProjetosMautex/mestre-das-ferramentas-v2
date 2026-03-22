@@ -217,7 +217,7 @@ export const products: Record<string, Product> = {
   },
   "BOSCH Kit de Pontas para Parafusar Mini X-Line com 25 Peças ｜ 2 607 017 400": {
     name: "BOSCH Kit de Pontas para Parafusar Mini X-Line com 25 Peças ｜ 2 607 017 400",
-    link: "https://meli.la/1ehkpkN"
+    link: "https://meli.la/1FtZntP"
   },
   "BOSCH Jogo de Pontas para Parafusar Impact Control 25 mm 8 Peças ｜ 2 608 522 323": {
     name: "BOSCH Jogo de Pontas para Parafusar Impact Control 25 mm 8 Peças ｜ 2 608 522 323",
@@ -548,6 +548,38 @@ export const products: Record<string, Product> = {
   "Jogo de Brocas para Ferro 13 peças – MTX": {
     name: "Jogo de Brocas para Ferro 13 peças – MTX",
     link: "https://amzn.to/3NmDljk"
+  },
+  "Jogo de Brocas Madeira Mini X-Line 3-10 mm 7 Peças Bosch": {
+    name: "Jogo de Brocas Madeira Mini X-Line 3-10 mm 7 Peças Bosch",
+    link: "https://amzn.to/4bXL809"
+  },
+  "Jogo de Brocas Chatas para Madeira 6 Peças Sparta": {
+    name: "Jogo de Brocas Chatas para Madeira 6 Peças Sparta",
+    link: "https://amzn.to/41qmuza"
+  },
+  "Kit 5 Brocas Forstner 10 a 35 mm Sparta": {
+    name: "Kit 5 Brocas Forstner 10 a 35 mm Sparta",
+    link: "https://amzn.to/4sUN67g"
+  },
+  "Brocas Aço Carbono 13 Peças ｜ 6XJ": {
+    name: "Brocas Aço Carbono 13 Peças ｜ 6XJ",
+    link: "https://amzn.to/4rOf2J0"
+  },
+  "Conjunto de Brocas Marples Forstner 8 Peças Irwin": {
+    name: "Conjunto de Brocas Marples Forstner 8 Peças Irwin",
+    link: "https://amzn.to/4lNEcGq"
+  },
+  "Broca Serpentina Pro Wood 13 mm": {
+    name: "Broca Serpentina Pro Wood 13 mm",
+    link: "https://amzn.to/3PS6SC4"
+  },
+  "Jogo brocas – Bosch Mini": {
+    name: "Jogo brocas – Bosch Mini",
+    link: "https://amzn.to/4ss3L28"
+  },
+  "Jogo de Brocas – Fertak": {
+    name: "Jogo de Brocas – Fertak",
+    link: "https://amzn.to/4lKVuDV"
   }
 };
 
