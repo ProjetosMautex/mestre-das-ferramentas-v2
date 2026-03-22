@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorBrocaParaConcreto } from '../components/MelhorBrocaParaConcreto';
+
+const title = "10 Melhores Brocas para Concreto em 2026: análise das marcas mais duráveis";
+const description = "Com a evolução constante das ferramentas de construção, escolher a broca ideal para concreto pode fazer toda a diferença na sua obra ou projeto DIY.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <MelhorBrocaParaConcreto client:load />
+</Layout>

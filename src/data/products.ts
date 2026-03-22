@@ -476,6 +476,46 @@ export const products: Record<string, Product> = {
   "Furadeira Skil 6600": {
     name: "Furadeira Skil 6600",
     link: "https://amzn.to/4bY8iDJ"
+  },
+  "Jogo de Brocas para Concreto – MTX": {
+    name: "Jogo de Brocas para Concreto – MTX",
+    link: "https://amzn.to/4rMit2Y"
+  },
+  "Jogo de Brocas para Concreto – Tramontina": {
+    name: "Jogo de Brocas para Concreto – Tramontina",
+    link: "https://amzn.to/47jrh97"
+  },
+  "Jogo de Broca para Concreto – Bosch": {
+    name: "Jogo de Broca para Concreto – Bosch",
+    link: "https://amzn.to/4t0JGQm"
+  },
+  "BOSCH Pacote de Brocas CYL-1 Bosch ｜ 2 608 590 090": {
+    name: "BOSCH Pacote de Brocas CYL-1 Bosch ｜ 2 608 590 090",
+    link: "https://amzn.to/4818uQ9"
+  },
+  "EDA Brocas com Ponta de Vídia 8 Peças ｜ 5TW": {
+    name: "EDA Brocas com Ponta de Vídia 8 Peças ｜ 5TW",
+    link: "https://amzn.to/4bVfkcp"
+  },
+  "MTX Broca para Concreto 6 X 100 mm Golden Line": {
+    name: "MTX Broca para Concreto 6 X 100 mm Golden Line",
+    link: "https://meli.la/1rdnTE7"
+  },
+  "BOSCH Jogo de Brocas SDS Plus-1 para Concreto ｜ 2607019447": {
+    name: "BOSCH Jogo de Brocas SDS Plus-1 para Concreto ｜ 2607019447",
+    link: "https://amzn.to/4dxfNCQ"
+  },
+  "MTX Broca para Concreto 6 X 210 mm Tipo SDS Plus": {
+    name: "MTX Broca para Concreto 6 X 210 mm Tipo SDS Plus",
+    link: "https://amzn.to/47iGPtT"
+  },
+  "DEWALT Conjunto de Brocas de Alvenaria ｜ DW5207": {
+    name: "DEWALT Conjunto de Brocas de Alvenaria ｜ DW5207",
+    link: "https://amzn.to/4brNEvH"
+  },
+  "BOSCH Jogo de Brocas EXPERT HEX-9 Hard Ceramic ｜ 2608900597": {
+    name: "BOSCH Jogo de Brocas EXPERT HEX-9 Hard Ceramic ｜ 2608900597",
+    link: "https://amzn.to/3PmHww5"
   }
 };
 

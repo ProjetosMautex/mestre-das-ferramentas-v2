@@ -289,6 +289,12 @@ export const articles: Article[] = [
     excerpt: "Nos dias de hoje, escolher a ferramenta certa pode fazer toda a diferença em um projeto. A Furadeira Skil tem se destacado no mercado, prometendo desempenho e praticidade."
   },
   {
+    title: "10 Melhores Brocas para Concreto em 2026 análise das marcas mais duráveis",
+    url: "/melhor-broca-para-concreto",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-broca-para-concreto.webp",
+    excerpt: "Com a evolução constante das ferramentas de construção, escolher a broca ideal para concreto pode fazer toda a diferença na sua obra ou projeto DIY."
+  },
+  {
     title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
     url: "/melhor-furadeira-bosch",
     image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch​.webp",
