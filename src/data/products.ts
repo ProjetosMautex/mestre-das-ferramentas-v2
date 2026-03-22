@@ -516,6 +516,38 @@ export const products: Record<string, Product> = {
   "BOSCH Jogo de Brocas EXPERT HEX-9 Hard Ceramic ｜ 2608900597": {
     name: "BOSCH Jogo de Brocas EXPERT HEX-9 Hard Ceramic ｜ 2608900597",
     link: "https://amzn.to/3PmHww5"
+  },
+  "Conjunto de Brocas e Bits Makita – 34 Peças": {
+    name: "Conjunto de Brocas e Bits Makita – 34 Peças",
+    link: "https://meli.la/2jcLSKS"
+  },
+  "Jogo de Brocas mistas 15 peças – Bosch": {
+    name: "Jogo de Brocas mistas 15 peças – Bosch",
+    link: "https://amzn.to/3NgJUny"
+  },
+  "Jogo de Brocas e Bits Tramontina com Maleta – 110 Peças": {
+    name: "Jogo de Brocas e Bits Tramontina com Maleta – 110 Peças",
+    link: "https://meli.la/2zZ3wdx"
+  },
+  "Kit de Pontas e Brocas em Titânio Bosch X-Line": {
+    name: "Kit de Pontas e Brocas em Titânio Bosch X-Line",
+    link: "https://meli.la/2CmMiF2"
+  },
+  "Jogo de Brocas mistas 16 peças – Eda": {
+    name: "Jogo de Brocas mistas 16 peças – Eda",
+    link: "https://amzn.to/4uG2B4V"
+  },
+  "Jogo de Brocas mistas 33 peças – Bosch": {
+    name: "Jogo de Brocas mistas 33 peças – Bosch",
+    link: "https://amzn.to/4sTDFFg"
+  },
+  "Jogo de Brocas para madeira 7 peças – Vonder": {
+    name: "Jogo de Brocas para madeira 7 peças – Vonder",
+    link: "https://amzn.to/4bEH0kB"
+  },
+  "Jogo de Brocas para Ferro 13 peças – MTX": {
+    name: "Jogo de Brocas para Ferro 13 peças – MTX",
+    link: "https://amzn.to/3NmDljk"
   }
 };
 

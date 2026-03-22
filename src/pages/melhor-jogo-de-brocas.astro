@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorJogoDeBrocas } from '../components/MelhorJogoDeBrocas';
+
+const title = "9 Melhores Jogos de Brocas em 2026, quais realmente valem a pena";
+const description = "Os jogos de brocas estão conquistando cada vez mais espaço entre os fãs de ação, estratégia e desafios envolventes.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <MelhorJogoDeBrocas client:load />
+</Layout>

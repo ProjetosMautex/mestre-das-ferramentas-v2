@@ -295,6 +295,12 @@ export const articles: Article[] = [
     excerpt: "Com a evolução constante das ferramentas de construção, escolher a broca ideal para concreto pode fazer toda a diferença na sua obra ou projeto DIY."
   },
   {
+    title: "9 Melhores Jogos de Brocas em 2026, quais realmente valem a pena",
+    url: "/melhor-jogo-de-brocas",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-jogo-de-brocas.webp",
+    excerpt: "Os jogos de brocas estão conquistando cada vez mais espaço entre os fãs de ação, estratégia e desafios envolventes."
+  },
+  {
     title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
     url: "/melhor-furadeira-bosch",
     image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch​.webp",
