@@ -580,6 +580,38 @@ export const products: Record<string, Product> = {
   "Jogo de Brocas – Fertak": {
     name: "Jogo de Brocas – Fertak",
     link: "https://amzn.to/4lKVuDV"
+  },
+  "Broca Escalonada 4 a 12 mm MTX": {
+    name: "Broca Escalonada 4 a 12 mm MTX",
+    link: "https://amzn.to/3NWRUKx"
+  },
+  "Jogo de Brocas Aço Rápido Metal 3 a 8 mm 5 Peças MTX": {
+    name: "Jogo de Brocas Aço Rápido Metal 3 a 8 mm 5 Peças MTX",
+    link: "https://amzn.to/4d4DJNS"
+  },
+  "LORBEN Broca Escalonada Espiral Profissional de 4 a 32 mm ｜ GT6210": {
+    name: "LORBEN Broca Escalonada Espiral Profissional de 4 a 32 mm ｜ GT6210",
+    link: "https://amzn.to/4rOGl63"
+  },
+  "NEIKO Conjunto de Brocas Escalonadas 5 Peças ｜ 10197A": {
+    name: "NEIKO Conjunto de Brocas Escalonadas 5 Peças ｜ 10197A",
+    link: "https://amzn.to/4bHz69W"
+  },
+  "Bosch ｜ Kit de Pontas e Brocas X-Line 33 Peças Bosch": {
+    name: "Bosch ｜ Kit de Pontas e Brocas X-Line 33 Peças Bosch",
+    link: "https://amzn.to/41lBfDr"
+  },
+  "Brocas Em Jogo Com 13 Peças Polegadas – Eda": {
+    name: "Brocas Em Jogo Com 13 Peças Polegadas – Eda",
+    link: "https://amzn.to/3PrnrET"
+  },
+  "Kit Jogo De Brocas para ferro com 25 pçs Hss P/metais de 1,0mm à 13mm – TNT": {
+    name: "Kit Jogo De Brocas para ferro com 25 pçs Hss P/metais de 1,0mm à 13mm – TNT",
+    link: "https://amzn.to/4skZLAy"
+  },
+  "Jogo de brocas Metal Mini X-Line 2-10mm – Bosch": {
+    name: "Jogo de brocas Metal Mini X-Line 2-10mm – Bosch",
+    link: "https://amzn.to/4bHzu8E"
   }
 };
 

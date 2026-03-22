@@ -301,6 +301,12 @@ export const articles: Article[] = [
     excerpt: "Escolher a broca certa para trabalhar com madeira pode fazer toda a diferença em seus projetos. Com tantas opções disponíveis no mercado, encontrar a ferramenta ideal que fure rápido e com precisão é essencial."
   },
   {
+    title: "Top 10 Melhores Brocas para Ferro e Aço em 2026 (Aço Rápido, Copo e mais)",
+    url: "/melhor-broca-para-ferro",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-broca-para-ferro.webp",
+    excerpt: "Escolher a broca certa para trabalhar com ferro e aço pode ser um desafio, especialmente com tantas opções disponíveis no mercado."
+  },
+  {
     title: "9 Melhores Jogos de Brocas em 2026, quais realmente valem a pena",
     url: "/melhor-jogo-de-brocas",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-jogo-de-brocas.webp",
