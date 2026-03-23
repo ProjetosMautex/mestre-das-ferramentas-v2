@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraVonderPfv012EBoa } from '../components/ParafusadeiraVonderPfv012EBoa';
+
+// Aqui você define o SEO da página
+const title = "Parafusadeira Vonder PFV 012 é boa? Testei e conto se vale a pena";
+const description = "A parafusadeira Vonder PFV 012 promete facilitar o dia a dia de quem precisa de praticidade e desempenho. Confira nossa análise.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <ParafusadeiraVonderPfv012EBoa client:load />
+</Layout>

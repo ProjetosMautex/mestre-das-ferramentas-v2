@@ -347,5 +347,11 @@ export const articles: Article[] = [
     url: "/parafusadeira-bosch-gsr-7-14e-e-boa",
     image: "/images/blog/melhor-parafusadeira/parafusadeira-bosch-gsr-7-14e-e-boa.webp",
     excerpt: "Se você está em busca de uma parafusadeira que seja prática e eficiente, a Bosch GSR 7-14E pode ter chamado sua atenção. Confira nossa análise."
+  },
+  {
+    title: "Parafusadeira Vonder PFV 012 é boa? Testei e conto se vale a pena",
+    url: "/parafusadeira-vonder-pfv-012-e-boa",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/ParafusadeiraFuradeira-Com-Bateria-PFV-012.webp",
+    excerpt: "A parafusadeira Vonder PFV 012 promete facilitar o dia a dia de quem precisa de praticidade e desempenho. Confira nossa análise."
   }
 ];
