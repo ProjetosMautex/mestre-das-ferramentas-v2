@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraBoschGsr1000SmartEBoa } from '../components/ParafusadeiraBoschGsr1000SmartEBoa';
+
+// Aqui você define o SEO da página
+const title = "Parafusadeira Bosch GSR 1000 Smart é boa? Testei e digo se vale a pena";
+const description = "A Bosch GSR 1000 Smart se apresenta como uma opção prática e acessível, mas será que realmente cumpre o que promete? Confira nossa análise completa.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <ParafusadeiraBoschGsr1000SmartEBoa client:load />
+</Layout>

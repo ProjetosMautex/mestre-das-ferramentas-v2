@@ -335,5 +335,11 @@ export const articles: Article[] = [
     url: "/melhor-parafusadeira-de-impacto",
     image: "/images/blog/melhor-parafusadeira/melhor-parafusadeira-de-impacto_.webp",
     excerpt: "Escolher a melhor parafusadeira de impacto pode fazer toda a diferença em seus projetos de DIY ou reforma. Descubra os 8 melhores modelos."
+  },
+  {
+    title: "Parafusadeira Bosch GSR 1000 Smart é boa? Testei e digo se vale a pena",
+    url: "/parafusadeira-bosch-gsr-1000-smart-e-boa",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/parafusadeira-bosch-gsr-1000-smart-e-boa.webp",
+    excerpt: "A Bosch GSR 1000 Smart se apresenta como uma opção prática e acessível, mas será que realmente cumpre o que promete? Confira nosso teste."
   }
 ];
