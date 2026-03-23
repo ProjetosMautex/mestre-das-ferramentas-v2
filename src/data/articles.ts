@@ -353,5 +353,11 @@ export const articles: Article[] = [
     url: "/parafusadeira-vonder-pfv-012-e-boa",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/ParafusadeiraFuradeira-Com-Bateria-PFV-012.webp",
     excerpt: "A parafusadeira Vonder PFV 012 promete facilitar o dia a dia de quem precisa de praticidade e desempenho. Confira nossa análise."
+  },
+  {
+    title: "Furadeira Bosch 450W é boa? Testei e te conto se vale a pena",
+    url: "/furadeira-bosch-450w-e-boa",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/furadeira-bosch-450w-e-boa_.webp",
+    excerpt: "Se você está em busca de uma furadeira que una potência e praticidade, provavelmente já ouviu falar da Furadeira Bosch 450W. Mas será que ela realmente cumpre o que promete?"
   }
 ];
