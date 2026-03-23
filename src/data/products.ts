@@ -612,6 +612,14 @@ export const products: Record<string, Product> = {
   "Jogo de brocas Metal Mini X-Line 2-10mm – Bosch": {
     name: "Jogo de brocas Metal Mini X-Line 2-10mm – Bosch",
     link: "https://amzn.to/4bHzu8E"
+  },
+  "VONDER Parafusadeira/Furadeira de Impacto a Bateria 12 V PFV 120I": {
+    name: "VONDER Parafusadeira/Furadeira de Impacto a Bateria 12 V PFV 120I",
+    link: "https://amzn.to/4sxjhde"
+  },
+  "Bosch ｜ Parafusadeira Furadeira 12 V ｜ GSB 120-LI": {
+    name: "Bosch ｜ Parafusadeira Furadeira 12 V ｜ GSB 120-LI",
+    link: "https://amzn.to/3Pooq8S"
   }
 };
 

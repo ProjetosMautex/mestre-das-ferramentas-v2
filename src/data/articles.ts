@@ -307,6 +307,12 @@ export const articles: Article[] = [
     excerpt: "Escolher a broca certa para trabalhar com ferro e aço pode ser um desafio, especialmente com tantas opções disponíveis no mercado."
   },
   {
+    title: "As 9 Melhores Parafusadeiras 12V de 2026 (Bosch, WAP, Black+Decker e mais)",
+    url: "/melhor-parafusadeira-12v",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/melhor-parafusadeira-12v.webp",
+    excerpt: "As parafusadeiras 12V se destacam no mercado por sua combinação de potência e portabilidade, tornando-se indispensáveis para profissionais e entusiastas do Faça Você Mesmo."
+  },
+  {
     title: "9 Melhores Jogos de Brocas em 2026, quais realmente valem a pena",
     url: "/melhor-jogo-de-brocas",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-jogo-de-brocas.webp",
