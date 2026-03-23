@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorParafusadeiraDeImpacto } from '../components/MelhorParafusadeiraDeImpacto';
+
+// Aqui você define o SEO da página
+const title = "Melhor Parafusadeira de Impacto: Top 8 modelos para comprar em 2026";
+const description = "Escolher a melhor parafusadeira de impacto pode fazer toda a diferença em seus projetos de DIY ou reforma. Descubra os 8 melhores modelos disponíveis.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <MelhorParafusadeiraDeImpacto client:load />
+</Layout>

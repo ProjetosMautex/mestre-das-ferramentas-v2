@@ -329,5 +329,11 @@ export const articles: Article[] = [
     url: "/furadeira-titanium-e-boa",
     image: "/images/blog/melhores-marcas-de-furadeira/furadeira titanium é boa​.webp",
     excerpt: "A Furadeira Titanium ganhou destaque no mercado, prometendo eficiência e durabilidade. Mas será que tudo isso se traduz em uma experiência prática satisfatória?"
+  },
+  {
+    title: "Melhor Parafusadeira de Impacto: Top 8 modelos para comprar em 2026",
+    url: "/melhor-parafusadeira-de-impacto",
+    image: "/images/blog/melhor-parafusadeira/melhor-parafusadeira-de-impacto_.webp",
+    excerpt: "Escolher a melhor parafusadeira de impacto pode fazer toda a diferença em seus projetos de DIY ou reforma. Descubra os 8 melhores modelos."
   }
 ];

@@ -3,6 +3,7 @@ export interface Product {
   link: string;
 }
 
+
 export const products: Record<string, Product> = {
   "parafusadeira-bosch-gsb-185-li": {
     name: "Parafusadeira Bosch GSB 185-LI",
@@ -22,7 +23,7 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-vonder-pfv-012i": {
     name: "Parafusadeira Furadeira Vonder Pfv 012i 12 V",
-    link: "https://meli.la/1THhmaL"
+    link: "https://meli.la/2fdiiY4"
   },
   "parafusadeira-bosch-gsr-1000": {
     name: "Parafusadeira Furadeira Bosch GSR 1000",
@@ -620,7 +621,12 @@ export const products: Record<string, Product> = {
   "Bosch ｜ Parafusadeira Furadeira 12 V ｜ GSB 120-LI": {
     name: "Bosch ｜ Parafusadeira Furadeira 12 V ｜ GSB 120-LI",
     link: "https://amzn.to/3Pooq8S"
+  },
+  "EINHELL Parafusadeira e Furadeira de Impacto ｜ TE-CD 18/2 LI-I 2B": {
+    name: "EINHELL Parafusadeira e Furadeira de Impacto ｜ TE-CD 18/2 LI-I 2B",
+    link: "https://amzn.to/4c5iSrF"
   }
 };
+
 
 export type ProductId = keyof typeof products;
