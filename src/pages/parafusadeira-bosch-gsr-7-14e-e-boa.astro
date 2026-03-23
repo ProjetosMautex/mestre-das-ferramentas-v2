@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraBoschGsr714eEBoa } from '../components/ParafusadeiraBoschGsr714eEBoa';
+
+// Aqui você define o SEO da página
+const title = "Parafusadeira Bosch GSR 7-14E é boa? Testei e conto se vale a pena";
+const description = "Se você está em busca de uma parafusadeira que seja prática e eficiente, a Bosch GSR 7-14E pode ter chamado sua atenção. Confira nossa análise.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <ParafusadeiraBoschGsr714eEBoa client:load />
+</Layout>

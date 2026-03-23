@@ -341,5 +341,11 @@ export const articles: Article[] = [
     url: "/parafusadeira-bosch-gsr-1000-smart-e-boa",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/parafusadeira-bosch-gsr-1000-smart-e-boa.webp",
     excerpt: "A Bosch GSR 1000 Smart se apresenta como uma opção prática e acessível, mas será que realmente cumpre o que promete? Confira nosso teste."
+  },
+  {
+    title: "Parafusadeira Bosch GSR 7-14E é boa? Testei e conto se vale a pena",
+    url: "/parafusadeira-bosch-gsr-7-14e-e-boa",
+    image: "/images/blog/melhor-parafusadeira/parafusadeira-bosch-gsr-7-14e-e-boa.webp",
+    excerpt: "Se você está em busca de uma parafusadeira que seja prática e eficiente, a Bosch GSR 7-14E pode ter chamado sua atenção. Confira nossa análise."
   }
 ];
