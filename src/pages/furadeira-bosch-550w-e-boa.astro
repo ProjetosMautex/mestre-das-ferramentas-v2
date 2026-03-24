@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FuradeiraBosch550wEBoa } from '../components/FuradeiraBosch550wEBoa';
+
+// Aqui você define o SEO da página
+const title = "Furadeira Bosch GSB 550 RE é boa? Testei e te conto se vale a pena";
+const description = "Você está em busca de uma furadeira que não comprometa a qualidade e ainda ofereça um bom custo-benefício? A Furadeira Bosch GSB 550 RE pode ser uma opção a considerar.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <FuradeiraBosch550wEBoa client:load />
+</Layout>

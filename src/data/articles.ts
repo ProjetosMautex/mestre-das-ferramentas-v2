@@ -359,5 +359,11 @@ export const articles: Article[] = [
     url: "/furadeira-bosch-450w-e-boa",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/furadeira-bosch-450w-e-boa_.webp",
     excerpt: "Se você está em busca de uma furadeira que una potência e praticidade, provavelmente já ouviu falar da Furadeira Bosch 450W. Mas será que ela realmente cumpre o que promete?"
+  },
+  {
+    title: "Furadeira Bosch GSB 550 RE é boa? Testei e te conto se vale a pena",
+    url: "/furadeira-bosch-550w-e-boa",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/Furadeira Bosch 550W é Boa.webp",
+    excerpt: "Você está em busca de uma furadeira que não comprometa a qualidade e ainda ofereça um bom custo-benefício? A Furadeira Bosch GSB 550 RE pode ser uma opção a considerar."
   }
 ];
