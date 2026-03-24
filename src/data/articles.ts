@@ -365,5 +365,11 @@ export const articles: Article[] = [
     url: "/furadeira-bosch-550w-e-boa",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Furadeira Bosch 550W é Boa.webp",
     excerpt: "Você está em busca de uma furadeira que não comprometa a qualidade e ainda ofereça um bom custo-benefício? A Furadeira Bosch GSB 550 RE pode ser uma opção a considerar."
+  },
+  {
+    title: "Furadeira Black+Decker 560W é boa? Testei e conto se vale a pena",
+    url: "/furadeira-bleken-decker-560w-e-boa",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/furadeira-bleken-decker-560w-e-boa_.webp",
+    excerpt: "Se você está em busca de uma furadeira que não decepcione em casa, a Black+Decker 560W pode ser uma opção a se considerar."
   }
 ];

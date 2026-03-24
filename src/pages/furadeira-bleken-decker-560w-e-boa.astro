@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FuradeiraBlekenDecker560wEBoa } from '../components/FuradeiraBlekenDecker560wEBoa';
+
+// Aqui você define o SEO da página
+const title = "Furadeira Black+Decker 560W é boa? Testei e conto se vale a pena";
+const description = "Se você está em busca de uma furadeira que não decepcione em casa, a Black+Decker 560W pode ser uma opção a se considerar.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <FuradeiraBlekenDecker560wEBoa client:load />
+</Layout>

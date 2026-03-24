@@ -625,6 +625,10 @@ export const products: Record<string, Product> = {
   "EINHELL Parafusadeira e Furadeira de Impacto ｜ TE-CD 18/2 LI-I 2B": {
     name: "EINHELL Parafusadeira e Furadeira de Impacto ｜ TE-CD 18/2 LI-I 2B",
     link: "https://amzn.to/4c5iSrF"
+  },
+  "Furadeira Black+Decker 560W": {
+    name: "Furadeira Black+Decker 560W",
+    link: "https://amzn.to/4rWtnDs"
   }
 };
 
