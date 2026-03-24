@@ -371,5 +371,11 @@ export const articles: Article[] = [
     url: "/furadeira-bleken-decker-560w-e-boa",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/furadeira-bleken-decker-560w-e-boa_.webp",
     excerpt: "Se você está em busca de uma furadeira que não decepcione em casa, a Black+Decker 560W pode ser uma opção a se considerar."
+  },
+  {
+    title: "Furadeira Makita HP1640 é boa? Testei e te conto se vale a pena",
+    url: "/furadeira-makita-hp1640-e-boa",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/Furadeira-Com-Impacto-12″-_HP16401-Makita.webp",
+    excerpt: "Investir em ferramentas de qualidade é crucial para qualquer profissional ou entusiasta do “faça você mesmo”."
   }
 ];

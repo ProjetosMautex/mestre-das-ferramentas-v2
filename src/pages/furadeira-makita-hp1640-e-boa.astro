@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FuradeiraMakitaHp1640EBoa } from '../components/FuradeiraMakitaHp1640EBoa';
+
+// Aqui você define o SEO da página
+const title = "Furadeira Makita HP1640 é boa? Testei e te conto se vale a pena";
+const description = "Investir em ferramentas de qualidade é crucial para qualquer profissional ou entusiasta. Confira nossa análise da furadeira Makita HP1640 e descubra se vale a pena.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <FuradeiraMakitaHp1640EBoa client:load />
+</Layout>
