@@ -395,5 +395,11 @@ export const articles: Article[] = [
     url: "/o-que-e-uma-parafusadeira-brushless",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/O-que-e-uma-parafusadeira-brushless.webp",
     excerpt: "As parafusadeiras são ferramentas essenciais em diversos projetos. Entre elas, as versões brushless têm ganhado destaque por sua potência e eficiência."
+  },
+  {
+    title: "Chave de Impacto vs Parafusadeira: qual a diferença e qual usar em cada trabalho?",
+    url: "/qual-a-diferenca-entre-chave-de-impacto-e-parafusadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/O-que-e-uma-parafusadeira-brushless-1.webp",
+    excerpt: "Quando se trata de ferramentas elétricas, a chave de impacto e a parafusadeira são duas opções populares, mas com características distintas."
   }
 ];
