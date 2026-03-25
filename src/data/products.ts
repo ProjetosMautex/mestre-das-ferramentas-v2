@@ -629,6 +629,14 @@ export const products: Record<string, Product> = {
   "Furadeira Black+Decker 560W": {
     name: "Furadeira Black+Decker 560W",
     link: "https://amzn.to/4rWtnDs"
+  },
+  "Parafusadeira Stanley 20V Brushless SBD710C2K": {
+    name: "Parafusadeira Stanley 20V Brushless SBD710C2K",
+    link: "https://amzn.to/4dILd9i"
+  },
+  "Parafusadeira Wesco WS2558K2 Brushless 12V": {
+    name: "Parafusadeira Wesco WS2558K2 Brushless 12V",
+    link: "https://amzn.to/4daXHqg"
   }
 };
 

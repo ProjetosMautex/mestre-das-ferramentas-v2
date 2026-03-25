@@ -383,5 +383,17 @@ export const articles: Article[] = [
     url: "/como-saber-se-a-parafusadeira-esta-carregada",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-saber-se-a-parafusadeira-esta-carregada_.webp",
     excerpt: "Verificar se a parafusadeira está carregada pode ser um passo crucial antes de começar um projeto."
+  },
+  {
+    title: "Melhor Parafusadeira Brushless As 6 Campeãs de 2026 (Guia Real)",
+    url: "/melhor-parafusadeira-brushless",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/melhor-parafusadeira-brushless-capa.webp",
+    excerpt: "Encontrar a parafusadeira ideal para cada tipo de trabalho pode ser um desafio, especialmente com tantas opções no mercado."
+  },
+  {
+    title: "O que é uma parafusadeira brushless? Entenda por que ela é mais potente",
+    url: "/o-que-e-uma-parafusadeira-brushless",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/O-que-e-uma-parafusadeira-brushless.webp",
+    excerpt: "As parafusadeiras são ferramentas essenciais em diversos projetos. Entre elas, as versões brushless têm ganhado destaque por sua potência e eficiência."
   }
 ];

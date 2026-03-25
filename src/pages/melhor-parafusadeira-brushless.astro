@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorParafusadeiraBrushless } from '../components/MelhorParafusadeiraBrushless';
+
+// Aqui você define o SEO da página
+const title = "Melhor Parafusadeira Brushless As 6 Campeãs de 2026 (Guia Real)";
+const description = "Cansado de parafusadeiras fracas? Descubra AGORA a campeã brushless que vai turbinar seus projetos e te economizar tempo e dinheiro!";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <MelhorParafusadeiraBrushless client:load />
+</Layout>
