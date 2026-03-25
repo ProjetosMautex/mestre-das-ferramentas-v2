@@ -377,5 +377,11 @@ export const articles: Article[] = [
     url: "/furadeira-makita-hp1640-e-boa",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/Furadeira-Com-Impacto-12″-_HP16401-Makita.webp",
     excerpt: "Investir em ferramentas de qualidade é crucial para qualquer profissional ou entusiasta do “faça você mesmo”."
+  },
+  {
+    title: "Como saber se a parafusadeira está carregada? 5 formas de verificar",
+    url: "/como-saber-se-a-parafusadeira-esta-carregada",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-saber-se-a-parafusadeira-esta-carregada_.webp",
+    excerpt: "Verificar se a parafusadeira está carregada pode ser um passo crucial antes de começar um projeto."
   }
 ];

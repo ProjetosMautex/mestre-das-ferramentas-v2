@@ -212,8 +212,6 @@ export const FuradeiraMakitaHp1640EBoa: React.FC = () => {
               <p>Essa modulação evita espanar parafusos e lascar a madeira, principalmente em materiais delicados. A função de impacto, ativada com um simples giro, transforma a rotação em golpes, ideal para concreto e alvenaria.</p>
               <p>É importante lembrar que, embora robusta, a HP1640 não é uma rompedora. Para trabalhos pesados em concreto denso, considere um modelo SDS Plus.</p>
               <p>O mandril de 1/2″ garante a fixação da broca, mas cheque o aperto regularmente, principalmente ao furar materiais duros. Vibrações constantes podem afrouxá-lo, comprometendo a precisão e a segurança.</p>
-              
-              <p>Para evitar acidentes e garantir um serviço limpo mesmo com a trepidação do impacto, dominar a técnica de <a href="/como-furar-parede-com-furadeira/" className="text-blue-600 hover:underline font-medium">furar parede</a> faz toda a diferença na hora de instalar buchas e suportes pesados.</p>
             </div>
           </section>
 
@@ -229,8 +227,10 @@ export const FuradeiraMakitaHp1640EBoa: React.FC = () => {
           <section className="mt-12">
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Acessórios e Conforto no Uso da Furadeira Makita HP1640</h2>
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-              <p>A empunhadura lateral da HP1640 é um porto seguro para quem precisa de firmeza. Rosqueada ao corpo, permite angulação customizada, adaptando-se à sua pegada e à posição de trabalho. Essencial para furos em série ou materiais que exigem mais força, como vigas e metais.</p>
-              <p>O limitador de profundidade é o maestro da precisão. Ajuste-o e diga adeus aos furos passantes indesejados. Ideal para montagem de móveis, instalações elétricas e tudo que exige exatidão.</p>
+              <p>A empunhadura lateral da HP1640 é um porto seguro para quem precisa de firmeza. Rosqueada ao corpo, permite angulação customizada, adaptando-se à sua pegada e à posição de trabalho.</p>
+              <p>Essencial para furos em série ou materiais que exigem mais força, como vigas e metais.</p>
+              <p>O limitador de profundidade é o maestro da precisão. Ajuste-o e diga adeus aos furos passantes indesejados.</p>
+              <p>Ele é ideal para montagem de móveis, instalações elétricas e tarefas rotineiras de casa, como quando você precisa <a href="/como-usar-furadeira-para-colocar-cortina/" className="text-blue-600 hover:underline font-medium">instalar uma cortina</a> sem o risco de perfurar a parede além do tamanho exato da bucha.</p>
               <p>O mandril com chave, embora não seja o suprassumo da modernidade, garante fixação robusta. Mas atenção: aperte com firmeza, sem exagerar, para não espanar os dentes. Uma chave bem cuidada e um aperto consciente prolongam a vida útil do conjunto.</p>
             </div>
           </section>
