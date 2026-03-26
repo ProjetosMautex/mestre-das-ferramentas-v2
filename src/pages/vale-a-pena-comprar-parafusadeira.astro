@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ValeAPenaComprarParafusadeira } from '../components/ValeAPenaComprarParafusadeira';
+
+const title = "Vale a pena comprar parafusadeira? Quando escolher furadeira ou parafusadeira";
+const description = "Descubra se vale a pena comprar uma parafusadeira e entenda as diferenças fundamentais entre furadeiras e parafusadeiras para as suas necessidades.";
+---
+
+<Layout title={title} description={description}>
+  <ValeAPenaComprarParafusadeira client:load />
+</Layout>

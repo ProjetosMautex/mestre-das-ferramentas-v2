@@ -407,5 +407,11 @@ export const articles: Article[] = [
     url: "/melhor-bateria-para-parafusadeira",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Melhor-bateria-para-parafusadeira.webp",
     excerpt: "Ao investir em uma parafusadeira, a escolha da bateria é um fator crucial que pode influenciar diretamente a sua experiência de uso."
+  },
+  {
+    title: "Vale a pena comprar parafusadeira? Quando escolher furadeira ou parafusadeira",
+    url: "/vale-a-pena-comprar-parafusadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/Vale-a-pena-comprar-parafusadeira.webp",
+    excerpt: "Se você gosta de colocar a mão na massa e fazer pequenos reparos, as ferramentas certas fazem a diferença. Entenda se vale a pena."
   }
 ];
