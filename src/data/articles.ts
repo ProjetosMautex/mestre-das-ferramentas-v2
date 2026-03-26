@@ -413,5 +413,11 @@ export const articles: Article[] = [
     url: "/vale-a-pena-comprar-parafusadeira",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Vale-a-pena-comprar-parafusadeira.webp",
     excerpt: "Se você gosta de colocar a mão na massa e fazer pequenos reparos, as ferramentas certas fazem a diferença. Entenda se vale a pena."
+  },
+  {
+    title: "Como tirar a broca da parafusadeira: passo a passo simples e rápido",
+    url: "/como-tirar-a-broca-da-parafusadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/Como-tirar-a-broca-da-parafusadeira.webp",
+    excerpt: "Trocar a broca da parafusadeira pode parecer uma tarefa simples, mas muitos ainda ficam inseguros na hora de fazer isso. Descubra aqui."
   }
 ];

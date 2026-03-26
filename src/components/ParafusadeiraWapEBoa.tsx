@@ -66,6 +66,57 @@ export const ParafusadeiraWapEBoa: React.FC = () => {
               <p>Avaliamos individualmente as arquiteturas mecânicas internas, componentes agregados e tolerâncias de fadiga elétrica dos seus equipamentos mais procurados comercialmente no cenário brasileiro.</p>
             </div>
 
+            {/* Vitrine / Showcase Table */}
+            <div className="mb-16 max-w-[800px] mx-auto bg-slate-50 p-2.5 rounded-lg sm:p-5">
+              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-8 text-center">A linha WAP em Foco</h2>
+              
+              <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden">
+                <tbody>
+                  {[
+                    { id: "parafusadeira-wap-bpf-12k3", image: "/images/blog/melhor-parafusadeira/Parafusadeira WAP BPF 12K3.webp" },
+                    { id: "parafusadeira-wap-bpfi-12k4", image: "/images/blog/melhor-furadeira/Parafusadeira e Furadeira WAP BPFI 12K4.webp" },
+                    { id: "furadeira-wap-efpi-1000", image: "/images/blog/melhor-furadeira/Furadeira de Impacto e Parafusadeira WAP EFPI 1000.webp" },
+                    { id: "furadeira-wap-efi600k", image: "/images/blog/melhor-furadeira/WAP-EFI600K.webp" },
+                    { id: "furadeira-wap-efi850", image: "/images/blog/melhor-furadeira/WAP-EFI850.webp" }
+                  ].map((item) => {
+                    const product = products[item.id as ProductId];
+                    if (!product) return null;
+                    return (
+                      <tr key={item.id} className="border-b border-slate-200 last:border-b-0">
+                        <td className="w-[65px] p-2 align-middle text-center sm:w-[80px] sm:p-3">
+                          <div className="w-[40px] h-[40px] border border-slate-100 rounded flex items-center justify-center p-0.5 sm:w-[60px] sm:h-[60px] mx-auto bg-white">
+                            <img 
+                              src={item.image}
+                              alt={product.name} 
+                              width="60"
+                              height="60"
+                              className="max-w-full max-h-full block object-contain mix-blend-multiply"
+                              loading="lazy"
+                            />
+                          </div>
+                        </td>
+                        <td className="p-2 align-middle sm:p-4">
+                          <div className="text-[14px] font-bold leading-tight line-clamp-3 text-slate-700 m-0 sm:text-[16px]">
+                            {product.name}
+                          </div>
+                        </td>
+                        <td className="w-[90px] p-2 align-middle text-right sm:w-[140px] sm:p-4">
+                          <a 
+                            href={product.link}
+                            target="_blank"
+                            rel="noopener noreferrer sponsored"
+                            className="bg-[#FFD700] text-[#1a1a1a] font-bold no-underline text-[11px] py-1.5 px-2.5 rounded whitespace-nowrap inline-block hover:opacity-90 sm:py-2.5 sm:px-5 sm:text-[14px]"
+                          >
+                            Ver Preço
+                          </a>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+
             <div className="space-y-12">
               {/* WAP BPF 12K3 */}
               <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24" id="wap-bpf-12k3">
