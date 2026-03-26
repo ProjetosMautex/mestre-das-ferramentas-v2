@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorBateriaParaParafusadeira } from '../components/MelhorBateriaParaParafusadeira';
+
+const title = "Guia para escolher a melhor bateria para parafusadeira";
+const description = "Saiba tudo sobre baterias de parafusadeira: como escolher a melhor, tipos disponíveis, durabilidade e dicas práticas para aumentar a vida útil da sua ferramenta.";
+---
+
+<Layout title={title} description={description}>
+  <MelhorBateriaParaParafusadeira client:load />
+</Layout>

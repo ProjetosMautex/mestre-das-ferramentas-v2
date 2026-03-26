@@ -401,5 +401,11 @@ export const articles: Article[] = [
     url: "/qual-a-diferenca-entre-chave-de-impacto-e-parafusadeira",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/O-que-e-uma-parafusadeira-brushless-1.webp",
     excerpt: "Quando se trata de ferramentas elétricas, a chave de impacto e a parafusadeira são duas opções populares, mas com características distintas."
+  },
+  {
+    title: "Guia para escolher a melhor bateria para parafusadeira",
+    url: "/melhor-bateria-para-parafusadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/Melhor-bateria-para-parafusadeira.webp",
+    excerpt: "Ao investir em uma parafusadeira, a escolha da bateria é um fator crucial que pode influenciar diretamente a sua experiência de uso."
   }
 ];
