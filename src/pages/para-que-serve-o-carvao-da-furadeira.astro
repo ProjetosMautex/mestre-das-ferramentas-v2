@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParaQueServeOCarvaoDaFuradeira } from '../components/ParaQueServeOCarvaoDaFuradeira';
+
+const title = "Para que serve o carvão da furadeira? Entenda de forma simples e rápida";
+const description = "Saiba exatamente qual é a serventia das escovas de carvão da sua furadeira, quando e como trocar e qual a sua necessidade para o funcionamento do motor.";
+---
+
+<Layout title={title} description={description}>
+  <ParaQueServeOCarvaoDaFuradeira client:load />
+</Layout>

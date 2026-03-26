@@ -431,5 +431,11 @@ export const articles: Article[] = [
     url: "/o-que-e-bits-de-parafusadeira",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/o-que-e-bits-de-parafusadeira.webp",
     excerpt: "Esses pequenos acessórios são essenciais para transformar a sua ferramenta em um verdadeiro canivete suíço para montagem e reparos."
+  },
+  {
+    title: "Para que serve o carvão da furadeira? Entenda de forma simples e rápida",
+    url: "/para-que-serve-o-carvao-da-furadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/Para-que-serve-o-carvao-da-furadeira.webp",
+    excerpt: "O carvão da furadeira é um componente muitas vezes ignorado, mas essencial para o funcionamento do equipamento. Entenda sua lógica."
   }
 ];
