@@ -419,5 +419,11 @@ export const articles: Article[] = [
     url: "/como-tirar-a-broca-da-parafusadeira",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Como-tirar-a-broca-da-parafusadeira.webp",
     excerpt: "Trocar a broca da parafusadeira pode parecer uma tarefa simples, mas muitos ainda ficam inseguros na hora de fazer isso. Descubra aqui."
+  },
+  {
+    title: "Parafusadeira de Impacto O que é e para que serve na prática?",
+    url: "/o-que-e-parafusadeira-de-impacto",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/o-que-e-parafusadeira-de-impacto.webp",
+    excerpt: "Se você já se perguntou como alguns profissionais conseguem fixar parafusos com tanta rapidez, descubra tudo sobre parafusadeiras de impacto."
   }
 ];
