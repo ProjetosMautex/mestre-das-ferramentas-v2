@@ -425,5 +425,11 @@ export const articles: Article[] = [
     url: "/o-que-e-parafusadeira-de-impacto",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/o-que-e-parafusadeira-de-impacto.webp",
     excerpt: "Se você já se perguntou como alguns profissionais conseguem fixar parafusos com tanta rapidez, descubra tudo sobre parafusadeiras de impacto."
+  },
+  {
+    title: "Bits de Parafusadeira: o que são, para que servem e quais usar",
+    url: "/o-que-e-bits-de-parafusadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/o-que-e-bits-de-parafusadeira.webp",
+    excerpt: "Esses pequenos acessórios são essenciais para transformar a sua ferramenta em um verdadeiro canivete suíço para montagem e reparos."
   }
 ];

@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { OQueEBitsDeParafusadeira } from '../components/OQueEBitsDeParafusadeira';
+
+const title = "Bits de Parafusadeira: o que são, para que servem e quais usar";
+const description = "Entenda a fundo os tipos de bits, suas variações Philips, Torx e as principais recomendações para otimizar suas montagens e obras diárias.";
+---
+
+<Layout title={title} description={description}>
+  <OQueEBitsDeParafusadeira client:load />
+</Layout>
