@@ -461,5 +461,11 @@ export const articles: Article[] = [
     url: "/tipos-de-parafusadeira-qual-a-ideal-para-cada-trabalho",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Tipos-de-parafusadeira-qual-a-ideal-para-cada-trabalho.webp",
     excerpt: "Com diferentes tipos disponíveis no mercado, é importante saber qual modelo se adapta melhor às suas necessidades."
+  },
+  {
+    title: "Como polir carro com parafusadeira (Guia completo e simples)",
+    url: "/como-polir-carro-com-parafusadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/Como-polir-carro-com-parafusadeira.webp",
+    excerpt: "O polimento automotivo recupera o brilho da pintura. Descubra como polir seu carro em casa utilizando apenas a parafusadeira."
   }
 ];

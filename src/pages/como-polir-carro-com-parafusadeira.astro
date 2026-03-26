@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoPolirCarroComParafusadeira } from '../components/ComoPolirCarroComParafusadeira';
+
+const title = "Como polir carro com parafusadeira (Guia completo e simples)";
+const description = "Descubra como você pode utilizar aquela sua parafusadeira antiga para conseguir polir a lataria do seu carro gastando muito pouco de forma segura.";
+---
+
+<Layout title={title} description={description}>
+  <ComoPolirCarroComParafusadeira client:load />
+</Layout>
