@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { TiposDeParafusadeiraQualAIdealParaCadaTrabalho } from '../components/TiposDeParafusadeiraQualAIdealParaCadaTrabalho';
+
+const title = "Tipos de parafusadeira: qual a ideal para cada trabalho?";
+const description = "Saiba exatamente qual é melhor tipo de parafusadeira para você de acordo com formato de trabalho. Entenda quando optar em investir em cada uma com nossos conselhos de mestre.";
+---
+
+<Layout title={title} description={description}>
+  <TiposDeParafusadeiraQualAIdealParaCadaTrabalho client:load />
+</Layout>

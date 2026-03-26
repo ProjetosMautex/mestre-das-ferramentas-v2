@@ -449,5 +449,17 @@ export const articles: Article[] = [
     url: "/como-trocar-o-carvao-da-furadeira",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-trocar-o-carvao-da-furadeira_.webp",
     excerpt: "Trocar o carvão da furadeira pode parecer um desafio, mas na verdade é uma tarefa simples e rápida. Aprenda a fazê-lo e proteja sua ferramenta."
+  },
+  {
+    title: "Função percutor na parafusadeira: o que é e para que serve?",
+    url: "/o-que-e-funcao-percutor-na-parafusadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/o-que-e-funcao-percutor-na-parafusadeira_-2.webp",
+    excerpt: "Você já se perguntou o que faz a função percutor ser tão especial? Aprenda o que é essa função e veja como ela pode facilitar o seu dia a dia."
+  },
+  {
+    title: "Tipos de parafusadeira: qual a ideal para cada trabalho?",
+    url: "/tipos-de-parafusadeira-qual-a-ideal-para-cada-trabalho",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/Tipos-de-parafusadeira-qual-a-ideal-para-cada-trabalho.webp",
+    excerpt: "Com diferentes tipos disponíveis no mercado, é importante saber qual modelo se adapta melhor às suas necessidades."
   }
 ];
