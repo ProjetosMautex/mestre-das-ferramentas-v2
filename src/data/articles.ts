@@ -437,5 +437,17 @@ export const articles: Article[] = [
     url: "/para-que-serve-o-carvao-da-furadeira",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Para-que-serve-o-carvao-da-furadeira.webp",
     excerpt: "O carvão da furadeira é um componente muitas vezes ignorado, mas essencial para o funcionamento do equipamento. Entenda sua lógica."
+  },
+  {
+    title: "O que significa L e R na furadeira? Guia simples e direto com exemplos",
+    url: "/o-que-significa-l-e-r-na-furadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/o-que-significa-l-e-r-na-furadeira_.webp",
+    excerpt: "Você pode ter notado letras como “L” e “R” nos botões da ferramenta. Entenda essas siglas e o funcionamento das direções de rotação."
+  },
+  {
+    title: "Como trocar o carvão da furadeira: passo a passo simples e rápido",
+    url: "/como-trocar-o-carvao-da-furadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-trocar-o-carvao-da-furadeira_.webp",
+    excerpt: "Trocar o carvão da furadeira pode parecer um desafio, mas na verdade é uma tarefa simples e rápida. Aprenda a fazê-lo e proteja sua ferramenta."
   }
 ];
