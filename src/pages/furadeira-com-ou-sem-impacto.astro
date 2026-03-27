@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FuradeiraComOuSemImpacto } from '../components/FuradeiraComOuSemImpacto';
+
+const title = "Furadeira com ou sem impacto? A diferença REAL que ninguém explica";
+const description = "Qual furadeira é de fato a certa para seu uso diário na construtora ou em casa? Descubra o verdadeiro diferencial que faz uma máquina ser com ou sem impacto.";
+---
+
+<Layout title={title} description={description}>
+  <FuradeiraComOuSemImpacto client:load />
+</Layout>

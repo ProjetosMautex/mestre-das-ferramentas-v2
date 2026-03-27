@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 // Importamos a lista de artigos que você já criou
 import { articles } from '../data/articles';
 
 export const Blog: React.FC = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentArticles = articles.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(articles.length / itemsPerPage);
+
+  const prevPage = () => {
+    setCurrentPage(prev => Math.max(prev - 1, 1));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  
+  const nextPage = () => {
+    setCurrentPage(prev => Math.min(prev + 1, totalPages));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <main className="flex-grow bg-gray-50">
       <section className="bg-[#1a1a1a] py-16 text-center">
@@ -23,8 +41,8 @@ export const Blog: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Aqui acontece a mágica: ele percorre sua lista oficial */}
-          {articles.map((item, index) => (
+          {/* Aqui acontece a mágica: ele percorre a lista fatiada por página */}
+          {currentArticles.map((item, index) => (
             <article key={index} className="bg-[#F9F9F9] rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full group">
               <div className="relative h-56 overflow-hidden bg-gray-200">
                 <img 
@@ -59,6 +77,37 @@ export const Blog: React.FC = () => {
             </article>
           ))}
         </div>
+
+        {/* Controles de Paginação */}
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center mt-12 space-x-4">
+            <button 
+              onClick={prevPage} 
+              disabled={currentPage === 1}
+              className={`px-6 py-2 rounded font-bold transition-colors ${
+                currentPage === 1 
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
+                  : 'bg-[#FFD700] text-[#1a1a1a] hover:bg-[#e6c200]'
+              }`}
+            >
+              Anterior
+            </button>
+            <span className="text-gray-700 font-semibold px-4">
+              Página {currentPage} de {totalPages}
+            </span>
+            <button 
+              onClick={nextPage} 
+              disabled={currentPage === totalPages}
+              className={`px-6 py-2 rounded font-bold transition-colors ${
+                currentPage === totalPages 
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
+                  : 'bg-[#FFD700] text-[#1a1a1a] hover:bg-[#e6c200]'
+              }`}
+            >
+              Próxima
+            </button>
+          </div>
+        )}
       </section>
     </main>
   );

@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoSaberQualBrocaUsarNaFuradeira } from '../components/ComoSaberQualBrocaUsarNaFuradeira';
+
+const title = "Como saber qual broca usar na furadeira: guia simples e direto";
+const description = "Pare de adivinhar e quebrar materiais tentando encontrar a broca e velocidade exatas: confira este guia para gabaritar a aplicação das brocas pela primeira vez.";
+---
+
+<Layout title={title} description={description}>
+  <ComoSaberQualBrocaUsarNaFuradeira client:load />
+</Layout>

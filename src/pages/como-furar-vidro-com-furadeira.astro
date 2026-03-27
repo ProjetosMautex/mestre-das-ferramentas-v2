@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoFurarVidroComFuradeira } from '../components/ComoFurarVidroComFuradeira';
+
+const title = "Como Furar Vidro com Furadeira Passo a Passo Sem Quebrar";
+const description = "Sim, você pode furar seus vidros se seguir perfeitamente o nosso manual! Veja as brocas e pressões necessárias para não estragar chapas de vidro e espelhos.";
+---
+
+<Layout title={title} description={description}>
+  <ComoFurarVidroComFuradeira client:load />
+</Layout>

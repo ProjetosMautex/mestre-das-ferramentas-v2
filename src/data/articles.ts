@@ -467,5 +467,71 @@ export const articles: Article[] = [
     url: "/como-polir-carro-com-parafusadeira",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Como-polir-carro-com-parafusadeira.webp",
     excerpt: "O polimento automotivo recupera o brilho da pintura. Descubra como polir seu carro em casa utilizando apenas a parafusadeira."
+  },
+  {
+    title: "Como Trocar o Mandril da Furadeira (Passo a Passo Simples)",
+    url: "/como-trocar-o-mandril-da-furadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-trocar-o-mandril-da-furadeira_.webp",
+    excerpt: "Trocar o mandril da furadeira pode parecer uma tarefa complexa, mas entenda neste guia como realizar este processo rapidamente sem dor de cabeça."
+  },
+  {
+    title: "Segurança com Furadeira: Cuidados Essenciais para Evitar Acidentes",
+    url: "/seguranca-com-furadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/seguranca-com-furadeira_.webp",
+    excerpt: "Quando se trata de usar uma furadeira, a segurança deve ser a prioridade número um. Leia nossos protocolos e dicas essenciais."
+  },
+  {
+    title: "Como diminuir o barulho da furadeira: Soluções simples que realmente funcionam",
+    url: "/como-diminuir-o-barulho-da-furadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-diminuir-o-barulho-da-furadeira_.webp",
+    excerpt: "O barulho da furadeira é um desafio. Neste artigo, apresentamos soluções práticas de redução sonora."
+  },
+  {
+    title: "O que é e como funciona a furadeira de impacto? Explicação simples e prática",
+    url: "/como-funciona-furadeira-de-impacto",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-funciona-furadeira-de-impacto_.webp",
+    excerpt: "A furadeira de impacto combina rotação e batidas, permitindo perfurações em materiais duros com extrema facilidade."
+  },
+  {
+    title: "Como saber qual broca usar na furadeira: guia simples e direto",
+    url: "/como-saber-qual-broca-usar-na-furadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-saber-qual-broca-usar-na-furadeira.webp",
+    excerpt: "Simplifique a sua escolha de brocas usando os diâmetros e materiais corretos para o tipo de operação que você deseja alcançar."
+  },
+  {
+    title: "Furadeira com ou sem impacto? A diferença REAL que ninguém explica",
+    url: "/furadeira-com-ou-sem-impacto",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/furadeira-com-ou-sem-impacto_.webp",
+    excerpt: "Qual é a real diferença na usabilidade de furadeiras de impacto contra variantes rotacionais limpas? Entenda neste artigo."
+  },
+  {
+    title: "Qual a diferença entre furadeira de impacto e martelete? Explicado de forma simples",
+    url: "/qual-a-diferenca-entre-furadeira-de-impacto-e-martelete",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/qual-a-diferenca-entre-furadeira-de-impacto-e-martelete_.webp",
+    excerpt: "Saiba definitivamente como distinguir e quando exatamente usar marteletes complexos vs furadeiras de impacto diárias."
+  },
+  {
+    title: "Mandril 1/2 ou 3/8: qual é o melhor? Veja a diferença real na prática",
+    url: "/qual-o-melhor-mandril-1-2-ou-3-8",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/qual-o-melhor-mandril-1-2-ou-3-8_.webp",
+    excerpt: "Diferencie os tipos de mandril 1/2 e 3/8 para domar suas perfurações pesadas ou em espaços apertados de vez por todas."
+  },
+  {
+    title: "Como furar azulejo com furadeira Modo prático e rápido",
+    url: "/como-furar-azulejo-com-furadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-furar-azulejo-com-furadeira.webp",
+    excerpt: "Guia extenso com todo o processo, dicas de segurança e passo-a-passo de brocas corretas para furar o seu azulejo e evitar fissuras."
+  },
+  {
+    title: "Móveis que da para fazer com a furadeira e parafusadeira",
+    url: "/moveis-que-da-para-fazer-com-a-furadeira-e-parafusadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/Moveis-que-da-para-fazer-com-a-furadeira-e-parafusadeira.webp",
+    excerpt: "Você pode decorar a casa inteira e criar móveis do zero gastando pouco usando suas ferramentas. Confira dicas de materiais e construções geniais."
+  },
+  {
+    title: "Como Furar Vidro com Furadeira Passo a Passo Sem Quebrar",
+    url: "/como-furar-vidro-com-furadeira",
+    image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-furar-vidro-com-furadeira.webp",
+    excerpt: "Sem quebras nem cortes: entenda exatamente qual broca e velocidade deve ser aplicada por você na furadeira ao adentrar painéis de vidro."
   }
 ];

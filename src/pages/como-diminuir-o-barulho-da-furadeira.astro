@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoDiminuirOBarulhoDaFuradeira } from '../components/ComoDiminuirOBarulhoDaFuradeira';
+
+const title = "Como diminuir o barulho da furadeira: Soluções simples que realmente funcionam";
+const description = "Tem problemas lidando com o estresse sonoro das furadeiras? Veja as dicas em nosso artigo para tornar a sua experiência mais silenciosa e agradável na obra.";
+---
+
+<Layout title={title} description={description}>
+  <ComoDiminuirOBarulhoDaFuradeira client:load />
+</Layout>

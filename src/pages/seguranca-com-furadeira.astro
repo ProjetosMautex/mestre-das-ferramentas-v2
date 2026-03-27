@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SegurancaComFuradeira } from '../components/SegurancaComFuradeira';
+
+const title = "Segurança com Furadeira: Cuidados Essenciais para Evitar Acidentes";
+const description = "Descubra como operar sua furadeira e parafusadeira de forma altamente segura, com os 10 cuidados essenciais recomendados por nossos mestres.";
+---
+
+<Layout title={title} description={description}>
+  <SegurancaComFuradeira client:load />
+</Layout>
