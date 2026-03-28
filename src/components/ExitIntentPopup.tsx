@@ -86,7 +86,7 @@ export const ExitIntentPopup: React.FC = () => {
         <div className="px-10 pb-4 flex justify-center bg-[#1a1a1a]">
           <div className="relative group max-w-[240px]">
             <img 
-              src="/images/design/O Mapa das Parafusadeiras.jpg" 
+              src="/images/O Mapa das Parafusadeiras.webp" 
               alt="Ebook O Mapa das Parafusadeiras" 
               className="w-full h-auto rounded-lg shadow-[0_0_30px_rgba(255,215,0,0.2)] group-hover:scale-105 transition-transform duration-500"
               style={{ maxHeight: '350px', objectFit: 'contain' }}

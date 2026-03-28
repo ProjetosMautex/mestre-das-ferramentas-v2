@@ -53,7 +53,7 @@ export const BunnerDoMeio: React.FC = () => {
         {/* Meio: Imagem */}
         <div className="flex-shrink-0 mx-0 md:mx-4">
              <img 
-              src="/images/design/O Mapa das Parafusadeiras.jpg" 
+              src="/images/O Mapa das Parafusadeiras.webp" 
               alt="Ebook O Mapa das Parafusadeiras" 
               className="w-48 md:w-48 h-auto rounded shadow-lg transform rotate-2 hover:rotate-0 transition-transform duration-300"
             />
