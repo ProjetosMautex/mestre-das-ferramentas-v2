@@ -7,13 +7,26 @@ export const BunnerDoMeio: React.FC = () => {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const isValidEmail = emailRegex.test(email);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!isValidEmail) return;
     setStatus('submitting');
-    setTimeout(() => {
-      setStatus('success');
-    }, 1000);
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        setStatus('success');
+      } else {
+        setStatus('idle');
+        alert('Erro ao registrar. Tente novamente.');
+      }
+    } catch {
+      setStatus('idle');
+      alert('Erro de conexão. Tente novamente.');
+    }
   };
 
   // Se for sucesso, mostra apenas o card de agradecimento
@@ -28,7 +41,7 @@ export const BunnerDoMeio: React.FC = () => {
           </div>
           <div>
             <h2 className="text-2xl font-extrabold text-white mb-2">Obrigado!</h2>
-            <p className="text-gray-300">Seu guia exclusivo já foi enviado para o seu e-mail.</p>
+            <p className="text-gray-300">Pronto! Verifique seu e-mail em instantes.</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,27 @@
+---
+// Importamos o componente Ebook que acabamos de criar
+import { Ebook } from '../components/Ebook';
+
+// Importando o CSS global para garantir que o Tailwind funciona
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		
+		{/* Tag crucial para não indexar no Google */}
+		<meta name="robots" content="noindex, nofollow" />
+		
+		<title>E-book Especial | Mestre das Ferramentas</title>
+	</head>
+	<body class="bg-[#1a1a1a] min-h-screen m-0 p-0 text-white font-sans antialiased">
+		
+		{/* Carregamos o componente Ebook com interatividade no Client-Side */}
+		<Ebook client:load />
+
+	</body>
+</html>

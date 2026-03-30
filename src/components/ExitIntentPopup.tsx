@@ -46,14 +46,27 @@ export const ExitIntentPopup: React.FC = () => {
 
   const handleClose = () => setIsVisible(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!isValidEmail) return;
     setStatus('submitting');
-    setTimeout(() => {
-      setStatus('success');
-      setTimeout(() => setIsVisible(false), 3000);
-    }, 1000);
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        setStatus('success');
+        setTimeout(() => setIsVisible(false), 4000);
+      } else {
+        setStatus('idle');
+        alert('Erro ao registrar. Tente novamente.');
+      }
+    } catch {
+      setStatus('idle');
+      alert('Erro de conexão. Tente novamente.');
+    }
   };
 
   if (!isVisible) return null;
@@ -106,7 +119,7 @@ export const ExitIntentPopup: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <p className="text-white font-bold text-xl">Perfeito! Seu guia está a caminho.</p>
+              <p className="text-white font-bold text-xl">Pronto! Verifique seu e-mail em instantes.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
