@@ -11,30 +11,25 @@ export const ExitIntentPopup: React.FC = () => {
   const isValidEmail = emailRegex.test(email);
 
   useEffect(() => {
+    // Se já mostrou nesta sessão, não faz nada
     const hasShown = sessionStorage.getItem('exitIntentShown');
     if (hasShown) return;
 
+    // --- DESKTOP: mouse sai da página ---
     const handleExitIntent = (e: MouseEvent) => {
       if (e.clientY <= 0) showPopup();
     };
 
-    const handlePopState = () => {
-      if (!sessionStorage.getItem('exitIntentShown')) {
-        showPopup();
-        window.history.pushState({ exitIntent: true }, '', window.location.href);
-      }
-    };
-
-    if (!hasShown) {
-      window.history.pushState({ exitIntent: true }, '', window.location.href);
-    }
+    // --- MOBILE + DESKTOP: timer de 60 segundos ---
+    const timer = setTimeout(() => {
+      showPopup();
+    }, 60000); // 60 segundos = 1 minuto
 
     document.addEventListener('mouseleave', handleExitIntent);
-    window.addEventListener('popstate', handlePopState);
 
     return () => {
       document.removeEventListener('mouseleave', handleExitIntent);
-      window.removeEventListener('popstate', handlePopState);
+      clearTimeout(timer);
     };
   }, []);
 
@@ -77,12 +72,13 @@ export const ExitIntentPopup: React.FC = () => {
         ref={popupRef}
         className="relative w-full max-w-lg bg-[#1a1a1a] rounded-2xl shadow-2xl overflow-hidden flex flex-col animate-in zoom-in-95 duration-300 border border-gray-800"
       >
-        {/* Botão Fechar */}
+        {/* Botão Fechar — grande e visível */}
         <button 
           onClick={handleClose}
-          className="absolute top-4 right-4 z-50 text-gray-400 hover:text-white transition-colors bg-black/40 rounded-full p-2"
+          className="absolute top-3 right-3 z-50 text-white bg-red-600 hover:bg-red-500 active:bg-red-700 rounded-full p-2.5 shadow-lg transition-colors"
+          aria-label="Fechar"
         >
-          <X size={20} />
+          <X size={22} strokeWidth={3} />
         </button>
 
         {/* 1. Parte de Cima: Mensagem de Impacto */}
@@ -95,7 +91,7 @@ export const ExitIntentPopup: React.FC = () => {
           </p>
         </div>
 
-        {/* 2. Parte Central: Imagem do eBook (Mostrando ela toda) */}
+        {/* 2. Parte Central: Imagem do eBook */}
         <div className="px-10 pb-4 flex justify-center bg-[#1a1a1a]">
           <div className="relative group max-w-[240px]">
             <img 
