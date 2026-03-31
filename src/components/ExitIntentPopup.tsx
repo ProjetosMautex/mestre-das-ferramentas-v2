@@ -15,15 +15,26 @@ export const ExitIntentPopup: React.FC = () => {
     const hasShown = sessionStorage.getItem('exitIntentShown');
     if (hasShown) return;
 
+    // Marca o instante em que o usuário entrou no site pela primeira vez
+    if (!sessionStorage.getItem('siteEntryTime')) {
+      sessionStorage.setItem('siteEntryTime', String(Date.now()));
+    }
+
+    // Calcula quanto tempo já se passou desde a entrada no site
+    const entryTime = Number(sessionStorage.getItem('siteEntryTime'));
+    const elapsed = Date.now() - entryTime;
+    const TARGET_MS = 37000; // 37 segundos
+    const remaining = Math.max(TARGET_MS - elapsed, 0);
+
     // --- DESKTOP: mouse sai da página ---
     const handleExitIntent = (e: MouseEvent) => {
       if (e.clientY <= 0) showPopup();
     };
 
-    // --- MOBILE + DESKTOP: timer de 60 segundos ---
+    // --- MOBILE + DESKTOP: timer baseado no tempo restante ---
     const timer = setTimeout(() => {
       showPopup();
-    }, 60000); // 60 segundos = 1 minuto
+    }, remaining);
 
     document.addEventListener('mouseleave', handleExitIntent);
 
