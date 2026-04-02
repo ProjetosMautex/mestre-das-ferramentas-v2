@@ -44,7 +44,7 @@ export const BunnerDoMeio: React.FC = () => {
             <p className="text-gray-300">Pronto! Verifique seu e-mail em instantes.</p>
             <div className="mt-4 p-3 bg-red-900/40 border border-red-500 rounded-lg max-w-xl mx-auto">
               <p className="text-[#FFD700] font-bold text-sm md:text-base uppercase tracking-widest leading-relaxed">
-                SE O E-MAIL NÃO CHEGAR EM 1 MINUTO, OLHE SUA PASTA DE SPAM OU PROMOÇÕES E RESPONDA COM "OI" PARA RECEBER SEU EBOOK
+                SE O E-MAIL NÃO CHEGAR EM 1 MINUTO, ELE PODE TER CAÍDO POR ENGANO NO SPAM OU EM PROMOÇÕES. MARQUE NOSSO E-MAIL COMO "NÃO É SPAM" CASO ESTEJA LÁ PARA FICAR POR DENTRO DE TUDO SOBRE FERRAMENTAS.
               </p>
             </div>
           </div>
