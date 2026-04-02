@@ -64,7 +64,6 @@ export const ExitIntentPopup: React.FC = () => {
       });
       if (res.ok) {
         setStatus('success');
-        setTimeout(() => setIsVisible(false), 4000);
       } else {
         setStatus('idle');
         alert('Erro ao registrar. Tente novamente.');
@@ -92,30 +91,34 @@ export const ExitIntentPopup: React.FC = () => {
           <X size={22} strokeWidth={3} />
         </button>
 
-        {/* 1. Parte de Cima: Mensagem de Impacto */}
-        <div className="p-6 text-center bg-gradient-to-b from-gray-900 to-[#1a1a1a]">
-          <h2 className="text-3xl font-extrabold text-white mb-2 tracking-tight">
-            Espera um Pouco!
-          </h2>
-          <p className="text-[#FFD700] text-lg font-bold leading-tight">
-            Você vai sair sem pegar isso?
-          </p>
-        </div>
+        {status !== 'success' && (
+          <>
+            {/* 1. Parte de Cima: Mensagem de Impacto */}
+            <div className="p-6 text-center bg-gradient-to-b from-gray-900 to-[#1a1a1a]">
+              <h2 className="text-3xl font-extrabold text-white mb-2 tracking-tight">
+                Espera um Pouco!
+              </h2>
+              <p className="text-[#FFD700] text-lg font-bold leading-tight">
+                Você vai sair sem pegar isso?
+              </p>
+            </div>
 
-        {/* 2. Parte Central: Imagem do eBook */}
-        <div className="px-10 pb-4 flex justify-center bg-[#1a1a1a]">
-          <div className="relative group max-w-[240px]">
-            <img 
-              src="/images/O Mapa das Parafusadeiras.webp" 
-              alt="Ebook O Mapa das Parafusadeiras" 
-              className="w-full h-auto rounded-lg shadow-[0_0_30px_rgba(255,215,0,0.2)] group-hover:scale-105 transition-transform duration-500"
-              style={{ maxHeight: '350px', objectFit: 'contain' }}
-              onError={(e) => {
-                (e.target as HTMLImageElement).src = 'https://placehold.co/1024x1536/1a1a1a/FFD700?text=O+Mapa+das+Parafusadeiras';
-              }}
-            />
-          </div>
-        </div>
+            {/* 2. Parte Central: Imagem do eBook */}
+            <div className="px-10 pb-4 flex justify-center bg-[#1a1a1a]">
+              <div className="relative group max-w-[240px]">
+                <img 
+                  src="/images/O Mapa das Parafusadeiras.webp" 
+                  alt="Ebook O Mapa das Parafusadeiras" 
+                  className="w-full h-auto rounded-lg shadow-[0_0_30px_rgba(255,215,0,0.2)] group-hover:scale-105 transition-transform duration-500"
+                  style={{ maxHeight: '350px', objectFit: 'contain' }}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'https://placehold.co/1024x1536/1a1a1a/FFD700?text=O+Mapa+das+Parafusadeiras';
+                  }}
+                />
+              </div>
+            </div>
+          </>
+        )}
 
         {/* 3. Parte de Baixo: Formulário e Chamada */}
         <div className="p-8 pt-2 bg-[#1a1a1a] text-center">
@@ -127,6 +130,11 @@ export const ExitIntentPopup: React.FC = () => {
                 </svg>
               </div>
               <p className="text-white font-bold text-xl">Pronto! Verifique seu e-mail em instantes.</p>
+              <div className="mt-4 p-3 bg-red-900/40 border border-red-500 rounded-lg">
+                <p className="text-[#FFD700] font-bold text-sm md:text-base uppercase tracking-widest leading-relaxed">
+                  SE O E-MAIL NÃO CHEGAR EM 1 MINUTO, OLHE SUA PASTA DE SPAM OU PROMOÇÕES E RESPONDA COM "OI" PARA RECEBER SEU EBOOK
+                </p>
+              </div>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
