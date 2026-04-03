@@ -61,7 +61,7 @@ export const BunnerDoMeio: React.FC = () => {
         {/* Topo: Texto */}
         <div className="w-full">
           <h2 className="text-xl md:text-2xl font-bold mb-2 tracking-tight flex items-center justify-center gap-2">
-            <span role="img" aria-label="ferramenta">🛠️</span> Dica Técnica: Fuja das parafusadeiras fracas
+            <span role="img" aria-label="ferramenta">🛠️</span> Dica de mestre: Fuja das parafusadeiras fracas
           </h2>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
             Descubra como escolher modelos profissionais pagando preço de hobby. Montei um guia que te ensina a não jogar dinheiro fora com parafusadeiras fracas.
