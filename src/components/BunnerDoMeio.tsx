@@ -32,18 +32,18 @@ export const BunnerDoMeio: React.FC = () => {
   // Se for sucesso, mostra apenas o card de agradecimento
   if (status === 'success') {
     return (
-      <div className="w-full bg-[#1a1a1a] rounded-xl shadow-2xl border border-green-500/50 my-12 p-6 animate-in fade-in duration-500">
+      <div className="w-full bg-green-50 rounded-xl border border-green-200 my-12 p-6 animate-in fade-in duration-500">
         <div className="flex flex-col items-center justify-center text-center gap-4">
-          <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(34,197,94,0.4)]">
+          <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-sm">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
             </svg>
           </div>
           <div>
-            <h2 className="text-2xl font-extrabold text-white mb-2">Quase lá! Seu guia está a caminho. 🚀</h2>
-            <p className="text-gray-300">Verifique sua caixa de entrada em instantes.</p>
-            <div className="mt-4 p-3 bg-red-900/40 border border-red-500 rounded-lg max-w-xl mx-auto">
-              <p className="text-[#FFD700] font-bold text-sm md:text-base tracking-wide leading-relaxed">
+            <h2 className="text-2xl font-bold text-green-900 mb-2">Quase lá! Seu guia está a caminho. 🚀</h2>
+            <p className="text-green-800">Verifique sua caixa de entrada em instantes.</p>
+            <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg max-w-xl mx-auto text-left">
+              <p className="text-red-800 font-bold text-sm tracking-wide leading-relaxed text-center">
                 ⚠️ IMPORTANTE: Se o e-mail não chegar em 1 minuto, ele pode ter caído por engano no SPAM ou em PROMOÇÕES.
               </p>
             </div>
@@ -55,46 +55,37 @@ export const BunnerDoMeio: React.FC = () => {
 
   // Se não for sucesso, mostra o banner com o formulário
   return (
-    <div className="w-full bg-[#1a1a1a] rounded-xl shadow-2xl overflow-hidden border border-gray-800 my-12 p-6 md:p-8">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-6">
+    <div className="w-full bg-gray-50 rounded-xl border border-dotted border-gray-400 my-12 p-6 md:p-8 text-gray-800">
+      <div className="flex flex-col items-center text-center gap-4">
         
-        {/* Esquerda: Texto */}
-        <div className="w-full md:flex-1 text-center md:text-left md:pl-4">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-2 md:mb-1 tracking-tight leading-tight">
-            Espera um Pouco!
+        {/* Topo: Texto */}
+        <div className="w-full">
+          <h2 className="text-xl md:text-2xl font-bold mb-2 tracking-tight flex items-center justify-center gap-2">
+            <span role="img" aria-label="ferramenta">🛠️</span> Dica Técnica: Fuja das parafusadeiras fracas
           </h2>
-          <p className="text-[#FFD700] text-lg md:text-xl font-bold leading-tight">
-            Você vai sair sem pegar isso?
+          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+            Descubra como escolher modelos profissionais pagando preço de hobby. Montei um guia que te ensina a não jogar dinheiro fora com parafusadeiras fracas.
           </p>
         </div>
 
-        {/* Meio: Imagem */}
-        <div className="flex-shrink-0 mx-0 md:mx-4">
-             <img 
-              src="/images/O Mapa das Parafusadeiras.webp" 
-              alt="Ebook O Mapa das Parafusadeiras" 
-              className="w-48 md:w-48 h-auto rounded shadow-lg transform rotate-2 hover:rotate-0 transition-transform duration-300"
-            />
-        </div>
-
-        {/* Direita: Formulário */}
-        <div className="w-full max-w-sm md:flex-1 md:max-w-sm">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-3 md:gap-2">
+        {/* Baixo: Formulário */}
+        <div className="w-full max-w-md mt-2">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-3">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Deixe aqui seu melhor email"
-                className="w-full px-4 py-3 md:py-2 bg-white text-gray-900 placeholder-gray-500 rounded focus:outline-none focus:ring-1 focus:ring-[#FFD700] text-base font-medium shadow-inner"
+                className="w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 placeholder-gray-500 rounded focus:outline-none focus:ring-2 focus:ring-[#FFD700] text-base shadow-sm"
                 required
               />
               
               <button
                 type="submit"
                 disabled={status === 'submitting' || !isValidEmail}
-                className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-black py-3 md:py-3 px-4 rounded text-base uppercase tracking-tighter transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 shadow-[0_2px_8px_rgba(255,215,0,0.3)] whitespace-nowrap"
+                className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-bold py-3 px-4 rounded text-base transition-colors disabled:opacity-50 shadow-sm"
               >
-                {status === 'submitting' ? '...' : 'QUERO MEU EBOOK GRATIS'}
+                {status === 'submitting' ? '...' : 'Me mostre os modelos profissionais'}
               </button>
             </form>
         </div>
