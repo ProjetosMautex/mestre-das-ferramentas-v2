@@ -136,7 +136,7 @@ export const ExitIntentPopup: React.FC = () => {
                 disabled={status === 'submitting' || !isValidEmail}
                 className="w-full sm:w-auto bg-[#FFD700] hover:bg-[#ffcd38] text-black font-bold py-2 px-6 rounded text-sm transition-colors whitespace-nowrap disabled:opacity-50"
               >
-                {status === 'submitting' ? '...' : 'QUERO MEU EBOOK'}
+                {status === 'submitting' ? '...' : 'VER MODELOS PRO'}
               </button>
             </form>
           </>
