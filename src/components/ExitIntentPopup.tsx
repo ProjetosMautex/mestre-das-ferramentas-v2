@@ -132,7 +132,7 @@ export const ExitIntentPopup: React.FC = () => {
               <p className="text-white font-bold text-xl">Pronto! Verifique seu e-mail em instantes.</p>
               <div className="mt-4 p-3 bg-red-900/40 border border-red-500 rounded-lg">
                 <p className="text-[#FFD700] font-bold text-sm md:text-base uppercase tracking-widest leading-relaxed">
-                  SE O E-MAIL NÃO CHEGAR EM 1 MINUTO, ELE PODE TER CAÍDO POR ENGANO NO SPAM OU EM PROMOÇÕES. MARQUE NOSSO E-MAIL COMO "NÃO É SPAM" CASO ESTEJA LÁ PARA FICAR POR DENTRO DE TUDO SOBRE FERRAMENTAS.
+                  SE O E-MAIL NÃO CHEGAR EM 1 MINUTO, ELE PODE TER CAÍDO POR ENGANO NO SPAM OU EM PROMOÇÕES.
                 </p>
               </div>
             </div>
