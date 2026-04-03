@@ -55,18 +55,20 @@ export const BunnerDoMeio: React.FC = () => {
 
   // Se não for sucesso, mostra o banner com o formulário
   return (
-    <div className="w-full bg-gray-50 rounded-xl border border-dotted border-gray-400 my-12 p-6 md:p-8 text-gray-800">
-      <div className="flex flex-col items-center text-center gap-4">
-        
-        {/* Topo: Texto */}
-        <div className="w-full">
-          <h2 className="text-xl md:text-2xl font-bold mb-2 tracking-tight flex items-center justify-center gap-2">
-            <span role="img" aria-label="ferramenta">🛠️</span> Dica de mestre: Fuja das parafusadeiras fracas
-          </h2>
-          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-            Descubra como escolher modelos profissionais pagando preço de hobby. Montei um guia que te ensina a não jogar dinheiro fora com parafusadeiras fracas.
-          </p>
-        </div>
+    <div className="my-12">
+      <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 text-center tracking-tight leading-tight">
+        <span role="img" aria-label="ferramenta">🛠️</span> Dica de Mestre
+      </h2>
+      
+      <div className="w-full bg-gray-50 rounded-xl border border-dotted border-gray-400 p-6 md:p-8 text-gray-800 shadow-sm">
+        <div className="flex flex-col items-center text-center gap-4">
+          
+          {/* Topo: Texto Curto */}
+          <div className="w-full">
+            <p className="text-base md:text-lg text-gray-700 font-medium max-w-2xl mx-auto mb-2 leading-relaxed">
+              Aprenda a escolher modelos profissionais pagando preço de hobby. Baixe o guia grátis e não jogue dinheiro fora.
+            </p>
+          </div>
 
         {/* Baixo: Formulário */}
         <div className="w-full max-w-md mt-2">
@@ -90,6 +92,7 @@ export const BunnerDoMeio: React.FC = () => {
             </form>
         </div>
       </div>
+    </div>
     </div>
   );
 };
