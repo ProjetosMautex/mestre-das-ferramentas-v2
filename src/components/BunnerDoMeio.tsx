@@ -40,11 +40,11 @@ export const BunnerDoMeio: React.FC = () => {
             </svg>
           </div>
           <div>
-            <h2 className="text-2xl font-extrabold text-white mb-2">Obrigado!</h2>
-            <p className="text-gray-300">Pronto! Verifique seu e-mail em instantes.</p>
+            <h2 className="text-2xl font-extrabold text-white mb-2">Quase lá! Seu guia está a caminho. 🚀</h2>
+            <p className="text-gray-300">Verifique sua caixa de entrada em instantes.</p>
             <div className="mt-4 p-3 bg-red-900/40 border border-red-500 rounded-lg max-w-xl mx-auto">
-              <p className="text-[#FFD700] font-bold text-sm md:text-base uppercase tracking-widest leading-relaxed">
-                SE O E-MAIL NÃO CHEGAR EM 1 MINUTO, ELE PODE TER CAÍDO POR ENGANO NO SPAM OU EM PROMOÇÕES.
+              <p className="text-[#FFD700] font-bold text-sm md:text-base tracking-wide leading-relaxed">
+                ⚠️ IMPORTANTE: Se o e-mail não chegar em 1 minuto, ele pode ter caído por engano no SPAM ou em PROMOÇÕES.
               </p>
             </div>
           </div>

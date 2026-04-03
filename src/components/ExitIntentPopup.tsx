@@ -129,10 +129,11 @@ export const ExitIntentPopup: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <p className="text-white font-bold text-xl">Pronto! Verifique seu e-mail em instantes.</p>
+              <p className="text-white font-bold text-xl">Quase lá! Seu guia está a caminho. 🚀</p>
+              <p className="text-gray-300 mt-2">Verifique sua caixa de entrada em instantes.</p>
               <div className="mt-4 p-3 bg-red-900/40 border border-red-500 rounded-lg">
-                <p className="text-[#FFD700] font-bold text-sm md:text-base uppercase tracking-widest leading-relaxed">
-                  SE O E-MAIL NÃO CHEGAR EM 1 MINUTO, ELE PODE TER CAÍDO POR ENGANO NO SPAM OU EM PROMOÇÕES.
+                <p className="text-[#FFD700] font-bold text-sm md:text-base tracking-wide leading-relaxed">
+                  ⚠️ IMPORTANTE: Se o e-mail não chegar em 1 minuto, ele pode ter caído por engano no SPAM ou em PROMOÇÕES.
                 </p>
               </div>
             </div>
