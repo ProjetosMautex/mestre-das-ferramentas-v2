@@ -90,8 +90,20 @@ export const ExitIntentPopup: React.FC = () => {
   if (!isDiscreetVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-[#1a1a1a] text-white p-4 shadow-[0_-4px_25px_rgba(0,0,0,0.6)] animate-in slide-in-from-bottom duration-500 border-t border-gray-800">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-[#1a1a1a] text-white p-4 shadow-[0_-4px_25px_rgba(0,0,0,0.6)] animate-in slide-in-from-bottom duration-500 border-t border-gray-800 relative pb-6 md:pb-4">
+      
+      {/* X discreto canto superior direito (antes de completar) */}
+      {status !== 'success' && (
+        <button 
+          onClick={handleCloseDiscreet}
+          className="absolute top-2 right-2 text-gray-400 hover:text-white transition-colors p-1"
+          aria-label="Fechar"
+        >
+          <X size={18} strokeWidth={2} />
+        </button>
+      )}
+
+      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 mt-2 md:mt-0 px-2 md:px-0">
         
         {status === 'success' ? (
           <div className="w-full flex items-center justify-between gap-4">
