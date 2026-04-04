@@ -66,7 +66,7 @@ export const BunnerDoMeio: React.FC = () => {
           {/* Topo: Texto Curto */}
           <div className="w-full">
             <p className="text-base md:text-lg text-gray-700 font-medium max-w-2xl mx-auto mb-2 leading-relaxed">
-              Aprenda a escolher modelos profissionais pagando preço de hobby. Baixe o guia grátis e não jogue dinheiro fora.
+              🎁 <strong className="text-gray-900">Guia Grátis:</strong> Aprenda a escolher modelos profissionais pagando preço de hobby e não jogue dinheiro fora.
             </p>
           </div>
 
