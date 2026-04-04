@@ -90,7 +90,7 @@ export const ExitIntentPopup: React.FC = () => {
   if (!isDiscreetVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-[#1a1a1a] text-white p-4 shadow-[0_-4px_25px_rgba(0,0,0,0.6)] animate-in slide-in-from-bottom duration-500 border-t border-gray-800 relative pb-6 md:pb-4">
+    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-[#1a1a1a] text-white p-4 shadow-[0_-4px_25px_rgba(0,0,0,0.6)] animate-in slide-in-from-bottom duration-500 border-t border-gray-800 pb-6 md:pb-4">
       
       {/* X discreto canto superior direito (antes de completar) */}
       {status !== 'success' && (
