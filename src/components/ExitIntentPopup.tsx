@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
 export const ExitIntentPopup: React.FC = () => {
-  const [isDiscreetVisible, setIsDiscreetVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const [bannerType, setBannerType] = useState<'discreet' | 'big'>('discreet');
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
 
@@ -10,8 +11,7 @@ export const ExitIntentPopup: React.FC = () => {
   const isValidEmail = emailRegex.test(email);
 
   useEffect(() => {
-    // Para não incomodar quem já assinou, caso você futuramente adicione flag de inscrito, pode validar aqui
-    if (sessionStorage.getItem('discreetClosed')) return;
+    if (sessionStorage.getItem('closedAll')) return;
 
     if (!sessionStorage.getItem('siteEntryTime')) {
       sessionStorage.setItem('siteEntryTime', String(Date.now()));
@@ -22,15 +22,23 @@ export const ExitIntentPopup: React.FC = () => {
     const TARGET_MS = 37000;
     const remaining = Math.max(TARGET_MS - elapsed, 0);
 
-    const triggerPopup = () => {
-      if (!sessionStorage.getItem('discreetClosed')) {
-        setIsDiscreetVisible(true);
+    const triggerDiscreet = () => {
+      if (!sessionStorage.getItem('closedAll') && !sessionStorage.getItem('bigBannerShown')) {
+        setIsVisible(true);
+      }
+    };
+
+    const triggerBig = () => {
+      if (!sessionStorage.getItem('closedAll') && !sessionStorage.getItem('bigBannerShown')) {
+        setIsVisible(true);
+        setBannerType('big');
+        sessionStorage.setItem('bigBannerShown', 'true');
       }
     };
 
     // --- DESKTOP: Mouse Sai ---
     const handleExitIntent = (e: MouseEvent) => {
-      if (e.clientY <= 0) triggerPopup();
+      if (e.clientY <= 0) triggerBig();
     };
 
     // --- MOBILE SCROLL INTENT ---
@@ -39,16 +47,16 @@ export const ExitIntentPopup: React.FC = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       const currentTime = Date.now();
-      const distance = lastScrollY - currentScrollY; 
+      const distance = lastScrollY - currentScrollY; // positive means scrolling UP
       const timeDiff = currentTime - lastScrollTime;
       
-      if (distance > 50 && timeDiff > 0 && timeDiff < 100) triggerPopup();
+      if (distance > 50 && timeDiff > 0 && timeDiff < 100) triggerBig();
       
       lastScrollY = currentScrollY;
       lastScrollTime = currentTime;
     };
 
-    const timer = setTimeout(triggerPopup, remaining);
+    const timer = setTimeout(triggerDiscreet, remaining);
 
     document.addEventListener('mouseleave', handleExitIntent);
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -60,9 +68,15 @@ export const ExitIntentPopup: React.FC = () => {
     };
   }, []);
 
-  const handleCloseDiscreet = () => {
-    setIsDiscreetVisible(false);
-    sessionStorage.setItem('discreetClosed', 'true');
+  const handleCloseAll = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setIsVisible(false);
+    sessionStorage.setItem('closedAll', 'true');
+  };
+
+  const handleDiscreetClick = () => {
+    setBannerType('big');
+    sessionStorage.setItem('bigBannerShown', 'true');
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -87,73 +101,83 @@ export const ExitIntentPopup: React.FC = () => {
     }
   };
 
-  if (!isDiscreetVisible) return null;
+  if (!isVisible) return null;
 
+  if (bannerType === 'discreet') {
+    return (
+      <div 
+        onClick={handleDiscreetClick}
+        className="fixed bottom-0 left-0 right-0 z-[100] bg-[#1a1a1a] text-white p-4 shadow-[0_-4px_25px_rgba(0,0,0,0.6)] animate-in slide-in-from-bottom duration-500 border-t border-gray-800 cursor-pointer pb-6 md:pb-4 hover:bg-gray-900 transition-colors"
+      >
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-2 md:px-0">
+          <div className="flex-1 text-center md:text-left text-sm md:text-base font-medium pointer-events-none">
+            🎁 <strong className="text-[#FFD700]">Guia Grátis:</strong> Aprenda a comprar parafusadeira PRO pelo preço de Hobby.
+          </div>
+          <button
+            className="w-full sm:w-auto bg-[#FFD700] hover:bg-[#ffcd38] text-black font-bold py-2 px-6 rounded text-sm transition-colors whitespace-nowrap pointer-events-none"
+          >
+            VER AGORA
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // BIG BANNER
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-[#1a1a1a] text-white p-4 shadow-[0_-4px_25px_rgba(0,0,0,0.6)] animate-in slide-in-from-bottom duration-500 border-t border-gray-800 pb-6 md:pb-4">
-      
-      {/* X discreto canto superior direito (antes de completar) */}
-      {status !== 'success' && (
+    <div className="fixed inset-0 z-[150] flex flex-col justify-center items-center bg-black/80 px-4 animate-in fade-in duration-300">
+      <div className="relative bg-[#1a1a1a] p-5 md:p-6 rounded-xl max-w-sm md:max-w-md w-full shadow-2xl border border-gray-700 max-h-[90vh] overflow-y-auto">
         <button 
-          onClick={handleCloseDiscreet}
-          className="absolute top-2 right-2 text-gray-400 hover:text-white transition-colors p-1"
+          onClick={handleCloseAll}
+          className="absolute top-2 right-2 text-gray-400 hover:text-white transition-colors bg-gray-800 hover:bg-gray-700 rounded-full p-1"
           aria-label="Fechar"
         >
           <X size={18} strokeWidth={2} />
         </button>
-      )}
 
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 mt-2 md:mt-0 px-2 md:px-0">
-        
         {status === 'success' ? (
-          <div className="w-full flex items-center justify-between gap-4">
-            <div className="flex-1 flex flex-col md:flex-row items-center gap-3">
-              <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mb-2 md:mb-0">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <div className="text-center md:text-left">
-                <h3 className="font-bold text-lg text-green-400">Guia a caminho! 🚀</h3>
-                <p className="text-sm text-gray-300">
-                  <span className="font-bold text-[#FFD700]">⚠️ SPAM:</span> Se não chegar em 1 minuto, olhe lá!
-                </p>
-              </div>
+          <div className="flex flex-col items-center justify-center py-6">
+            <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+              </svg>
             </div>
-            <button 
-              onClick={handleCloseDiscreet}
-              className="p-2 ml-2 bg-gray-800 hover:bg-gray-700 rounded transition-colors self-start md:self-auto"
-              aria-label="Fechar"
-            >
-              <X size={24} strokeWidth={2} />
-            </button>
+            <h3 className="font-bold text-xl text-green-400 mb-2 text-center">Guia a caminho! 🚀</h3>
+            <p className="text-gray-300 text-center text-base">
+              <strong className="text-[#FFD700]">⚠️ SPAM:</strong> Se não chegar em 1 minuto, olhe lá!
+            </p>
           </div>
         ) : (
-          <>
-            <div className="flex-1 text-center md:text-left text-sm md:text-base font-medium">
-              🎁 <strong className="text-[#FFD700]">Guia Grátis:</strong> Aprenda a comprar parafusadeira PRO pelo preço de Hobby.
-            </div>
+          <div className="flex flex-col items-center">
+            <h2 className="text-[#FFD700] font-black text-xl md:text-2xl text-center leading-tight mb-2 md:mb-3 uppercase">
+              ESPERA!!!<br/>Você vai sair sem isso
+            </h2>
             
-            <form onSubmit={handleSubmit} className="w-full md:w-auto flex flex-col sm:flex-row gap-2 flex-shrink-0">
+            <img 
+              src="/images/O Mapa das Parafusadeiras.webp" 
+              alt="Capa Ebook O Mapa das Parafusadeiras" 
+              className="w-full max-w-[240px] md:max-w-[280px] h-auto object-contain mb-4 drop-shadow-[0_0_15px_rgba(255,215,0,0.2)]"
+            />
+
+            <form onSubmit={handleSubmit} className="w-full flex flex-col gap-2">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Seu melhor e-mail aqui"
-                className="w-full sm:w-64 px-4 py-2 bg-white text-gray-900 placeholder-gray-500 rounded focus:outline-none focus:ring-2 focus:ring-[#FFD700] text-sm shadow-inner"
+                placeholder="Seu melhor email aqui"
+                className="w-full px-3 py-2 bg-white text-gray-900 placeholder-gray-500 rounded-lg focus:outline-none focus:ring-4 focus:ring-[#FFD700]/50 text-sm shadow-inner text-center font-medium"
                 required
               />
               <button
                 type="submit"
                 disabled={status === 'submitting' || !isValidEmail}
-                className="w-full sm:w-auto bg-[#FFD700] hover:bg-[#ffcd38] text-black font-bold py-2 px-6 rounded text-sm transition-colors whitespace-nowrap disabled:opacity-50"
+                className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-black py-3 px-4 rounded-lg text-base transition-transform hover:scale-105 active:scale-95 whitespace-nowrap disabled:opacity-50 mt-1 uppercase shadow-lg shadow-[#FFD700]/20"
               >
-                {status === 'submitting' ? '...' : 'VER MODELOS PRO'}
+                {status === 'submitting' ? 'Aguarde...' : 'VER MODELOS PRO'}
               </button>
             </form>
-          </>
+          </div>
         )}
-
       </div>
     </div>
   );
