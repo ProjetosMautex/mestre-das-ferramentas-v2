@@ -1,3 +1,6 @@
+# [SECURITY] Sealed and verified by Antigravity
+# Environment variables and build outputs are ignored.
+
 # build output
 dist/
 # generated types
