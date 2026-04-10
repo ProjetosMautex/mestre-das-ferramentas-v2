@@ -111,7 +111,7 @@ export const ExitIntentPopup: React.FC = () => {
       >
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-2 md:px-0">
           <div className="flex-1 text-center md:text-left text-sm md:text-base font-medium pointer-events-none">
-            🎁 <strong className="text-[#FFD700]">Guia Grátis:</strong> Aprenda a comprar parafusadeira PRO pelo preço de Hobby.
+            🎁 <strong className="text-[#FFD700]">Presente Rápido:</strong> Baixe 5 projetos práticos para transformar sua casa hoje.
           </div>
           <button
             className="w-full sm:w-auto bg-[#FFD700] hover:bg-[#ffcd38] text-black font-bold py-2 px-6 rounded text-sm transition-colors whitespace-nowrap pointer-events-none"
@@ -144,18 +144,18 @@ export const ExitIntentPopup: React.FC = () => {
             </div>
             <h3 className="font-bold text-xl text-green-400 mb-2 text-center">Guia a caminho! 🚀</h3>
             <p className="text-gray-300 text-center text-base">
-              <strong className="text-[#FFD700]">⚠️ SPAM:</strong> Se não chegar em 1 minuto, olhe lá!
+              <strong className="text-[#FFD700]">⚠️ SPAM:</strong> Se não chegar em 1 minuto, olhe no SPAM!
             </p>
           </div>
         ) : (
           <div className="flex flex-col items-center">
             <h2 className="text-[#FFD700] font-black text-xl md:text-2xl text-center leading-tight mb-2 md:mb-3 uppercase">
-              ESPERA!!!<br/>Você vai sair sem isso
+              ESPERA!!!<br/>Não vá embora sem o seu presente...
             </h2>
             
             <img 
-              src="/images/O Mapa das Parafusadeiras.webp" 
-              alt="Capa Ebook O Mapa das Parafusadeiras" 
+              src="/images/melhorebook.webp" 
+              alt="Capa Ebook Projetos Práticos para Renovar sua Casa" 
               className="w-full max-w-[240px] md:max-w-[280px] h-auto object-contain mb-4 drop-shadow-[0_0_15px_rgba(255,215,0,0.2)]"
             />
 
@@ -164,7 +164,7 @@ export const ExitIntentPopup: React.FC = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Seu melhor email aqui"
+                placeholder="Digite seu melhor e-mail aqui..."
                 className="w-full px-3 py-2 bg-white text-gray-900 placeholder-gray-500 rounded-lg focus:outline-none focus:ring-4 focus:ring-[#FFD700]/50 text-sm shadow-inner text-center font-medium"
                 required
               />
@@ -173,7 +173,7 @@ export const ExitIntentPopup: React.FC = () => {
                 disabled={status === 'submitting' || !isValidEmail}
                 className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-black py-3 px-4 rounded-lg text-base transition-transform hover:scale-105 active:scale-95 whitespace-nowrap disabled:opacity-50 mt-1 uppercase shadow-lg shadow-[#FFD700]/20"
               >
-                {status === 'submitting' ? 'Aguarde...' : 'VER MODELOS PRO'}
+                {status === 'submitting' ? 'Aguarde...' : 'QUERO OS 5 PROJETOS GRÁTIS'}
               </button>
             </form>
           </div>

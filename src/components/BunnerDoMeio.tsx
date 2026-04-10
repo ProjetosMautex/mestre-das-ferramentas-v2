@@ -40,7 +40,7 @@ export const BunnerDoMeio: React.FC = () => {
             </svg>
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-green-900 mb-2">Quase lá! Seu guia está a caminho. 🚀</h2>
+            <h2 className="text-2xl font-bold text-green-900 mb-2">Quase lá! Seus projetos estão a caminho. 🚀</h2>
             <p className="text-green-800">Verifique sua caixa de entrada em instantes.</p>
             <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg max-w-xl mx-auto text-left">
               <p className="text-red-800 font-bold text-sm tracking-wide leading-relaxed text-center">
@@ -57,7 +57,7 @@ export const BunnerDoMeio: React.FC = () => {
   return (
     <div className="my-12">
       <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 text-center tracking-tight leading-tight">
-        <span role="img" aria-label="ferramenta">🛠️</span> Dica de Mestre
+        <span role="img" aria-label="ferramenta">🛠️</span> Mão na Massa
       </h2>
       
       <div className="w-full bg-gray-50 rounded-xl border border-dotted border-gray-400 p-6 md:p-8 text-gray-800 shadow-sm">
@@ -66,7 +66,7 @@ export const BunnerDoMeio: React.FC = () => {
           {/* Topo: Texto Curto */}
           <div className="w-full">
             <p className="text-base md:text-lg text-gray-700 font-medium max-w-2xl mx-auto mb-2 leading-relaxed">
-              🎁 <strong className="text-gray-900">Guia Grátis:</strong> Aprenda a escolher modelos profissionais pagando preço de hobby e não jogue dinheiro fora.
+              🎁 <strong className="text-gray-900">Guia Grátis:</strong> 5 Projetos Práticos para renovar sua casa neste fim de semana (mesmo sem ter experiência).
             </p>
           </div>
 
@@ -77,7 +77,7 @@ export const BunnerDoMeio: React.FC = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Deixe aqui seu melhor email"
+                placeholder="Digite seu melhor e-mail aqui..."
                 className="w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 placeholder-gray-500 rounded focus:outline-none focus:ring-2 focus:ring-[#FFD700] text-base shadow-sm"
                 required
               />
@@ -87,7 +87,7 @@ export const BunnerDoMeio: React.FC = () => {
                 disabled={status === 'submitting' || !isValidEmail}
                 className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-bold py-3 px-4 rounded text-base transition-colors disabled:opacity-50 shadow-sm"
               >
-                {status === 'submitting' ? '...' : 'Me mostre os modelos profissionais'}
+                {status === 'submitting' ? 'Preparando guia...' : 'QUERO OS 5 PROJETOS GRÁTIS'}
               </button>
             </form>
         </div>
