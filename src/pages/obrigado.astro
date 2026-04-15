@@ -1,0 +1,70 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Obrigado por se inscrever! Seu guia está a caminho." />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Quase lá! Guia Maker a caminho 🚀</title>
+
+		<!-- Google Analytics GA4 -->
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-DV27LFW49F"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-DV27LFW49F');
+		</script>
+	</head>
+	<body class="min-h-screen flex flex-col bg-[#1a1a1a] text-white font-sans">
+		<main class="flex-grow flex items-center justify-center px-4 py-12">
+			<div class="max-w-2xl w-full bg-[#242424] p-8 md:p-12 rounded-3xl shadow-2xl border border-gray-800 text-center">
+				<div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg shadow-green-500/20">
+					<svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+					</svg>
+				</div>
+				
+				<h1 class="text-3xl md:text-5xl font-black mb-6 tracking-tight">
+					Quase tudo pronto! 🚀
+				</h1>
+				
+				<p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+					O link para baixar seu <span class="text-[#FFD700] font-bold">Guia Maker: 5 Projetos Práticos</span> já foi enviado para o seu e-mail.
+				</p>
+
+				<div class="bg-[#2d2d2d] p-6 rounded-2xl border border-red-500/30 mb-8 inline-block text-left">
+					<p class="text-red-400 font-bold text-lg mb-2 flex items-center gap-2">
+						<span>⚠️</span> DICA DE MESTRE:
+					</p>
+					<p class="text-gray-300">
+						Se o e-mail não chegar em 1 minuto, verifique sua pasta de <strong class="text-white">SPAM ou Promoções</strong>. Às vezes os servidores de e-mail cometem esse erro!
+					</p>
+				</div>
+
+				<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+					<a 
+						href="/" 
+						class="w-full sm:w-auto bg-[#FFD700] hover:bg-[#ffcd38] text-black font-black py-4 px-10 rounded-xl text-lg transition-transform hover:scale-105 active:scale-95 shadow-lg shadow-[#FFD700]/10"
+					>
+						VOLTAR PARA O BLOG
+					</a>
+				</div>
+			</div>
+		</main>
+
+		<footer class="py-8 text-center text-gray-500 text-sm">
+			<p>&copy; {new Date().getFullYear()} Mestre das Ferramentas. Todos os direitos reservados.</p>
+		</footer>
+	</body>
+</html>
+
+<style is:global>
+	html {
+		scroll-behavior: smooth;
+	}
+</style>

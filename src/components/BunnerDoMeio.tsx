@@ -18,7 +18,8 @@ export const BunnerDoMeio: React.FC = () => {
         body: JSON.stringify({ email }),
       });
       if (res.ok) {
-        setStatus('success');
+        sessionStorage.setItem('emailSubmitted', 'true');
+        window.location.href = '/obrigado';
       } else {
         setStatus('idle');
         alert('Erro ao registrar. Tente novamente.');
@@ -66,7 +67,7 @@ export const BunnerDoMeio: React.FC = () => {
           {/* Topo: Texto Curto */}
           <div className="w-full">
             <p className="text-base md:text-lg text-gray-700 font-medium max-w-2xl mx-auto mb-2 leading-relaxed">
-              🎁 <strong className="text-gray-900">Guia Grátis:</strong> 5 Projetos Práticos para renovar sua casa neste fim de semana (mesmo sem ter experiência).
+              🛠️ <strong className="text-gray-900">Guia Maker Grátis:</strong> 5 projetos para renovar sua casa (mesmo sem prática).
             </p>
           </div>
 
@@ -85,9 +86,9 @@ export const BunnerDoMeio: React.FC = () => {
               <button
                 type="submit"
                 disabled={status === 'submitting' || !isValidEmail}
-                className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-bold py-3 px-4 rounded text-base transition-colors disabled:opacity-50 shadow-sm"
+                className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-black py-4 px-4 rounded text-base transition-colors disabled:opacity-50 shadow-sm"
               >
-                {status === 'submitting' ? 'Preparando guia...' : 'QUERO OS 5 PROJETOS GRÁTIS'}
+                {status === 'submitting' ? 'Aguarde...' : 'BAIXAR AGORA'}
               </button>
             </form>
         </div>

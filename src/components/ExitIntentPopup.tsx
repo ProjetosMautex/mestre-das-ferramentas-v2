@@ -4,6 +4,7 @@ import { X } from 'lucide-react';
 export const ExitIntentPopup: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [bannerType, setBannerType] = useState<'discreet' | 'big'>('discreet');
+  const [showCloseButton, setShowCloseButton] = useState(false);
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
 
@@ -11,52 +12,61 @@ export const ExitIntentPopup: React.FC = () => {
   const isValidEmail = emailRegex.test(email);
 
   useEffect(() => {
-    if (sessionStorage.getItem('closedAll')) return;
+    // Se já fechou tudo ou já se inscreveu nesta sessão, não faz nada
+    if (sessionStorage.getItem('closedAll') || sessionStorage.getItem('emailSubmitted')) return;
 
     if (!sessionStorage.getItem('siteEntryTime')) {
       sessionStorage.setItem('siteEntryTime', String(Date.now()));
     }
 
     const entryTime = Number(sessionStorage.getItem('siteEntryTime'));
-    const elapsed = Date.now() - entryTime;
-    const TARGET_MS = 37000;
-    const remaining = Math.max(TARGET_MS - elapsed, 0);
 
     const triggerDiscreet = () => {
-      if (!sessionStorage.getItem('closedAll') && !sessionStorage.getItem('bigBannerShown')) {
+      if (!sessionStorage.getItem('closedAll') && !sessionStorage.getItem('emailSubmitted') && !sessionStorage.getItem('bigBannerShown')) {
+        setBannerType('discreet');
         setIsVisible(true);
       }
     };
 
-    const triggerBig = () => {
-      if (!sessionStorage.getItem('closedAll') && !sessionStorage.getItem('bigBannerShown')) {
-        setIsVisible(true);
-        setBannerType('big');
-        sessionStorage.setItem('bigBannerShown', 'true');
-      }
-    };
-
-    // --- DESKTOP: Mouse Sai ---
     const handleExitIntent = (e: MouseEvent) => {
-      if (e.clientY <= 0) triggerBig();
+      const elapsed = Date.now() - entryTime;
+      // Triga apenas se passou 40s no site (PC EXIT INTENT)
+      if (e.clientY <= 0 && elapsed >= 40000) {
+        if (!sessionStorage.getItem('closedAll') && !sessionStorage.getItem('emailSubmitted') && !sessionStorage.getItem('bigBannerShown')) {
+          setBannerType('big');
+          setIsVisible(true);
+          sessionStorage.setItem('bigBannerShown', 'true');
+        }
+      }
     };
 
-    // --- MOBILE SCROLL INTENT ---
     let lastScrollY = window.scrollY;
     let lastScrollTime = Date.now();
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       const currentTime = Date.now();
-      const distance = lastScrollY - currentScrollY; // positive means scrolling UP
+      const distance = lastScrollY - currentScrollY; // positivo se rolar para CIMA
       const timeDiff = currentTime - lastScrollTime;
+      const elapsed = Date.now() - entryTime;
       
-      if (distance > 50 && timeDiff > 0 && timeDiff < 100) triggerBig();
+      // Triga se rolar rápido para cima após 60s no site
+      if (distance > 50 && timeDiff > 0 && timeDiff < 100 && elapsed >= 60000) {
+        if (!sessionStorage.getItem('closedAll') && !sessionStorage.getItem('emailSubmitted') && !sessionStorage.getItem('bigBannerShown')) {
+          setBannerType('big');
+          setIsVisible(true);
+          sessionStorage.setItem('bigBannerShown', 'true');
+        }
+      }
       
       lastScrollY = currentScrollY;
       lastScrollTime = currentTime;
     };
 
-    const timer = setTimeout(triggerDiscreet, remaining);
+    const elapsed = Date.now() - entryTime;
+    const DISCREET_MS = 30000;
+    const remainingDiscreet = Math.max(DISCREET_MS - elapsed, 0);
+
+    const discreetTimer = setTimeout(triggerDiscreet, remainingDiscreet);
 
     document.addEventListener('mouseleave', handleExitIntent);
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -64,19 +74,26 @@ export const ExitIntentPopup: React.FC = () => {
     return () => {
       document.removeEventListener('mouseleave', handleExitIntent);
       window.removeEventListener('scroll', handleScroll);
-      clearTimeout(timer);
+      clearTimeout(discreetTimer);
     };
   }, []);
 
-  const handleCloseAll = (e?: React.MouseEvent) => {
+  // Delay para aparecer o botão de fechar (X) e o link "Não obrigado"
+  // Reseta o timer sempre que a visibilidade ou o tipo de banner muda
+  useEffect(() => {
+    if (isVisible) {
+      setShowCloseButton(false);
+      const timer = setTimeout(() => setShowCloseButton(true), 5000);
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, [isVisible, bannerType]);
+
+  const handleClose = (e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
     setIsVisible(false);
     sessionStorage.setItem('closedAll', 'true');
-  };
-
-  const handleDiscreetClick = () => {
-    setBannerType('big');
-    sessionStorage.setItem('bigBannerShown', 'true');
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -90,7 +107,8 @@ export const ExitIntentPopup: React.FC = () => {
         body: JSON.stringify({ email }),
       });
       if (res.ok) {
-        setStatus('success');
+        sessionStorage.setItem('emailSubmitted', 'true');
+        window.location.href = '/obrigado';
       } else {
         setStatus('idle');
         alert('Erro ao registrar. Tente novamente.');
@@ -105,80 +123,110 @@ export const ExitIntentPopup: React.FC = () => {
 
   if (bannerType === 'discreet') {
     return (
-      <div 
-        onClick={handleDiscreetClick}
-        className="fixed bottom-0 left-0 right-0 z-[100] bg-[#1a1a1a] text-white p-4 shadow-[0_-4px_25px_rgba(0,0,0,0.6)] animate-in slide-in-from-bottom duration-500 border-t border-gray-800 cursor-pointer pb-6 md:pb-4 hover:bg-gray-900 transition-colors"
-      >
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-2 md:px-0">
-          <div className="flex-1 text-center md:text-left text-sm md:text-base font-medium pointer-events-none">
-            🎁 <strong className="text-[#FFD700]">Presente Rápido:</strong> Baixe 5 projetos práticos para transformar sua casa hoje.
-          </div>
-          <button
-            className="w-full sm:w-auto bg-[#FFD700] hover:bg-[#ffcd38] text-black font-bold py-2 px-6 rounded text-sm transition-colors whitespace-nowrap pointer-events-none"
-          >
-            VER AGORA
-          </button>
-        </div>
-      </div>
-    );
-  }
+      <div className="fixed bottom-0 left-0 right-0 z-[100] bg-[#1a1a1a] text-white p-4 shadow-[0_-4px_25px_rgba(0,0,0,0.6)] animate-in slide-in-from-bottom duration-500 border-t border-gray-800 pb-6 md:pb-4">
+        <div className="max-w-5xl mx-auto relative px-2">
+          {showCloseButton && (
+            <button 
+              onClick={handleClose}
+              className="absolute -top-1 -right-2 md:top-0 md:right-0 p-1 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors text-gray-400 hover:text-white"
+              aria-label="Fechar"
+            >
+              <X size={16} />
+            </button>
+          )}
 
-  // BIG BANNER
-  return (
-    <div className="fixed inset-0 z-[150] flex flex-col justify-center items-center bg-black/80 px-4 animate-in fade-in duration-300">
-      <div className="relative bg-[#1a1a1a] p-5 md:p-6 rounded-xl max-w-sm md:max-w-md w-full shadow-2xl border border-gray-700 max-h-[90vh] overflow-y-auto">
-        <button 
-          onClick={handleCloseAll}
-          className="absolute top-2 right-2 text-gray-400 hover:text-white transition-colors bg-gray-800 hover:bg-gray-700 rounded-full p-1"
-          aria-label="Fechar"
-        >
-          <X size={18} strokeWidth={2} />
-        </button>
-
-        {status === 'success' ? (
-          <div className="flex flex-col items-center justify-center py-6">
-            <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            <h3 className="font-bold text-xl text-green-400 mb-2 text-center">Guia a caminho! 🚀</h3>
-            <p className="text-gray-300 text-center text-base">
-              <strong className="text-[#FFD700]">⚠️ SPAM:</strong> Se não chegar em 1 minuto, olhe no SPAM!
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-4 text-center lg:text-left">
+            <p className="font-medium text-sm md:text-base">
+              🛠️ <strong className="text-[#FFD700]">Guia Maker Grátis:</strong> 5 projetos para renovar sua casa.
             </p>
-          </div>
-        ) : (
-          <div className="flex flex-col items-center">
-            <h2 className="text-[#FFD700] font-black text-xl md:text-2xl text-center leading-tight mb-2 md:mb-3 uppercase">
-              ESPERA!!!<br/>Não vá embora sem o seu presente...
-            </h2>
             
-            <img 
-              src="/images/melhorebook.webp" 
-              alt="Capa Ebook Projetos Práticos para Renovar sua Casa" 
-              className="w-full max-w-[240px] md:max-w-[280px] h-auto object-contain mb-4 drop-shadow-[0_0_15px_rgba(255,215,0,0.2)]"
-            />
-
-            <form onSubmit={handleSubmit} className="w-full flex flex-col gap-2">
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 w-full max-w-md">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Digite seu melhor e-mail aqui..."
-                className="w-full px-3 py-2 bg-white text-gray-900 placeholder-gray-500 rounded-lg focus:outline-none focus:ring-4 focus:ring-[#FFD700]/50 text-sm shadow-inner text-center font-medium"
+                placeholder="Seu e-mail aqui..."
+                className="flex-grow px-3 py-2 bg-white text-gray-900 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#FFD700]"
                 required
               />
               <button
                 type="submit"
                 disabled={status === 'submitting' || !isValidEmail}
-                className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-black py-3 px-4 rounded-lg text-base transition-transform hover:scale-105 active:scale-95 whitespace-nowrap disabled:opacity-50 mt-1 uppercase shadow-lg shadow-[#FFD700]/20"
+                className="bg-[#FFD700] hover:bg-[#ffcd38] text-black font-black py-2 px-6 rounded-lg text-sm transition-transform active:scale-95 disabled:opacity-50 whitespace-nowrap"
               >
-                {status === 'submitting' ? 'Aguarde...' : 'QUERO OS 5 PROJETOS GRÁTIS'}
+                {status === 'submitting' ? '...' : 'BAIXAR AGORA'}
               </button>
             </form>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  // BIG BANNER (EXIT / SCROLL INTENT)
+  return (
+    <div className="fixed inset-0 z-[150] flex flex-col justify-center items-center bg-white/90 px-3 animate-in fade-in duration-300 backdrop-blur-sm">
+      <div className="relative bg-[#1a1a1a] p-5 md:p-6 rounded-3xl max-w-sm md:max-w-md w-full shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-gray-700">
+        {showCloseButton && (
+          <button 
+            onClick={handleClose}
+            className="absolute top-2 right-2 text-gray-400 hover:text-white transition-colors bg-gray-800/80 hover:bg-gray-700 rounded-full p-2 border border-gray-700 shadow-lg z-10"
+            aria-label="Fechar"
+          >
+            <X size={18} strokeWidth={3} />
+          </button>
         )}
+
+        <div className="flex flex-col items-center">
+          <h2 className="text-[#FFD700] font-black text-xl md:text-2xl text-center leading-tight mb-3 uppercase tracking-tighter">
+            Espere! <span className="text-white block text-lg md:text-xl font-bold mt-1">Leve seu Guia antes de ir.</span>
+          </h2>
+          
+          <div className="relative mb-3">
+            <div className="absolute inset-0 bg-[#FFD700]/5 blur-2xl rounded-full"></div>
+            <img 
+              src="/images/melhorebook.webp" 
+              alt="Guia Gratuito" 
+              className="relative w-full max-w-[180px] md:max-w-[220px] h-auto object-contain transform -rotate-1 drop-shadow-[0_15px_20px_rgba(0,0,0,0.6)]"
+            />
+          </div>
+
+          <form onSubmit={handleSubmit} className="w-full flex flex-col gap-2">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Digite seu e-mail..."
+              className="w-full px-4 py-2 bg-[#242424] text-white border border-gray-700 placeholder-gray-400 rounded-xl focus:outline-none focus:ring-4 focus:ring-[#FFD700]/30 text-sm text-center font-medium"
+              required
+            />
+            <button
+              type="submit"
+              disabled={status === 'submitting'}
+              className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-black py-3 px-4 rounded-xl text-sm transition-all hover:scale-[1.02] active:scale-95 uppercase shadow-xl shadow-[#FFD700]/10 border-b-4 border-[#ccab00] active:border-b-0"
+            >
+              {status === 'submitting' ? '...' : 'QUERO MEU GUIA'}
+            </button>
+          </form>
+          
+          <button 
+            onClick={handleClose}
+            className={`mt-4 text-xs font-medium uppercase tracking-widest transition-all duration-1000 underline underline-offset-4 ${
+              showCloseButton 
+                ? 'text-white decoration-white opacity-100' 
+                : 'text-gray-400 decoration-gray-600 opacity-40'
+            }`}
+          >
+            Não, obrigado. Quero continuar lendo.
+          </button>
+        </div>
       </div>
     </div>
   );
 };
+
+
+
+
+
+
