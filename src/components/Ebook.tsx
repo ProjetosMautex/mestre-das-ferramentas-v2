@@ -9,6 +9,16 @@ export const Ebook: React.FC = () => {
   // Total de páginas no momento
   const totalPages = 7;
 
+  const handleNextPage = () => {
+    setCurrentPage(p => Math.min(totalPages, p + 1));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handlePrevPage = () => {
+    setCurrentPage(p => Math.max(1, p - 1));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen w-full flex flex-col items-center p-4 md:p-8 bg-[#1a1a1a]">
       
@@ -746,7 +756,7 @@ export const Ebook: React.FC = () => {
         {totalPages > 1 && (
           <div className="w-full p-4 flex justify-between items-center bg-zinc-900 border-t border-zinc-800">
             <button 
-              onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+              onClick={handlePrevPage}
               disabled={currentPage === 1}
               className="px-6 py-2 bg-zinc-800 text-white rounded-lg disabled:opacity-30 hover:bg-zinc-700 transition font-medium"
             >
@@ -756,7 +766,7 @@ export const Ebook: React.FC = () => {
               Página {currentPage} de {totalPages}
             </span>
             <button 
-              onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+              onClick={handleNextPage}
               disabled={currentPage === totalPages}
               className="px-6 py-2 bg-[#FFD700] text-black font-bold rounded-lg disabled:opacity-50 hover:bg-[#ffcd38] transition"
             >
