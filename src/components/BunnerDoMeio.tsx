@@ -64,10 +64,12 @@ export const BunnerDoMeio: React.FC = () => {
       <div className="w-full bg-gray-50 rounded-xl border border-dotted border-gray-400 p-6 md:p-8 text-gray-800 shadow-sm">
         <div className="flex flex-col items-center text-center gap-4">
           
-          {/* Topo: Texto Curto */}
+        {/* Topo: Texto Curto */}
           <div className="w-full">
-            <p className="text-base md:text-lg text-gray-700 font-medium max-w-2xl mx-auto mb-2 leading-relaxed">
-              🛠️ <strong className="text-gray-900">Guia Maker Grátis:</strong> 5 projetos para renovar sua casa (mesmo sem prática).
+            <p className="text-base md:text-lg text-gray-700 font-medium max-w-2xl mx-auto mb-2 leading-relaxed whitespace-pre-line">
+              🛠️ <strong className="text-gray-900">Dica de Especialista:</strong>{"\n"}
+              Você sabia que muitas máquinas "Hobby" custam o mesmo que uma Profissional?{"\n"}
+              <span className="text-gray-900 font-bold">Guia Grátis:</span> Aprenda a escolher a parafusadeira ideal (e profissional) gastando pouco.
             </p>
           </div>
 
@@ -88,7 +90,7 @@ export const BunnerDoMeio: React.FC = () => {
                 disabled={status === 'submitting' || !isValidEmail}
                 className="w-full bg-[#FFD700] hover:bg-[#ffcd38] text-black font-black py-4 px-4 rounded text-base transition-colors disabled:opacity-50 shadow-sm"
               >
-                {status === 'submitting' ? 'Aguarde...' : 'BAIXAR AGORA'}
+                {status === 'submitting' ? 'Aguarde...' : 'QUERO COMPRAR BEM'}
               </button>
             </form>
         </div>
