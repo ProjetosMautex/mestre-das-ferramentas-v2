@@ -86,10 +86,10 @@ export const ExitIntentPopup: React.FC = () => {
         {showCloseButton && (
           <button 
             onClick={handleClose}
-            className="absolute -top-1 -right-2 md:top-0 md:right-0 p-1 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors text-gray-400 hover:text-white"
+            className="absolute -top-2 -right-2 md:top-0 md:-right-10 p-1.5 bg-gray-800 hover:bg-gray-700 rounded-full transition-colors text-gray-400 hover:text-white shadow-lg"
             aria-label="Fechar"
           >
-            <X size={16} />
+            <X size={18} />
           </button>
         )}
 
