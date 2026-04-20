@@ -1,0 +1,32 @@
+---
+import { OfertasEspeciaisLanding } from '../components/OfertasEspeciaisLanding';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Reviews Rápidos: As Melhores 18V/20V - Descubra a parafusadeira ideal para seu perfil!" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- TAG NO-INDEX -->
+		<meta name="robots" content="noindex" />
+		
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Ofertas Especiais - As Melhores Parafusadeiras 18V/20V</title>
+		
+		<!-- Google Analytics GA4 -->
+		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-DV27LFW49F"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-DV27LFW49F');
+		</script>
+	</head>
+	<body class="min-h-screen bg-gray-50 m-0 p-0 font-sans">
+		<main>
+			<OfertasEspeciaisLanding client:load />
+		</main>
+	</body>
+</html>

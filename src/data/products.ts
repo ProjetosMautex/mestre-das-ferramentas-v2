@@ -637,6 +637,22 @@ export const products: Record<string, Product> = {
   "Parafusadeira Wesco WS2558K2 Brushless 12V": {
     name: "Parafusadeira Wesco WS2558K2 Brushless 12V",
     link: "https://amzn.to/4daXHqg"
+  },
+  "Parafusadeira Furadeira Impacto Makita Dhp490 18v 2 Baterias teste": {
+    name: "Parafusadeira Furadeira Impacto Makita Dhp490 18v 2 Baterias teste",
+    link: "https://meli.la/2tUN9d2"
+  },
+  "Parafusadeira Furadeira Gsb18v-50 2 Bateria kit Cor Azul Frequência 60Hz Bosch teste": {
+    name: "Parafusadeira Furadeira Gsb18v-50 2 Bateria kit Cor Azul Frequência 60Hz Bosch teste",
+    link: "https://meli.la/2Dxz2j7"
+  },
+  "Parafusadeira E Furadeira De Impacto 18v Gsb185 Li Com Trena Azul teste": {
+    name: "Parafusadeira E Furadeira De Impacto 18v Gsb185 Li Com Trena Azul teste",
+    link: "https://meli.la/121aWvK"
+  },
+  "Parafusadeira E Furadeira De Impacto 12 Dcd7781b Sbateria Cor Amarelo 20V teste": {
+    name: "Parafusadeira E Furadeira De Impacto 12 Dcd7781b Sbateria Cor Amarelo 20V teste",
+    link: "https://meli.la/1LwqLdm"
   }
 };
 
