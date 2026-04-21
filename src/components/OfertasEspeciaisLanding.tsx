@@ -38,6 +38,17 @@ export const OfertasEspeciaisLanding: React.FC = () => {
     }
   ];
 
+  const trackConversion = () => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-11080689986',
+        'value': 1.0,
+        'currency': 'BRL'
+      });
+      console.log('Conversão disparada para o Google Ads');
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center py-6 md:py-10 px-4 font-sans">
       <div className="max-w-2xl w-full bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
@@ -93,6 +104,7 @@ export const OfertasEspeciaisLanding: React.FC = () => {
                     href={productLink}
                     target="_blank"
                     rel="noopener noreferrer sponsored nofollow"
+                    onClick={trackConversion}
                     className="flex items-center justify-center gap-3 bg-[#FFD700] text-[#1a1a1a] px-8 py-5 rounded-xl font-black text-xl hover:scale-105 transition-all w-full sm:w-auto shadow-lg no-underline uppercase tracking-tight"
                   >
                     <ShoppingCart size={28} strokeWidth={3} />

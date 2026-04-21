@@ -23,6 +23,17 @@ import '../styles/global.css';
 			gtag('js', new Date());
 			gtag('config', 'G-DV27LFW49F');
 		</script>
+
+		<!-- Google Ads -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11080689986" is:inline></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'AW-11080689986');
+			// Torna o gtag global para ser acessado pelo React
+			window.gtag = gtag;
+		</script>
 	</head>
 	<body class="min-h-screen bg-gray-50 m-0 p-0 font-sans">
 		<main>
