@@ -17,8 +17,8 @@ export const ComoTirarABrocaDaParafusadeira: React.FC = () => {
           
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Como tirar a broca da parafusadeira:<br/>
-              <span className="text-[#FFD700]">passo a passo simples e rápido</span>
+              Como Tirar a Broca da Parafusadeira<br/>
+              <span className="text-[#FFD700]">(Mesmo Travada no Mandril)</span>
             </h1>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
@@ -42,13 +42,13 @@ export const ComoTirarABrocaDaParafusadeira: React.FC = () => {
           {/* Introduction */}
           <div className="space-y-6 prose prose-lg max-w-none text-gray-700 mb-12">
             <p className="lead text-xl md:text-2xl font-medium text-gray-800 mb-8">
-              Trocar a broca da parafusadeira pode parecer uma tarefa simples, mas muitos ainda ficam inseguros na hora de fazer isso.
+              Se você está tentando tirar a broca da parafusadeira e ela simplesmente não sai, fique tranquilo — isso é mais comum do que parece.
             </p>
             <p>
-              Seja para um projeto de marcenaria ou uma simples reparação em casa, saber como manusear esse equipamento é essencial.
+              Neste guia rápido, você vai aprender como tirar a broca da parafusadeira passo a passo, mesmo quando ela está travada no mandril, sem danificar a ferramenta.
             </p>
             <p>
-              Neste artigo, vamos mostrar um passo a passo fácil e rápido para você retirar a broca com confiança. Vamos lá!
+              Veja agora o método mais seguro e fácil de resolver isso em poucos minutos.
             </p>
           </div>
 

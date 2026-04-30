@@ -7,10 +7,10 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    title: "Melhor Parafusadeira 2026 Testamos as 11 Melhores (Guia Definitivo)",
+    title: "Melhor Parafusadeira de 2026: Top 11 Testadas e Aprovadas",
     url: "/melhor-parafusadeira",
     image: "/images/blog/melhor-parafusadeira/melhor-parafusadeira.webp",
-    excerpt: "Cansado de parafusos soltos? Nosso guia revela a parafusadeira ideal para você!"
+    excerpt: "Compare as 11 melhores parafusadeiras de 2026 com testes reais, potência, bateria e custo-benefício. Veja qual vale mais a pena antes de comprar."
   },
   {
     title: "10 Melhores Furadeiras 2026 teste Real (Bosch, DeWalt e +)",

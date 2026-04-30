@@ -35,9 +35,8 @@ export const MelhorParafusadeira: React.FC = () => {
           
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Melhor Parafusadeira 2026 <br/>
-              <span className="text-[#FFD700]">Testamos as 11 Melhores</span> <br/>
-              <span className="text-2xl md:text-3xl font-medium text-gray-300">(Guia Definitivo)</span>
+              Melhor Parafusadeira de 2026: <br/>
+              <span className="text-[#FFD700]">Top 11 Testadas e Aprovadas</span>
             </h1>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
@@ -60,13 +59,13 @@ export const MelhorParafusadeira: React.FC = () => {
           {/* Introduction */}
           <div className="space-y-6 prose prose-lg max-w-none text-gray-700 mb-12">
             <p className="lead text-xl md:text-2xl font-medium text-gray-800 mb-8">
-              Escolher a parafusadeira ideal pode ser um desafio com tantos modelos disponíveis. A melhor opção dependerá das suas necessidades e do tipo de trabalho a ser realizado.
+              Neste guia atualizado de 2026, você vai descobrir qual é a melhor parafusadeira, com comparação entre os principais modelos do mercado, testes reais e análise de custo-benefício para escolher a opção ideal.
             </p>
             <p>
               Para evitar frustrações com ferramentas que não atendem às expectativas, avaliamos os principais fatores que garantem eficiência e durabilidade.
             </p>
             <p>
-              Neste guia, analisamos as melhores opções do mercado, de modelos robustos para uso profissional aos compactos e versáteis para o dia a dia.
+              Analisamos as melhores opções do mercado, de modelos robustos para uso profissional aos compactos e versáteis para o dia a dia.
             </p>
           </div>
 

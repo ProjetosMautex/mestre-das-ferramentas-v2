@@ -35,7 +35,7 @@ export const products: Record<string, Product> = {
   },
   "bosch-gsr-7-14-e-400w": {
     name: "Bosch GSR 7-14 E 400W",
-    link: "https://meli.la/21mxKp9"
+    link: "https://meli.la/26XeFSH"
   },
   "black-decker-kc4815b": {
     name: "Black Decker KC4815B",
