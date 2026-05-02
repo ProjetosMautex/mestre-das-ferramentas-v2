@@ -17,6 +17,10 @@ export const products: Record<string, Product> = {
     name: "Parafusadeira DeWalt DCD7781D2",
     link: "https://meli.la/2PVMfq3"
   },
+  "DeWalt DCD700LC1": {
+    name: "DeWalt DCD700LC1",
+    link: "https://meli.la/1yFBpJu"
+  },
   "Furadeira-e-Parafusadeira-Dewalt-DCD791D2B2": {
     name: "Furadeira e Parafusadeira Dewalt DCD791D2B2",
     link: "https://meli.la/1XEaK89"
@@ -24,6 +28,10 @@ export const products: Record<string, Product> = {
   "parafusadeira-vonder-pfv-012i": {
     name: "Parafusadeira Furadeira Vonder Pfv 012i 12 V",
     link: "https://meli.la/2fdiiY4"
+  },
+  "Parafusadeira Vonder PFV 120": {
+    name: "Parafusadeira Vonder PFV 120",
+    link: "https://meli.la/1ErdGbe"
   },
   "parafusadeira-bosch-gsr-1000": {
     name: "Parafusadeira Furadeira Bosch GSR 1000",

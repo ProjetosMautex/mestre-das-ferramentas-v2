@@ -7,6 +7,12 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    title: "Melhor Parafusadeira para Montar Móveis (Sem Estragar MDF)",
+    url: "/melhor-parafusadeira-para-montar-moveis",
+    image: "/images/blog/melhor parafusadeira para montar moveis.webp",
+    excerpt: "A escolha da parafusadeira adequada é crucial para evitar complicações comuns na montagem de móveis, garantindo precisão e segurança no acabamento."
+  },
+  {
     title: "Melhor Parafusadeira de 2026: Top 11 Testadas e Aprovadas",
     url: "/melhor-parafusadeira",
     image: "/images/blog/melhor-parafusadeira/melhor-parafusadeira.webp",

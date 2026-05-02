@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorParafusadeiraParaMontarMoveis } from '../components/MelhorParafusadeiraParaMontarMoveis';
+
+// Aqui você define o SEO da página
+const title = "Melhor Parafusadeira para Montar Móveis (Sem Estragar MDF)";
+const description = "Descubra qual é a melhor parafusadeira para montar móveis sem danificar o MDF. Avaliamos os melhores modelos e damos dicas essenciais para um acabamento perfeito.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <MelhorParafusadeiraParaMontarMoveis client:load />
+</Layout>
