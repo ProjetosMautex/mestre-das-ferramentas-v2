@@ -7,12 +7,6 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    title: "Melhor Parafusadeira para Montar Móveis (Sem Estragar MDF)",
-    url: "/melhor-parafusadeira-para-montar-moveis",
-    image: "/images/blog/melhor parafusadeira para montar moveis.webp",
-    excerpt: "A escolha da parafusadeira adequada é crucial para evitar complicações comuns na montagem de móveis, garantindo precisão e segurança no acabamento."
-  },
-  {
     title: "Melhor Parafusadeira de 2026: Top 11 Testadas e Aprovadas",
     url: "/melhor-parafusadeira",
     image: "/images/blog/melhor-parafusadeira/melhor-parafusadeira.webp",
@@ -539,5 +533,36 @@ export const articles: Article[] = [
     url: "/como-furar-vidro-com-furadeira",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-furar-vidro-com-furadeira.webp",
     excerpt: "Sem quebras nem cortes: entenda exatamente qual broca e velocidade deve ser aplicada por você na furadeira ao adentrar painéis de vidro."
+  },
+  {
+    title: "Melhor Parafusadeira para Montar Móveis (Sem Estragar MDF)",
+    url: "/melhor-parafusadeira-para-montar-moveis",
+    image: "/images/blog/melhor parafusadeira para montar moveis.webp",
+    excerpt: "A escolha da parafusadeira adequada é crucial para evitar complicações comuns na montagem de móveis, garantindo precisão e segurança no acabamento."
+  },
+  {
+    title: "9 Melhores Parafusadeiras de Drywall em 2026",
+    url: "/melhor-parafusadeira-para-drywall",
+    image: "/images/blog/melhor parafusadeira para drywall.webp",
+    excerpt: "Cansado de retrabalho no drywall? Descubra como escolher a parafusadeira ideal, evite erros no gesso e eleve a qualidade do seu acabamento profissional."
+  },
+  {
+    title: "4 Melhores Mini Furadeiras para Artesanato (2026) | Mestre das Ferramentas",
+    url: "/qual-a-melhor-furadeira-para-artesanato",
+    image: "/images/blog/1/qual a melhor furadeira para artesanato.webp",
+    excerpt: "Descubra como escolher a mini furadeira ideal para elevar o nível das suas peças artesanais com precisão."
+  },
+  {
+    title: "Como Cortar Drywall e Gesso Usando sua Furadeira",
+    url: "/cortar-gesso-com-furadeira",
+    image: "/images/blog/1/cortar gesso com furadeira_.webp",
+    excerpt: "Cansado de furos imprecisos em drywall? Aprenda como usar a serra circular reajustável para obter cortes perfeitos, economizar tempo e elevar o nível da sua obra."
+  },
+  {
+    title: "Pode furar drywall com furadeira? Sim! Veja o que precisa",
+    url: "/pode-furar-drywall-com-furadeira",
+    image: "/images/blog/1/pode-furar-drywall-com-furadeira.webp",
+    excerpt: "Pode furar drywall com furadeira? Aprenda o método definitivo para fixar quadros e prateleiras com segurança, sem danificar sua parede. Confira nossas dicas!"
   }
 ];
+

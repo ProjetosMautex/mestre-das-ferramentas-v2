@@ -1,0 +1,12 @@
+---
+// src/pages/category/chaves-de-impacto.astro
+import Layout from '../../layouts/Layout.astro';
+import { CategoryChavesImpacto } from '../../components/CategoryChavesImpacto';
+
+const title = "Chaves de Impacto | Mestre das Ferramentas";
+const description = "Descubra as melhores chaves de impacto para serviços pesados em 2026.";
+---
+
+<Layout title={title} description={description}>
+  <CategoryChavesImpacto client:load />
+</Layout>

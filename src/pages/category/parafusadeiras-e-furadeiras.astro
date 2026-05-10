@@ -1,0 +1,12 @@
+---
+// src/pages/category/parafusadeiras-e-furadeiras.astro
+import Layout from '../../layouts/Layout.astro';
+import { CategoryParafusadeiras } from '../../components/CategoryParafusadeiras';
+
+const title = "Parafusadeiras e Furadeiras | Mestre das Ferramentas";
+const description = "Análises técnicas, testes reais e guias das melhores parafusadeiras e furadeiras de 2026.";
+---
+
+<Layout title={title} description={description}>
+  <CategoryParafusadeiras client:load />
+</Layout>

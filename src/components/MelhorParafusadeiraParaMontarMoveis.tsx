@@ -412,7 +412,7 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
           <section className="mt-12">
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Critérios de Escolha da Parafusadeira Ideal</h2>
             <div className="space-y-6 prose prose-lg max-w-none text-gray-700">
-              <p>Escolher a parafusadeira certa vai muito além do preço. Alguns critérios fazem diferença direta na eficiência, no conforto e no resultado final do trabalho, especialmente na montagem de móveis.</p>
+              <p>Entender <a href="/como-escolher-parafusadeira" className="text-blue-600 hover:underline">"como escolher parafusadeira"</a> vai muito além do preço. Alguns critérios fazem diferença direta na eficiência, no conforto e no resultado final do trabalho, especialmente na montagem de móveis.</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Torque ajustável:</strong> permite controlar a força aplicada, evitando danos ao material e garantindo melhor acabamento.</li>
                 <li><strong>Tipo de alimentação:</strong> modelos a bateria oferecem mais praticidade e mobilidade, enquanto os com fio garantem potência constante para uso prolongado.</li>
@@ -420,7 +420,7 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
                 <li><strong>Bateria (nos modelos sem fio):</strong> dê preferência para baterias de íon de lítio, que duram mais e carregam mais rápido.</li>
                 <li><strong>Acessórios e funcionalidades:</strong> luz LED, indicador de carga e kits com bits inclusos aumentam a praticidade no dia a dia.</li>
               </ul>
-              <p>Ao considerar esses pontos, você evita erros na compra e garante uma parafusadeira que realmente atenda às suas necessidades, seja para uso ocasional ou mais frequente.</p>
+              <p>Ao considerar esses pontos, você evita erros na compra e garante uma ferramenta que realmente atenda às suas necessidades, seja para uso ocasional ou mais frequente.</p>
               
               <h3 className="text-2xl font-bold text-[#1a1a1a] mt-8 mb-4">Características técnicas que você não pode ignorar</h3>
               <p>Além dos pontos acima, certos detalhes técnicos fazem toda a diferença no resultado final. O torque ajustável, como já citado, é essencial. Mas outro ponto é a compatibilidade com diferentes tipos de pontas, como Phillips e Pozidriv, para assegurar versatilidade no uso. Avaliar esses aspectos técnicos evita surpresas e garante uma ferramenta segura e completa.</p>

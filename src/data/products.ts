@@ -63,7 +63,7 @@ export const products: Record<string, Product> = {
   },
   "furadeira-wap-efi600k": {
     name: "Furadeira de Impacto WAP EFI600K",
-    link: "https://meli.la/1787qHL"
+    link: "https://meli.la/1HHMPSD"
   },
   "furadeira-wap-efi850": {
     name: "Furadeira de Impacto WAP EFI850",
@@ -83,7 +83,7 @@ export const products: Record<string, Product> = {
   },
   "mondial-fpf-05": {
     name: "Mondial FPF-05",
-    link: "https://amzn.to/4sl5A0q"
+    link: "https://meli.la/2L8BycK"
   },
   "furadeira-impacto-bosch-850w": {
     name: "Furadeira de Impacto 850W – Bosch",
@@ -661,6 +661,58 @@ export const products: Record<string, Product> = {
   "Parafusadeira E Furadeira De Impacto 12 Dcd7781b Sbateria Cor Amarelo 20V teste": {
     name: "Parafusadeira E Furadeira De Impacto 12 Dcd7781b Sbateria Cor Amarelo 20V teste",
     link: "https://meli.la/1LwqLdm"
+  },
+  "Parafusadeira Drywall IOL Bosch GTB 650": {
+    name: "Parafusadeira Drywall IOL Bosch GTB 650",
+    link: "https://meli.la/2duERpz"
+  },
+  "Parafusadeira Drywall DeWalt DCF 620B": {
+    name: "Parafusadeira Drywall DeWalt DCF 620B",
+    link: "https://meli.la/2BBXuv9"
+  },
+  "Bosch GTB 185-LI 18V com Kit Completo": {
+    name: "Bosch GTB 185-LI 18V com Kit Completo",
+    link: "https://meli.la/1CBLC2Q"
+  },
+  "Makita Parafusadeira Drywall 570W": {
+    name: "Makita Parafusadeira Drywall 570W",
+    link: "https://meli.la/1ts9QVs"
+  },
+  "Parafusadeira Drywall Stanley STDR 5206": {
+    name: "Parafusadeira Drywall Stanley STDR 5206",
+    link: "https://meli.la/1gU2xH7"
+  },
+  "DEWALT DCF620B 20V MAX XR": {
+    name: "DEWALT DCF620B 20V MAX XR",
+    link: "https://meli.la/23oxCFt"
+  },
+  "Skil 6520 520W 127V": {
+    name: "Skil 6520 520W 127V",
+    link: "https://meli.la/2t368wV"
+  },
+  "Wesco WS3232U 540W 127V": {
+    name: "Wesco WS3232U 540W 127V",
+    link: "https://meli.la/1ArcZ4B"
+  },
+  "Einhell TC-DY 500 E 500W": {
+    name: "Einhell TC-DY 500 E 500W",
+    link: "https://meli.la/15uysCg"
+  },
+  "Mini Furadeira Drill 12 Volts com Acessórios para Artesanato": {
+    name: "Mini Furadeira Drill 12 Volts com Acessórios para Artesanato",
+    link: "https://meli.la/273DiYJ"
+  },
+  "Mini Furadeira Drill 12V com 7 Acessórios para Artesanato": {
+    name: "Mini Furadeira Drill 12V com 7 Acessórios para Artesanato",
+    link: "https://meli.la/11jtQwp"
+  },
+  "Mini Furadeira Drill Életrica 12 Volt + Acessórios Artesanato": {
+    name: "Mini Furadeira Drill Életrica 12 Volt + Acessórios Artesanato",
+    link: "https://meli.la/2uUT3uL"
+  },
+  "Mini Furadeira Usb Portátil Artesanato Madeira Jóias Resina": {
+    name: "Mini Furadeira Usb Portátil Artesanato Madeira Jóias Resina",
+    link: "https://meli.la/2aeFrEw"
   }
 };
 

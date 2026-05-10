@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoFuncionaParafusadeiraPneumatica } from '../components/ComoFuncionaParafusadeiraPneumatica';
+---
+
+<Layout 
+  title="Parafusadeira Pneumática Como Funciona e Quando Usar? - Mestre das Ferramentas"
+  description="Quer saber se a parafusadeira pneumática é o investimento certo para você? Descubra como escolher o modelo ideal, evitar prejuízos e aumentar sua produtividade."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <ComoFuncionaParafusadeiraPneumatica client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

@@ -5,6 +5,7 @@ export const About: React.FC = () => {
   const team = [
     {
       name: "Severino Torquato",
+      slug: "severino-torquato",
       role: "Técnico em Manutenção Residencial",
       image: "/images/autores/severino-torquato.webp",
       description: [
@@ -15,6 +16,7 @@ export const About: React.FC = () => {
     },
     {
       name: "André Carvalho",
+      slug: "andre-carvalho",
       role: "Especialista em Uso Profissional de Ferramentas",
       image: "/images/autores/andre-carvalho.webp",
       description: [
@@ -24,6 +26,7 @@ export const About: React.FC = () => {
     },
     {
       name: "Mateus Ribeiro",
+      slug: "mateus-ribeiro",
       role: "Marceneiro e Designer de Móveis Sob Medida",
       image: "/images/autores/mateus-ribeiro.webp",
       description: [
@@ -97,21 +100,25 @@ export const About: React.FC = () => {
             {team.map((member, index) => (
               <div key={index} className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-12 items-center`}>
                 <div className="w-full md:w-2/5">
-                  <div className="relative group">
-                    <div className="absolute -inset-2 bg-[#FFD700] rounded-2xl blur opacity-20"></div>
-                    <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
-                      <img 
-                        src={member.image} 
-                        alt={member.name} 
-                        className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
-                        onError={(e) => {(e.target as HTMLImageElement).src = 'https://placehold.co/500x680/1a1a1a/FFD700?text=' + member.name.replace(' ', '+')}}
-                      />
+                  <a href={`/author/${member.slug}`} className="block group">
+                    <div className="relative">
+                      <div className="absolute -inset-2 bg-[#FFD700] rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+                      <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
+                        <img 
+                          src={member.image} 
+                          alt={member.name} 
+                          className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+                          onError={(e) => {(e.target as HTMLImageElement).src = 'https://placehold.co/500x680/1a1a1a/FFD700?text=' + member.name.replace(' ', '+')}}
+                        />
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div className="w-full md:w-3/5 text-left">
                   {/* Badge Removida aqui */}
-                  <h3 className="text-4xl font-black text-[#1a1a1a] mb-2">{member.name}</h3>
+                  <a href={`/author/${member.slug}`} className="hover:text-[#b39700] transition-colors">
+                    <h3 className="text-4xl font-black text-[#1a1a1a] mb-2">{member.name}</h3>
+                  </a>
                   <p className="text-gray-600 font-bold mb-6 text-lg border-l-4 border-[#FFD700] pl-4">
                     {member.role}
                   </p>

@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoCortarGessoComFuradeira } from '../components/ComoCortarGessoComFuradeira';
+---
+
+<Layout 
+  title="Como Cortar Drywall e Gesso Usando sua Furadeira"
+  description="Cansado de furos imprecisos em drywall? Aprenda como usar a serra circular reajustável para obter cortes perfeitos, economizar tempo e elevar o nível da sua obra."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <ComoCortarGessoComFuradeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
