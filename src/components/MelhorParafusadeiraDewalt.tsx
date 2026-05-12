@@ -14,7 +14,7 @@ export const MelhorParafusadeiraDewalt: React.FC = () => {
     "Furadeira-e-Parafusadeira-Dewalt-DCD708D2",
     "Furadeira-e-Parafusadeira-Dewalt-DCD710D2",
     "Parafusadeira-para-Drywall-Dewalt-DCF620B",
-    "Parafusadeira-e-Furadeira-Compacta-de-12-Pol.-13mm-–-Dewalt"
+    "Furadeira-e-Parafusadeira-Dewalt-DCD700LC1"
   ];
 
   return (
@@ -92,7 +92,7 @@ export const MelhorParafusadeiraDewalt: React.FC = () => {
                       <td className="w-[65px] p-2 align-middle text-center sm:w-[80px] sm:p-3">
                         <div className="w-[40px] h-[40px] border border-slate-100 rounded flex items-center justify-center p-0.5 sm:w-[60px] sm:h-[60px] mx-auto">
                           <img 
-                            src={`/images/blog/melhor-parafusadeira/${product.name}.webp`}
+                            src={id === "Furadeira-e-Parafusadeira-Dewalt-DCD700LC1" ? "/images/blog/1/Furadeira e Parafusadeira Dewalt Modelo DCD700LC1.webp" : `/images/blog/melhor-parafusadeira/${product.name}.webp`}
                             alt={product.name} 
                             width="60"
                             height="60"
@@ -421,42 +421,47 @@ export const MelhorParafusadeiraDewalt: React.FC = () => {
                 <AffiliateCard id="Parafusadeira-para-Drywall-Dewalt-DCF620B" />
               </div>
 
-              {/* Compacta 13mm */}
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24" id="compacta13mm">
-                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Parafusadeira e Furadeira Compacta de 1/2 Pol. (13mm) – Dewalt</h3>
+              {/* DCD700LC1 */}
+              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24" id="dcd700lc1">
+                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Furadeira e Parafusadeira Dewalt DCD700LC1</h3>
                 <div className="w-full flex justify-center mb-6">
-                   <img src="/images/blog/melhor-parafusadeira/Parafusadeira e Furadeira Compacta de 12 Pol. 13mm – Dewalt.webp" alt="Parafusadeira e Furadeira Compacta de 1/2 Pol. (13mm) – Dewalt" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                   <img 
+                     src="/images/blog/1/Furadeira e Parafusadeira Dewalt Modelo DCD700LC1.webp" 
+                     alt="Furadeira e Parafusadeira Dewalt DCD700LC1" 
+                     title="Furadeira e Parafusadeira Dewalt DCD700LC1 com bateria e carregador"
+                     className="max-h-80 object-contain mix-blend-multiply" 
+                     loading="lazy" 
+                   />
                 </div>
                 <div className="space-y-4 text-gray-700">
-                  <p>A Parafusadeira e Furadeira Compacta de 1/2 Pol. (13mm) da DeWalt combina potência, eficiência e praticidade.</p>
-                  <p>Possui motor brushless, duas velocidades variáveis e reversíveis (0–500 e 0–1.750 rpm) e torque máximo de 65 Nm, proporcionando controle e desempenho em diferentes aplicações.</p>
-                  <p>A bateria de íon-lítio 20V MAX, o mandril de 13 mm de aperto rápido e as 15 posições de ajuste garantem versatilidade em parafusamentos e furos em madeira e aço.</p>
-                  <p>Compacta, leve (1,3 kg) e ergonômica, é ideal para espaços reduzidos e uso prolongado, com empunhadura emborrachada que oferece conforto e firmeza.</p>
-                  <p>A estrutura robusta e o freio eletrônico aumentam a segurança e a durabilidade.</p>
-                  <p>O kit inclui duas baterias de 2.0Ah, carregador bivolt, bolsa de transporte e manual.</p>
-                  <p>Conta com garantia de 90 dias pelo fabricante.</p>
+                  <p>A Furadeira e Parafusadeira Dewalt DCD700LC1 é uma excelente opção para quem busca a confiabilidade da marca DeWalt em um modelo voltado para manutenção doméstica e pequenos serviços.</p>
+                  <p>Alimentada por uma bateria de 12V MAX de 1.3 Ah, ela oferece a mobilidade de uma ferramenta sem fio com um design extremamente leve e ergonômico, pesando apenas 1.1 kg.</p>
+                  <p>Com mandril de 10 mm (3/8") e 15 posições de torque, ela se adapta facilmente a diferentes tarefas de parafusamento em madeira, metal e plástico. Sua velocidade variável vai de 0 a 1500 RPM, garantindo precisão no controle do trabalho.</p>
+                  <p>Além disso, conta com luz LED integrada para facilitar o uso em locais de difícil acesso e sem luminosidade, além de trava de segurança no gatilho e freio elétrico.</p>
+                  <p>O kit acompanha 1 bateria de 12V e 1 carregador bivolt (127/220V), garantindo que você tenha tudo o que precisa para começar seus projetos.</p>
                 </div>
 
                 <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-green-50 p-4 rounded-lg">
                     <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2"><Check className="w-4 h-4"/> Prós:</h4>
                     <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Leve e fácil de manusear</li>
-                      <li>Motor brushless</li>
-                      <li>Boa autonomia com duas baterias</li>
-                      <li>Mandril de aperto rápido</li>
+                      <li>Excelente custo-benefício para a categoria</li>
+                      <li>Leve (1.1 kg) e fácil de manusear</li>
+                      <li>Carregador bivolt incluso</li>
+                      <li>Luz LED e velocidade variável</li>
                     </ul>
                   </div>
                   <div className="bg-red-50 p-4 rounded-lg">
                     <h4 className="font-bold text-red-700 mb-2 flex items-center gap-2"><X className="w-4 h-4"/> Contras:</h4>
                     <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Garantia curta</li>
-                      <li>Preço elevado</li>
+                      <li>Motor com escovas (brushed)</li>
+                      <li>Acompanha apenas 1 bateria de 1.3 Ah</li>
+                      <li>Torque limitado (24 Nm) para uso pesado</li>
                     </ul>
                   </div>
                 </div>
 
-                <AffiliateCard id="Parafusadeira-e-Furadeira-Compacta-de-12-Pol.-13mm-–-Dewalt" />
+                <AffiliateCard id="Furadeira-e-Parafusadeira-Dewalt-DCD700LC1" />
               </div>
             </div>
           </section>

@@ -82,6 +82,25 @@ export const QualAMelhorParafusadeira12vOu20v: React.FC = () => {
             </div>
           </section>
 
+          {/* Qual a melhor potência para parafusadeira? */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Qual a melhor potência para parafusadeira?</h2>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+              <p>É muito comum as pessoas buscarem pela "melhor potência", mas em ferramentas a bateria, essa força é medida pela combinação de Voltagem (V) e Torque (Nm), e não em Watts como nas ferramentas com fio. A melhor potência vai depender estritamente do seu tipo de uso — se é para montagens esporádicas ou perfurações pesadas.</p>
+              <p>Se você está em dúvida sobre a força ideal e quer uma máquina versátil e equilibrada para ter em casa, não deixe de conferir nosso guia sobre qual a <a href="/melhor-parafusadeira-custo-beneficio" className="text-blue-600 hover:underline font-medium">melhor parafusadeira custo beneficio</a>.</p>
+            </div>
+          </section>
+
+          {/* 12V, 18V ou 20V: Existe diferença real de potência entre 18V e 20V? */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">12V, 18V ou 20V: Existe diferença real de potência entre 18V e 20V?</h2>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+              <p>Ao pesquisar sobre a melhor potência, você vai se deparar com modelos de 12V, 18V e 20V. Enquanto a diferença da 12V para as demais é nítida (a 12V é visivelmente mais leve e focada em serviços menores), é fundamental esclarecer um grande mito do mercado: não há diferença real de potência entre as parafusadeiras de 18V e 20V.</p>
+              <p>Ambas operam exatamente na mesma classe de bateria. A diferença nos números é puramente uma questão de nomenclatura de marketing adotada por diferentes marcas. Quando a bateria está 100% carregada e a máquina está em repouso (desligada e sem carga de trabalho), ela atinge um pico de 20V. No entanto, assim que você aciona o gatilho e a ferramenta é usada na prática (sob carga), a voltagem nominal de ambas estabiliza em 18V.</p>
+              <p>Ou seja, uma máquina rotulada como 18V e outra como 20V entregam exatamente o mesmo nível de força bruta e desempenho.</p>
+            </div>
+          </section>
+
           {/* Parafusadeira de 12V: Leveza e facilidade para tarefas menores */}
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Parafusadeira de 12V: Leveza e facilidade para tarefas menores</h2>
@@ -164,9 +183,7 @@ export const QualAMelhorParafusadeira12vOu20v: React.FC = () => {
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Preço e Custos</h2>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>O custo de uma parafusadeira varia conforme voltagem, marca e recursos.</p>
-              <p>
-                <a href="/melhor-parafusadeira-custo-beneficio" className="text-blue-600 hover:underline font-medium">Parafusadeiras de 12V são geralmente mais baratos e oferecem bom custo-benefício</a> para uso doméstico e esporádico.
-              </p>
+              <p>Parafusadeiras de 12V são geralmente mais baratos e oferecem bom custo-benefício para uso doméstico e esporádico.</p>
               <p>Parafusadeiras de 20V entregam mais potência e desempenho, exigindo investimento maior; suas baterias também costumam ser mais caras.</p>
               <p>Considere custos de reposição e manutenção.</p>
               <p>Marcas reconhecidas tendem a durar mais, compensando o gasto.</p>

@@ -140,7 +140,7 @@ export const products: Record<string, Product> = {
   },
   "Parafusadeira-de-Impacto-a-Bateria-Dewalt-DCF887B": {
     name: "Parafusadeira de Impacto a Bateria Dewalt DCF887B",
-    link: "https://meli.la/1sJBHgP"
+    link: "https://meli.la/26kxUJZ"
   },
   "Parafusadeira-De-Impacto-DEWALT-DCF850B-B3": {
     name: "Parafusadeira De Impacto DEWALT DCF850B-B3",
@@ -152,15 +152,15 @@ export const products: Record<string, Product> = {
   },
   "Furadeira-e-Parafusadeira-Dewalt-DCD710D2": {
     name: "Furadeira e Parafusadeira Dewalt DCD710D2",
-    link: "https://meli.la/12V8Pbo"
+    link: "https://meli.la/1hCic7b"
   },
   "Parafusadeira-para-Drywall-Dewalt-DCF620B": {
     name: "Parafusadeira para Drywall Dewalt DCF620B",
-    link: "https://meli.la/2Tyo8Ud"
+    link: "https://meli.la/2BBXuv9"
   },
-  "Parafusadeira-e-Furadeira-Compacta-de-12-Pol.-13mm-–-Dewalt": {
-    name: "Parafusadeira e Furadeira Compacta de 12 Pol. 13mm – Dewalt",
-    link: "https://meli.la/32gXnsy"
+  "Furadeira-e-Parafusadeira-Dewalt-DCD700LC1": {
+    name: "Furadeira e Parafusadeira Dewalt DCD700LC1",
+    link: "https://meli.la/1xXHnkp"
   },
   // --- Listas de Principais por Marca ---
   "Principais furadeiras Makita": {

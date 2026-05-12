@@ -43,6 +43,54 @@ export const articles: Article[] = [
     excerpt: "Descubra se a Parafusadeira Black Tools é boa — desempenho e custo-benefício podem surpreender!"
   },
   {
+    title: "Parafusadeira WAP é boa? Testei os principais modelos",
+    url: "/parafusadeira-wap-e-boa",
+    image: "/images/blog/melhor-furadeira/parafusadeira-wap-e-boa.webp",
+    excerpt: "O mercado de ferramentas elétricas está repleto de opções, e as parafusadeiras WAP se destacam como uma escolha popular entre os entusiastas do DIY e profissionais."
+  },
+  {
+    title: "Top 8 Melhores Bits para Parafusadeira — testei Bosch, DeWalt e mais",
+    url: "/melhor-bits-para-parafusadeira",
+    image: "/images/blog/melhor-furadeira/melhor-bits-para-parafusadeira.webp",
+    excerpt: "Escolher os bits certos para sua parafusadeira pode fazer toda a diferença na hora de enfrentar um projeto de bricolagem."
+  },
+  {
+    title: "Melhor Parafusadeira 20V: top 10 modelos testados em 2026",
+    url: "/melhor-parafusadeira-20v",
+    image: "/images/blog/melhor-furadeira/melhor parafusadeira 20V.webp",
+    excerpt: "Se você está em busca de uma parafusadeira 20V que ofereça potência e praticidade, descubra opções que aliam qualidade e desempenho."
+  },
+  {
+    title: "Parafusadeira Vonder é boa? Testei e te conto se vale a pena",
+    url: "/parafusadeira-vonder-e-boa",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/parafusadeira-vonder-e-boa_.webp",
+    excerpt: "Se você está em busca de uma parafusadeira que entregue eficiência e não deixe seu bolso vazio, talvez já tenha ouvido falar da Vonder."
+  },
+  {
+    title: "Furadeira e Parafusadeira WAP 21V é boa? Testei e te conto tudo",
+    url: "/furadeira-e-parafusadeira-wap-21v-e-boa",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/furadeira-e-parafusadeira-wap-21v-e-boa_.webp",
+    excerpt: "Se você está procurando uma ferramenta versátil para suas tarefas de bricolagem, a furadeira e parafusadeira WAP 21V pode ser uma opção interessante."
+  },
+  {
+    title: "9 Melhores Jogos de Brocas em 2026, quais realmente valem a pena",
+    url: "/melhor-jogo-de-brocas",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-jogo-de-brocas.webp",
+    excerpt: "Os jogos de brocas estão conquistando cada vez mais espaço entre os fãs de ação, estratégia e desafios envolventes."
+  },
+  {
+    title: "As 9 Melhores Brocas para Madeira em 2026 (Furam Rápido e com Precisão)",
+    url: "/melhor-broca-para-madeira",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-broca-para-madeira_.webp",
+    excerpt: "Escolher a broca certa para trabalhar com madeira pode fazer toda a diferença em seus projetos. Com tantas opções disponíveis no mercado, encontrar a ferramenta ideal que fure rápido e com precisão é essencial."
+  },
+  {
+    title: "Top 10 Melhores Brocas para Ferro e Aço em 2026 (Aço Rápido, Copo e mais)",
+    url: "/melhor-broca-para-ferro",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-broca-para-ferro.webp",
+    excerpt: "Escolher a broca certa para trabalhar com ferro e aço pode ser um desafio, especialmente com tantas opções disponíveis no mercado."
+  },
+  {
     title: "Como destravar uma parafusadeira (passo a passo simples e rápido)",
     url: "/como-destravar-parafusadeira",
     image: "/images/blog/melhor-furadeira/como-destravar-parafusadeira.webp",
@@ -73,12 +121,6 @@ export const articles: Article[] = [
     excerpt: "Se você está começando a se aventurar em projetos de bricolagem, aprender a usar uma furadeira é essencial."
   },
   {
-    title: "Parafusadeira WAP é boa? Testei os principais modelos",
-    url: "/parafusadeira-wap-e-boa",
-    image: "/images/blog/melhor-furadeira/parafusadeira-wap-e-boa.webp",
-    excerpt: "O mercado de ferramentas elétricas está repleto de opções, e as parafusadeiras WAP se destacam como uma escolha popular entre os entusiastas do DIY e profissionais."
-  },
-  {
     title: "Como escolher parafusadeira: veja dicas para acertar",
     url: "/como-escolher-parafusadeira",
     image: "/images/blog/melhor-furadeira/Como-escolher-parafusadeira.webp",
@@ -95,12 +137,6 @@ export const articles: Article[] = [
     url: "/como-furar-madeira-com-parafusadeira",
     image: "/images/blog/melhor-furadeira/Como-furar-madeira-com-parafusadeira.webp",
     excerpt: "Furar madeira pode parecer uma tarefa complicada, mas com as ferramentas adequadas e um pouco de orientação, você pode fazê-lo de forma simples e segura."
-  },
-  {
-    title: "Top 8 Melhores Bits para Parafusadeira — testei Bosch, DeWalt e mais",
-    url: "/melhor-bits-para-parafusadeira",
-    image: "/images/blog/melhor-furadeira/melhor-bits-para-parafusadeira.webp",
-    excerpt: "Escolher os bits certos para sua parafusadeira pode fazer toda a diferença na hora de enfrentar um projeto de bricolagem."
   },
   {
     title: "Como tirar parafuso espanado com parafusadeira (guia rápido e fácil)",
@@ -121,7 +157,7 @@ export const articles: Article[] = [
     excerpt: "Se você já se deparou com a necessidade de montar um móvel ou fazer uma pequena reforma em casa, provavelmente sentiu a dúvida na hora de usar a furadeira ou a parafusadeira."
   },
   {
-    title: "Qual a Diferença Entre Parafusadeira e Furadeira? Entenda de Uma Vez por Todas",
+    title: "Qual a Diferenca Entre Parafusadeira e Furadeira? Entenda de Uma Vez por Todas",
     url: "/qual-a-diferenca-entre-parafusadeira-e-furadeira",
     image: "/images/blog/melhor-furadeira/qual-a-diferenca-entre-parafusadeira-e-furadeira.webp",
     excerpt: "Apesar de parecerem semelhantes, cada uma tem suas funções específicas e características que atendem a diferentes necessidades."
@@ -175,12 +211,6 @@ export const articles: Article[] = [
     excerpt: "Com tantas opções no mercado, garantir que sua parafusadeira DeWalt é realmente original pode ser um desafio."
   },
   {
-    title: "Melhor Parafusadeira 20V: top 10 modelos testados em 2026",
-    url: "/melhor-parafusadeira-20v",
-    image: "/images/blog/melhor-furadeira/melhor parafusadeira 20V.webp",
-    excerpt: "Se você está em busca de uma parafusadeira 20V que ofereça potência e praticidade, descubra opções que aliam qualidade e desempenho."
-  },
-  {
     title: "Como aumentar a potência da parafusadeira: Truques simples que funcionam",
     url: "/como-aumentar-a-potencia-da-parafusadeira",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/como-aumentar-a-potencia-da-parafusadeira_.webp",
@@ -199,22 +229,10 @@ export const articles: Article[] = [
     excerpt: "Ao escolher uma parafusadeira, muitos se perguntam se a versão a bateria ou a elétrica é a melhor."
   },
   {
-    title: "Furadeira e Parafusadeira WAP 21V é boa? Testei e te conto tudo",
-    url: "/furadeira-e-parafusadeira-wap-21v-e-boa",
-    image: "/images/blog/melhor-furadeira-e-parafusadeira/furadeira-e-parafusadeira-wap-21v-e-boa_.webp",
-    excerpt: "Se você está procurando uma ferramenta versátil para suas tarefas de bricolagem, a furadeira e parafusadeira WAP 21V pode ser uma opção interessante."
-  },
-  {
     title: "5 Melhores Mandris para Furadeira em 2026? Veja o tipo certo pra cada uso",
     url: "/qual-melhor-mandril-para-furadeira",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/qual-melhor-mandril-para-furadeira.webp",
     excerpt: "Escolher o mandril certo para sua furadeira pode fazer toda a diferença em seus projetos."
-  },
-  {
-    title: "Parafusadeira Vonder é boa? Testei e te conto se vale a pena",
-    url: "/parafusadeira-vonder-e-boa",
-    image: "/images/blog/melhor-furadeira-e-parafusadeira/parafusadeira-vonder-e-boa_.webp",
-    excerpt: "Se você está em busca de uma parafusadeira que entregue eficiência e não deixe seu bolso vazio, talvez já tenha ouvido falar da Vonder."
   },
   {
     title: "Parafusadeira Mondial é boa? Testei e conto se vale a pena",
@@ -295,28 +313,10 @@ export const articles: Article[] = [
     excerpt: "Com a evolução constante das ferramentas de construção, escolher a broca ideal para concreto pode fazer toda a diferença na sua obra ou projeto DIY."
   },
   {
-    title: "As 9 Melhores Brocas para Madeira em 2026 (Furam Rápido e com Precisão)",
-    url: "/melhor-broca-para-madeira",
-    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-broca-para-madeira_.webp",
-    excerpt: "Escolher a broca certa para trabalhar com madeira pode fazer toda a diferença em seus projetos. Com tantas opções disponíveis no mercado, encontrar a ferramenta ideal que fure rápido e com precisão é essencial."
-  },
-  {
-    title: "Top 10 Melhores Brocas para Ferro e Aço em 2026 (Aço Rápido, Copo e mais)",
-    url: "/melhor-broca-para-ferro",
-    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-broca-para-ferro.webp",
-    excerpt: "Escolher a broca certa para trabalhar com ferro e aço pode ser um desafio, especialmente com tantas opções disponíveis no mercado."
-  },
-  {
     title: "As 9 Melhores Parafusadeiras 12V de 2026 (Bosch, WAP, Black+Decker e mais)",
     url: "/melhor-parafusadeira-12v",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/melhor-parafusadeira-12v.webp",
     excerpt: "As parafusadeiras 12V se destacam no mercado por sua combinação de potência e portabilidade, tornando-se indispensáveis para profissionais e entusiastas do Faça Você Mesmo."
-  },
-  {
-    title: "9 Melhores Jogos de Brocas em 2026, quais realmente valem a pena",
-    url: "/melhor-jogo-de-brocas",
-    image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-jogo-de-brocas.webp",
-    excerpt: "Os jogos de brocas estão conquistando cada vez mais espaço entre os fãs de ação, estratégia e desafios envolventes."
   },
   {
     title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
@@ -563,6 +563,17 @@ export const articles: Article[] = [
     url: "/pode-furar-drywall-com-furadeira",
     image: "/images/blog/1/pode-furar-drywall-com-furadeira.webp",
     excerpt: "Pode furar drywall com furadeira? Aprenda o método definitivo para fixar quadros e prateleiras com segurança, sem danificar sua parede. Confira nossas dicas!"
+  },
+  {
+    title: "Qual Broca Usar para Furar Drywall? Descubra a Ideal",
+    url: "/qual-broca-usar-para-furar-drywall",
+    image: "/images/blog/1/qual-broca-usar-para-furar-drywall.webp",
+    excerpt: "Cansado de danificar o drywall ao tentar fixar objetos? Descubra a broca ideal e as técnicas de especialista para furos perfeitos e sem rachaduras."
+  },
+  {
+    title: "Pode usar bateria 18V em parafusadeira 12V? Descubra os riscos",
+    url: "/pode-usar-bateria-18v-em-parafusadeira-12v",
+    image: "/images/blog/1/Pode usar Bateria 18v em Parafusadeira 12v.webp",
+    excerpt: "Será que pode usar bateria 18V em uma parafusadeira 12V? Descubra os riscos reais, o que acontece com o motor e como aumentar a potência com segurança."
   }
 ];
-
