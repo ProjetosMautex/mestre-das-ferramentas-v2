@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MelhorAfiadorDeBroca } from '../components/MelhorAfiadorDeBroca';
+
+const title = "8 Melhores Afiadores de Broca Guia de Compra Completo";
+const description = "Cansado de desperdiçar dinheiro com brocas cegas? Descubra os melhores afiadores do mercado e restaure a precisão das suas ferramentas hoje mesmo. Veja nosso guia!";
+---
+
+<Layout title={title} description={description}>
+  <MelhorAfiadorDeBroca client:load />
+</Layout>

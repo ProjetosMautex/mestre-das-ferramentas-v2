@@ -1,0 +1,11 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { CategoryAcessorios } from '../../components/CategoryAcessorios';
+
+const title = "Acessórios | Mestre das Ferramentas";
+const description = "Análises técnicas, testes reais e guias dos melhores acessórios para suas ferramentas em 2026.";
+---
+
+<Layout title={title} description={description}>
+  <CategoryAcessorios client:load />
+</Layout>
