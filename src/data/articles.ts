@@ -590,7 +590,7 @@ export const articles: Article[] = [
   },
   {
     title: "Como Escolher a Broca e Bucha Certa (Sem Errar)",
-    url: "/Que broca e bucha eu uso na parede",
+    url: "/que-broca-e-bucha-eu-uso-na-parede",
     image: "/images/blog/1/Que broca e bucha eu uso na parede.webp",
     excerpt: "Cansado de prateleiras bambas ou furos que esfarelam? Aprenda a escolher a broca e bucha ideais para cada parede e garanta uma fixação segura e definitiva."
   },
