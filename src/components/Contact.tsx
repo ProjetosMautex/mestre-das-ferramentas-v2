@@ -19,7 +19,7 @@ export const Contact: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-6">
-              Aqui no <span className="font-bold text-[#1a1a1a]">Mestre das Ferramentas</span>, levamos a sério a qualidade das informações que oferecemos. Nosso objetivo é ajudar você a escolher e utilizar as melhores ferramentas elétricas e manuais — como parafusadeiras, furadeiras, chaves de impacto e acessórios profissionais e domésticos.
+              Aqui no <span className="font-bold text-[#1a1a1a]">Mestre das Ferramentas</span>, levamos a sério a qualidade das informações que oferecemos. Nosso objetivo é ajudar você a escolher e utilizar as melhores ferramentas do mercado — abrangendo construção, reformas, oficina e jardinagem.
             </p>
             <p>
               Todos os conteúdos publicados no site são produzidos com base em testes práticos, análises técnicas e anos de experiência real no uso de ferramentas em diferentes contextos: do faça-você-mesmo em casa até o trabalho profissional em oficinas e construções.
@@ -41,7 +41,7 @@ export const Contact: React.FC = () => {
               <div className="bg-yellow-50 p-3 rounded-full text-[#b39700]">
                 <MessageSquare size={24} />
               </div>
-              <p className="text-gray-700 font-medium">Tirar dúvidas sobre modelos de parafusadeiras, furadeiras e outras ferramentas</p>
+              <p className="text-gray-700 font-medium">Tirar dúvidas sobre modelos de ferramentas em geral</p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-[#FFD700] flex items-start gap-4">
@@ -80,7 +80,7 @@ export const Contact: React.FC = () => {
                 <div className="space-y-4">
                   <div>
                     <h3 className="font-bold text-gray-900 text-lg">Responsável</h3>
-                    <p className="text-gray-600">Mateus Ribeiro</p>
+                    <p className="text-gray-600">Murilo Vieira</p>
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 text-lg">Empresa/Projeto</h3>
@@ -93,7 +93,7 @@ export const Contact: React.FC = () => {
                     <div className="text-[#FFD700] mt-1"><MapPin size={20} /></div>
                     <div>
                       <h4 className="font-bold text-gray-900">Endereço</h4>
-                      <p className="text-gray-600">Avenida dos Tamarindos, nº 214 – Centro – Petrolina, PE – CEP 56300-000</p>
+                      <p className="text-gray-600">Sitio Pedrinhas, 50 – Zona Rural – Venturosa, PE – CEP 55270-000</p>
                     </div>
                   </div>
 
@@ -101,7 +101,7 @@ export const Contact: React.FC = () => {
                     <div className="text-[#FFD700] mt-1"><Phone size={20} /></div>
                     <div>
                       <h4 className="font-bold text-gray-900">Telefone</h4>
-                      <p className="text-gray-600">(87) 99641-2248</p>
+                      <p className="text-gray-600">(87) 98140-0403</p>
                       <div className="flex items-center gap-2 mt-1 text-sm text-gray-500 bg-white px-2 py-1 rounded inline-flex border border-gray-100">
                         <Clock size={14} />
                         <span>Segunda a sexta, das 9h às 18h</span>
@@ -113,7 +113,7 @@ export const Contact: React.FC = () => {
                     <div className="text-[#FFD700] mt-1"><Mail size={20} /></div>
                     <div>
                       <h4 className="font-bold text-gray-900">E-mail</h4>
-                      <p className="text-gray-600 break-all">contato@mestredasferramentas.com.br</p>
+                      <p className="text-gray-600 break-all">projetosmautex@gmail.com</p>
                     </div>
                   </div>
                 </div>

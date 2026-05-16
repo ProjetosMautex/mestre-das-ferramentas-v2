@@ -87,7 +87,7 @@ export const HomeContent = () => {
               Domine suas <span className="text-[#1a1a1a]">Ferramentas</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10">
-              O guia definitivo para profissionais e entusiastas. Descubra as melhores parafusadeiras, furadeiras e equipamentos do mercado.
+              O guia definitivo para profissionais, hobbistas e entusiastas. Reviews, comparativos e guias das melhores ferramentas para construção, reforma, manutenção e jardinagem.
             </p>
             <a href="#destaques" className="inline-block bg-[#FFD700] text-[#1a1a1a] px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#e6c200] transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
               Ver Melhores Reviews

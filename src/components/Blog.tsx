@@ -16,13 +16,6 @@ export const Blog: React.FC = () => {
       url: '/category/chaves-de-impacto',
       image: '/images/blog/1/Melhor chave de impacto.webp',
       description: 'Descubra as chaves de impacto mais potentes para trabalhos exigentes e mecânica.',
-    },
-    {
-      id: 'acessorios',
-      name: 'Acessórios',
-      url: '/category/acessorios',
-      image: '/images/blog/1/acessórios.webp',
-      description: 'Análises técnicas, testes reais e guias dos melhores acessórios para suas ferramentas em 2026.',
     }
   ];
 

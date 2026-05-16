@@ -1,7 +1,8 @@
 import React from 'react';
 import { Check, X } from 'lucide-react';
 import { BunnerDoMeio } from './BunnerDoMeio';
-import { products } from '../data/products';
+import { products, type ProductId } from '../data/products';
+import { AffiliateCard } from './AffiliateCard';
 
 export const MelhorBitsParaParafusadeira: React.FC = () => {
   const vitrineProducts = [
@@ -167,11 +168,7 @@ export const MelhorBitsParaParafusadeira: React.FC = () => {
               Feitos em aço cromo vanádio, são mais duros e menos sujeitos à corrosão, prolongando a vida útil.
               Bits de alta qualidade garantem encaixe preciso, reduzindo desgaste de ferramentas e parafusos e melhorando eficiência.
             </p>
-            <div className="flex justify-center mb-6">
-              <a href={products["Bits Cromo Vanádio 31 Peças ｜ 8ZP"]?.link} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:bg-[#F0C800] transition-colors">
-                Clique aqui para ver o preço
-              </a>
-            </div>
+            <AffiliateCard id="Bits Cromo Vanádio 31 Peças ｜ 8ZP" />
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-green-50 p-6 rounded-lg">
                 <h4 className="font-bold text-green-800 mb-4 flex items-center">
@@ -207,11 +204,7 @@ export const MelhorBitsParaParafusadeira: React.FC = () => {
               O cabo com função de catraca e design ergonômico possui compartimento para armazenamento de pontas, proporcionando controle e praticidade.
               Ideal para profissionais e amadores.
             </p>
-            <div className="flex justify-center mb-6">
-              <a href={products["BOSCH Kit de Pontas e Soquetes para Parafusar com 46 Peças ｜ 2 607 017 399"]?.link} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:bg-[#F0C800] transition-colors">
-                Clique aqui para ver o preço
-              </a>
-            </div>
+            <AffiliateCard id="BOSCH Kit de Pontas e Soquetes para Parafusar com 46 Peças ｜ 2 607 017 399" />
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-green-50 p-6 rounded-lg">
                 <h4 className="font-bold text-green-800 mb-4 flex items-center">
@@ -252,11 +245,7 @@ export const MelhorBitsParaParafusadeira: React.FC = () => {
             <p className="mb-6">
               Produzido em aço resistente, o kit garante durabilidade, precisão e desempenho confiável, sendo uma excelente opção para quem busca eficiência e versatilidade nas tarefas do dia a dia.
             </p>
-            <div className="flex justify-center mb-6">
-              <a href={products["Jogo de 20 Pontas Para Parafusar Com Estojo DEWALT-DWMTCIR20"]?.link} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:bg-[#F0C800] transition-colors">
-                Clique aqui para ver o preço
-              </a>
-            </div>
+            <AffiliateCard id="Jogo de 20 Pontas Para Parafusar Com Estojo DEWALT-DWMTCIR20" />
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-green-50 p-6 rounded-lg">
                 <h4 className="font-bold text-green-800 mb-4 flex items-center">
@@ -291,11 +280,7 @@ export const MelhorBitsParaParafusadeira: React.FC = () => {
               Inclui ponteiras Phillips, hexalobular, fenda e hexagonais Allen, além de ponteiras especiais como “U”, triangular e “Y”, todas com encaixe sextavado 5/32″.
               O design do estojo facilita a organização e o acesso rápido, sendo ideal para trabalhos delicados e de precisão.
             </p>
-            <div className="flex justify-center mb-6">
-              <a href={products["NOVE54 Jogo de Bits/Ponteiras de Precisão 31 Peças ｜ BP 384"]?.link} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:bg-[#F0C800] transition-colors">
-                Clique aqui para ver o preço
-              </a>
-            </div>
+            <AffiliateCard id="NOVE54 Jogo de Bits/Ponteiras de Precisão 31 Peças ｜ BP 384" />
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-green-50 p-6 rounded-lg">
                 <h4 className="font-bold text-green-800 mb-4 flex items-center">
@@ -330,11 +315,7 @@ export const MelhorBitsParaParafusadeira: React.FC = () => {
               O estojo é resistente, facilita o armazenamento, organização, transporte e oferece acesso rápido às peças.
               Ideal para profissionais e entusiastas, é compatível com todos os modelos de furadeiras e parafusadeiras.
             </p>
-            <div className="flex justify-center mb-6">
-              <a href={products["DEWALT Jogo 37 Peças para Parafusar com Estojo ｜ DW2163"]?.link} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:bg-[#F0C800] transition-colors">
-                Clique aqui para ver o preço
-              </a>
-            </div>
+            <AffiliateCard id="DEWALT Jogo 37 Peças para Parafusar com Estojo ｜ DW2163" />
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-green-50 p-6 rounded-lg">
                 <h4 className="font-bold text-green-800 mb-4 flex items-center">
@@ -369,11 +350,7 @@ export const MelhorBitsParaParafusadeira: React.FC = () => {
               O estojo é compacto, fácil de transportar e vem com suporte universal magnético incluso.
               Não acompanha cabo manual, mas o encaixe hexagonal é compatível com furadeiras e parafusadeiras, oferecendo praticidade e versatilidade.
             </p>
-            <div className="flex justify-center mb-6">
-              <a href={products["BOSCH Kit de Pontas para Parafusar Mini X-Line com 25 Peças ｜ 2 607 017 400"]?.link} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:bg-[#F0C800] transition-colors">
-                Clique aqui para ver o preço
-              </a>
-            </div>
+            <AffiliateCard id="BOSCH Kit de Pontas para Parafusar Mini X-Line com 25 Peças ｜ 2 607 017 400" />
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-green-50 p-6 rounded-lg">
                 <h4 className="font-bold text-green-800 mb-4 flex items-center">
@@ -412,11 +389,7 @@ export const MelhorBitsParaParafusadeira: React.FC = () => {
             <p className="mb-6">
               Estojo compacto facilita o transporte e o armazenamento, mantendo as pontas organizadas e seguras.
             </p>
-            <div className="flex justify-center mb-6">
-              <a href={products["BOSCH Jogo de Pontas para Parafusar Impact Control 25 mm 8 Peças ｜ 2 608 522 323"]?.link} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:bg-[#F0C800] transition-colors">
-                Clique aqui para ver o preço
-              </a>
-            </div>
+            <AffiliateCard id="BOSCH Jogo de Pontas para Parafusar Impact Control 25 mm 8 Peças ｜ 2 608 522 323" />
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-green-50 p-6 rounded-lg">
                 <h4 className="font-bold text-green-800 mb-4 flex items-center">
@@ -451,11 +424,7 @@ export const MelhorBitsParaParafusadeira: React.FC = () => {
               A variedade de tamanhos permite realizar desde montagens de móveis até pequenos reparos automotivos.
               O estojo compacto e organizado facilita o transporte e o armazenamento seguro das peças.
             </p>
-            <div className="flex justify-center mb-6">
-              <a href={products["GAMMA Jogo de Ponteiras e Soquetes com 45 Peças ｜ G19530AC"]?.link} target="_blank" rel="noopener noreferrer" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:bg-[#F0C800] transition-colors">
-                Clique aqui para ver o preço
-              </a>
-            </div>
+            <AffiliateCard id="GAMMA Jogo de Ponteiras e Soquetes com 45 Peças ｜ G19530AC" />
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-green-50 p-6 rounded-lg">
                 <h4 className="font-bold text-green-800 mb-4 flex items-center">

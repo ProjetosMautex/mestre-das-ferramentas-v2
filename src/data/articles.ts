@@ -575,5 +575,29 @@ export const articles: Article[] = [
     url: "/pode-usar-bateria-18v-em-parafusadeira-12v",
     image: "/images/blog/1/Pode usar Bateria 18v em Parafusadeira 12v.webp",
     excerpt: "Será que pode usar bateria 18V em uma parafusadeira 12V? Descubra os riscos reais, o que acontece com o motor e como aumentar a potência com segurança."
+  },
+  {
+    title: "8 Melhores Afiadores de Broca Guia de Compra Completo",
+    url: "/melhor-afiador-de-broca",
+    image: "/images/blog/1/melhor afiador de broca.webp",
+    excerpt: "Percebeu que suas brocas já não perfuram com a mesma eficiência de antes? O desgaste é natural, mas descartá-las prematuramente pode gerar um custo desnecessário."
+  },
+  {
+    title: "Como Afiar Brocas e Deixá-las Novas em Minutos",
+    url: "/como-afiar-brocas",
+    image: "/images/blog/1/como-afiar-brocas.webp",
+    excerpt: "Cansado de desperdiçar dinheiro com brocas cegas? Aprenda a técnica definitiva para restaurar o corte e aumentar a precisão das suas furações hoje mesmo."
+  },
+  {
+    title: "Como Escolher a Broca e Bucha Certa (Sem Errar)",
+    url: "/Que broca e bucha eu uso na parede",
+    image: "/images/blog/1/Que broca e bucha eu uso na parede.webp",
+    excerpt: "Cansado de prateleiras bambas ou furos que esfarelam? Aprenda a escolher a broca e bucha ideais para cada parede e garanta uma fixação segura e definitiva."
+  },
+  {
+    title: "O Que é Broca de Vídea? Entenda Para que Serve e Como Usar",
+    url: "/o-que-e-broca-de-videa",
+    image: "/images/blog/1/o que é broca de videa.webp",
+    excerpt: "Descubra o que é a broca de vídea, como identificá-la e por que ela é essencial para perfurar paredes e concreto com segurança e precisão técnica."
   }
 ];

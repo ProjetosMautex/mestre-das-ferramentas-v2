@@ -37,7 +37,7 @@ export const AndreCarvalho: React.FC = () => {
                   Sou o André Carvalho, Especialista em Uso Profissional de Ferramentas, com mais de 12 anos de experiência em obras, reformas e serviços de alta exigência. Minha atuação sempre esteve ligada a ambientes onde desempenho, resistência e confiabilidade das ferramentas fazem toda a diferença no resultado final.
                 </p>
                 <p>
-                  Minha especialidade é avaliar ferramentas como parafusadeiras, furadeiras e chaves de impacto em situações de uso intenso, analisando potência, autonomia, robustez e eficiência em trabalhos contínuos. Meu objetivo é ajudar profissionais da construção civil, montagem industrial e manutenção a escolherem equipamentos que aguentam a rotina pesada e entregam produtividade de verdade.
+                  Minha especialidade é avaliar ferramentas em situações de uso intenso, analisando potência, autonomia, robustez e eficiência em trabalhos contínuos. Meu objetivo é ajudar profissionais da construção civil, montagem industrial e manutenção a escolherem equipamentos que aguentam a rotina pesada e entregam produtividade de verdade.
                 </p>
               </div>
             </div>

@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { QueBrocaEBuchaEuUsoNaParede } from '../components/QueBrocaEBuchaEuUsoNaParede';
+---
+
+<Layout 
+  title="Como Escolher a Broca e Bucha Certa (Sem Errar)"
+  description="Cansado de prateleiras bambas ou furos que esfarelam? Aprenda a escolher a broca e bucha ideais para cada parede e garanta uma fixação segura e definitiva."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <QueBrocaEBuchaEuUsoNaParede client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

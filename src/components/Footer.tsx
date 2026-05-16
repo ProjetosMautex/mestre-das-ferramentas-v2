@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
               <Logo lightMode={true} />
             </div>
             <p className="text-gray-300 leading-relaxed max-w-md text-lg">
-              No <span className="text-[#FFD700] font-semibold">Mestre das Ferramentas</span> você encontra reviews completos, comparativos e guias de compra de parafusadeiras e furadeiras. Conteúdo técnico, prático e imparcial para uso doméstico e profissional.
+              No <span className="text-[#FFD700] font-semibold">Mestre das Ferramentas</span> você encontra reviews completos, comparativos e guias de compra das melhores ferramentas para construção, reparos, oficina e jardinagem. Conteúdo técnico, prático e imparcial para uso doméstico e profissional.
             </p>
           </div>
 
@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-gray-100">Responsável</h4>
-                  <p className="text-gray-300">Mateus Ribeiro</p>
+                  <p className="text-gray-300">Murilo Vieira</p>
                 </div>
               </div>
 
@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
                 <div>
                   <h4 className="font-semibold text-lg text-gray-100">Endereço</h4>
                   <p className="text-gray-300 leading-relaxed">
-                    Avenida dos Tamarindos, nº 214 – Centro – Petrolina, PE – CEP 56300-000
+                    Sitio Pedrinhas, 50 – Zona Rural – Venturosa, PE – CEP 55270-000
                   </p>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-gray-100">Telefone</h4>
-                  <p className="text-gray-300">(87) 99641-2248</p>
+                  <p className="text-gray-300">(87) 98140-0403</p>
                   <p className="text-gray-400 text-xs mt-1">(Atendimento de segunda a sexta, das 9h às 18h)</p>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export const Footer: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-gray-100">E-mail</h4>
-                  <p className="text-gray-300 break-all">contato@mestredasferramentas.com.br</p>
+                  <p className="text-gray-300 break-all">projetosmautex@gmail.com</p>
                 </div>
               </div>
 

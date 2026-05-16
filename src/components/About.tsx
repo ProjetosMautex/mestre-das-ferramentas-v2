@@ -11,7 +11,7 @@ export const About: React.FC = () => {
       description: [
         "Sou o Severino Torquato, Técnico em Manutenção Residencial com mais de 20 anos de experiência no uso de ferramentas para trabalhos domésticos e projetos DIY.",
         "Ao longo da minha trajetória, já auxiliei desde famílias que precisavam de pequenos reparos até entusiastas que montam e personalizam seus próprios móveis.",
-        "Minha especialidade é analisar ferramentas como parafusadeiras e furadeiras de uso leve, avaliando pontos como ergonomia, potência, praticidade e custo-benefício. Com esse conhecimento, consigo indicar os modelos ideais para quem busca eficiência em reparos rápidos, montagem de móveis e atividades do dia a dia, sempre de forma prática e acessível."
+        "Minha especialidade é analisar ferramentas de uso leve, avaliando pontos como ergonomia, potência, praticidade e custo-benefício. Com esse conhecimento, consigo indicar os modelos ideais para quem busca eficiência em reparos rápidos, montagem de móveis e atividades do dia a dia, sempre de forma prática e acessível."
       ]
     },
     {
@@ -21,7 +21,7 @@ export const About: React.FC = () => {
       image: "/images/autores/andre-carvalho.webp",
       description: [
         "Sou o André Carvalho, Especialista em Uso Profissional de Ferramentas, com mais de 12 anos de experiência em obras, reformas e serviços de alta exigência. Minha atuação sempre esteve ligada a ambientes onde desempenho, resistência e confiabilidade das ferramentas fazem toda a diferença no resultado final.",
-        "Minha especialidade é avaliar ferramentas como parafusadeiras, furadeiras e chaves de impacto em situações de uso intenso, analisando potência, autonomia, robustez e eficiência em trabalhos contínuos. Meu objetivo é ajudar profissionais da construção civil, montagem industrial e manutenção a escolherem equipamentos que aguentam a rotina pesada e entregam produtividade de verdade."
+        "Minha especialidade é avaliar ferramentas em situações de uso intenso, analisando potência, autonomia, robustez e eficiência em trabalhos contínuos. Meu objetivo é ajudar profissionais da construção civil, montagem industrial e manutenção a escolherem equipamentos que aguentam a rotina pesada e entregam produtividade de verdade."
       ]
     },
     {
@@ -59,7 +59,7 @@ export const About: React.FC = () => {
               Aqui, nosso objetivo é ajudar entusiastas do faça-você-mesmo, profissionais de manutenção, marceneiros, mecânicos e apaixonados por ferramentas a escolherem os equipamentos certos para cada necessidade.
             </p>
             <p>
-              Se você procura uma parafusadeira leve para uso em casa, uma furadeira potente para reformas, ou até mesmo ferramentas profissionais de alto desempenho para oficina e construção, este é o lugar certo. Estamos aqui para orientar você de forma prática, honesta e técnica — sem enrolação.
+              Se você procura ferramentas para uso em casa, reformas, ou até mesmo equipamentos profissionais de alto desempenho para oficina e construção, este é o lugar certo. Estamos aqui para orientar você de forma prática, honesta e técnica — sem enrolação.
             </p>
             <div className="bg-gray-50 border-l-8 border-[#FFD700] p-8 rounded-r-xl italic shadow-sm text-gray-800">
               "Cada artigo do site é escrito com base em vivência real: especialistas que testam, comparam e utilizam ferramentas diariamente em diferentes contextos — seja em trabalhos domésticos, marcenaria, serralheria, oficinas mecânicas ou obras profissionais."
@@ -138,7 +138,7 @@ export const About: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">Por que confiar no Mestre das Ferramentas?</h2>
           <div className="grid gap-10">
             {[
-              { title: "Especialização Prática", desc: "Nossa equipe é formada por especialistas com sólida experiência prática e conhecimento técnico em ferramentas elétricas. Conhecemos parafusadeiras e furadeiras no detalhe — tanto na teoria quanto no uso real." },
+              { title: "Especialização Prática", desc: "Nossa equipe é formada por especialistas com sólida experiência prática e conhecimento técnico em ferramentas elétricas e manuais. Conhecemos as melhores ferramentas do mercado no detalhe — tanto na teoria quanto no uso real." },
               { title: "Testes no Mundo Real", desc: "Não nos baseamos apenas em catálogos. Avaliamos desempenho, durabilidade, ergonomia e facilidade de uso em situações cotidianas e profissionais." },
               { title: "Independência Editorial", desc: "Não aceitamos patrocínios que interfiram nas avaliações. Nossas recomendações são imparciais e focadas no seu custo-benefício real." }
             ].map((item, index) => (
@@ -167,7 +167,7 @@ export const About: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <span className="text-[#FFD700] font-bold">✔</span>
-                <span className="text-gray-700">Está comprando sua primeira parafusadeira ou furadeira.</span>
+                <span className="text-gray-700">Está comprando sua primeira ferramenta ou renovando seu kit.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#FFD700] font-bold">✔</span>
@@ -219,14 +219,14 @@ export const About: React.FC = () => {
                   <MapPin className="text-[#FFD700] mt-1 shrink-0" />
                   <div>
                     <h4 className="font-bold text-gray-900">Endereço</h4>
-                    <p className="text-gray-600 text-sm">Avenida dos Tamarindos, nº 214 – Centro – Petrolina, PE</p>
+                    <p className="text-gray-600 text-sm">Sitio Pedrinhas, 50 – Zona Rural – Venturosa, PE</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Mail className="text-[#FFD700] mt-1 shrink-0" />
                   <div>
                     <h4 className="font-bold text-gray-900">E-mail</h4>
-                    <p className="text-gray-600 text-sm">contato@mestredasferramentas.com.br</p>
+                    <p className="text-gray-600 text-sm">projetosmautex@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -235,7 +235,7 @@ export const About: React.FC = () => {
                   <Smartphone className="text-[#FFD700] mt-1 shrink-0" />
                   <div>
                     <h4 className="font-bold text-gray-900">Telefone</h4>
-                    <p className="text-gray-600 text-sm">(87) 99641-2248</p>
+                    <p className="text-gray-600 text-sm">(87) 98140-0403</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

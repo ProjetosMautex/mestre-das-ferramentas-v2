@@ -82,7 +82,7 @@ export const PrivacyPolicy: React.FC = () => {
               <li>Revogar o consentimento para uso dos seus dados.</li>
             </ul>
             <p className="mb-8 text-lg">
-              Para exercer seus direitos, entre em contato pelo e-mail: <a href="mailto:contato@mestredasferramentas.com.br" className="text-blue-600 font-bold hover:underline">contato@mestredasferramentas.com.br</a>
+              Para exercer seus direitos, entre em contato pelo e-mail: <a href="mailto:projetosmautex@gmail.com" className="text-blue-600 font-bold hover:underline">projetosmautex@gmail.com</a>
             </p>
 
             <h3 className="text-[#1a1a1a] text-2xl md:text-3xl font-black mt-12 mb-6 border-b-2 border-gray-100 pb-2">
@@ -104,7 +104,7 @@ export const PrivacyPolicy: React.FC = () => {
             </h3>
             <p className="mb-4">Se tiver dúvidas sobre esta Política de Privacidade ou sobre o tratamento de seus dados, fale conosco:</p>
             <p className="mb-12 text-xl font-bold text-blue-600">
-              📧 <a href="mailto:contato@mestredasferramentas.com.br" className="hover:underline">Fale Conosco Aqui</a>
+              📧 <a href="mailto:projetosmautex@gmail.com" className="hover:underline">Fale Conosco Aqui</a>
             </p>
             
             <div className="mt-16 pt-8 border-t border-gray-200 text-sm text-gray-500 font-medium">

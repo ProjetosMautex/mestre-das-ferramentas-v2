@@ -40,7 +40,7 @@ export const SeverinoTorquato: React.FC = () => {
                   Ao longo da minha trajetória, já auxiliei desde famílias que precisavam de pequenos reparos até entusiastas que montam e personalizam seus próprios móveis.
                 </p>
                 <p>
-                  Minha especialidade é analisar ferramentas como parafusadeiras e furadeiras de uso leve, avaliando pontos como ergonomia, potência, praticidade e custo-benefício. Com esse conhecimento, consigo indicar os modelos ideais para quem busca eficiência em reparos rápidos, montagem de móveis e atividades do dia a dia, sempre de forma prática e acessível.
+                  Minha especialidade é analisar ferramentas de uso leve, avaliando pontos como ergonomia, potência, praticidade e custo-benefício. Com esse conhecimento, consigo indicar os modelos ideais para quem busca eficiência em reparos rápidos, montagem de móveis e atividades do dia a dia, sempre de forma prática e acessível.
                 </p>
               </div>
             </div>

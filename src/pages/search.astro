@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { articles } from '../data/articles'; // Importa sua lista real de artigos
+import { articles } from '../data/articles';
+import { articlesChaveDeImpacto } from '../data/articleschavedeimpacto';
+
+const allArticles = [...articles, ...articlesChaveDeImpacto];
 ---
 
 <Layout 
@@ -34,7 +37,7 @@ import { articles } from '../data/articles'; // Importa sua lista real de artigo
   </main>
 </Layout>
 
-<script define:vars={{ articles }}>
+<script define:vars={{ articles: allArticles }}>
   // 1. Pega o termo da URL (ex: ?q=parafusadeira)
   const params = new URLSearchParams(window.location.search);
   const query = params.get('q')?.toLowerCase() || '';

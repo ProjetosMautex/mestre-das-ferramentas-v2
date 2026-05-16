@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoAfiarBrocas } from '../components/ComoAfiarBrocas';
+---
+
+<Layout 
+  title="Como Afiar Brocas e Deixá-las Novas em Minutos"
+  description="Cansado de desperdiçar dinheiro com brocas cegas? Aprenda a técnica definitiva para restaurar o corte e aumentar a precisão das suas furações hoje mesmo."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <ComoAfiarBrocas client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { AffiliateCardAcessorios } from './AffiliateCardAcessorios';
+import { AffiliateCard } from './AffiliateCard';
 import { BunnerDoMeio } from './BunnerDoMeio';
-import { productsAcessorios, type ProductAcessoriosId } from '../data/productsacessorios';
+import { products, type ProductId } from '../data/products';
 import { Check, X, Info } from 'lucide-react';
 
 export const MelhorAfiadorDeBroca: React.FC = () => {
-  const featuredIds: ProductAcessoriosId[] = [
+  const featuredIds: ProductId[] = [
     "Afiador de Brocas Vonder 095: Prático e Portátil",
     "afiador Carbografite (modelo 012537612)",
     "afiador multifuncional Nagano NAM65",
@@ -17,7 +17,7 @@ export const MelhorAfiadorDeBroca: React.FC = () => {
     "Afiador de Brocas Sparta 9123055"
   ];
 
-  const productImages: Record<ProductAcessoriosId, string> = {
+  const productImages: Record<ProductId, string> = {
     "Afiador de Brocas Vonder 095: Prático e Portátil": "/images/blog/1/Afiador de Brocas Vonder 095 Prático e Portátil.webp",
     "afiador Carbografite (modelo 012537612)": "/images/blog/1/afiador Carbografite (modelo 012537612).webp",
     "afiador multifuncional Nagano NAM65": "/images/blog/1/afiador multifuncional Nagano NAM65.webp",
@@ -112,7 +112,7 @@ export const MelhorAfiadorDeBroca: React.FC = () => {
           <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden">
             <tbody>
               {featuredIds.map((id) => {
-                const product = productsAcessorios[id];
+                const product = products[id];
                 const imageSrc = productImages[id];
                 return (
                   <tr key={id} className="border-b border-slate-200 last:border-b-0">
@@ -190,7 +190,7 @@ export const MelhorAfiadorDeBroca: React.FC = () => {
               <p>Portanto, não espere a velocidade de máquinas industriais de grande porte. Por outro lado, a inclusão de um rebolo extra na caixa eleva o valor do investimento a longo prazo.</p>
             </div>
 
-            <AffiliateCardAcessorios id="Afiador de Brocas Vonder 095: Prático e Portátil" />
+            <AffiliateCard id="Afiador de Brocas Vonder 095: Prático e Portátil" />
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">
@@ -230,7 +230,7 @@ export const MelhorAfiadorDeBroca: React.FC = () => {
               <p>Exigindo atenção à voltagem da sua rede no ato da compra. É a escolha certeira para quem busca reduzir gastos com reposição sem precisar ser um especialista em metalurgia.</p>
             </div>
 
-            <AffiliateCardAcessorios id="afiador Carbografite (modelo 012537612)" />
+            <AffiliateCard id="afiador Carbografite (modelo 012537612)" />
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">
@@ -272,7 +272,7 @@ export const MelhorAfiadorDeBroca: React.FC = () => {
               <p>É o investimento certo para manter seu kit de ferramentas sempre afiado, compacto e pronto para qualquer desafio do dia a dia.</p>
             </div>
 
-            <AffiliateCardAcessorios id="afiador multifuncional Nagano NAM65" />
+            <AffiliateCard id="afiador multifuncional Nagano NAM65" />
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">
@@ -313,7 +313,7 @@ export const MelhorAfiadorDeBroca: React.FC = () => {
               <p>É uma solução direta para eliminar o descarte desnecessário de insumos, mantendo seu arsenal de furação sempre pronto para o uso.</p>
             </div>
 
-            <AffiliateCardAcessorios id="pesquisa afiador de brocas worker" />
+            <AffiliateCard id="pesquisa afiador de brocas worker" />
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">
@@ -353,7 +353,7 @@ export const MelhorAfiadorDeBroca: React.FC = () => {
               <p>É a escolha equilibrada para quem deseja reduzir custos operacionais com reposição constante de peças, garantindo qualidade.</p>
             </div>
 
-            <AffiliateCardAcessorios id="Afiadora de Brocas Elétrico Rocast 49.0003" />
+            <AffiliateCard id="Afiadora de Brocas Elétrico Rocast 49.0003" />
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">
@@ -393,7 +393,7 @@ export const MelhorAfiadorDeBroca: React.FC = () => {
               <p>É uma solução direta para quem deseja economizar com insumos sem depender de motores elétricos dedicados.</p>
             </div>
 
-            <AffiliateCardAcessorios id="Afiador de Brocas Rocast para Furadeira 365,0001" />
+            <AffiliateCard id="Afiador de Brocas Rocast para Furadeira 365,0001" />
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">
@@ -433,7 +433,7 @@ export const MelhorAfiadorDeBroca: React.FC = () => {
               <p>Tudo isso sem a necessidade de investir em maquinário pesado e custoso de bancada.</p>
             </div>
 
-            <AffiliateCardAcessorios id="Afiador de Brocas Amolador Lorben GT6222" />
+            <AffiliateCard id="Afiador de Brocas Amolador Lorben GT6222" />
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">
@@ -473,7 +473,7 @@ export const MelhorAfiadorDeBroca: React.FC = () => {
               <p>Vale pontuar, contudo, que seu funcionamento depende da precisão do usuário, exigindo um breve período de adaptação para garantir a simetria perfeita.</p>
             </div>
 
-            <AffiliateCardAcessorios id="Afiador de Brocas Sparta 9123055" />
+            <AffiliateCard id="Afiador de Brocas Sparta 9123055" />
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">

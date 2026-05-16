@@ -35,7 +35,7 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-bosch-gsr-1000": {
     name: "Parafusadeira Furadeira Bosch GSR 1000",
-    link: "https://amzn.to/4d3DiTK"
+    link: "https://meli.la/2FcgXen"
   },
   "parafusadeira-black-decker-ld12": {
     name: "Parafusadeira Furadeira Black & Decker LD12",
@@ -206,31 +206,31 @@ export const products: Record<string, Product> = {
   // --- Bits para Parafusadeira ---
   "Bits Cromo Vanádio 31 Peças ｜ 8ZP": {
     name: "Bits Cromo Vanádio 31 Peças ｜ 8ZP",
-    link: "https://meli.la/1qo5ezo"
+    link: "https://meli.la/2VZ8C49"
   },
   "BOSCH Kit de Pontas e Soquetes para Parafusar com 46 Peças ｜ 2 607 017 399": {
     name: "BOSCH Kit de Pontas e Soquetes para Parafusar com 46 Peças ｜ 2 607 017 399",
-    link: "https://meli.la/2kcqcL8"
+    link: "https://meli.la/2rfCn1r"
   },
   "Jogo de 20 Pontas Para Parafusar Com Estojo DEWALT-DWMTCIR20": {
     name: "Jogo de 20 Pontas Para Parafusar Com Estojo DEWALT-DWMTCIR20",
-    link: "https://meli.la/1DGV2vf"
+    link: "https://meli.la/1v6BYhh"
   },
   "NOVE54 Jogo de Bits/Ponteiras de Precisão 31 Peças ｜ BP 384": {
     name: "NOVE54 Jogo de Bits/Ponteiras de Precisão 31 Peças ｜ BP 384",
-    link: "https://meli.la/1AEo8Ht"
+    link: "https://meli.la/2BL1qTt"
   },
   "DEWALT Jogo 37 Peças para Parafusar com Estojo ｜ DW2163": {
     name: "DEWALT Jogo 37 Peças para Parafusar com Estojo ｜ DW2163",
-    link: "https://meli.la/31bwEyS"
+    link: "https://meli.la/2cjzT6p"
   },
   "BOSCH Kit de Pontas para Parafusar Mini X-Line com 25 Peças ｜ 2 607 017 400": {
     name: "BOSCH Kit de Pontas para Parafusar Mini X-Line com 25 Peças ｜ 2 607 017 400",
-    link: "https://meli.la/1FtZntP"
+    link: "https://meli.la/2e54yAd"
   },
   "BOSCH Jogo de Pontas para Parafusar Impact Control 25 mm 8 Peças ｜ 2 608 522 323": {
     name: "BOSCH Jogo de Pontas para Parafusar Impact Control 25 mm 8 Peças ｜ 2 608 522 323",
-    link: "https://meli.la/1JvBodw"
+    link: "https://meli.la/21aBozJ"
   },
   "GAMMA Jogo de Ponteiras e Soquetes com 45 Peças ｜ G19530AC": {
     name: "GAMMA Jogo de Ponteiras e Soquetes com 45 Peças ｜ G19530AC",
@@ -713,8 +713,39 @@ export const products: Record<string, Product> = {
   "Mini Furadeira Usb Portátil Artesanato Madeira Jóias Resina": {
     name: "Mini Furadeira Usb Portátil Artesanato Madeira Jóias Resina",
     link: "https://meli.la/2aeFrEw"
+  },
+  "Afiador de Brocas Vonder 095: Prático e Portátil": {
+    name: "Afiador de Brocas Vonder 095: Prático e Portátil",
+    link: "https://meli.la/2kcBMQb"
+  },
+  "afiador Carbografite (modelo 012537612)": {
+    name: "afiador Carbografite (modelo 012537612)",
+    link: "https://meli.la/1dGWPcj"
+  },
+  "afiador multifuncional Nagano NAM65": {
+    name: "afiador multifuncional Nagano NAM65",
+    link: "https://meli.la/174mmwC"
+  },
+  "pesquisa afiador de brocas worker": {
+    name: "afiador de brocas worker",
+    link: "https://meli.la/2Gv1Vnb"
+  },
+  "Afiadora de Brocas Elétrico Rocast 49.0003": {
+    name: "Afiadora de Brocas Elétrico Rocast 49.0003",
+    link: "https://amzn.to/4u9YyNy"
+  },
+  "Afiador de Brocas Rocast para Furadeira 365,0001": {
+    name: "Afiador de Brocas Rocast para Furadeira 365,0001",
+    link: "https://meli.la/21oV3xN"
+  },
+  "Afiador de Brocas Amolador Lorben GT6222": {
+    name: "Afiador de Brocas Amolador Lorben GT6222",
+    link: "https://amzn.to/4wr1kPX"
+  },
+  "Afiador de Brocas Sparta 9123055": {
+    name: "Afiador de Brocas Sparta 9123055",
+    link: "https://meli.la/18CNkP2"
   }
 };
-
 
 export type ProductId = keyof typeof products;
