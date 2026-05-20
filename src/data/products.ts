@@ -237,9 +237,9 @@ export const products: Record<string, Product> = {
     link: "https://meli.la/2KDPPbp"
   },
   // --- Novas Parafusadeiras 20V ---
-  "STANLEY Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ SCD700B": {
-    name: "STANLEY Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ SCD700B",
-    link: "https://meli.la/1ZAjVEL"
+  "STANLEY Parafusadeira Furadeira de Impacto 1/2″ 13 mm 20 V ｜ SCD711C2K": {
+    name: "STANLEY Parafusadeira Furadeira de Impacto 1/2″ 13 mm 20 V ｜ SCD711C2K",
+    link: "https://meli.la/1daedw4"
   },
   "Kit Parafusadeira e Furadeira 20V STANLEY SCD711C1H-BR": {
     name: "Kit Parafusadeira e Furadeira 20V STANLEY SCD711C1H-BR",
@@ -247,7 +247,7 @@ export const products: Record<string, Product> = {
   },
   "DEWALT Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ DCD7771D2-BR": {
     name: "DEWALT Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ DCD7771D2-BR",
-    link: "https://amzn.to/4cMUxc4"
+    link: "https://meli.la/2Konmgk"
   },
   "DEKO Parafusadeira Furadeira de Impacto 3/8″ ｜ DKCD20ID01-5S3": {
     name: "DEKO Parafusadeira Furadeira de Impacto 3/8″ ｜ DKCD20ID01-5S3",
@@ -267,16 +267,16 @@ export const products: Record<string, Product> = {
   },
   "BLACK+DECKER Parafusadeira Furadeira Impacto 3/8″ 20 V ｜ BCD704C1-BR": {
     name: "BLACK+DECKER Parafusadeira Furadeira Impacto 3/8″ 20 V ｜ BCD704C1-BR",
-    link: "https://amzn.to/472wa6t"
+    link: "https://meli.la/1TnaYBL"
   },
   "BLACK+DECKER Parafusadeira Angular 1/4″ 6,35 mm ｜ 9036-BR": {
     name: "BLACK+DECKER Parafusadeira Angular 1/4″ 6,35 mm ｜ 9036-BR",
     link: "https://amzn.to/40rTmY6"
   },
   // --- Mandris ---
-  "Mandril-Para-Furadeira-Com-Chave-1-5-13-Mm-Rosca-38-P.-–-Mtx": {
-    name: "Mandril Para Furadeira, Com Chave, 1, 5-13 Mm, Rosca 3/8 P. – Mtx",
-    link: "https://amzn.to/4bITMzw"
+  "MTX Mandril P/ Furadeira Com Rosca 13mm 1/2 Pol e Chave de Aperto": {
+    name: "MTX Mandril P/ Furadeira Com Rosca 13mm 1/2 Pol e Chave de Aperto",
+    link: "https://meli.la/1HQymvq"
   },
   "Mandril-com-rosca-aperto-rapido-38″-–-Eda": {
     name: "Mandril com rosca aperto rápido 3/8″ – Eda",

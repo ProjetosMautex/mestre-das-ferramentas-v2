@@ -599,5 +599,23 @@ export const articles: Article[] = [
     url: "/o-que-e-broca-de-videa",
     image: "/images/blog/1/o que é broca de videa.webp",
     excerpt: "Descubra o que é a broca de vídea, como identificá-la e por que ela é essencial para perfurar paredes e concreto com segurança e precisão técnica."
+  },
+  {
+    title: "O que é Broca Helicoidal? Guia Rápido e Prático",
+    url: "/o-que-e-broca-helicoidal",
+    image: "/images/blog/1/o que é​ broca helicoidal.webp",
+    excerpt: "Cansado de furos imprecisos e brocas que quebram? Entenda por que a broca helicoidal é a chave para perfurações perfeitas e como escolher a ideal."
+  },
+  {
+    title: "Diferença Entre Broca SDS e HSS Saiba Qual Usar",
+    url: "/o-que-sao-as-brocas-sds-e-hss-e-qual-e-a-diferenca-entre-elas",
+    image: "/images/blog/1/O que são as brocas SDS e HSS E qual é a diferença entre elas.webp",
+    excerpt: "Ainda confunde broca SDS e HSS? Entenda de vez a diferença entre elas e escolha a ferramenta certa para não comprometer seu projeto ou seu bolso."
+  },
+  {
+    title: "O que é Broca de Aço Rápido? Para que Serve?",
+    url: "/o-que-e-broca-de-aco-rapido",
+    image: "/images/blog/1/o que é broca de aço rapido.webp",
+    excerpt: "Cansado de brocas que perdem o corte e estragam peças? Descubra por que a broca de aço rápido é a escolha definitiva para precisão e durabilidade técnica."
   }
 ];

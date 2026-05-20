@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { BrocaDeAcoRapido } from '../components/BrocaDeAcoRapido';
+---
+
+<Layout 
+  title="O que é Broca de Aço Rápido? Para que Serve?"
+  description="Cansado de brocas que perdem o corte e estragam peças? Descubra por que a broca de aço rápido é a escolha definitiva para precisão e durabilidade técnica."
+>
+  <main>
+    <BrocaDeAcoRapido client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

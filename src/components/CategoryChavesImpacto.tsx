@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowRight, ChevronLeft } from 'lucide-react';
 import { articlesChaveDeImpacto } from '../data/articleschavedeimpacto';
 
@@ -14,23 +14,56 @@ export const CategoryChavesImpacto: React.FC = () => {
   const currentArticles = filteredArticles.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(filteredArticles.length / itemsPerPage);
 
+  // Sync state with URL parameter 'page'
+  useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const page = parseInt(params.get('page') || '1', 10);
+      if (!isNaN(page) && page >= 1 && page <= totalPages) {
+        setCurrentPage(page);
+      } else {
+        setCurrentPage(1);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
+    // Initial load sync
+    const params = new URLSearchParams(window.location.search);
+    const page = parseInt(params.get('page') || '1', 10);
+    if (!isNaN(page) && page >= 1 && page <= totalPages) {
+      setCurrentPage(page);
+    }
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [totalPages]);
+
+  const updatePage = (pageNum: number) => {
+    setCurrentPage(pageNum);
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      url.searchParams.set('page', pageNum.toString());
+      window.history.pushState({}, '', url.toString());
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   const prevPage = () => {
-    setCurrentPage(prev => Math.max(prev - 1, 1));
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    updatePage(Math.max(currentPage - 1, 1));
   };
   
   const nextPage = () => {
-    setCurrentPage(prev => Math.min(prev + 1, totalPages));
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    updatePage(Math.min(currentPage + 1, totalPages));
   };
 
   const handlePageJump = (e: React.FormEvent) => {
     e.preventDefault();
     const pageNum = parseInt(inputPage);
     if (!isNaN(pageNum) && pageNum >= 1 && pageNum <= totalPages) {
-      setCurrentPage(pageNum);
+      updatePage(pageNum);
       setInputPage('');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 

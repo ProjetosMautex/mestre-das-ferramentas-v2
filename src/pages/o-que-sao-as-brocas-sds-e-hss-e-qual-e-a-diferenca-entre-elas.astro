@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { DiferencaEntreBrocaSDSeHSS } from '../components/DiferencaEntreBrocaSDSeHSS';
+---
+
+<Layout 
+  title="Diferença Entre Broca SDS e HSS Saiba Qual Usar"
+  description="Ainda confunde broca SDS e HSS? Entenda de vez a diferença entre elas e escolha a ferramenta certa para não comprometer seu projeto ou seu bolso."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <DiferencaEntreBrocaSDSeHSS client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

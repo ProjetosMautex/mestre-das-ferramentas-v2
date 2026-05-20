@@ -7,7 +7,7 @@ import { BunnerDoMeio } from './BunnerDoMeio';
 export const MelhorParafusadeira20V = () => {
   const featuredIds: ProductId[] = [
     "parafusadeira-dewalt-dcd7781d2",
-    "STANLEY Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ SCD700B",
+    "STANLEY Parafusadeira Furadeira de Impacto 1/2″ 13 mm 20 V ｜ SCD711C2K",
     "Kit Parafusadeira e Furadeira 20V STANLEY SCD711C1H-BR",
     "DEWALT Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ DCD7771D2-BR",
     "DEKO Parafusadeira Furadeira de Impacto 3/8″ ｜ DKCD20ID01-5S3",
@@ -20,7 +20,7 @@ export const MelhorParafusadeira20V = () => {
 
   const productImages: Record<string, string> = {
     "parafusadeira-dewalt-dcd7781d2": "/images/blog/melhor-parafusadeira/Parafusadeira DeWalt DCD7781D2.webp",
-    "STANLEY Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ SCD700B": "/images/blog/melhor-furadeira-e-parafusadeira/Parafusadeira-Furadeira-12-13-mm-20-V-｜-SCD700B.webp",
+    "STANLEY Parafusadeira Furadeira de Impacto 1/2″ 13 mm 20 V ｜ SCD711C2K": "/images/blog/1/Furadeira e Parafusadeira de Impacto STANLEY SCD711C2K.webp",
     "Kit Parafusadeira e Furadeira 20V STANLEY SCD711C1H-BR": "/images/blog/melhor-furadeira-e-parafusadeira/Parafusadeira-e-Furadeira-20V-STANLEY-SCD711C1H-BR.webp",
     "DEWALT Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ DCD7771D2-BR": "/images/blog/melhor-furadeira-e-parafusadeira/Parafusadeira-Furadeira-12-13-mm-20-V-｜-DCD7771D2-BR-1.webp",
     "DEKO Parafusadeira Furadeira de Impacto 3/8″ ｜ DKCD20ID01-5S3": "/images/blog/melhor-furadeira-e-parafusadeira/Parafusadeira-Furadeira-de-Impacto-38-｜-DKCD20ID01-5S3.webp",
@@ -168,35 +168,35 @@ export const MelhorParafusadeira20V = () => {
             </div>
           </section>
 
-          {/* 2. STANLEY SCD700B */}
-          <section id="STANLEY-Parafusadeira-Furadeira-1/2-13-mm-20-V-SCD700B" className="scroll-mt-24 pt-8 border-t border-gray-100">
+          {/* 2. STANLEY SCD711C2K */}
+          <section id="STANLEY-Parafusadeira-Furadeira-de-Impacto-1/2-13-mm-20-V-SCD711C2K" className="scroll-mt-24 pt-8 border-t border-gray-100">
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-              STANLEY Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ SCD700B
+              STANLEY Parafusadeira Furadeira de Impacto 1/2″ 13 mm 20 V ｜ SCD711C2K
             </h2>
             <div className="w-full flex justify-center mb-8">
-               <img src={productImages["STANLEY Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ SCD700B"]} alt="STANLEY SCD700B" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+               <img src={productImages["STANLEY Parafusadeira Furadeira de Impacto 1/2″ 13 mm 20 V ｜ SCD711C2K"]} alt="STANLEY SCD711C2K" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
             </div>
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-              <p>A Parafusadeira Furadeira STANLEY SCD711C2K-BR é versátil e potente, com motor 20V, mandril 1/2″ (13 mm), torque máximo de 50 Nm e até 1500 RPM.</p>
-              <p>Possui função de impacto (25.500 IPM), design ergonômico, luz LED integrada e acompanha duas baterias, carregador e maleta, facilitando transporte.</p>
-              <p>Indicação: ideal para parafusamentos e perfurações em madeira, metal e alvenaria, atendendo profissionais e entusiastas do DIY.</p>
+              <p>A Furadeira e Parafusadeira de Impacto STANLEY SCD711C2K destaca-se por seu motor brushless potente e durável que oferece maior eficiência e longa vida útil, sendo um dos modelos mais vendidos da categoria.</p>
+              <p>Ela conta com duas baterias de 20V (1,5 Ah) inclusas e tempo de carregamento rápido de apenas 70 minutos, além de uma prática maleta e luz de LED integrada para melhor visualização em locais escuros.</p>
+              <p>Com torque máximo de 50 Nm, velocidade variável de até 1.500 RPM e função de impacto percutor de 25.500 batidas por minuto, esta ferramenta profissional de 13 mm (1/2 polegada) é ideal para furos e fixações precisas em madeira, metal e concreto com total conforto devido ao cabo emborrachado ergonômico.</p>
             </div>
-            <AffiliateCard id="STANLEY Parafusadeira Furadeira 1/2″ 13 mm 20 V ｜ SCD700B" />
+            <AffiliateCard id="STANLEY Parafusadeira Furadeira de Impacto 1/2″ 13 mm 20 V ｜ SCD711C2K" />
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                 <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
                 <ul className="space-y-2 text-green-700 text-sm">
-                  <li>Versátil</li>
-                  <li>Boa performance</li>
-                  <li>Kit completo</li>
-                  <li>Design compacto</li>
+                  <li>Motor brushless potente e durável</li>
+                  <li>Acompanha 2 baterias de 20V, carregador e maleta</li>
+                  <li>Função de impacto de 25.500 BPM</li>
+                  <li>Torque robusto de 50 Nm com mandril de 13 mm</li>
                 </ul>
               </div>
               <div className="bg-red-50 p-6 rounded-xl border border-red-100">
                 <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
                 <ul className="space-y-2 text-red-700 text-sm">
-                  <li>Não é brushless</li>
-                  <li>Gera vibração em impacto</li>
+                  <li>Baterias inclusas de 1,5 Ah (poderiam ser de 2,0 Ah)</li>
+                  <li>Sem indicador de nível de bateria integrado em algumas variantes</li>
                 </ul>
               </div>
             </div>
