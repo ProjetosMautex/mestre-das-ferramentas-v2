@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { OQueEBrocaEscalonada } from '../components/OQueEBrocaEscalonada';
+---
+
+<Layout 
+  title="O que é Broca Escalonada e Por Que Você Precisa de Uma"
+  description="Cansado de furos imprecisos e retrabalho? Descubra por que a broca escalonada é o segredo dos profissionais para perfurações perfeitas, rápidas e sem rebarbas."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <OQueEBrocaEscalonada client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

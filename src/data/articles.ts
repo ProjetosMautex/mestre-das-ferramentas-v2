@@ -617,5 +617,11 @@ export const articles: Article[] = [
     url: "/o-que-e-broca-de-aco-rapido",
     image: "/images/blog/1/o que é broca de aço rapido.webp",
     excerpt: "Cansado de brocas que perdem o corte e estragam peças? Descubra por que a broca de aço rápido é a escolha definitiva para precisão e durabilidade técnica."
+  },
+  {
+    title: "O que é Broca Escalonada e Por Que Você Precisa de Uma",
+    url: "/o-que-e-broca-escalonada",
+    image: "/images/blog/1/o que é broca escalonada.webp",
+    excerpt: "Cansado de furos imprecisos e retrabalho? Descubra por que a broca escalonada é o segredo dos profissionais para perfurações perfeitas, rápidas e sem rebarbas."
   }
 ];

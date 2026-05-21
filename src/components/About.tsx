@@ -4,6 +4,17 @@ import { CheckCircle2, Clock, Smartphone, Mail, MapPin, Wrench, ShieldCheck, Zap
 export const About: React.FC = () => {
   const team = [
     {
+      name: "Murilo",
+      slug: "murilo",
+      role: "Fundador do Mestre das Ferramentas e Especialista em SEO para Sites de Nicho",
+      image: "/images/autores/Murilo.webp",
+      description: [
+        "Sou o Murilo, fundador do Mestre das Ferramentas e especialista em SEO e criação de sites de nicho. Meu trabalho é desenvolver conteúdos estratégicos sobre ferramentas físicas de trabalho, ajudando profissionais, hobistas e empresas a encontrarem informações realmente úteis para o dia a dia.",
+        "Atuo na construção de projetos digitais focados em autoridade temática, estruturação de conteúdo e posicionamento orgânico nos mecanismos de busca. Tenho experiência em planejamento editorial, arquitetura de sites, organização de silos e interligação estratégica entre páginas, sempre alinhando SEO com a intenção de busca do usuário.",
+        "No Mestre das Ferramentas, sou responsável pela definição da estratégia de conteúdo, revisão técnica dos artigos e desenvolvimento da estrutura do site, garantindo materiais completos, objetivos e relevantes para quem busca informações confiáveis sobre ferramentas, equipamentos e soluções para trabalho profissional."
+      ]
+    },
+    {
       name: "Severino Torquato",
       slug: "severino-torquato",
       role: "Técnico em Manutenção Residencial",
@@ -21,7 +32,7 @@ export const About: React.FC = () => {
       image: "/images/autores/andre-carvalho.webp",
       description: [
         "Sou o André Carvalho, Especialista em Uso Profissional de Ferramentas, com mais de 12 anos de experiência em obras, reformas e serviços de alta exigência. Minha atuação sempre esteve ligada a ambientes onde desempenho, resistência e confiabilidade das ferramentas fazem toda a diferença no resultado final.",
-        "Minha especialidade é avaliar ferramentas em situações de uso intenso, analisando potência, autonomia, robustez e eficiência em trabalhos contínuos. Meu objetivo é ajudar profissionais da construção civil, montagem industrial e manutenção a escolherem equipamentos que aguentam a rotina pesada e entregam produtividade de verdade."
+        "Minha especialidade é avaliar ferramentas in loco e em situações de uso intenso, analisando potência, autonomia, robustez e eficiência em trabalhos contínuos. Meu objetivo é ajudar profissionais da construção civil, montagem industrial e manutenção a escolherem equipamentos que aguentam a rotina pesada e entregam produtividade de verdade."
       ]
     },
     {
