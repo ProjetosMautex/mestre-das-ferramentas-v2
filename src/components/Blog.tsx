@@ -16,6 +16,13 @@ export const Blog: React.FC = () => {
       url: '/category/chaves-de-impacto',
       image: '/images/blog/1/Melhor chave de impacto.webp',
       description: 'Descubra as chaves de impacto mais potentes para trabalhos exigentes e mecânica.',
+    },
+    {
+      id: 'martelete',
+      name: 'Marteletes',
+      url: '/category/martelete',
+      image: '/images/blog/2/marteletes.webp',
+      description: 'Análises técnicas, testes reais e guias dos melhores marteletes para perfurar e romper.',
     }
   ];
 

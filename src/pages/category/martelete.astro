@@ -1,0 +1,11 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { CategoryMartelete } from '../../components/CategoryMartelete';
+
+const title = "Marteletes | Mestre das Ferramentas";
+const description = "Análises técnicas, testes reais e guias dos melhores marteletes de 2026.";
+---
+
+<Layout title={title} description={description}>
+  <CategoryMartelete client:load />
+</Layout>

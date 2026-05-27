@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { QualOMelhorMartelete } from '../components/QualOMelhorMartelete';
+
+const title = "8 Melhores Marteletes 2026 para Obra e DIY (Custo-Benefício)";
+const description = "Em dúvida sobre qual martelete comprar? Descubra como escolher a potência e o modelo ideal para suas obras e reformas com nosso guia técnico completo.";
+---
+
+<Layout title={title} description={description}>
+  <QualOMelhorMartelete client:load />
+</Layout>

@@ -286,13 +286,13 @@ export const products: Record<string, Product> = {
     name: "Mandril 3/8″ com Chave (1.5 a 10mm) – Eda 2WU",
     link: "https://meli.la/2ZmbAtN"
   },
-  "Mandril-para-furadeira-de-aperto-rapido-13mm-–-Bosch": {
-    name: "Mandril para furadeira de aperto rápido 13mm – Bosch",
-    link: "https://amzn.to/473GaMN"
+  "Mandril-13mm-para-parafusadeira-bosch-gsb-18v-50": {
+    name: "Mandril 13mm (1/2'') Para Parafusadeira Bosch Gsb 18v-50",
+    link: "https://meli.la/1gigcpU"
   },
-  "Mandril de Aperto Rápido (0,8 mm – 10,0 mm) – Vonder": {
-    name: "Mandril de Aperto Rápido (0,8 mm – 10,0 mm) – Vonder",
-    link: "https://amzn.to/411Sn0W"
+  "Mandril-38-aperto-rapido-10mm-vonder": {
+    name: "Mandril 3/8 Aperto Rápido 10mm Muito Forte E Pratico Vonder",
+    link: "https://meli.la/1jTmuus"
   },
   "Vonder Parafusadeira/Furadeira PFV 012": {
     name: "Vonder Parafusadeira/Furadeira PFV 012",
@@ -745,6 +745,38 @@ export const products: Record<string, Product> = {
   "Afiador de Brocas Sparta 9123055": {
     name: "Afiador de Brocas Sparta 9123055",
     link: "https://meli.la/18CNkP2"
+  },
+  "Martelete Perfurador Bosch GBH 2-24 D": {
+    name: "Martelete Perfurador Bosch GBH 2-24 D",
+    link: "https://meli.la/19HZMZs"
+  },
+  "Martelete Perfurador Rompedor Vonder Mpv 620": {
+    name: "Martelete Perfurador Rompedor Vonder Mpv 620",
+    link: "https://meli.la/12cTqco"
+  },
+  "Martelete Perfurador Dewalt D25133K": {
+    name: "Martelete Perfurador Dewalt D25133K",
+    link: "https://meli.la/1DRfMQt"
+  },
+  "Martelete Makita HR2470": {
+    name: "Martelete Makita HR2470",
+    link: "https://meli.la/1hMkewE"
+  },
+  "WAP EMPR900K": {
+    name: "WAP EMPR900K",
+    link: "https://meli.la/32uzTZx"
+  },
+  "Vonder MPV 1500": {
+    name: "Vonder MPV 1500",
+    link: "https://meli.la/2NvKT2D"
+  },
+  "Martelete Elétrico MAKITA HR2630X15": {
+    name: "Martelete Elétrico MAKITA HR2630X15",
+    link: "https://meli.la/2UjEtG8"
+  },
+  "Martelete Rotativo 12V SEM Bateria SDS 14mm Makita HR140DZ": {
+    name: "Martelete Rotativo 12V SEM Bateria SDS 14mm Makita HR140DZ",
+    link: "https://meli.la/1X2k9Sh"
   }
 };
 
