@@ -5,6 +5,18 @@ export interface Product {
 
 
 export const products: Record<string, Product> = {
+  "alternativas-furadeira-britania-650w": {
+    name: "Alternativas a Furadeira Britânia 650W",
+    link: "https://amzn.to/4uafoea"
+  },
+  "alternativas-parafusadeiras-12v": {
+    name: "Alternativas parafusadeiras de 12V",
+    link: "https://amzn.to/4wUvGuk"
+  },
+  "alternativas-parafusadeiras-4-8v": {
+    name: "Alternativas parafusadeiras de 4.8V",
+    link: "https://amzn.to/3PLnN9Y"
+  },
   "parafusadeira-bosch-gsb-185-li": {
     name: "Parafusadeira Bosch GSB 185-LI",
     link: "https://meli.la/1tb3Sr1"
@@ -777,6 +789,18 @@ export const products: Record<string, Product> = {
   "Martelete Rotativo 12V SEM Bateria SDS 14mm Makita HR140DZ": {
     name: "Martelete Rotativo 12V SEM Bateria SDS 14mm Makita HR140DZ",
     link: "https://meli.la/1X2k9Sh"
+  },
+  "britania-bpf01": {
+    name: "Parafusadeira Britânia BPF01",
+    link: "https://amzn.to/3RUfWaF"
+  },
+  "parafusadeira-britania-bpf03mf": {
+    name: "Parafusadeira Britânia BPF03MF",
+    link: "https://amzn.to/4u8VhNn"
+  },
+  "furadeira-britania-650w": {
+    name: "Furadeira Britânia 650W",
+    link: "https://meli.la/2vHUcDV"
   }
 };
 

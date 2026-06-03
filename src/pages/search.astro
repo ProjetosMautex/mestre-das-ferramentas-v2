@@ -2,13 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import { articles } from '../data/articles';
 import { articlesChaveDeImpacto } from '../data/articleschavedeimpacto';
+import { articles as articlesMartelete } from '../data/articlesmartelete';
 
-const allArticles = [...articles, ...articlesChaveDeImpacto];
+const allArticles = [...articles, ...articlesChaveDeImpacto, ...articlesMartelete];
 ---
 
 <Layout 
   title="Resultados da Busca | Mestre das Ferramentas"
   description="Encontre as melhores análises e guias de ferramentas."
+  popupType="central"
 >
   <main class="bg-white min-h-screen">
     <section class="bg-[#1a1a1a] py-16">

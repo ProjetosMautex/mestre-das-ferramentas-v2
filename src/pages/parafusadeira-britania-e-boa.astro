@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParafusadeiraBritaniaEBoa } from '../components/ParafusadeiraBritaniaEBoa';
+
+// Aqui você define o SEO da página
+const title = "Parafusadeira Britânia é boa? Review da BPF01";
+const description = "A parafusadeira Britânia BPF01 vale o investimento? Descubra se ela resolve seus reparos domésticos e como prolongar a vida útil da sua ferramenta. Confira!";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <ParafusadeiraBritaniaEBoa client:load />
+</Layout>

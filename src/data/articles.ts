@@ -7,12 +7,6 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    title: "8 Melhores Marteletes 2026 para Obra e DIY (Custo-Benefício)",
-    url: "/qual-o-melhor-martelete",
-    image: "/images/blog/2/qual o melhor martelete.webp",
-    excerpt: "Em dúvida sobre qual martelete comprar? Descubra como escolher a potência e o modelo ideal para suas obras e reformas com nosso guia técnico completo."
-  },
-  {
     title: "Melhor Parafusadeira de 2026: Top 11 Testadas e Aprovadas",
     url: "/melhor-parafusadeira",
     image: "/images/blog/melhor-parafusadeira/melhor-parafusadeira.webp",
@@ -629,5 +623,24 @@ export const articles: Article[] = [
     url: "/o-que-e-broca-escalonada",
     image: "/images/blog/1/o que é broca escalonada.webp",
     excerpt: "Cansado de furos imprecisos e retrabalho? Descubra por que a broca escalonada é o segredo dos profissionais para perfurações perfeitas, rápidas e sem rebarbas."
+  },
+  {
+    title: "Parafusadeira Britânia é boa? Review da BPF01",
+    url: "/parafusadeira-britania-e-boa",
+    image: "/images/blog/1/parafusadeira-britania-e-boa.webp",
+    excerpt: "A parafusadeira Britânia BPF01 vale o investimento? Descubra se ela resolve seus reparos domésticos e como prolongar a vida útil da sua ferramenta. Confira!"
+  },
+  {
+    title: "Parafusadeira Britânia Hobby BPF03MF 12V é boa?",
+    url: "/parafusadeira-britania-hobby-bpf03mf-e-boa",
+    image: "/images/blog/1/parafusadeira-britania-hobby-bpf03mf-e-boa.webp",
+    excerpt: "A Britânia BPF03MF 12V entrega o que promete? Descubra todos os detalhes deste modelo e se vale a pena."
+  },
+  {
+    title: "Furadeira Britânia 650W é boa? Descubra se vale a pena",
+    url: "/furadeira-britania-650w-e-boa",
+    image: "/images/blog/1/furadeira-britania-650w-e-boa-capa.webp",
+    excerpt: "A Furadeira Britânia 650W entrega o que promete? Conheça todos os detalhes, vantagens e descubra se ela é a escolha ideal para seus projetos e reparos em casa."
   }
 ];
+
