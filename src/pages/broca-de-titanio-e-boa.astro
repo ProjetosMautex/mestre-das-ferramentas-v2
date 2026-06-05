@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { BrocaDeTitanioEBoa } from '../components/BrocaDeTitanioEBoa';
+
+// Aqui você define o SEO da página
+const title = "Broca de Titânio é Boa? Vale a Pena ou É Furada?";
+const description = "Broca de titânio vale a pena? Descubra a verdade sobre durabilidade, custo-benefício e como escolher o kit ideal para acabamentos profissionais impecáveis.";
+---
+
+<Layout title={title} description={description}>
+  {/* O client:load é necessário para que os ícones do Lucide e interações funcionem */}
+  <BrocaDeTitanioEBoa client:load />
+</Layout>

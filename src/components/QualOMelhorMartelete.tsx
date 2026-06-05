@@ -3,7 +3,7 @@ import React from 'react';
 import { AffiliateCard } from './AffiliateCard';
 import { BunnerDoMeiomartelete } from './BunnerDoMeiomartelete';
 import { ExitIntentPopupmartelete } from './ExitIntentPopupmartelete';
-import { products, type ProductId } from '../data/products';
+import { productsmartele as products, type ProductId } from '../data/productsmartele';
 import { Check, X, Info, ShoppingCart, ArrowRight } from 'lucide-react';
 
 export const QualOMelhorMartelete: React.FC = () => {

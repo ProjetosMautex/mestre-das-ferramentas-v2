@@ -1,5 +1,5 @@
 import React from 'react';
-import { BunnerDoMeio } from './BunnerDoMeio';
+import { BunnerDoMeiocentral } from './BunnerDoMeiocentral';
 
 export const ComoFuncionaParafusadeiraPneumatica: React.FC = () => {
   return (
@@ -67,7 +67,7 @@ export const ComoFuncionaParafusadeiraPneumatica: React.FC = () => {
             </div>
           </section>
 
-          <BunnerDoMeio />
+          <BunnerDoMeiocentral />
 
           <section className="mb-12 mt-12">
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Estrutura e Componentes da Parafusadeira Pneumática</h2>

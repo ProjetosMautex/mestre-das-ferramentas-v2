@@ -758,45 +758,18 @@ export const products: Record<string, Product> = {
     name: "Afiador de Brocas Sparta 9123055",
     link: "https://meli.la/18CNkP2"
   },
-  "Martelete Perfurador Bosch GBH 2-24 D": {
-    name: "Martelete Perfurador Bosch GBH 2-24 D",
-    link: "https://meli.la/19HZMZs"
-  },
-  "Martelete Perfurador Rompedor Vonder Mpv 620": {
-    name: "Martelete Perfurador Rompedor Vonder Mpv 620",
-    link: "https://meli.la/12cTqco"
-  },
-  "Martelete Perfurador Dewalt D25133K": {
-    name: "Martelete Perfurador Dewalt D25133K",
-    link: "https://meli.la/1DRfMQt"
-  },
-  "Martelete Makita HR2470": {
-    name: "Martelete Makita HR2470",
-    link: "https://meli.la/1hMkewE"
-  },
-  "WAP EMPR900K": {
-    name: "WAP EMPR900K",
-    link: "https://meli.la/32uzTZx"
-  },
-  "Vonder MPV 1500": {
-    name: "Vonder MPV 1500",
-    link: "https://meli.la/2NvKT2D"
-  },
-  "Martelete Elétrico MAKITA HR2630X15": {
-    name: "Martelete Elétrico MAKITA HR2630X15",
-    link: "https://meli.la/2UjEtG8"
-  },
-  "Martelete Rotativo 12V SEM Bateria SDS 14mm Makita HR140DZ": {
-    name: "Martelete Rotativo 12V SEM Bateria SDS 14mm Makita HR140DZ",
-    link: "https://meli.la/1X2k9Sh"
-  },
+  // não precisa atualizar esses links: britania-bpf01
   "britania-bpf01": {
     name: "Parafusadeira Britânia BPF01",
     link: "https://amzn.to/3RUfWaF"
   },
-  "parafusadeira-britania-bpf03mf": {
+  "parafusadeira-britania-hobby-bpf03mf": {
     name: "Parafusadeira Britânia BPF03MF",
     link: "https://amzn.to/4u8VhNn"
+  },
+  "kit-brocas-de-titanio": {
+    name: "Kit Brocas de Titânio",
+    link: "https://amzn.to/4avQ3Ev"
   },
   "furadeira-britania-650w": {
     name: "Furadeira Britânia 650W",

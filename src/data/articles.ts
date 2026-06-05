@@ -641,6 +641,12 @@ export const articles: Article[] = [
     url: "/furadeira-britania-650w-e-boa",
     image: "/images/blog/1/furadeira-britania-650w-e-boa-capa.webp",
     excerpt: "A Furadeira Britânia 650W entrega o que promete? Conheça todos os detalhes, vantagens e descubra se ela é a escolha ideal para seus projetos e reparos em casa."
+  },
+  {
+    title: "Broca de Titânio é Boa? Vale a Pena ou É Furada?",
+    url: "/broca-de-titanio-e-boa",
+    image: "/images/blog/1/broca de titânio é boa.webp",
+    excerpt: "Broca de titânio vale a pena? Descubra a verdade sobre durabilidade, custo-benefício e como escolher o kit ideal para acabamentos profissionais impecáveis."
   }
 ];
 
