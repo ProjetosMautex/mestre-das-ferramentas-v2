@@ -9,7 +9,7 @@ export const OQueEBrocaHelicoidal: React.FC = () => {
         <div className="relative bg-[#1a1a1a] text-white py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src="/images/blog/1/o que é​ broca helicoidal.webp" 
+              src="/images/blog/1/o que é broca helicoidal.webp" 
               alt="O que é Broca Helicoidal" 
               className="w-full h-full object-cover opacity-30"
               onError={(e) => {
@@ -65,7 +65,7 @@ export const OQueEBrocaHelicoidal: React.FC = () => {
             
             <div className="mb-6 flex justify-center">
               <img 
-                src="/images/blog/1/o que é​ broca helicoidal.webp" 
+                src="/images/blog/1/o que é broca helicoidal.webp" 
                 alt="O que é broca helicoidal" 
                 className="w-full max-w-2xl rounded-xl shadow-lg"
               />

@@ -659,12 +659,6 @@ export const articles: Article[] = [
     url: "/como-saber-qual-bit-usar-para-cada-parafuso",
     image: "/images/blog/1/como saber qual bit usar para cada parafuso.webp",
     excerpt: "Cansado de espanar parafusos? Aprenda a escolher o bit ideal para cada tarefa e transforme seus reparos domésticos em trabalhos de nível profissional."
-  },
-  {
-    title: "Como Usar Martelete Corretamente: Guia para Iniciantes",
-    url: "/como-usar-martelete",
-    image: "/images/blog/2/como usar martelete.webp",
-    excerpt: "Aprenda como usar martelete corretamente com nosso guia definitivo. Domine técnicas, evite erros comuns e garanta eficiência máxima em suas obras."
   }
 ];
 
