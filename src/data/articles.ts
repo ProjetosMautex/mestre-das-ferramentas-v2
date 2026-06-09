@@ -321,13 +321,13 @@ export const articles: Article[] = [
   {
     title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
     url: "/melhor-furadeira-bosch",
-    image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch​.webp",
+    image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch.webp",
     excerpt: "Escolher a furadeira certa pode fazer toda a diferença em um projeto, seja ele pequeno ou grande."
   },
   {
     title: "Furadeira Titanium é boa? Testei e te conto se vale a pena",
     url: "/furadeira-titanium-e-boa",
-    image: "/images/blog/melhores-marcas-de-furadeira/furadeira titanium é boa​.webp",
+    image: "/images/blog/melhores-marcas-de-furadeira/furadeira titanium é boa.webp",
     excerpt: "A Furadeira Titanium ganhou destaque no mercado, prometendo eficiência e durabilidade. Mas será que tudo isso se traduz em uma experiência prática satisfatória?"
   },
   {
@@ -603,7 +603,7 @@ export const articles: Article[] = [
   {
     title: "O que é Broca Helicoidal? Guia Rápido e Prático",
     url: "/o-que-e-broca-helicoidal",
-    image: "/images/blog/1/o que é​ broca helicoidal.webp",
+    image: "/images/blog/1/o que é broca helicoidal.webp",
     excerpt: "Cansado de furos imprecisos e brocas que quebram? Entenda por que a broca helicoidal é a chave para perfurações perfeitas e como escolher a ideal."
   },
   {
@@ -647,6 +647,24 @@ export const articles: Article[] = [
     url: "/broca-de-titanio-e-boa",
     image: "/images/blog/1/broca de titânio é boa.webp",
     excerpt: "Broca de titânio vale a pena? Descubra a verdade sobre durabilidade, custo-benefício e como escolher o kit ideal para acabamentos profissionais impecáveis."
+  },
+  {
+    title: "Como furar ferro com furadeira: guia completo passo a passo",
+    url: "/como-furar-ferro-com-furadeira",
+    image: "/images/blog/1/como%20furar%20ferro%20com%20furadeira.webp",
+    excerpt: "Aprenda como furar ferro com furadeira de forma correta e segura. Conheça as melhores brocas, a técnica ideal e as dicas para não errar."
+  },
+  {
+    title: "Não Erre Mais: Qual Bit Usar para Cada Parafuso?",
+    url: "/como-saber-qual-bit-usar-para-cada-parafuso",
+    image: "/images/blog/1/como saber qual bit usar para cada parafuso.webp",
+    excerpt: "Cansado de espanar parafusos? Aprenda a escolher o bit ideal para cada tarefa e transforme seus reparos domésticos em trabalhos de nível profissional."
+  },
+  {
+    title: "Como Usar Martelete Corretamente: Guia para Iniciantes",
+    url: "/como-usar-martelete",
+    image: "/images/blog/2/como usar martelete.webp",
+    excerpt: "Aprenda como usar martelete corretamente com nosso guia definitivo. Domine técnicas, evite erros comuns e garanta eficiência máxima em suas obras."
   }
 ];
 

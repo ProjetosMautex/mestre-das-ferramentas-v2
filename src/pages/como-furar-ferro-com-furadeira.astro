@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoFurarFerroComFuradeira } from '../components/ComoFurarFerroComFuradeira';
+---
+
+<Layout 
+  title="Como furar ferro com furadeira: guia completo passo a passo"
+  description="Aprenda como furar ferro com furadeira de forma correta e segura. Conheça as melhores brocas, a técnica ideal e as dicas para não errar."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <ComoFurarFerroComFuradeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoSaberQualBitUsarParaCadaParafuso } from '../components/ComoSaberQualBitUsarParaCadaParafuso';
+---
+
+<Layout 
+  title="Não Erre Mais: Qual Bit Usar para Cada Parafuso?"
+  description="Cansado de espanar parafusos? Aprenda a escolher o bit ideal para cada tarefa e transforme seus reparos domésticos em trabalhos de nível profissional."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <ComoSaberQualBitUsarParaCadaParafuso client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

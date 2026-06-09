@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoUsarMartelete } from '../components/ComoUsarMartelete';
+---
+
+<Layout 
+  title="Como Usar Martelete Corretamente: Guia para Iniciantes"
+  description="Aprenda como usar martelete corretamente com nosso guia definitivo. Domine técnicas, evite erros comuns e garanta eficiência máxima em suas obras. Clique!"
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <ComoUsarMartelete client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

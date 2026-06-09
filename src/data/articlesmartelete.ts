@@ -17,5 +17,11 @@ export const articles: Article[] = [
     url: "/martelete-nakasaki-e-bom",
     image: "/images/blog/2/martelete nakasaki é bom.webp",
     excerpt: "O martelete Nakasaki é bom para sua obra? Descubra se esta ferramenta entrega a potência que você precisa pelo preço justo antes de comprar a sua."
+  },
+  {
+    title: "Como Usar Martelete Corretamente: Guia para Iniciantes",
+    url: "/como-usar-martelete",
+    image: "/images/blog/2/como usar martelete.webp",
+    excerpt: "Aprenda como usar martelete corretamente com nosso guia definitivo. Domine técnicas, evite erros comuns e garanta eficiência máxima em suas obras."
   }
 ];
