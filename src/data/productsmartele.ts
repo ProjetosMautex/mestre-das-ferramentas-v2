@@ -51,6 +51,27 @@ export const productsmartele: Record<string, Product> = {
   "Martelete Rotativo Rompedor Nakasaki DW205 1600w": {
     name: "Martelete Rotativo Rompedor Nakasaki 1600w",
     link: "https://meli.la/2smS2Qr"
+  },
+  // nunca atualizar
+  "Martelete Pneumático MXT-1510R Maxx Tools": {
+    name: "Martelete Pneumático MXT-1510R Maxx Tools",
+    link: "https://meli.la/2oAwoYD"
+  },
+  "Martelete Pneumático Rebarbador Longo 3.500BPM LDR2 PDR PRO-310": {
+    name: "Martelete Pneumático Rebarbador Longo 3.500BPM LDR2 PDR PRO-310",
+    link: "https://amzn.to/4uvT1jB"
+  },
+  "MARTELETE REBARBADOR PNEUMATICO ENCAIXE SEXTAVADO 10MM - M7": {
+    name: "MARTELETE REBARBADOR PNEUMATICO ENCAIXE SEXTAVADO 10MM - M7",
+    link: "https://amzn.to/4aujYwT"
+  },
+  "Martelete Pneumático Profissional – Curso 150mm com Cinzéis Redondos": {
+    name: "Martelete Pneumático Profissional – Curso 150mm com Cinzéis Redondos",
+    link: "https://amzn.to/43pRSPA"
+  },
+  "Martelete Pneumático Chiaperini CH-M 19": {
+    name: "Martelete Pneumático Chiaperini CH-M 19",
+    link: "https://meli.la/1ZF4N9j"
   }
 };
 

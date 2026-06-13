@@ -659,6 +659,11 @@ export const articles: Article[] = [
     url: "/como-saber-qual-bit-usar-para-cada-parafuso",
     image: "/images/blog/1/como saber qual bit usar para cada parafuso.webp",
     excerpt: "Cansado de espanar parafusos? Aprenda a escolher o bit ideal para cada tarefa e transforme seus reparos domésticos em trabalhos de nível profissional."
+  },
+  {
+    title: "O que é Furadeira Reversível e Por Que Você Precisa de Uma",
+    url: "/o-que-e-furadeira-reversivel",
+    image: "/images/blog/1/o que é furadeira reversivel.webp",
+    excerpt: "Cansado de parafusos espanados e brocas travadas? Entenda por que a furadeira reversível é a ferramenta definitiva para garantir precisão e agilidade."
   }
 ];
-

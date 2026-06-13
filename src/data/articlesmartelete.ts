@@ -23,5 +23,11 @@ export const articles: Article[] = [
     url: "/como-usar-martelete",
     image: "/images/blog/2/como usar martelete.webp",
     excerpt: "Aprenda como usar martelete corretamente com nosso guia definitivo. Domine técnicas, evite erros comuns e garanta eficiência máxima em suas obras."
+  },
+  {
+    title: "Os Melhores Marteletes Pneumáticos para Comprar Hoje",
+    url: "/qual-o-melhor-martelete-pneumatico",
+    image: "/images/blog/2/qual o melhor martelete pneumático.webp",
+    excerpt: "Precisa de força e precisão no trabalho pesado? Descubra como escolher o martelete pneumático ideal para aumentar sua produtividade e evitar erros."
   }
 ];
