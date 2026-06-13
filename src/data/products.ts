@@ -324,7 +324,7 @@ export const products: Record<string, Product> = {
   },
   "Furadeira de Impacto Mondial 550W FI-09": {
     name: "Furadeira de Impacto Mondial 550W FI-09",
-    link: "https://amzn.to/4bfQXWC"
+    link: "https://meli.la/1HBJM7q"
   },
   "Parafusadeira Philco Force 3 em 1 PPF120MF": {
     name: "Parafusadeira Philco Force 3 em 1 PPF120MF",
@@ -336,7 +336,7 @@ export const products: Record<string, Product> = {
   },
   "Parafusadeira/Furadeira Impacto GBS 18V50": {
     name: "Parafusadeira/Furadeira Impacto GBS 18V50",
-    link: "https://meli.la/1CXbE3f"
+    link: "https://meli.la/14PPqd6"
   },
   "BOSCH Parafusadeira Furadeira GSB 12V-30": {
     name: "BOSCH Parafusadeira Furadeira GSB 12V-30",
