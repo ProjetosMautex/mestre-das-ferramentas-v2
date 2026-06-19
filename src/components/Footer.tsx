@@ -79,7 +79,9 @@ export const Footer: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg text-gray-100">E-mail</h4>
-                  <p className="text-gray-300 break-all">projetosmautex@gmail.com</p>
+                  <a href="mailto:contato@mestredasferramentas.com.br" className="text-gray-300 break-all hover:text-[#FFD700] transition-colors block">
+                    contato@mestredasferramentas.com.br
+                  </a>
                 </div>
               </div>
 

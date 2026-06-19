@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoUsarMarteletePneumatico } from '../components/ComoUsarMarteletePneumatico';
+---
+
+<Layout 
+  title="Como Usar Martelete Pneumático Sem Erros (Guia)"
+  description="Domine o uso do martelete pneumático com nosso guia definitivo. Aprenda técnicas de operação, manutenção e segurança para elevar sua produtividade agora."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <ComoUsarMarteletePneumatico client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

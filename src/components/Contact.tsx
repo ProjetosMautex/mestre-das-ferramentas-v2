@@ -113,7 +113,9 @@ export const Contact: React.FC = () => {
                     <div className="text-[#FFD700] mt-1"><Mail size={20} /></div>
                     <div>
                       <h4 className="font-bold text-gray-900">E-mail</h4>
-                      <p className="text-gray-600 break-all">projetosmautex@gmail.com</p>
+                      <a href="mailto:contato@mestredasferramentas.com.br" className="text-gray-600 break-all hover:underline block">
+                        contato@mestredasferramentas.com.br
+                      </a>
                     </div>
                   </div>
                 </div>

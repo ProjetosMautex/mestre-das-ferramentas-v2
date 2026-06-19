@@ -92,7 +92,7 @@ export const TermsOfUse: React.FC = () => {
             </h3>
             <p className="mb-4 text-lg font-semibold">Em caso de dúvidas sobre os Termos de Uso, entre em contato:</p>
             <p className="text-xl font-bold text-blue-600">
-              📧 <a href="mailto:projetosmautex@gmail.com" className="hover:underline">Fale Conosco Aqui</a>
+              📧 <a href="mailto:contato@mestredasferramentas.com.br" className="hover:underline">Fale Conosco Aqui</a>
             </p>
             
             <div className="mt-16 pt-8 border-t border-gray-200 text-sm text-gray-500 font-medium">

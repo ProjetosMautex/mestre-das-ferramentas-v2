@@ -29,5 +29,11 @@ export const articles: Article[] = [
     url: "/qual-o-melhor-martelete-pneumatico",
     image: "/images/blog/2/qual o melhor martelete pneumático.webp",
     excerpt: "Precisa de força e precisão no trabalho pesado? Descubra como escolher o martelete pneumático ideal para aumentar sua produtividade e evitar erros."
+  },
+  {
+    title: "Como Usar Martelete Pneumático Sem Erros (Guia)",
+    url: "/como-usar-martelete-pneumático",
+    image: "/images/blog/2/como usar martelete pneumático.webp",
+    excerpt: "Domine o uso do martelete pneumático com nosso guia definitivo. Aprenda técnicas de operação, manutenção e segurança para elevar sua produtividade agora."
   }
 ];
