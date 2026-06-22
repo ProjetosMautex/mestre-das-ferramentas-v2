@@ -665,5 +665,11 @@ export const articles: Article[] = [
     url: "/o-que-e-furadeira-reversivel",
     image: "/images/blog/1/o que é furadeira reversivel.webp",
     excerpt: "Cansado de parafusos espanados e brocas travadas? Entenda por que a furadeira reversível é a ferramenta definitiva para garantir precisão e agilidade."
+  },
+  {
+    title: "12V vs 18V: Qual Parafusadeira é Melhor?",
+    url: "/Qual-a-diferenca-entre-parafusadeira-12V-e-18V",
+    image: "/images/blog/1/Qual a diferença entre parafusadeira 12V e 18V.webp",
+    excerpt: "Ainda na dúvida entre 12V e 18V? Descubra como escolher a parafusadeira ideal para o seu perfil e evite gastos desnecessários com o equipamento errado."
   }
 ];

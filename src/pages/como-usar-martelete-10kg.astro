@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoUsarMartelete10kg } from '../components/ComoUsarMartelete10kg';
+---
+
+<Layout 
+  title="Como Usar Martelete 10kg e Quando Escolher na Obra"
+  description="Aprenda como usar o martelete de 10kg com segurança e eficiência. Domine técnicas para aumentar sua produtividade e evitar erros na hora da demolição."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <ComoUsarMartelete10kg client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

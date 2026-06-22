@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { QualADiferencaEntreParafusadeira12Ve18V } from '../components/QualADiferencaEntreParafusadeira12Ve18V';
+---
+
+<Layout 
+  title="12V vs 18V: Qual Parafusadeira é Melhor?"
+  description="Ainda na dúvida entre 12V e 18V? Descubra como escolher a parafusadeira ideal para o seu perfil e evite gastos desnecessários com o equipamento errado."
+>
+  <main>
+    {/* O client:load é fundamental para que filtros ou calculadoras no React funcionem */}
+    <QualADiferencaEntreParafusadeira12Ve18V client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

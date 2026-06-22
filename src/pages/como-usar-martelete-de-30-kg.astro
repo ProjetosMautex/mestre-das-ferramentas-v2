@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoUsarMartelete30kg } from '../components/ComoUsarMartelete30kg';
+---
+
+<Layout 
+  title="Como Usar Martelete 30kg e Quando Usar ele na Obra"
+  description="Precisa usar um martelete 30kg com eficiência máxima? Descubra as técnicas essenciais de segurança e operação para acelerar sua obra sem riscos. Leia agora!"
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <ComoUsarMartelete30kg client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

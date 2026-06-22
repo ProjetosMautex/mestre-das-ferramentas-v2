@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoQuebrarConcretoComMartelete } from '../components/ComoQuebrarConcretoComMartelete';
+---
+
+<Layout 
+  title="Quebrar Concreto com Martelete Economize na Obra"
+  description="Cansado de atrasos e esforço inútil? Descubra por que usar marteletes profissionais é a estratégia definitiva para economizar e entregar obras de alta qualidade."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <ComoQuebrarConcretoComMartelete client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

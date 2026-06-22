@@ -35,5 +35,23 @@ export const articles: Article[] = [
     url: "/como-usar-martelete-pneumático",
     image: "/images/blog/2/como usar martelete pneumático.webp",
     excerpt: "Domine o uso do martelete pneumático com nosso guia definitivo. Aprenda técnicas de operação, manutenção e segurança para elevar sua produtividade agora."
+  },
+  {
+    title: "Quebrar Concreto com Martelete Economize na Obra",
+    url: "/como-quebrar-concreto-com-martelete",
+    image: "/images/blog/2/como quebrar concreto com martelete.webp",
+    excerpt: "Cansado de atrasos e esforço inútil? Descubra por que usar marteletes profissionais é a estratégia definitiva para economizar e entregar obras de alta qualidade."
+  },
+  {
+    title: "Como Usar Martelete 10kg e Quando Escolher na Obra",
+    url: "/como-usar-martelete-10kg",
+    image: "/images/blog/2/como usar martelete 10kg.jpg",
+    excerpt: "Aprenda como usar o martelete de 10kg com segurança e eficiência. Domine técnicas para aumentar sua produtividade e evitar erros na hora da demolição."
+  },
+  {
+    title: "Como Usar Martelete 30kg e Quando Usar ele na Obra",
+    url: "/como-usar-martelete-de-30-kg",
+    image: "/images/blog/2/como usar martelete de 30 kg.webp",
+    excerpt: "A demolição de estruturas de concreto denso exige mais do que força bruta; demanda o equipamento adequado para garantir eficiência e segurança."
   }
 ];
