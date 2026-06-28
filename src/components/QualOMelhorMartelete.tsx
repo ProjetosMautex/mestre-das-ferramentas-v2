@@ -118,15 +118,18 @@ export const QualOMelhorMartelete: React.FC = () => {
             {/* Produto 1 */}
             <section id="martelete-1" className="scroll-mt-24">
               <h3 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                1. Martelete Perfurador GBH 2-24 D 820W 127V com maleta – Bosch
+                1. Martelete Perfurador Rompedor GBH 2-24 D 820W Kit Completo com Maleta – Bosch
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src="/images/blog/2/Martelete Perfurador Bosch GBH 2-24 D.webp" alt="Martelete Perfurador GBH 2-24 D 820W 127V com maleta – Bosch" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src="/images/blog/2/Martelete Perfurador Bosch GBH 2-24 D.webp" alt="Martelete Perfurador Rompedor GBH 2-24 D 820W Kit Completo com Maleta – Bosch" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>Se você busca produtividade em canteiros ou reformas, este modelo da Bosch é um divisor de águas. Com 820W de potência e encaixe SDS Plus, ele transforma a tarefa de furar concreto em um processo ágil, reduzindo drasticamente o esforço manual.</p>
-                <p>A embreagem de segurança integrada é um diferencial valioso, protegendo o pulso caso a broca trave inesperadamente. Enquanto isso, o sistema antivibração permite longas horas de operação com menor fadiga física.</p>
-                <p>Embora seu cabo de 4 metros ofereça excelente alcance, vale notar que o peso de 2,8 kg pode ser sentido em aplicações verticais prolongadas. É a escolha certeira para quem prioriza durabilidade e a confiança de uma marca que entende o dia a dia do profissional.</p>
+                <p>Se você busca produtividade extrema e versatilidade em canteiros ou reformas, este kit da Bosch é um divisor de águas. Com 820W de potência e seus 3 modos de operação, ele não apenas transforma a tarefa de furar concreto em um processo ágil, mas já vem pronto para o trabalho pesado.</p>
+                <p>O grande trunfo desta versão é a inclusão do mandril extra com adaptador, que transforma o maquinário em uma furadeira potente para metal e madeira, além de já acompanhar ponteiro e talhadeira para os serviços de demolição.</p>
+                <p>A embreagem de segurança integrada é um diferencial valioso, protegendo o pulso caso a broca trave inesperadamente.</p>
+                <p>Enquanto isso, o sistema antivibração e o punho emborrachado permitem longas horas de operação com muito menos fadiga física.</p>
+                <p>Embora seu cabo de 4 metros ofereça excelente alcance e mobilidade, vale notar que o peso de 2,8 kg pode ser sentido em aplicações verticais e contínuas no teto.</p>
+                <p>É a escolha certeira, entregue na maleta original, para o profissional que prioriza durabilidade e quer uma ferramenta "tudo em um" para qualquer desafio do dia a dia.</p>
               </div>
 
               <AffiliateCard id="Martelete Perfurador Bosch GBH 2-24 D" />
@@ -135,17 +138,17 @@ export const QualOMelhorMartelete: React.FC = () => {
                 <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                   <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
                   <ul className="space-y-2 text-green-700 text-sm">
+                    <li>Kit completo com maleta, mandril e brocas.</li>
+                    <li>Extrema versatilidade (fura e rompe).</li>
                     <li>Embreagem de segurança integrada.</li>
-                    <li>Sistema eficiente de antivibração.</li>
-                    <li>Cabo longo de 4 metros.</li>
-                    <li>Kit prático com 5 brocas.</li>
+                    <li>Cabo longo e giratório de 4 metros.</li>
                   </ul>
                 </div>
                 <div className="bg-red-50 p-6 rounded-xl border border-red-100">
                   <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
                   <ul className="space-y-2 text-red-700 text-sm">
                     <li>Peso considerável para uso contínuo no teto.</li>
-                    <li>Exige manutenção preventiva periódica.</li>
+                    <li>Investimento inicial superior (com acessórios).</li>
                   </ul>
                 </div>
               </div>

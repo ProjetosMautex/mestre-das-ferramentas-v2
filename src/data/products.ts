@@ -524,7 +524,7 @@ export const products: Record<string, Product> = {
   },
   "BOSCH Jogo de Brocas SDS Plus-1 para Concreto ｜ 2607019447": {
     name: "BOSCH Jogo de Brocas SDS Plus-1 para Concreto ｜ 2607019447",
-    link: "https://amzn.to/4dxfNCQ"
+    link: "https://meli.la/2fTdVBu"
   },
   "MTX Broca para Concreto 6 X 210 mm Tipo SDS Plus": {
     name: "MTX Broca para Concreto 6 X 210 mm Tipo SDS Plus",

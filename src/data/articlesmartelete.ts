@@ -53,5 +53,11 @@ export const articles: Article[] = [
     url: "/como-usar-martelete-de-30-kg",
     image: "/images/blog/2/como usar martelete de 30 kg.webp",
     excerpt: "A demolição de estruturas de concreto denso exige mais do que força bruta; demanda o equipamento adequado para garantir eficiência e segurança."
+  },
+  {
+    title: "Martelete Dobevi é Bom? E o Bosch? Veja o Teste!",
+    url: "/martelete-dobevi-e-bom",
+    image: "/images/blog/2/martelete dobevi e bom.webp",
+    excerpt: "O martelete Dobevi é bom? E o Bosch? Descubra se esta ferramenta entrega a potência necessária e se o custo-benefício realmente compensa o uso com nosso teste real."
   }
 ];

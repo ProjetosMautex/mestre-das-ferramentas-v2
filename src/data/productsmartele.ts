@@ -6,7 +6,7 @@ export interface Product {
 export const productsmartele: Record<string, Product> = {
   "Martelete Perfurador Bosch GBH 2-24 D": {
     name: "Martelete Perfurador Bosch GBH 2-24 D",
-    link: "https://meli.la/19HZMZs"
+    link: "https://meli.la/19hHwW5"
   },
   "Martelete Perfurador Rompedor Vonder Mpv 620": {
     name: "Martelete Perfurador Rompedor Vonder Mpv 620",
@@ -72,6 +72,18 @@ export const productsmartele: Record<string, Product> = {
   "Martelete Pneumático Chiaperini CH-M 19": {
     name: "Martelete Pneumático Chiaperini CH-M 19",
     link: "https://meli.la/1ZF4N9j"
+  },
+  "Martelete Rompedor Furadeira 2200w Sds Plus Cmaleta Dobevi": {
+    name: "Martelete Rompedor Furadeira 2200w Sds Plus Cmaleta Dobevi",
+    link: "https://meli.la/2mP1Fx7"
+  },
+  "Óculos 3m Securefit Sf 100 Antiembaçante Lente Incolor": {
+    name: "Óculos 3m Securefit Sf 100 Antiembaçante Lente Incolor",
+    link: "https://meli.la/2WoFmi2"
+  },
+  "Graxa Alto Teor Grafite P Martelete Porta De Enrrolar 250g": {
+    name: "Graxa Alto Teor Grafite P Martelete Porta De Enrrolar 250g",
+    link: "https://meli.la/1YQCVaJ"
   }
 };
 

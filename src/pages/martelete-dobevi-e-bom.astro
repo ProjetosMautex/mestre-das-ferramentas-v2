@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { MarteleteDobeviEBom } from '../components/MarteleteDobeviEBom';
+
+const title = "Martelete Dobevi é Bom? E o Bosch? Veja o Teste!";
+const description = "O martelete Dobevi é bom? E o Bosch? Descubra se esta ferramenta entrega a potência necessária e se o custo-benefício realmente compensa o uso com nosso teste real.";
+---
+
+<Layout title={title} description={description}>
+  <MarteleteDobeviEBom client:load />
+</Layout>
