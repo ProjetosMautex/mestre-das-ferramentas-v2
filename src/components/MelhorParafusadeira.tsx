@@ -79,27 +79,56 @@ export const MelhorParafusadeira: React.FC = () => {
   const faqData = [
     {
       question: "Qual a melhor parafusadeira?",
-      answer: "Ao avaliarmos o desempenho geral, a Bosch GSB 185-LI se destaca como a escolha mais equilibrada e robusta para quem busca uma máquina profissional definitiva. Em nossos testes, ela trouxe um motor Brushless (sem escovas) moderno, torque de 50 Nm e excelente controle de peso. Comparada com a DeWalt DCD7781D2 (que é um verdadeiro 'trator' para furos pesados em concreto), a Bosch GSB 185-LI é mais leve e confortável para o dia a dia, sendo ideal se você busca agilidade sem cansar o braço. Já a DeWalt é a melhor se o seu foco for pura força bruta em alvenaria pesada."
+      answer: [
+        "Ao avaliarmos o desempenho geral, a Bosch GSB 185-LI se destaca como a escolha mais equilibrada e robusta para quem busca uma máquina profissional definitiva.",
+        "Em nossos testes, ela trouxe um motor Brushless (sem escovas) moderno, torque de 50 Nm e excelente controle de peso.",
+        "Comparada com a DeWalt DCD7781D2 (que é um verdadeiro 'trator' para furos pesados em concreto), a Bosch GSB 185-LI é mais leve e confortável para o dia a dia, sendo ideal se você busca agilidade sem cansar o braço.",
+        "Já a DeWalt é a melhor se o seu foco for pura força bruta em alvenaria pesada."
+      ]
     },
     {
       question: "Qual a melhor marca de parafusadeira?",
-      answer: "A Bosch, a DeWalt e a Makita são as referências absolutas quando falamos de ferramentas profissionais. Elas oferecem durabilidade extrema, motores Brushless de alta tecnologia e assistência técnica muito fácil no Brasil. Já as outras marcas do mercado (como WAP, Black+Decker, Vonder e marcas importadas) são mais voltadas para o uso doméstico ou esporádico. A escolha ideal depende de quantas horas seguidas sua ferramenta vai trabalhar."
+      answer: [
+        "A Bosch, a DeWalt e a Makita são as referências absolutas quando falamos de ferramentas profissionais.",
+        "Elas oferecem durabilidade extrema, motores Brushless de alta tecnologia e assistência técnica muito fácil no Brasil.",
+        "Já as outras marcas do mercado (como WAP, Black+Decker, Vonder e marcas importadas) são mais voltadas para o uso doméstico ou esporádico.",
+        "A escolha ideal depende de quantas horas seguidas sua ferramenta vai trabalhar."
+      ]
     },
     {
       question: "Qual a diferença entre parafusadeira e furadeira?",
-      answer: "Muitos iniciantes acreditam que qualquer furadeira pode desempenhar o papel de parafusadeira, mas essa confusão costuma resultar em parafusos espanados ou peças danificadas. A distinção fundamental reside em dois pilares técnicos: o reverso e a embreagem. Uma parafusadeira possui controle de giro (horário e anti-horário), permitindo tanto o aperto quanto a remoção de parafusos, enquanto furadeiras comuns são limitadas a uma rotação contínua. Mais crucial ainda é o sistema de embreagem. Enquanto a furadeira prioriza a velocidade para perfurar, a parafusadeira conta com um ajuste de torque que interrompe a rotação assim que o parafuso atinge a profundidade ideal. Esse mecanismo de segurança protege o material e a integridade da fenda do parafuso, garantindo um acabamento profissional que a força bruta de uma furadeira simples jamais conseguiria entregar."
+      answer: [
+        "Muitos iniciantes acreditam que qualquer furadeira pode desempenhar o papel de parafusadeira, mas essa confusão costuma resultar em parafusos espanados ou peças danificadas.",
+        "A distinção fundamental reside em dois pilares técnicos: o reverso e a embreagem. Uma parafusadeira possui controle de giro (horário e anti-horário), permitindo tanto o aperto quanto a remoção de parafusos, enquanto furadeiras comuns são limitadas a uma rotação contínua.",
+        "Mais crucial ainda é o sistema de embreagem. Enquanto a furadeira prioriza a velocidade para perfurar, a parafusadeira conta com um ajuste de torque que interrompe a rotação assim que o parafuso atinge a profundidade ideal.",
+        "Esse mecanismo de segurança protege o material e a integridade da fenda do parafuso, garantindo um acabamento profissional que a força bruta de uma furadeira simples jamais conseguiria entregar."
+      ]
     },
     {
       question: "Como saber se a parafusadeira é forte?",
-      answer: "A força de uma parafusadeira não se mede apenas pela potência do motor, mas pela relação estratégica entre torque (medido em Nm), tensão da bateria e a presença do motor brushless. Modelos robustos indicam números elevados de torque, essenciais para materiais densos. Observe também a capacidade máxima de perfuração e se o mandril oferece segurança contra oscilações. Máquinas com impacto integrado revelam superioridade inalcançável em alvenaria, enquanto o gerenciamento eletrônico garante que o motor entregue a energia necessária conforme a resistência encontrada. Ignorar essas especificações técnicas é o caminho mais rápido para frustrações; verifique sempre a ficha técnica antes de decidir, garantindo que o equipamento suporte a real demanda do seu projeto."
+      answer: [
+        "A força de uma parafusadeira não se mede apenas pela potência do motor, mas pela relação estratégica entre torque (medido em Nm), tensão da bateria e a presença do motor brushless.",
+        "Modelos robustos indicam números elevados de torque, essenciais para materiais densos. Observe também a capacidade máxima de perfuração e se o mandril oferece segurança contra oscilações.",
+        "Máquinas com impacto integrado revelam superioridade inalcançável em alvenaria, enquanto o gerenciamento eletrônico garante que o motor entregue a energia necessária conforme a resistência encontrada.",
+        "Ignorar essas especificações técnicas é o caminho mais rápido para frustrações; verifique sempre a ficha técnica antes de decidir, garantindo que o equipamento suporte a real demanda do seu projeto."
+      ]
     },
     {
       question: "Quantos watts tem que ter uma furadeira para ser boa?",
-      answer: "Em modelos com fio, a potência em watts é o indicador direto da capacidade de torque sob carga. Para marcenaria leve e ajustes rápidos, equipamentos na faixa de 300W a 400W são suficientes e entregam resultados precisos sem sobreaquecimento. Contudo, se o seu escopo envolve perfurações constantes em madeiras rígidas ou metal, priorize máquinas acima de 500W. Esse incremento garante que o motor não perca rotação ao encontrar resistência, evitando o travamento do mandril. Lembre-se: watts elevados sem um bom controle de velocidade podem danificar materiais sensíveis. O segredo é equilibrar a potência nominal com a necessidade real do projeto, garantindo fôlego para o trabalho pesado sem comprometer a integridade das suas peças."
+      answer: [
+        "Em modelos com fio, a potência em watts é o indicador direto da capacidade de torque sob carga. Para marcenaria leve e ajustes rápidos, equipamentos na faixa de 300W a 400W são suficientes e entregam resultados precisos sem sobreaquecimento.",
+        "Contudo, se o seu escopo envolve perfurações constantes em madeiras rígidas ou metal, priorize máquinas acima de 500W. Esse incremento garante que o motor não perca rotação ao encontrar resistência, evitando o travamento do mandril.",
+        "Lembre-se: watts elevados sem um bom controle de velocidade podem danificar materiais sensíveis. O segredo é equilibrar a potência nominal com a necessidade real do projeto, garantindo fôlego para o trabalho pesado sem comprometer a integridade das suas peças."
+      ]
     },
     {
       question: "Qual é melhor? Bosch ou Dewalt?",
-      answer: "A rivalidade entre Bosch e DeWalt não se resume a preferências subjetivas, mas a focos distintos de engenharia. A DeWalt consolidou seu prestígio ao projetar máquinas focadas em resistência extrema; seus componentes internos robustos e motores blindados são preparados para suportar a agressividade de canteiros de obras pesados, poeira intensa e uso ininterrupto sob sol forte. Em contrapartida, a Bosch se destaca pela sofisticação eletrônica e precisão técnica. Suas ferramentas entregam controles de torque mais refinados, sendo a escolha de quem prioriza o acabamento impecável em marcenaria fina. Antes de optar por uma das gigantes, verifique qual marca possui a rede de assistência técnica mais acessível em sua região. A durabilidade do seu investimento depende diretamente dessa conveniência logística."
+      answer: [
+        "A riatividade entre Bosch e DeWalt não se resume a preferências subjetivas, mas a focos distintos de engenharia.",
+        "A DeWalt consolidou seu prestígio ao projetar máquinas focadas em resistência extrema; seus componentes internos robustos e motores blindados são preparados para suportar a agressividade de canteiros de obras pesados, poeira intensa e uso ininterrupto sob sol forte.",
+        "Em contrapartida, a Bosch se destaca pela sofisticação eletrônica e precisão técnica. Suas ferramentas entregam controles de torque mais refinados, sendo a escolha de quem prioriza o acabamento impecável em marcenaria fina.",
+        "Antes de optar por uma das gigantes, verifique qual marca possui a rede de assistência técnica mais acessível em sua região. A durabilidade do seu investimento depende diretamente dessa conveniência logística."
+      ]
     }
   ];
 
@@ -1192,8 +1221,10 @@ export const MelhorParafusadeira: React.FC = () => {
                     {openFaq === index ? <ChevronUp className="text-slate-600" /> : <ChevronDown className="text-slate-600" />}
                   </button>
                   {openFaq === index && (
-                    <div className="px-5 pb-5 pt-1 text-gray-600 border-t border-slate-100 animate-slideDown">
-                      <p className="leading-relaxed text-sm">{faq.answer}</p>
+                    <div className="px-5 pb-5 pt-1 text-gray-600 border-t border-slate-100 animate-slideDown space-y-3">
+                      {faq.answer.map((paragraph, pIndex) => (
+                        <p key={pIndex} className="leading-relaxed text-sm">{paragraph}</p>
+                      ))}
                     </div>
                   )}
                 </div>
