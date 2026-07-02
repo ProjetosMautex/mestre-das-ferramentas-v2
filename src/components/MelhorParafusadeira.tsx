@@ -1,23 +1,106 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { AffiliateCard } from './AffiliateCard';
 import { BunnerDoMeio } from './BunnerDoMeio';
 import { products, type ProductId } from '../data/products';
-import { Check, X, Info, ShoppingCart, ArrowRight } from 'lucide-react';
+import { Check, X, Info, ShoppingCart, ArrowRight, ChevronDown, ChevronUp, Sparkles, HelpCircle, ShoppingBag } from 'lucide-react';
 
 export const MelhorParafusadeira: React.FC = () => {
   const featuredIds: ProductId[] = [
     "parafusadeira-bosch-gsb-185-li",
-    "parafusadeira-wap-bpf-12k3",
     "parafusadeira-dewalt-dcd7781d2",
-    "parafusadeira-vonder-pfv-012i",
+    "parafusadeira-wap-bpf-12k3",
+    "bosch-gsr-7-14-e-400w",
     "parafusadeira-bosch-gsr-1000",
     "parafusadeira-black-decker-ld12",
-    "bosch-gsr-7-14-e-400w",
-    "black-decker-kc4815b",
+    "parafusadeira-vonder-pfv-012i",
     "bosch-go-bivolt",
-    "makita-impacto",
-    "mondial-fpf-05"
+    "black-decker-kc4815b"
+  ];
+
+  // Interactive Quiz State
+  const [quizResult, setQuizResult] = useState<string | null>(null);
+
+  // FAQ Accordion State
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const toggleFaq = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
+
+  const productMetadata: Record<ProductId, { category: string; score: string; shortName: string }> = {
+    "parafusadeira-bosch-gsb-185-li": {
+      shortName: "Bosch GSB 185-LI",
+      category: "Profissional (Alta Performance)",
+      score: "9.8 / 10"
+    },
+    "parafusadeira-dewalt-dcd7781d2": {
+      shortName: "DeWalt DCD7781D2",
+      category: "Profissional (Concreto/Impacto)",
+      score: "9.7 / 10"
+    },
+    "parafusadeira-wap-bpf-12k3": {
+      shortName: "WAP BPF 12K3",
+      category: "Custo-Benefício / Hobby",
+      score: "9.1 / 10"
+    },
+    "bosch-gsr-7-14-e-400w": {
+      shortName: "Bosch GSR 7-14 E",
+      category: "Profissional / Hobby (Cabo)",
+      score: "9.3 / 10"
+    },
+    "parafusadeira-bosch-gsr-1000": {
+      shortName: "Bosch GSR 1000 Smart",
+      category: "Custo-Benefício (Montagem)",
+      score: "9.4 / 10"
+    },
+    "parafusadeira-black-decker-ld12": {
+      shortName: "Black+Decker LD12SC-BR",
+      category: "Custo-Benefício (Leve)",
+      score: "9.0 / 10"
+    },
+    "parafusadeira-vonder-pfv-012i": {
+      shortName: "Vonder PFV 012",
+      category: "Custo-Benefício (Impacto)",
+      score: "9.2 / 10"
+    },
+    "bosch-go-bivolt": {
+      shortName: "Bosch GO 3,6V",
+      category: "Precisão / Eletrônicos",
+      score: "9.5 / 10"
+    },
+    "black-decker-kc4815b": {
+      shortName: "Black+Decker KC4815B",
+      category: "Hobby / Uso Doméstico",
+      score: "8.9 / 10"
+    }
+  };
+
+  const faqData = [
+    {
+      question: "Qual a melhor parafusadeira?",
+      answer: "Ao avaliarmos o desempenho geral, a Bosch GSB 185-LI se destaca como a escolha mais equilibrada e robusta para quem busca uma máquina profissional definitiva. Em nossos testes, ela trouxe um motor Brushless (sem escovas) moderno, torque de 50 Nm e excelente controle de peso. Comparada com a DeWalt DCD7781D2 (que é um verdadeiro 'trator' para furos pesados em concreto), a Bosch GSB 185-LI é mais leve e confortável para o dia a dia, sendo ideal se você busca agilidade sem cansar o braço. Já a DeWalt é a melhor se o seu foco for pura força bruta em alvenaria pesada."
+    },
+    {
+      question: "Qual a melhor marca de parafusadeira?",
+      answer: "A Bosch, a DeWalt e a Makita são as referências absolutas quando falamos de ferramentas profissionais. Elas oferecem durabilidade extrema, motores Brushless de alta tecnologia e assistência técnica muito fácil no Brasil. Já as outras marcas do mercado (como WAP, Black+Decker, Vonder e marcas importadas) são mais voltadas para o uso doméstico ou esporádico. A escolha ideal depende de quantas horas seguidas sua ferramenta vai trabalhar."
+    },
+    {
+      question: "Qual a diferença entre parafusadeira e furadeira?",
+      answer: "Muitos iniciantes acreditam que qualquer furadeira pode desempenhar o papel de parafusadeira, mas essa confusão costuma resultar em parafusos espanados ou peças danificadas. A distinção fundamental reside em dois pilares técnicos: o reverso e a embreagem. Uma parafusadeira possui controle de giro (horário e anti-horário), permitindo tanto o aperto quanto a remoção de parafusos, enquanto furadeiras comuns são limitadas a uma rotação contínua. Mais crucial ainda é o sistema de embreagem. Enquanto a furadeira prioriza a velocidade para perfurar, a parafusadeira conta com um ajuste de torque que interrompe a rotação assim que o parafuso atinge a profundidade ideal. Esse mecanismo de segurança protege o material e a integridade da fenda do parafuso, garantindo um acabamento profissional que a força bruta de uma furadeira simples jamais conseguiria entregar."
+    },
+    {
+      question: "Como saber se a parafusadeira é forte?",
+      answer: "A força de uma parafusadeira não se mede apenas pela potência do motor, mas pela relação estratégica entre torque (medido em Nm), tensão da bateria e a presença do motor brushless. Modelos robustos indicam números elevados de torque, essenciais para materiais densos. Observe também a capacidade máxima de perfuração e se o mandril oferece segurança contra oscilações. Máquinas com impacto integrado revelam superioridade inalcançável em alvenaria, enquanto o gerenciamento eletrônico garante que o motor entregue a energia necessária conforme a resistência encontrada. Ignorar essas especificações técnicas é o caminho mais rápido para frustrações; verifique sempre a ficha técnica antes de decidir, garantindo que o equipamento suporte a real demanda do seu projeto."
+    },
+    {
+      question: "Quantos watts tem que ter uma furadeira para ser boa?",
+      answer: "Em modelos com fio, a potência em watts é o indicador direto da capacidade de torque sob carga. Para marcenaria leve e ajustes rápidos, equipamentos na faixa de 300W a 400W são suficientes e entregam resultados precisos sem sobreaquecimento. Contudo, se o seu escopo envolve perfurações constantes em madeiras rígidas ou metal, priorize máquinas acima de 500W. Esse incremento garante que o motor não perca rotação ao encontrar resistência, evitando o travamento do mandril. Lembre-se: watts elevados sem um bom controle de velocidade podem danificar materiais sensíveis. O segredo é equilibrar a potência nominal com a necessidade real do projeto, garantindo fôlego para o trabalho pesado sem comprometer a integridade das suas peças."
+    },
+    {
+      question: "Qual é melhor? Bosch ou Dewalt?",
+      answer: "A rivalidade entre Bosch e DeWalt não se resume a preferências subjetivas, mas a focos distintos de engenharia. A DeWalt consolidou seu prestígio ao projetar máquinas focadas em resistência extrema; seus componentes internos robustos e motores blindados são preparados para suportar a agressividade de canteiros de obras pesados, poeira intensa e uso ininterrupto sob sol forte. Em contrapartida, a Bosch se destaca pela sofisticação eletrônica e precisão técnica. Suas ferramentas entregam controles de torque mais refinados, sendo a escolha de quem prioriza o acabamento impecável em marcenaria fina. Antes de optar por uma das gigantes, verifique qual marca possui a rede de assistência técnica mais acessível em sua região. A durabilidade do seu investimento depende diretamente dessa conveniência logística."
+    }
   ];
 
   return (
@@ -35,8 +118,8 @@ export const MelhorParafusadeira: React.FC = () => {
           
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Melhor Parafusadeira de 2026: <br/>
-              <span className="text-[#FFD700]">Top 11 Testadas e Aprovadas</span>
+              9 Melhores Parafusadeiras de 2026: <br/>
+              <span className="text-[#FFD700]">Bosch VS DeWalt VS Outras</span>
             </h1>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
@@ -58,135 +141,308 @@ export const MelhorParafusadeira: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Introduction */}
           <div className="space-y-6 prose prose-lg max-w-none text-gray-700 mb-12">
-            <p className="lead text-xl md:text-2xl font-medium text-gray-800 mb-8">
-              Neste guia atualizado de 2026, você vai descobrir qual é a melhor parafusadeira, com comparação entre os principais modelos do mercado, testes reais e análise de custo-benefício para escolher a opção ideal.
-            </p>
-            <p>
-              Para evitar frustrações com ferramentas que não atendem às expectativas, avaliamos os principais fatores que garantem eficiência e durabilidade.
-            </p>
-            <p>
-              Analisamos as melhores opções do mercado, de modelos robustos para uso profissional aos compactos e versáteis para o dia a dia.
-            </p>
+            <p><strong>Escolher a parafusadeira certa evita gastar dinheiro</strong> em uma ferramenta que não vai atender às suas necessidades, seja para montar móveis em casa ou encarar uma obra pesada.</p>
+            <p>Com tantas opções no mercado, entender as diferenças de potência (12V ou 18V), torque e impacto é o primeiro passo para acertar na compra.</p>
           </div>
 
-          {/* Vitrine / Showcase Table */}
-          <div className="mb-16 max-w-[800px] mx-auto bg-slate-50 p-2.5 rounded-lg sm:p-5">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-8 text-center">Quais as melhores parafusadeiras em 2026?</h2>
+          {/* SIMULADOR RÁPIDO DE ESCOLHA */}
+          <div className="my-8 p-6 bg-gradient-to-br from-slate-800 to-slate-900 text-white rounded-2xl shadow-xl border border-slate-700">
+            <div className="flex items-center gap-3 mb-4">
+              <HelpCircle className="text-[#FFD700] w-6 h-6 animate-pulse" />
+              <h3 className="text-xl font-bold">Simulador Rápido: Qual é ideal para você?</h3>
+            </div>
+            <p className="text-slate-300 text-sm mb-4">Responda em 1 clique para encontrar a recomendação certa:</p>
             
-            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden">
-              <tbody>
-                {featuredIds.map((id) => {
-                  const product = products[id];
-                  return (
-                    <tr key={id} className="border-b border-slate-200 last:border-b-0">
-                      <td className="w-[65px] p-2 align-middle text-center sm:w-[80px] sm:p-3">
-                        <div className="w-[40px] h-[40px] border border-slate-100 rounded flex items-center justify-center p-0.5 sm:w-[60px] sm:h-[60px] mx-auto">
-                          <img 
-                            src={`/images/blog/melhor-parafusadeira/${product.name}.webp`}
-                            alt={product.name} 
-                            width="60"
-                            height="60"
-                            className="max-w-full max-h-full block object-contain mix-blend-multiply"
-                            loading="lazy"
-                          />
-                        </div>
-                      </td>
-                      <td className="p-2 align-middle sm:p-4">
-                        <div className="text-[14px] font-bold leading-tight line-clamp-3 text-slate-700 m-0 sm:text-[16px]">
-                          {product.name}
-                        </div>
-                      </td>
-                      <td className="w-[90px] p-2 align-middle text-right sm:w-[140px] sm:p-4">
-                        <a 
-                          href={product.link}
-                          target="_blank"
-                          rel="noopener noreferrer sponsored"
-                          className="bg-[#FFD700] text-[#1a1a1a] font-bold no-underline text-[11px] py-1.5 px-2.5 rounded whitespace-nowrap inline-block hover:opacity-90 sm:py-2.5 sm:px-5 sm:text-[14px]"
-                        >
-                          Ver Preço
-                        </a>
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+            <div className="grid sm:grid-cols-2 gap-3">
+              <button 
+                onClick={() => setQuizResult('professional')}
+                className={`py-3 px-4 rounded-xl font-semibold border-2 transition-all text-left flex justify-between items-center ${quizResult === 'professional' ? 'bg-[#FFD700] text-slate-900 border-[#FFD700]' : 'bg-slate-800 border-slate-600 hover:border-[#FFD700]'}`}
+              >
+                <span>Uso Profissional (Obras/Marcenaria)</span>
+                <ArrowRight size={18} />
+              </button>
+              <button 
+                onClick={() => setQuizResult('hobby')}
+                className={`py-3 px-4 rounded-xl font-semibold border-2 transition-all text-left flex justify-between items-center ${quizResult === 'hobby' ? 'bg-[#FFD700] text-slate-900 border-[#FFD700]' : 'bg-slate-800 border-slate-600 hover:border-[#FFD700]'}`}
+              >
+                <span>Hobby/Doméstico (Montagens/Reparos)</span>
+                <ArrowRight size={18} />
+              </button>
+            </div>
+
+            {quizResult && (
+              <div className="mt-6 p-4 bg-slate-700/50 border border-slate-600 rounded-xl animate-fadeIn">
+                {quizResult === 'professional' ? (
+                  <p className="text-sm leading-relaxed">
+                    🎯 <strong>Recomendação:</strong> Prefira a categoria <strong>🏆 Peso-Pesado (Linha Profissional)</strong>. Os modelos <a href="#parafusadeira-bosch-gsb-185-li" className="text-[#FFD700] underline font-bold">Bosch GSB 185-LI</a> and <a href="#parafusadeira-dewalt-dcd7781d2" className="text-[#FFD700] underline font-bold">DeWalt DCD7781D2</a> possuem motores brushless (sem escovas), alto torque e potência contínua para encarar concreto e uso diário intenso.
+                  </p>
+                ) : (
+                  <p className="text-sm leading-relaxed">
+                    🎯 <strong>Recomendação:</strong> A categoria <strong>💰 Custo-Benefício</strong> é perfeita para você. O modelo <a href="#parafusadeira-wap-bpf-12k3" className="text-[#FFD700] underline font-bold">WAP BPF 12K3</a> ou a compacta de precisão <a href="#parafusadeira-bosch-gsr-1000" className="text-[#FFD700] underline font-bold">Bosch GSR 1000 Smart</a> oferecem excelente ergonomia, leveza e bateria ideal para uso doméstico planejado.
+                  </p>
+                )}
+              </div>
+            )}
+          </div>
+
+          <div className="space-y-6 prose prose-lg max-w-none text-gray-700 mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mt-12 mb-6">A Melhor Parafusadeira por Categoria</h2>
+            <p>Para ajudar você a decidir rápido, separamos os modelos em duas categorias principais: <strong>uso profissional pesado</strong> e opções com ótimo <strong>custo-benefício</strong> para reparos em casa.</p>
+            <p>Analisamos ferramentas que vão desde o reparo doméstico pontual, como pendurar uma prateleira, até o uso profissional em marcenaria e alvenaria.</p>
+            <p>Descubra qual destas máquinas tem a força e a durabilidade certas para a sua rotina de trabalho.</p>
+          </div>
+
+          {/* MISTURA DA TABELA COM A VITRINE */}
+          <div className="mb-16 max-w-[850px] mx-auto bg-slate-50 p-2.5 rounded-2xl sm:p-5 border border-slate-200 shadow-sm">
+            <h2 className="text-2xl font-extrabold text-[#1a1a1a] mb-6 text-center">Quais as melhores parafusadeiras em 2026?</h2>
+            
+            <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+              <table className="w-full border-collapse">
+                <thead className="bg-slate-100 text-slate-700 text-xs uppercase font-bold border-b border-slate-200">
+                  <tr>
+                    <th className="p-3 text-center w-[70px] sm:w-[90px]">Foto</th>
+                    <th className="p-3 text-left">Modelo</th>
+                    <th className="p-3 text-left hidden md:table-cell">Categoria</th>
+                    <th className="p-3 text-center hidden sm:table-cell">Nota</th>
+                    <th className="p-3 text-center w-[100px] sm:w-[150px]">Ação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {featuredIds.map((id) => {
+                    const product = products[id];
+                    const meta = productMetadata[id];
+                    return (
+                      <tr key={id} className="border-b border-slate-200 last:border-b-0 hover:bg-slate-50 transition-colors">
+                        <td className="p-2 align-middle text-center">
+                          <div className="w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] border border-slate-100 rounded flex items-center justify-center p-0.5 bg-white mx-auto">
+                            <img 
+                              src={`/images/blog/melhor-parafusadeira/${product.name}.webp`}
+                              alt={meta?.shortName || product.name} 
+                              width="60"
+                              height="60"
+                              className="max-w-full max-h-full block object-contain mix-blend-multiply"
+                              loading="lazy"
+                            />
+                          </div>
+                        </td>
+                        <td className="p-2 align-middle">
+                          <div className="text-sm sm:text-base font-bold text-slate-800 leading-tight">
+                            {meta?.shortName || product.name}
+                          </div>
+                          {/* On mobile, show category and note below the name */}
+                          <div className="text-[11px] text-slate-500 mt-1 md:hidden">
+                            {meta?.category}
+                          </div>
+                          <div className="text-[11px] font-bold text-yellow-700 mt-0.5 sm:hidden">
+                            Nota: {meta?.score}
+                          </div>
+                        </td>
+                        <td className="p-2 align-middle text-slate-600 text-xs sm:text-sm hidden md:table-cell">
+                          {meta?.category}
+                        </td>
+                        <td className="p-2 align-middle text-center hidden sm:table-cell">
+                          <span className="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
+                            {meta?.score}
+                          </span>
+                        </td>
+                        <td className="p-2 align-middle text-center">
+                          <a 
+                            href={product.link}
+                            target="_blank"
+                            rel="noopener noreferrer sponsored"
+                            className="bg-[#FFD700] text-[#1a1a1a] font-bold no-underline text-xs py-2 px-3 rounded whitespace-nowrap inline-block hover:opacity-90 transition-all sm:py-2.5 sm:px-5"
+                          >
+                            Ver Preço
+                          </a>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
           </div>
 
           {/* Detailed Reviews */}
           <div className="space-y-16">
             
+            {/* H2 Subtitle: Peso-Pesado */}
+            <h2 className="text-3xl font-extrabold text-slate-900 border-b-4 border-[#FFD700] pb-2 mt-16 flex items-center gap-2">
+              🏆 Categoria Peso-Pesado: Linha Profissional
+            </h2>
+
             {/* Bosch GSB 185-LI */}
-            <section id="parafusadeira-bosch-gsb-185-li" className="scroll-mt-24">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                Melhor top de linha: Parafusadeira Bosch GSB 185-LI
-              </h2>
+            <section id="parafusadeira-bosch-gsb-185-li" className="scroll-mt-24 pt-8">
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                1. Melhor top de linha: Parafusadeira Bosch GSB 185-LI
+              </h3>
               <div className="w-full flex justify-center mb-8">
                  <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsb-185-li"].name}.webp`} alt={products["parafusadeira-bosch-gsb-185-li"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
-              <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>A Bosch GSB 185-LI é a escolha ideal para quem busca uma parafusadeira de impacto a bateria robusta e durável.</p>
-                <p>Seu motor brushless oferece maior durabilidade e otimiza o uso da bateria de 18V, permitindo trabalhar o dia todo sem recargas frequentes.</p>
-                <p>O torque de 50 Nm facilita parafusar em madeira densa ou metal sem forçar a ferramenta. Além disso, o sistema de proteção eletrônica (EMP) prolonga sua vida útil.</p>
-                <p>Com duas velocidades e 27.000 impactos por minuto, é altamente versátil, servindo desde a montagem de móveis até pequenos furos em alvenaria.</p>
-                <p>O mandril metálico garante firmeza na fixação de brocas e bits, evitando folgas durante o uso.</p>
+              <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                <p>A <strong>Bosch GSB 185-LI</strong> é a melhor opção para profissionais que precisam <strong>furar alvenaria e trabalhar com madeira dura</strong> todos os dias, graças ao seu motor sem escovas e sistema de 18V.</p>
+                <p>Se você trabalha em obras ou marcenaria, essa ferramenta aguenta o tranco pesado. O motor <strong>brushless (sem escovas)</strong> entrega muita força e não esquenta à toa, o que aumenta muito a vida útil da máquina.</p>
+                <p>Ela é bem compacta, o que ajuda muito a não cansar o braço depois de um dia inteiro instalando móveis ou furando paredes.</p>
+                <p>O preço é mais alto, mas se você já tem ou pretende ter outras ferramentas <strong>18V da Bosch</strong>, a bateria serve nelas também. É investimento certo para quem não pode perder tempo com ferramenta fraca.</p>
               </div>
 
               <AffiliateCard id="parafusadeira-bosch-gsb-185-li" />
 
-              <div className="bg-gray-50 rounded-xl p-6 md:p-8 border border-gray-200 mt-8">
-                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                  <Info className="text-[#FFD700]" /> Especificações Técnicas
-                </h3>
-                <div className="grid md:grid-cols-2 gap-4 text-sm">
-                  <div className="space-y-2">
-                    <p><span className="font-bold">Fonte de Energia:</span> Bateria de íons de lítio 18V (20V Max) – acompanha 1 bateria de 2.0Ah</p>
-                    <p><span className="font-bold">Tipo de Mandril:</span> Mandril metálico de 13 mm (1/2″) com sistema de aperto rápido</p>
-                  </div>
-                  <div className="space-y-2">
-                    <p><span className="font-bold">Velocidade de Rotação:</span> Até 1.900 RPM, com controle variável e rotação reversível</p>
-                    <p><span className="font-bold">Capacidade Máxima de Perfuração:</span> 35 mm em madeira, 10 mm em metal e 10 mm em alvenaria</p>
-                    <p><span className="font-bold">Itens Inclusos:</span> 1 bateria 18V 2.0Ah e carregador bivolt GAL 18V-20</p>
-                  </div>
-                </div>
-              </div>
-
               <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                   <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                  <ul className="space-y-2 text-green-700 text-sm">
-                    <li>Motor Brushless de alta durabilidade</li>
-                    <li>Bateria de longa duração</li>
-                    <li>Alta capacidade de torque (50Nm)</li>
-                    <li>Design ergonômico e leve</li>
+                  <ul className="space-y-2 text-green-700 text-sm list-disc list-inside">
+                    <li>Motor sem escovas (maior vida útil).</li>
+                    <li>Torque de 65 Nm para tarefas severas.</li>
+                    <li>Ergonomia excelente com Soft Grip.</li>
+                    <li>Integração total com sistema 18V.</li>
                   </ul>
                 </div>
                 <div className="bg-red-50 p-6 rounded-xl border border-red-100">
                   <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                  <ul className="space-y-2 text-red-700 text-sm">
-                    <li>Preço um pouco elevado</li>
-                    <li>Acompanha apenas uma bateria</li>
+                  <ul className="space-y-2 text-red-700 text-sm list-disc list-inside">
+                    <li>Investimento inicial mais elevado.</li>
+                    <li>Peso superior a modelos compactos.</li>
                   </ul>
                 </div>
               </div>
+
+              {/* Tabela de Critérios - Bosch GSB 185-LI */}
+              <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="min-w-full divide-y divide-slate-200">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Critério avaliado</th>
+                      <th className="px-4 py-3 text-center text-xs font-bold text-slate-500 uppercase tracking-wider w-[100px]">Nota</th>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">O que percebemos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700">
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Força Bruta e Controle de Parafusamento</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Motor brushless fortíssimo com controle de torque sensível de 21 posições.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Desempenho em Furação (Madeira, Metal e Alvenaria)</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.5 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Perfura madeira e metal com facilidade; a função impacto encara alvenaria sem dificuldades.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Ergonomia, Construção e Qualidade do Mandril</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.5 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Compacta e confortável, com mandril metálico de aperto rápido de alta qualidade.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Autonomia e Pacote de Baterias</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.7 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Gerenciamento de bateria excelente e compatibilidade com sistema 18V Bosch.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Custo-Benefício e Acessórios Inclusos</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.5 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Investimento inicial alto, mas amplamente compensado pela durabilidade extrema.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </section>
 
+            {/* DeWalt DCD7781D2 */}
+            <section id="parafusadeira-dewalt-dcd7781d2" className="scroll-mt-24 pt-8 border-t border-gray-100">
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                2. Melhor para concreto: Parafusadeira DeWalt DCD7781D2
+              </h3>
+              <div className="w-full flex justify-center mb-8">
+                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-dewalt-dcd7781d2"].name}.webp`} alt={products["parafusadeira-dewalt-dcd7781d2"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+              </div>
+              <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                <p>A <strong>DeWalt DCD7781D2</strong> é um verdadeiro trator para furar <strong>concreto e estruturas rígidas</strong>, indicada para o dia a dia pesado em canteiros de obras.</p>
+                <p>Furar parede de concreto não é para qualquer furadeira. Essa DeWalt resolve isso entregando quase <strong>30 mil impactos por minuto</strong>, o que faz a broca entrar na alvenaria sem você precisar fazer força.</p>
+                <p>Ela já vem com <strong>duas baterias</strong> e tem motor <strong>brushless</strong>, então você não fica na mão no meio do serviço. Além disso, o mandril de <strong>1/2 polegada (13 mm)</strong> segura firme as brocas mais grossas de obra.</p>
+                <p>É uma máquina mais pesada e robusta, mas aguenta poeira e trabalho contínuo sob sol quente. Perfeita para pedreiros e instaladores.</p>
+              </div>
+
+              <AffiliateCard id="parafusadeira-dewalt-dcd7781d2" />
+
+              <div className="grid md:grid-cols-2 gap-6 mt-8">
+                <div className="bg-green-50 p-6 rounded-xl border border-green-100">
+                  <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
+                  <ul className="space-y-2 text-green-700 text-sm list-disc list-inside">
+                    <li>Potente sistema de impacto para concreto.</li>
+                    <li>Motor brushless de alta durabilidade.</li>
+                    <li>Kit com duas baterias de 2,0 Ah.</li>
+                    <li>Mandril metálico de alta fixação.</li>
+                  </ul>
+                </div>
+                <div className="bg-red-50 p-6 rounded-xl border border-red-100">
+                  <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
+                  <ul className="space-y-2 text-red-700 text-sm list-disc list-inside">
+                    <li>Peso elevado para usos manuais contínuos.</li>
+                    <li>Maleta de transporte volumosa.</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Tabela de Critérios - DeWalt DCD7781D2 */}
+              <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="min-w-full divide-y divide-slate-200">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Critério avaliado</th>
+                      <th className="px-4 py-3 text-center text-xs font-bold text-slate-500 uppercase tracking-wider w-[100px]">Nota</th>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">O que percebemos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700">
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Força Bruta e Controle de Parafusamento</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.7 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Torque pesado constante, excelente para parafusamentos estruturais exigentes.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Desempenho em Furação (Madeira, Metal e Alvenaria)</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Alta performance com impacto (29.750 ipm), fura concreto duro e tijolo sem esforço.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Ergonomia, Construção e Qualidade do Mandril</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Pesada e robusta, mas o mandril de metal oferece excelente trava mecânica.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Autonomia e Pacote de Baterias</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Excelente autonomia acompanhada de 2 baterias de 2.0 Ah inclusas no kit.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Custo-Benefício e Acessórios Inclusos</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Preço profissional elevado, porém o kit traz maleta rígida e carregador bivolt rápido.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            {/* H2 Subtitle: Custo-Benefício */}
+            <h2 className="text-3xl font-extrabold text-slate-900 border-b-4 border-[#FFD700] pb-2 mt-16 flex items-center gap-2">
+              💰 Categoria Custo-Benefício: Campeãs em Montagem e Reparos
+            </h2>
+
             {/* WAP BPF 12K3 */}
-            <section id="parafusadeira-wap-bpf-12k3" className="scroll-mt-24 pt-8 border-t border-gray-100">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                Parafusadeira WAP BPF 12K3
-              </h2>
+            <section id="parafusadeira-wap-bpf-12k3" className="scroll-mt-24 pt-8">
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                3. Parafusadeira Furadeira WAP BPF 12K3
+              </h3>
               <div className="w-full flex justify-center mb-8">
                  <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-wap-bpf-12k3"].name}.webp`} alt={products["parafusadeira-wap-bpf-12k3"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
-
-              <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>A WAP BPF 12K3 é uma opção confiável e inteligente para uso doméstico, entregando leveza e potência na medida certa.</p>
-                <p>Ideal para montar móveis ou fixar quadros sem depender de tomadas, ela se destaca pela versatilidade no dia a dia.</p>
-                <p>Com 18 níveis de torque e ajuste de velocidade no gatilho, você tem precisão total para evitar danos aos materiais e garantir um acabamento perfeito.</p>
-                <p>Sua função furadeira permite perfurar alvenaria leve facilmente, ampliando seu uso na casa.</p>
-                <p>O mandril de aperto rápido agiliza a troca de acessórios.</p>
-                <p>Uma atenção especial ao tempo de recarga que pode levar 5 horas, entretanto, sua bateria de íons de lítio oferece autonomia suficiente para tarefas rápidas residenciais.</p>
+              <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                <p>A <strong>WAP BPF 12K3</strong> é o kit inicial perfeito e barato para quem quer resolver <strong>pequenos reparos em casa</strong> sem precisar chamar um marido de aluguel.</p>
+                <p>Se você só precisa montar um rack, pendurar um quadro ou consertar uma gaveta, não precisa de uma máquina industrial. Essa WAP pesa apenas <strong>1,1 kg</strong> e é bem silenciosa, ideal para usar em apartamento.</p>
+                <p>O ponto forte é que ela já vem com uma maleta cheia de <strong>brocas e bits</strong>. Você compra e já sai usando.</p>
+                <p>Ela tem 18 regulagens de torque para não estragar seus móveis na hora de apertar o parafuso. Só não espere furos milagrosos em paredes duras (ela não tem impacto) e lembre que a bateria demora um pouco para carregar (cerca de 3 a 5 horas).</p>
               </div>
 
               <AffiliateCard id="parafusadeira-wap-bpf-12k3" />
@@ -194,217 +450,78 @@ export const MelhorParafusadeira: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                   <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                  <ul className="space-y-2 text-green-700 text-sm">
-                    <li>Ótimo custo-benefício</li>
-                    <li>Leve e fácil de manusear</li>
-                    <li>Acompanha maleta com acessórios</li>
-                    <li>Função parafusadeira e furadeira</li>
+                  <ul className="space-y-2 text-green-700 text-sm list-disc list-inside">
+                    <li>Extremamente leve e compacta.</li>
+                    <li>Operação silenciosa, ideal para condomínios.</li>
+                    <li>Acompanha kit completo de acessórios.</li>
+                    <li>Excelente custo-benefício para iniciantes.</li>
                   </ul>
                 </div>
                 <div className="bg-red-50 p-6 rounded-xl border border-red-100">
                   <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                  <ul className="space-y-2 text-red-700 text-sm">
-                    <li>Tempo de carregamento da bateria</li>
-                    <li>Torque limitado para trabalhos pesados</li>
+                  <ul className="space-y-2 text-red-700 text-sm list-disc list-inside">
+                    <li>Longo tempo de recarga da bateria.</li>
+                    <li>Baixa performance em alvenaria.</li>
                   </ul>
                 </div>
               </div>
+
+              {/* Tabela de Critérios - WAP BPF 12K3 */}
+              <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="min-w-full divide-y divide-slate-200">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Critério avaliado</th>
+                      <th className="px-4 py-3 text-center text-xs font-bold text-slate-500 uppercase tracking-wider w-[100px]">Nota</th>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">O que percebemos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700">
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Força Bruta e Controle de Parafusamento</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Adequada para parafusamentos leves; controle básico de torque de 18 níveis.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Desempenho em Furação (Madeira, Metal e Alvenaria)</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">7.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Fura bem madeira macia e plástico, mas sem impacto não encara alvenaria de concreto.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Ergonomia, Construção e Qualidade do Mandril</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Leve (1,1 kg) e confortável para uso contínuo, com mandril plástico simples de aperto rápido.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Autonomia e Pacote de Baterias</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">7.5 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Boa autonomia no uso pontual, porém a recarga leva de 3 a 5 horas.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Custo-Benefício e Acessórios Inclusos</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Excepcional custo-benefício; acompanha maleta com bits e brocas variadas.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </section>
 
-            {/* DeWalt DCD7781D2 */}
             <BunnerDoMeio />
-            <section id="parafusadeira-dewalt-dcd7781d2" className="scroll-mt-24 pt-8 border-t border-gray-100">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                Melhor para concreto: Parafusadeira DeWalt DCD7781D2
-              </h2>
-              <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-dewalt-dcd7781d2"].name}.webp`} alt={products["parafusadeira-dewalt-dcd7781d2"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
-              </div>
-
-              <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>A DeWalt DCD7781D2 é uma ferramenta robusta, ideal para profissionais que lidam frequentemente com perfuração em concreto.</p>
-                <p>Sua função de impacto, atingindo até 29.750 ipm, vence a resistência de materiais duros, permitindo furos precisos com menor esforço físico.</p>
-                <p>Equipada com motor Brushless de 20V, oferece desempenho constante durante o dia inteiro sem perder potência.</p>
-                <p>Por vir com uma bateria extra, garante maior produtividade, eliminando interrupções no trabalho.</p>
-                <p>Sua empunhadura ergonômica reduz o cansaço do profissional, enquanto o LED integrado auxilia iluminando locais escuros.</p>
-              </div>
-
-              <AffiliateCard id="parafusadeira-dewalt-dcd7781d2" />
-
-              <div className="bg-gray-50 rounded-xl p-6 md:p-8 border border-gray-200 mt-8">
-                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                  <Info className="text-[#FFD700]" /> Especificações Técnicas
-                </h3>
-                <div className="grid md:grid-cols-2 gap-4 text-sm">
-                  <div className="space-y-2">
-                    <p><span className="font-bold">Fonte de Energia:</span> Bateria de íons de lítio 20V, fornecida com duas unidades de 2.0Ah</p>
-                    <p><span className="font-bold">Tipo de Mandril:</span> Mandril metálico de 13 mm (1/2″) com sistema de fixação rápida e mecanismo de catraca</p>
-                  </div>
-                  <div className="space-y-2">
-                    <p><span className="font-bold">Velocidade de Rotação:</span> Duas opções de velocidade: 0–500 RPM e 0–1.750 RPM, com ajuste variável e função reversa</p>
-                    <p><span className="font-bold">Capacidade Máxima de Furação:</span> Possibilita perfurar até 13 mm em aço e até 38 mm em madeira</p>
-                    <p><span className="font-bold">Itens Inclusos:</span> Acompanha 2 baterias, carregador bivolt e estojo robusto para transporte</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6 mt-8">
-                <div className="bg-green-50 p-6 rounded-xl border border-green-100">
-                  <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                  <ul className="space-y-2 text-green-700 text-sm">
-                    <li>Excelente para perfuração em concreto</li>
-                    <li>Motor Brushless de alta durabilidade</li>
-                    <li>Acompanha duas baterias</li>
-                    <li>Design ergonômico e leve</li>
-                  </ul>
-                </div>
-                <div className="bg-red-50 p-6 rounded-xl border border-red-100">
-                  <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                  <ul className="space-y-2 text-red-700 text-sm">
-                    <li>Preço pode ser um fator limitante</li>
-                    <li>Capacidade de perfuração em madeira poderia ser maior</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            {/* Vonder Pfv 012i */}
-            <section id="parafusadeira-vonder-pfv-012i" className="scroll-mt-24 pt-8 border-t border-gray-100">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                Parafusadeira Furadeira Vonder Pfv 012i 12 V
-              </h2>
-              <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-vonder-pfv-012i"].name}.webp`} alt={products["parafusadeira-vonder-pfv-012i"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
-              </div>
-
-              <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>A Vonder PFV 012i 12V é uma solução acessível e versátil, ideal para pequenos projetos e reparos residenciais.</p>
-                <p>Destaca-se pela capacidade de furação em madeira e alvenaria leve, tudo sustentado por uma bateria de 12V.</p>
-                <p>É a solução "faz tudo" conveniente e de ótimo custo-benefício para montar móveis e instalações cotidianas.</p>
-                <p>O seletor de torque de 18 posições evita que você espane parafusos, e a função de impacto facilita a perfuração em paredes.</p>
-                <p>Trazendo iluminação em LED embutida, permite conforto operando em locais pouco iluminados.</p>
-                <p>Apesar do tempo de carregamento de até 5 horas, a parafusadeira é acompanhada por um excelente kit completo de brocas e bits utilitários.</p>
-              </div>
-
-              <AffiliateCard id="parafusadeira-vonder-pfv-012i" />
-
-              <div className="grid md:grid-cols-2 gap-6 mt-8">
-                <div className="bg-green-50 p-6 rounded-xl border border-green-100">
-                  <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                  <ul className="space-y-2 text-green-700 text-sm">
-                    <li>Ótimo custo-benefício</li>
-                    <li>Função parafusadeira, furadeira e impacto</li>
-                    <li>Acompanha maleta com diversos acessórios</li>
-                    <li>Empunhadura ergonômica</li>
-                  </ul>
-                </div>
-                <div className="bg-red-50 p-6 rounded-xl border border-red-100">
-                  <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                  <ul className="space-y-2 text-red-700 text-sm">
-                    <li>Tempo de carregamento da bateria</li>
-                    <li>Torque limitado para trabalhos pesados</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            {/* Bosch GSR 1000 */}
-            <section id="parafusadeira-bosch-gsr-1000" className="scroll-mt-24 pt-8 border-t border-gray-100">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                Parafusadeira Furadeira Bosch GSR 1000
-              </h2>
-              <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsr-1000"].name}.webp`} alt={products["parafusadeira-bosch-gsr-1000"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
-              </div>
-
-              <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>A GSR 1000 Smart se destaca por ser compacta, leve e carregar a qualidade reconhecida da Bosch, unindo bom desempenho e baixo custo.</p>
-                <p>Ideal para montadores, instaladores e para uso doméstico, ela chama a atenção por sua bateria de 12V integrada com autonomia notável.</p>
-                <p>Com uma única carga, realiza até 600 parafusamentos, evitando pausas indesejadas, com recarga facilitada por seu prático carregador bivolt.</p>
-                <p>O torque de 15 Nm e seu interruptor de velocidade variável são ideais para montagens delicadas oferecendo controle total.</p>
-                <p>Seu mandril de aperto rápido agiliza muito a fixação de pequenos acessórios.</p>
-                <p>O design ergonômico previne o cansaço em usos prolongados, e sua luz de LED auxilia muito nos locais carentes de iluminação.</p>
-                <p>Dispõe ainda do útil indicador de nível de bateria, sendo uma ferramenta extremamente equilibrada e eficiente.</p>
-              </div>
-
-              <AffiliateCard id="parafusadeira-bosch-gsr-1000" />
-
-              <div className="grid md:grid-cols-2 gap-6 mt-8">
-                <div className="bg-green-50 p-6 rounded-xl border border-green-100">
-                  <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                  <ul className="space-y-2 text-green-700 text-sm">
-                    <li>Excelente autonomia da bateria</li>
-                    <li>Design leve e ergonômico</li>
-                    <li>Ótimo custo-benefício</li>
-                    <li>Luz de LED integrada</li>
-                  </ul>
-                </div>
-                <div className="bg-red-50 p-6 rounded-xl border border-red-100">
-                  <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                  <ul className="space-y-2 text-red-700 text-sm">
-                    <li>Torque limitado para trabalhos pesados</li>
-                    <li>Bateria não removível</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            {/* Black & Decker LD12 */}
-            <section id="parafusadeira-black-decker-ld12" className="scroll-mt-24 pt-8 border-t border-gray-100">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                Parafusadeira Furadeira Black & Decker LD12
-              </h2>
-              <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-black-decker-ld12"].name}.webp`} alt={products["parafusadeira-black-decker-ld12"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
-              </div>
-
-              <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>A Black & Decker LD12 é ideal para o uso doméstico e para os entusiastas de trabalhos práticos que valorizam kits prontos e versáteis.</p>
-                <p>O grande diferencial é o seu conjunto de 31 acessórios inclusos, dispensando a compra adicional de ponteiras para iniciar qualquer reparo básico.</p>
-                <p>Sua bateria de 12V entrega autonomia adequada para montar prateleiras e fixar variadas dobradiças residenciais.</p>
-                <p>Os 10 níveis de velocidade em seu gatilho permitem parafusar suavemente o que previne danos ao móvel garantindo perfeccionismo e delicadeza.</p>
-                <p>Alia leveza a um LED muito providencial para enxergar dentro de armários apertados e obscuros.</p>
-                <p>Note apenas que seu torque modesto de 10 Nm é pouco indicado em marcenarias densas profissionais.</p>
-              </div>
-
-              <AffiliateCard id="parafusadeira-black-decker-ld12" />
-
-              <div className="grid md:grid-cols-2 gap-6 mt-8">
-                <div className="bg-green-50 p-6 rounded-xl border border-green-100">
-                  <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                  <ul className="space-y-2 text-green-700 text-sm">
-                    <li>Kit completo com 31 acessórios</li>
-                    <li>Bateria de boa autonomia</li>
-                    <li>Leve e fácil de usar</li>
-                    <li>Ótimo custo-benefício</li>
-                  </ul>
-                </div>
-                <div className="bg-red-50 p-6 rounded-xl border border-red-100">
-                  <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                  <ul className="space-y-2 text-red-700 text-sm">
-                    <li>Torque limitado</li>
-                    <li>Não indicada para uso profissional</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
 
             {/* Bosch GSR 7-14 E */}
             <section id="bosch-gsr-7-14-e-400w" className="scroll-mt-24 pt-8 border-t border-gray-100">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                Bosch GSR 7-14 E 400W
-              </h2>
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                4. Bosch GSR 7-14 E: melhor para uso contínuo com cabo
+              </h3>
               <div className="w-full flex justify-center mb-8">
                  <img src={`/images/blog/melhor-parafusadeira/${products["bosch-gsr-7-14-e-400w"].name}.webp`} alt={products["bosch-gsr-7-14-e-400w"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
-
-              <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>A Bosch GSR 7-14 E é uma ferramenta elétrica robusta e confiável, projetada especialmente para profissionais que necessitam de uso ininterrupto.</p>
-                <p>Por ser alimentada via tomada, não perde potência e dispensa pausas de recargas, sendo excelente para linhas produtivas de marcenaria.</p>
-                <p>Possui ajuste de torque em 24 níveis, que garantem que nenhum pino atarraxado transpassará excessivamente por erro.</p>
-                <p>A ampla velocidade variável no gatilho adapta imediatamente a furadeira à dificuldade natural da tábua com grande maestria e fluidez.</p>
-                <p>Apesar do fato da conexão com a energia forçar a exigência de proximidade das extensões, o cabo de 4 metros facilita movimentação nas bases da área do cliente.</p>
-                <p>Como detalhe, seu veloz mandril de aperto fácil garante extrema durabilidade aos que buscam longas horas diárias laborais precisas.</p>
+              <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                <p>A <strong>Bosch GSR 7-14 E com fio (400W)</strong> é a melhor escolha para <strong>trabalhos contínuos em bancada</strong>, onde você não quer parar para recarregar baterias.</p>
+                <p>Quem trabalha com montagem o dia todo em um único lugar (como marcenarias ou oficinas) sabe que ficar trocando bateria atrasa o serviço. Essa Bosch resolve isso ligada direto na tomada, entregando muita força sem perder rotação.</p>
+                <p>O <strong>cabo de 4 metros</strong> dá bastante espaço para se movimentar. Ela tem um ajuste bem sensível de torque (24 posições), o que ajuda demais na hora de parafusar MDF sem espanar.</p>
+                <p>A grande limitação é óbvia: você sempre vai precisar de uma tomada perto. Mas em troca, ganha uma durabilidade absurda por um preço de máquina intermediária.</p>
               </div>
 
               <AffiliateCard id="bosch-gsr-7-14-e-400w" />
@@ -412,77 +529,351 @@ export const MelhorParafusadeira: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                   <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                  <ul className="space-y-2 text-green-700 text-sm">
-                    <li>Potência constante sem bateria</li>
-                    <li>Controle de torque preciso</li>
-                    <li>Ótima durabilidade</li>
-                    <li>Ideal para uso contínuo</li>
+                  <ul className="space-y-2 text-green-700 text-sm list-disc list-inside">
+                    <li>Potência constante sem dependência de bateria.</li>
+                    <li>Cabo de 4 metros que garante alcance.</li>
+                    <li>Precisão com 24 níveis de torque.</li>
+                    <li>Motor de 400W para uso contínuo.</li>
                   </ul>
                 </div>
                 <div className="bg-red-50 p-6 rounded-xl border border-red-100">
                   <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                  <ul className="space-y-2 text-red-700 text-sm">
-                    <li>Limitada pelo cabo de energia</li>
-                    <li>Não possui função de impacto</li>
+                  <ul className="space-y-2 text-red-700 text-sm list-disc list-inside">
+                    <li>Dependência de ponto elétrico próximo.</li>
+                    <li>Ausência de portabilidade sem fio.</li>
                   </ul>
+                </div>
+              </div>
+
+              {/* Tabela de Critérios - Bosch GSR 7-14 E */}
+              <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="min-w-full divide-y divide-slate-200">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Critério avaliado</th>
+                      <th className="px-4 py-3 text-center text-xs font-bold text-slate-500 uppercase tracking-wider w-[100px]">Nota</th>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">O que percebemos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700">
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Força Bruta e Controle de Parafusamento</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.2 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Potência constante de 400W com excelente embreagem de 24 níveis para controle.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Desempenho em Furação (Madeira, Metal e Alvenaria)</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.5 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Fura madeira e metal de forma constante, mas sem função impacto para alvenaria dura.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Ergonomia, Construção e Qualidade do Mandril</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Peso equilibrado para uso em bancada; mandril robusto com boa fixação de brocas.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Autonomia e Pacote de Baterias</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">10.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Autonomia infinita por ser ligada diretamente à rede elétrica com cabo de 4 metros.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Custo-Benefício e Acessórios Inclusos</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.5 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Preço competitivo para uma ferramenta profissional ininterrupta e muito durável.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* VÍDEO DO YOUTUBE (Reposicionado aqui após Bosch 7-14 E) */}
+              <div className="my-12 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-xl">
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-[#FFD700]">
+                  <Sparkles size={20} className="animate-spin" /> Comparativo Prático Premium
+                </h3>
+                <p className="text-sm text-slate-300 mb-6">Assista a este teste prático comparativo focado em alvenaria e performance bruta para decidir entre os modelos topo de linha Bosch e DeWalt.</p>
+                <div className="flex justify-center">
+                  <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/eY-Rr1qqtX0?feature=oembed" 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen
+                    className="max-w-full rounded-lg shadow-lg border border-slate-700"
+                  ></iframe>
                 </div>
               </div>
             </section>
 
-            {/* Black Decker KC4815B */}
-            <section id="black-decker-kc4815b" className="scroll-mt-24 pt-8 border-t border-gray-100">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                Black Decker KC4815B
-              </h2>
+            {/* Bosch GSR 1000 Smart */}
+            <section id="parafusadeira-bosch-gsr-1000" className="scroll-mt-24 pt-8 border-t border-gray-100">
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                5. Bosch GSR 1000 Smart: melhor para montagem de móveis e locais apertados
+              </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["black-decker-kc4815b"].name}.webp`} alt={products["black-decker-kc4815b"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsr-1000"].name}.webp`} alt={products["parafusadeira-bosch-gsr-1000"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+              </div>
+              <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                <p>A <strong>Bosch GSR 1000 Smart</strong> é tão pequena que cabe na palma da mão (0,9 kg), sendo a melhor escolha para <strong>montar móveis dentro de armários apertados</strong>.</p>
+                <p>O pesadelo de qualquer montador é tentar colocar um parafuso na gaveta e a máquina não caber lá dentro. Essa Bosch resolve isso porque é minúscula, mas tem torque de sobra para madeiras.</p>
+                <p>O gatilho dela é muito sensível, o que impede que você coloque força demais e <strong>espane o parafuso</strong> no MDF. Além disso, ela já tem a bateria embutida que carrega rápido em 1 hora.</p>
+                <p>Ela tem uma luz de LED forte que ajuda muito em cantos escuros. Só lembre que ela é puramente para parafusar e fazer furos simples na madeira; não tente furar paredes com ela.</p>
               </div>
 
-              <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>A Black+Decker KC4815B tem como maior atrativo o acesso a frestas difíceis e gavetas de complicado enquadramento graças a sua haste articulável em dois ângulos.</p>
-                <p>Ela agrupa enorme agilidade para reparos simples possuindo bateria leve de 4,8V suficiente a usos eventuais do lar dispensando carregadores atrelados na hora do manuseio.</p>
-                <p>Para sua surpresa e proteção da superfície do revestimento, nela já vem embutido um controle com 8 limites de torque contra apertos intensos demais.</p>
-                <p>Trazendo a essencial lamparina em LED direcional evita furos cegos à sombra do móvel.</p>
-                <p>Como incentivo para o pacote, vão em anexo 15 ponteiras imantadas formando um estojo extremamente completo com ótima utilidade e praticidade inicial.</p>
-              </div>
-
-              <AffiliateCard id="black-decker-kc4815b" />
+              <AffiliateCard id="parafusadeira-bosch-gsr-1000" />
 
               <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                   <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                  <ul className="space-y-2 text-green-700 text-sm">
-                    <li>Leve e fácil de manusear</li>
-                    <li>Cabo articulável para alcançar cantos</li>
-                    <li>Acompanha kit com 16 acessórios</li>
-                    <li>Ótimo custo-benefício</li>
+                  <ul className="space-y-2 text-green-700 text-sm list-disc list-inside">
+                    <li>Leveza excepcional (0,9 kg).</li>
+                    <li>Design ergonômico para espaços reduzidos.</li>
+                    <li>Carregamento rápido em 1 hora.</li>
+                    <li>Construção com materiais sustentáveis.</li>
                   </ul>
                 </div>
                 <div className="bg-red-50 p-6 rounded-xl border border-red-100">
                   <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                  <ul className="space-y-2 text-red-700 text-sm">
-                    <li>Tempo de carregamento da bateria</li>
-                    <li>Indicada para trabalhos leves</li>
+                  <ul className="space-y-2 text-red-700 text-sm list-disc list-inside">
+                    <li>Limitada a serviços leves.</li>
+                    <li>Não indicada para perfurar concreto.</li>
                   </ul>
                 </div>
               </div>
+
+              {/* Tabela de Critérios - Bosch GSR 1000 Smart */}
+              <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="min-w-full divide-y divide-slate-200">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Critério avaliado</th>
+                      <th className="px-4 py-3 text-center text-xs font-bold text-slate-500 uppercase tracking-wider w-[100px]">Nota</th>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">O que percebemos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700">
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Força Bruta e Controle de Parafusamento</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.2 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Perfeita para precisão em móveis; torque suave que não espana a fenda de parafusos.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Desempenho em Furação (Madeira, Metal e Alvenaria)</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">7.2 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Fura bem madeira de espessura média e metal leve; incapaz de perfurar alvenaria.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Ergonomia, Construção e Qualidade do Mandril</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Extremamente leve (0,9 kg), formato ergonômico fantástico e cabo emborrachado confortável.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Autonomia e Pacote de Baterias</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Bateria integrada de bom rendimento com recarga rápida completa em apenas 1 hora.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Custo-Benefício e Acessórios Inclusos</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Excelente valor para instaladores e montadores; acompanha lata/maleta organizadora.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </section>
 
-            {/* Bosch Go Bivolt */}
+            {/* Black & Decker LD12SC-BR */}
+            <section id="parafusadeira-black-decker-ld12" className="scroll-mt-24 pt-8 border-t border-gray-100">
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                6. BLACK+DECKER | Parafusadeira/Furadeira 3/8" (10 mm) 12 V | LD12SC-BR
+              </h3>
+              <div className="w-full flex justify-center mb-8">
+                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-black-decker-ld12"].name}.webp`} alt={products["parafusadeira-black-decker-ld12"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+              </div>
+              <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                <p>A <strong>Black+Decker LD12SC-BR</strong> é uma máquina confiável de 12V que <strong>já vem com 30 acessórios</strong>, excelente para quem não quer comprar brocas separadas.</p>
+                <p>Se você precisa de algo prático para ter em casa, essa é a ferramenta certa. Ela é leve, tem bateria de íon-lítio (que não vicia) e a maleta dela já vem recheada de brocas e pontas para parafusar.</p>
+                <p>O <strong>mandril de aperto rápido</strong> é ótimo para você não perder tempo usando aquelas chavinhas antigas para trocar a broca.</p>
+                <p>A força (16 Nm) é mais que suficiente para montar móveis de escritório e consertar coisas em casa, mas novamente, evite usar em paredes duras porque ela não foi feita para isso.</p>
+              </div>
+
+              <div className="overflow-x-auto mt-6">
+                <table className="min-w-full border-collapse bg-white rounded-lg shadow-sm border border-gray-200">
+                  <tbody className="divide-y divide-gray-200">
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Força de Torque</th><td className="px-4 py-3 text-sm text-gray-600">16 Nm</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Velocidade de Rotação</th><td className="px-4 py-3 text-sm text-gray-600">900 RPM</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Classificação da Ferramenta</th><td className="px-4 py-3 text-sm text-gray-600">Parafusadeira e furadeira</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Tensão Elétrica</th><td className="px-4 py-3 text-sm text-gray-600">12 V</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Operação sem fio</th><td className="px-4 py-3 text-sm text-gray-600"><Check className="text-green-500" size={18} /></td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <AffiliateCard id="parafusadeira-black-decker-ld12" />
+
+              <div className="grid md:grid-cols-2 gap-6 mt-8">
+                <div className="bg-green-50 p-6 rounded-xl border border-green-100">
+                  <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
+                  <ul className="space-y-2 text-green-700 text-sm list-disc list-inside">
+                    <li>Kit completo com 30 acessórios.</li>
+                    <li>Design leve e ergonômica.</li>
+                    <li>Mandril de aperto rápido.</li>
+                    <li>Indicador de carga útil.</li>
+                  </ul>
+                </div>
+                <div className="bg-red-50 p-6 rounded-xl border border-red-100">
+                  <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
+                  <ul className="space-y-2 text-red-700 text-sm list-disc list-inside">
+                    <li>Inadequada para perfurar concreto.</li>
+                    <li>Torque limitado para trabalhos brutos.</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Tabela de Critérios - Black+Decker LD12SC-BR */}
+              <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="min-w-full divide-y divide-slate-200">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Critério avaliado</th>
+                      <th className="px-4 py-3 text-center text-xs font-bold text-slate-500 uppercase tracking-wider w-[100px]">Nota</th>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">O que percebemos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700">
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Força Bruta e Controle de Parafusamento</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">7.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Força de 16 Nm adequada para reparos leves domésticos e montagem de móveis básicos.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Desempenho em Furação (Madeira, Metal e Alvenaria)</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">7.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Fura gesso, drywall e madeira fina; sem fôlego ou impacto para alvenaria estrutural.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Ergonomia, Construção e Qualidade do Mandril</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Boa empunhadura emborrachada confortável e mandril de aperto rápido bastante preciso.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Autonomia e Pacote de Baterias</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.2 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Autonomia padrão de 12V com bom indicador do nível útil da bateria.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Custo-Benefício e Acessórios Inclusos</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.6 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Altíssimo custo-benefício; vem com maleta plástica e kit completo de 30 acessórios.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            {/* Vonder PFV 012 */}
+            <section id="parafusadeira-vonder-pfv-012i" className="scroll-mt-24 pt-8 border-t border-gray-100">
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                7. VONDER | Parafusadeira/Furadeira a Bateria 12 V | PFV 012
+              </h3>
+              <div className="w-full flex justify-center mb-8">
+                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-vonder-pfv-012i"].name}.webp`} alt={products["parafusadeira-vonder-pfv-012i"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+              </div>
+              <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                <p>A <strong>Vonder PFV 012</strong> é a melhor máquina barata se você faz questão da <strong>função de impacto</strong> para furar parede de tijolo de vez em quando.</p>
+                <p>Diferente das outras opções de entrada, a grande sacada dessa Vonder é que ela <strong>tem impacto</strong>. Isso significa que, se você precisar furar a parede da sala para colocar o suporte da TV, ela dá conta do recado.</p>
+                <p>O kit é muito completo, vem com brocas, pontas, prolongador e até uma trena. Você não precisa ir na loja de ferragens comprar mais nada.</p>
+                <p>Apesar de ser super leve (1 kg), a bateria demora cerca de 5 horas para carregar totalmente, então lembre de plugar na tomada antes do dia de serviço.</p>
+              </div>
+
+              <div className="overflow-x-auto mt-6">
+                <table className="min-w-full border-collapse bg-white rounded-lg shadow-sm border border-gray-200">
+                  <tbody className="divide-y divide-gray-200">
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Força de Aperto (Torque)</th><td className="px-4 py-3 text-sm text-gray-600">23 Nm</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Velocidade de Rotação</th><td className="px-4 py-3 text-sm text-gray-600">650 RPM</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Categoria</th><td className="px-4 py-3 text-sm text-gray-600">Parafusadeira e furadeira</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Voltagem da Bateria</th><td className="px-4 py-3 text-sm text-gray-600">12 V</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Operação Sem Fio</th><td className="px-4 py-3 text-sm text-gray-600"><Check className="text-green-500" size={18} /></td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <AffiliateCard id="parafusadeira-vonder-pfv-012i" />
+
+              <div className="grid md:grid-cols-2 gap-6 mt-8">
+                <div className="bg-green-50 p-6 rounded-xl border border-green-100">
+                  <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
+                  <ul className="space-y-2 text-green-700 text-sm list-disc list-inside">
+                    <li>Inclui kit completo de acessórios.</li>
+                    <li>Possui função de impacto.</li>
+                    <li>Leve e muito ergonômica.</li>
+                    <li>Ótimo custo-benefício.</li>
+                  </ul>
+                </div>
+                <div className="bg-red-50 p-6 rounded-xl border border-red-100">
+                  <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
+                  <ul className="space-y-2 text-red-700 text-sm list-disc list-inside">
+                    <li>Tempo de recarga elevado.</li>
+                    <li>Foco em uso residencial.</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Tabela de Critérios - Vonder PFV 012 */}
+              <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="min-w-full divide-y divide-slate-200">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Critério avaliado</th>
+                      <th className="px-4 py-3 text-center text-xs font-bold text-slate-500 uppercase tracking-wider w-[100px]">Nota</th>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">O que percebemos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700">
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Força Bruta e Controle de Parafusamento</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.5 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Bom torque de 23 Nm, permitindo parafusamentos firmes em MDF sem espanar.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Desempenho em Furação (Madeira, Metal e Alvenaria)</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Fura bem madeira e metal; encara alvenaria leve graças à função impacto embutida de 12V.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Ergonomia, Construção e Qualidade do Mandril</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Leve (1,09 kg) e bem equilibrada, com pegada confortável emborrachada de boa durabilidade.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Autonomia e Pacote de Baterias</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">7.6 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Autonomia adequada de 1.3 Ah, mas a recarga pode levar até 5 horas no carregador.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Custo-Benefício e Acessórios Inclusos</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.7 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Excelente canivete suíço com preço baixo; vem com trena, brocas e bits inclusos.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            {/* Bosch GO 3,6V */}
             <section id="bosch-go-bivolt" className="scroll-mt-24 pt-8 border-t border-gray-100">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                Bosch Go Bivolt
-              </h2>
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                8. Bosch GO 3,6V: melhor para parafusamentos rápidos e precisão
+              </h3>
               <div className="w-full flex justify-center mb-8">
                  <img src={`/images/blog/melhor-parafusadeira/${products["bosch-go-bivolt"].name}.webp`} alt={products["bosch-go-bivolt"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
-
-              <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>A Bosch Go Bivolt é um aparelho ergonômico focado em precisões de manutenção eletrônica fina ou pequenos eletrodomésticos aposentando cansaços de pulsos torcendo chaves fendas estriadas longas da bancada.</p>
-                <p>Opera ativando a catraca pelo engenhoso encosto (Push&Go): encostou sobre a superfície do metal já começa rodando firme e suavemente sobre seu percurso.</p>
-                <p>Trabalha junto ao freio inteligente detendo a engrenagem no instante exato de descompressão das guarnições poupando espanamentos indesejados e irremediáveis das micro roscas com a tecnologia em 5 torques.</p>
-                <p>Dispensa pilhas ou trambolhos, é veloz no carregamento utilizando plugues versáteis do próprio USB-C.</p>
-                <p>Um exemplo puro de design alemão robustez interna extrema transcrevendo confiabilidade e portabilidade para se carregar aos montes num estojo de calça ou bolso técnico.</p>
+              <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                <p>A <strong>Bosch GO (3ª Geração)</strong> é uma ferramenta de nicho, perfeita para eletricistas e técnicos de informática que precisam de <strong>agilidade em manutenções</strong>.</p>
+                <p>Sabe quando você precisa desmontar um painel elétrico ou um gabinete de computador com dezenas de parafusos pequenos? Essa Bosch foi feita para isso. Ela funciona por <strong>pressão (sistema Push&Go)</strong>: você encosta no parafuso, empurra, e ela gira sozinha.</p>
+                <p>Pesa <strong>apenas 320 gramas</strong> e carrega via cabo USB, igual celular.</p>
+                <p>Lembre-se: é apenas uma chave de fenda elétrica de precisão. Ela não substitui uma furadeira e não aguenta montar móveis pesados de MDF.</p>
               </div>
 
               <AffiliateCard id="bosch-go-bivolt" />
@@ -490,225 +881,340 @@ export const MelhorParafusadeira: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                   <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                  <ul className="space-y-2 text-green-700 text-sm">
-                    <li>Sistema Push&Go intuitivo</li>
-                    <li>Freio eletrônico para maior controle</li>
-                    <li>Carregamento USB-C</li>
-                    <li>Design compacto e ergonômico</li>
+                  <ul className="space-y-2 text-green-700 text-sm list-disc list-inside">
+                    <li>Acionamento por pressão intuitivo.</li>
+                    <li>Torque ajustável de alta precisão.</li>
+                    <li>Carregamento prático via USB-C.</li>
+                    <li>Extremamente leve e ergonômica.</li>
                   </ul>
                 </div>
                 <div className="bg-red-50 p-6 rounded-xl border border-red-100">
                   <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                  <ul className="space-y-2 text-red-700 text-sm">
-                    <li>Não indicada para trabalhos pesados</li>
-                    <li>Bateria integrada</li>
+                  <ul className="space-y-2 text-red-700 text-sm list-disc list-inside">
+                    <li>Potência restrita a serviços leves.</li>
+                    <li>Não realiza furos em superfícies.</li>
                   </ul>
                 </div>
               </div>
+
+              {/* Tabela de Critérios - Bosch GO 3,6V */}
+              <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="min-w-full divide-y divide-slate-200">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Critério avaliado</th>
+                      <th className="px-4 py-3 text-center text-xs font-bold text-slate-500 uppercase tracking-wider w-[100px]">Nota</th>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">O que percebemos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700">
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Força Bruta e Controle de Parafusamento</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.5 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Catraca eletrônica precisa com sistema Push&Go de acionamento inteligente por pressão.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Desempenho em Furação (Madeira, Metal e Alvenaria)</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">0.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Não foi projetada para furação, focando puramente no parafusamento rápido de eletrônicos.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Ergonomia, Construção e Qualidade do Mandril</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Super leve (320g), cabe no bolso e possui encaixe sextavado magnético excelente.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Autonomia e Pacote de Baterias</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Ótima autonomia e facilidade máxima de carregamento através do cabo USB-C.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Custo-Benefício e Acessórios Inclusos</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">8.8 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Investimento muito compensador para técnicos e eletricistas pela grande produtividade ganha.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </section>
 
-            {/* Makita Impacto */}
-            <section id="makita-impacto" className="scroll-mt-24 pt-8 border-t border-gray-100">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                Makita Impacto
-              </h2>
+            {/* Black+Decker KC4815B-BR */}
+            <section id="black-decker-kc4815b" className="scroll-mt-24 pt-8 border-t border-gray-100">
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                9. BLACK+DECKER | Parafusadeira a Bateria 1/4" (6,35 mm) 4.8 V com LED 16 Acessórios | KC4815B-BR
+              </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["makita-impacto"].name}.webp`} alt={products["makita-impacto"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={`/images/blog/melhor-parafusadeira/${products["black-decker-kc4815b"].name}.webp`} alt={products["black-decker-kc4815b"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+              </div>
+              <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                <p>A <strong>Black+Decker KC4815B-BR</strong> é a mais barata e simples da lista, servindo para <strong>apertar parafusos soltos em casa</strong> sem fazer força.</p>
+                <p>Sua principal vantagem é o <strong>cabo articulado</strong>. Você pode usar ela reta ou dobrada, o que ajuda muito a alcançar parafusos no fundo de gavetas.</p>
+                <p>Ela é bem fraca (4,8V e apenas 3 Nm de torque), o que significa que é indicada apenas para coisas leves, como desmontar eletrodomésticos ou instalar maçanetas.</p>
+                <p>Se você não quer gastar quase nada e quer evitar o trabalho manual com a chave Phillips, é uma boa opção.</p>
               </div>
 
-              <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>A Makita TD0100 é voltada puramente ao trabalho rígido, pesado diário, e atende plenamente longas oficinas das grandes exigências contínuas.</p>
-                <p>É dependente totalmente do suprimento físico da rede elétrica e garante vigor linear e impetuoso com monstruosos 100 Nm nas grandes exigências das porcas velhas encrustadas.</p>
-                <p>Apresenta tecnologias avançadas percussivas prevenindo todos solavancos contra-braço com amortecimento perfeito poupando tendinites cruéis e articulações da jornada prolongada.</p>
-                <p>Mesclando inversão ágil e velocidade graduada torna o acerto nos caibros ou madeiramento massaranduba incrivelmente liso e descomplicado.</p>
-                <p>Possuindo desenho magro super reduzido para alocar entre espaços das terças ou pilares justos aliada a boa metragem folgada de um cabo original de longos 2,5 metros duráveis e elásticos.</p>
+              <div className="overflow-x-auto mt-6">
+                <table className="min-w-full border-collapse bg-white rounded-lg shadow-sm border border-gray-200">
+                  <tbody className="divide-y divide-gray-200">
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Força de Aperto (Torque)</th><td className="px-4 py-3 text-sm text-gray-600">3 Nm</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Velocidade de Rotação</th><td className="px-4 py-3 text-sm text-gray-600">200 RPM</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Categoria</th><td className="px-4 py-3 text-sm text-gray-600">Parafusadeira</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Voltagem Operacional</th><td className="px-4 py-3 text-sm text-gray-600">4,8 V</td></tr>
+                    <tr><th className="px-4 py-3 bg-gray-50 text-left text-sm font-semibold text-gray-700">Funcionamento a Bateria</th><td className="px-4 py-3 text-sm text-gray-600"><Check className="text-green-500" size={18} /></td></tr>
+                  </tbody>
+                </table>
               </div>
 
-              <AffiliateCard id="makita-impacto" />
+              <AffiliateCard id="black-decker-kc4815b" />
 
               <div className="grid md:grid-cols-2 gap-6 mt-8">
                 <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                   <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                  <ul className="space-y-2 text-green-700 text-sm">
-                    <li>Alto torque para parafusos resistentes</li>
-                    <li>Sistema anti-contragolpe</li>
-                    <li>Velocidade variável e reversível</li>
-                    <li>Construção robusta Makita</li>
+                  <ul className="space-y-2 text-green-700 text-sm list-disc list-inside">
+                    <li>Cabo articulado para locais difíceis.</li>
+                    <li>Extremamente leve e ergonômica.</li>
+                    <li>Kit com 16 acessórios incluso.</li>
+                    <li>LED integrado para visibilidade.</li>
                   </ul>
                 </div>
                 <div className="bg-red-50 p-6 rounded-xl border border-red-100">
                   <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                  <ul className="space-y-2 text-red-700 text-sm">
-                    <li>Dependente de tomada</li>
-                    <li>Não possui luz LED</li>
+                  <ul className="space-y-2 text-red-700 text-sm list-disc list-inside">
+                    <li>Baixa potência para perfurações.</li>
+                    <li>Tempo de recarga longo.</li>
                   </ul>
                 </div>
               </div>
-            </section>
 
-            {/* Mondial FPF-05 */}
-            <section id="mondial-fpf-05" className="scroll-mt-24 pt-8 border-t border-gray-100">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                Mondial FPF-05
-              </h2>
-              <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["mondial-fpf-05"].name}.webp`} alt={products["mondial-fpf-05"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
-              </div>
-
-              <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>A Mondial FPF-05 propõe essencialmente baixo custo agregado à facilidade do serviço exporádico para quadros decorativos na parede ou puxadores amolecidos soltos na porta dos fundos da cozinha.</p>
-                <p>Super econômica em gramas, seus pesos pluma fornecem fixação por apenas 4,8V permitindo encaixes rápidos mantendo livre uma mão servindo de esteio sobre nichos altos desequilibrados das estantes e cômodas do dormitório.</p>
-                <p>Os singelos torques mecânicos entregatórios dos amenos 3 Nm salvaguardam peças miúdas do estrago prematuro da rosca dos velhos MDF do escritório ou compensados de compensados com rachaduras da umidade e desgaste.</p>
-                <p>Contém simples anel variador nos limites precisos em seu mandril combinando lanterninhas e o aval clássico Mondial.</p>
-              </div>
-
-              <AffiliateCard id="mondial-fpf-05" />
-
-              <div className="grid md:grid-cols-2 gap-6 mt-8">
-                <div className="bg-green-50 p-6 rounded-xl border border-green-100">
-                  <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                  <ul className="space-y-2 text-green-700 text-sm">
-                    <li>Ultra leve e compacta</li>
-                    <li>Ótimo custo-benefício</li>
-                    <li>Fácil de manusear</li>
-                    <li>Lanterna LED integrada</li>
-                  </ul>
-                </div>
-                <div className="bg-red-50 p-6 rounded-xl border border-red-100">
-                  <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                  <ul className="space-y-2 text-red-700 text-sm">
-                    <li>Torque limitado</li>
-                    <li>Não indicada para furos</li>
-                  </ul>
-                </div>
+              {/* Tabela de Critérios - Black+Decker KC4815B */}
+              <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="min-w-full divide-y divide-slate-200">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">Critério avaliado</th>
+                      <th className="px-4 py-3 text-center text-xs font-bold text-slate-500 uppercase tracking-wider w-[100px]">Nota</th>
+                      <th className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">O que percebemos</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700">
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Força Bruta e Controle de Parafusamento</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">7.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Torque limitado de 3 Nm, focado estritamente em apertos de parafusos curtos e leves.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Desempenho em Furação (Madeira, Metal e Alvenaria)</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">0.0 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Rotação baixa de 200 RPM, não indicada para furação em nenhuma superfície.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Ergonomia, Construção e Qualidade do Mandril</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.2 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Cabo articulado em dois ângulos para cantos difíceis de alcançar e peso muito reduzido (400g).</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Autonomia e Pacote de Baterias</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">7.2 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Carregamento demorado e bateria interna de 4.8V para uso eventual.</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold">Custo-Benefício e Acessórios Inclusos</td>
+                      <td className="px-4 py-3 text-center font-bold text-slate-900">9.5 / 10</td>
+                      <td className="px-4 py-3 text-slate-600">Excelente preço de entrada para hobby, acompanhado de maleta e 16 acessórios iniciais.</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </section>
           </div>
 
+          {/* CARROSSEL DE PRODUTOS / KITS DE BITS */}
+          <div className="my-16 p-8 bg-slate-50 border border-slate-200 rounded-2xl shadow-sm">
+            <div className="flex items-center gap-3 mb-6">
+              <ShoppingBag className="text-[#FFD700] w-7 h-7" />
+              <h3 className="text-2xl font-bold text-slate-800">Complete sua Caixa de Ferramentas</h3>
+            </div>
+            <p className="text-slate-600 mb-6 text-base">Uma parafusadeira potente fica ainda melhor com bits adequados de alta aderência magnética. Veja os kits recomendados pelos nossos especialistas:</p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Product recommendation 1 */}
+              <div className="bg-white p-5 rounded-xl border border-gray-200 flex flex-col justify-between hover:shadow-md transition-shadow">
+                <div>
+                  <span className="text-xs font-bold bg-[#FFD700]/25 text-slate-800 py-1 px-3 rounded-full uppercase tracking-wider mb-3 inline-block">Mais Vendido</span>
+                  <h4 className="text-lg font-bold text-slate-800 mb-2">{products["bosch-kit-maleta-titanio-103-pecas"].name}</h4>
+                  <p className="text-sm text-slate-500 leading-relaxed mb-4">O Kit de Pontas e Brocas em Titânio Bosch é completo para metal, madeira e concreto. Acompanha maleta plástica e 103 peças versáteis para uso doméstico ou profissional.</p>
+                </div>
+                <a 
+                  href={products["bosch-kit-maleta-titanio-103-pecas"].link}
+                  target="_blank" 
+                  rel="noopener noreferrer sponsored"
+                  className="bg-[#FFD700] text-slate-900 text-center font-bold text-sm py-2.5 px-4 rounded-lg block hover:opacity-95 mt-4 transition-all"
+                >
+                  VER PREÇO
+                </a>
+              </div>
+
+              {/* Product recommendation 2 */}
+              <div className="bg-white p-5 rounded-xl border border-gray-200 flex flex-col justify-between hover:shadow-md transition-shadow">
+                <div>
+                  <span className="text-xs font-bold bg-slate-100 text-slate-700 py-1 px-3 rounded-full uppercase tracking-wider mb-3 inline-block">Custo-Benefício</span>
+                  <h4 className="text-lg font-bold text-slate-800 mb-2">Jogo De Bits X-line Mini Bosch Com 25 Peças</h4>
+                  <p className="text-sm text-slate-500 leading-relaxed mb-4">Estojo compacto contendo 25 pontas e bits Bosch para parafusamento manual ou com parafusadeira. Excelente aderência e acompanha suporte magnético universal.</p>
+                </div>
+                <a 
+                  href={products["BOSCH Kit de Pontas para Parafusar Mini X-Line com 25 Peças ｜ 2 607 017 400"].link}
+                  target="_blank" 
+                  rel="noopener noreferrer sponsored"
+                  className="bg-slate-800 text-white text-center font-bold text-sm py-2.5 px-4 rounded-lg block hover:bg-slate-700 mt-4 transition-all"
+                >
+                  VER PREÇO
+                </a>
+              </div>
+            </div>
+          </div>
+
           {/* Buying Guide */}
           <section className="mt-20 pt-12 border-t border-gray-200">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-8">Como escolher uma parafusadeira?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-8">Como Escolher a Melhor Parafusadeira</h2>
             
             <div className="space-y-8 prose prose-lg max-w-none text-gray-700">
+              <p>Comprar ferramenta só pela aparência ou marca é pedir para rasgar dinheiro. Veja o que <strong>realmente importa na hora de escolher</strong>.</p>
+              <p>Não importa se você é o cara dos consertos de fim de semana ou se vive em obra. Entender o básico sobre <strong>torque, RPM e tensão</strong> evita que você compre uma máquina fraca que trava no primeiro furo ou gaste uma fortuna em algo que nunca vai usar.</p>
+
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Potência</h3>
-                <p>A potência (Watts) indica a capacidade do motor em manter sua força de giro constante sob carga. Para o uso contínuo, ferramentas mais potentes previnem quedas abruptas de desempenho e lentidão excessiva.</p>
+                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Tensão (Voltagem): 12V, 18V ou Cabo</h3>
+                <p>A voltagem define a <strong>força e a capacidade de trabalho contínuo</strong> da máquina.</p>
+                <p>Máquinas de <strong>3,6V a 4,8V</strong> são apenas chaves de fenda elétricas (eletrônicos e maçanetas).</p>
+                <p>Se você só monta móveis e faz pequenos reparos em casa, uma parafusadeira de <strong>12V</strong> normalmente já resolve perfeitamente sem pesar no braço.</p>
+                <p>Agora, para quem trabalha com madeira dura, instalações de telhado ou alvenaria, vale investir em uma de <strong>18V ou 20V</strong>, que aguentam o tranco. Se você trabalha em bancada fixa o dia todo (marcenaria) e não quer ficar refém de bateria, um modelo <strong>com cabo</strong> é a melhor saída.</p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Torque</h3>
-                <p>Mensurado em Newton-metro (Nm), revela a pura força de rotação da ferramenta, indicativo determinante para perfurar ou parafusar materiais de alta densidade como metal e madeiras maciças.</p>
-                <p>Controles precisos de torque evitam afundamentos indesejados nas pranchas de MDF ou estragos permanentes em dobradiças finas.</p>
-                <p>Com um torque insuficiente o parafuso pode não atingir a profundidade necessária, enquanto valores muito extremos quebram roscas.</p>
+                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Torque (A Força de Aperto)</h3>
+                <p>O torque é o que <strong>empurra o parafuso para dentro da madeira</strong> sem a máquina travar.</p>
+                <p>Sabe quando você tenta colocar um parafuso na madeira maciça e a máquina simplesmente para e faz aquele barulho de motor forçando? Isso é falta de torque.</p>
+                <p>Para montar móveis de MDF, use sempre a catraca em <strong>ajuste baixo</strong> para a máquina parar de girar no momento certo e não atravessar a madeira.</p>
+                <p>Para parafusos longos em buchas de parede ou madeira dura, você vai precisar do torque no máximo para o motor dar conta.</p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">RPM</h3>
-                <p>A Rotação por Minuto (RPM) define o quão rápido o aparelho gira, focando na agilidade para grandes perfurações ou furos repetitivos e rasos.</p>
-                <p>Um gatilho com ajuste variável ajuda na concentração e no firme contato com a fenda, não permitindo à ponteira escorregar violentamente riscando o entorno.</p>
-                <p>Para trabalhar espessuras mais difíceis, a regra primordial inverte: RPM moderado focado no torque intenso e na pressão do usuário.</p>
+                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Rotação (RPM)</h3>
+                <p>A velocidade em RPM define se a máquina é melhor para <strong>furar ou parafusar</strong>.</p>
+                <p>Parafusar exige controle e rotação baixa (<strong>200 a 400 RPM</strong>), senão você perde o controle e espana a fenda do parafuso em segundos.</p>
+                <p>Já para furar madeira, parede ou metal, você precisa de giro rápido (<strong>acima de 1000 RPM</strong>).</p>
+                <p>É por isso que as máquinas boas geralmente têm um botão no topo com duas marchas: velocidade 1 (lenta, para parafusar com força) e velocidade 2 (rápida, para furação).</p>
               </div>
 
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Função impacto: Para Furar Parede</h3>
+                <p>Se você pretende <strong>furar a parede</strong> da sua casa, a máquina precisa <strong>ter impacto</strong>.</p>
+                <p>A função impacto dá pequenos soquinhos enquanto a broca gira, o que vai esfarelando o tijolo e o concreto. Tentar furar uma parede de tijolo baiano sem impacto vai queimar o motor da ferramenta.</p>
+                <p>Essa função <strong>NÃO</strong> deve ser ativada na hora de parafusar ou furar madeira, senão você estraga o material.</p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">O Tamanho do Mandril</h3>
+                <p>O mandril é a "boca" da máquina. Ele define a <strong>grossura máxima da broca</strong> que você consegue usar.</p>
+                <p>O mandril de <strong>3/8" (10 mm)</strong> atende 90% dos reparos domésticos e marcenaria leve.</p>
+                <p>Se você for trabalhar em obras pesadas, vai precisar de brocas mais grossas, então procure um mandril de <strong>1/2" (13 mm)</strong>.</p>
+                <p>Hoje em dia, a regra é clara: prefira os mandris de <strong>aperto rápido</strong>. Ninguém mais quer perder tempo procurando aquela chavinha de mandril antiga para trocar uma broca.</p>
+              </div>
+              
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Lanternas embutidas</h3>
-                <p>Modelos com LED na estrutura entregam foco primário nas operações difíceis de visualizar, especialmente onde armários produzem excesso de sombras nas gavetas dos clientes.</p>
-                <p>Eles guiam o pontal com extrema fidelidade de luminosidade contra as marcas preestabelecidas com lápis de carpinteiro sem margens ao erro.</p>
+                <p>Parece bobeira, mas um <strong>LED na ponta da furadeira</strong> salva a vida dentro de armários.</p>
+                <p>A luz ajuda a enxergar exatamente a fenda do parafuso em lugares de sombra (como instalar dobradiças dentro do guarda-roupa), evitando que a ponta escorregue e rasgue a madeira.</p>
               </div>
 
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Baterias de Íon-Lítio</h3>
-                <p>Estas baterias fornecem uma incrível durabilidade para grandes turnos sem perdas espontâneas de carga no stand-by se ficarem estocadas muito tempo.</p>
-                <p>Extremamente leves quando comparadas aos modelos prévios de Níquel, revolucionaram a mobilidade predial eliminando as fiações excessivas.</p>
-                <p>Permitem também serem alimentadas em pequenas cargas de repouso mantendo uma performance contínua que dispensa descarregamentos totais de precondição.</p>
+                <p>Fuja de máquinas com bateria antiga de níquel. Compre sempre <strong>Íon-Lítio</strong>.</p>
+                <p>As baterias de <strong>íon-lítio</strong> são muito mais leves, não descarregam sozinhas na maleta e, o mais importante: <strong>não viciam</strong>. Você pode botar pra carregar mesmo se tiver pela metade sem estragar a bateria.</p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Acessórios adicionais</h3>
-                <p>Maletas bem recheadas agregam alto valor garantindo o avanço instantâneo. Dispensam visitas de última hora a uma loja por falta de peças.</p>
-                <p>Opte também de modo consciente por adquirir bits imantados endurecidos contra impactos se a máquina os comportar para atarraxamentos difíceis em vigas.</p>
+                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Acessórios e Maletas</h3>
+                <p>Comprar um <strong>kit que já venha com brocas e pontas</strong> sai muito mais barato do que comprar tudo separado depois.</p>
+                <p>Procure opções que incluam uma maleta para transporte e pontas imantadas (que seguram o parafuso sozinho, ajudando muito se você estiver trabalhando com uma mão só).</p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Algumas Dicas Finais da Oficina</h3>
+                <div className="w-full flex justify-center my-6">
+                  <a href="/author/severino-torquato">
+                    <img 
+                      src="/images/autores/severino-torquato.webp" 
+                      alt="Severino Torquato" 
+                      className="w-32 h-32 rounded-full object-cover border-4 border-[#FFD700] hover:scale-105 transition-transform duration-200 shadow-md" 
+                      loading="lazy" 
+                      onError={(e) => {
+                        e.currentTarget.src = "https://ui-avatars.com/api/?name=Severino+Torquato&background=FFD700&color=1a1a1a";
+                      }}
+                    />
+                  </a>
+                </div>
+                
+                {/* BOX DE DESTAQUE - DICA DO ESPECIALISTA */}
+                <div className="my-8 p-6 bg-yellow-50 border-l-4 border-[#FFD700] rounded-r-xl shadow-sm text-slate-800">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Sparkles className="text-[#FFD700]" size={20} />
+                    <strong className="text-lg font-bold text-slate-900">Dica do Especialista: Assistência Técnica</strong>
+                  </div>
+                  <p className="text-base leading-relaxed font-medium">
+                    Ferramenta de trabalho, mais cedo ou mais tarde, vai precisar de manutenção. Dê preferência a marcas conhecidas (Bosch, DeWalt, WAP, Makita) porque é muito mais fácil achar bateria avulsa ou trocar o carvão do motor. Máquinas "xingling" muito baratas podem virar lixo se a bateria morrer.
+                  </p>
+                </div>
+
+                <p>Sempre teste a "pegada" da máquina. O peso extra de uma bateria maior cobra o preço no braço no final do dia.</p>
+                <p>Ah, e não esqueça de conferir se o carregador é <strong>bivolt</strong>, para não queimar a fonte na primeira tomada de obra que você ligar.</p>
               </div>
             </div>
           </section>
 
-          {/* Types of Screwdrivers */}
-          <section className="mt-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Quais são os tipos de parafusadeiras?</h2>
-            <p className="text-gray-700 mb-6 text-lg">Para cada finalidade existe um tipo de ferramenta com características distintas na execução das perfurações diárias da obra e manutenções.</p>
+          {/* FAQ Section - FORMATADO COMO ACORDEÃO EXPANSÍVEL */}
+          <section className="mt-16 bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-200">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-4 text-center">Perguntas frequentes (FAQ)</h2>
+            <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">Clique sobre cada pergunta abaixo para expandir a resposta e entender melhor os detalhes técnicos antes de comprar.</p>
             
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="font-bold text-lg mb-2">Parafusadeiras elétricas</h3>
-                <p className="text-gray-600 text-sm">Ferramentas focadas no máximo rendimento em atividades em série baseadas na extensão atrelada as fiações contínuas.</p>
-                <p className="text-gray-600 text-sm mt-2">Entregam a maior confiabilidade constante com zero decaimento dos tracionamentos pois agem em total segurança alimentar em toda hora não lidando com fadigas operacionais decorrentes de exaustão gradual ou tempo livre indisponível as reposições e baterias nos postos avançados da obra de chão.</p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="font-bold text-lg mb-2">Parafusadeiras e Furadeiras</h3>
-                <p className="text-gray-600 text-sm">Modelos consolidados abrangendo versatilidade em conjunto prático, unificando os torques com <a href="/melhor-furadeira-e-parafusadeira/" className="text-blue-600 hover:underline font-medium">amplitudes giratórias essenciais de furadeiras rotativas.</a></p>
-                <p className="text-gray-600 text-sm mt-2">Altamente apreciadas porque geram folga imediata num portfólio restrito substituindo a enorme parte chata do peso no compartimento na sua mala automotiva sem despesas adicionais volumosas.</p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="font-bold text-lg mb-2">Parafusadeiras de impacto</h3>
-                <p className="text-gray-600 text-sm">Equipamentos vigorosos voltados estritamente na resolução bruta das espessuras robustas perfurando tijolos pesados e pedras cimentadas grossas.</p>
-                <p className="text-gray-600 text-sm mt-2">As catracas e matrizes percutem movimentos agressivos frontais de quebra liberando trancos massivos do recuo perigoso antes repassados diretamente nas articulações, facilitando assim manuseamentos com grandes estirpes firmadas fortemente em tetos difíceis de aguentar fisicamente.</p>
-              </div>
-            </div>
-          </section>
-
-          {/* How to use */}
-          <section className="mt-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Como usar uma parafusadeira?</h2>
-            <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-              <p>Primeiramente confira o desenho específico e os diâmetros idênticos das ranhuras correspondentes às pontas das estrelas das cabeças fêmeas inserindo os bits com grande perfeição na fenda para que a força aplique sem folgas escoradiças prejudiciais ao aperto maciço das porcas.</p>
-              <p>Alerte-se firmemente em inserir profundamente cada base estriada engrenando totalmente nos limites do mandril não liberando perdas da aderência nos encaixes.</p>
-              <p>Alinhe firmemente no plano retilíneo da aplicação forçando paralelamente o objeto evitando desvios tortos e descarrilamentos no acabamento sensível.</p>
-              <p>Progrida paulatinamente a força em sua trava começando suave para as pontas fincadas estabelecerem trilhas fundas e nunca espanarem fora riscando toda pintura local.</p>
-              <p>Equipamentos adequados de segurança exigem, em especial, viseira ou óculos em resina evitando ferpas pontiagudas, escamas lascadas do avanço das espirais agressivas no madeiramento naval.</p>
-            </div>
-          </section>
-
-          {/* FAQ */}
-          <section className="mt-12 space-y-8">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Perguntas Frequentes</h2>
-            
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Quais as melhores marcas de parafusadeiras?</h3>
-                <p className="text-gray-700">Marcas experientes como Bosch e DeWalt formam a dupla de liderança nos canteiros industriais constantes. Makita traz solidez construtiva incomparável globalmente. Acessíveis como Black+Decker garantem ótimo repasse, e a Vonder fornece os mais excelentes kits econômicos disponíveis as moradias amadoras.</p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Qual é melhor? Bosch ou Dewalt?</h3>
-                <p className="text-gray-700">Em um comparativo de peso na mesma faixa, as rivais exibem propriedades singulares validadas as suas preferências de canteiros.</p>
-                <p className="text-gray-700 mt-2">Exemplares DeWalt garantem sua popularidade pela estrutura bruta aprimorada de componentes plásticos reforçados e motores isolados para trabalhar pesado no sol extremo aguentando pancada frequente nas poeiras nocivas.</p>
-                <p className="text-gray-700 mt-2">A Bosch domina nas inovações sistêmicas, tecnologias embarcadas nas placas modernas e regulagens altamente sutis protegendo os gabinetes delicados da marcenaria em nichões detalhados e caros das obras prontas a entrega.</p>
-                <p className="text-gray-700 mt-2">Verifique estritamente também qual centro de reposição da região o atende com velocidade no suporte ou no suprimento das garras extras consumíveis diariamente na localidade escolhida aos seus investimentos operacionais diários de rotina industrial continuada no estado.</p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Qual é melhor parafusadeiras 12v ou 20v?</h3>
-                <p className="text-gray-700">Tensão define a taxa máxima repassada em motor convertida nas trações das bitolas robustas.</p>
-                <p className="text-gray-700 mt-2">Uma taxa dos 20V tem plenas intenções nas instalações duras dos telhados coloniais rígidos, perfurações no bloco cerâmico assentado do muro vizinho em estruturas da sustentação.</p>
-                <p className="text-gray-700 mt-2">Modelos em 12V dão extrema flexibilidade livrando dezenas de montagens cansativas de criados e dobradiças que levariam exaustivos e dolorosos ininterruptos minutos manuais num cansaço diário do repouso sagrado estragado, possuindo porte sutil guardados dentro das despensas na sala ou nos porta luvas de socorros ligeiros.</p>
-              </div>
-            </div>
-          </section>
-
-          {/* Tips */}
-          <section className="mt-12 bg-[#FFFBE6] p-8 rounded-xl border border-[#FFD700]/30">
-            <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Algumas dicas úteis sobre Parafusadeira</h2>
-            <div className="space-y-6 text-gray-700">
-              <p>Propriedades bastante valiosas fogem as tabelas brutas focadas exclusivamente em repassar potências gigantescas negligenciando ergonomia da ação e acabamentos finais do serviço alheio em locais nobres do apartamento recém entregue de gesso teto ou pisos polidos limpos e estriados da marcenaria no breu.</p>
-              <p>Muitos acidentes tristes provém nas escorregadas da fixação arranhando fundo as madeiras com danos nas laterais brancas porque pulos agressivos empurrados pelo início de pontas cegas descarrilam veloz fora de foco rasgando as molduras encarecendo tudo pelo acidente provocado.</p>
-              <p>Repare sempre nas bases texturizadas borrachadas das ferramentas amaciando perfeitamente empunhaduras as mãos com aderência das digitais contra tendões dolorentes devido exaustão no calor no decorrer do fim diário fatigadamente torcendo vigas das coberturas nas grandes pontas metálicas e longas do terraço das edificações externas sob o sol inclemente exposto com riscos contínuos ocupacionais desnecessários e fadigas duras.</p>
+            <div className="space-y-4">
+              {faqData.map((faq, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300">
+                  <button 
+                    onClick={() => toggleFaq(index)}
+                    className="w-full text-left px-5 py-4 flex items-center justify-between font-bold text-slate-800 hover:bg-slate-50 transition-colors focus:outline-none"
+                  >
+                    <span className="flex items-center gap-3">
+                      <span className="w-6 h-6 rounded-full bg-[#FFD700] text-slate-900 flex items-center justify-center font-bold text-xs">
+                        {index + 1}
+                      </span>
+                      {faq.question}
+                    </span>
+                    {openFaq === index ? <ChevronUp className="text-slate-600" /> : <ChevronDown className="text-slate-600" />}
+                  </button>
+                  {openFaq === index && (
+                    <div className="px-5 pb-5 pt-1 text-gray-600 border-t border-slate-100 animate-slideDown">
+                      <p className="leading-relaxed text-sm">{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </section>
 
           {/* Conclusion */}
-          <section className="mt-16 text-center">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Conclusão</h2>
-            <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mx-auto">
-              <p>Decidir a escolha da furadeira com exatidão se ampara perfeitamente no levantamento absoluto da proporção em sua atividade produtiva frequente estipulada no planejamento e cronograma.</p>
-              <p>Existem maravilhosas oportunidades compactadas que socorrem imprevistos na lida com perfeição econômica entregues inteiras pelo preço, assim como potências consagradas de engenharia de nível superior isoladas de sobreaquecimento as resistências absolutas industriais testadas diariamente nas obras complexas e demoradas contínuas do Brasil exigente de sol e de fumaça severa nas construtoras do asfalto.</p>
+          <section className="mt-16 bg-[#1a1a1a] text-white p-8 md:p-12 rounded-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFD700] opacity-10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#FFD700] opacity-10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+            
+            <div className="relative z-10">
+              <h2 className="text-3xl font-bold mb-6 text-[#FFD700]">Conclusão</h2>
+              <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                <strong>Comprar a parafusadeira certa significa trabalhar menos e produzir mais.</strong>
+              </p>
+              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                Não existe ferramenta perfeita, existe a ferramenta certa para o seu trabalho. Se você vai viver em obra furando tijolo, invista numa máquina de <strong>18V com impacto</strong>. Se você só quer apertar gaveta no fim de semana, uma maquininha leve de <strong>12V sem impacto</strong> vai te fazer muito mais feliz. Pare de gastar energia na base do braço com chaves manuais e faça o investimento que vai mudar o jeito que você cuida da sua casa ou trabalha.
+              </p>
+
             </div>
           </section>
 

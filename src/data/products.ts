@@ -5,6 +5,10 @@ export interface Product {
 
 
 export const products: Record<string, Product> = {
+  "bosch-kit-maleta-titanio-103-pecas": {
+    name: "Bosch kit Jogo Maleta Titanio 103 Peças Brocas Pontas Bits",
+    link: "https://meli.la/2enDio3"
+  },
   "alternativas-furadeira-britania-650w": {
     name: "Alternativas a Furadeira Britânia 650W",
     link: "https://amzn.to/4uafoea"
@@ -19,15 +23,15 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-bosch-gsb-185-li": {
     name: "Parafusadeira Bosch GSB 185-LI",
-    link: "https://meli.la/1tb3Sr1"
+    link: "https://meli.la/2orcXzN"
   },
   "parafusadeira-wap-bpf-12k3": {
     name: "Parafusadeira WAP BPF 12K3",
-    link: "https://meli.la/2M7NSp8"
+    link: "https://meli.la/1jEV6f3"
   },
   "parafusadeira-dewalt-dcd7781d2": {
     name: "Parafusadeira DeWalt DCD7781D2",
-    link: "https://meli.la/2PVMfq3"
+    link: "https://meli.la/1a7tj1T"
   },
   "DeWalt DCD700LC1": {
     name: "DeWalt DCD700LC1",
@@ -39,7 +43,7 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-vonder-pfv-012i": {
     name: "Parafusadeira Furadeira Vonder Pfv 012i 12 V",
-    link: "https://meli.la/2fdiiY4"
+    link: "https://meli.la/1pzPYBo"
   },
   "Parafusadeira Vonder PFV 120": {
     name: "Parafusadeira Vonder PFV 120",
@@ -47,23 +51,23 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-bosch-gsr-1000": {
     name: "Parafusadeira Furadeira Bosch GSR 1000",
-    link: "https://meli.la/2FcgXen"
+    link: "https://meli.la/1LYddPm"
   },
   "parafusadeira-black-decker-ld12": {
     name: "Parafusadeira Furadeira Black & Decker LD12",
-    link: "https://amzn.to/4rN1qi5"
+    link: "https://meli.la/1fZPS6Q"
   },
   "bosch-gsr-7-14-e-400w": {
     name: "Bosch GSR 7-14 E 400W",
-    link: "https://meli.la/26XeFSH"
+    link: "https://meli.la/1R9bsNL"
   },
   "black-decker-kc4815b": {
     name: "Black Decker KC4815B",
-    link: "https://amzn.to/46Ja8W7"
+    link: "https://link.amazon/B00aqJ60x"
   },
   "bosch-go-bivolt": {
     name: "Bosch Go Bivolt",
-    link: "https://meli.la/113bGg1"
+    link: "https://meli.la/1FqUMMP"
   },
   "parafusadeira-wap-bpfi-12k4": {
     name: "Parafusadeira e Furadeira WAP BPFI 12K4",
