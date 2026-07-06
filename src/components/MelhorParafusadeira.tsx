@@ -98,7 +98,9 @@ export const MelhorParafusadeira: React.FC = () => {
     {
       question: "Qual a diferença entre parafusadeira e furadeira?",
       answer: [
-        "Muitos iniciantes acreditam que qualquer furadeira pode desempenhar o papel de parafusadeira, mas essa confusão costuma resultar em parafusos espanados ou peças danificadas.",
+        <>
+          Muitos iniciantes acreditam que qualquer furadeira pode desempenhar o papel de parafusadeira, mas essa confusão costuma resultar em parafusos espanados ou peças danificadas (se quiser saber mais sobre as diferenças, veja o nosso artigo sobre <a href="/qual-a-diferenca-entre-parafusadeira-e-furadeira" className="text-blue-600 hover:underline font-medium">qual a diferença entre parafusadeira e furadeira</a>).
+        </>,
         "A distinção fundamental reside em dois pilares técnicos: o reverso e a embreagem. Uma parafusadeira possui controle de giro (horário e anti-horário), permitindo tanto o aperto quanto a remoção de parafusos, enquanto furadeiras comuns são limitadas a uma rotação contínua.",
         "Mais crucial ainda é o sistema de embreagem. Enquanto a furadeira prioriza a velocidade para perfurar, a parafusadeira conta com um ajuste de torque que interrompe a rotação assim que o parafuso atinge a profundidade ideal.",
         "Esse mecanismo de segurança protege o material e a integridade da fenda do parafuso, garantindo um acabamento profissional que a força bruta de uma furadeira simples jamais conseguiria entregar."
@@ -245,7 +247,7 @@ export const MelhorParafusadeira: React.FC = () => {
                         <td className="p-2 align-middle text-center">
                           <div className="w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] border border-slate-100 rounded flex items-center justify-center p-0.5 bg-white mx-auto">
                             <img 
-                              src={`/images/blog/melhor-parafusadeira/${product.name}.webp`}
+                              src={id === "parafusadeira-vonder-pfv-012i" ? "/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I.webp" : `/images/blog/melhor-parafusadeira/${product.name}.webp`}
                               alt={meta?.shortName || product.name} 
                               width="60"
                               height="60"
@@ -807,7 +809,7 @@ export const MelhorParafusadeira: React.FC = () => {
                 7. VONDER | Parafusadeira/Furadeira a Bateria 12 V | PFV 012
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-vonder-pfv-012i"].name}.webp`} alt={products["parafusadeira-vonder-pfv-012i"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src="/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I.webp" alt={products["parafusadeira-vonder-pfv-012i"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>Vonder PFV 012</strong> é a melhor máquina barata se você faz questão da <strong>função de impacto</strong> para furar parede de tijolo de vez em quando.</p>

@@ -5,6 +5,14 @@ export interface Product {
 
 
 export const products: Record<string, Product> = {
+  "Parafusadeira Furadeira Bosch GSB 120-LI.": {
+    name: "Parafusadeira Furadeira Bosch GSB 120-LI.",
+    link: "https://meli.la/2uhxDZ6"
+  },
+  "Parafusadeira EINHELL TE-CD 182 LI-I 2B": {
+    name: "Parafusadeira EINHELL TE-CD 182 LI-I 2B",
+    link: "https://meli.la/33A2qy3"
+  },
   "bosch-kit-maleta-titanio-103-pecas": {
     name: "Bosch kit Jogo Maleta Titanio 103 Peças Brocas Pontas Bits",
     link: "https://meli.la/2enDio3"
@@ -42,7 +50,7 @@ export const products: Record<string, Product> = {
     link: "https://meli.la/1XEaK89"
   },
   "parafusadeira-vonder-pfv-012i": {
-    name: "Parafusadeira Furadeira Vonder Pfv 012i 12 V",
+    name: "Parafusadeira Furadeira Com Impacto a Bateria Pfv012i Vonder Cor Amarelo Frequência 50 Hz/60 Hz",
     link: "https://meli.la/1pzPYBo"
   },
   "Parafusadeira Vonder PFV 120": {
