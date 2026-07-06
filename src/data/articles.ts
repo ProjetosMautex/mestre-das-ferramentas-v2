@@ -7,10 +7,10 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    title: "Melhor Parafusadeira de 2026: Top 11 Testadas e Aprovadas",
+    title: "9 Melhores Parafusadeiras de 2026: Bosch VS DeWalt VS Outras",
     url: "/melhor-parafusadeira",
     image: "/images/blog/melhor-parafusadeira/melhor-parafusadeira.webp",
-    excerpt: "Compare as 11 melhores parafusadeiras de 2026 com testes reais, potência, bateria e custo-benefício. Veja qual vale mais a pena antes de comprar."
+    excerpt: "Compare as 9 melhores parafusadeiras de 2026 com testes reais, potência, bateria e custo-benefício. Veja qual vale mais a pena antes de comprar."
   },
   {
     title: "10 Melhores Furadeiras 2026 teste Real (Bosch, DeWalt e +)",
@@ -19,10 +19,10 @@ export const articles: Article[] = [
     excerpt: "Cansado de furos malfeitos e ferramentas que te deixam na mão? Descubra a furadeira ideal para seus projetos e diga adeus à frustração!"
   },
   {
-    title: "8 Melhores Parafusadeiras Custo-Benefício 2026 Não Erre",
+    title: "Bosch VS WAP +4: Melhor Parafusadeira Custo-Benefício 2026",
     url: "/melhor-parafusadeira-custo-beneficio",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/melhor-parafusadeira-custo-beneficio.webp",
-    excerpt: "Não compre no escuro. Analisamos as 9 parafusadeiras que realmente entregam potência sem cobrar uma fortuna."
+    excerpt: "Não compre no escuro. Analisamos as parafusadeiras que realmente entregam potência sem cobrar uma fortuna."
   },
   {
     title: "As 8 Melhores Furadeiras e Parafusadeiras 2026 (Bosch e +)",
