@@ -6,11 +6,11 @@ export interface Product {
 export const productsmartele: Record<string, Product> = {
   "Martelete Perfurador Bosch GBH 2-24 D": {
     name: "Martelete Perfurador Bosch GBH 2-24 D",
-    link: "https://meli.la/19hHwW5"
+    link: "https://meli.la/2qtnN5F"
   },
   "Martelete Perfurador Rompedor Vonder Mpv 620": {
     name: "Martelete Perfurador Rompedor Vonder Mpv 620",
-    link: "https://meli.la/12cTqco"
+    link: "https://meli.la/2zT3cbu"
   },
   "Martelete Perfurador Dewalt D25133K": {
     name: "Martelete Perfurador Dewalt D25133K",
@@ -18,11 +18,11 @@ export const productsmartele: Record<string, Product> = {
   },
   "Martelete Makita HR2470": {
     name: "Martelete Makita HR2470",
-    link: "https://meli.la/1hMkewE"
+    link: "https://meli.la/325wJaF"
   },
   "WAP EMPR900K": {
     name: "WAP EMPR900K",
-    link: "https://meli.la/32uzTZx"
+    link: "https://meli.la/2frTWMP"
   },
   "Vonder MPV 1500": {
     name: "Vonder MPV 1500",

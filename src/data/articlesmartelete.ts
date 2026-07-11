@@ -59,5 +59,12 @@ export const articles: Article[] = [
     url: "/martelete-dobevi-e-bom",
     image: "/images/blog/2/martelete dobevi e bom.webp",
     excerpt: "O martelete Dobevi é bom? E o Bosch? Descubra se esta ferramenta entrega a potência necessária e se o custo-benefício realmente compensa o uso com nosso teste real."
+  },
+  {
+    title: "Martelete WAP 900W é Bom? (Teste Real vs Bosch e Vonder)",
+    url: "/martelete-wap-900w-e-bom",
+    image: "/images/blog/2/martelete wap é bom.webp",
+    excerpt: "O martelete WAP 900W realmente entrega o que promete? Descubra se esta ferramenta é o investimento ideal para sua reforma ou se vale buscar o topo."
   }
 ];
+

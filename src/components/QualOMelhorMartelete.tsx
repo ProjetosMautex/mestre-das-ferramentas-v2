@@ -118,7 +118,7 @@ export const QualOMelhorMartelete: React.FC = () => {
             {/* Produto 1 */}
             <section id="martelete-1" className="scroll-mt-24">
               <h3 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-                1. Martelete Perfurador Rompedor GBH 2-24 D 820W Kit Completo com Maleta – Bosch
+                1. Martelete Perfurador Rompedor GBH 2-24 D Professional 820W com Kit – Bosch
               </h3>
               <div className="w-full flex justify-center mb-8">
                  <img src="/images/blog/2/Martelete Perfurador Bosch GBH 2-24 D.webp" alt="Martelete Perfurador Rompedor GBH 2-24 D 820W Kit Completo com Maleta – Bosch" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
@@ -240,9 +240,9 @@ export const QualOMelhorMartelete: React.FC = () => {
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-                <p>O Makita HR2470 é um padrão de mercado para quem busca durabilidade em rotinas intensas. Com seu motor de 800W e 2,7 Joules de impacto, ele lida com concreto e alvenaria de forma fluida.</p>
+                <p>O Makita HR2470 é um padrão de mercado para quem busca durabilidade em rotinas intensas. Com seu motor de 800W e 3,0 Joules de impacto, ele lida com concreto e alvenaria de forma fluida.</p>
                 <p>Oferece a segurança necessária através do limitador de torque, que evita contragolpes perigosos caso a broca trave. Sua versatilidade é realçada pelo sistema de rotação reversível e encaixe SDS Plus, facilitando ajustes rápidos durante o dia.</p>
-                <p>Embora entregue excelente performance profissional, o cabo de 2,5 metros pode exigir o uso de extensões em locais amplos. Seu peso de 2,9 kg também pede uma adaptação física para trabalhos em superfícies elevadas. É o investimento ideal para quem prioriza confiabilidade técnica constante.</p>
+                <p>Embora entregue excelente performance profissional, o cabo de 2 metros pode exigir o uso de extensões em locais amplos. Seu peso de 2,9 kg também pede uma adaptação física para trabalhos em superfícies elevadas. É o investimento ideal para quem prioriza confiabilidade técnica constante.</p>
               </div>
 
               <AffiliateCard id="Martelete Makita HR2470" />
