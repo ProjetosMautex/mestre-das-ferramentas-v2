@@ -65,6 +65,12 @@ export const articles: Article[] = [
     url: "/martelete-wap-900w-e-bom",
     image: "/images/blog/2/martelete wap é bom.webp",
     excerpt: "O martelete WAP 900W realmente entrega o que promete? Descubra se esta ferramenta é o investimento ideal para sua reforma ou se vale buscar o topo."
+  },
+  {
+    title: "Como Quebrar Laje com Martelete (Sem Comprometer a Estrutura)",
+    url: "/como-quebrar-laje-com-martelete",
+    image: "/images/blog/2/como quebrar laje com martelete.webp",
+    excerpt: "Quer quebrar laje com segurança e eficiência? Descubra a potência ideal, os EPIs essenciais e o passo a passo técnico para evitar desastres na sua reforma."
   }
 ];
 

@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ComoQuebrarLajeComMartelete } from '../components/ComoQuebrarLajeComMartelete';
+---
+
+<Layout 
+  title="Como Quebrar Laje com Martelete (Sem Comprometer a Estrutura)"
+  description="Quer quebrar laje com segurança e eficiência? Descubra a potência ideal, os EPIs essenciais e o passo a passo técnico para evitar desastres na sua reforma."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <ComoQuebrarLajeComMartelete client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>
