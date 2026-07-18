@@ -1,10 +1,27 @@
 export interface Product {
   name: string;
   link: string;
+  image?: string;
 }
 
 
 export const products: Record<string, Product> = {
+  "Parafusadeira Furadeira Bosch GSR 120-LI": {
+    name: "Parafusadeira Furadeira Bosch GSR 120-LI",
+    link: "https://meli.la/24CXqbw"
+  },
+  "parafusadeira-wap-k21-id02": {
+    name: "Parafusadeira Furadeira de Impacto WAP K21 ID02",
+    link: "https://amzn.to/4ba2syQ"
+  },
+  "Parafusadeira Furadeira de Impacto WAP K21 ID02": {
+    name: "Parafusadeira Furadeira de Impacto WAP K21 ID02",
+    link: "https://meli.la/1pKXmNb"
+  },
+  "furadeira e parafusadeira Makita DHP485RF1J": {
+    name: "furadeira e parafusadeira Makita DHP485RF1J",
+    link: "https://meli.la/2LbihbF"
+  },
   "Parafusadeira Furadeira Bosch GSB 120-LI.": {
     name: "Parafusadeira Furadeira Bosch GSB 120-LI.",
     link: "https://meli.la/2uhxDZ6"
@@ -59,7 +76,7 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-bosch-gsr-1000": {
     name: "Parafusadeira Furadeira Bosch GSR 1000",
-    link: "https://meli.la/1LYddPm"
+    link: "https://meli.la/2iZZqkP"
   },
   "parafusadeira-black-decker-ld12": {
     name: "Parafusadeira Furadeira Black & Decker LD12",
@@ -95,7 +112,7 @@ export const products: Record<string, Product> = {
   },
   "WAP K21 ID01": {
     name: "WAP K21 ID01",
-    link: "https://meli.la/2W5ukrx"
+    link: "https://meli.la/2rxjw5y"
   },
   "WAP Kit Parafusadeira e Furadeira + Chave de Impacto à Bateria 1/2″ 21V K21-KT01": {
     name: "WAP Kit Parafusadeira e Furadeira + Chave de Impacto à Bateria 1/2″ 21V K21-KT01",
@@ -556,7 +573,7 @@ export const products: Record<string, Product> = {
   },
   "Jogo de Brocas mistas 15 peças – Bosch": {
     name: "Jogo de Brocas mistas 15 peças – Bosch",
-    link: "https://amzn.to/3NgJUny"
+    link: "https://meli.la/1E3Yzex"
   },
   "Jogo de Brocas e Bits Tramontina com Maleta – 110 Peças": {
     name: "Jogo de Brocas e Bits Tramontina com Maleta – 110 Peças",
@@ -786,6 +803,10 @@ export const products: Record<string, Product> = {
   "furadeira-britania-650w": {
     name: "Furadeira Britânia 650W",
     link: "https://meli.la/2vHUcDV"
+  },
+  "Óculos de proteção": {
+    name: "Óculos de proteção",
+    link: "https://meli.la/1XUZWGd"
   }
 };
 

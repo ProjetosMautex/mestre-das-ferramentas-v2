@@ -138,8 +138,8 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
           
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight">
-              Bosch VS WAP +4: Melhor Parafusadeira <br className="hidden md:block" />
-              <span className="text-[#FFD700]">Custo-Benefício 2026</span>
+                Bosch VS WAP +4:<br className="hidden md:block" />
+                <span className="text-[#FFD700]">Qual Melhor Parafusadeira Custo-Benefício 2026</span>
             </h1>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base mt-8">

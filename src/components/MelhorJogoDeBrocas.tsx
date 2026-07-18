@@ -80,7 +80,7 @@ export const MelhorJogoDeBrocas: React.FC = () => {
                   const product = products[id];
                   let nameImage = "";
                   if (id === "Conjunto de Brocas e Bits Makita – 34 Peças") nameImage = "Conjunto de Brocas e Bits Makita – 34 Peças";
-                  else if (id === "Jogo de Brocas mistas 15 peças – Bosch") nameImage = "Jogo-de-Brocas-mistas-15-pecas-Bosch";
+                  else if (id === "Jogo de Brocas mistas 15 peças – Bosch") nameImage = "Jogo-de-Brocas-mistas-15-psecas-Bosch";
                   else if (id === "Jogo de Brocas e Bits Tramontina com Maleta – 110 Peças") nameImage = "Jogo de Brocas e Bits Tramontina com Maleta – 110 Peças";
                   else if (id === "Kit de Pontas e Brocas em Titânio Bosch X-Line") nameImage = "Kit-de-Pontas-e-Brocas-em-Titanio-Bosch-X-Line";
                   else if (id === "Jogo de Brocas mistas 16 peças – Eda") nameImage = "Jogo-de-Brocas-mistas-16-pecas-–-Eda";
@@ -175,7 +175,7 @@ export const MelhorJogoDeBrocas: React.FC = () => {
             <section id="Jogo-de-Brocas-mistas-15-pecas-Bosch" className="scroll-mt-24 pt-8 border-t border-gray-100">
               <h3 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">2. Jogo de Brocas mistas 15 peças – Bosch</h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src="/images/blog/melhor-furadeira-e-parafusadeira/Jogo-de-Brocas-mistas-15-pecas-Bosch.webp" alt="Jogo de Brocas mistas 15 peças – Bosch" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src="/images/blog/melhor-furadeira-e-parafusadeira/Jogo-de-Brocas-mistas-15-psecas-Bosch.webp" alt="Jogo de Brocas mistas 15 peças – Bosch" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
                 <p>O Jogo de Brocas Mistas de 15 peças da Bosch é ideal para quem busca praticidade e versatilidade no dia a dia.</p>

@@ -149,8 +149,8 @@ export const MelhorParafusadeira: React.FC = () => {
           
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              9 Melhores Parafusadeiras de 2026: <br/>
-              <span className="text-[#FFD700]">Bosch VS DeWalt VS Outras</span>
+                Bosch VS DeWalt VS Outras:<br/>
+                <span className="text-[#FFD700]">Qual Melhor Parafusadeira 2026</span>
             </h1>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">

@@ -209,7 +209,7 @@ export const QueBrocaEBuchaEuUsoNaParede: React.FC = () => {
             
             <div className="my-10 overflow-hidden rounded-xl shadow-lg border border-gray-200">
               <img 
-                src="/images/blog/1/Qual a Broca Correta para Furadeira.jpg" 
+                src="/images/blog/1/Qual a Broca Correta para Furadeira.webp" 
                 alt="Conjunto de brocas variadas: vídea, aço rápido, chata e SDS" 
                 title="Escolhendo a broca correta para cada tipo de material e furadeira"
                 className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"

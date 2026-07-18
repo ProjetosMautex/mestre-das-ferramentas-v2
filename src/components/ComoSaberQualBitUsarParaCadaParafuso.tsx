@@ -229,7 +229,7 @@ export const ComoSaberQualBitUsarParaCadaParafuso: React.FC = () => {
               <p>Realize sempre um "teste de encaixe" seco: insira o bit e verifique se ele permanece firme mesmo quando você inclina a parafusadeira.</p>
               <p>Se houver qualquer sinal de desgaste na ponta, substitua o acessório. Trabalhar com ferramentas desgastadas não apenas compromete o acabamento, mas destrói o hardware do seu projeto. A regra de ouro é: se precisar forçar para encaixar, o bit está errado.</p>
               <img 
-                src="/images/blog/1/tipos de parafusos e seus bits correspondentes.jpg" 
+                src="/images/blog/1/tipos de parafusos e seus bits correspondentes.webp" 
                 alt="Tipos de parafusos e seus bits correspondentes" 
                 className="w-full max-w-2xl rounded-xl shadow-lg mx-auto my-8" 
                 loading="lazy" 

@@ -11,7 +11,7 @@ export const ComoUsarMartelete10kg: React.FC = () => {
         <div className="relative bg-[#1a1a1a] text-white py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src="/images/blog/2/como usar martelete 10kg.jpg" 
+              src="/images/blog/2/como usar martelete 10kg.webp" 
               alt="Como Usar Martelete 10kg e Quando Escolher na Obra" 
               className="w-full h-full object-cover opacity-20 blur-sm"
               onError={(e) => {

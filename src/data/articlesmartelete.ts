@@ -45,7 +45,7 @@ export const articles: Article[] = [
   {
     title: "Como Usar Martelete 10kg e Quando Escolher na Obra",
     url: "/como-usar-martelete-10kg",
-    image: "/images/blog/2/como usar martelete 10kg.jpg",
+    image: "/images/blog/2/como usar martelete 10kg.webp",
     excerpt: "Aprenda como usar o martelete de 10kg com segurança e eficiência. Domine técnicas para aumentar sua produtividade e evitar erros na hora da demolição."
   },
   {
