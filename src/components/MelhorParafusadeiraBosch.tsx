@@ -85,7 +85,7 @@ export const MelhorParafusadeiraBosch: React.FC = () => {
                   const product = products[id];
                   let imgSrc = "";
                   if (index === 0) imgSrc = "/images/blog/melhor-parafusadeira/Bosch GSB 183-LI.webp";
-                  else if (index === 1) imgSrc = "/images/blog/melhor-parafusadeira/Bosch GSB 185-LI + Kit 300 Peças.webp";
+                  else if (index === 1) imgSrc = "/images/blog/melhor-parafusadeira/Bosch GSB 185-LI e Kit 300 Pecas.webp";
                   else if (index === 2) imgSrc = "/images/blog/melhor-parafusadeira/Parafusadeira-Furadeira-de-Impacto-GSB-180-LI.webp";
                   else if (index === 3) imgSrc = "/images/blog/melhor-parafusadeira/Parafusadeira Furadeira Bosch GSR 1000.webp";
                   else if (index === 4) imgSrc = "/images/blog/melhor-parafusadeira/Bosch Go Bivolt.webp";
@@ -174,7 +174,7 @@ export const MelhorParafusadeiraBosch: React.FC = () => {
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24" id="bosch-gsb-185-li">
               <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">2. Bosch ｜ Furadeira Parafusadeira Impacto 18V + Kit 300 Peças</h3>
               <div className="w-full flex justify-center mb-6">
-                 <img src="/images/blog/melhor-parafusadeira/Bosch GSB 185-LI + Kit 300 Peças.webp" alt="Bosch GSB 185-LI + Kit 300 Peças" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src="/images/blog/melhor-parafusadeira/Bosch GSB 185-LI e Kit 300 Pecas.webp" alt="Bosch GSB 185-LI + Kit 300 Peças" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <div className="space-y-4 text-gray-700">
                 <p>A GSB 185-LI-1B é uma furadeira/parafusadeira de impacto Bosch com bateria de 18V, indicada para madeira, metal e alvenaria.</p>

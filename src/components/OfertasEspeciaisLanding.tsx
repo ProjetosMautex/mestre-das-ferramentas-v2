@@ -22,7 +22,7 @@ export const OfertasEspeciaisLanding: React.FC = () => {
     },
     {
       title: "3. Bosch GSB 185-LI + Kit 300 Peças",
-      image: "/images/blog/melhor-parafusadeira/Bosch GSB 185-LI + Kit 300 Peças.webp",
+      image: "/images/blog/melhor-parafusadeira/Bosch GSB 185-LI e Kit 300 Pecas.webp",
       desc1: "A GSB 185-LI é surpreendente pelo tamanho e força (60 Nm). É perfeita para montagem de móveis e trabalhos em locais apertados. O grande diferencial agora é que ela vem acompanhada de uma maleta com 300 acessórios (brocas, bits e buchas), um baita bônus para você não precisar comprar mais nada.",
       ideal: "Uso profissional, instaladores e montadores de móveis.",
       destaque: "Motor sem escovas e kit gigante com 300 peças inclusas.",

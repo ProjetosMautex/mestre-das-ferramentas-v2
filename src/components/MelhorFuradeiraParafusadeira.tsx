@@ -205,7 +205,7 @@ export const MelhorFuradeiraParafusadeira: React.FC = () => {
                 1. Furadeira Parafusadeira Impacto 18 V ｜ GSB185LI-1B
               </h2>
               <div className="w-full flex justify-center mb-8">
-                <img src="/images/blog/melhor-parafusadeira/Bosch GSB 185-LI + Kit 300 Peças.webp" alt="Bosch GSB 185-LI + Kit 300 Peças" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                <img src="/images/blog/melhor-parafusadeira/Bosch GSB 185-LI e Kit 300 Pecas.webp" alt="Bosch GSB 185-LI + Kit 300 Peças" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>Bosch GSB 185-LI</strong> é uma das melhores opções para quem trabalha com instalações, marcenaria ou obras. Ela disputa o primeiro lugar diretamente com a Makita DHP485RF1J, mas tem um diferencial importante: a combinação de muita potência com baixo peso.</p>

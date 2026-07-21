@@ -197,7 +197,7 @@ export const MelhorEbook: React.FC = () => {
                   <div className="flex flex-col md:flex-row relative z-10 w-full min-h-full">
                     <div className="w-full md:w-1/2 bg-transparent flex items-center justify-center p-0 md:p-4 min-h-[300px]">
                       <img 
-                        src="/images/blog/melhor-parafusadeira/Bosch GSB 185-LI + Kit 300 Peças.webp" 
+                        src="/images/blog/melhor-parafusadeira/Bosch GSB 185-LI e Kit 300 Pecas.webp" 
                         alt="Parafusadeira Bosch GSB 185-LI" 
                         className="w-full h-auto object-cover md:object-contain transform group-hover:scale-105 transition-transform duration-500"
                       />
