@@ -21,11 +21,11 @@ export const OfertasEspeciaisLanding: React.FC = () => {
       productId: "Parafusadeira Furadeira Gsb18v-50 2 Bateria kit Cor Azul Frequência 60Hz Bosch teste"
     },
     {
-      title: "3. Bosch GSB 185-LI (Leveza e Praticidade)",
-      image: "/images/Parafusadeira E Furadeira De Impacto 18v Gsb185 Li Com Trena Azul teste.webp",
-      desc1: "A GSB 185-LI é surpreendente pelo tamanho. Pesa apenas 1,3 kg, sendo perfeita para montagem de móveis e trabalhos em locais apertados ou acima da cabeça. Este kit acompanha uma trena original Bosch, um baita bônus.",
-      ideal: "Uso doméstico avançado ou montadores de móveis.",
-      destaque: "Super leve, evita fadiga no braço.",
+      title: "3. Bosch GSB 185-LI + Kit 300 Peças",
+      image: "/images/blog/melhor-parafusadeira/Bosch GSB 185-LI + Kit 300 Peças.webp",
+      desc1: "A GSB 185-LI é surpreendente pelo tamanho e força (60 Nm). É perfeita para montagem de móveis e trabalhos em locais apertados. O grande diferencial agora é que ela vem acompanhada de uma maleta com 300 acessórios (brocas, bits e buchas), um baita bônus para você não precisar comprar mais nada.",
+      ideal: "Uso profissional, instaladores e montadores de móveis.",
+      destaque: "Motor sem escovas e kit gigante com 300 peças inclusas.",
       productId: "Parafusadeira E Furadeira De Impacto 18v Gsb185 Li Com Trena Azul teste"
     },
     {

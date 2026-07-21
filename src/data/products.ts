@@ -6,6 +6,10 @@ export interface Product {
 
 
 export const products: Record<string, Product> = {
+  "furadeira Mondial FFI-09": {
+    name: "furadeira Mondial FFI-09",
+    link: "https://meli.la/2yLj9gU"
+  },
   "Parafusadeira Furadeira Bosch GSR 120-LI": {
     name: "Parafusadeira Furadeira Bosch GSR 120-LI",
     link: "https://meli.la/24CXqbw"
@@ -47,8 +51,8 @@ export const products: Record<string, Product> = {
     link: "https://amzn.to/3PLnN9Y"
   },
   "parafusadeira-bosch-gsb-185-li": {
-    name: "Parafusadeira Bosch GSB 185-LI",
-    link: "https://meli.la/2orcXzN"
+    name: "Bosch GSB 185-LI + Kit 300 Peças",
+    link: "https://meli.la/1WGZj3s"
   },
   "parafusadeira-wap-bpf-12k3": {
     name: "Parafusadeira WAP BPF 12K3",
@@ -67,7 +71,7 @@ export const products: Record<string, Product> = {
     link: "https://meli.la/1XEaK89"
   },
   "parafusadeira-vonder-pfv-012i": {
-    name: "Parafusadeira Furadeira Com Impacto a Bateria Pfv012i Vonder Cor Amarelo Frequência 50 Hz/60 Hz",
+    name: "Parafusadeira Furadeira Vonder Pfv 012i 12 V",
     link: "https://meli.la/1pzPYBo"
   },
   "Parafusadeira Vonder PFV 120": {
@@ -84,7 +88,7 @@ export const products: Record<string, Product> = {
   },
   "bosch-gsr-7-14-e-400w": {
     name: "Bosch GSR 7-14 E 400W",
-    link: "https://meli.la/1R9bsNL"
+    link: "https://meli.la/2tevJFX"
   },
   "black-decker-kc4815b": {
     name: "Black Decker KC4815B",
@@ -140,7 +144,7 @@ export const products: Record<string, Product> = {
   },
   "furadeira-dewalt-dwd502": {
     name: "DeWalt DWD502",
-    link: "https://meli.la/2Yr6c9u"
+    link: "https://meli.la/1BMQxmU"
   },
   "furadeira-bancada-schulz-pratika": {
     name: "Furadeira de Bancada Pratika – Schulz",
@@ -696,8 +700,8 @@ export const products: Record<string, Product> = {
     link: "https://meli.la/2Dxz2j7"
   },
   "Parafusadeira E Furadeira De Impacto 18v Gsb185 Li Com Trena Azul teste": {
-    name: "Parafusadeira E Furadeira De Impacto 18v Gsb185 Li Com Trena Azul teste",
-    link: "https://meli.la/121aWvK"
+    name: "Bosch GSB 185-LI + Kit 300 Peças",
+    link: "https://meli.la/1WGZj3s"
   },
   "Parafusadeira E Furadeira De Impacto 12 Dcd7781b Sbateria Cor Amarelo 20V teste": {
     name: "Parafusadeira E Furadeira De Impacto 12 Dcd7781b Sbateria Cor Amarelo 20V teste",

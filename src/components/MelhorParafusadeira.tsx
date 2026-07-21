@@ -80,9 +80,9 @@ export const MelhorParafusadeira: React.FC = () => {
     {
       question: "Qual a melhor parafusadeira?",
       answer: [
-        "Ao avaliarmos o desempenho geral, a Bosch GSB 185-LI se destaca como a escolha mais equilibrada e robusta para quem busca uma máquina profissional definitiva.",
-        "Em nossos testes, ela trouxe um motor Brushless (sem escovas) moderno, torque de 50 Nm e excelente controle de peso.",
-        "Comparada com a DeWalt DCD7781D2 (que é um verdadeiro 'trator' para furos pesados em concreto), a Bosch GSB 185-LI é mais leve e confortável para o dia a dia, sendo ideal se você busca agilidade sem cansar o braço.",
+        "Ao avaliarmos o desempenho geral, a Bosch GSB 185-LI se destaca como a escolha mais equilibrada e completa para quem busca uma máquina profissional definitiva.",
+        "Em nossos testes, ela trouxe um motor Brushless (sem escovas) moderno, torque robusto de 60 Nm e um incrível kit com 300 acessórios The Black Tools.",
+        "Comparada com a DeWalt DCD7781D2 (que é um verdadeiro 'trator' para furos pesados em concreto), a Bosch GSB 185-LI é mais leve e já te entrega tudo na maleta para o dia a dia, sendo ideal se você busca agilidade e não quer comprar brocas à parte.",
         "Já a DeWalt é a melhor se o seu foco for pura força bruta em alvenaria pesada."
       ]
     },
@@ -146,13 +146,11 @@ export const MelhorParafusadeira: React.FC = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/80 to-[#1a1a1a]"></div>
           </div>
-          
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Bosch VS DeWalt VS Outras:<br/>
-                <span className="text-[#FFD700]">Qual Melhor Parafusadeira 2026</span>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+              9 Melhores Parafusadeiras 2026: <br/>
+              <span className="text-[#FFD700]">Bosch, DeWalt ou Outra?</span>
             </h1>
-            
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <span>Por</span>
@@ -311,10 +309,10 @@ export const MelhorParafusadeira: React.FC = () => {
                  <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsb-185-li"].name}.webp`} alt={products["parafusadeira-bosch-gsb-185-li"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-                <p>A <strong>Bosch GSB 185-LI</strong> é a melhor opção para profissionais que precisam <strong>furar alvenaria e trabalhar com madeira dura</strong> todos os dias, graças ao seu motor sem escovas e sistema de 18V.</p>
-                <p>Se você trabalha em obras ou marcenaria, essa ferramenta aguenta o tranco pesado. O motor <strong>brushless (sem escovas)</strong> entrega muita força e não esquenta à toa, o que aumenta muito a vida útil da máquina.</p>
-                <p>Ela é bem compacta, o que ajuda muito a não cansar o braço depois de um dia inteiro instalando móveis ou furando paredes.</p>
-                <p>O preço é mais alto, mas se você já tem ou pretende ter outras ferramentas <strong>18V da Bosch</strong>, a bateria serve nelas também. É investimento certo para quem não pode perder tempo com ferramenta fraca.</p>
+                <p>A <strong>Bosch GSB 185-LI</strong> é a melhor opção para profissionais que precisam <strong>furar alvenaria e trabalhar com madeira dura</strong> todos os dias, mas não querem dor de cabeça comprando ferramentas avulsas.</p>
+                <p>O motor <strong>brushless (sem escovas)</strong> entrega incríveis 60 Nm de força, bate até 27.000 vezes por minuto na alvenaria e não esquenta à toa. A grande sacada dessa versão é que ela vem acompanhada de uma maleta monstra com um kit de <strong>300 acessórios The Black Tools</strong>.</p>
+                <p>Você leva centenas de buchas, pontas phillips, fenda e todas as brocas que imaginar para metal, madeira e concreto. E mesmo com toda essa potência, a parafusadeira é levíssima e tem o punho emborrachado para você não destruir o braço numa montagem de cozinha o dia inteiro.</p>
+                <p>É o investimento definitivo: 2 anos de garantia Bosch e você já sai da loja pronto para qualquer obra pesada.</p>
               </div>
 
               <AffiliateCard id="parafusadeira-bosch-gsb-185-li" />
@@ -323,10 +321,10 @@ export const MelhorParafusadeira: React.FC = () => {
                 <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                   <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
                   <ul className="space-y-2 text-green-700 text-sm list-disc list-inside">
-                    <li>Motor sem escovas (maior vida útil).</li>
-                    <li>Torque de 65 Nm para tarefas severas.</li>
-                    <li>Ergonomia excelente com Soft Grip.</li>
-                    <li>Integração total com sistema 18V.</li>
+                    <li>Kit surreal de 300 acessórios incluso.</li>
+                    <li>Motor sem escovas e 60 Nm de torque.</li>
+                    <li>Muito leve e com excelente ergonomia (Soft Grip).</li>
+                    <li>2 anos de garantia Bosch (via app).</li>
                   </ul>
                 </div>
                 <div className="bg-red-50 p-6 rounded-xl border border-red-100">

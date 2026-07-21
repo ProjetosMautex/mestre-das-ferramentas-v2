@@ -7,25 +7,25 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    title: "Bosch VS DeWalt VS Outras Qual Melhor Parafusadeira 2026",
+    title: "9 Melhores Parafusadeiras 2026: Bosch, DeWalt ou Outra?",
     url: "/melhor-parafusadeira",
     image: "/images/blog/melhor-parafusadeira/melhor-parafusadeira.webp",
     excerpt: "Compare as 9 melhores parafusadeiras de 2026 com testes reais, potência, bateria e custo-benefício. Veja qual vale mais a pena antes de comprar."
   },
   {
-    title: "10 Melhores Furadeiras 2026 teste Real (Bosch, DeWalt e +)",
+    title: "9 Melhores Furadeiras de 2026: Bosch, Makita, DeWalt ou Outra?",
     url: "/melhor-furadeira",
     image: "/images/blog/melhor-furadeira/melhor-furadeira.webp",
     excerpt: "Cansado de furos malfeitos e ferramentas que te deixam na mão? Descubra a furadeira ideal para seus projetos e diga adeus à frustração!"
   },
   {
-    title: "Bosch VS WAP +4 Qual Melhor Parafusadeira Custo-Benefício 2026",
+    title: "8 Melhores Parafusadeira Custo-Benefício 2026: Bosch, WAP ou Outra?",
     url: "/melhor-parafusadeira-custo-beneficio",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/melhor-parafusadeira-custo-beneficio.webp",
     excerpt: "Não compre no escuro. Analisamos as parafusadeiras que realmente entregam potência sem cobrar uma fortuna."
   },
   {
-    title: "Bosch, Makita, Outras Qual Melhor Furadeira e Parafusadeira 2026",
+    title: "9 Melhores Furadeira e Parafusadeira 2026: Bosch, DeWalt ou Outra?",
     url: "/melhor-furadeira-e-parafusadeira",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-furadeira-e-parafusadeira.webp",
     excerpt: "Cansado de furadeiras fracas? Descubra AGORA a furadeira e parafusadeira ideal para e turbine seus projetos! Clique e acerte na escolha!"

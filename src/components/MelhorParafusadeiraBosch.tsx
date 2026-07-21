@@ -85,7 +85,7 @@ export const MelhorParafusadeiraBosch: React.FC = () => {
                   const product = products[id];
                   let imgSrc = "";
                   if (index === 0) imgSrc = "/images/blog/melhor-parafusadeira/Bosch GSB 183-LI.webp";
-                  else if (index === 1) imgSrc = "/images/blog/melhor-parafusadeira/Parafusadeira Bosch GSB 185-LI.webp";
+                  else if (index === 1) imgSrc = "/images/blog/melhor-parafusadeira/Bosch GSB 185-LI + Kit 300 Peças.webp";
                   else if (index === 2) imgSrc = "/images/blog/melhor-parafusadeira/Parafusadeira-Furadeira-de-Impacto-GSB-180-LI.webp";
                   else if (index === 3) imgSrc = "/images/blog/melhor-parafusadeira/Parafusadeira Furadeira Bosch GSR 1000.webp";
                   else if (index === 4) imgSrc = "/images/blog/melhor-parafusadeira/Bosch Go Bivolt.webp";
@@ -172,34 +172,33 @@ export const MelhorParafusadeiraBosch: React.FC = () => {
 
           <section className="mb-12">
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24" id="bosch-gsb-185-li">
-              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">2. Bosch ｜ Furadeira Parafusadeira Impacto 18V ｜ GSB185LI-1B</h3>
+              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">2. Bosch ｜ Furadeira Parafusadeira Impacto 18V + Kit 300 Peças</h3>
               <div className="w-full flex justify-center mb-6">
-                 <img src="/images/blog/melhor-parafusadeira/Parafusadeira Bosch GSB 185-LI.webp" alt="Parafusadeira Bosch GSB 185-LI" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src="/images/blog/melhor-parafusadeira/Bosch GSB 185-LI + Kit 300 Peças.webp" alt="Bosch GSB 185-LI + Kit 300 Peças" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <div className="space-y-4 text-gray-700">
                 <p>A GSB 185-LI-1B é uma furadeira/parafusadeira de impacto Bosch com bateria de 18V, indicada para madeira, metal e alvenaria.</p>
                 <p>Compacta e ergonômica, combina o tamanho de uma ferramenta 12V com a potência de um modelo 18V.</p>
                 <p>Seu motor brushless garante maior eficiência, vida útil prolongada e menor necessidade de manutenção.</p>
-                <p>Possui torque máximo de 65 Nm e até 1.900 rotações por minuto, oferecendo excelente desempenho em perfurações de até 35 mm em madeira e 10 mm em aço e alvenaria.</p>
-                <p>Conta com controle de velocidade variável, função reversa, luz LED e mandril de 13 mm, proporcionando versatilidade em diferentes aplicações.</p>
-                <p>Acompanha uma bateria de 2,0 Ah, carregador, maleta e kit de brocas, sendo uma opção prática e completa para profissionais e hobbistas.</p>
+                <p>Possui torque máximo de 60 Nm e até 1.900 rotações por minuto, oferecendo excelente desempenho em perfurações de até 35 mm em madeira e 10 mm em aço e alvenaria.</p>
+                <p>Conta com controle de velocidade variável, função reversa, indicador de carga de bateria integrado e mandril de 13 mm.</p>
+                <p>A grande novidade desse pacote é que ela acompanha 1 bateria de 2,0 Ah, carregador bivolt e um <strong>kit monstro com 300 acessórios The Black Tools</strong> (brocas, bits, buchas), sendo a opção mais completa que você vai encontrar direto da caixa.</p>
               </div>
               
               <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-green-50 p-4 rounded-lg">
                   <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2"><Check className="w-4 h-4"/> Prós:</h4>
                   <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                    <li>Motor sem escovas (brushless)</li>
-                    <li>Compacta e ergonômica</li>
-                    <li>Alta potência e torque</li>
-                    <li>Inclui maleta, bateria e kit de brocas</li>
+                    <li>Acompanha kit de 300 peças!</li>
+                    <li>Motor sem escovas (brushless) e 60 Nm</li>
+                    <li>Compacta e muito leve</li>
+                    <li>2 anos de garantia Bosch pelo app</li>
                   </ul>
                 </div>
                 <div className="bg-red-50 p-4 rounded-lg">
                   <h4 className="font-bold text-red-700 mb-2 flex items-center gap-2"><X className="w-4 h-4"/> Contras:</h4>
                   <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
                     <li>Apenas uma bateria inclusa</li>
-                    <li>Preço acima da média de modelos similares</li>
                   </ul>
                 </div>
               </div>

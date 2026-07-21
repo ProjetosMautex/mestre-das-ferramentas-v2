@@ -52,7 +52,8 @@ export const MelhorFuradeiraParafusadeira: React.FC = () => {
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Bosch, Makita, Outras Qual Melhor Furadeira e Parafusadeira 2026
+              9 Melhores Furadeira e Parafusadeira 2026: <br/>
+              <span className="text-[#FFD700]">Bosch, DeWalt ou Outra?</span>
             </h1>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
@@ -120,7 +121,7 @@ export const MelhorFuradeiraParafusadeira: React.FC = () => {
                 <div className="mt-6 p-4 bg-slate-700/50 border border-slate-600 rounded-xl animate-fadeIn">
                   {quizResult === 'bosch' && (
                     <p className="text-sm leading-relaxed text-gray-200">
-                      🎯 <strong>Veredito Bosch GSB 185-LI:</strong> Indicada se você busca <strong>extrema precisão, ergonomia refinada e leveza</strong>. Com torque de 65 Nm e motor sem escovas, a Bosch é a rainha do acabamento e marcenaria profissional, ideal para longas jornadas de instalação sem fadiga física.
+                      🎯 <strong>Veredito Bosch GSB 185-LI:</strong> Indicada se você busca <strong>precisão, um kit super completo e leveza</strong>. Com torque de 60 Nm, motor sem escovas e vindo com 300 acessórios, a Bosch é a rainha da praticidade na marcenaria e montagens, ideal para longas jornadas de instalação sem fadiga física.
                     </p>
                   )}
                   {quizResult === 'makita' && (
@@ -204,13 +205,13 @@ export const MelhorFuradeiraParafusadeira: React.FC = () => {
                 1. Furadeira Parafusadeira Impacto 18 V ｜ GSB185LI-1B
               </h2>
               <div className="w-full flex justify-center mb-8">
-                <img src="/images/blog/melhor-parafusadeira/Parafusadeira Bosch GSB 185-LI.webp" alt="Parafusadeira Bosch GSB 185-LI" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                <img src="/images/blog/melhor-parafusadeira/Bosch GSB 185-LI + Kit 300 Peças.webp" alt="Bosch GSB 185-LI + Kit 300 Peças" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>Bosch GSB 185-LI</strong> é uma das melhores opções para quem trabalha com instalações, marcenaria ou obras. Ela disputa o primeiro lugar diretamente com a Makita DHP485RF1J, mas tem um diferencial importante: a combinação de muita potência com baixo peso.</p>
-                <p>Com apenas 1,3 kg, ela cansa muito menos o braço durante o uso prolongado, o que faz toda a diferença se você passa o dia fazendo instalações no alto ou em lugares apertados.</p>
-                <p>O motor é Brushless (sem escovas). Na prática, isso significa que ele esquenta menos, dura muito mais e você não precisa se preocupar com manutenção. Aliado aos seus 65 Nm de torque, essa ferramenta tem força de sobra para encarar parafusos longos e materiais mais duros, sem travar no meio do serviço.</p>
-                <p>O mandril 100% metálico de 13 mm é outro acerto, pois segura bem a broca e evita aquelas folgas chatas que estragam o material. Para completar, a maleta já vem com <strong>duas baterias de 2,0 Ah</strong>, permitindo que você trabalhe com uma enquanto carrega a outra, mantendo o ritmo o dia todo.</p>
+                <p>Com design super compacto e ergonômico, ela cansa muito menos o braço durante o uso prolongado. Isso faz toda a diferença se você passa o dia fazendo instalações no alto ou em lugares apertados.</p>
+                <p>O motor é Brushless (sem escovas). Na prática, isso significa que ele esquenta menos, dura muito mais e você quase não tem dor de cabeça com manutenção. Aliado aos seus 60 Nm de torque (com 20 níveis de ajuste), essa ferramenta tem força para encarar parafusos longos e furação em alvenaria (até 27.000 batidas por minuto) sem travar no meio do serviço.</p>
+                <p>O mandril de aperto rápido de 13 mm segura bem a broca e facilita demais a troca de acessórios. Mas o grande destaque dessa nova versão é o pacote: ela vem com 1 bateria de 2.0 Ah, carregador bivolt e um <strong>kit absurdo de 300 peças (The Black Tools)</strong>, recheado com brocas de metal (HSS), madeira, concreto, bits e centenas de buchas. Você compra e já sai pro trabalho sem precisar pisar numa casa de ferragens. Ainda conta com garantia de 2 anos pelo app BeConnected.</p>
               </div>
 
               <AffiliateCard id="parafusadeira-bosch-gsb-185-li" />
@@ -228,7 +229,7 @@ export const MelhorFuradeiraParafusadeira: React.FC = () => {
                       </tr>
                       <tr className="border-b border-gray-200">
                         <td className="py-2 font-bold text-gray-900">Torque Máximo</td>
-                        <td className="py-2">65 Nm</td>
+                        <td className="py-2">60 Nm</td>
                       </tr>
                       <tr className="border-b border-gray-200">
                         <td className="py-2 font-bold text-gray-900">Rotação Máxima</td>
@@ -239,8 +240,8 @@ export const MelhorFuradeiraParafusadeira: React.FC = () => {
                         <td className="py-2">27.000 IPM</td>
                       </tr>
                       <tr className="border-b border-gray-200">
-                        <td className="py-2 font-bold text-gray-900">Bateria</td>
-                        <td className="py-2">2x 18V 2,0 Ah (Inclusas)</td>
+                        <td className="py-2 font-bold text-gray-900">Bateria e Acessórios</td>
+                        <td className="py-2">1x 18V 2,0 Ah, Carregador, Maleta, Kit 300 Peças (Brocas, Bits, Buchas)</td>
                       </tr>
                       <tr>
                         <td className="py-2 font-bold text-gray-900">Capacidade de Perfuração</td>
