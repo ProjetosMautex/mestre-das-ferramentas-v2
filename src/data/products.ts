@@ -51,7 +51,7 @@ export const products: Record<string, Product> = {
     link: "https://amzn.to/3PLnN9Y"
   },
   "parafusadeira-bosch-gsb-185-li": {
-    name: "Bosch GSB 185-LI + Kit 300 Peças",
+    name: "Bosch GSB 185-LI e Kit 300 Pecas",
     link: "https://meli.la/1WGZj3s"
   },
   "parafusadeira-wap-bpf-12k3": {
@@ -700,7 +700,7 @@ export const products: Record<string, Product> = {
     link: "https://meli.la/2Dxz2j7"
   },
   "Parafusadeira E Furadeira De Impacto 18v Gsb185 Li Com Trena Azul teste": {
-    name: "Bosch GSB 185-LI + Kit 300 Peças",
+    name: "Bosch GSB 185-LI e Kit 300 Pecas",
     link: "https://meli.la/1WGZj3s"
   },
   "Parafusadeira E Furadeira De Impacto 12 Dcd7781b Sbateria Cor Amarelo 20V teste": {
