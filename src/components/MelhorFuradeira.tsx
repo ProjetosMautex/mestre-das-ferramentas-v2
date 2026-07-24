@@ -316,6 +316,28 @@ export const MelhorFuradeira: React.FC = () => {
 
 
 
+            {/* Vídeo do YouTube Comparativo */}
+            <div className="my-12 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-xl">
+              <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-[#FFD700]">
+                <Sparkles size={20} className="animate-pulse text-[#FFD700]" /> Teste Prático: Bosch vs Makita no Concreto
+              </h3>
+              <p className="text-sm text-slate-300 mb-6">
+                Assista a este teste prático mostrando o desempenho real de furadeiras de impacto líderes do mercado em perfuração de concreto.
+              </p>
+              <div className="aspect-video w-full rounded-xl overflow-hidden shadow-lg border border-slate-700">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/OVwTMbg9xCw" 
+                  title="Teste Prático: Bosch vs Makita no Concreto" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+            </div>
+
             <h2 className="text-3xl font-extrabold text-slate-900 border-b-4 border-[#FFD700] pb-2 mt-16 flex items-center gap-2">
               💰 Custo-Benefício e Uso Doméstico
             </h2>
@@ -369,7 +391,7 @@ export const MelhorFuradeira: React.FC = () => {
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
                 <p>Se você faz montagem de móveis ou instalações e está cansado de puxar extensão, a Bosch GSB 185-LI resolve o seu problema. Ela é uma furadeira e parafusadeira a bateria com motor brushless, o que significa que o motor dura muito mais e a bateria rende melhor durante o dia inteiro de trabalho.</p>
-                <p>Por ser de 18V e entregar 60 Nm de força, você consegue furar alvenaria para colocar buchas e parafusos grandes sem o menor esforço. O melhor de tudo é que agora ela vem com um kit gigante de 300 peças (brocas, bits e buchas) da The Black Tools, então você já sai com tudo que precisa numa maleta só.</p>
+                <p>Por ser de 18V e entregar 60 Nm de força, você consegue furar alvenaria para colocar buchas e parafusos grandes sem o menor esforço. O melhor de tudo é que ela vem com um kit gigante de 300 peças (brocas, bits e buchas) da The Black Tools, então você já sai com tudo que precisa numa maleta só.</p>
               </div>
 
               <AffiliateCard id="parafusadeira-bosch-gsb-185-li" />
@@ -538,7 +560,89 @@ export const MelhorFuradeira: React.FC = () => {
               </div>
             </section>
 
-
+            {/* Cross-Sell Section */}
+            <div className="my-16 bg-white p-6 rounded-2xl border border-slate-200 shadow-md">
+              <h3 className="text-xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+                <Sparkles className="text-[#FFD700]" size={20} /> Uma excelente furadeira não faz milagres com brocas ruins
+              </h3>
+              <p className="text-gray-600 text-sm mb-6">
+                Turbine seu kit com acessórios de alta qualidade para não passar sufoco em alvenaria ou madeira:
+              </p>
+              <div className="grid sm:grid-cols-3 gap-6">
+                <div className="flex flex-col bg-slate-50 border border-slate-200 rounded-xl p-4 hover:shadow-sm transition-shadow">
+                  <div className="h-28 w-full flex items-center justify-center bg-white rounded-lg mb-3 p-2">
+                    <img 
+                      src="/images/blog/melhor-furadeira-e-parafusadeira/Jogo-de-Brocas-mistas-15-psecas-Bosch.webp"
+                      alt="Jogo de Brocas Mistas" 
+                      className="max-h-full max-w-full object-contain mix-blend-multiply"
+                      loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.src = "https://picsum.photos/seed/bosch-drill-kit/200";
+                      }}
+                    />
+                  </div>
+                  <h4 className="font-bold text-xs text-gray-800 line-clamp-2 mb-2 flex-grow">
+                    Jogo de Brocas Mistas 15 Peças – Bosch
+                  </h4>
+                  <a 
+                    href={products["Jogo de Brocas mistas 15 peças – Bosch"]?.link || "https://meli.la/1E3Yzex"} 
+                    target="_blank" 
+                    rel="noopener noreferrer sponsored nofollow" 
+                    className="w-full bg-[#FFD700] text-[#1a1a1a] font-bold text-center py-2 rounded-lg text-[11px] hover:bg-[#e6c200] transition-colors"
+                  >
+                    VER PREÇO
+                  </a>
+                </div>
+                <div className="flex flex-col bg-slate-50 border border-slate-200 rounded-xl p-4 hover:shadow-sm transition-shadow">
+                  <div className="h-28 w-full flex items-center justify-center bg-white rounded-lg mb-3 p-2">
+                    <img 
+                      src="/images/blog/melhor-furadeira-e-parafusadeira/Conjunto de Brocas e Bits Makita – 34 Peças.webp"
+                      alt="Kit Brocas Makita" 
+                      className="max-h-full max-w-full object-contain mix-blend-multiply"
+                      loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.src = "https://picsum.photos/seed/makita-drill-kit/200";
+                      }}
+                    />
+                  </div>
+                  <h4 className="font-bold text-xs text-gray-800 line-clamp-2 mb-2 flex-grow">
+                    Conjunto de Brocas e Bits 34 Peças – Makita
+                  </h4>
+                  <a 
+                    href={products["Conjunto de Brocas e Bits Makita – 34 Peças"]?.link || "https://meli.la/2jcLSKS"} 
+                    target="_blank" 
+                    rel="noopener noreferrer sponsored nofollow" 
+                    className="w-full bg-[#FFD700] text-[#1a1a1a] font-bold text-center py-2 rounded-lg text-[11px] hover:bg-[#e6c200] transition-colors"
+                  >
+                    VER PREÇO
+                  </a>
+                </div>
+                <div className="flex flex-col bg-slate-50 border border-slate-200 rounded-xl p-4 hover:shadow-sm transition-shadow">
+                  <div className="h-28 w-full flex items-center justify-center bg-white rounded-lg mb-3 p-2">
+                    <img 
+                      src="/images/blog/melhor-furadeira-e-parafusadeira/Jogo de Brocas e Bits Tramontina com Maleta – 110 Peças.webp"
+                      alt="Kit Brocas e Bits Tramontina" 
+                      className="max-h-full max-w-full object-contain mix-blend-multiply"
+                      loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.src = "https://picsum.photos/seed/concrete-drill-kit/200";
+                      }}
+                    />
+                  </div>
+                  <h4 className="font-bold text-xs text-gray-800 line-clamp-2 mb-2 flex-grow">
+                    Jogo de Brocas e Bits Tramontina com Maleta – 110 Peças
+                  </h4>
+                  <a 
+                    href={products["Jogo de Brocas e Bits Tramontina com Maleta – 110 Peças"]?.link || "https://meli.la/2zZ3wdx"} 
+                    target="_blank" 
+                    rel="noopener noreferrer sponsored nofollow" 
+                    className="w-full bg-[#FFD700] text-[#1a1a1a] font-bold text-center py-2 rounded-lg text-[11px] hover:bg-[#e6c200] transition-colors"
+                  >
+                    VER PREÇO
+                  </a>
+                </div>
+              </div>
+            </div>
 
           </div>
 
@@ -549,7 +653,8 @@ export const MelhorFuradeira: React.FC = () => {
             <div className="space-y-12 prose prose-lg max-w-none text-gray-700">
               <div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-6">Uso profissional ou doméstico: O que você realmente precisa?</h3>
-                <p className="mb-6">O primeiro passo é ser sincero sobre o quanto você vai usar a máquina. Ferramentas profissionais (como Bosch, Makita e DeWalt) são construídas com peças reforçadas para aguentar o tranco de furar concreto todo dia sem queimar. Já as domésticas (como Mondial e Skil) são mais leves e baratas, perfeitas para montar móveis e furar paredes de tijolo nos fins de semana, mas não aguentam o batente de uma obra.</p>
+                <p className="mb-6">O primeiro passo é ser sincero sobre o quanto você vai usar a máquina. Ferramentas profissionais (como Bosch, Makita e DeWalt) são construídas com peças reforçadas para aguentar o tranco de furar concreto todo dia sem queimar.</p>
+                <p className="mb-6">Já as domésticas (como Mondial e Skil) são mais leves e baratas, perfeitas para montar móveis e furar paredes de tijolo nos fins de semana, mas não aguentam o batente de uma obra.</p>
               </div>
 
               <div>
@@ -557,17 +662,20 @@ export const MelhorFuradeira: React.FC = () => {
                 <div className="my-8">
                   <img src="/images/blog/melhor-parafusadeira/Potencia-e-velocidade.webp" alt="Potência e velocidade" className="w-full rounded-lg shadow-md" loading="lazy" />
                 </div>
-                <p className="mb-6">A potência (em Watts) é a força bruta da furadeira. Quanto mais Watts, mais fácil ela vai furar materiais duros, como concreto armado. Já a velocidade (RPM) indica quão rápido a broca gira. Furar metal e madeira geralmente exige mais velocidade, enquanto furar paredes grossas exige mais força (Watts e Torque) para a broca não travar no meio do caminho.</p>
+                <p className="mb-6">A potência (em Watts) é a força bruta da furadeira. Quanto mais Watts, mais fácil ela vai furar materiais duros, como concreto armado.</p>
+                <p className="mb-6">Já a velocidade (RPM) indica quão rápido a broca gira. Furar metal e madeira geralmente exige mais velocidade, enquanto furar paredes grossas exige mais força (Watts e Torque) para a broca não travar no meio do caminho.</p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-6">A importância de uma boa pegada (Ergonomia)</h3>
-                <p className="mb-6">Se você vai passar horas com a furadeira na mão, o conforto faz toda a diferença. Modelos com revestimento emborrachado não escorregam com o suor e ajudam a absorver a vibração, poupando os braços de dores no fim do dia. Além disso, um gatilho macio dá muito mais precisão para iniciar um furo no azulejo sem deixar a broca escorregar.</p>
+                <p className="mb-6">Se você vai passar horas com a furadeira na mão, o conforto faz toda a diferença. Modelos com revestimento emborrachado não escorregam com o suor e ajudam a absorver a vibração, poupando os braços de dores no fim do dia.</p>
+                <p className="mb-6">Além disso, um gatilho macio dá muito mais precisão para iniciar um furo no azulejo sem deixar a broca escorregar.</p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-6">Recursos extras que facilitam a vida</h3>
-                <p className="mb-6">Preste atenção nos detalhes que ajudam na hora do aperto: uma luz de LED ilumina o fundo dos armários; a haste de profundidade impede que você faça um furo maior que a bucha (evitando varar canos do outro lado da parede); e a função reversa serve tanto para soltar a broca presa na parede quanto para soltar parafusos.</p>
+                <p className="mb-6">Preste atenção nos detalhes que ajudam na hora do aperto: uma luz de LED ilumina o fundo dos armários; a haste de profundidade impede que você faça um furo maior que a bucha (evitando varar canos do outro lado da parede).</p>
+                <p className="mb-6">E a função reversa serve tanto para soltar a broca presa na parede quanto para soltar parafusos.</p>
                 
                 {/* Safety Alert Box */}
                 <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded-r-xl my-6 flex gap-4 items-start shadow-sm">
@@ -588,13 +696,15 @@ export const MelhorFuradeira: React.FC = () => {
                 </div>
                 
                 <h4 className="text-lg font-bold text-[#1a1a1a] mt-6 mb-4">Para que serve cada tipo?</h4>
-                <p className="mb-6">Se o foco for marcenaria e madeira, furadeiras simples sem impacto (ou parafusadeiras) são ideais, pois são mais precisas. Agora, se a ideia é pendurar coisas na parede ou trabalhar em obra, você precisa obrigatoriamente de uma furadeira de impacto, que bate enquanto gira para furar o concreto.</p>
+                <p className="mb-6">Se o foco for marcenaria e madeira, furadeiras simples sem impacto (ou parafusadeiras) são ideais, pois são mais precisas.</p>
+                <p className="mb-6">Agora, se a ideia é pendurar coisas na parede ou trabalhar em obra, você precisa obrigatoriamente de uma furadeira de impacto, que bate enquanto gira para furar o concreto.</p>
                 <p className="mb-6">Já as furadeiras de bancada são para profissionais de oficina que precisam fazer dezenas de furos iguais em peças de metal ou madeira, sempre retos e com profundidade exata, sem depender da firmeza das mãos.</p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-6">A importância de usar a broca certa</h3>
-                <p className="mb-6">A melhor furadeira do mundo não faz milagre com a broca errada. Use brocas de aço rápido (HSS) para furar metal, brocas de videa para paredes e concreto, e brocas de três pontas (ou chatas) quando for trabalhar com madeira. Usar broca de parede em madeira vai queimar a peça e estragar o serviço.</p>
+                <p className="mb-6">A melhor furadeira do mundo não faz milagre com a broca errada. Use brocas de aço rápido (HSS) para furar metal, brocas de videa para paredes e concreto, e brocas de três pontas (ou chatas) quando for trabalhar com madeira.</p>
+                <p className="mb-6">Usar broca de parede em madeira vai queimar a peça e estragar o serviço.</p>
               </div>
 
               <div>
@@ -603,7 +713,8 @@ export const MelhorFuradeira: React.FC = () => {
                   <img src="/images/blog/melhor-parafusadeira/As-etapas-para-fazer-um-furo-com-uma-broca.webp" alt="Etapas para fazer um furo" className="w-full rounded-lg shadow-md" loading="lazy" />
                 </div>
                 <p className="mb-6">Vai furar azulejo? Cole uma fita crepe no local ou bata levemente com um prego para fazer uma marcaquinha antes. Isso impede que a broca escorregue e risque o piso inteiro.</p>
-                <p className="mb-6">Na hora de furar paredes, comece devagar para firmar a broca e só acelere depois. Se o buraco for muito fundo, puxe a furadeira um pouco para trás durante o giro, isso ajuda a tirar o pó e evita que a broca trave lá dentro.</p>
+                <p className="mb-6">Na hora de furar paredes, comece devagar para firmar a broca e só acelere depois.</p>
+                <p className="mb-6">Se o buraco for muito fundo, puxe a furadeira um pouco para trás durante o giro, isso ajuda a tirar o pó e evita que a broca trave lá dentro.</p>
               </div>
 
               <div>
@@ -611,17 +722,20 @@ export const MelhorFuradeira: React.FC = () => {
                 <div className="my-8">
                   <img src="/images/blog/melhor-parafusadeira/gabarito_furacao_mdf.webp" alt="Gabarito de furação em MDF para perfurar em linha reta" className="w-full rounded-xl shadow-lg hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
                 </div>
-                <p className="mb-6">Não confie só no olho na hora de montar móveis. O ideal é usar gabaritos de madeira (pequenos blocos com furos retos já feitos na bancada) ou furadeiras que venham com um mini nível bolha embutido na carcaça. Um furo torto na hora de juntar duas madeiras pode estragar o móvel todo.</p>
+                <p className="mb-6">Não confie só no olho na hora de montar móveis. O ideal é usar gabaritos de madeira (pequenos blocos com furos retos já feitos na bancada) ou furadeiras que venham com um mini nível bolha embutido na carcaça.</p>
+                <p className="mb-6">Um furo torto na hora de juntar duas madeiras pode estragar o móvel todo.</p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-6">Segurança na obra ou em casa</h3>
-                <p className="mb-6">Antes de furar, tenha certeza que não passa nenhum cano de água ou conduíte de energia atrás da parede (existem aparelhos baratos para detectar isso). E o mais importante: óculos de proteção sempre. Uma lasca de concreto ou tijolo no olho durante a perfuração vai te custar muito mais caro que o óculos de proteção.</p>
+                <p className="mb-6">Antes de furar, tenha certeza que não passa nenhum cano de água ou conduíte de energia atrás da parede (existem aparelhos baratos para detectar isso).</p>
+                <p className="mb-6">E o mais importante: óculos de proteção sempre. Uma lasca de concreto ou tijolo no olho durante a perfuração vai te custar muito mais caro que o óculos de proteção.</p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-6">As melhores fabricantes hoje</h3>
-                <p className="mb-6">Para resumir com quem trabalha na área: Makita e DeWalt são as queridinhas das obras pesadas por aguentarem muito tranco, sujeira e quedas. A Bosch também é de primeira linha e muitas vezes se destaca por tecnologias e confortos extras que facilitam a vida na marcenaria e reformas.</p>
+                <p className="mb-6">Para resumir com quem trabalha na área: Makita e DeWalt são as queridinhas das obras pesadas por aguentarem muito tranco, sujeira e quedas.</p>
+                <p className="mb-6">A Bosch também é de primeira linha e muitas vezes se destaca por tecnologias e confortos extras que facilitam a vida na marcenaria e reformas.</p>
                 <p className="mb-6">Para ver os detalhes de todas, confira nossa <a href="/melhores-marcas-de-furadeira" className="text-blue-600 hover:underline font-medium">lista dedicada às principais fabricantes de ferramentas</a>.</p>
               </div>
             </div>
@@ -692,8 +806,10 @@ export const MelhorFuradeira: React.FC = () => {
           <section className="mt-16 text-center">
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Qual escolher afinal?</h2>
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mx-auto">
-              <p>Escolher a ferramenta certa é pensar no seu bolso a longo prazo e, principalmente, no seu conforto. Gastar mais numa furadeira profissional faz total sentido se você vive disso, pois ela não vai te deixar na mão no meio de uma instalação com o cliente esperando.</p>
-              <p>Por outro lado, se a ideia é só resolver pequenos reparos em casa, os modelos de custo-benefício de marcas como Mondial ou Skil dão conta do recado e sobram no orçamento para você comprar buchas e parafusos de qualidade. Avalie o que você realmente precisa e bom trabalho!</p>
+              <p>Escolher a ferramenta certa é pensar no seu bolso a longo prazo e, principalmente, no seu conforto.</p>
+              <p>Gastar mais numa furadeira profissional faz total sentido se você vive disso, pois ela não vai te deixar na mão no meio de uma instalação com o cliente esperando.</p>
+              <p>Por outro lado, se a ideia é só resolver pequenos reparos em casa, os modelos de custo-benefício de marcas como Mondial ou Skil dão conta do recado e sobram no orçamento para você comprar buchas e parafusos de qualidade.</p>
+              <p>Avalie o que você realmente precisa e bom trabalho!</p>
             </div>
           </section>
 

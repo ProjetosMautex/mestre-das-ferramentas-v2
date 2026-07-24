@@ -140,7 +140,7 @@ export const products: Record<string, Product> = {
   },
   "furadeira-impacto-makita-760w": {
     name: "Furadeira Impacto 760W – Makita",
-    link: "https://meli.la/1RrDqEU"
+    link: "https://meli.la/1YMq1ru"
   },
   "furadeira-dewalt-dwd502": {
     name: "DeWalt DWD502",
@@ -573,7 +573,7 @@ export const products: Record<string, Product> = {
   },
   "Conjunto de Brocas e Bits Makita – 34 Peças": {
     name: "Conjunto de Brocas e Bits Makita – 34 Peças",
-    link: "https://meli.la/2jcLSKS"
+    link: "https://meli.la/2Pu3PJU"
   },
   "Jogo de Brocas mistas 15 peças – Bosch": {
     name: "Jogo de Brocas mistas 15 peças – Bosch",
