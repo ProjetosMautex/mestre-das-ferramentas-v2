@@ -210,7 +210,7 @@ export const products: Record<string, Product> = {
   // --- Listas de Principais por Marca ---
   "Principais furadeiras Makita": {
     name: "Principais furadeiras Makita",
-    link: "https://mercadolivre.com/sec/15EoGxM"
+    link: "https://link.amazon/B0guPK5fy"
   },
   "Principais furadeiras Bosch": {
     name: "Principais furadeiras Bosch",
@@ -218,7 +218,7 @@ export const products: Record<string, Product> = {
   },
   "Principais furadeiras Dewalt": {
     name: "Principais furadeiras Dewalt",
-    link: "https://mercadolivre.com/sec/1ZootNt"
+    link: "https://link.amazon/B0a9IrWcR"
   },
   "Principais Black & Decker": {
     name: "Principais Black & Decker",
@@ -239,6 +239,14 @@ export const products: Record<string, Product> = {
   "Principais Furadeiras Mondial": {
     name: "Principais Furadeiras Mondial",
     link: "https://amzn.to/4re7WOL"
+  },
+  "Principais Furadeiras Skil": {
+    name: "Principais Furadeiras Skil",
+    link: "https://link.amazon/B04gKKKVm"
+  },
+  "Principais Furadeiras Tramontina": {
+    name: "Principais Furadeiras Tramontina",
+    link: "https://link.amazon/B03ztzjhb"
   },
   "Principais Furadeiras Stanley": {
     name: "Principais Furadeiras Stanley",

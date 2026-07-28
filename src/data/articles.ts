@@ -31,7 +31,7 @@ export const articles: Article[] = [
     excerpt: "Cansado de furadeiras fracas? Descubra AGORA a furadeira e parafusadeira ideal para e turbine seus projetos! Clique e acerte na escolha!"
   },
   {
-    title: "10 Melhores Marcas de Furadeira em 2026 Qual Escolher? (Guia de Marcas)",
+    title: "8 Melhores Marcas de Furadeira em 2026: Bosch, Makita, DeWalt ou Outra?",
     url: "/melhores-marcas-de-furadeira",
     image: "/images/blog/melhores-marcas-de-furadeira/melhores-marcas-de-furadeira.webp",
     excerpt: "Qual a melhor furadeira para você? Descubra as marcas que unem força, precisão e durabilidade. Guia essencial para não errar na escolha!"
