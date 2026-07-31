@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { PodeDeixarABateriaConectadaNaParafusadeira } from '../components/PodeDeixarABateriaConectadaNaParafusadeira';
+---
+
+<Layout 
+  title="Pode Deixar a Bateria na Parafusadeira? (O Erro Oculto)"
+  description="Pode deixar a bateria conectada na parafusadeira? Descubra o erro oculto que destrói a vida útil da sua máquina e aprenda como armazenar corretamente."
+>
+  <main>
+    {/* A diretiva client:load é necessária para que os elementos interativos do React funcionem no Astro */}
+    <PodeDeixarABateriaConectadaNaParafusadeira client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+</style>

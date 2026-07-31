@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
               <Logo lightMode={true} />
             </div>
             <p className="text-gray-300 leading-relaxed max-w-md text-lg">
-              No <span className="text-[#FFD700] font-semibold">Mestre das Ferramentas</span> você encontra reviews completos, comparativos e guias de compra das melhores ferramentas para construção, reparos, oficina e jardinagem. Conteúdo técnico, prático e imparcial para uso doméstico e profissional.
+              No <span className="text-[#FFD700] font-semibold">Mestre das Ferramentas</span> você encontra reviews completos, comparativos e guias de compra das melhores parafusadeiras, furadeiras, marteletes e chaves de impacto para seus projetos. Conteúdo técnico, prático e imparcial para uso doméstico e profissional.
             </p>
           </div>
 

@@ -34,13 +34,13 @@ export const Murilo: React.FC = () => {
 
               <div className="space-y-6 text-gray-700 leading-relaxed text-lg border-l-4 border-[#FFD700] pl-6">
                 <p>
-                  Sou o Murilo, fundador do Mestre das Ferramentas e especialista em SEO e criação de sites de nicho. Meu trabalho é desenvolver conteúdos estratégicos sobre ferramentas físicas de trabalho, ajudando profissionais, hobistas e empresas a encontrarem informações realmente úteis para o dia a dia.
+                  Sou o Murilo, fundador do Mestre das Ferramentas e especialista em SEO e criação de sites de nicho. Meu trabalho é desenvolver conteúdos estratégicos sobre ferramentas de furação e fixação (como furadeiras, parafusadeiras e marteletes), ajudando profissionais, hobistas e empresas a encontrarem informações realmente úteis para o dia a dia.
                 </p>
                 <p>
                   Atuo na construção de projetos digitais focados em autoridade temática, estruturação de conteúdo e posicionamento orgânico nos mecanismos de busca. Tenho experiência em planejamento editorial, arquitetura de sites, organização de silos e interligação estratégica entre páginas, sempre alinhando SEO com a intenção de busca do usuário.
                 </p>
                 <p>
-                  No Mestre das Ferramentas, sou responsável pela definição da estratégia de conteúdo, revisão técnica dos artigos e desenvolvimento da estrutura do site, garantindo materiais completos, objetivos e relevantes para quem busca informações confiáveis sobre ferramentas, equipamentos e soluções para trabalho profissional.
+                  No Mestre das Ferramentas, sou responsável pela definição da estratégia de conteúdo, revisão técnica dos artigos e desenvolvimento da estrutura do site, garantindo materiais completos, objetivos e relevantes para quem busca informações confiáveis sobre parafusadeiras, furadeiras, marteletes e chaves de impacto.
                 </p>
               </div>
             </div>

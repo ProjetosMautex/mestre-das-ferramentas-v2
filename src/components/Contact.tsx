@@ -19,10 +19,10 @@ export const Contact: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-6">
-              Aqui no <span className="font-bold text-[#1a1a1a]">Mestre das Ferramentas</span>, levamos a sério a qualidade das informações que oferecemos. Nosso objetivo é ajudar você a escolher e utilizar as melhores ferramentas do mercado — abrangendo construção, reformas, oficina e jardinagem.
+              Aqui no <span className="font-bold text-[#1a1a1a]">Mestre das Ferramentas</span>, levamos a sério a qualidade das informações que oferecemos. Nosso objetivo é ajudar você a escolher e utilizar as melhores parafusadeiras, furadeiras, marteletes e chaves de impacto do mercado.
             </p>
             <p>
-              Todos os conteúdos publicados no site são produzidos com base em testes práticos, análises técnicas e anos de experiência real no uso de ferramentas em diferentes contextos: do faça-você-mesmo em casa até o trabalho profissional em oficinas e construções.
+              Todos os conteúdos publicados no site são produzidos com base em testes práticos, análises técnicas e anos de experiência real no uso de ferramentas de furação e parafusamento em diferentes contextos: do faça-você-mesmo em casa até o trabalho profissional em oficinas e construções.
             </p>
           </div>
         </div>
@@ -41,7 +41,7 @@ export const Contact: React.FC = () => {
               <div className="bg-yellow-50 p-3 rounded-full text-[#b39700]">
                 <MessageSquare size={24} />
               </div>
-              <p className="text-gray-700 font-medium">Tirar dúvidas sobre modelos de ferramentas em geral</p>
+              <p className="text-gray-700 font-medium">Tirar dúvidas sobre modelos de furadeiras e parafusadeiras</p>
             </div>
             
             <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-[#FFD700] flex items-start gap-4">

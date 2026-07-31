@@ -37,7 +37,7 @@ export const MateusRibeiro: React.FC = () => {
                   Sou o Mateus Ribeiro, Marceneiro e Designer de Móveis Sob Medida, com mais de 15 anos de experiência em projetos que vão desde móveis planejados até trabalhos de marcenaria artesanal. Minha trajetória começou cedo, em 2009, e desde então atuo tanto em oficinas quanto em projetos DIY avançados.
                 </p>
                 <p>
-                  Minha especialidade está em técnicas de parafusamento em diferentes tipos de madeira — como maciça, MDF e compensado — além de pré-furação, colagem e acabamento. Também realizo avaliações de ferramentas voltadas para marcenaria, sempre considerando precisão, durabilidade e eficiência. Com essa experiência, ajudo tanto profissionais quanto entusiastas a escolherem as melhores ferramentas para alcançar resultados de qualidade em seus projetos.
+                  Minha especialidade está em técnicas de parafusamento em diferentes tipos de madeira — como maciça, MDF e compensado — além de pré-furação, colagem e acabamento. Também realizo avaliações de furadeiras e parafusadeiras voltadas para marcenaria, sempre considerando precisão, durabilidade e eficiência. Com essa experiência, ajudo tanto profissionais quanto entusiastas a escolherem os melhores equipamentos para alcançar resultados de qualidade em seus projetos.
                 </p>
               </div>
             </div>

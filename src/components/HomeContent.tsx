@@ -51,7 +51,7 @@ export const HomeContent = () => {
               Domine suas <span className="text-[#1a1a1a]">Ferramentas</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10">
-              O guia definitivo para profissionais, hobbistas e entusiastas. Reviews, comparativos e guias das melhores ferramentas para construção, reforma, manutenção e jardinagem.
+              O guia definitivo focado em ferramentas de furação e parafusamento. Reviews, comparativos e guias das melhores parafusadeiras, furadeiras, marteletes e chaves de impacto do mercado.
             </p>
             <a href="#destaques" className="inline-block bg-[#FFD700] text-[#1a1a1a] px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#e6c200] transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
               Ver Melhores Reviews

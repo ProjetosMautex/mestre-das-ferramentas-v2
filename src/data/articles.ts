@@ -671,5 +671,11 @@ export const articles: Article[] = [
     url: "/Qual-a-diferenca-entre-parafusadeira-12V-e-18V",
     image: "/images/blog/1/Qual a diferença entre parafusadeira 12V e 18V.webp",
     excerpt: "Ainda na dúvida entre 12V e 18V? Descubra como escolher a parafusadeira ideal para o seu perfil e evite gastos desnecessários com o equipamento errado."
+  },
+  {
+    title: "Pode Deixar a Bateria na Parafusadeira? (O Erro Oculto)",
+    url: "/Pode-deixar-a-bateria-conectada-na-parafusadeira",
+    image: "/images/blog/1/Pode deixar a bateria conectada na parafusadeira.webp",
+    excerpt: "Pode deixar a bateria conectada na parafusadeira? Descubra o erro oculto que destrói a vida útil da sua máquina e aprenda como armazenar corretamente."
   }
 ];
