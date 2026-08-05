@@ -819,6 +819,26 @@ export const products: Record<string, Product> = {
   "Óculos de proteção": {
     name: "Óculos de proteção",
     link: "https://meli.la/1XUZWGd"
+  },
+  "Esmerilhadeira-The-Black-Tools": {
+    name: "Esmerilhadeira The Black Tools",
+    link: "https://meli.la/2GW2kiJ"
+  },
+  "Martelete-The-Black-Tools-TRM1000": {
+    name: "Martelete The Black Tools TRM1000",
+    link: "https://meli.la/1P6X4n5"
+  },
+  "Chave-de-Impacto-The-Black-Tools-TB-21I": {
+    name: "Chave de Impacto The Black Tools TB-21I",
+    link: "https://meli.la/1RkfMCo"
+  },
+  "Lixadeira-The-Black-Tools": {
+    name: "Lixadeira The Black Tools",
+    link: "https://meli.la/2YPTWMm"
+  },
+  "Plaina-Eletrica-The-Black-Tools-BFP780": {
+    name: "Plaina Elétrica The Black Tools BFP780",
+    link: "https://meli.la/2qAJwsa"
   }
 };
 
