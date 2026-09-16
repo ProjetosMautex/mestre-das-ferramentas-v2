@@ -677,5 +677,11 @@ export const articles: Article[] = [
     url: "/Pode-deixar-a-bateria-conectada-na-parafusadeira",
     image: "/images/blog/1/Pode deixar a bateria conectada na parafusadeira.webp",
     excerpt: "Pode deixar a bateria conectada na parafusadeira? Descubra o erro oculto que destrói a vida útil da sua máquina e aprenda como armazenar corretamente."
+  },
+  {
+    title: "Parafusadeira Pneumática Como Funciona e Quando Usar? - Mestre das Ferramentas",
+    url: "/como-funciona-parafusadeira-pneumatica",
+    image: "/images/blog/1/como-funciona-parafusadeira-pneumatica.webp",
+    excerpt: "Quer saber se a parafusadeira pneumática é o investimento certo para você? Descubra como escolher o modelo ideal, evitar prejuízos e aumentar sua produtividade."
   }
 ];

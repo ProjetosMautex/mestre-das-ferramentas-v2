@@ -19,7 +19,7 @@ export const Contact: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-6">
-              Aqui no <span className="font-bold text-[#1a1a1a]">Mestre das Ferramentas</span>, levamos a sério a qualidade das informações que oferecemos. Nosso objetivo é ajudar você a escolher e utilizar as melhores parafusadeiras, furadeiras, marteletes e chaves de impacto do mercado.
+              Aqui no <span className="font-bold text-[#1a1a1a]">Mestre das Ferramentas</span>, levamos a sério a qualidade das informações que oferecemos. Nosso objetivo é ajudar você a escolher e utilizar as melhores parafusadeiras e furadeiras do mercado.
             </p>
             <p>
               Todos os conteúdos publicados no site são produzidos com base em testes práticos, análises técnicas e anos de experiência real no uso de ferramentas de furação e parafusamento em diferentes contextos: do faça-você-mesmo em casa até o trabalho profissional em oficinas e construções.

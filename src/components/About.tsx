@@ -9,9 +9,9 @@ export const About: React.FC = () => {
       role: "Fundador do Mestre das Ferramentas e Especialista em SEO para Sites de Nicho",
       image: "/images/autores/Murilo.webp",
       description: [
-        "Sou o Murilo, fundador do Mestre das Ferramentas e especialista em SEO e criação de sites de nicho. Meu trabalho é desenvolver conteúdos estratégicos sobre ferramentas de furação e fixação (como furadeiras, parafusadeiras e marteletes), ajudando profissionais, hobistas e empresas a encontrarem informações realmente úteis para o dia a dia.",
+        "Sou o Murilo, fundador do Mestre das Ferramentas e especialista em SEO e criação de sites de nicho. Meu trabalho é desenvolver conteúdos estratégicos sobre ferramentas de furação e fixação (como furadeiras e parafusadeiras), ajudando profissionais, hobistas e empresas a encontrarem informações realmente úteis para o dia a dia.",
         "Atuo na construção de projetos digitais focados em autoridade temática, estruturação de conteúdo e posicionamento orgânico nos mecanismos de busca. Tenho experiência em planejamento editorial, arquitetura de sites, organização de silos e interligação estratégica entre páginas, sempre alinhando SEO com a intenção de busca do usuário.",
-        "No Mestre das Ferramentas, sou responsável pela definição da estratégia de conteúdo, revisão técnica dos artigos e desenvolvimento da estrutura do site, garantindo materiais completos, objetivos e relevantes para quem busca informações confiáveis sobre parafusadeiras, furadeiras, marteletes e chaves de impacto."
+        "No Mestre das Ferramentas, sou responsável pela definição da estratégia de conteúdo, revisão técnica dos artigos e desenvolvimento da estrutura do site, garantindo materiais completos, objetivos e relevantes para quem busca informações confiáveis sobre parafusadeiras e furadeiras."
       ]
     },
     {
@@ -32,7 +32,7 @@ export const About: React.FC = () => {
       image: "/images/autores/andre-carvalho.webp",
       description: [
         "Sou o André Carvalho, Especialista em Uso Profissional de Ferramentas, com mais de 12 anos de experiência em obras, reformas e serviços de alta exigência. Minha atuação sempre esteve ligada a ambientes onde desempenho, resistência e confiabilidade das ferramentas fazem toda a diferença no resultado final.",
-        "Minha especialidade é avaliar marteletes, chaves de impacto e furadeiras de alta potência in loco e em situações de uso intenso, analisando potência, autonomia, robustez e eficiência em trabalhos contínuos. Meu objetivo é ajudar profissionais da construção civil, montagem industrial e manutenção a escolherem equipamentos que aguentam a rotina pesada e entregam produtividade de verdade."
+        "Minha especialidade é avaliar parafusadeiras e furadeiras de uso pesado in loco e em situações de uso intenso, analisando potência, autonomia, robustez e eficiência em trabalhos contínuos. Meu objetivo é ajudar profissionais da construção civil, montagem industrial e manutenção a escolherem equipamentos que aguentam a rotina pesada e entregam produtividade de verdade."
       ]
     },
     {
@@ -67,13 +67,13 @@ export const About: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
             <p className="text-xl leading-relaxed font-medium">
-              Aqui, nosso objetivo é ajudar entusiastas do faça-você-mesmo, profissionais de manutenção, marceneiros, mecânicos e apaixonados por ferramentas de furação e parafusamento a escolherem as parafusadeiras, furadeiras, marteletes e chaves de impacto certas para cada necessidade.
+              Aqui, nosso objetivo é ajudar entusiastas do faça-você-mesmo, profissionais de manutenção, marceneiros, mecânicos e apaixonados por ferramentas de furação e parafusamento a escolherem as parafusadeiras e furadeiras certas para cada necessidade.
             </p>
             <p>
-              Se você procura furadeiras para uso em casa, marteletes para reformas, ou chaves de impacto profissionais de alto desempenho para oficina e construção, este é o lugar certo. Estamos aqui para orientar você de forma prática, honesta e técnica — sem enrolação.
+              Se você procura furadeiras para uso em casa ou parafusadeiras profissionais de alto desempenho, este é o lugar certo. Estamos aqui para orientar você de forma prática, honesta e técnica — sem enrolação.
             </p>
             <div className="bg-gray-50 border-l-8 border-[#FFD700] p-8 rounded-r-xl italic shadow-sm text-gray-800">
-              "Cada artigo do site é escrito com base em vivência real: especialistas que testam, comparam e utilizam furadeiras, parafusadeiras e marteletes diariamente em diferentes contextos — seja em trabalhos domésticos, marcenaria, serralheria, oficinas mecânicas ou obras profissionais."
+              "Cada artigo do site é escrito com base em vivência real: especialistas que testam, comparam e utilizam furadeiras e parafusadeiras diariamente em diferentes contextos — seja em trabalhos domésticos, marcenaria, serralheria, oficinas mecânicas ou obras profissionais."
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ export const About: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">Por que confiar no Mestre das Ferramentas?</h2>
           <div className="grid gap-10">
             {[
-              { title: "Especialização Prática", desc: "Nossa equipe é formada por especialistas com sólida experiência prática e conhecimento técnico específico em parafusadeiras, furadeiras, marteletes e chaves de impacto. Conhecemos as melhores opções do mercado no detalhe — tanto na teoria quanto no uso real." },
+              { title: "Especialização Prática", desc: "Nossa equipe é formada por especialistas com sólida experiência prática e conhecimento técnico específico em parafusadeiras e furadeiras. Conhecemos as melhores opções do mercado no detalhe — tanto na teoria quanto no uso real." },
               { title: "Testes no Mundo Real", desc: "Não nos baseamos apenas em catálogos. Avaliamos desempenho, durabilidade, ergonomia e facilidade de uso em situações cotidianas e profissionais." },
               { title: "Independência Editorial", desc: "Não aceitamos patrocínios que interfiram nas avaliações. Nossas recomendações são imparciais e focadas no seu custo-benefício real." }
             ].map((item, index) => (

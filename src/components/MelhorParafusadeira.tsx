@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { AffiliateCard } from './AffiliateCard';
 import { BunnerDoMeio } from './BunnerDoMeio';
+import { AuthorSeverinoTorquato } from './AuthorSeverinoTorquato';
 import { products, type ProductId } from '../data/products';
 import { Check, X, Info, ShoppingCart, ArrowRight, ChevronDown, ChevronUp, Sparkles, HelpCircle, ShoppingBag } from 'lucide-react';
 
@@ -1249,6 +1250,7 @@ export const MelhorParafusadeira: React.FC = () => {
             </div>
           </section>
 
+          <AuthorSeverinoTorquato />
         </div>
     </>
   );
