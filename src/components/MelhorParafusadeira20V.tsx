@@ -54,7 +54,7 @@ export const MelhorParafusadeira20V = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
             <div className="flex items-center gap-2">
               <span>Por</span>
-              <a href="/author/andre-carvalho" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
+              <a href="/author/andre-carvalho/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                 <div className="w-8 h-8 rounded-full border-2 border-[#FFD700] bg-[#FFD700] flex items-center justify-center text-[#1a1a1a] font-bold group-hover:scale-110 transition-transform">
                   A
                 </div>

@@ -39,7 +39,7 @@ export const MelhorParafusadeiraParaDrywall: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
             <div className="flex items-center gap-2">
               <span>Por</span>
-              <a href="/author/andre-carvalho" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
+              <a href="/author/andre-carvalho/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                 <img 
                   src="/images/autores/andre-carvalho.webp" 
                   alt="André Carvalho" 
@@ -581,7 +581,7 @@ export const MelhorParafusadeiraParaDrywall: React.FC = () => {
               </p>
               <p>
                 Priorize máquinas com giros altos e controle de aceleração sensível para fixações limpas e prontas para acabamento. 
-                <a href="https://mestredasferramentas.com.br/qual-o-melhor-torque-para-parafusadeira" className="text-blue-600 hover:underline">Saber dosar a força de aperto</a> evita que o motor sofra esforços e protege a face delicada do gesso.
+                <a href="https://mestredasferramentas.com.br/qual-o-melhor-torque-para-parafusadeira/" className="text-blue-600 hover:underline">Saber dosar a força de aperto</a> evita que o motor sofra esforços e protege a face delicada do gesso.
               </p>
             </div>
 

@@ -4,7 +4,7 @@ export const AuthorAndreCarvalho: React.FC = () => {
   return (
     <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm mt-8 mb-16 flex flex-col md:flex-row items-center md:items-start gap-6">
       <div className="shrink-0 mx-auto md:mx-0">
-        <a href="/author/andre-carvalho" className="block cursor-pointer">
+        <a href="/author/andre-carvalho/" className="block cursor-pointer">
           <img 
             loading="lazy" 
             width="160" 
@@ -18,7 +18,7 @@ export const AuthorAndreCarvalho: React.FC = () => {
       <div>
         <h2 className="text-sm font-bold text-[#b39700] uppercase tracking-widest mb-2">Sobre o Autor</h2>
         <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
-          <a href="/author/andre-carvalho" className="hover:text-[#b39700] transition-colors">
+          <a href="/author/andre-carvalho/" className="hover:text-[#b39700] transition-colors">
             André Carvalho
           </a>
         </h3>

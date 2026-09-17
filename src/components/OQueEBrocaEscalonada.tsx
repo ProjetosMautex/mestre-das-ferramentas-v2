@@ -28,7 +28,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <span>Por</span>
-                <a href="/author/andre-carvalho" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
+                <a href="/author/andre-carvalho/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                   <img 
                     src="/images/autores/andre-carvalho.webp" 
                     alt="André Carvalho" 
@@ -88,7 +88,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
           <section className="mb-12">
             <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Principais características</h3>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-              <p>O diferencial competitivo desta ferramenta reside em sua engenharia de precisão. O design cônico permite transições suaves entre diâmetros, eliminando a necessidade de trocas constantes de acessórios. Saber <a href="https://mestredasferramentas.com.br/como-escolher-furadeira" className="text-blue-600 hover:underline">como escolher furadeira</a> certa potencializa o uso dessa broca, garantindo que você não force o motor do equipamento durante os furos.</p>
+              <p>O diferencial competitivo desta ferramenta reside em sua engenharia de precisão. O design cônico permite transições suaves entre diâmetros, eliminando a necessidade de trocas constantes de acessórios. Saber <a href="https://mestredasferramentas.com.br/como-escolher-furadeira/" className="text-blue-600 hover:underline">como escolher furadeira</a> certa potencializa o uso dessa broca, garantindo que você não force o motor do equipamento durante os furos.</p>
               <p>Sua estrutura é projetada para um corte progressivo, o que reduz drasticamente o esforço físico e o desgaste precoce do motor da sua furadeira. Ao optar por um modelo de alta qualidade, você garante bordas isentas de rebarbas, assegurando um acabamento uniforme e profissional que dispensa etapas extras de lixamento ou retrabalho.</p>
               <p>Esta versatilidade técnica não apenas simplifica a execução de projetos complexos, mas também eleva o padrão de entrega em cada perfuração realizada, sendo o investimento ideal para quem prioriza eficiência e durabilidade no ambiente de trabalho.</p>
             </div>

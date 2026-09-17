@@ -19,7 +19,7 @@ export const ComoUsarFuradeiraParaColocarCortina = () => {
             
             <div className="flex items-center justify-center text-gray-300 mb-8">
               <div className="flex items-center">
-                <a href="/author/severino-torquato" className="flex items-center hover:text-[#FFD700] transition-colors group">
+                <a href="/author/severino-torquato/" className="flex items-center hover:text-[#FFD700] transition-colors group">
                   <img 
                     src="/images/autores/severino-torquato.webp" 
                     alt="Severino Torquato" 

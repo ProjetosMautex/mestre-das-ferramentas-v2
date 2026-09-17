@@ -19,7 +19,7 @@ export const ComoAumentarAPotenciaDaParafusadeira = () => {
             
             <div className="flex items-center justify-center text-gray-300 mb-8">
               <div className="flex items-center">
-                <a href="/author/andre-carvalho" className="flex items-center hover:text-[#FFD700] transition-colors group">
+                <a href="/author/andre-carvalho/" className="flex items-center hover:text-[#FFD700] transition-colors group">
                   <img 
                     src="/images/autores/andre-carvalho.webp" 
                     alt="Andre Carvalho" 

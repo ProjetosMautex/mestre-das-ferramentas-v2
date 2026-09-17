@@ -25,7 +25,7 @@ export const DiferencaEntreBrocaSDSeHSS: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <span>Por</span>
-                <a href="/author/andre-carvalho" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
+                <a href="/author/andre-carvalho/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                   <img 
                     src="/images/autores/andre-carvalho.webp" 
                     alt="André Carvalho" 
@@ -152,7 +152,7 @@ export const DiferencaEntreBrocaSDSeHSS: React.FC = () => {
                 Analisaremos em profundidade a partir de agora os atributos metalúrgicos que transformam este modelo específico de broca em um componente vital e insubstituível para qualquer profissional ou hobista que busca resultados absolutamente impecáveis tanto em trabalhos complexos de metalurgia quanto na fina marcenaria.
               </p>
               <p>
-                Por apresentarem um fio de corte extremamente afiado que resiste à fricção térmica intensa, elas são o padrão preferencial na usinagem, de modo que escolher a <a href="https://mestredasferramentas.com.br/melhor-broca-para-ferro" className="text-blue-600 hover:underline">melhor broca para ferro</a> de aço rápido é a decisão mais inteligente para perfurar chapas e vigas metálicas sem perder o rendimento.
+                Por apresentarem um fio de corte extremamente afiado que resiste à fricção térmica intensa, elas são o padrão preferencial na usinagem, de modo que escolher a <a href="https://mestredasferramentas.com.br/melhor-broca-para-ferro/" className="text-blue-600 hover:underline">melhor broca para ferro</a> de aço rápido é a decisão mais inteligente para perfurar chapas e vigas metálicas sem perder o rendimento.
               </p>
             </div>
           </section>

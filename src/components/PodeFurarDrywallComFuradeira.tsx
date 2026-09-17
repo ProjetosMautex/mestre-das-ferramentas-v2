@@ -28,7 +28,7 @@ export const PodeFurarDrywallComFuradeira: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <span>Por</span>
-                <a href="/author/severino-torquato" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
+                <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                   <img 
                     src="/images/autores/severino-torquato.webp" 
                     alt="Severino Torquato" 
@@ -158,7 +158,7 @@ export const PodeFurarDrywallComFuradeira: React.FC = () => {
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>Para a maioria das intervenções em drywall, a furadeira comum é sua aliada mais confiável. Esse equipamento oferece o controle de torque necessário para atravessar o gesso com precisão, preservando a integridade da chapa.</p>
               <p>Em contrapartida, utilizar uma furadeira de impacto pode ser um erro custoso: a vibração mecânica excessiva tende a esfarelar o material ou criar fissuras indesejadas ao redor do orifício, comprometendo a fixação futura.</p>
-              <p>Esse tipo de força é necessário apenas em materiais duros, como quando vamos <a href="https://mestredasferramentas.com.br/como-furar-parede-de-concreto-com-furadeira" className="text-blue-600 hover:underline">furar parede de concreto com furadeira</a>. Já no drywall, o segredo é a delicadeza e a rotação contínua.</p>
+              <p>Esse tipo de força é necessário apenas em materiais duros, como quando vamos <a href="https://mestredasferramentas.com.br/como-furar-parede-de-concreto-com-furadeira/" className="text-blue-600 hover:underline">furar parede de concreto com furadeira</a>. Já no drywall, o segredo é a delicadeza e a rotação contínua.</p>
               <p>Se você possui apenas um modelo com sistema de impacto, certifique-se de desativá-lo completamente antes de começar. Priorizar a rotação simples garante um trabalho limpo, profissional e evita que você danifique a estrutura que acabou de planejar.</p>
             </div>
           </section>

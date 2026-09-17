@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
     e.preventDefault();
     if (searchQuery.trim()) {
       // No Astro usamos o window.location para navegar
-      window.location.href = `/search?q=${encodeURIComponent(searchQuery.trim())}`;
+      window.location.href = `/search/?q=${encodeURIComponent(searchQuery.trim())}`;
       setIsSearchOpen(false);
       setIsMobileMenuOpen(false);
     }

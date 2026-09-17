@@ -28,7 +28,7 @@ export const ComoFurarMadeiraComParafusadeira: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <span>Por</span>
-                <a href="/author/mateus-ribeiro" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
+                <a href="/author/mateus-ribeiro/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                   <img 
                     src="/images/autores/mateus-ribeiro.webp" 
                     alt="Mateus Ribeiro" 

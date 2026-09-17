@@ -155,7 +155,7 @@ export const MelhorParafusadeira: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <span>Por</span>
-                <a href="/author/severino-torquato" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
+                <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                   <img 
                     src="/images/autores/severino-torquato.webp" 
                     alt="Severino Torquato" 
@@ -1171,7 +1171,7 @@ export const MelhorParafusadeira: React.FC = () => {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Algumas Dicas Finais da Oficina</h3>
                 <div className="w-full flex justify-center my-6">
-                  <a href="/author/severino-torquato">
+                  <a href="/author/severino-torquato/">
                     <img 
                       src="/images/autores/severino-torquato.webp" 
                       alt="Severino Torquato" 

@@ -28,7 +28,7 @@ export const QualBrocaUsarParaFurarDrywall: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <span>Por</span>
-                <a href="/author/severino-torquato" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
+                <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                   <img 
                     src="/images/autores/severino-torquato.webp" 
                     alt="Severino Torquato" 
@@ -133,7 +133,7 @@ export const QualBrocaUsarParaFurarDrywall: React.FC = () => {
             <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Dica de Uso</h3>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>Nunca utilize o modo impacto ao perfurar drywall. Essa função é projetada para concreto e, ao ser aplicada no gesso, provoca vibrações excessivas que destroem a estrutura interna da placa. O resultado é um furo irregular, esfarelado e incapaz de segurar buchas com firmeza.</p>
-              <p>Sempre inicie o trabalho em baixa rotação, mantendo a furadeira perfeitamente perpendicular à superfície para garantir uma entrada suave. Se você for iniciante e não souber como realizar esses ajustes na máquina ou a postura ideal, confira nosso guia de <a href="https://mestredasferramentas.com.br/como-usar-furadeira" className="text-blue-600 hover:underline font-semibold">como usar furadeira</a>.</p>
+              <p>Sempre inicie o trabalho em baixa rotação, mantendo a furadeira perfeitamente perpendicular à superfície para garantir uma entrada suave. Se você for iniciante e não souber como realizar esses ajustes na máquina ou a postura ideal, confira nosso guia de <a href="https://mestredasferramentas.com.br/como-usar-furadeira/" className="text-blue-600 hover:underline font-semibold">como usar furadeira</a>.</p>
               <p>Se encontrar resistência, verifique se a ponta não atingiu um perfil metálico interno; nesse caso, altere o acessório para um modelo adequado ao metal. Dominar esse controle técnico evita danos estéticos irreversíveis e assegura que suas instalações fiquem seguras, niveladas e com acabamento impecável, eliminando qualquer risco de folgas na fixação.</p>
             </div>
           </section>

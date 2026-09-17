@@ -27,7 +27,7 @@ export const QueBrocaEBuchaEuUsoNaParede: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <span>Por</span>
-                <a href="/author/severino-torquato" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
+                <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                   <img 
                     src="/images/autores/severino-torquato.webp" 
                     alt="Severino Torquato" 
@@ -369,7 +369,7 @@ export const QueBrocaEBuchaEuUsoNaParede: React.FC = () => {
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>Inicie o processo acionando a furadeira com baixa rotação, criando um "ponto de guia" que impede a broca de deslizar e riscar o acabamento. Assim que encontrar firmeza, aumente a velocidade gradualmente, mantendo o ângulo estritamente perpendicular à superfície.</p>
               <p>Ao lidar com concreto ou alvenaria, é obrigatório ativar a função impacto da ferramenta para triturar o material sem esforço excessivo. Já em madeira ou drywall, desative o impacto imediatamente para evitar rachaduras ou o esfarelamento da placa.</p>
-              <p>O controle constante sobre o gatilho, somado a uma postura firme, garante um furo perfeitamente alinhado. Lembre-se: um desvio milimétrico no eixo durante a perfuração compromete toda a estabilidade do parafuso, por isso é fundamental <a href="https://mestredasferramentas.com.br/como-furar-parede-com-furadeira" className="text-blue-600 hover:underline">dominar a técnica de perfuração</a> para garantir a segurança da sua instalação futura.</p>
+              <p>O controle constante sobre o gatilho, somado a uma postura firme, garante um furo perfeitamente alinhado. Lembre-se: um desvio milimétrico no eixo durante a perfuração compromete toda a estabilidade do parafuso, por isso é fundamental <a href="https://mestredasferramentas.com.br/como-furar-parede-com-furadeira/" className="text-blue-600 hover:underline">dominar a técnica de perfuração</a> para garantir a segurança da sua instalação futura.</p>
             </div>
           </section>
 

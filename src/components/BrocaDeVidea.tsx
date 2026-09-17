@@ -30,7 +30,7 @@ export const BrocaDeVidea: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <span>Por</span>
-                <a href="/author/andre-carvalho" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
+                <a href="/author/andre-carvalho/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                   <img 
                     src="/images/autores/andre-carvalho.webp" 
                     alt="André Carvalho" 
@@ -105,7 +105,7 @@ export const BrocaDeVidea: React.FC = () => {
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>No cotidiano de uma residência, a broca de vídea é a protagonista de quase todas as instalações de acessórios fixos.</p>
               <p>Seja para pendurar um espelho no banheiro, instalar um suporte de TV na sala ou fixar prateleiras na cozinha, ela é quem fará o trabalho bruto.</p>
-              <p>Como ela é projetada para lidar com a resistência de materiais minerais, você terá facilidade em <a href="https://mestredasferramentas.com.br/como-furar-parede-com-furadeira" className="text-blue-600 hover:underline font-semibold">furar parede com furadeira</a> de forma precisa e sem danificar o acabamento ou o reboco ao redor.</p>
+              <p>Como ela é projetada para lidar com a resistência de materiais minerais, você terá facilidade em <a href="https://mestredasferramentas.com.br/como-furar-parede-com-furadeira/" className="text-blue-600 hover:underline font-semibold">furar parede com furadeira</a> de forma precisa e sem danificar o acabamento ou o reboco ao redor.</p>
               <p>Essa versatilidade permite que você realize instalações seguras, garantindo que as buchas de nylon encontrem o atrito necessário para suportar o peso dos objetos.</p>
             </div>
           </section>
