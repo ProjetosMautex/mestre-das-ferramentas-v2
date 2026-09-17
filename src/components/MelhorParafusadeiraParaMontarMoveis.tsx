@@ -412,7 +412,7 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
           <section className="mt-12">
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Critérios de Escolha da Parafusadeira Ideal</h2>
             <div className="space-y-6 prose prose-lg max-w-none text-gray-700">
-              <p>Entender <a href="/como-escolher-parafusadeira" className="text-blue-600 hover:underline">"como escolher parafusadeira"</a> vai muito além do preço. Alguns critérios fazem diferença direta na eficiência, no conforto e no resultado final do trabalho, especialmente na montagem de móveis.</p>
+              <p>Entender <a href="/como-escolher-parafusadeira/" className="text-blue-600 hover:underline">"como escolher parafusadeira"</a> vai muito além do preço. Alguns critérios fazem diferença direta na eficiência, no conforto e no resultado final do trabalho, especialmente na montagem de móveis.</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Torque ajustável:</strong> permite controlar a força aplicada, evitando danos ao material e garantindo melhor acabamento.</li>
                 <li><strong>Tipo de alimentação:</strong> modelos a bateria oferecem mais praticidade e mobilidade, enquanto os com fio garantem potência constante para uso prolongado.</li>

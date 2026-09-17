@@ -736,7 +736,7 @@ export const MelhorFuradeira: React.FC = () => {
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-6">As melhores fabricantes hoje</h3>
                 <p className="mb-6">Para resumir com quem trabalha na área: Makita e DeWalt são as queridinhas das obras pesadas por aguentarem muito tranco, sujeira e quedas.</p>
                 <p className="mb-6">A Bosch também é de primeira linha e muitas vezes se destaca por tecnologias e confortos extras que facilitam a vida na marcenaria e reformas.</p>
-                <p className="mb-6">Para ver os detalhes de todas, confira nossa <a href="/melhores-marcas-de-furadeira" className="text-blue-600 hover:underline font-medium">lista dedicada às principais fabricantes de ferramentas</a>.</p>
+                <p className="mb-6">Para ver os detalhes de todas, confira nossa <a href="/melhores-marcas-de-furadeira/" className="text-blue-600 hover:underline font-medium">lista dedicada às principais fabricantes de ferramentas</a>.</p>
               </div>
             </div>
           </section>

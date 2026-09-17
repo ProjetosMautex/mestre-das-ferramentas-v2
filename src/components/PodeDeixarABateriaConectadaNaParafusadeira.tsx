@@ -165,7 +165,7 @@ export const PodeDeixarABateriaConectadaNaParafusadeira: React.FC = () => {
             
             <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r-lg">
               <p className="font-semibold text-blue-900 m-0">
-                💡 LEIA TAMBÉM: Se você tem dúvidas sobre o jeito certo de desencaixar o equipamento sem forçar os trilhos de contato, confira nosso passo a passo completo sobre <a href="/como-tirar-a-bateria-da-parafusadeira" className="text-blue-700 hover:underline">como tirar a bateria da parafusadeira</a>.
+                💡 LEIA TAMBÉM: Se você tem dúvidas sobre o jeito certo de desencaixar o equipamento sem forçar os trilhos de contato, confira nosso passo a passo completo sobre <a href="/como-tirar-a-bateria-da-parafusadeira/" className="text-blue-700 hover:underline">como tirar a bateria da parafusadeira</a>.
               </p>
             </div>
           </section>

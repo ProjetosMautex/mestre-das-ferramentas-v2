@@ -527,7 +527,7 @@ export const MelhorParafusadeira20V = () => {
               <p><strong>Vantagens e desvantagens das 20V:</strong> Têm mais potência e torque, mas são maiores e costumam custar mais.</p>
               <p><strong>O que é um modelo profissional?</strong> Precisa de motor robusto, mandril de metal, baterias de alta duração, controle de torque e boa empunhadura.</p>
               <p><strong>Serve para madeiras duras?</strong> Sim, ajustando bem o torque e usando a broca ou ponta correta.</p>
-              <p><strong>Qual a diferença para a de 12V?</strong> As parafusadeiras <a href="/qual-a-melhor-parafusadeira-12v-ou-20v" className="text-blue-600 underline">12V ou 20V: Qual é melhor?</a> Depende do uso: a 12V é mais ágil e foca em móveis; a 20V entrega força de sobra para obras mais pesadas e rotina extenuante.</p>
+              <p><strong>Qual a diferença para a de 12V?</strong> As parafusadeiras <a href="/qual-a-melhor-parafusadeira-12v-ou-20v/" className="text-blue-600 underline">12V ou 20V: Qual é melhor?</a> Depende do uso: a 12V é mais ágil e foca em móveis; a 20V entrega força de sobra para obras mais pesadas e rotina extenuante.</p>
               <p><strong>Diferença de parafusadeira e furadeira:</strong> Parafusadeira foca em apertar parafusos (tem melhor controle de força); a furadeira gira muito rápido para perfurar materiais.</p>
               <p><strong>O que é uma parafusadeira de impacto?</strong> É a que dá "batidas" internas enquanto gira, facilitando cravar parafusos longos sem cansar o braço.</p>
             </div>

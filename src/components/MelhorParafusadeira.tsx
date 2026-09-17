@@ -100,7 +100,7 @@ export const MelhorParafusadeira: React.FC = () => {
       question: "Qual a diferença entre parafusadeira e furadeira?",
       answer: [
         <>
-          Muitos iniciantes acreditam que qualquer furadeira pode desempenhar o papel de parafusadeira, mas essa confusão costuma resultar em parafusos espanados ou peças danificadas (se quiser saber mais sobre as diferenças, veja o nosso artigo sobre <a href="/qual-a-diferenca-entre-parafusadeira-e-furadeira" className="text-blue-600 hover:underline font-medium">qual a diferença entre parafusadeira e furadeira</a>).
+          Muitos iniciantes acreditam que qualquer furadeira pode desempenhar o papel de parafusadeira, mas essa confusão costuma resultar em parafusos espanados ou peças danificadas (se quiser saber mais sobre as diferenças, veja o nosso artigo sobre <a href="/qual-a-diferenca-entre-parafusadeira-e-furadeira/" className="text-blue-600 hover:underline font-medium">qual a diferença entre parafusadeira e furadeira</a>).
         </>,
         "A distinção fundamental reside em dois pilares técnicos: o reverso e a embreagem. Uma parafusadeira possui controle de giro (horário e anti-horário), permitindo tanto o aperto quanto a remoção de parafusos, enquanto furadeiras comuns são limitadas a uma rotação contínua.",
         "Mais crucial ainda é o sistema de embreagem. Enquanto a furadeira prioriza a velocidade para perfurar, a parafusadeira conta com um ajuste de torque que interrompe a rotação assim que o parafuso atinge a profundidade ideal.",

@@ -74,7 +74,7 @@ export const ComoFurarParedeDeConcretoComFuradeira = () => {
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Furadeira para concreto</h2>
             <p className="mb-6">
-              Escolher a <a href="/melhor-furadeira" className="text-blue-600 hover:underline font-medium">melhor furadeira</a> para furar concreto com eficiência é fundamental.
+              Escolher a <a href="/melhor-furadeira/" className="text-blue-600 hover:underline font-medium">melhor furadeira</a> para furar concreto com eficiência é fundamental.
               <br /><br />
               As furadeiras de impacto são indicadas, pois combinam rotação e golpes, facilitando a perfuração em materiais duros.
               <br /><br />

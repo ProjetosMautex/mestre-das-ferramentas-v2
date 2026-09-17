@@ -81,7 +81,7 @@ export const ComoTirarParafusoEspanadoComParafusadeira = () => {
 
             <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">1. Use uma parafusadeira elétrica com controle de torque</h3>
             <p className="mb-6">
-              Use uma <a href="/melhor-furadeira-e-parafusadeira" className="text-blue-600 hover:underline font-medium">boa furadeira e parafusadeira</a> com controle de torque para evitar espanamento: ajuste a força ao apertar ou remover parafusos.
+              Use uma <a href="/melhor-furadeira-e-parafusadeira/" className="text-blue-600 hover:underline font-medium">boa furadeira e parafusadeira</a> com controle de torque para evitar espanamento: ajuste a força ao apertar ou remover parafusos.
             </p>
             <p className="mb-6">
               Escolha broca do tipo e tamanho corretos para encaixe perfeito, evitando danos.

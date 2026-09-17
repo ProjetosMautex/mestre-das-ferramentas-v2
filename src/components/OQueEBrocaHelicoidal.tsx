@@ -140,7 +140,7 @@ export const OQueEBrocaHelicoidal: React.FC = () => {
 
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>Selecionar a broca ideal exige analisar o binômio material versus velocidade. Inicie verificando a dureza da superfície: enquanto metais exigem ligas de cobalto ou revestimento de nitreto de titânio para suportar o calor, madeiras pedem brocas de aço carbono com geometria de corte afiada para as fibras não rasgarem.</p>
-              <p>Nunca ignore a compatibilidade com sua ferramenta principal. Entender <a href="/como-escolher-furadeira" className="text-blue-600 hover:underline">como escolher furadeira</a> de maneira adequada garante que você tenha um mandril confiável e compatível com a precisão exigida pela broca.</p>
+              <p>Nunca ignore a compatibilidade com sua ferramenta principal. Entender <a href="/como-escolher-furadeira/" className="text-blue-600 hover:underline">como escolher furadeira</a> de maneira adequada garante que você tenha um mandril confiável e compatível com a precisão exigida pela broca.</p>
               <p>Mandris de baixa qualidade em ferramentas manuais podem exigir brocas de haste cilíndrica simples, mas aplicações industriais frequentes pedem encaixes tipo cone morse para máxima estabilidade.</p>
               <p>Observe a embalagem técnica e busque ferramentas que sigam normas de qualidade reconhecidas. Optar pela especificação correta elimina vibrações indesejadas e impede que o esforço mal direcionado cause a quebra prematura da ponta.</p>
             </div>

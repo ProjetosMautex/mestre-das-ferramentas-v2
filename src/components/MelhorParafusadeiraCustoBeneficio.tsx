@@ -902,7 +902,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
               <p>Olha só: optar por aquela parafusadeira de feira que custa o troco do pão sempre sai caro. O gatilho costuma travar na primeira porta que você tenta arrumar, ou a bateria decide "morrer" justo no meio do serviço.</p>
               <p>O valor real de uma ferramenta decente não está apenas na força bruta do motor, mas em não te deixar estressado no final de semana. Equipamentos de boas marcas te entregam <strong>controle de torque</strong> de verdade, o que impede danos ao móvel novo.</p>
               <p>Você não ganha só rapidez, ganha a segurança de conseguir fazer consertos que, antigamente, você pagaria o triplo chamando um profissional. Basicamente, é uma ferramenta que se paga sozinha logo na primeira reforma da sua sala.</p>
-              <p>Se você precisa de parafusadeiras melhores e de nível profissional para encarar qualquer desafio, vale a pena ler o nosso artigo sobre a <a href="/melhor-parafusadeira" className="text-blue-600 hover:underline font-medium">melhor parafusadeira</a> do mercado.</p>
+              <p>Se você precisa de parafusadeiras melhores e de nível profissional para encarar qualquer desafio, vale a pena ler o nosso artigo sobre a <a href="/melhor-parafusadeira/" className="text-blue-600 hover:underline font-medium">melhor parafusadeira</a> do mercado.</p>
             </div>
           </section>
 

@@ -82,7 +82,7 @@ export const CategoryParafusadeiras: React.FC = () => {
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
         <div className="mb-8">
           <a 
-            href="/blog"
+            href="/blog/"
             className="inline-flex items-center text-[#1a1a1a] font-bold hover:underline decoration-[#FFD700] decoration-2 underline-offset-4 mb-6 transition-all"
           >
             <ChevronLeft className="mr-1 w-4 h-4" /> Voltar para categorias

@@ -32,9 +32,9 @@ export const Header: React.FC = () => {
 
   const menuItems = [
     { label: 'Página Inicial', href: '/' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Sobre', href: '/sobre-nos' },
-    { label: 'Contato', href: '/contato' },
+    { label: 'Blog', href: '/blog/' },
+    { label: 'Sobre', href: '/sobre-nos/' },
+    { label: 'Contato', href: '/contato/' },
   ];
 
   return (

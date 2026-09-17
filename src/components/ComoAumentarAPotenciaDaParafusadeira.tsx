@@ -104,7 +104,7 @@ export const ComoAumentarAPotenciaDaParafusadeira = () => {
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Quando Vale a Pena Trocar a Parafusadeira?</h2>
             <p className="mb-6">
               Trocar a parafusadeira vale quando ela demora para completar tarefas, a bateria não segura carga, o ruído aumenta ou há problemas de rotação e torque.<br /><br />
-              Para trabalhos leves, modelos simples bastam; para uso frequente e intenso, prefira <a href="/melhor-parafusadeira-20v" className="text-blue-600 hover:underline font-medium">parafusadeiras de 20V</a>.<br /><br />
+              Para trabalhos leves, modelos simples bastam; para uso frequente e intenso, prefira <a href="/melhor-parafusadeira-20v/" className="text-blue-600 hover:underline font-medium">parafusadeiras de 20V</a>.<br /><br />
               Profissionais devem escolher modelos brushless de marcas reconhecidas.<br /><br />
               Atualizar para ferramentas com melhores ajustes de torque e ergonomia aumenta eficiência e conforto.<br /><br />
               Muitas vezes é mais econômico substituir uma ferramenta limitada do que tentar elevar sua potência.<br /><br />

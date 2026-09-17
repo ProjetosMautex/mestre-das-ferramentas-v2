@@ -95,8 +95,8 @@ export const Footer: React.FC = () => {
             <p>&copy; 2026 Projetos Mautex. Todos os direitos reservados.</p>
           </div>
           <div className="flex space-x-6">
-            <a href="/termos-de-uso" className="hover:text-[#FFD700] transition-colors">Termos de Uso</a>
-            <a href="/politica-de-privacidade" className="hover:text-[#FFD700] transition-colors">Políticas de Privacidade</a>
+            <a href="/termos-de-uso/" className="hover:text-[#FFD700] transition-colors">Termos de Uso</a>
+            <a href="/politica-de-privacidade/" className="hover:text-[#FFD700] transition-colors">Políticas de Privacidade</a>
           </div>
         </div>
       </div>

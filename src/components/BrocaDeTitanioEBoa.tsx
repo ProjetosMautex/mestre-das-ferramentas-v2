@@ -331,7 +331,7 @@ export const BrocaDeTitanioEBoa: React.FC = () => {
                 <p>
                   Deixe a geometria da broca fazer o corte, iniciando a furação em rotação bem baixa e cautelosa.
                   Troque os acessórios corretamente ao passar de uma alvenaria pesada para um azulejo de parede.
-                  Forçar uma broca errada ou não <a href="/como-escolher-furadeira" className="text-blue-600 hover:underline">saber como escolher furadeira</a> ideal, inutiliza sua peça instantaneamente.
+                  Forçar uma broca errada ou não <a href="/como-escolher-furadeira/" className="text-blue-600 hover:underline">saber como escolher furadeira</a> ideal, inutiliza sua peça instantaneamente.
                 </p>
               </div>
             </div>

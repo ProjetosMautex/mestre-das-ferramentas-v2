@@ -8,31 +8,31 @@ export interface Article {
 export const articles: Article[] = [
   {
     title: "9 Melhores Parafusadeiras 2026: Bosch, DeWalt ou Outra?",
-    url: "/melhor-parafusadeira",
+    url: "/melhor-parafusadeira/",
     image: "/images/blog/melhor-parafusadeira/melhor-parafusadeira.webp",
     excerpt: "Compare as 9 melhores parafusadeiras de 2026 com testes reais, potência, bateria e custo-benefício. Veja qual vale mais a pena antes de comprar."
   },
   {
     title: "9 Melhores Furadeiras de 2026: Bosch, Makita, DeWalt ou Outra?",
-    url: "/melhor-furadeira",
+    url: "/melhor-furadeira/",
     image: "/images/blog/melhor-furadeira/melhor-furadeira.webp",
     excerpt: "Cansado de furos malfeitos e ferramentas que te deixam na mão? Descubra a furadeira ideal para seus projetos e diga adeus à frustração!"
   },
   {
     title: "8 Melhores Parafusadeira Custo-Benefício 2026: Bosch, WAP ou Outra?",
-    url: "/melhor-parafusadeira-custo-beneficio",
+    url: "/melhor-parafusadeira-custo-beneficio/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/melhor-parafusadeira-custo-beneficio.webp",
     excerpt: "Não compre no escuro. Analisamos as parafusadeiras que realmente entregam potência sem cobrar uma fortuna."
   },
   {
     title: "9 Melhores Furadeira e Parafusadeira 2026: Bosch, DeWalt ou Outra?",
-    url: "/melhor-furadeira-e-parafusadeira",
+    url: "/melhor-furadeira-e-parafusadeira/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-furadeira-e-parafusadeira.webp",
     excerpt: "Cansado de furadeiras fracas? Descubra AGORA a furadeira e parafusadeira ideal para e turbine seus projetos! Clique e acerte na escolha!"
   },
   {
     title: "8 Melhores Marcas de Furadeira em 2026: Bosch, Makita, DeWalt ou Outra?",
-    url: "/melhores-marcas-de-furadeira",
+    url: "/melhores-marcas-de-furadeira/",
     image: "/images/blog/melhores-marcas-de-furadeira/melhores-marcas-de-furadeira.webp",
     excerpt: "Qual a melhor furadeira para você? Descubra as marcas que unem força, precisão e durabilidade. Guia essencial para não errar na escolha!"
   },
@@ -44,643 +44,643 @@ export const articles: Article[] = [
   },
   {
     title: "Parafusadeira WAP é boa? Testei os principais modelos",
-    url: "/parafusadeira-wap-e-boa",
+    url: "/parafusadeira-wap-e-boa/",
     image: "/images/blog/melhor-furadeira/parafusadeira-wap-e-boa.webp",
     excerpt: "O mercado de ferramentas elétricas está repleto de opções, e as parafusadeiras WAP se destacam como uma escolha popular entre os entusiastas do DIY e profissionais."
   },
   {
     title: "Top 8 Melhores Bits para Parafusadeira — testei Bosch, DeWalt e mais",
-    url: "/melhor-bits-para-parafusadeira",
+    url: "/melhor-bits-para-parafusadeira/",
     image: "/images/blog/melhor-furadeira/melhor-bits-para-parafusadeira.webp",
     excerpt: "Escolher os bits certos para sua parafusadeira pode fazer toda a diferença na hora de enfrentar um projeto de bricolagem."
   },
   {
     title: "Melhor Parafusadeira 20V: top 10 modelos testados em 2026",
-    url: "/melhor-parafusadeira-20v",
+    url: "/melhor-parafusadeira-20v/",
     image: "/images/blog/melhor-furadeira/melhor parafusadeira 20V.webp",
     excerpt: "Se você está em busca de uma parafusadeira 20V que ofereça potência e praticidade, descubra opções que aliam qualidade e desempenho."
   },
   {
     title: "Parafusadeira Vonder é boa? Testei e te conto se vale a pena",
-    url: "/parafusadeira-vonder-e-boa",
+    url: "/parafusadeira-vonder-e-boa/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/parafusadeira-vonder-e-boa_.webp",
     excerpt: "Se você está em busca de uma parafusadeira que entregue eficiência e não deixe seu bolso vazio, talvez já tenha ouvido falar da Vonder."
   },
   {
     title: "Furadeira e Parafusadeira WAP 21V é boa? Testei e te conto tudo",
-    url: "/furadeira-e-parafusadeira-wap-21v-e-boa",
+    url: "/furadeira-e-parafusadeira-wap-21v-e-boa/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/furadeira-e-parafusadeira-wap-21v-e-boa_.webp",
     excerpt: "Se você está procurando uma ferramenta versátil para suas tarefas de bricolagem, a furadeira e parafusadeira WAP 21V pode ser uma opção interessante."
   },
   {
     title: "9 Melhores Jogos de Brocas em 2026, quais realmente valem a pena",
-    url: "/melhor-jogo-de-brocas",
+    url: "/melhor-jogo-de-brocas/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-jogo-de-brocas.webp",
     excerpt: "Os jogos de brocas estão conquistando cada vez mais espaço entre os fãs de ação, estratégia e desafios envolventes."
   },
   {
     title: "As 9 Melhores Brocas para Madeira em 2026 (Furam Rápido e com Precisão)",
-    url: "/melhor-broca-para-madeira",
+    url: "/melhor-broca-para-madeira/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-broca-para-madeira_.webp",
     excerpt: "Escolher a broca certa para trabalhar com madeira pode fazer toda a diferença em seus projetos. Com tantas opções disponíveis no mercado, encontrar a ferramenta ideal que fure rápido e com precisão é essencial."
   },
   {
     title: "Top 10 Melhores Brocas para Ferro e Aço em 2026 (Aço Rápido, Copo e mais)",
-    url: "/melhor-broca-para-ferro",
+    url: "/melhor-broca-para-ferro/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-broca-para-ferro.webp",
     excerpt: "Escolher a broca certa para trabalhar com ferro e aço pode ser um desafio, especialmente com tantas opções disponíveis no mercado."
   },
   {
     title: "Como destravar uma parafusadeira (passo a passo simples e rápido)",
-    url: "/como-destravar-parafusadeira",
+    url: "/como-destravar-parafusadeira/",
     image: "/images/blog/melhor-furadeira/como-destravar-parafusadeira.webp",
     excerpt: "Se você já se deparou com uma parafusadeira travada no meio de um projeto, sabe como isso pode ser frustrante. O bom é que essa situação é mais comum do que parece e, na maioria das vezes, tem solução simples."
   },
   {
     title: "As 9 Melhores Parafusadeiras DeWalt em 2026: Modelos testados e aprovados",
-    url: "/melhor-parafusadeira-dewalt",
+    url: "/melhor-parafusadeira-dewalt/",
     image: "/images/blog/melhor-furadeira/Melhor-parafusadeira-dewalt.webp",
     excerpt: "Descubra qual é a melhor parafusadeira DeWalt e escolha o modelo ideal para o seu tipo de projeto."
   },
   {
     title: "Parafusadeira 12V ou 20V: qual é melhor? Testei e explico a diferença real",
-    url: "/qual-a-melhor-parafusadeira-12v-ou-20v",
+    url: "/qual-a-melhor-parafusadeira-12v-ou-20v/",
     image: "/images/blog/melhor-furadeira/Qual-a-melhor-parafusadeira-12v-ou-20v.webp",
     excerpt: "Se você está em busca da parafusadeira ideal para suas necessidades, provavelmente já se deparou com a dúvida entre modelos de 12V e 20V."
   },
   {
     title: "Como usar uma Parafusadeira do jeito certo (guia simples e rápido)",
-    url: "/como-usar-parafusadeira",
+    url: "/como-usar-parafusadeira/",
     image: "/images/blog/melhor-furadeira/como-usar-parafusadeira.webp",
     excerpt: "Se você já se deparou com a necessidade de montagens ou reparos em casa, provavelmente pensou na praticidade de uma parafusadeira."
   },
   {
     title: "Como Usar Furadeira: Guia Simples para Quem Está Começando",
-    url: "/como-usar-furadeira",
+    url: "/como-usar-furadeira/",
     image: "/images/blog/melhor-furadeira/como-usar-furadeira.webp",
     excerpt: "Se você está começando a se aventurar em projetos de bricolagem, aprender a usar uma furadeira é essencial."
   },
   {
     title: "Como escolher parafusadeira: veja dicas para acertar",
-    url: "/como-escolher-parafusadeira",
+    url: "/como-escolher-parafusadeira/",
     image: "/images/blog/melhor-furadeira/Como-escolher-parafusadeira.webp",
     excerpt: "Escolher a parafusadeira ideal pode parecer um desafio, especialmente com tantas opções disponíveis no mercado."
   },
   {
     title: "Qual a melhor parafusadeira: Bosch ou DeWalt? Comparativo completo",
-    url: "/qual-a-melhor-parafusadeira-bosch-ou-dewalt",
+    url: "/qual-a-melhor-parafusadeira-bosch-ou-dewalt/",
     image: "/images/blog/melhor-furadeira/Qual-a-melhor-parafusadeira-bosch-ou-dewalt.webp",
     excerpt: "Na hora de escolher uma parafusadeira, as marcas Bosch e DeWalt costumam estar entre as preferidas dos consumidores. Mas afinal, qual delas realmente se destaca?"
   },
   {
     title: "Como furar madeira com parafusadeira (passo a passo simples e seguro)",
-    url: "/como-furar-madeira-com-parafusadeira",
+    url: "/como-furar-madeira-com-parafusadeira/",
     image: "/images/blog/melhor-furadeira/Como-furar-madeira-com-parafusadeira.webp",
     excerpt: "Furar madeira pode parecer uma tarefa complicada, mas com as ferramentas adequadas e um pouco de orientação, você pode fazê-lo de forma simples e segura."
   },
   {
     title: "Como tirar parafuso espanado com parafusadeira (guia rápido e fácil)",
-    url: "/como-tirar-parafuso-espanado-com-parafusadeira",
+    url: "/como-tirar-parafuso-espanado-com-parafusadeira/",
     image: "/images/blog/melhor-furadeira/como-tirar-parafuso-espanado-com-parafusadeira.webp",
     excerpt: "Lidar com um parafuso espanado pode ser frustrante. Aprenda técnicas simples para remover parafusos danificados de forma eficiente usando uma parafusadeira."
   },
   {
     title: "Como tirar e trocar a bateria da parafusadeira — guia rápido e seguro",
-    url: "/como-tirar-a-bateria-da-parafusadeira",
+    url: "/como-tirar-a-bateria-da-parafusadeira/",
     image: "/images/blog/melhor-furadeira/como-tirar-a-bateria-da-parafusadeira.webp",
     excerpt: "Se você possui uma parafusadeira, sabe que a bateria é um componente essencial para o seu funcionamento. Aprenda passo a passo como remover e substituir a bateria da sua parafusadeira."
   },
   {
     title: "Como usar furadeira com parafusadeira: guia simples para não errar",
-    url: "/como-usar-furadeira-com-parafusadeira",
+    url: "/como-usar-furadeira-com-parafusadeira/",
     image: "/images/blog/melhor-furadeira/como-usar-furadeira-com-parafusadeira.webp",
     excerpt: "Se você já se deparou com a necessidade de montar um móvel ou fazer uma pequena reforma em casa, provavelmente sentiu a dúvida na hora de usar a furadeira ou a parafusadeira."
   },
   {
     title: "Qual a Diferenca Entre Parafusadeira e Furadeira? Entenda de Uma Vez por Todas",
-    url: "/qual-a-diferenca-entre-parafusadeira-e-furadeira",
+    url: "/qual-a-diferenca-entre-parafusadeira-e-furadeira/",
     image: "/images/blog/melhor-furadeira/qual-a-diferenca-entre-parafusadeira-e-furadeira.webp",
     excerpt: "Apesar de parecerem semelhantes, cada uma tem suas funções específicas e características que atendem a diferentes necessidades."
   },
   {
     title: "Como Escolher uma Furadeira: O Que Realmente Importa",
-    url: "/como-escolher-furadeira",
+    url: "/como-escolher-furadeira/",
     image: "/images/blog/melhor-furadeira/como-escolher-furadeira.webp",
     excerpt: "Escolher uma furadeira pode parecer uma tarefa simples, mas a quantidade de modelos e características disponíveis no mercado pode deixar qualquer um confuso."
   },
   {
     title: "Torque para Parafusadeira: o que é, para que serve e qual o melhor",
-    url: "/qual-o-melhor-torque-para-parafusadeira",
+    url: "/qual-o-melhor-torque-para-parafusadeira/",
     image: "/images/blog/melhor-furadeira/Qual-o-melhor-torque-para-parafusadeira.webp",
     excerpt: "Descubra para que serve e qual o melhor torque para a parafusadeira"
   },
   {
     title: "Como usar a furadeira para colocar cortina: passo a passo simples e seguro",
-    url: "/como-usar-furadeira-para-colocar-cortina",
+    url: "/como-usar-furadeira-para-colocar-cortina/",
     image: "/images/blog/melhor-furadeira/como-usar-furadeira-para-colocar-cortina_.webp",
     excerpt: "Instalar cortinas pode parecer uma tarefa complicada, mas com a ferramenta certa e um guia simples, você pode transformar qualquer ambiente rapidamente."
   },
   {
     title: "Como furar parede com furadeira: guia simples para não errar",
-    url: "/como-furar-parede-com-furadeira",
+    url: "/como-furar-parede-com-furadeira/",
     image: "/images/blog/melhor-furadeira/Como-furar-parede-com-furadeira.webp",
     excerpt: "Furar uma parede pode parecer uma tarefa simples, mas é preciso ter cuidado para evitar danos e frustrações."
   },
   {
     title: "Como furar parede de concreto com furadeira: passo a passo simples e seguro",
-    url: "/como-furar-parede-de-concreto-com-furadeira",
+    url: "/como-furar-parede-de-concreto-com-furadeira/",
     image: "/images/blog/melhor-furadeira/como-furar-parede-de-concreto-com-furadeira.webp",
     excerpt: "Furar uma parede de concreto pode parecer uma tarefa desafiadora, mas com a ferramenta certa e algumas orientações, você pode realizar essa tarefa de forma rápida e segura."
   },
   {
     title: "Como usar serra copo na furadeira: guia simples para não errar",
-    url: "/como-usar-serra-copo-na-furadeira",
+    url: "/como-usar-serra-copo-na-furadeira/",
     image: "/images/blog/melhor-furadeira/como-usar-serra-copo-na-furadeira.webp",
     excerpt: "Usar uma serra copo na furadeira pode parecer desafiador, mas com algumas orientações básicas, você pode fazer isso de maneira simples e eficaz."
   },
   {
     title: "Como saber se a furadeira é 110 ou 220? Guia rápido e seguro",
-    url: "/como-saber-se-a-furadeira-e-110-ou-220",
+    url: "/como-saber-se-a-furadeira-e-110-ou-220/",
     image: "/images/blog/melhor-furadeira/como-saber-se-a-furadeira-e-110-ou-220_.webp",
     excerpt: "Escolher a furadeira certa pode ser um desafio, especialmente quando se trata de saber se ela é 110 or 220 volts."
   },
   {
     title: "Como saber se a Parafusadeira DeWalt é original? Guia rápido com sinais reais",
-    url: "/como-saber-se-a-parafusadeira-dewalt-e-original",
+    url: "/como-saber-se-a-parafusadeira-dewalt-e-original/",
     image: "/images/blog/melhor-furadeira/Como-saber-se-a-parafusadeira-dewalt-e-original.webp",
     excerpt: "Com tantas opções no mercado, garantir que sua parafusadeira DeWalt é realmente original pode ser um desafio."
   },
   {
     title: "Como aumentar a potência da parafusadeira: Truques simples que funcionam",
-    url: "/como-aumentar-a-potencia-da-parafusadeira",
+    url: "/como-aumentar-a-potencia-da-parafusadeira/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/como-aumentar-a-potencia-da-parafusadeira_.webp",
     excerpt: "Se você já ficou na mão durante uma tarefa simples por causa da fraca potência da sua parafusadeira, sabe o quanto isso pode ser frustrante."
   },
   {
     title: "Como Tirar Rebite com Parafusadeira (Passo a Passo Simples e Seguro)",
-    url: "/como-tirar-rebite-com-parafusadeira",
+    url: "/como-tirar-rebite-com-parafusadeira/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/Como-tirar-rebite-com-parafusadeira.webp",
     excerpt: "Se você já se deparou com a necessidade de remover rebites e não sabe como, este guia é para você."
   },
   {
     title: "Parafusadeira a bateria ou elétrica: qual a melhor opção",
-    url: "/qual-melhor-compra-parafusadeira-a-bateria-ou-a-eletrica",
+    url: "/qual-melhor-compra-parafusadeira-a-bateria-ou-a-eletrica/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/qual-melhor-compra-parafusadeira-a-bateria-ou-a-eletrica.webp",
     excerpt: "Ao escolher uma parafusadeira, muitos se perguntam se a versão a bateria ou a elétrica é a melhor."
   },
   {
     title: "5 Melhores Mandris para Furadeira em 2026? Veja o tipo certo pra cada uso",
-    url: "/qual-melhor-mandril-para-furadeira",
+    url: "/qual-melhor-mandril-para-furadeira/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/qual-melhor-mandril-para-furadeira.webp",
     excerpt: "Escolher o mandril certo para sua furadeira pode fazer toda a diferença em seus projetos."
   },
   {
     title: "Parafusadeira Mondial é boa? Testei e conto se vale a pena",
-    url: "/parafusadeira-mondial-e-boa",
+    url: "/parafusadeira-mondial-e-boa/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/Parafusadeira-e-Furadeira-–-Mondial.webp",
     excerpt: "Nos últimos anos, as parafusadeiras se tornaram ferramentas essenciais para quem gosta de DIY ou precisa realizar reparos em casa."
   },
   {
     title: "8 Melhores Parafusadeiras Bosch em 2026: qual modelo vale mais a pena?",
-    url: "/melhor-parafusadeira-bosch",
+    url: "/melhor-parafusadeira-bosch/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/Melhor parafusadeira bosch.webp",
     excerpt: "Com a Bosch se consolidando como uma das principais marcas em parafusadeiras, é hora de conhecer os melhores modelos."
   },
   {
     title: "As 6 Melhores Furadeiras Makita em 2026: compare os modelos mais indicados",
-    url: "/melhor-furadeira-makita",
+    url: "/melhor-furadeira-makita/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-furadeira-makita_.webp",
     excerpt: "Se você está em busca de uma furadeira confiável e potente, as opções da Makita são sempre uma boa escolha."
   },
   {
     title: "Parafusadeira Nakasaki é boa? Testei e te conto se vale a pena",
-    url: "/parafusadeira-nakasaki-e-boa",
+    url: "/parafusadeira-nakasaki-e-boa/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/parafusadeira-nakasaki-e-boa_.webp",
     excerpt: "Se você está em busca de praticidade e eficiência para seus projetos de bricolagem, provavelmente já ouviu falar da parafusadeira Nakasaki."
   },
   {
     title: "Parafusadeira Deko é boa? Análise da marca",
-    url: "/parafusadeira-deko-e-boa",
+    url: "/parafusadeira-deko-e-boa/",
     image: "/images/blog/melhores-marcas-de-furadeira/parafusadeira deko é boa.webp",
     excerpt: "A Deko é uma marca que tem ganhado atenção no mercado de ferramentas manuais, especialmente por suas parafusadeiras. Descubra se vale a pena investir."
   },
   {
     title: "Furadeira e Parafusadeira Wesco é boa? Testei e conto se vale a pena",
-    url: "/furadeira-e-parafusadeira-wesco-e-boa",
+    url: "/furadeira-e-parafusadeira-wesco-e-boa/",
     image: "/images/blog/melhores-marcas-de-furadeira/furadeira-e-parafusadeira-wesco-e-boa.webp",
     excerpt: "Você já se perguntou se a furadeira e parafusadeira da Wesco são realmente boas? Com tantas opções no mercado, é compreensível ficar em dúvida sobre qual escolher."
   },
   {
     title: "Furadeira e Parafusadeira DWT é boa? Testei e conto se vale a pena",
-    url: "/furadeira-e-parafusadeira-dwt-e-boa",
+    url: "/furadeira-e-parafusadeira-dwt-e-boa/",
     image: "/images/blog/melhores-marcas-de-furadeira/furadeira-e-parafusadeira-dwt-e-boa.webp",
     excerpt: "Se você está em busca de ferramentas eficientes para suas tarefas de bricolagem, a furadeira e parafusadeira DWT pode ter chamado sua atenção."
   },
   {
     title: "Furadeira Tramontina é boa? Testei e conto se vale a pena",
-    url: "/furadeira-tramontina-e-boa",
+    url: "/furadeira-tramontina-e-boa/",
     image: "/images/blog/melhores-marcas-de-furadeira/furadeira-tramontina-e-boa.webp",
     excerpt: "Se você está em busca de uma furadeira que reúna qualidade e preço justo, com certeza já ouviu falar da Tramontina."
   },
   {
     title: "Parafusadeira Hammer é boa? Testei e conto se vale a pena",
-    url: "/parafusadeira-hammer-e-boa",
+    url: "/parafusadeira-hammer-e-boa/",
     image: "/images/blog/melhores-marcas-de-furadeira/parafusadeira-hammer-e-boa.webp",
     excerpt: "Se você está em busca de uma ferramenta confiável para facilitar seus projetos de montagem e reparo, a Parafusadeira Hammer pode ter chamado sua atenção."
   },
   {
     title: "Furadeira e Parafusadeira Philco é boa? Testei e conto se vale a pena",
-    url: "/furadeira-e-parafusadeira-philco-e-boa",
+    url: "/furadeira-e-parafusadeira-philco-e-boa/",
     image: "/images/blog/melhores-marcas-de-furadeira/furadeira-e-parafusadeira-philco-e-boa.webp",
     excerpt: "Se você está em busca de uma furadeira e parafusadeira que una qualidade e preço acessível, a Philco pode ser uma opção interessante."
   },
   {
     title: "Parafusadeira Stanley é boa? Testei e conto se vale a pena",
-    url: "/parafusadeira-stanley-e-boa",
+    url: "/parafusadeira-stanley-e-boa/",
     image: "/images/blog/melhores-marcas-de-furadeira/parafusadeira-stanley-e-boa.webp",
     excerpt: "Se você está em busca de uma ferramenta que facilite seu dia a dia em projetos de montagem e reparo, com certeza já se deparou com a Parafusadeira Stanley."
   },
   {
     title: "Furadeira Skil é boa? Testei e conto se vale a pena",
-    url: "/furadeira-skil-e-boa",
+    url: "/furadeira-skil-e-boa/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/furadeira-skil-e-boa_.webp",
     excerpt: "Nos dias de hoje, escolher a ferramenta certa pode fazer toda a diferença em um projeto. A Furadeira Skil tem se destacado no mercado, prometendo desempenho e praticidade."
   },
   {
     title: "10 Melhores Brocas para Concreto em 2026 análise das marcas mais duráveis",
-    url: "/melhor-broca-para-concreto",
+    url: "/melhor-broca-para-concreto/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/melhor-broca-para-concreto.webp",
     excerpt: "Com a evolução constante das ferramentas de construção, escolher a broca ideal para concreto pode fazer toda a diferença na sua obra ou projeto DIY."
   },
   {
     title: "As 9 Melhores Parafusadeiras 12V de 2026 (Bosch, WAP, Black+Decker e mais)",
-    url: "/melhor-parafusadeira-12v",
+    url: "/melhor-parafusadeira-12v/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/melhor-parafusadeira-12v.webp",
     excerpt: "As parafusadeiras 12V se destacam no mercado por sua combinação de potência e portabilidade, tornando-se indispensáveis para profissionais e entusiastas do Faça Você Mesmo."
   },
   {
     title: "8 Melhores Furadeiras Bosch em 2026: veja o modelo ideal para cada tipo de uso",
-    url: "/melhor-furadeira-bosch",
+    url: "/melhor-furadeira-bosch/",
     image: "/images/blog/melhor-parafusadeira/melhor furadeira bosch.webp",
     excerpt: "Escolher a furadeira certa pode fazer toda a diferença em um projeto, seja ele pequeno ou grande."
   },
   {
     title: "Furadeira Titanium é boa? Testei e te conto se vale a pena",
-    url: "/furadeira-titanium-e-boa",
+    url: "/furadeira-titanium-e-boa/",
     image: "/images/blog/melhores-marcas-de-furadeira/furadeira titanium é boa.webp",
     excerpt: "A Furadeira Titanium ganhou destaque no mercado, prometendo eficiência e durabilidade. Mas será que tudo isso se traduz em uma experiência prática satisfatória?"
   },
   {
     title: "Melhor Parafusadeira de Impacto: Top 8 modelos para comprar em 2026",
-    url: "/melhor-parafusadeira-de-impacto",
+    url: "/melhor-parafusadeira-de-impacto/",
     image: "/images/blog/melhor-parafusadeira/melhor-parafusadeira-de-impacto_.webp",
     excerpt: "Escolher a melhor parafusadeira de impacto pode fazer toda a diferença em seus projetos de DIY ou reforma. Descubra os 8 melhores modelos."
   },
   {
     title: "Parafusadeira Bosch GSR 1000 Smart é boa? Testei e digo se vale a pena",
-    url: "/parafusadeira-bosch-gsr-1000-smart-e-boa",
+    url: "/parafusadeira-bosch-gsr-1000-smart-e-boa/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/parafusadeira-bosch-gsr-1000-smart-e-boa.webp",
     excerpt: "A Bosch GSR 1000 Smart se apresenta como uma opção prática e acessível, mas será que realmente cumpre o que promete? Confira nosso teste."
   },
   {
     title: "Parafusadeira Bosch GSR 7-14E é boa? Testei e conto se vale a pena",
-    url: "/parafusadeira-bosch-gsr-7-14e-e-boa",
+    url: "/parafusadeira-bosch-gsr-7-14e-e-boa/",
     image: "/images/blog/melhor-parafusadeira/parafusadeira-bosch-gsr-7-14e-e-boa.webp",
     excerpt: "Se você está em busca de uma parafusadeira que seja prática e eficiente, a Bosch GSR 7-14E pode ter chamado sua atenção. Confira nossa análise."
   },
   {
     title: "Parafusadeira Vonder PFV 012 é boa? Testei e conto se vale a pena",
-    url: "/parafusadeira-vonder-pfv-012-e-boa",
+    url: "/parafusadeira-vonder-pfv-012-e-boa/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/ParafusadeiraFuradeira-Com-Bateria-PFV-012.webp",
     excerpt: "A parafusadeira Vonder PFV 012 promete facilitar o dia a dia de quem precisa de praticidade e desempenho. Confira nossa análise."
   },
   {
     title: "Furadeira Bosch 450W é boa? Testei e te conto se vale a pena",
-    url: "/furadeira-bosch-450w-e-boa",
+    url: "/furadeira-bosch-450w-e-boa/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/furadeira-bosch-450w-e-boa_.webp",
     excerpt: "Se você está em busca de uma furadeira que una potência e praticidade, provavelmente já ouviu falar da Furadeira Bosch 450W. Mas será que ela realmente cumpre o que promete?"
   },
   {
     title: "Furadeira Bosch GSB 550 RE é boa? Testei e te conto se vale a pena",
-    url: "/furadeira-bosch-550w-e-boa",
+    url: "/furadeira-bosch-550w-e-boa/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Furadeira Bosch 550W é Boa.webp",
     excerpt: "Você está em busca de uma furadeira que não comprometa a qualidade e ainda ofereça um bom custo-benefício? A Furadeira Bosch GSB 550 RE pode ser uma opção a considerar."
   },
   {
     title: "Furadeira Black+Decker 560W é boa? Testei e conto se vale a pena",
-    url: "/furadeira-bleken-decker-560w-e-boa",
+    url: "/furadeira-bleken-decker-560w-e-boa/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/furadeira-bleken-decker-560w-e-boa_.webp",
     excerpt: "Se você está em busca de uma furadeira que não decepcione em casa, a Black+Decker 560W pode ser uma opção a se considerar."
   },
   {
     title: "Furadeira Makita HP1640 é boa? Testei e te conto se vale a pena",
-    url: "/furadeira-makita-hp1640-e-boa",
+    url: "/furadeira-makita-hp1640-e-boa/",
     image: "/images/blog/melhor-furadeira-e-parafusadeira/Furadeira-Com-Impacto-12″-_HP16401-Makita.webp",
     excerpt: "Investir em ferramentas de qualidade é crucial para qualquer profissional ou entusiasta do “faça você mesmo”."
   },
   {
     title: "Como saber se a parafusadeira está carregada? 5 formas de verificar",
-    url: "/como-saber-se-a-parafusadeira-esta-carregada",
+    url: "/como-saber-se-a-parafusadeira-esta-carregada/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-saber-se-a-parafusadeira-esta-carregada_.webp",
     excerpt: "Verificar se a parafusadeira está carregada pode ser um passo crucial antes de começar um projeto."
   },
   {
     title: "Melhor Parafusadeira Brushless As 6 Campeãs de 2026 (Guia Real)",
-    url: "/melhor-parafusadeira-brushless",
+    url: "/melhor-parafusadeira-brushless/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/melhor-parafusadeira-brushless-capa.webp",
     excerpt: "Encontrar a parafusadeira ideal para cada tipo de trabalho pode ser um desafio, especialmente com tantas opções no mercado."
   },
   {
     title: "O que é uma parafusadeira brushless? Entenda por que ela é mais potente",
-    url: "/o-que-e-uma-parafusadeira-brushless",
+    url: "/o-que-e-uma-parafusadeira-brushless/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/O-que-e-uma-parafusadeira-brushless.webp",
     excerpt: "As parafusadeiras são ferramentas essenciais em diversos projetos. Entre elas, as versões brushless têm ganhado destaque por sua potência e eficiência."
   },
   {
     title: "Chave de Impacto vs Parafusadeira: qual a diferença e qual usar em cada trabalho?",
-    url: "/qual-a-diferenca-entre-chave-de-impacto-e-parafusadeira",
+    url: "/qual-a-diferenca-entre-chave-de-impacto-e-parafusadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/O-que-e-uma-parafusadeira-brushless-1.webp",
     excerpt: "Quando se trata de ferramentas elétricas, a chave de impacto e a parafusadeira são duas opções populares, mas com características distintas."
   },
   {
     title: "Guia para escolher a melhor bateria para parafusadeira",
-    url: "/melhor-bateria-para-parafusadeira",
+    url: "/melhor-bateria-para-parafusadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Melhor-bateria-para-parafusadeira.webp",
     excerpt: "Ao investir em uma parafusadeira, a escolha da bateria é um fator crucial que pode influenciar diretamente a sua experiência de uso."
   },
   {
     title: "Vale a pena comprar parafusadeira? Quando escolher furadeira ou parafusadeira",
-    url: "/vale-a-pena-comprar-parafusadeira",
+    url: "/vale-a-pena-comprar-parafusadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Vale-a-pena-comprar-parafusadeira.webp",
     excerpt: "Se você gosta de colocar a mão na massa e fazer pequenos reparos, as ferramentas certas fazem a diferença. Entenda se vale a pena."
   },
   {
     title: "Como tirar a broca da parafusadeira: passo a passo simples e rápido",
-    url: "/como-tirar-a-broca-da-parafusadeira",
+    url: "/como-tirar-a-broca-da-parafusadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Como-tirar-a-broca-da-parafusadeira.webp",
     excerpt: "Trocar a broca da parafusadeira pode parecer uma tarefa simples, mas muitos ainda ficam inseguros na hora de fazer isso. Descubra aqui."
   },
   {
     title: "Parafusadeira de Impacto O que é e para que serve na prática?",
-    url: "/o-que-e-parafusadeira-de-impacto",
+    url: "/o-que-e-parafusadeira-de-impacto/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/o-que-e-parafusadeira-de-impacto.webp",
     excerpt: "Se você já se perguntou como alguns profissionais conseguem fixar parafusos com tanta rapidez, descubra tudo sobre parafusadeiras de impacto."
   },
   {
     title: "Bits de Parafusadeira: o que são, para que servem e quais usar",
-    url: "/o-que-e-bits-de-parafusadeira",
+    url: "/o-que-e-bits-de-parafusadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/o-que-e-bits-de-parafusadeira.webp",
     excerpt: "Esses pequenos acessórios são essenciais para transformar a sua ferramenta em um verdadeiro canivete suíço para montagem e reparos."
   },
   {
     title: "Para que serve o carvão da furadeira? Entenda de forma simples e rápida",
-    url: "/para-que-serve-o-carvao-da-furadeira",
+    url: "/para-que-serve-o-carvao-da-furadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Para-que-serve-o-carvao-da-furadeira.webp",
     excerpt: "O carvão da furadeira é um componente muitas vezes ignorado, mas essencial para o funcionamento do equipamento. Entenda sua lógica."
   },
   {
     title: "O que significa L e R na furadeira? Guia simples e direto com exemplos",
-    url: "/o-que-significa-l-e-r-na-furadeira",
+    url: "/o-que-significa-l-e-r-na-furadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/o-que-significa-l-e-r-na-furadeira_.webp",
     excerpt: "Você pode ter notado letras como “L” e “R” nos botões da ferramenta. Entenda essas siglas e o funcionamento das direções de rotação."
   },
   {
     title: "Como trocar o carvão da furadeira: passo a passo simples e rápido",
-    url: "/como-trocar-o-carvao-da-furadeira",
+    url: "/como-trocar-o-carvao-da-furadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-trocar-o-carvao-da-furadeira_.webp",
     excerpt: "Trocar o carvão da furadeira pode parecer um desafio, mas na verdade é uma tarefa simples e rápida. Aprenda a fazê-lo e proteja sua ferramenta."
   },
   {
     title: "Função percutor na parafusadeira: o que é e para que serve?",
-    url: "/o-que-e-funcao-percutor-na-parafusadeira",
+    url: "/o-que-e-funcao-percutor-na-parafusadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/o-que-e-funcao-percutor-na-parafusadeira_-2.webp",
     excerpt: "Você já se perguntou o que faz a função percutor ser tão especial? Aprenda o que é essa função e veja como ela pode facilitar o seu dia a dia."
   },
   {
     title: "Tipos de parafusadeira: qual a ideal para cada trabalho?",
-    url: "/tipos-de-parafusadeira-qual-a-ideal-para-cada-trabalho",
+    url: "/tipos-de-parafusadeira-qual-a-ideal-para-cada-trabalho/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Tipos-de-parafusadeira-qual-a-ideal-para-cada-trabalho.webp",
     excerpt: "Com diferentes tipos disponíveis no mercado, é importante saber qual modelo se adapta melhor às suas necessidades."
   },
   {
     title: "Como polir carro com parafusadeira (Guia completo e simples)",
-    url: "/como-polir-carro-com-parafusadeira",
+    url: "/como-polir-carro-com-parafusadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Como-polir-carro-com-parafusadeira.webp",
     excerpt: "O polimento automotivo recupera o brilho da pintura. Descubra como polir seu carro em casa utilizando apenas a parafusadeira."
   },
   {
     title: "Como Trocar o Mandril da Furadeira (Passo a Passo Simples)",
-    url: "/como-trocar-o-mandril-da-furadeira",
+    url: "/como-trocar-o-mandril-da-furadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-trocar-o-mandril-da-furadeira_.webp",
     excerpt: "Trocar o mandril da furadeira pode parecer uma tarefa complexa, mas entenda neste guia como realizar este processo rapidamente sem dor de cabeça."
   },
   {
     title: "Segurança com Furadeira: Cuidados Essenciais para Evitar Acidentes",
-    url: "/seguranca-com-furadeira",
+    url: "/seguranca-com-furadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/seguranca-com-furadeira_.webp",
     excerpt: "Quando se trata de usar uma furadeira, a segurança deve ser a prioridade número um. Leia nossos protocolos e dicas essenciais."
   },
   {
     title: "Como diminuir o barulho da furadeira: Soluções simples que realmente funcionam",
-    url: "/como-diminuir-o-barulho-da-furadeira",
+    url: "/como-diminuir-o-barulho-da-furadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-diminuir-o-barulho-da-furadeira_.webp",
     excerpt: "O barulho da furadeira é um desafio. Neste artigo, apresentamos soluções práticas de redução sonora."
   },
   {
     title: "O que é e como funciona a furadeira de impacto? Explicação simples e prática",
-    url: "/como-funciona-furadeira-de-impacto",
+    url: "/como-funciona-furadeira-de-impacto/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-funciona-furadeira-de-impacto_.webp",
     excerpt: "A furadeira de impacto combina rotação e batidas, permitindo perfurações em materiais duros com extrema facilidade."
   },
   {
     title: "Como saber qual broca usar na furadeira: guia simples e direto",
-    url: "/como-saber-qual-broca-usar-na-furadeira",
+    url: "/como-saber-qual-broca-usar-na-furadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-saber-qual-broca-usar-na-furadeira.webp",
     excerpt: "Simplifique a sua escolha de brocas usando os diâmetros e materiais corretos para o tipo de operação que você deseja alcançar."
   },
   {
     title: "Furadeira com ou sem impacto? A diferença REAL que ninguém explica",
-    url: "/furadeira-com-ou-sem-impacto",
+    url: "/furadeira-com-ou-sem-impacto/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/furadeira-com-ou-sem-impacto_.webp",
     excerpt: "Qual é a real diferença na usabilidade de furadeiras de impacto contra variantes rotacionais limpas? Entenda neste artigo."
   },
   {
     title: "Qual a diferença entre furadeira de impacto e martelete? Explicado de forma simples",
-    url: "/qual-a-diferenca-entre-furadeira-de-impacto-e-martelete",
+    url: "/qual-a-diferenca-entre-furadeira-de-impacto-e-martelete/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/qual-a-diferenca-entre-furadeira-de-impacto-e-martelete_.webp",
     excerpt: "Saiba definitivamente como distinguir e quando exatamente usar marteletes complexos vs furadeiras de impacto diárias."
   },
   {
     title: "Mandril 1/2 ou 3/8: qual é o melhor? Veja a diferença real na prática",
-    url: "/qual-o-melhor-mandril-1-2-ou-3-8",
+    url: "/qual-o-melhor-mandril-1-2-ou-3-8/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/qual-o-melhor-mandril-1-2-ou-3-8_.webp",
     excerpt: "Diferencie os tipos de mandril 1/2 e 3/8 para domar suas perfurações pesadas ou em espaços apertados de vez por todas."
   },
   {
     title: "Como furar azulejo com furadeira Modo prático e rápido",
-    url: "/como-furar-azulejo-com-furadeira",
+    url: "/como-furar-azulejo-com-furadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-furar-azulejo-com-furadeira.webp",
     excerpt: "Guia extenso com todo o processo, dicas de segurança e passo-a-passo de brocas corretas para furar o seu azulejo e evitar fissuras."
   },
   {
     title: "Móveis que da para fazer com a furadeira e parafusadeira",
-    url: "/moveis-que-da-para-fazer-com-a-furadeira-e-parafusadeira",
+    url: "/moveis-que-da-para-fazer-com-a-furadeira-e-parafusadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/Moveis-que-da-para-fazer-com-a-furadeira-e-parafusadeira.webp",
     excerpt: "Você pode decorar a casa inteira e criar móveis do zero gastando pouco usando suas ferramentas. Confira dicas de materiais e construções geniais."
   },
   {
     title: "Como Furar Vidro com Furadeira Passo a Passo Sem Quebrar",
-    url: "/como-furar-vidro-com-furadeira",
+    url: "/como-furar-vidro-com-furadeira/",
     image: "/images/blog/melhor-parafusadeira-custo-beneficio/como-furar-vidro-com-furadeira.webp",
     excerpt: "Sem quebras nem cortes: entenda exatamente qual broca e velocidade deve ser aplicada por você na furadeira ao adentrar painéis de vidro."
   },
   {
     title: "Melhor Parafusadeira para Montar Móveis (Sem Estragar MDF)",
-    url: "/melhor-parafusadeira-para-montar-moveis",
+    url: "/melhor-parafusadeira-para-montar-moveis/",
     image: "/images/blog/melhor parafusadeira para montar moveis.webp",
     excerpt: "A escolha da parafusadeira adequada é crucial para evitar complicações comuns na montagem de móveis, garantindo precisão e segurança no acabamento."
   },
   {
     title: "9 Melhores Parafusadeiras de Drywall em 2026",
-    url: "/melhor-parafusadeira-para-drywall",
+    url: "/melhor-parafusadeira-para-drywall/",
     image: "/images/blog/melhor parafusadeira para drywall.webp",
     excerpt: "Cansado de retrabalho no drywall? Descubra como escolher a parafusadeira ideal, evite erros no gesso e eleve a qualidade do seu acabamento profissional."
   },
   {
     title: "4 Melhores Mini Furadeiras para Artesanato (2026) | Mestre das Ferramentas",
-    url: "/qual-a-melhor-furadeira-para-artesanato",
+    url: "/qual-a-melhor-furadeira-para-artesanato/",
     image: "/images/blog/1/qual a melhor furadeira para artesanato.webp",
     excerpt: "Descubra como escolher a mini furadeira ideal para elevar o nível das suas peças artesanais com precisão."
   },
   {
     title: "Como Cortar Drywall e Gesso Usando sua Furadeira",
-    url: "/cortar-gesso-com-furadeira",
+    url: "/cortar-gesso-com-furadeira/",
     image: "/images/blog/1/cortar gesso com furadeira_.webp",
     excerpt: "Cansado de furos imprecisos em drywall? Aprenda como usar a serra circular reajustável para obter cortes perfeitos, economizar tempo e elevar o nível da sua obra."
   },
   {
     title: "Pode furar drywall com furadeira? Sim! Veja o que precisa",
-    url: "/pode-furar-drywall-com-furadeira",
+    url: "/pode-furar-drywall-com-furadeira/",
     image: "/images/blog/1/pode-furar-drywall-com-furadeira.webp",
     excerpt: "Pode furar drywall com furadeira? Aprenda o método definitivo para fixar quadros e prateleiras com segurança, sem danificar sua parede. Confira nossas dicas!"
   },
   {
     title: "Qual Broca Usar para Furar Drywall? Descubra a Ideal",
-    url: "/qual-broca-usar-para-furar-drywall",
+    url: "/qual-broca-usar-para-furar-drywall/",
     image: "/images/blog/1/qual-broca-usar-para-furar-drywall.webp",
     excerpt: "Cansado de danificar o drywall ao tentar fixar objetos? Descubra a broca ideal e as técnicas de especialista para furos perfeitos e sem rachaduras."
   },
   {
     title: "Pode usar bateria 18V em parafusadeira 12V? Descubra os riscos",
-    url: "/pode-usar-bateria-18v-em-parafusadeira-12v",
+    url: "/pode-usar-bateria-18v-em-parafusadeira-12v/",
     image: "/images/blog/1/Pode usar Bateria 18v em Parafusadeira 12v.webp",
     excerpt: "Será que pode usar bateria 18V em uma parafusadeira 12V? Descubra os riscos reais, o que acontece com o motor e como aumentar a potência com segurança."
   },
   {
     title: "8 Melhores Afiadores de Broca Guia de Compra Completo",
-    url: "/melhor-afiador-de-broca",
+    url: "/melhor-afiador-de-broca/",
     image: "/images/blog/1/melhor afiador de broca.webp",
     excerpt: "Percebeu que suas brocas já não perfuram com a mesma eficiência de antes? O desgaste é natural, mas descartá-las prematuramente pode gerar um custo desnecessário."
   },
   {
     title: "Como Afiar Brocas e Deixá-las Novas em Minutos",
-    url: "/como-afiar-brocas",
+    url: "/como-afiar-brocas/",
     image: "/images/blog/1/como-afiar-brocas.webp",
     excerpt: "Cansado de desperdiçar dinheiro com brocas cegas? Aprenda a técnica definitiva para restaurar o corte e aumentar a precisão das suas furações hoje mesmo."
   },
   {
     title: "Como Escolher a Broca e Bucha Certa (Sem Errar)",
-    url: "/que-broca-e-bucha-eu-uso-na-parede",
+    url: "/que-broca-e-bucha-eu-uso-na-parede/",
     image: "/images/blog/1/Que broca e bucha eu uso na parede.webp",
     excerpt: "Cansado de prateleiras bambas ou furos que esfarelam? Aprenda a escolher a broca e bucha ideais para cada parede e garanta uma fixação segura e definitiva."
   },
   {
     title: "O Que é Broca de Vídea? Entenda Para que Serve e Como Usar",
-    url: "/o-que-e-broca-de-videa",
+    url: "/o-que-e-broca-de-videa/",
     image: "/images/blog/1/o que é broca de videa.webp",
     excerpt: "Descubra o que é a broca de vídea, como identificá-la e por que ela é essencial para perfurar paredes e concreto com segurança e precisão técnica."
   },
   {
     title: "O que é Broca Helicoidal? Guia Rápido e Prático",
-    url: "/o-que-e-broca-helicoidal",
+    url: "/o-que-e-broca-helicoidal/",
     image: "/images/blog/1/o que é broca helicoidal.webp",
     excerpt: "Cansado de furos imprecisos e brocas que quebram? Entenda por que a broca helicoidal é a chave para perfurações perfeitas e como escolher a ideal."
   },
   {
     title: "Diferença Entre Broca SDS e HSS Saiba Qual Usar",
-    url: "/o-que-sao-as-brocas-sds-e-hss-e-qual-e-a-diferenca-entre-elas",
+    url: "/o-que-sao-as-brocas-sds-e-hss-e-qual-e-a-diferenca-entre-elas/",
     image: "/images/blog/1/O que são as brocas SDS e HSS E qual é a diferença entre elas.webp",
     excerpt: "Ainda confunde broca SDS e HSS? Entenda de vez a diferença entre elas e escolha a ferramenta certa para não comprometer seu projeto ou seu bolso."
   },
   {
     title: "O que é Broca de Aço Rápido? Para que Serve?",
-    url: "/o-que-e-broca-de-aco-rapido",
+    url: "/o-que-e-broca-de-aco-rapido/",
     image: "/images/blog/1/o que é broca de aço rapido.webp",
     excerpt: "Cansado de brocas que perdem o corte e estragam peças? Descubra por que a broca de aço rápido é a escolha definitiva para precisão e durabilidade técnica."
   },
   {
     title: "O que é Broca Escalonada e Por Que Você Precisa de Uma",
-    url: "/o-que-e-broca-escalonada",
+    url: "/o-que-e-broca-escalonada/",
     image: "/images/blog/1/o que é broca escalonada.webp",
     excerpt: "Cansado de furos imprecisos e retrabalho? Descubra por que a broca escalonada é o segredo dos profissionais para perfurações perfeitas, rápidas e sem rebarbas."
   },
   {
     title: "Parafusadeira Britânia é boa? Review da BPF01",
-    url: "/parafusadeira-britania-e-boa",
+    url: "/parafusadeira-britania-e-boa/",
     image: "/images/blog/1/parafusadeira-britania-e-boa.webp",
     excerpt: "A parafusadeira Britânia BPF01 vale o investimento? Descubra se ela resolve seus reparos domésticos e como prolongar a vida útil da sua ferramenta. Confira!"
   },
   {
     title: "Parafusadeira Britânia Hobby BPF03MF 12V é boa?",
-    url: "/parafusadeira-britania-hobby-bpf03mf-e-boa",
+    url: "/parafusadeira-britania-hobby-bpf03mf-e-boa/",
     image: "/images/blog/1/parafusadeira-britania-hobby-bpf03mf-e-boa.webp",
     excerpt: "A Britânia BPF03MF 12V entrega o que promete? Descubra todos os detalhes deste modelo e se vale a pena."
   },
   {
     title: "Furadeira Britânia 650W é boa? Descubra se vale a pena",
-    url: "/furadeira-britania-650w-e-boa",
+    url: "/furadeira-britania-650w-e-boa/",
     image: "/images/blog/1/furadeira-britania-650w-e-boa-capa.webp",
     excerpt: "A Furadeira Britânia 650W entrega o que promete? Conheça todos os detalhes, vantagens e descubra se ela é a escolha ideal para seus projetos e reparos em casa."
   },
   {
     title: "Broca de Titânio é Boa? Vale a Pena ou É Furada?",
-    url: "/broca-de-titanio-e-boa",
+    url: "/broca-de-titanio-e-boa/",
     image: "/images/blog/1/broca de titânio é boa.webp",
     excerpt: "Broca de titânio vale a pena? Descubra a verdade sobre durabilidade, custo-benefício e como escolher o kit ideal para acabamentos profissionais impecáveis."
   },
   {
     title: "Como furar ferro com furadeira: guia completo passo a passo",
-    url: "/como-furar-ferro-com-furadeira",
+    url: "/como-furar-ferro-com-furadeira/",
     image: "/images/blog/1/como%20furar%20ferro%20com%20furadeira.webp",
     excerpt: "Aprenda como furar ferro com furadeira de forma correta e segura. Conheça as melhores brocas, a técnica ideal e as dicas para não errar."
   },
   {
     title: "Não Erre Mais: Qual Bit Usar para Cada Parafuso?",
-    url: "/como-saber-qual-bit-usar-para-cada-parafuso",
+    url: "/como-saber-qual-bit-usar-para-cada-parafuso/",
     image: "/images/blog/1/como saber qual bit usar para cada parafuso.webp",
     excerpt: "Cansado de espanar parafusos? Aprenda a escolher o bit ideal para cada tarefa e transforme seus reparos domésticos em trabalhos de nível profissional."
   },
   {
     title: "O que é Furadeira Reversível e Por Que Você Precisa de Uma",
-    url: "/o-que-e-furadeira-reversivel",
+    url: "/o-que-e-furadeira-reversivel/",
     image: "/images/blog/1/o que é furadeira reversivel.webp",
     excerpt: "Cansado de parafusos espanados e brocas travadas? Entenda por que a furadeira reversível é a ferramenta definitiva para garantir precisão e agilidade."
   },
   {
     title: "12V vs 18V: Qual Parafusadeira é Melhor?",
-    url: "/Qual-a-diferenca-entre-parafusadeira-12V-e-18V",
+    url: "/Qual-a-diferenca-entre-parafusadeira-12V-e-18V/",
     image: "/images/blog/1/Qual a diferença entre parafusadeira 12V e 18V.webp",
     excerpt: "Ainda na dúvida entre 12V e 18V? Descubra como escolher a parafusadeira ideal para o seu perfil e evite gastos desnecessários com o equipamento errado."
   },
   {
     title: "Pode Deixar a Bateria na Parafusadeira? (O Erro Oculto)",
-    url: "/Pode-deixar-a-bateria-conectada-na-parafusadeira",
+    url: "/Pode-deixar-a-bateria-conectada-na-parafusadeira/",
     image: "/images/blog/1/Pode deixar a bateria conectada na parafusadeira.webp",
     excerpt: "Pode deixar a bateria conectada na parafusadeira? Descubra o erro oculto que destrói a vida útil da sua máquina e aprenda como armazenar corretamente."
   },
   {
     title: "Parafusadeira Pneumática Como Funciona e Quando Usar? - Mestre das Ferramentas",
-    url: "/como-funciona-parafusadeira-pneumatica",
+    url: "/como-funciona-parafusadeira-pneumatica/",
     image: "/images/blog/1/como-funciona-parafusadeira-pneumatica.webp",
     excerpt: "Quer saber se a parafusadeira pneumática é o investimento certo para você? Descubra como escolher o modelo ideal, evitar prejuízos e aumentar sua produtividade."
   }

@@ -525,7 +525,7 @@ export const MelhorFuradeiraMakita: React.FC = () => {
           <div className="mt-16 prose prose-lg max-w-none text-gray-700">
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Como escolher a melhor furadeira Makita</h2>
             <p>
-              Escolher a melhor furadeira Makita exige atenção ao tipo de uso e às suas necessidades específicas. Para entender melhor os critérios técnicos que definem uma boa compra, leia mais em <a href="/como-escolher-furadeira" className="text-[#0056b3] hover:underline">como escolher furadeira</a>.
+              Escolher a melhor furadeira Makita exige atenção ao tipo de uso e às suas necessidades específicas. Para entender melhor os critérios técnicos que definem uma boa compra, leia mais em <a href="/como-escolher-furadeira/" className="text-[#0056b3] hover:underline">como escolher furadeira</a>.
             </p>
             <p>
               Antes de decidir, vale entender as diferenças entre os modelos, os recursos tecnológicos disponíveis e o desempenho em rotação e profundidade. Esses fatores ajudam a identificar a opção mais adequada em termos de eficiência, conforto e custo-benefício. A seguir, veja como cada aspecto influencia na escolha da furadeira ideal.

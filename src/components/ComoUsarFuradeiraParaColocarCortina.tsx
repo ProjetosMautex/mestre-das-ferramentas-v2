@@ -54,7 +54,7 @@ export const ComoUsarFuradeiraParaColocarCortina = () => {
             <p className="mb-6">
               Para instalar um varão de cortina de forma eficaz é essencial reunir as ferramentas e materiais adequados.
               <br /><br />
-              Tenha uma furadeira para fazer os furos e uma parafusadeira para fixar os componentes, O melhor é que seja uma <a href="/melhor-furadeira-e-parafusadeira" className="text-blue-600 hover:underline font-medium">furadeira parafusadeira</a> que já tem as duas funções, como também brocas apropriadas para alvenaria, drywall ou madeira.
+              Tenha uma furadeira para fazer os furos e uma parafusadeira para fixar os componentes, O melhor é que seja uma <a href="/melhor-furadeira-e-parafusadeira/" className="text-blue-600 hover:underline font-medium">furadeira parafusadeira</a> que já tem as duas funções, como também brocas apropriadas para alvenaria, drywall ou madeira.
               <br /><br />
               Garanta suportes compatíveis com o varão, parafusos e buchas adequadas ao tipo de parede.
               <br /><br />

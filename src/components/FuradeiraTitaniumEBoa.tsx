@@ -273,7 +273,7 @@ export const FuradeiraTitaniumEBoa: React.FC = () => {
               Se você está em dúvida entre diferentes modelos de furadeiras, há várias opções confiáveis no mercado que podem se ajustar a diferentes tipos de uso e orçamentos.
             </p>
             <p>
-              Para quem busca um investimento em marcas de linha profissional, vale conferir a disputa entre as <a href="/qual-a-melhor-parafusadeira-bosch-ou-dewalt" className="text-blue-600 hover:underline">parafusadeiras bosch ou dewalt</a>, que são as principais concorrentes globais em durabilidade e assistência técnica.
+              Para quem busca um investimento em marcas de linha profissional, vale conferir a disputa entre as <a href="/qual-a-melhor-parafusadeira-bosch-ou-dewalt/" className="text-blue-600 hover:underline">parafusadeiras bosch ou dewalt</a>, que são as principais concorrentes globais em durabilidade e assistência técnica.
             </p>
             <p>
               Nos tópicos a seguir, você verá alternativas conhecidas que equilibram potência, durabilidade e bom custo-benefício, ideais para quem busca uma ferramenta eficiente e adequada às suas necessidades.

@@ -89,7 +89,7 @@ export const ComoUsarSerraCopoNaFuradeira = () => {
             </div>
 
             <p className="mb-6">
-              Para usar a serra copo corretamente na furadeira, você vai precisar primeiro de uma <a href="/melhor-furadeira" className="text-blue-600 hover:underline font-medium">furadeira robusta</a>.
+              Para usar a serra copo corretamente na furadeira, você vai precisar primeiro de uma <a href="/melhor-furadeira/" className="text-blue-600 hover:underline font-medium">furadeira robusta</a>.
               <br /><br />
               Depois comece selecionando o tamanho adequado da serra de acordo com o furo desejado.
               Em seguida, assegure-se de que a peça que será cortada esteja fixa, garantindo assim segurança e precisão durante o processo.

@@ -1,16 +1,52 @@
 ---
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import '../styles/global.css';
 ---
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=/" />
-    <title>Página não encontrada</title>
-    <script>
-        window.location.href = '/';
-    </script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Página não encontrada - 404</title>
 </head>
-<body>
-    <p>Redirecionando para a página inicial...</p>
+<body class="min-h-screen flex flex-col bg-gray-50">
+    <Header client:load />
+
+    <main class="flex-grow flex items-center justify-center py-20 px-4">
+        <div class="max-w-2xl w-full text-center space-y-8 bg-white p-10 rounded-xl shadow-sm border border-gray-100">
+            <h1 class="text-6xl font-black text-gray-900">404</h1>
+            <h2 class="text-2xl font-bold text-gray-800">Ops! A página que você procura não foi encontrada.</h2>
+            <p class="text-gray-600 text-lg">
+                O conteúdo pode ter sido removido, mudado de endereço ou está temporariamente indisponível.
+            </p>
+            
+            <div class="max-w-md mx-auto pt-4 pb-6">
+                <form action="/search/" method="get" class="relative flex items-center bg-gray-50 rounded-lg border-2 border-[#FFD700] overflow-hidden">
+                    <input 
+                        type="text" 
+                        name="q" 
+                        class="w-full bg-transparent px-4 py-3 outline-none text-gray-700" 
+                        placeholder="Pesquise por ferramentas, dicas..."
+                    />
+                    <button type="submit" class="bg-[#FFD700] hover:bg-[#e6c200] text-[#1a1a1a] px-6 py-3 font-bold transition-colors">
+                        Buscar
+                    </button>
+                </form>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 border-t border-gray-100">
+                <a href="/" class="px-6 py-3 bg-[#1a1a1a] text-white font-bold rounded-lg hover:bg-gray-800 transition-colors w-full sm:w-auto">
+                    Voltar para o Início
+                </a>
+                <a href="/melhor-parafusadeira/" class="px-6 py-3 bg-gray-100 text-gray-800 font-bold rounded-lg hover:bg-gray-200 transition-colors w-full sm:w-auto">
+                    Melhores Parafusadeiras
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <Footer client:load />
 </body>
 </html>

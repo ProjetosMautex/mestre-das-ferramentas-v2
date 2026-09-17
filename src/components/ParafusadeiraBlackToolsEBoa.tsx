@@ -983,7 +983,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
         <section className="mb-20 bg-gradient-to-br from-slate-100 to-gray-50 rounded-[2rem] p-8 md:p-12 shadow-xl border border-slate-200">
           <h2 className="text-3xl font-extrabold text-[#1a1a1a] mb-6">Procurando outras saídas? Alternativas Importantes</h2>
           <p className="text-gray-700 text-lg mb-10 leading-relaxed">
-            Nossa missão é alinhar a ferramenta com a sua expectativa. Se a The Black Tools não te convenceu, mas você ainda não quer torrar o limite do cartão em frentes puramente industriais, garanta que você está comparando as opções certas. Descubra modelos e avaliações imperdíveis no nosso ranking definitivo com a <a href="/melhor-parafusadeira-custo-beneficio" className="text-[#b39700] font-extrabold hover:underline decoration-[#FFD700] decoration-[3px] underline-offset-4">melhor parafusadeira custo beneficio</a> do ano.
+            Nossa missão é alinhar a ferramenta com a sua expectativa. Se a The Black Tools não te convenceu, mas você ainda não quer torrar o limite do cartão em frentes puramente industriais, garanta que você está comparando as opções certas. Descubra modelos e avaliações imperdíveis no nosso ranking definitivo com a <a href="/melhor-parafusadeira-custo-beneficio/" className="text-[#b39700] font-extrabold hover:underline decoration-[#FFD700] decoration-[3px] underline-offset-4">melhor parafusadeira custo beneficio</a> do ano.
           </p>
           
           <div className="space-y-12">

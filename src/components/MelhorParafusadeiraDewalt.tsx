@@ -74,7 +74,7 @@ export const MelhorParafusadeiraDewalt: React.FC = () => {
               <p>A DeWalt é uma marca mundialmente reconhecida pela qualidade e inovação de suas ferramentas elétricas, destacando-se em parafusadeiras desde 1922.</p>
               <p>Investimentos contínuos em pesquisa e desenvolvimento resultaram num portfólio que atende profissionais e entusiastas da bricolagem.</p>
               <p>Suas parafusadeiras são sinônimo de durabilidade e desempenho, projetadas para suportar condições severas de trabalho.</p>
-              <p>Por conta desse alto valor de mercado e prestígio, é fundamental que o comprador saiba identificar revendedores autorizados e aprenda a <a href="/como-saber-se-a-parafusadeira-dewalt-e-original" className="text-blue-600 hover:underline font-medium">identificar se a parafusadeira DeWalt é original</a>, garantindo que o investimento seja feito em uma ferramenta com tecnologias avançadas, baterias de longa duração e motores potentes.</p>
+              <p>Por conta desse alto valor de mercado e prestígio, é fundamental que o comprador saiba identificar revendedores autorizados e aprenda a <a href="/como-saber-se-a-parafusadeira-dewalt-e-original/" className="text-blue-600 hover:underline font-medium">identificar se a parafusadeira DeWalt é original</a>, garantindo que o investimento seja feito em uma ferramenta com tecnologias avançadas, baterias de longa duração e motores potentes.</p>
               <p>A empresa mantém suas linhas alinhadas às tendências do setor, atendendo às necessidades dos usuários. Conhecer a procedência e a história da DeWalt ajuda a escolher uma parafusadeira moderna e adequada ao uso profissional.</p>
             </div>
           </section>

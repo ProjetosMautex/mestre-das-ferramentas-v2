@@ -199,7 +199,7 @@ export const OQueEFuradeiraReversivel: React.FC = () => {
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Como parafusar corretamente</h2>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>Para conseguir assegurar uma fixação absolutamente impecável nas suas montagens, a seleção criteriosa do bit correto configura-se como o seu primeiro e mais crítico passo de preparação técnica.</p>
-              <p>Nessa importante etapa inicial, investir tempo para descobrir qual é a <a href="/melhor-bits-para-parafusadeira" className="text-blue-600 hover:underline">melhor escolha de bits para a sua parafusadeira</a> garante que o encaixe seja impecável e não comprometa a fenda do fixador.</p>
+              <p>Nessa importante etapa inicial, investir tempo para descobrir qual é a <a href="/melhor-bits-para-parafusadeira/" className="text-blue-600 hover:underline">melhor escolha de bits para a sua parafusadeira</a> garante que o encaixe seja impecável e não comprometa a fenda do fixador.</p>
               <p>Posicione sempre a sua ferramenta elétrica de maneira rigorosamente perpendicular à superfície de contato, evitando inclinações prejudiciais que inevitavelmente geram estresse mecânico desnecessário na estrutura da rosca trabalhada.</p>
               <p>Evite a todo custo o impulso instintivo de afundar o parafuso na superfície utilizando pura força bruta, deixando que a rotação constante e controlada da máquina realize todo o trabalho pesado.</p>
             </div>

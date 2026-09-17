@@ -68,7 +68,7 @@ export const ComoFurarParedeComFuradeira = () => {
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Ferramentas e Materiais Necessários</h2>
             <p className="mb-6">
-              Para furar paredes com segurança, use a <a href="/melhor-furadeira" className="text-blue-600 hover:underline font-medium">furadeira adequada</a> (impacto para alvenaria, elétrica para drywall), brocas específicas, fita adesiva para marcar, nível, trena e equipamentos de proteção como óculos e luvas.
+              Para furar paredes com segurança, use a <a href="/melhor-furadeira/" className="text-blue-600 hover:underline font-medium">furadeira adequada</a> (impacto para alvenaria, elétrica para drywall), brocas específicas, fita adesiva para marcar, nível, trena e equipamentos de proteção como óculos e luvas.
             </p>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Escolhendo a Broca Certa</h2>

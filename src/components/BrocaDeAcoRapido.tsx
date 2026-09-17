@@ -479,7 +479,7 @@ export const BrocaDeAcoRapido: React.FC = () => {
                 Muitos profissionais ainda confundem as reais aplicações destas ferramentas de furação, gerando quebras e prejuízos com brocas danificadas.
               </p>
               <p>
-                Enquanto o HSS (aço rápido) é otimizado para cortar metais e plásticos, entender <a href="/o-que-e-broca-de-videa" className="text-blue-600 hover:underline font-semibold">o que é broca de vídea</a> nos revela que ela serve para perfurar alvenaria.
+                Enquanto o HSS (aço rápido) é otimizado para cortar metais e plásticos, entender <a href="/o-que-e-broca-de-videa/" className="text-blue-600 hover:underline font-semibold">o que é broca de vídea</a> nos revela que ela serve para perfurar alvenaria.
               </p>
               <p>
                 O segredo da vídea é a pastilha de metal duro soldada na ponta, essencial para vencer blocos de cimento.

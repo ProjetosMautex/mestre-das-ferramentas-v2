@@ -391,7 +391,7 @@ export const FuradeiraEParafusadeiraWescoEBoa: React.FC = () => {
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
               <p>As furadeiras Wesco são sinônimo de qualidade e confiança, adequadas a iniciantes e profissionais. Possuem motores potentes para trabalhar em madeira, metal e concreto, acabamento robusto e empunhadura emborrachada que aumentam o conforto e reduzem a fadiga.</p>
               <p>
-                Materiais duráveis e tecnologia garantem longa vida útil. No entanto, antes de escolher o seu modelo, é importante entender <a href="/qual-a-diferenca-entre-parafusadeira-e-furadeira" className="text-blue-600 hover:underline">qual a diferença entre parafusadeira e furadeira</a> para saber se a ferramenta que você está comprando possui o torque e a função de impacto necessários para o seu tipo de serviço.
+                Materiais duráveis e tecnologia garantem longa vida útil. No entanto, antes de escolher o seu modelo, é importante entender <a href="/qual-a-diferenca-entre-parafusadeira-e-furadeira/" className="text-blue-600 hover:underline">qual a diferença entre parafusadeira e furadeira</a> para saber se a ferramenta que você está comprando possui o torque e a função de impacto necessários para o seu tipo de serviço.
               </p>
               <p>A ergonomia e o foco na qualidade consolidam a reputação da Wesco no mercado.</p>
             </div>

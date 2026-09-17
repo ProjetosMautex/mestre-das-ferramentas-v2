@@ -135,7 +135,7 @@ export const QualMelhorCompraParafusadeiraABateriaOuAEletrica = () => {
               A escolha entre furadeira à bateria e com fio depende do trabalho.<br /><br />
               As à bateria oferecem mobilidade, praticidade e são ideais onde não há eletricidade ou para tarefas rápidas; porém têm limitações de potência e autonomia e exigem recargas.<br /><br />
               Mas essa limitação é para modelos mais baratos, os modelos de alto custo mesmo a bateria possuem força mais que suficiente para trabalhos pesados.<br /><br />
-              Esses modelos de alto custo costumam ser as <a href="/melhor-parafusadeira-20v" className="text-blue-600 hover:underline font-medium">parafusadeira de 20V</a>, que entregam potência e torque suficientes para perfurações mais pesadas em madeira, metal e até alvenaria leve.<br /><br />
+              Esses modelos de alto custo costumam ser as <a href="/melhor-parafusadeira-20v/" className="text-blue-600 hover:underline font-medium">parafusadeira de 20V</a>, que entregam potência e torque suficientes para perfurações mais pesadas em madeira, metal e até alvenaria leve.<br /><br />
               As com fio garantem desempenho contínuo, mais potência para perfurar superfícies duras e funções de impacto, sendo indicadas para trabalhos exigentes e projetos longos.<br /><br />
               Para tarefas domésticas leves, a bateria costuma ser suficiente, desde que as baterias e o carregador estejam sempre disponíveis.<br /><br />
               Embora o fio limite a mobilidade, ele favorece eficiência em usos profissionais e fixos.

@@ -53,7 +53,7 @@ export const ComoSaberSeAParafusadeiraDewaltEOriginal = () => {
               Um preço muito abaixo do mercado é um dos principais sinais de que uma Parafusadeira DeWalt pode não ser original.<br /><br />
               Ofertas excessivamente baratas, especialmente alegando produto novo, exigem investigação — podem ser falsificações ou itens vindos de procedência duvidosa.<br /><br />
               Imitações usam componentes internos de baixa qualidade para reduzir custos e atrair o comprador pelo bolso. Por isso, desconfie de descontos superiores a 30% em relação ao preço médio de lojas confiáveis.<br /><br />
-              Para não cair em ciladas e entender quanto custa investir em um equipamento de performance real, confira nosso guia atualizado das <a href="/melhor-parafusadeira" className="text-blue-600 hover:underline font-medium">melhores parafusadeiras</a> do mercado.<br /><br />
+              Para não cair em ciladas e entender quanto custa investir em um equipamento de performance real, confira nosso guia atualizado das <a href="/melhor-parafusadeira/" className="text-blue-600 hover:underline font-medium">melhores parafusadeiras</a> do mercado.<br /><br />
               Lá você encontra os valores de referência e as especificações técnicas dos modelos que realmente valem o investimento, sejam eles DeWalt ou de outras marcas profissionais.
             </p>
 

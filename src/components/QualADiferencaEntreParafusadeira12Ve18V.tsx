@@ -317,7 +317,7 @@ export const QualADiferencaEntreParafusadeira12Ve18V: React.FC = () => {
                     Agora que você já sabe qual voltagem escolher, qual marca entrega mais durabilidade?
                   </p>
                   <a 
-                    href="/qual-a-melhor-parafusadeira-bosch-ou-dewalt" 
+                    href="/qual-a-melhor-parafusadeira-bosch-ou-dewalt/" 
                     className="inline-flex items-center gap-2 mt-3 font-bold text-amber-600 hover:text-amber-700 transition-colors group"
                   >
                     Descubra qual a melhor parafusadeira: Bosch ou DeWalt?

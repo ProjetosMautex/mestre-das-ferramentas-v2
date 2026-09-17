@@ -177,7 +177,7 @@ export const ComoSaberSeAFuradeiraE110Ou220 = () => {
             </p>
 
             <p className="mb-6">
-              As <a href="/melhor-furadeira" className="text-blue-600 hover:underline font-medium">melhores furadeiras</a> deixam claro a sua voltagem para evitar acidentes se você está tendo dificuldades para achar essa informação talvez a sua furadeira não seja tão boa.
+              As <a href="/melhor-furadeira/" className="text-blue-600 hover:underline font-medium">melhores furadeiras</a> deixam claro a sua voltagem para evitar acidentes se você está tendo dificuldades para achar essa informação talvez a sua furadeira não seja tão boa.
             </p>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">O que acontece se eu ligar um equipamento 110V em 220V ? E vice-versa?</h2>

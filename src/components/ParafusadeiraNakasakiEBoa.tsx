@@ -183,7 +183,7 @@ export const ParafusadeiraNakasakiEBoa: React.FC = () => {
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
                 <p>A parafusadeira Nakasaki é uma opção sólida para uso doméstico leve e hobby. Usuários relatam bom desempenho em montar móveis e pequenos reparos, com bateria de autonomia satisfatória, design ergonômico e variação de torque útil.</p>
                 <p>Porém, apresenta limitações: assistência técnica no Brasil é escassa, certificações e disponibilidade de peças são limitadas, e a garantia pode ser difícil de acionar.</p>
-                <p>Para quem não quer correr riscos com marcas menos conhecidas e prefere algo com suporte nacional mais robusto, vale analisar a <a href="/parafusadeira-wap-e-boa" className="text-[#0056b3] hover:underline">parafusadeira wap</a> para o seu perfil, já que ela entrega performance similar com a segurança de uma marca consolidada no país.</p>
+                <p>Para quem não quer correr riscos com marcas menos conhecidas e prefere algo com suporte nacional mais robusto, vale analisar a <a href="/parafusadeira-wap-e-boa/" className="text-[#0056b3] hover:underline">parafusadeira wap</a> para o seu perfil, já que ela entrega performance similar com a segurança de uma marca consolidada no país.</p>
                 <p>Considerando que o preço fica próximo, avalie cuidadosamente o custo-benefício antes da compra.</p>
               </div>
             </section>

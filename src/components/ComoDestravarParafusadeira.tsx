@@ -220,7 +220,7 @@ export const ComoDestravarParafusadeira: React.FC = () => {
               <div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">Parafusadeiras de qualidade para evitar o travamento do mandril</h3>
                 <div className="space-y-4">
-                  <p className="text-gray-700">A escolha de <a href="/melhor-parafusadeira" className="text-blue-600 hover:underline font-medium">parafusadeiras de qualidade</a> é essencial para minimizar o risco de travamento do mandril.</p>
+                  <p className="text-gray-700">A escolha de <a href="/melhor-parafusadeira/" className="text-blue-600 hover:underline font-medium">parafusadeiras de qualidade</a> é essencial para minimizar o risco de travamento do mandril.</p>
                   <p className="text-gray-700">Ferramentas bem projetadas e fabricadas com materiais robustos não apenas oferecem melhor desempenho, mas também apresentam mecanismos mais eficientes que permitem uma troca mais suave de brocas.</p>
                   <p className="text-gray-700">Ao optar por marcas renomadas e modelos com boas avaliações, você garante que o mandril funcione de maneira fluida e precisa.</p>
                   <p className="text-gray-700">Da mesma forma, investir em uma parafusadeira que possui recursos como ajuste de torque e tecnologia de aperto inovadora pode reduzir significativamente o estresse nas partes móveis.</p>

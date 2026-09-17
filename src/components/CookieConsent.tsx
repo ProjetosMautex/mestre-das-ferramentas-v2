@@ -25,7 +25,7 @@ export const CookieConsent: React.FC = () => {
           <p>
             Utilizamos cookies para melhorar sua experiência e personalizar conteúdo. Ao continuar navegando, você concorda com nossa{' '}
             <a 
-              href="/politica-de-privacidade" 
+              href="/politica-de-privacidade/" 
               className="text-[#FFD700] hover:underline font-medium transition-colors"
             >
               Política de Privacidade

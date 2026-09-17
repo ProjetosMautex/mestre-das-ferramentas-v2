@@ -553,7 +553,7 @@ export const MelhorBitsParaParafusadeira: React.FC = () => {
               Por isso, avalie características técnicas, durabilidade e frequência de uso antes de decidir.
             </p>
             <p className="mb-6">
-              Compare opções levando em conta o equilíbrio entre custo inicial e longevidade, adequando a escolha ao seu perfil — bricolagem eventual ou trabalho profissional — para obter o melhor custo-benefício tanto nos bits <a href="/melhor-parafusadeira-custo-beneficio" className="text-blue-600 hover:underline">como na sua parafusadeira</a>.
+              Compare opções levando em conta o equilíbrio entre custo inicial e longevidade, adequando a escolha ao seu perfil — bricolagem eventual ou trabalho profissional — para obter o melhor custo-benefício tanto nos bits <a href="/melhor-parafusadeira-custo-beneficio/" className="text-blue-600 hover:underline">como na sua parafusadeira</a>.
             </p>
             <p className="mb-6">
               Esse mesmo raciocínio vale para a escolha da parafusadeira mais adequada, já que um modelo bem dimensionado aos seus bits reduz desgaste, melhora a eficiência do trabalho e ajuda você a economizar dinheiro a longo prazo.

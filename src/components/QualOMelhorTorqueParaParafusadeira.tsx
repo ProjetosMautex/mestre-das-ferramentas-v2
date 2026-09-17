@@ -156,7 +156,7 @@ export const QualOMelhorTorqueParaParafusadeira: React.FC = () => {
               <p>Para montagens domésticas, como móveis ou trabalhos em madeiras macias, parafusadeiras leves com torque entre 4 e 6 Nm são suficientes para garantir fixações seguras sem esforço excessivo.</p>
               <p>Já as ferramentas de 12V, com torque entre 10 e 30 Nm, atendem bem a quem busca versatilidade — ideais para furos ocasionais e parafusamentos em materiais de densidade média, oferecendo equilíbrio entre potência e praticidade.</p>
               <p>Em uso profissional, modelos de 18V ou 20V, com torque variando entre 30 e 100 Nm, são os mais indicados. Eles garantem desempenho consistente em montagens estruturais, trabalhos na construção civil e fixações em materiais mais duros.</p>
-              <p>Esses valores variam bastante entre os modelos, e muitos dos equipamentos listados no artigo sobre as <a href="/melhor-parafusadeira" className="text-blue-600 hover:underline font-medium">melhores parafusadeiras</a> já oferecem regulagem de torque precisa para atender diferentes tipos de uso.</p>
+              <p>Esses valores variam bastante entre os modelos, e muitos dos equipamentos listados no artigo sobre as <a href="/melhor-parafusadeira/" className="text-blue-600 hover:underline font-medium">melhores parafusadeiras</a> já oferecem regulagem de torque precisa para atender diferentes tipos de uso.</p>
             </div>
           </section>
 

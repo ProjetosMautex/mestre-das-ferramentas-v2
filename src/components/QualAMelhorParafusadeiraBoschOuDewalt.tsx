@@ -161,7 +161,7 @@ export const QualAMelhorParafusadeiraBoschOuDewalt: React.FC = () => {
               <p>Por isso, é importante avaliar não apenas o valor inicial, mas também o desempenho, a frequência de uso e a vida útil esperada da ferramenta.</p>
               <p>Para uso ocasional, a Bosch pode ser uma escolha mais equilibrada; já para uso profissional e pesado, a DeWalt tende a reduzir custos de manutenção e substituição ao longo do tempo.</p>
               <p>Independentemente da marca, comparar mais modelos ajuda a tomar uma decisão mais acertada.</p>
-              <p>Para isso, vale conferir um <a href="/melhor-parafusadeira" className="text-blue-600 hover:underline font-medium">guia completo com as melhores parafusadeiras</a> disponíveis atualmente, onde analisamos desempenho, custo-benefício e indicações de uso para diferentes perfis.</p>
+              <p>Para isso, vale conferir um <a href="/melhor-parafusadeira/" className="text-blue-600 hover:underline font-medium">guia completo com as melhores parafusadeiras</a> disponíveis atualmente, onde analisamos desempenho, custo-benefício e indicações de uso para diferentes perfis.</p>
             </div>
           </section>
 

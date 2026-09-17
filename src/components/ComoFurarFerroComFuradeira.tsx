@@ -89,7 +89,7 @@ export const ComoFurarFerroComFuradeira: React.FC = () => {
                 O controle da velocidade de rotação e a força contínua do motor são os dois pilares principais que definem se o seu equipamento será capaz de atravessar a chapa de metal sem sofrer danos estruturais ou superaquecimento.
               </p>
               <p>
-                Nesse contexto, se você perceber que seu equipamento atual engasga ou aquece demais durante o uso contínuo, talvez seja o momento perfeito para entender melhor <a href="/como-escolher-furadeira" className="text-blue-600 hover:underline">como escolher furadeira</a> com a potência certa e realizar trabalhos pesados sem nenhuma dor de cabeça.
+                Nesse contexto, se você perceber que seu equipamento atual engasga ou aquece demais durante o uso contínuo, talvez seja o momento perfeito para entender melhor <a href="/como-escolher-furadeira/" className="text-blue-600 hover:underline">como escolher furadeira</a> com a potência certa e realizar trabalhos pesados sem nenhuma dor de cabeça.
               </p>
               <p>
                 Para trabalhar com aço e ligas ferrosas em geral, é terminantemente proibido utilizar o sistema de impacto da sua máquina, pois os golpes mecânicos sucessivos fatalmente estilhaçariam a ponta da broca em questão de segundos.

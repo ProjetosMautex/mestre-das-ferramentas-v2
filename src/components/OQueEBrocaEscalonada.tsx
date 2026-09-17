@@ -72,7 +72,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
             </div>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>Imagine uma ferramenta que concentra uma caixa de ferramentas inteira em uma única ponta. A broca escalonada, também conhecida como broca cônica, diferencia-se pelo seu perfil em formato de degraus progressivos. Cada patamar corresponde a uma medida específica de diâmetro, permitindo que você aumente a abertura do furo sem precisar interromper o trabalho para substituir o acessório.</p>
-              <p>Esse design inteligente é a peça-chave para quem lida com chapas metálicas ou materiais finos e deseja evitar as rebarbas indesejadas e o travamento comum nas <a href="/o-que-e-broca-helicoidal" className="text-blue-600 hover:underline">brocas helicoidais</a> convencionais. Mais do que um item versátil, ela é a solução definitiva para manter o fluxo de trabalho contínuo, elevar a precisão técnica do seu projeto e garantir um acabamento impecável em cada perfuração executada.</p>
+              <p>Esse design inteligente é a peça-chave para quem lida com chapas metálicas ou materiais finos e deseja evitar as rebarbas indesejadas e o travamento comum nas <a href="/o-que-e-broca-helicoidal/" className="text-blue-600 hover:underline">brocas helicoidais</a> convencionais. Mais do que um item versátil, ela é a solução definitiva para manter o fluxo de trabalho contínuo, elevar a precisão técnica do seu projeto e garantir um acabamento impecável em cada perfuração executada.</p>
             </div>
           </section>
 

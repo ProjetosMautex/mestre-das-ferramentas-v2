@@ -273,7 +273,7 @@ export const FuradeiraBritania650w: React.FC = () => {
               <p>O erro mais comum é aplicar força excessiva logo de cara, o que quase sempre resulta em rachaduras irreversíveis.</p>
               <p>Para preservar a integridade da peça, comece sempre marcando o ponto exato com uma fita crepe e utilize uma broca específica para cerâmica, mantendo a função de impacto desligada durante o contato inicial.</p>
               <p>Abrir um furo piloto com diâmetro menor cria a guia necessária, evitando que a ponta da furadeira dance sobre o esmalte liso.</p>
-              <p>Com paciência e pressão constante, porém moderada, além de buscar informações sobre <a href="/como-furar-azulejo-com-furadeira" className="text-blue-600 hover:underline font-medium">como furar azulejo com furadeira</a> de forma mais detalhada, você garante um acabamento impecável, eliminando o risco de prejuízos desnecessários ao seu revestimento.</p>
+              <p>Com paciência e pressão constante, porém moderada, além de buscar informações sobre <a href="/como-furar-azulejo-com-furadeira/" className="text-blue-600 hover:underline font-medium">como furar azulejo com furadeira</a> de forma mais detalhada, você garante um acabamento impecável, eliminando o risco de prejuízos desnecessários ao seu revestimento.</p>
             </div>
           </section>
 

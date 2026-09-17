@@ -1396,7 +1396,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                       Avalie o que ocupa mais tempo em seus projetos: a perfuração bruta em concreto ou o aperto de fixadores.
                     </p>
                     <p className="m-0 bg-amber-50 p-4 rounded-xl border border-amber-200 text-slate-900 font-medium">
-                      Para não errar nessa escolha, confira nosso guia definitivo com a lista atualizada das <a href="/melhor-parafusadeira" className="text-blue-600 hover:text-blue-800 underline font-bold transition-colors">melhores parafusadeiras do mercado</a>.
+                      Para não errar nessa escolha, confira nosso guia definitivo com a lista atualizada das <a href="/melhor-parafusadeira/" className="text-blue-600 hover:text-blue-800 underline font-bold transition-colors">melhores parafusadeiras do mercado</a>.
                     </p>
                   </div>
                 )}

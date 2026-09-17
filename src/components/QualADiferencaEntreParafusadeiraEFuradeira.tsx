@@ -102,7 +102,7 @@ export const QualADiferencaEntreParafusadeiraEFuradeira = () => {
               Mas, para quem busca praticidade no dia a dia, existe uma alternativa que reúne as duas funções no mesmo equipamento.
             </p>
             <p className="mb-6">
-              Uma ferramenta combinada permite alternar rapidamente entre perfuração e parafusamento, <a href="/melhor-furadeira-e-parafusadeira" className="text-blue-600 hover:underline font-medium">comprar uma furadeira parafusadeira</a> vai ajudar a economizar espaço e reduzir custos ao mesmo tempo em que oferece versatilidade para diferentes tipos de trabalho.
+              Uma ferramenta combinada permite alternar rapidamente entre perfuração e parafusamento, <a href="/melhor-furadeira-e-parafusadeira/" className="text-blue-600 hover:underline font-medium">comprar uma furadeira parafusadeira</a> vai ajudar a economizar espaço e reduzir custos ao mesmo tempo em que oferece versatilidade para diferentes tipos de trabalho.
             </p>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Conheça acessórios indispensáveis para esses equipamentos</h2>

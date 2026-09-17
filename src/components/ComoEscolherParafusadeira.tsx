@@ -76,7 +76,7 @@ export const ComoEscolherParafusadeira: React.FC = () => {
               <p>As sem fio oferecem mobilidade e praticidade, mas precisam recarregar; as com fio garantem potência contínua, porém limitam o alcance.</p>
               <p>Da mesma forma, considere o uso: para tarefas ocasionais e pequenos trabalhos, uma furadeira/parafusadeira com impacto costuma ser suficiente; já profissionais que usam a ferramenta com frequência devem optar por modelos mais robustos, preferencialmente com motor brushless, que aumentam eficiência e durabilidade.</p>
               <p>Avalie potência, autonomia, ergonomia e tipo de projetos para escolher a opção ideal.</p>
-              <p>Para isso é bom que você já encontre uma <a href="/melhor-parafusadeira" className="text-blue-600 hover:underline font-medium">lista das melhores parafusadeiras para cada tipo de uso</a>.</p>
+              <p>Para isso é bom que você já encontre uma <a href="/melhor-parafusadeira/" className="text-blue-600 hover:underline font-medium">lista das melhores parafusadeiras para cada tipo de uso</a>.</p>
             </div>
           </section>
 

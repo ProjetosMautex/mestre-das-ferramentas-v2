@@ -170,7 +170,7 @@ export const ComoUsarFuradeiraComParafusadeira = () => {
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Como escolher a furadeira certa para usar com parafusadeira</h2>
             <p className="mb-6">
-              <a href="/melhor-furadeira-e-parafusadeira" className="text-blue-600 hover:underline font-medium">Escolher a furadeira parafusadeira certa</a> faz todo sentido para obter resultados eficientes.
+              <a href="/melhor-furadeira-e-parafusadeira/" className="text-blue-600 hover:underline font-medium">Escolher a furadeira parafusadeira certa</a> faz todo sentido para obter resultados eficientes.
               <br /><br />
               Comece avaliando o material a ser perfurado: brocas de ponta espiral são indicadas para madeira, já metais e concreto exigem brocas específicas e mais resistentes.
             </p>

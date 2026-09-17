@@ -177,7 +177,7 @@ export const ParafusadeiraBritaniaEBoa: React.FC = () => {
               <img src="/images/blog/1/Alternativas parafusadeiras de 4.8V.webp" alt="Alternativas parafusadeiras de 4.8V" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
             </div>
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-              <p>Caso a Britânia BPF01 não atenda totalmente às suas necessidades por falta de potência, considere dar um salto para um modelo mais forte. Confira nossa análise onde detalhamos se a <a href="/parafusadeira-britania-hobby-bpf03mf-e-boa" className="text-blue-600 hover:underline font-bold">Parafusadeira Britânia Hobby BPF03MF é boa</a>, uma excelente alternativa de 12V da mesma marca.</p>
+              <p>Caso a Britânia BPF01 não atenda totalmente às suas necessidades por falta de potência, considere dar um salto para um modelo mais forte. Confira nossa análise onde detalhamos se a <a href="/parafusadeira-britania-hobby-bpf03mf-e-boa/" className="text-blue-600 hover:underline font-bold">Parafusadeira Britânia Hobby BPF03MF é boa</a>, uma excelente alternativa de 12V da mesma marca.</p>
               <p>Porém, se você deseja continuar na mesma faixa de tensão de 4.8V, o mercado oferece excelentes alternativas.</p>
               <p>Modelos similares garantem a mesma leveza e facilidade de operação, com pequenas variações de design, ergonomia e torque máximo oferecido.</p>
               <p>Recomendamos avaliar essas opções complementares para assegurar que a ferramenta escolhida seja o encaixe ideal para seus projetos pessoais.</p>

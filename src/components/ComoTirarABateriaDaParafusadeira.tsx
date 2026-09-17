@@ -183,7 +183,7 @@ export const ComoTirarABateriaDaParafusadeira = () => {
               Se a sua parafusadeira está com dificuldade no encaixe da bateria ou algumas partes parecem danificadas, talvez seja hora de considerar um novo modelo.
             </p>
             <p className="mb-6">
-              Para fazer uma boa escolha, confira nosso guia atualizado das <a href="/melhor-furadeira-e-parafusadeira" className="text-blue-600 hover:underline font-medium">melhores furadeiras e parafusadeiras</a> — com opções que equilibram potência, custo-benefício e durabilidade.
+              Para fazer uma boa escolha, confira nosso guia atualizado das <a href="/melhor-furadeira-e-parafusadeira/" className="text-blue-600 hover:underline font-medium">melhores furadeiras e parafusadeiras</a> — com opções que equilibram potência, custo-benefício e durabilidade.
             </p>
           </div>
         </div>

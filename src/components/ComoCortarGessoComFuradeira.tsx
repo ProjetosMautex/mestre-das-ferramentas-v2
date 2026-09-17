@@ -218,7 +218,7 @@ export const ComoCortarGessoComFuradeira: React.FC = () => {
               <p>Antes de acionar o gatilho, certifique-se de que o eixo da broca esteja perfeitamente centralizado e firme no mandril.</p>
               <p>Qualquer folga compromete a estabilidade das hastes, gerando vibrações que podem comprometer a borda do corte.</p>
               <p>Com a máquina devidamente configurada, você estará pronto para transformar a força bruta em um trabalho de precisão cirúrgica.</p>
-              <p>Se você ainda não tem total domínio sobre a máquina antes de tentar cortes avançados no gesso, recomendamos que você leia um bom <a href="/como-usar-furadeira" className="text-blue-600 hover:underline font-medium">guia de uso básico da furadeira</a> para evitar acidentes.</p>
+              <p>Se você ainda não tem total domínio sobre a máquina antes de tentar cortes avançados no gesso, recomendamos que você leia um bom <a href="/como-usar-furadeira/" className="text-blue-600 hover:underline font-medium">guia de uso básico da furadeira</a> para evitar acidentes.</p>
             </div>
           </section>
 

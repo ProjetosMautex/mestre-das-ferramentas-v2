@@ -52,7 +52,7 @@ export const ComoTirarRebiteComParafusadeira = () => {
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Como remover o rebite usando uma parafusadeira?</h2>
             <p className="mb-6">
               Remover rebites com parafusadeira é prático e eficiente seguindo cuidados.<br /><br />
-              Reúna parafusadeira 18V ou <a href="/melhor-parafusadeira-20v" className="text-blue-600 hover:underline font-medium">parafusadeira de 20V</a>, brocas para metal do tamanho do rebite, óculos e luvas.
+              Reúna parafusadeira 18V ou <a href="/melhor-parafusadeira-20v/" className="text-blue-600 hover:underline font-medium">parafusadeira de 20V</a>, brocas para metal do tamanho do rebite, óculos e luvas.
             </p>
 
             <div className="my-10">

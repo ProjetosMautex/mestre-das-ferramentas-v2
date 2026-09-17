@@ -269,7 +269,7 @@ export const ComoUsarFuradeira = () => {
               Veja vídeos e compare preços para evitar excessos.
             </p>
             <p className="mb-6">
-              E claro se você esta começando é bom já encontrar uma lista com as <a href="/melhor-furadeira" className="text-blue-600 hover:underline font-medium">melhores furadeiras</a> para o tipo de trabalho que você pretende realizar
+              E claro se você esta começando é bom já encontrar uma lista com as <a href="/melhor-furadeira/" className="text-blue-600 hover:underline font-medium">melhores furadeiras</a> para o tipo de trabalho que você pretende realizar
             </p>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Conclusão</h2>

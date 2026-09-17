@@ -643,7 +643,7 @@ export const MelhorAfiadorDeBroca: React.FC = () => {
             <p>Embora o funcionamento mecânico seja intuitivo e básico, o segredo verdadeiro reside no absoluto respeito à geometria do componente.</p>
             <p>Para metais puros, o principal foco deve ser incondicionalmente a precisão fina do ângulo clássico de 118°.</p>
             <p>
-              Já com o concreto duro, o cuidado extra que a pastilha de vídea exige durante a afiação não deve ser esquecido. O usuário deve se preocupar mais em não cegar a broca de vídea durante o uso pela dificuldade de afiar, por isso <a href="/como-furar-parede-de-concreto-com-furadeira" className="text-blue-600 hover:underline">aprender a furar concreto de maneira correta</a> é importante.
+              Já com o concreto duro, o cuidado extra que a pastilha de vídea exige durante a afiação não deve ser esquecido. O usuário deve se preocupar mais em não cegar a broca de vídea durante o uso pela dificuldade de afiar, por isso <a href="/como-furar-parede-de-concreto-com-furadeira/" className="text-blue-600 hover:underline">aprender a furar concreto de maneira correta</a> é importante.
             </p>
             <p>A pressa sempre é grande inimiga da precisão da sua ferramenta afiada recém-saída da máquina rebolo.</p>
             <p>Siga os ritmos e faça desbastes com pausas, pois respeitar limites liga preserva integralmente a peça que irá furar.</p>

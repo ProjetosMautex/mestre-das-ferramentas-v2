@@ -13,6 +13,12 @@ interface Props {
 }
 
 const { title, description, popupType = 'default' } = Astro.props;
+
+let canonicalPath = Astro.url.pathname;
+if (!canonicalPath.endsWith('/')) {
+  canonicalPath += '/';
+}
+const canonicalURL = new URL(canonicalPath, Astro.site);
 ---
 
 <!doctype html>
@@ -22,6 +28,7 @@ const { title, description, popupType = 'default' } = Astro.props;
 		<meta name="description" content={description || "Mestre das Ferramentas - O guia definitivo de ferramentas"} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="canonical" href={canonicalURL} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 

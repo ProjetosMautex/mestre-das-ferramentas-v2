@@ -87,7 +87,7 @@ export const QualAMelhorParafusadeira12vOu20v: React.FC = () => {
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Qual a melhor potência para parafusadeira?</h2>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>É muito comum as pessoas buscarem pela "melhor potência", mas em ferramentas a bateria, essa força é medida pela combinação de Voltagem (V) e Torque (Nm), e não em Watts como nas ferramentas com fio. A melhor potência vai depender estritamente do seu tipo de uso — se é para montagens esporádicas ou perfurações pesadas.</p>
-              <p>Se você está em dúvida sobre a força ideal e quer uma máquina versátil e equilibrada para ter em casa, não deixe de conferir nosso guia sobre qual a <a href="/melhor-parafusadeira-custo-beneficio" className="text-blue-600 hover:underline font-medium">melhor parafusadeira custo beneficio</a>.</p>
+              <p>Se você está em dúvida sobre a força ideal e quer uma máquina versátil e equilibrada para ter em casa, não deixe de conferir nosso guia sobre qual a <a href="/melhor-parafusadeira-custo-beneficio/" className="text-blue-600 hover:underline font-medium">melhor parafusadeira custo beneficio</a>.</p>
             </div>
           </section>
 

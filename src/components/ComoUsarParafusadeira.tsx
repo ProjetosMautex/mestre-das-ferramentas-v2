@@ -110,7 +110,7 @@ export const ComoUsarParafusadeira: React.FC = () => {
               <p>Escolher a parafusadeira certa depende do tipo de trabalho.</p>
               <p>Para mobilidade e áreas difíceis, prefira sem fio; para uso intenso, com fio garante potência contínua.</p>
               <p>Verifique torque e velocidades para diferentes materiais e priorize conforto no manuseio para mais eficiência e menos cansaço.</p>
-              <p>Para ver quais modelos realmente se destacam nesses critérios, confira nosso <a href="/melhor-parafusadeira" className="text-blue-600 hover:underline font-medium">comparativo das melhores parafusadeiras do mercado</a>.</p>
+              <p>Para ver quais modelos realmente se destacam nesses critérios, confira nosso <a href="/melhor-parafusadeira/" className="text-blue-600 hover:underline font-medium">comparativo das melhores parafusadeiras do mercado</a>.</p>
             </div>
           </section>
 

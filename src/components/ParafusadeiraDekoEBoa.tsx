@@ -448,7 +448,7 @@ export const ParafusadeiraDekoEBoa: React.FC = () => {
               <h3 className="text-2xl font-bold text-[#1a1a1a] mt-8 mb-4">Qual a melhor parafusadeira de 20 volts?</h3>
               <p>
                 Para escolher a melhor opção, considere a ergonomia, a autonomia da bateria e o controle de torque oferecido. Marcas como Deko, Bosch e Makita lideram essa categoria, mas a escolha ideal depende da intensidade do seu trabalho.
-                Se você está em dúvida se precisa de toda essa força ou se um modelo menor resolveria, é melhor ler sobre as diferenças entre <a href="/qual-a-melhor-parafusadeira-12v-ou-20v" className="text-blue-600 hover:underline">parafusadeira 12v e 20v</a> para o seu tipo de projeto antes de investir em uma ferramenta mais pesada.
+                Se você está em dúvida se precisa de toda essa força ou se um modelo menor resolveria, é melhor ler sobre as diferenças entre <a href="/qual-a-melhor-parafusadeira-12v-ou-20v/" className="text-blue-600 hover:underline">parafusadeira 12v e 20v</a> para o seu tipo de projeto antes de investir em uma ferramenta mais pesada.
               </p>
 
               <h3 className="text-2xl font-bold text-[#1a1a1a] mt-8 mb-4">Como saber que a parafusadeira é boa?</h3>

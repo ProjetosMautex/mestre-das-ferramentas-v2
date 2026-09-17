@@ -63,7 +63,7 @@ export const ComoFurarMadeiraComParafusadeira: React.FC = () => {
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>Sim. É possível furar madeira com parafusadeira, desde que se use brocas próprias e técnica adequada.</p>
               <p>Modelos com controle de torque e velocidade variável aumentam a versatilidade.</p>
-              <p>Até modelos baratos podem furar madeira com facilidade trazendo um ótimo <a href="/melhor-parafusadeira-custo-beneficio" className="text-blue-600 hover:underline font-medium">custo-benefício</a>.</p>
+              <p>Até modelos baratos podem furar madeira com facilidade trazendo um ótimo <a href="/melhor-parafusadeira-custo-beneficio/" className="text-blue-600 hover:underline font-medium">custo-benefício</a>.</p>
               <p>Para trabalhos pequenos e médios é prático e eficiente, mas evite pressão excessiva para não danificar a madeira ou a ferramenta.</p>
               <p>A qualidade da broca afeta diretamente o resultado, portanto escolha brocas e ferramentas apropriadas.</p>
             </div>

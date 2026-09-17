@@ -59,7 +59,7 @@ export const ComoEscolherFuradeira = () => {
               Potência, velocidade variável e compatibilidade de brocas aumentam a versatilidade.
             </p>
             <p className="mb-6">
-              Mas claro que procurar uma furadeira adequada na lista das <a href="/melhor-furadeira" className="text-blue-600 hover:underline font-medium">melhores furadeiras do mercado</a> vai ser muito mais fácil pois vai limitar a sua busca ao invés de procurar em todo o mercado.
+              Mas claro que procurar uma furadeira adequada na lista das <a href="/melhor-furadeira/" className="text-blue-600 hover:underline font-medium">melhores furadeiras do mercado</a> vai ser muito mais fácil pois vai limitar a sua busca ao invés de procurar em todo o mercado.
             </p>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Tipos de furadeiras disponíveis no mercado</h2>

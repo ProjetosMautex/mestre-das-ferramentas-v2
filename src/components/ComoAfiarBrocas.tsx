@@ -179,7 +179,7 @@ export const ComoAfiarBrocas: React.FC = () => {
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Como escolher um bom afiador de brocas?</h2>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-              <p>Escolher o <a href="/melhor-afiador-de-broca" className="text-blue-600 hover:underline">melhor afiador de broca</a> exige mais do que olhar o preço; trata-se de alinhar a ferramenta a padrões técnicos que garantam a integridade geométrica das suas peças.</p>
+              <p>Escolher o <a href="/melhor-afiador-de-broca/" className="text-blue-600 hover:underline">melhor afiador de broca</a> exige mais do que olhar o preço; trata-se de alinhar a ferramenta a padrões técnicos que garantam a integridade geométrica das suas peças.</p>
               <p>Se o equipamento não oferecer a precisão angular necessária, sua tentativa de manutenção pode resultar em uma broca permanentemente comprometida.</p>
               <p>Analise a rotina da sua oficina e as especificidades das ligas que você utiliza para determinar qual tecnologia de suporte melhor atende às suas necessidades operacionais.</p>
             </div>

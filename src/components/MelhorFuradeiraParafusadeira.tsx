@@ -773,7 +773,7 @@ export const MelhorFuradeiraParafusadeira: React.FC = () => {
                   Confira nosso <strong className="text-[#FFD700]">Guia Completo de Brocas</strong> para saber exatamente qual acessório usar em madeira, metal ou alvenaria sem danificar sua nova máquina.
                 </p>
               </div>
-              <a href="/melhor-jogo-de-brocas" className="relative z-10 bg-[#FFD700] text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-yellow-400 hover:scale-105 transition-all whitespace-nowrap text-center shadow-lg border-2 border-transparent">
+              <a href="/melhor-jogo-de-brocas/" className="relative z-10 bg-[#FFD700] text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-yellow-400 hover:scale-105 transition-all whitespace-nowrap text-center shadow-lg border-2 border-transparent">
                 ACESSAR O GUIA
               </a>
             </div>
