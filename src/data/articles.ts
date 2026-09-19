@@ -619,12 +619,6 @@ export const articles: Article[] = [
     excerpt: "Cansado de brocas que perdem o corte e estragam peças? Descubra por que a broca de aço rápido é a escolha definitiva para precisão e durabilidade técnica."
   },
   {
-    title: "O que é Broca Escalonada e Por Que Você Precisa de Uma",
-    url: "/o-que-e-broca-escalonada/",
-    image: "/images/blog/1/o que é broca escalonada.webp",
-    excerpt: "Cansado de furos imprecisos e retrabalho? Descubra por que a broca escalonada é o segredo dos profissionais para perfurações perfeitas, rápidas e sem rebarbas."
-  },
-  {
     title: "Parafusadeira Britânia é boa? Review da BPF01",
     url: "/parafusadeira-britania-e-boa/",
     image: "/images/blog/1/parafusadeira-britania-e-boa.webp",
@@ -683,5 +677,11 @@ export const articles: Article[] = [
     url: "/como-funciona-parafusadeira-pneumatica/",
     image: "/images/blog/1/como-funciona-parafusadeira-pneumatica.webp",
     excerpt: "Quer saber se a parafusadeira pneumática é o investimento certo para você? Descubra como escolher o modelo ideal, evitar prejuízos e aumentar sua produtividade."
+  },
+  {
+    title: "O Que é Broca Escalonada e Como Usar - Mestre das Ferramentas",
+    url: "/o-que-e-broca-escalonada/",
+    image: "/images/blog/1/o-que-e-broca-escalonada.webp",
+    excerpt: "Cansado de trocar de broca a cada furo? Descubra o que é a broca escalonada, como furar chapas com precisão e as dicas profissionais para não queimar a ferramenta!"
   }
 ];
