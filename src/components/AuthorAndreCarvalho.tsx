@@ -7,8 +7,8 @@ export const AuthorAndreCarvalho: React.FC = () => {
         <a href="/author/andre-carvalho/" className="block cursor-pointer">
           <img 
             loading="lazy" 
-            width="160" 
-            height="160" 
+            width={160} 
+            height={160} 
             src="/images/autores/andre-carvalho.webp" 
             alt="André Carvalho" 
             className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-gray-200 hover:border-[#FFD700] transition-colors shadow-sm" 

@@ -22,6 +22,10 @@ export const OQueEBrocaEscalonada: React.FC = () => {
               onError={(e) => {
                 e.currentTarget.src = "https://picsum.photos/seed/drill/1920/1080?blur=4";
               }}
+              width={800}
+              height={533}
+              fetchPriority="high"
+              loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/80 to-[#1a1a1a]"></div>
           </div>
@@ -43,6 +47,10 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                     onError={(e) => {
                       e.currentTarget.src = "https://ui-avatars.com/api/?name=Andre+Carvalho&background=FFD700&color=1a1a1a";
                     }}
+                    width={32}
+                    height={32}
+                    fetchPriority="high"
+                    loading="eager"
                   />
                   André Carvalho
                 </a>
@@ -91,7 +99,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
             {selectedMaterial === 'madeira' && (
               <div className="mt-4 p-4 bg-yellow-50 text-yellow-800 rounded-lg border border-yellow-200">
                 <p className="font-semibold">Cuidado!</p>
-                <p>A broca escalonada NÃO é recomendada para madeira grossa ou concreto. Para esses materiais, use <a href="/o-que-e-broca-helicoidal/" className="text-blue-600 hover:underline">brocas helicoidais</a> (madeira) ou brocas de vídea (concreto). Mas se você também trabalha com perfis de metal, vale a pena conhecer as vantagens abaixo.</p>
+                <p>A broca escalonada NÃO é recomendada para madeira grossa ou concreto. Para esses materiais, use <a href="/o-que-e-broca-helicoidal/" className="text-blue-700 hover:underline">brocas helicoidais</a> (madeira) ou brocas de vídea (concreto). Mas se você também trabalha com perfis de metal, vale a pena conhecer as vantagens abaixo.</p>
               </div>
             )}
           </div>
@@ -114,11 +122,14 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                 alt="Broca escalonada com perfil cônico e degraus progressivos furando chapa metálica" 
                 title="O que é broca escalonada - estrutura cônica progressiva"
                 className="w-full max-w-2xl rounded-xl shadow-lg"
+                width={800}
+                height={533}
+                loading="lazy"
               />
             </div>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>Pense na broca escalonada como se fosse um jogo completo de brocas condensado em um único corpo cônico de aço rápido.</p>
-              <p>Ao contrário das <a href="/o-que-e-broca-helicoidal/" className="text-blue-600 hover:underline">brocas helicoidais</a> comuns que você usa todo dia — que possuem um diâmetro único e travam fácil em chapas finas —, este modelo é construído com vários degraus retificados que sobem de forma progressiva.</p>
+              <p>Ao contrário das <a href="/o-que-e-broca-helicoidal/" className="text-blue-700 hover:underline">brocas helicoidais</a> comuns que você usa todo dia — que possuem um diâmetro único e travam fácil em chapas finas —, este modelo é construído com vários degraus retificados que sobem de forma progressiva.</p>
               <p>Cada patamar desse cone corresponde a uma medida exata em milímetros ou polegadas, eliminando de vez a necessidade de trocar de broca toda vez que você precisa alargar um orifício.</p>
               <p>O grande trunfo está no desenho geométrico feito sob medida para chapas metálicas e superfícies de pouca espessura.</p>
               <p>Quem já tentou furar lata, calha ou painel elétrico com broca comum grossa sabe o perigo: ela costuma "morder" o metal de sopetão, entortar a chapa, dar tranco no pulso do operador e deixar rebarbas vivas cortantes.</p>
@@ -155,6 +166,9 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                 alt="Detalhes da anatomia da broca escalonada com ponta autoperfurante e estrias helicoidais" 
                 title="Corpo escalonado e características técnicas da broca"
                 className="w-full max-w-2xl rounded-xl shadow-lg"
+                width={800}
+                height={533}
+                loading="lazy"
               />
             </div>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -187,6 +201,9 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                 alt="Comparação visual entre broca escalonada e serra copo em chapa de metal" 
                 title="Broca escalonada versus serra copo em chapas finas"
                 className="w-full max-w-2xl rounded-xl shadow-lg"
+                width={800}
+                height={533}
+                loading="lazy"
               />
             </div>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -260,6 +277,9 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                 alt="Furação com broca escalonada em trilho DIN para quadro de disjuntores" 
                 title="Aplicação prática da broca escalonada em trilhos elétricos"
                 className="w-full max-w-2xl rounded-xl shadow-lg"
+                width={800}
+                height={533}
+                loading="lazy"
               />
             </div>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -312,6 +332,9 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                 alt="Aplicação de fluido de corte para lubrificação de broca escalonada" 
                 title="Procedimento correto de lubrificação da broca escalonada"
                 className="w-full max-w-2xl rounded-xl shadow-lg"
+                width={800}
+                height={533}
+                loading="lazy"
               />
             </div>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
