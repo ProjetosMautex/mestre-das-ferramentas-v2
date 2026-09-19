@@ -315,7 +315,7 @@ export const MelhorParafusadeira: React.FC = () => {
                   src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsb-185-li"].name}.webp`} 
                   srcSet={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsb-185-li"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsb-185-li"].name}.webp 800w`}
                   sizes="(max-width: 768px) 100vw, 400px"
-                  alt={products["parafusadeira-bosch-gsb-185-li"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  alt={products["parafusadeira-bosch-gsb-185-li"].name} className="max-h-80 object-contain mix-blend-multiply" width="800" height="533" 
                   loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -397,7 +397,7 @@ export const MelhorParafusadeira: React.FC = () => {
                   src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-dewalt-dcd7781d2"].name}.webp`} 
                   srcSet={`/images/blog/melhor-parafusadeira/${products["parafusadeira-dewalt-dcd7781d2"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["parafusadeira-dewalt-dcd7781d2"].name}.webp 800w`}
                   sizes="(max-width: 768px) 100vw, 400px"
-                  alt={products["parafusadeira-dewalt-dcd7781d2"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  alt={products["parafusadeira-dewalt-dcd7781d2"].name} className="max-h-80 object-contain mix-blend-multiply" width="800" height="533" 
                   loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -484,7 +484,7 @@ export const MelhorParafusadeira: React.FC = () => {
                   src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-wap-bpf-12k3"].name}.webp`} 
                   srcSet={`/images/blog/melhor-parafusadeira/${products["parafusadeira-wap-bpf-12k3"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["parafusadeira-wap-bpf-12k3"].name}.webp 800w`}
                   sizes="(max-width: 768px) 100vw, 400px"
-                  alt={products["parafusadeira-wap-bpf-12k3"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  alt={products["parafusadeira-wap-bpf-12k3"].name} className="max-h-80 object-contain mix-blend-multiply" width="800" height="533" 
                   loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -568,7 +568,7 @@ export const MelhorParafusadeira: React.FC = () => {
                   src={`/images/blog/melhor-parafusadeira/${products["bosch-gsr-7-14-e-400w"].name}.webp`} 
                   srcSet={`/images/blog/melhor-parafusadeira/${products["bosch-gsr-7-14-e-400w"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["bosch-gsr-7-14-e-400w"].name}.webp 800w`}
                   sizes="(max-width: 768px) 100vw, 400px"
-                  alt={products["bosch-gsr-7-14-e-400w"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  alt={products["bosch-gsr-7-14-e-400w"].name} className="max-h-80 object-contain mix-blend-multiply" width="800" height="533" 
                   loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -639,25 +639,7 @@ export const MelhorParafusadeira: React.FC = () => {
                 </table>
               </div>
 
-              {/* VÍDEO DO YOUTUBE (Reposicionado aqui após Bosch 7-14 E) */}
-              <div className="my-12 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-xl">
-                <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-[#FFD700]">
-                  <Sparkles size={20} className="animate-spin" /> Comparativo Prático Premium
-                </h3>
-                <p className="text-sm text-slate-300 mb-6">Assista a este teste prático comparativo focado em alvenaria e performance bruta para decidir entre os modelos topo de linha Bosch e DeWalt.</p>
-                <div className="flex justify-center">
-                  <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube-nocookie.com/embed/eY-Rr1qqtX0?feature=oembed" 
-                    title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen
-                    className="max-w-full rounded-lg shadow-lg border border-slate-700"
-                  ></iframe>
-                </div>
-              </div>
+
             </section>
 
             {/* Bosch GSR 1000 Smart */}
@@ -670,7 +652,7 @@ export const MelhorParafusadeira: React.FC = () => {
                   src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsr-1000"].name}.webp`} 
                   srcSet={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsr-1000"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsr-1000"].name}.webp 800w`}
                   sizes="(max-width: 768px) 100vw, 400px"
-                  alt={products["parafusadeira-bosch-gsr-1000"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  alt={products["parafusadeira-bosch-gsr-1000"].name} className="max-h-80 object-contain mix-blend-multiply" width="800" height="533" 
                   loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -752,7 +734,7 @@ export const MelhorParafusadeira: React.FC = () => {
                   src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-black-decker-ld12"].name}.webp`} 
                   srcSet={`/images/blog/melhor-parafusadeira/${products["parafusadeira-black-decker-ld12"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["parafusadeira-black-decker-ld12"].name}.webp 800w`}
                   sizes="(max-width: 768px) 100vw, 400px"
-                  alt={products["parafusadeira-black-decker-ld12"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  alt={products["parafusadeira-black-decker-ld12"].name} className="max-h-80 object-contain mix-blend-multiply" width="800" height="533" 
                   loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -846,7 +828,7 @@ export const MelhorParafusadeira: React.FC = () => {
                   src="/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I.webp" 
                   srcSet="/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I-small.webp 400w, /images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I.webp 800w"
                   sizes="(max-width: 768px) 100vw, 400px"
-                  alt={products["parafusadeira-vonder-pfv-012i"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  alt={products["parafusadeira-vonder-pfv-012i"].name} className="max-h-80 object-contain mix-blend-multiply" width="800" height="533" 
                   loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -940,7 +922,7 @@ export const MelhorParafusadeira: React.FC = () => {
                   src={`/images/blog/melhor-parafusadeira/${products["bosch-go-bivolt"].name}.webp`} 
                   srcSet={`/images/blog/melhor-parafusadeira/${products["bosch-go-bivolt"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["bosch-go-bivolt"].name}.webp 800w`}
                   sizes="(max-width: 768px) 100vw, 400px"
-                  alt={products["bosch-go-bivolt"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  alt={products["bosch-go-bivolt"].name} className="max-h-80 object-contain mix-blend-multiply" width="800" height="533" 
                   loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -1022,7 +1004,7 @@ export const MelhorParafusadeira: React.FC = () => {
                   src={`/images/blog/melhor-parafusadeira/${products["black-decker-kc4815b"].name}.webp`} 
                   srcSet={`/images/blog/melhor-parafusadeira/${products["black-decker-kc4815b"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["black-decker-kc4815b"].name}.webp 800w`}
                   sizes="(max-width: 768px) 100vw, 400px"
-                  alt={products["black-decker-kc4815b"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  alt={products["black-decker-kc4815b"].name} className="max-h-80 object-contain mix-blend-multiply" width="800" height="533" 
                   loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">

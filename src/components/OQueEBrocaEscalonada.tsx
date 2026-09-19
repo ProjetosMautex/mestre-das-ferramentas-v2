@@ -16,16 +16,14 @@ export const OQueEBrocaEscalonada: React.FC = () => {
         <div className="relative bg-[#1a1a1a] text-white py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src="/images/blog/1/o-que-e-broca-escalonada.webp" 
-              srcSet="/images/blog/1/o-que-e-broca-escalonada-small.webp 490w, /images/blog/1/o-que-e-broca-escalonada.webp 1063w"
-              sizes="(max-width: 768px) 490px, 1063px"
+              src="/images/blog/1/o-que-e-broca-escalonada-small.webp" 
               alt="O que é Broca Escalonada" 
               className="w-full h-full object-cover opacity-20 blur-sm"
               onError={(e) => {
                 e.currentTarget.src = "https://picsum.photos/seed/drill/1920/1080?blur=4";
               }}
-              width={800}
-              height={533}
+              width={490}
+              height={329}
               fetchPriority="high"
               loading="eager"
             />
@@ -120,14 +118,14 @@ export const OQueEBrocaEscalonada: React.FC = () => {
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">O Que é uma Broca Escalonada</h2>
             <div className="mb-6 flex justify-center">
               <img 
-                src="/images/blog/1/o-que-e-broca-escalonada.webp" 
-                srcSet="/images/blog/1/o-que-e-broca-escalonada-small.webp 490w, /images/blog/1/o-que-e-broca-escalonada.webp 1063w"
+                src="/images/blog/1/o-que-e-broca-escalonada-medium.webp" 
+                srcSet="/images/blog/1/o-que-e-broca-escalonada-small.webp 490w, /images/blog/1/o-que-e-broca-escalonada-medium.webp 800w, /images/blog/1/o-que-e-broca-escalonada.webp 1063w"
                 sizes="(max-width: 768px) 100vw, 800px"
                 alt="Broca escalonada com perfil cônico e degraus progressivos furando chapa metálica" 
                 title="O que é broca escalonada - estrutura cônica progressiva"
                 className="w-full max-w-2xl rounded-xl shadow-lg"
                 width={800}
-                height={533}
+                height={537}
                 loading="lazy"
               />
             </div>
@@ -171,7 +169,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                 title="Corpo escalonado e características técnicas da broca"
                 className="w-full max-w-2xl rounded-xl shadow-lg"
                 width={800}
-                height={533}
+                height={537}
                 loading="lazy"
               />
             </div>
@@ -206,7 +204,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                 title="Broca escalonada versus serra copo em chapas finas"
                 className="w-full max-w-2xl rounded-xl shadow-lg"
                 width={800}
-                height={533}
+                height={537}
                 loading="lazy"
               />
             </div>
@@ -282,7 +280,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                 title="Aplicação prática da broca escalonada em trilhos elétricos"
                 className="w-full max-w-2xl rounded-xl shadow-lg"
                 width={800}
-                height={533}
+                height={537}
                 loading="lazy"
               />
             </div>
@@ -337,7 +335,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                 title="Procedimento correto de lubrificação da broca escalonada"
                 className="w-full max-w-2xl rounded-xl shadow-lg"
                 width={800}
-                height={533}
+                height={537}
                 loading="lazy"
               />
             </div>
