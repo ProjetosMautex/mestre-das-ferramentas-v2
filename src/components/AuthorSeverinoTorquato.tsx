@@ -9,16 +9,16 @@ export const AuthorSeverinoTorquato: React.FC = () => {
             loading="lazy" 
             width="160" 
             height="160" 
-            src="/images/autores/severino-torquato.webp" 
+            src="/images/autores/severino-torquato-square.webp" 
             alt="Severino Torquato" 
             className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-gray-200 hover:border-[#FFD700] transition-colors shadow-sm" 
           />
         </a>
       </div>
       <div>
-        <h2 className="text-sm font-bold text-[#b39700] uppercase tracking-widest mb-2">Sobre o Autor</h2>
+        <h2 className="text-sm font-bold text-[#856404] uppercase tracking-widest mb-2">Sobre o Autor</h2>
         <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
-          <a href="/author/severino-torquato/" className="hover:text-[#b39700] transition-colors">
+          <a href="/author/severino-torquato/" className="hover:text-[#856404] transition-colors">
             Severino Torquato
           </a>
         </h3>

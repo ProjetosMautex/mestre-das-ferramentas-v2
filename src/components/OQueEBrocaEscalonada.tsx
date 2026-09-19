@@ -17,6 +17,8 @@ export const OQueEBrocaEscalonada: React.FC = () => {
           <div className="absolute inset-0 z-0">
             <img 
               src="/images/blog/1/o-que-e-broca-escalonada.webp" 
+              srcSet="/images/blog/1/o-que-e-broca-escalonada-small.webp 490w, /images/blog/1/o-que-e-broca-escalonada.webp 1063w"
+              sizes="(max-width: 768px) 490px, 1063px"
               alt="O que é Broca Escalonada" 
               className="w-full h-full object-cover opacity-20 blur-sm"
               onError={(e) => {
@@ -41,7 +43,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                 <span>Por</span>
                 <a href="/author/andre-carvalho/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                   <img 
-                    src="/images/autores/andre-carvalho.webp" 
+                    src="/images/autores/andre-carvalho-small.webp" 
                     alt="André Carvalho" 
                     className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
                     onError={(e) => {
@@ -64,8 +66,8 @@ export const OQueEBrocaEscalonada: React.FC = () => {
           <ExitIntentPopup />
 
           {/* SIMULADOR RÁPIDO DE ENGAJAMENTO */}
-          <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 mb-8 mt-4">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">Qual material você precisa furar com mais frequência?</h3>
+          <div className="my-8 p-6 bg-gradient-to-br from-slate-800 to-slate-900 text-white rounded-2xl shadow-xl border border-slate-700">
+            <h2 className="text-xl font-bold mb-4">Qual material você precisa furar com mais frequência?</h2>
             <div className="space-y-3">
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input 
@@ -73,9 +75,9 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                   name="material" 
                   value="metal" 
                   onChange={handleMaterialChange}
-                  className="form-radio h-5 w-5 text-blue-600"
+                  className="form-radio h-5 w-5 text-blue-500 bg-slate-800 border-slate-600"
                 />
-                <span className="text-gray-700 font-medium">Chapas de metal e alumínio</span>
+                <span className="text-slate-200 font-medium">Chapas de metal e alumínio</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input 
@@ -83,9 +85,9 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                   name="material" 
                   value="madeira" 
                   onChange={handleMaterialChange}
-                  className="form-radio h-5 w-5 text-blue-600"
+                  className="form-radio h-5 w-5 text-blue-500 bg-slate-800 border-slate-600"
                 />
-                <span className="text-gray-700 font-medium">Madeira ou concreto</span>
+                <span className="text-slate-200 font-medium">Madeira ou concreto</span>
               </label>
             </div>
             
@@ -99,7 +101,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
             {selectedMaterial === 'madeira' && (
               <div className="mt-4 p-4 bg-yellow-50 text-yellow-800 rounded-lg border border-yellow-200">
                 <p className="font-semibold">Cuidado!</p>
-                <p>A broca escalonada NÃO é recomendada para madeira grossa ou concreto. Para esses materiais, use <a href="/o-que-e-broca-helicoidal/" className="text-blue-700 hover:underline">brocas helicoidais</a> (madeira) ou brocas de vídea (concreto). Mas se você também trabalha com perfis de metal, vale a pena conhecer as vantagens abaixo.</p>
+                <p>A broca escalonada NÃO é recomendada para madeira grossa ou concreto. Para esses materiais, use <a href="/o-que-e-broca-helicoidal/" className="text-blue-700 underline hover:text-blue-800">brocas helicoidais</a> (madeira) ou brocas de vídea (concreto). Mas se você também trabalha com perfis de metal, vale a pena conhecer as vantagens abaixo.</p>
               </div>
             )}
           </div>
@@ -119,6 +121,8 @@ export const OQueEBrocaEscalonada: React.FC = () => {
             <div className="mb-6 flex justify-center">
               <img 
                 src="/images/blog/1/o-que-e-broca-escalonada.webp" 
+                srcSet="/images/blog/1/o-que-e-broca-escalonada-small.webp 490w, /images/blog/1/o-que-e-broca-escalonada.webp 1063w"
+                sizes="(max-width: 768px) 100vw, 800px"
                 alt="Broca escalonada com perfil cônico e degraus progressivos furando chapa metálica" 
                 title="O que é broca escalonada - estrutura cônica progressiva"
                 className="w-full max-w-2xl rounded-xl shadow-lg"
@@ -129,7 +133,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
             </div>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>Pense na broca escalonada como se fosse um jogo completo de brocas condensado em um único corpo cônico de aço rápido.</p>
-              <p>Ao contrário das <a href="/o-que-e-broca-helicoidal/" className="text-blue-700 hover:underline">brocas helicoidais</a> comuns que você usa todo dia — que possuem um diâmetro único e travam fácil em chapas finas —, este modelo é construído com vários degraus retificados que sobem de forma progressiva.</p>
+              <p>Ao contrário das <a href="/o-que-e-broca-helicoidal/" className="text-blue-700 underline hover:text-blue-800">brocas helicoidais</a> comuns que você usa todo dia — que possuem um diâmetro único e travam fácil em chapas finas —, este modelo é construído com vários degraus retificados que sobem de forma progressiva.</p>
               <p>Cada patamar desse cone corresponde a uma medida exata em milímetros ou polegadas, eliminando de vez a necessidade de trocar de broca toda vez que você precisa alargar um orifício.</p>
               <p>O grande trunfo está no desenho geométrico feito sob medida para chapas metálicas e superfícies de pouca espessura.</p>
               <p>Quem já tentou furar lata, calha ou painel elétrico com broca comum grossa sabe o perigo: ela costuma "morder" o metal de sopetão, entortar a chapa, dar tranco no pulso do operador e deixar rebarbas vivas cortantes.</p>

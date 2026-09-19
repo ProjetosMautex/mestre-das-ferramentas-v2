@@ -14,7 +14,7 @@ export const MelhorParafusadeiraDewalt: React.FC = () => {
     "Furadeira-e-Parafusadeira-Dewalt-DCD708D2",
     "Furadeira-e-Parafusadeira-Dewalt-DCD710D2",
     "Parafusadeira-para-Drywall-Dewalt-DCF620B",
-    "Furadeira-e-Parafusadeira-Dewalt-DCD700LC1"
+    "DeWalt DCD700LC1"
   ];
 
   return (
@@ -92,7 +92,7 @@ export const MelhorParafusadeiraDewalt: React.FC = () => {
                       <td className="w-[65px] p-2 align-middle text-center sm:w-[80px] sm:p-3">
                         <div className="w-[40px] h-[40px] border border-slate-100 rounded flex items-center justify-center p-0.5 sm:w-[60px] sm:h-[60px] mx-auto">
                           <img 
-                            src={id === "Furadeira-e-Parafusadeira-Dewalt-DCD700LC1" ? "/images/blog/1/Furadeira e Parafusadeira Dewalt Modelo DCD700LC1.webp" : `/images/blog/melhor-parafusadeira/${product.name}.webp`}
+                            src={id === "DeWalt DCD700LC1" ? "/images/blog/1/Furadeira e Parafusadeira Dewalt Modelo DCD700LC1.webp" : `/images/blog/melhor-parafusadeira/${product.name}.webp`}
                             alt={product.name} 
                             width="60"
                             height="60"
@@ -461,7 +461,7 @@ export const MelhorParafusadeiraDewalt: React.FC = () => {
                   </div>
                 </div>
 
-                <AffiliateCard id="Furadeira-e-Parafusadeira-Dewalt-DCD700LC1" />
+                <AffiliateCard id="DeWalt DCD700LC1" />
               </div>
             </div>
           </section>

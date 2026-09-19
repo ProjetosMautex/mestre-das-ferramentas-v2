@@ -142,6 +142,8 @@ export const MelhorParafusadeira: React.FC = () => {
           <div className="absolute inset-0 z-0">
             <img 
               src="/images/blog/melhor-parafusadeira/melhor-parafusadeira.webp" 
+              srcSet="/images/blog/melhor-parafusadeira/melhor-parafusadeira-small.webp 490w, /images/blog/melhor-parafusadeira/melhor-parafusadeira.webp 667w"
+              sizes="(max-width: 768px) 490px, 667px"
               alt="Background" 
               className="w-full h-full object-cover opacity-20 blur-sm"
             />
@@ -157,7 +159,7 @@ export const MelhorParafusadeira: React.FC = () => {
                 <span>Por</span>
                 <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                   <img 
-                    src="/images/autores/severino-torquato.webp" 
+                    src="/images/autores/severino-torquato-small.webp" 
                     alt="Severino Torquato" 
                     className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
                   />
@@ -179,7 +181,7 @@ export const MelhorParafusadeira: React.FC = () => {
           <div className="my-8 p-6 bg-gradient-to-br from-slate-800 to-slate-900 text-white rounded-2xl shadow-xl border border-slate-700">
             <div className="flex items-center gap-3 mb-4">
               <HelpCircle className="text-[#FFD700] w-6 h-6 animate-pulse" />
-              <h3 className="text-xl font-bold">Simulador Rápido: Qual é ideal para você?</h3>
+              <h2 className="text-xl font-bold">Simulador Rápido: Qual é ideal para você?</h2>
             </div>
             <p className="text-slate-300 text-sm mb-4">Responda em 1 clique para encontrar a recomendação certa:</p>
             
@@ -247,6 +249,8 @@ export const MelhorParafusadeira: React.FC = () => {
                           <div className="w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] border border-slate-100 rounded flex items-center justify-center p-0.5 bg-white mx-auto">
                             <img 
                               src={id === "parafusadeira-vonder-pfv-012i" ? "/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I.webp" : `/images/blog/melhor-parafusadeira/${product.name}.webp`}
+                              srcSet={`${id === "parafusadeira-vonder-pfv-012i" ? "/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I-thumb.webp" : `/images/blog/melhor-parafusadeira/${product.name}-thumb.webp`} 60w, ${id === "parafusadeira-vonder-pfv-012i" ? "/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I.webp" : `/images/blog/melhor-parafusadeira/${product.name}.webp`} 800w`}
+                              sizes="60px"
                               alt={meta?.shortName || product.name} 
                               width="60"
                               height="60"
@@ -307,7 +311,12 @@ export const MelhorParafusadeira: React.FC = () => {
                 1. Melhor top de linha: Parafusadeira Bosch GSB 185-LI
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsb-185-li"].name}.webp`} alt={products["parafusadeira-bosch-gsb-185-li"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img 
+                  src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsb-185-li"].name}.webp`} 
+                  srcSet={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsb-185-li"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsb-185-li"].name}.webp 800w`}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  alt={products["parafusadeira-bosch-gsb-185-li"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>Bosch GSB 185-LI</strong> é a melhor opção para profissionais que precisam <strong>furar alvenaria e trabalhar com madeira dura</strong> todos os dias, mas não querem dor de cabeça comprando ferramentas avulsas.</p>
@@ -384,7 +393,12 @@ export const MelhorParafusadeira: React.FC = () => {
                 2. Melhor para concreto: Parafusadeira DeWalt DCD7781D2
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-dewalt-dcd7781d2"].name}.webp`} alt={products["parafusadeira-dewalt-dcd7781d2"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img 
+                  src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-dewalt-dcd7781d2"].name}.webp`} 
+                  srcSet={`/images/blog/melhor-parafusadeira/${products["parafusadeira-dewalt-dcd7781d2"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["parafusadeira-dewalt-dcd7781d2"].name}.webp 800w`}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  alt={products["parafusadeira-dewalt-dcd7781d2"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>DeWalt DCD7781D2</strong> é um verdadeiro trator para furar <strong>concreto e estruturas rígidas</strong>, indicada para o dia a dia pesado em canteiros de obras.</p>
@@ -466,7 +480,12 @@ export const MelhorParafusadeira: React.FC = () => {
                 3. Parafusadeira Furadeira WAP BPF 12K3
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-wap-bpf-12k3"].name}.webp`} alt={products["parafusadeira-wap-bpf-12k3"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img 
+                  src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-wap-bpf-12k3"].name}.webp`} 
+                  srcSet={`/images/blog/melhor-parafusadeira/${products["parafusadeira-wap-bpf-12k3"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["parafusadeira-wap-bpf-12k3"].name}.webp 800w`}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  alt={products["parafusadeira-wap-bpf-12k3"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>WAP BPF 12K3</strong> é o kit inicial perfeito e barato para quem quer resolver <strong>pequenos reparos em casa</strong> sem precisar chamar um marido de aluguel.</p>
@@ -545,7 +564,12 @@ export const MelhorParafusadeira: React.FC = () => {
                 4. Bosch GSR 7-14 E: melhor para uso contínuo com cabo
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["bosch-gsr-7-14-e-400w"].name}.webp`} alt={products["bosch-gsr-7-14-e-400w"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img 
+                  src={`/images/blog/melhor-parafusadeira/${products["bosch-gsr-7-14-e-400w"].name}.webp`} 
+                  srcSet={`/images/blog/melhor-parafusadeira/${products["bosch-gsr-7-14-e-400w"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["bosch-gsr-7-14-e-400w"].name}.webp 800w`}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  alt={products["bosch-gsr-7-14-e-400w"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>Bosch GSR 7-14 E com fio (400W)</strong> é a melhor escolha para <strong>trabalhos contínuos em bancada</strong>, onde você não quer parar para recarregar baterias.</p>
@@ -625,7 +649,7 @@ export const MelhorParafusadeira: React.FC = () => {
                   <iframe 
                     width="560" 
                     height="315" 
-                    src="https://www.youtube.com/embed/eY-Rr1qqtX0?feature=oembed" 
+                    src="https://www.youtube-nocookie.com/embed/eY-Rr1qqtX0?feature=oembed" 
                     title="YouTube video player" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -642,7 +666,12 @@ export const MelhorParafusadeira: React.FC = () => {
                 5. Bosch GSR 1000 Smart: melhor para montagem de móveis e locais apertados
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsr-1000"].name}.webp`} alt={products["parafusadeira-bosch-gsr-1000"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img 
+                  src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsr-1000"].name}.webp`} 
+                  srcSet={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsr-1000"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsr-1000"].name}.webp 800w`}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  alt={products["parafusadeira-bosch-gsr-1000"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>Bosch GSR 1000 Smart</strong> é tão pequena que cabe na palma da mão (0,9 kg), sendo a melhor escolha para <strong>montar móveis dentro de armários apertados</strong>.</p>
@@ -719,7 +748,12 @@ export const MelhorParafusadeira: React.FC = () => {
                 6. BLACK+DECKER | Parafusadeira/Furadeira 3/8" (10 mm) 12 V | LD12SC-BR
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-black-decker-ld12"].name}.webp`} alt={products["parafusadeira-black-decker-ld12"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img 
+                  src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-black-decker-ld12"].name}.webp`} 
+                  srcSet={`/images/blog/melhor-parafusadeira/${products["parafusadeira-black-decker-ld12"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["parafusadeira-black-decker-ld12"].name}.webp 800w`}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  alt={products["parafusadeira-black-decker-ld12"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>Black+Decker LD12SC-BR</strong> é uma máquina confiável de 12V que <strong>já vem com 30 acessórios</strong>, excelente para quem não quer comprar brocas separadas.</p>
@@ -808,7 +842,12 @@ export const MelhorParafusadeira: React.FC = () => {
                 7. VONDER | Parafusadeira/Furadeira a Bateria 12 V | PFV 012
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src="/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I.webp" alt={products["parafusadeira-vonder-pfv-012i"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img 
+                  src="/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I.webp" 
+                  srcSet="/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I-small.webp 400w, /images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I.webp 800w"
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  alt={products["parafusadeira-vonder-pfv-012i"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>Vonder PFV 012</strong> é a melhor máquina barata se você faz questão da <strong>função de impacto</strong> para furar parede de tijolo de vez em quando.</p>
@@ -897,7 +936,12 @@ export const MelhorParafusadeira: React.FC = () => {
                 8. Bosch GO 3,6V: melhor para parafusamentos rápidos e precisão
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["bosch-go-bivolt"].name}.webp`} alt={products["bosch-go-bivolt"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img 
+                  src={`/images/blog/melhor-parafusadeira/${products["bosch-go-bivolt"].name}.webp`} 
+                  srcSet={`/images/blog/melhor-parafusadeira/${products["bosch-go-bivolt"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["bosch-go-bivolt"].name}.webp 800w`}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  alt={products["bosch-go-bivolt"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>Bosch GO (3ª Geração)</strong> é uma ferramenta de nicho, perfeita para eletricistas e técnicos de informática que precisam de <strong>agilidade em manutenções</strong>.</p>
@@ -974,7 +1018,12 @@ export const MelhorParafusadeira: React.FC = () => {
                 9. BLACK+DECKER | Parafusadeira a Bateria 1/4" (6,35 mm) 4.8 V com LED 16 Acessórios | KC4815B-BR
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["black-decker-kc4815b"].name}.webp`} alt={products["black-decker-kc4815b"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img 
+                  src={`/images/blog/melhor-parafusadeira/${products["black-decker-kc4815b"].name}.webp`} 
+                  srcSet={`/images/blog/melhor-parafusadeira/${products["black-decker-kc4815b"].name}-small.webp 400w, /images/blog/melhor-parafusadeira/${products["black-decker-kc4815b"].name}.webp 800w`}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  alt={products["black-decker-kc4815b"].name} className="max-h-80 object-contain mix-blend-multiply" 
+                  loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
                 <p>A <strong>Black+Decker KC4815B-BR</strong> é a mais barata e simples da lista, servindo para <strong>apertar parafusos soltos em casa</strong> sem fazer força.</p>
@@ -1249,8 +1298,6 @@ export const MelhorParafusadeira: React.FC = () => {
 
             </div>
           </section>
-
-          <AuthorSeverinoTorquato />
         </div>
     </>
   );

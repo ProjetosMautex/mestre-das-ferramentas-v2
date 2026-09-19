@@ -56,7 +56,7 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-wap-bpf-12k3": {
     name: "Parafusadeira WAP BPF 12K3",
-    link: "https://meli.la/1jEV6f3"
+    link: "https://meli.la/29cbayp"
   },
   "parafusadeira-dewalt-dcd7781d2": {
     name: "Parafusadeira DeWalt DCD7781D2",
@@ -64,7 +64,7 @@ export const products: Record<string, Product> = {
   },
   "DeWalt DCD700LC1": {
     name: "DeWalt DCD700LC1",
-    link: "https://meli.la/1yFBpJu"
+    link: "https://meli.la/2RoFFoF"
   },
   "Furadeira-e-Parafusadeira-Dewalt-DCD791D2B2": {
     name: "Furadeira e Parafusadeira Dewalt DCD791D2B2",
@@ -84,7 +84,7 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-black-decker-ld12": {
     name: "Parafusadeira Furadeira Black & Decker LD12",
-    link: "https://meli.la/1fZPS6Q"
+    link: "https://meli.la/2oZD853"
   },
   "bosch-gsr-7-14-e-400w": {
     name: "Bosch GSR 7-14 E 400W",
@@ -203,10 +203,7 @@ export const products: Record<string, Product> = {
     name: "Parafusadeira para Drywall Dewalt DCF620B",
     link: "https://meli.la/2BBXuv9"
   },
-  "Furadeira-e-Parafusadeira-Dewalt-DCD700LC1": {
-    name: "Furadeira e Parafusadeira Dewalt DCD700LC1",
-    link: "https://meli.la/1xXHnkp"
-  },
+
   // --- Listas de Principais por Marca ---
   "Principais furadeiras Makita": {
     name: "Principais furadeiras Makita",
