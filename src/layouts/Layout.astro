@@ -32,26 +32,18 @@ const canonicalURL = new URL(canonicalPath, Astro.site);
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 
-		<!-- Google Analytics GA4 -->
-		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-DV27LFW49F"></script>
-		<script is:inline>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-DV27LFW49F');
-		</script>
 
 
 
 	</head>
 	<body class="min-h-screen flex flex-col bg-gray-50">
-		<Header client:load />
+		<Header client:idle />
 
 		<main class="flex-grow">
 			<slot />
 		</main>
 
-		<Footer client:load />
+		<Footer client:idle />
 
 		<CookieConsent client:idle />
 		{popupType === 'central' && <ExitIntentPopupcentral client:idle />}

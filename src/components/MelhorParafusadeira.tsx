@@ -4,7 +4,16 @@ import { AffiliateCard } from './AffiliateCard';
 import { BunnerDoMeio } from './BunnerDoMeio';
 import { AuthorSeverinoTorquato } from './AuthorSeverinoTorquato';
 import { products, type ProductId } from '../data/products';
-import { Check, X, Info, ShoppingCart, ArrowRight, ChevronDown, ChevronUp, Sparkles, HelpCircle, ShoppingBag } from 'lucide-react';
+const Check = ({ size = 24, className = "" }) => (<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><polyline points="20 6 9 17 4 12"></polyline></svg>);
+const X = ({ size = 24, className = "" }) => (<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>);
+const Info = ({ size = 24, className = "" }) => (<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>);
+const ShoppingCart = ({ size = 24, className = "" }) => (<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>);
+const ArrowRight = ({ size = 24, className = "" }) => (<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>);
+const ChevronDown = ({ size = 24, className = "" }) => (<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><polyline points="6 9 12 15 18 9"></polyline></svg>);
+const ChevronUp = ({ size = 24, className = "" }) => (<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><polyline points="18 15 12 9 6 15"></polyline></svg>);
+const Sparkles = ({ size = 24, className = "" }) => (<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>);
+const HelpCircle = ({ size = 24, className = "" }) => (<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>);
+const ShoppingBag = ({ size = 24, className = "" }) => (<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>);
 
 export const MelhorParafusadeira: React.FC = () => {
   const featuredIds: ProductId[] = [
@@ -141,6 +150,7 @@ export const MelhorParafusadeira: React.FC = () => {
         <div className="relative bg-[#1a1a1a] text-white py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
+              fetchpriority="high"
               src="/images/blog/melhor-parafusadeira/melhor-parafusadeira.webp" 
               srcSet="/images/blog/melhor-parafusadeira/melhor-parafusadeira-small.webp 490w, /images/blog/melhor-parafusadeira/melhor-parafusadeira.webp 667w"
               sizes="(max-width: 768px) 490px, 667px"
@@ -248,9 +258,7 @@ export const MelhorParafusadeira: React.FC = () => {
                         <td className="p-2 align-middle text-center">
                           <div className="w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] border border-slate-100 rounded flex items-center justify-center p-0.5 bg-white mx-auto">
                             <img 
-                              src={id === "parafusadeira-vonder-pfv-012i" ? "/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I.webp" : `/images/blog/melhor-parafusadeira/${product.name}.webp`}
-                              srcSet={`${id === "parafusadeira-vonder-pfv-012i" ? "/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I-thumb.webp" : `/images/blog/melhor-parafusadeira/${product.name}-thumb.webp`} 60w, ${id === "parafusadeira-vonder-pfv-012i" ? "/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I.webp" : `/images/blog/melhor-parafusadeira/${product.name}.webp`} 800w`}
-                              sizes="60px"
+                              src={id === "parafusadeira-vonder-pfv-012i" ? "/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I-thumb.webp" : `/images/blog/melhor-parafusadeira/${product.name}-thumb.webp`}
                               alt={meta?.shortName || product.name} 
                               width="60"
                               height="60"
