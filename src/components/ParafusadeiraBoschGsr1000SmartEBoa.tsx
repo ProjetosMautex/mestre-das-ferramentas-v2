@@ -80,6 +80,8 @@ export const ParafusadeiraBoschGsr1000SmartEBoa: React.FC = () => {
                   <img 
                     src="/images/autores/severino-torquato-small.webp" 
                     alt="Severino Torquato" 
+                    width={32}
+                    height={32}
                     className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
                     onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
@@ -163,7 +165,7 @@ export const ParafusadeiraBoschGsr1000SmartEBoa: React.FC = () => {
                         <td className="p-2 align-middle text-center">
                           <div className="w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] border border-slate-100 rounded flex items-center justify-center p-0.5 bg-white mx-auto">
                             <img 
-                              src={`/images/blog/melhor-parafusadeira/Parafusadeira Furadeira Bosch GSR 1000.webp`}
+                              src={`/images/blog/melhor-parafusadeira/Parafusadeira Furadeira Bosch GSR 1000-thumb.webp`}
                               alt="Design compacto e robusto da Parafusadeira Furadeira Bosch GSR 1000 Smart" 
                               title="Design compacto e robusto da Parafusadeira Furadeira Bosch GSR 1000 Smart"
                               width="60"
@@ -202,7 +204,7 @@ export const ParafusadeiraBoschGsr1000SmartEBoa: React.FC = () => {
             <h2 className="text-3xl font-extrabold text-slate-900 border-b-4 border-[#FFD700] pb-2 mb-6">Uma das menores parafusadeiras do mercado</h2>
             
             <div className="w-full flex justify-center mb-8 mt-6">
-                 <img src="/images/blog/melhor-parafusadeira/Parafusadeira Furadeira Bosch GSR 1000.webp" alt="Parafusadeira Furadeira Bosch GSR 1000 Smart em destaque demonstrando leveza" title="Parafusadeira Furadeira Bosch GSR 1000 Smart em destaque demonstrando leveza" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src="/images/blog/melhor-parafusadeira/Parafusadeira Furadeira Bosch GSR 1000.webp" alt="Parafusadeira Furadeira Bosch GSR 1000 Smart em destaque demonstrando leveza" title="Parafusadeira Furadeira Bosch GSR 1000 Smart em destaque demonstrando leveza" width={800} height={533} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
             </div>
 
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -226,7 +228,7 @@ export const ParafusadeiraBoschGsr1000SmartEBoa: React.FC = () => {
             <h2 className="text-3xl font-extrabold text-slate-900 border-b-4 border-[#FFD700] pb-2 mb-6">Ficha técnica</h2>
             
             <div className="w-full flex justify-center mb-8 mt-6">
-                 <img src="/images/blog/1/Ficha técnica e especificações da Bosch GSR 1000 Smart - Nova.webp" alt="Ficha técnica e especificações da Bosch GSR 1000 Smart" title="Ficha técnica e especificações da Bosch GSR 1000 Smart" className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
+                 <img src="/images/blog/1/Ficha técnica e especificações da Bosch GSR 1000 Smart - Nova.webp" alt="Ficha técnica e especificações da Bosch GSR 1000 Smart" title="Ficha técnica e especificações da Bosch GSR 1000 Smart" width={1024} height={1024} className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
             </div>
 
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -291,7 +293,7 @@ export const ParafusadeiraBoschGsr1000SmartEBoa: React.FC = () => {
             <h2 className="text-3xl font-extrabold text-slate-900 border-b-4 border-[#FFD700] pb-2 mb-6">Desempenho e Capacidade de Perfuração da Bosch GSR 1000 Smart</h2>
             
             <div className="w-full flex justify-center mb-8 mt-6">
-                 <img src="/images/blog/1/Capacidade de perfuração e desempenho da Bosch GSR 1000 Smart em madeira.webp" alt="Capacidade de perfuração e desempenho da Bosch GSR 1000 Smart em madeira" title="Capacidade de perfuração e desempenho da Bosch GSR 1000 Smart em madeira" className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
+                 <img src="/images/blog/1/Capacidade de perfuração e desempenho da Bosch GSR 1000 Smart em madeira.webp" alt="Capacidade de perfuração e desempenho da Bosch GSR 1000 Smart em madeira" title="Capacidade de perfuração e desempenho da Bosch GSR 1000 Smart em madeira" width={1024} height={1024} className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
             </div>
 
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -322,7 +324,7 @@ export const ParafusadeiraBoschGsr1000SmartEBoa: React.FC = () => {
             <h2 className="text-3xl font-extrabold text-slate-900 border-b-4 border-[#FFD700] pb-2 mb-6">Praticidade e Conforto em Ambientes Escuros</h2>
             
             <div className="w-full flex justify-center mb-8 mt-6">
-                 <img src="/images/blog/1/Parafusadeira com luz LED integrada iluminando ambiente escuro de trabalho - Novo.webp" alt="Parafusadeira com luz LED integrada iluminando ambiente escuro de trabalho" title="Parafusadeira com luz LED integrada iluminando ambiente escuro de trabalho" className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
+                 <img src="/images/blog/1/Parafusadeira com luz LED integrada iluminando ambiente escuro de trabalho - Novo.webp" alt="Parafusadeira com luz LED integrada iluminando ambiente escuro de trabalho" title="Parafusadeira com luz LED integrada iluminando ambiente escuro de trabalho" width={1024} height={1024} className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
             </div>
 
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -339,7 +341,7 @@ export const ParafusadeiraBoschGsr1000SmartEBoa: React.FC = () => {
             <h2 className="text-3xl font-extrabold text-slate-900 border-b-4 border-[#FFD700] pb-2 mb-6">Nossos testes</h2>
             
             <div className="w-full flex justify-center mb-8 mt-6">
-                 <img src="/images/blog/melhor-parafusadeira-custo-beneficio/Capacidade-de-Perfuracao-da-Bosch-GSR-1000-Smart.webp" alt="Testes práticos de perfuração e parafusamento com a Bosch GSR 1000 Smart" title="Testes práticos de perfuração e parafusamento com a Bosch GSR 1000 Smart" className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
+                 <img src="/images/blog/melhor-parafusadeira-custo-beneficio/Capacidade-de-Perfuracao-da-Bosch-GSR-1000-Smart.webp" alt="Testes práticos de perfuração e parafusamento com a Bosch GSR 1000 Smart" title="Testes práticos de perfuração e parafusamento com a Bosch GSR 1000 Smart" width={1024} height={1024} className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
             </div>
 
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -355,7 +357,7 @@ export const ParafusadeiraBoschGsr1000SmartEBoa: React.FC = () => {
             <h2 className="text-3xl font-extrabold text-slate-900 border-b-4 border-[#FFD700] pb-2 mb-6">O que mais gostamos</h2>
             
             <div className="w-full flex justify-center mb-8 mt-6">
-                 <img src="/images/blog/1/Destaques positivos e benefícios da ergonomia da Bosch GSR 1000 Smart.webp" alt="Destaques positivos e benefícios da ergonomia da Bosch GSR 1000 Smart" title="Destaques positivos e benefícios da ergonomia da Bosch GSR 1000 Smart" className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
+                 <img src="/images/blog/1/Destaques positivos e benefícios da ergonomia da Bosch GSR 1000 Smart.webp" alt="Destaques positivos e benefícios da ergonomia da Bosch GSR 1000 Smart" title="Destaques positivos e benefícios da ergonomia da Bosch GSR 1000 Smart" width={1024} height={1024} className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
             </div>
 
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -423,7 +425,7 @@ export const ParafusadeiraBoschGsr1000SmartEBoa: React.FC = () => {
             <h2 className="text-3xl font-extrabold text-slate-900 border-b-4 border-[#FFD700] pb-2 mb-6">GSR 1000 Smart, GSR 12V-15 ou LD12S: qual escolher</h2>
             
             <div className="w-full flex justify-center mb-8 mt-6">
-                 <img src="/images/blog/1/Comparativo entre modelos de entrada - Bosch GSR 1000 Smart, GSR 12V-15 e Black+Decker LD12S - Novo.webp" alt="Comparativo entre modelos de entrada: Bosch GSR 1000 Smart, GSR 12V-15 e Black+Decker LD12S" title="Comparativo entre modelos de entrada: Bosch GSR 1000 Smart, GSR 12V-15 e Black+Decker LD12S" className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
+                 <img src="/images/blog/1/Comparativo entre modelos de entrada - Bosch GSR 1000 Smart, GSR 12V-15 e Black+Decker LD12S - Novo.webp" alt="Comparativo entre modelos de entrada: Bosch GSR 1000 Smart, GSR 12V-15 e Black+Decker LD12S" title="Comparativo entre modelos de entrada: Bosch GSR 1000 Smart, GSR 12V-15 e Black+Decker LD12S" width={1024} height={1024} className="max-h-96 object-contain rounded-xl shadow-md" loading="lazy" />
             </div>
 
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">

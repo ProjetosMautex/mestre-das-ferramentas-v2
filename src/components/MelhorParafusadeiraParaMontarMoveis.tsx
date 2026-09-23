@@ -152,6 +152,8 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
                   <img 
                     src="/images/autores/severino-torquato.webp" 
                     alt="Severino Torquato" 
+                    width={32}
+                    height={32}
                     className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
                   />
                   Severino Torquato
@@ -165,7 +167,7 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
           
           {/* SIMULADOR RÁPIDO DE ENGAJAMENTO */}
           <div className="bg-slate-50 p-6 rounded-lg border border-slate-200 mb-12 shadow-sm text-center">
-            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Qual o seu nível de uso na montagem de móveis?</h3>
+            <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Qual o seu nível de uso na montagem de móveis?</h2>
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4">
               <button 
                 onClick={() => handleSimulador('esporadico')}
@@ -213,12 +215,19 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
                     const product = products[id];
                     const meta = productMetadata[id as keyof typeof productMetadata];
                     if (!product || !meta) return null;
+
+                    let thumbSrc = productImages[id] || "";
+                    if (id === "parafusadeira-black-decker-ld12") thumbSrc = "/images/blog/melhor-parafusadeira/Parafusadeira Furadeira Black & Decker LD12-thumb.webp";
+                    else if (id === "parafusadeira-bosch-gsr-1000") thumbSrc = "/images/blog/melhor-parafusadeira/Parafusadeira Furadeira Bosch GSR 1000-thumb.webp";
+                    else if (id === "parafusadeira-wap-bpf-12k3") thumbSrc = "/images/blog/melhor-parafusadeira/Parafusadeira WAP BPF 12K3-thumb.webp";
+                    else if (id === "parafusadeira-vonder-pfv-012i") thumbSrc = "/images/blog/melhor-furadeira/ParafusadeiraFuradeira-de-Impacto-a-Bateria-12-V-PFV-120I-thumb.webp";
+
                     return (
                       <tr key={id} className="border-b border-slate-200 last:border-b-0 hover:bg-slate-50 transition-colors">
                         <td className="p-2 align-middle text-center">
                           <div className="w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] border border-slate-100 rounded flex items-center justify-center p-0.5 bg-white mx-auto">
                             <img 
-                              src={productImages[id] || ""}
+                              src={thumbSrc}
                               alt={meta.shortName} 
                               width="60"
                               height="60"
@@ -281,7 +290,7 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
                 Black+Decker LD12S-BR
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={productImages["parafusadeira-black-decker-ld12"]} alt="Parafusadeira Black+Decker LD12S-BR leve e ergonômica para montagem de móveis" title="Parafusadeira Black+Decker LD12S-BR leve e ergonômica para montagem de móveis" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={productImages["parafusadeira-black-decker-ld12"]} alt="Parafusadeira Black+Decker LD12S-BR leve e ergonômica para montagem de móveis" title="Parafusadeira Black+Decker LD12S-BR leve e ergonômica para montagem de móveis" width={800} height={533} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
                 <p>Se você está montando o seu primeiro jogo de ferramentas e quer resolver as coisas da casa sem complicação, a Black+Decker LD12S-BR é uma porta de entrada muito equilibrada.</p>
@@ -321,7 +330,7 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
                 Bosch GSR 1000 Smart
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={productImages["parafusadeira-bosch-gsr-1000"]} alt="Parafusadeira Bosch GSR 1000 Smart com controle eletrônico de torque para montagem de móveis sem espanar" title="Parafusadeira Bosch GSR 1000 Smart com controle eletrônico de torque para montagem de móveis sem espanar" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={productImages["parafusadeira-bosch-gsr-1000"]} alt="Parafusadeira Bosch GSR 1000 Smart com controle eletrônico de torque para montagem de móveis sem espanar" title="Parafusadeira Bosch GSR 1000 Smart com controle eletrônico de torque para montagem de móveis sem espanar" width={800} height={533} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -365,7 +374,7 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
                 Vonder PFV012I
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={productImages["parafusadeira-vonder-pfv-012i"]} alt="Parafusadeira e furadeira de impacto Vonder PFV012I 12V com maleta e acessórios" title="Parafusadeira e furadeira de impacto Vonder PFV012I 12V com maleta e acessórios" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={productImages["parafusadeira-vonder-pfv-012i"]} alt="Parafusadeira e furadeira de impacto Vonder PFV012I 12V com maleta e acessórios" title="Parafusadeira e furadeira de impacto Vonder PFV012I 12V com maleta e acessórios" width={800} height={533} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -406,7 +415,7 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
                 Parafusadeira Furadeira WAP 12V
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={productImages["parafusadeira-wap-bpf-12k3"]} alt="Parafusadeira e furadeira WAP 12V BPF 12K3 com kit completo de brocas e bits" title="Parafusadeira e furadeira WAP 12V BPF 12K3 com kit completo de brocas e bits" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={productImages["parafusadeira-wap-bpf-12k3"]} alt="Parafusadeira e furadeira WAP 12V BPF 12K3 com kit completo de brocas e bits" title="Parafusadeira e furadeira WAP 12V BPF 12K3 com kit completo de brocas e bits" width={800} height={533} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -445,7 +454,7 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
                 DeWalt DCD700LC1
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={productImages["DeWalt DCD700LC1"]} alt="Parafusadeira e furadeira DeWalt DCD700LC1 12V com duas velocidades mecânicas" title="Parafusadeira e furadeira DeWalt DCD700LC1 12V com duas velocidades mecânicas" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={productImages["DeWalt DCD700LC1"]} alt="Parafusadeira e furadeira DeWalt DCD700LC1 12V com duas velocidades mecânicas" title="Parafusadeira e furadeira DeWalt DCD700LC1 12V com duas velocidades mecânicas" width={800} height={533} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
@@ -485,7 +494,7 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
           <section className="mt-20 pt-12 border-t border-gray-200">
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Manual, elétrica ou a bateria? Entendendo os tipos</h2>
             <div className="w-full flex justify-center mb-8">
-               <img src="/images/blog/1/comparativo_parafusadeiras.webp" alt="Comparativo entre parafusadeira manual, elétrica com fio e a bateria para montagem de móveis" title="Comparativo entre parafusadeira manual, elétrica com fio e a bateria para montagem de móveis" className="max-h-80 object-contain mix-blend-multiply rounded" loading="lazy" />
+               <img src="/images/blog/1/comparativo_parafusadeiras.webp" alt="Comparativo entre parafusadeira manual, elétrica com fio e a bateria para montagem de móveis" title="Comparativo entre parafusadeira manual, elétrica com fio e a bateria para montagem de móveis" width={800} height={533} className="max-h-80 object-contain mix-blend-multiply rounded" loading="lazy" />
             </div>
             <div className="space-y-4 prose prose-lg max-w-none text-gray-700">
               <p>Nessas mais de duas décadas fazendo reparos em residências, já perdi a conta de quantas pessoas vi tentando montar um quarto infantil inteiro usando apenas a chave de fenda manual que veio no saquinho de parafusos.</p>
@@ -579,7 +588,7 @@ export const MelhorParafusadeiraParaMontarMoveis: React.FC = () => {
                     <div className="px-5 pb-5 pt-1 text-gray-600 border-t border-slate-100 animate-slideDown space-y-3">
                       {index === 0 && (
                         <div className="w-full flex justify-center mb-4 mt-2">
-                           <img src="/images/blog/1/controle_torque.webp" alt="Anel de controle de torque de parafusadeira para montagem precisa em MDF sem espanar" title="Anel de controle de torque de parafusadeira para montagem precisa em MDF sem espanar" className="max-h-60 object-contain mix-blend-multiply rounded" loading="lazy" />
+                           <img src="/images/blog/1/controle_torque.webp" alt="Anel de controle de torque de parafusadeira para montagem precisa em MDF sem espanar" title="Anel de controle de torque de parafusadeira para montagem precisa em MDF sem espanar" width={800} height={533} className="max-h-60 object-contain mix-blend-multiply rounded" loading="lazy" />
                         </div>
                       )}
                       {faq.answer.map((paragraph, pIndex) => (

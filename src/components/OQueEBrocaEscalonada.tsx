@@ -43,7 +43,7 @@ export const OQueEBrocaEscalonada: React.FC = () => {
                   <img 
                     src="/images/autores/andre-carvalho-small.webp" 
                     alt="André Carvalho" 
-                    className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
+                    className="w-8 h-8 rounded-full object-cover border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
                     onError={(e) => {
                       e.currentTarget.src = "https://ui-avatars.com/api/?name=Andre+Carvalho&background=FFD700&color=1a1a1a";
                     }}
