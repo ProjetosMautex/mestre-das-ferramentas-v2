@@ -1,20 +1,21 @@
 import React, { useEffect } from 'react';
 import { BunnerDoMeio } from './BunnerDoMeio';
+import { ExitIntentPopup } from './ExitIntentPopup';
 
 export const ComoUsarFuradeira = () => {
   useEffect(() => {
-    document.title = "Como Usar Furadeira: Guia Simples para Quem Está Começando - Mestre das Ferramentas";
+    document.title = "Como Usar Furadeira com Segurança Passo a Passo Completo - Mestre das Ferramentas";
   }, []);
 
   return (
     <div className="flex flex-col font-sans bg-gray-50">
-      <main className="flex-grow">
+      <div className="flex-grow">
         {/* Article Header */}
         <div className="bg-[#1a1a1a] border-b border-gray-800">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 text-center">
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Como Usar Furadeira: <br />
-              <span className="text-[#FFD700]">Guia Simples para Quem Está Começando</span>
+              Como Usar Furadeira com Segurança <br />
+              <span className="text-[#FFD700]">Passo a Passo Completo</span>
             </h1>
             
             <div className="flex items-center justify-center text-gray-300 mb-8">
@@ -38,253 +39,290 @@ export const ComoUsarFuradeira = () => {
         {/* Content Section */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="prose prose-lg max-w-none text-gray-700">
-            <p className="lead text-xl text-gray-600 mb-8">
-              Se você está começando a se aventurar em projetos de bricolagem, aprender a usar uma furadeira é essencial.
-              <br /><br />
-              Esse ferramenta versátil pode facilitar a sua vida, seja na montagem de móveis ou na instalação de prateleiras.
-              <br /><br />
-              Neste guia, vamos descomplicar o uso da furadeira e te mostrar como aproveitar ao máximo seus recursos.
-              Prepare-se para dar os primeiros passos nessa nova habilidade!
-            </p>
-
-            <div className="my-12">
-              <BunnerDoMeio />
-            </div>
-
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">O que é uma furadeira?</h2>
-            <p className="mb-6">
-              A furadeira é uma ferramenta elétrica ou manual utilizada para fazer furos em diversos materiais, como madeira, metal, plástico e alvenaria.
-              <br /><br />
-              Com um motor que gira uma broca, a furadeira pode criar buracos de diferentes diâmetros e profundidades, dependendo do tipo de broca utilizada.
-              <br /><br />
-              Hoje em dia, muitas furadeiras modernas vêm equipadas com recursos avançados, como controle de velocidade e funcionalidades de martelo, ampliando assim as opções de uso.
-              <br /><br />
-              Esses utensílios são essenciais, não apenas para profissionais, mas também para quem realiza trabalhos manuais em casa, como reparos e montagens.
-              <br /><br />
-              Compreender bem a furadeira, suas características e funções é fundamental para garantir eficiência e segurança durante todos os tipos de trabalho.
-            </p>
-
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Os principais tipos de furadeira</h2>
-            <p className="mb-6">
-              Existem diferentes tipos de furadeiras adaptadas para as necessidades de cada usuário e para os materiais que serão perfurados.
-              <br /><br />
-              As furadeiras elétricas são as mais comuns, ideais para a maioria das aplicações em casa e no trabalho, proporcionando um bom equilíbrio entre potência e facilidade de uso.
-              <br /><br />
-              Para projetos mais robustos, a furadeira sem fio se destaca pela sua portabilidade e conveniência, permitindo movimentação livre e acesso a locais de difícil alcance.
-              <br /><br />
-              Por outro lado, as furadeiras manuais, embora menos comuns, ainda são úteis para pequenos reparos e trabalhos que exigem maior controle e precisão.
-              <br /><br />
-              Para escolher a furadeira adequada, é importante considerar o tipo de material que você está perfurando, pois cada modelo possui particularidades que podem ser mais ou menos eficazes dependendo da tarefa a ser realizada.
-            </p>
-
-            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Furadeira de Impacto</h3>
-            <p className="mb-6">
-              A furadeira de impacto é uma ferramenta projetada para tarefas que exigem um maior poder de perfuração, especialmente em materiais mais duros como concreto e alvenaria.
-              <br /><br />
-              Diferente das furadeiras comuns, ela combina a rotação da broca com um movimento de impacto, que facilita a penetração em superfícies robustas.
-              <br /><br />
-              Este tipo de furadeira é particularmente útil em projetos de construção e reformas, pois permite criar furos com eficiência e precisão.
-              <br /><br />
-              Adicionalmente, a furadeira de impacto é ideal para profissionais que precisam de uma ferramenta versátil, já que oferece controles ajustáveis para diferentes tipos de materiais e profundidades.
-              <br /><br />
-              Embora seja mais pesada e robusta que as furadeiras convencionais, seu design otimizado garante que o usuário consiga manuseá-la confortavelmente.
-              Como qualquer ferramenta elétrica, é essencial seguir as instruções de segurança e manuseio adequado para garantir resultados satisfatórios e evitar acidentes.
-            </p>
-
-            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Furadeira Portátil</h3>
-            <p className="mb-6">
-              A furadeira portátil é uma ferramenta elétrica leve e compacta, ideal para quem busca praticidade e mobilidade durante o uso.
-              <br /><br />
-              Este tipo de furadeira é alimentado por bateria, permitindo que o usuário trabalhe em locais onde não há acesso fácil à energia elétrica.
-              <br /><br />
-              As furadeiras portáteis são altamente versáteis e podem ser utilizadas para realizar furos em diversos materiais, como madeira e plástico, como também alguns metais, dependendo da potência e do tipo de broca utilizada.
-              <br /><br />
-              Com um design que facilita o manuseio, essas ferramentas são muito adequadas para pequenas reformas, montagem de móveis e reparos diversos.
-              <br /><br />
-              Um dos grandes benefícios das furadeiras portáteis é a possibilidade de ajuste de velocidade e torque, o que assegura um desempenho eficiente e resultados precisos em diferentes aplicações.
-              Assim, a furadeira portátil se torna uma excelente aliada para quem está começando e deseja investir em ferramentas funcionais e práticas.
-            </p>
-
-            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Furadeira de Bancada</h3>
-            <p className="mb-6">
-              A furadeira de bancada é uma ferramenta robusta e estável, projetada para uso em ambientes de trabalho fixos, como oficinas e estúdios de marcenaria.
-              <br /><br />
-              Diferente da furadeira portátil, que oferece mobilidade, a versão de bancada proporciona maior precisão e controle durante a perfuração, ideal para materiais mais densos ou quando se exige um trabalho detalhado.
-              <br /><br />
-              Equipadas com um motor potente e uma mesa ajustável, essas furadeiras podem acomodar diferentes tamanhos de peças e profundidades de furo.
-              <br /><br />
-              Da mesma forma, muitas furadeiras de bancada contam com recursos como ajuste de velocidade e capacidade de inclinação, permitindo ao usuário personalizar suas configurações de acordo com o tipo de material e a necessidade do projeto.
-              <br /><br />
-              Este tipo de furadeira é especialmente recomendado para aqueles que desejam levar suas habilidades de bricolagem ao próximo nível, oferecendo mais eficiência e resultados profissionais.
-            </p>
-
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Equipamentos adicionais de segurança:</h2>
-            <p className="mb-6">
-              Ao utilizar a furadeira, é essencial priorizar a segurança para evitar acidentes durante o manuseio da ferramenta.
-              Recomenda-se o uso de óculos de proteção, que evitam que detritos dos materiais perfurados atinjam os olhos.
-              <br /><br />
-              Como também luvas de proteção são indicadas para proporcionar uma melhor aderência e proteger as mãos de possíveis cortes ou fricções, garantindo que o usuário tenha um bom controle da ferramenta.
-              <br /><br />
-              Para trabalhos em ambientes com sons altos, o uso de protetores auriculares se faz necessário, prevenindo danos à audição e oferecendo conforto durante longas horas de uso.
-              <br /><br />
-              Em locais com poeira, uma máscara respiratória ajuda a minimizar a inalação de partículas prejudiciais, fundamental para preservar a saúde a longo prazo.
-              <br /><br />
-              Da mesma forma, é importante garantir que a área de trabalho esteja livre de obstáculos, permitindo uma movimentação segura e eficiente durante a perfuração.
-              Essas precauções não apenas asseguram a integridade física do usuário, mas também promovem um ambiente de trabalho mais organizado e seguro.
-            </p>
-
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Saiba como colocar a broca</h2>
-            <p className="mb-6">
-              Colocar a broca corretamente na furadeira é crucial para funcionamento eficaz e seguro.
-              Primeiro, verifique se a furadeira está desligada e desconectada.
-              <br /><br />
-              Identifique o tipo de mandril: manual ou automático.
-              Em mandris manuais, gire a frente para abrir as pinças, insira a broca no centro e gire para fechar, assegurando que esteja firme; gire novamente para travar.
-              <br /><br />
-              Em mandris automáticos, insira a broca e feche conforme o fabricante.
-              Faça uma checagem final para garantir que a broca esteja bem posicionada e fixa, evitando acidentes e furos imprecisos.
-            </p>
-
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Faça um teste para verificar o funcionamento</h2>
-            <p className="mb-6">
-              Antes de iniciar qualquer projeto, teste a furadeira: conecte-a à tomada, escolha o material e, com a furadeira deitada, posicione a broca e ligue em baixa velocidade.
-              <br /><br />
-              Verifique rotação suave, sem vibrações laterais ou ruídos incomuns.
-              Se houver movimentos laterais, desligue e ajuste a broca para evitar problemas durante o trabalho.
-            </p>
-
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Aprenda a segurar a furadeira corretamente</h2>
-            <p className="mb-6">
-              Segurar a furadeira corretamente garante segurança e precisão.
-              Coloque a mão dominante na empunhadura principal com firmeza confortável para evitar fadiga.
-              <br /><br />
-              Apoie a outra mão em forma de U na parte frontal da base; se houver segunda empunhadura, use-a para maior controle em perfurações profundas ou em materiais duros.
-              <br /><br />
-              Mantenha o corpo equilibrado, pés afastados na largura dos ombros, e dedos longe da broca.
-              A mão que aciona a furadeira deve segurar firme e controlar a pressão do gatilho durante a perfuração.
-            </p>
-
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Defina o local antes de furar</h2>
             
-            <div className="my-10">
+            {/* Main Image generated according to instructions */}
+            <div className="w-full flex justify-center mb-8">
               <img 
-                src="/images/blog/melhor-furadeira/Defina-o-local-antes-de-furar.webp" 
-                alt="Defina o local antes de furar" 
+                src="/images/blog/1/passo-a-passo-furadeira.webp" 
+                alt="Passo a passo de como usar furadeira em madeira, metal e parede com segurança"
+                title="Passo a passo de como usar furadeira em madeira, metal e parede com segurança"
+                width="800"
+                height="533"
                 className="w-full h-auto rounded-xl shadow-lg"
+                loading="lazy"
               />
             </div>
 
-            <p className="mb-6">
-              Antes de furar, defina e limpe a área, verificando ausência de fios ou canos.
-              Meça e marque o ponto com régua e faça uma pequena risca com lápis ou punção para guiar a broca.
-              <br /><br />
-              Inicie no modo sem impacto para controlar, depois mude para martelete/impacto para aprofundar.
-              <br /><br />
-              Ajuste altura e ângulo, mantendo posição confortável e estável, especialmente em materiais duros ou ângulos difíceis.
-            </p>
+            <p className="mb-4">Quem nunca tentou pendurar um quadro no final de semana e acabou com um buraco na parede que mais parecia uma cratera?</p>
+            <p className="mb-4">Eu vejo isso acontecer direto.</p>
+            <p className="mb-4">Instalar uma prateleira ou consertar um armário exige jeito, não força.</p>
+            <p className="mb-4">Muitas vezes, a frustração bate não porque a ferramenta é ruim, mas porque não entendemos como usá-la a nosso favor.</p>
+            <p className="mb-4">Dominar a furadeira é o primeiro passo para ganhar autonomia em casa, economizando dinheiro com pequenos serviços e garantindo que o seu projeto de fim de semana não vire uma dor de cabeça na segunda-feira.</p>
+            <p className="mb-8">Vou te mostrar o caminho para perder o medo e ganhar precisão, sem estragar as paredes ou queimar o motor.</p>
+
+
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">O que é uma Furadeira e Como Funciona?</h2>
+            <p className="mb-4">Se você olhar por dentro, a furadeira não é nenhum bicho de sete cabeças.</p>
+            <p className="mb-4">O coração dela é um motor elétrico que gira uma peça na ponta chamada mandril — é ele quem morde e segura a broca no lugar.</p>
+            <p className="mb-4">Quando você aperta o gatilho, a broca gira e raspa o material (seja madeira ou concreto) até abrir o furo.</p>
+            <p className="mb-4">Entender isso é o pulo do gato.</p>
+            <p className="mb-4">Se você empurrar a máquina com todo o seu peso contra a parede, o motor vai sofrer e a broca vai superaquecer.</p>
+            <p className="mb-4">O segredo é deixar a rotação da máquina trabalhar por você.</p>
+            <p className="mb-8">Quem faz a força bruta é a ferramenta, a sua mão está ali apenas para dar direção e firmeza.</p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Tipos de Furadeiras e suas Funções</h2>
+            <p className="mb-4">Não adianta tentar abrir uma lata de tinta com uma faca de manteiga.</p>
+            <p className="mb-4">Usar a ferramenta errada para o serviço é a receita certa para passar nervoso.</p>
+            <p className="mb-4">Ao longo dos anos, vi muita gente queimar motor novo tentando furar viga de concreto com furadeira para madeira.</p>
+            <p className="mb-4">O mercado criou modelos específicos justamente para facilitar a nossa vida e proteger o equipamento.</p>
+            <p className="mb-4">Conhecer qual é a máquina certa para o seu tipo de reparo é a diferença entre terminar o serviço em dez minutos ou passar a tarde inteira brigando com a parede.</p>
+            <p className="mb-8">Aliás, se você ainda não tem a sua ferramenta ou está pensando em fazer um upgrade, vale a pena conferir o nosso guia completo para escolher a <strong><a href="/melhor-furadeira/" className="text-blue-600 hover:text-blue-800 underline">melhor furadeira</a></strong> do mercado e não jogar dinheiro fora.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Furadeiras Elétricas</h3>
+            <p className="mb-4">A velha de guerra que vai na tomada.</p>
+            <p className="mb-4">Essa é a ferramenta que não te deixa na mão no meio de um projeto demorado, porque não depende de bateria.</p>
+            <p className="mb-4">Ela tem o motor mais forte e aguenta o tranco se você precisar montar um guarda-roupa inteiro numa tarde.</p>
+            <p className="mb-4">Para quem faz trabalhos esporádicos em casa, ela é fantástica porque você tira da gaveta depois de seis meses e ela está pronta para uso (diferente das baterias que descarregam sozinhas).</p>
+            <p className="mb-8">É a escolha certeira para quem quer potência garantida sem se preocupar com recargas.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Furadeiras a Bateria</h3>
+            <p className="mb-4">Se você precisa consertar o telhado, apertar o trinco do portão na rua ou enfiar a mão dentro do armário da pia, a furadeira a bateria é a melhor invenção.</p>
+            <p className="mb-4">A ausência de cabos puxando a sua mão dá uma agilidade incrível para serviços rápidos e repetitivos.</p>
+            <p className="mb-4">O cuidado aqui é com o bolso e a paciência.</p>
+            <p className="mb-4">Modelos muito baratos vêm com baterias fracas que perdem força no meio do furo.</p>
+            <p className="mb-4">Hoje em dia, o ideal é focar nas baterias de Íons de Lítio (elas não "viciam").</p>
+            <p className="mb-8">É a máquina perfeita para ter sempre à mão na gaveta da cozinha para pequenos apertos.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Furadeiras de Impacto</h3>
+            <p className="mb-4">Sabe aquela parede dura de concreto que não fura por nada?</p>
+            <p className="mb-4">É aqui que entra a furadeira de impacto.</p>
+            <p className="mb-4">Além de girar, ela tem uma engrenagem dentro que dá pequenos "soquinhos" para frente, em alta velocidade.</p>
+            <p className="mb-4">É como se ela estivesse martelando e girando ao mesmo tempo.</p>
+            <p className="mb-4">Essa função de impacto (geralmente marcada com o desenho de um martelinho no botão superior) quebra a resistência do tijolo e do cimento.</p>
+            <p className="mb-8">Mas atenção: nunca ligue o impacto para furar madeira, cerâmica ou metal, senão você vai rachar o azulejo e estragar a sua broca em segundos.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Furadeiras de Bancada</h3>
+            <div className="w-full flex justify-center mb-8">
+              <img 
+                src="/images/blog/1/furadeira-bancada.webp" 
+                alt="Furadeira de bancada ideal para trabalhos de marcenaria de precisão e oficinas"
+                title="Furadeira de bancada ideal para trabalhos de marcenaria de precisão e oficinas"
+                width="800"
+                height="533"
+                className="w-full h-auto rounded-xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
+            <p className="mb-4">Dificilmente você vai ter uma dessas na área de serviço, mas se você faz artesanato ou marcenaria por hobby na garagem, ela muda o jogo.</p>
+            <p className="mb-4">Ela fica presa numa base e desce a broca num ângulo perfeitamente reto, como uma guilhotina controlada.</p>
+            <p className="mb-4">Ela elimina o famoso "furo torto" que a gente faz quando a mão treme.</p>
+            <p className="mb-4">Serve para furar dobradiças de armário com precisão milimétrica ou fazer vários furos em sequência numa placa de metal.</p>
+            <p className="mb-8">É um investimento para quem já passou dos consertos básicos e está criando peças do zero.</p>
 
             <div className="my-12">
               <BunnerDoMeio />
             </div>
 
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Como usar furadeira para furar madeira</h2>
-            <p className="mb-6">
-              Furar madeira com furadeira exige broca adequada e o diâmetro certo.
-              Posicione a furadeira perpendicular à superfície para evitar furos inclinados.
-              <br /><br />
-              Inicie em baixa velocidade e aumente gradualmente se necessário.
-              Aplique pressão constante, sem forçar, permitindo que a broca trabalhe.
-              <br /><br />
-              Ao terminar, limpe os resíduos de madeira e verifique se o furo atende à necessidade.
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Escolhendo a Broca Certa para Cada Trabalho</h2>
+            <p className="mb-4">Uma furadeira de mil reais com a broca errada não fura nem caixa de papelão direito.</p>
+            <p className="mb-4">A broca é quem faz o trabalho sujo.</p>
+            <p className="mb-4">Vejo muito iniciante usar a mesma broca que usou na parede para tentar furar o rack da sala, e o resultado é madeira lascada e prateleira estragada.</p>
+            <p className="mb-4">Cada material exige uma ponta com um desenho diferente.</p>
+            <p className="mb-8">Usar o conjunto certo vai deixar o seu trabalho mais fácil, o acabamento perfeito e ainda salva o motor da sua ferramenta de forçar à toa.</p>
+
+
 
             <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Que broca usar para furar madeira?</h3>
-            <p className="mb-6">
-              Para furar madeira, escolha brocas específicas: brocas em espiral são ideais para madeiras macias; brocas de serra e de grande diâmetro funcionam melhor em madeiras duras.
-              <br /><br />
-              Brocas de três pontas (brad-point) garantem centralização e furos precisos; brocas chatas são eficazes para furos largos sem lascas.
-              <br /><br />
-              Para furos angulados ou acabamentos limpos, use brocas Forstner.
-              Sempre selecione o diâmetro correto e verifique a compatibilidade entre broca e furadeira para obter eficiência e acabamento adequado.
-            </p>
-
-            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Como colocar um parafuso na madeira?</h3>
-            <p className="mb-6">
-              Marque o local.
-              Faça um furo piloto com broca menor para evitar lascas e preservar fibras.
-              Use escariador para acomodar a cabeça do parafuso.
-              <br /><br />
-              Posicione o parafuso no furo e aparafuse com furadeira ou parafusadeira e ponta adequada, mantendo firmeza e pressão suave.
-              Verifique a profundidade e acabamento.
-            </p>
-
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Como fazer furo com furadeira em metal</h2>
-            <p className="mb-6">
-              Fazer furos em metal exige cuidado e broca adequada, preferencialmente HSS.
-              Marque o ponto e faça um furo piloto quando possível para evitar deslize.
-              <br /><br />
-              Controle pressão e velocidade: deixe a broca trabalhar com movimentos intermitentes para reduzir aquecimento.
-              Use furadeira de rotação simples com motor potente para melhor desempenho.
-              <br /><br />
-              Aplique lubrificante para reduzir atrito, prolongar a vida útil da broca e obter acabamento limpo.
-              Após perfurar, remova rebarbas para segurança e acabamento estético.
-            </p>
+            <p className="mb-4">Para a madeira não lascar e não estragar a pintura do seu móvel, você precisa da broca de três pontas.</p>
+            <p className="mb-4">Ela tem um biquinho central bem afiado que funciona como um guia.</p>
+            <p className="mb-4">Você espeta essa pontinha onde marcou com o lápis e ela trava, impedindo que a broca fuja para os lados quando o motor liga.</p>
+            <p className="mb-8">O acabamento fica limpo, sem arrancar lascas das bordas do furo.</p>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Que broca usar para furar metal</h3>
-            <p className="mb-6">
-              Para furar metal, escolha brocas HSS para resistência e durabilidade.
-              Brocas escalonadas evitam trocas frequentes.
-              <br /><br />
-              Brocas de cobalto suportam altas temperaturas; revestimento de titânio é indicado para aço inox.
-              <br /><br />
-              Verifique o diâmetro para ajuste correto.
-              Com a broca adequada, o furo fica mais preciso e eficiente.
-            </p>
-
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Como fazer furo com furadeira em parede de alvenaria?</h2>
-            <p className="mb-6">
-              Furar uma parede de alvenaria requer broca adequada (broca para alvenaria ou broca diamantada) e, preferivelmente, furadeira de impacto com função martelete.
-              <br /><br />
-              Marque o ponto, posicione a furadeira a 90° com auxílio de nível, comece em baixa velocidade para evitar escorregões e aumente conforme a broca avança.
-              <br /><br />
-              Use óculos de proteção e limpe os resíduos ao terminar.
-            </p>
+            <div className="w-full flex justify-center mb-8">
+              <img 
+                src="/images/blog/1/broca-aco-rapido-hss.webp" 
+                alt="Broca de aço rápido HSS ideal para perfurar superfícies de metal com precisão"
+                title="Broca de aço rápido HSS ideal para perfurar superfícies de metal com precisão"
+                width="800"
+                height="533"
+                className="w-full h-auto rounded-xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
+            <p className="mb-4">Aqui a conversa é sobre calor.</p>
+            <p className="mb-4">Furar metal gera muito atrito.</p>
+            <p className="mb-4">Se você usar uma broca comum, a ponta derrete e fica cega no primeiro furo.</p>
+            <p className="mb-4">A broca correta é a de Aço Rápido (HSS).</p>
+            <p className="mb-4">Ela tem um formato espiral liso na ponta e aguenta o tranco térmico.</p>
+            <p className="mb-4">Uma dica de quem já derreteu muita broca: pingue uma gotinha de óleo de máquina (ou até óleo de cozinha, num aperto) em cima do furo enquanto fura.</p>
+            <p className="mb-8">Isso esfria o atrito e a broca corta muito mais rápido.</p>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Que broca usar para furar parede de alvenaria</h3>
-            <p className="mb-6">
-              Para furar alvenaria, use brocas para impacto, projetadas para tijolo e blocos de concreto.
-              Para superfícies mais duras ou furos precisos, opte por brocas diamantadas.
-              <br /><br />
-              Combine o diâmetro da broca com o da bucha: por exemplo, para bucha de 8 mm, inicie com 6 mm e depois alargue até o tamanho correto.
-              <br /><br />
-              Verifique a compatibilidade com sua furadeira e use equipamentos de segurança.
-            </p>
+            <div className="w-full flex justify-center mb-8">
+              <img 
+                src="/images/blog/1/broca-videa-alvenaria.webp" 
+                alt="Broca de vídea específica para furar parede de alvenaria, tijolo e concreto com segurança"
+                title="Broca de vídea específica para furar parede de alvenaria, tijolo e concreto com segurança"
+                width="800"
+                height="533"
+                className="w-full h-auto rounded-xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
+            <p className="mb-4">Para enfrentar concreto e tijolo, você precisa da broca de vídea.</p>
+            <p className="mb-4">Se você olhar a ponta dela, vai ver que tem uma plaquinha soldada, parecendo uma espátula minúscula.</p>
+            <p className="mb-4">Essa pecinha é de um metal superduro e não tem corte afiado; a função dela é "socos" e esfarelar a parede enquanto gira (usando a função martelete).</p>
+            <p className="mb-8">Tentar furar parede com broca de metal lisa vai só arranhar a tinta e cegar a ferramenta.</p>
 
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Como escolher furadeira</h2>
-            <p className="mb-6">
-              A escolha da furadeira ideal garante eficiência e segurança.
-              Considere o tipo de trabalho: furos em alvenaria podem exigir furadeira de impacto; superfícies duras pedem martelete.
-              <br /><br />
-              Confira potência, ergonomia e peso para reduzir fadiga.
-              Veja vídeos e compare preços para evitar excessos.
-            </p>
-            <p className="mb-6">
-              E claro se você esta começando é bom já encontrar uma lista com as <a href="/melhor-furadeira/" className="text-blue-600 hover:underline font-medium">melhores furadeiras</a> para o tipo de trabalho que você pretende realizar
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Como Colocar a Broca na Furadeira</h2>
+            <div className="w-full flex justify-center mb-8">
+              <img 
+                src="/images/blog/1/como-colocar-broca.webp" 
+                alt="Como utilizar a chave de mandril para apertar a broca da furadeira"
+                title="Como utilizar a chave de mandril para apertar a broca da furadeira"
+                width="800"
+                height="533"
+                className="w-full h-auto rounded-xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
+            <p className="mb-4">Colocar a broca torta no mandril faz a furadeira tremer igual britadeira e alarga o furo inteiro, estragando a bucha.</p>
+            <p className="mb-4">Sempre tire a máquina da tomada antes de mexer.</p>
+            <p className="mb-4">Abra a boca do mandril girando com a mão.</p>
+            <p className="mb-4">Coloque a broca bem funda, garantindo que as "garras" do mandril peguem na parte lisa de trás da broca, não nas ranhuras.</p>
+            <p className="mb-4">Aperte firme.</p>
+            <p className="mb-8">Se sua máquina usar chavinha, encaixe a chave nos buraquinhos e dê um aperto final para a broca não patinar lá dentro.</p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Equipamentos adicionais de segurança:</h2>
+            <p className="mb-4">Não subestime o pozinho da parede.</p>
+            <p className="mb-4">Quando você fura alvenaria na altura do rosto, aquele pó fino de cimento cai direto no seu olho.</p>
+            <p className="mb-4">Óculos de proteção transparente (daqueles baratinhos de acrílico) não são frescura, são a diferença entre terminar o serviço rápido e parar no oftalmologista para tirar um cisco arranhando a córnea.</p>
+            <p className="mb-4">Para pó de cimento, uma máscara simples de pano já salva o seu nariz.</p>
+            <p className="mb-8">E evite usar luvas largas; o tecido pode enrolar no mandril girando e puxar a sua mão.</p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Passo a Passo para Usar uma Furadeira</h2>
+            <p className="mb-4">Fazer o furo certo não é encostar e apertar o botão com força.</p>
+            <p className="mb-4">Tem um ritual simples que garante que o parafuso vai casar direitinho com a parede depois.</p>
+            <p className="mb-8">Seguir essa ordem salva você de rachar os móveis ou achar um cano de água escondido atrás do azulejo do banheiro.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Preparação e Segurança</h3>
+            <p className="mb-4">Primeiro, olhe bem onde vai furar.</p>
+            <p className="mb-4">Vai furar parede de banheiro ou cozinha?</p>
+            <p className="mb-4">Cuidado para não alinhar o furo na mesma direção da torneira ou do registro do chuveiro (cano de água passa reto nessas linhas).</p>
+            <p className="mb-4">Marque o ponto com um lápis.</p>
+            <p className="mb-8">Dica de ouro: cole um post-it dobrado embaixo do furo, na parede; ele funciona como uma "pazinha" e segura o pó, poupando você de varrer a casa inteira depois.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Ajustando a Furadeira</h3>
+            <p className="mb-4">Se a sua furadeira tiver controle de velocidade no gatilho, comece apertando bem de leve.</p>
+            <p className="mb-4">Se você puxar o botão de uma vez, a broca dá um tranco e risca a parede inteira.</p>
+            <p className="mb-4">Gire a chave de função: se for parede dura, coloque no desenho do martelinho (impacto).</p>
+            <p className="mb-8">Se for madeira, metal ou cerâmica, deixe no desenho da broca lisa (sem impacto).</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Técnica de Perfuração</h3>
+            <p className="mb-4">Na hora de furar, segure a máquina firme, como se estivesse segurando um copo cheio de água, para mantê-la reta.</p>
+            <p className="mb-4">Se você entortar o pulso para cima ou para baixo, o furo vai ficar oval e a bucha vai ficar frouxa.</p>
+            <p className="mb-4">Faça o furo devagar, puxando a broca para fora um pouquinho no meio do caminho para limpar o pó lá de dentro.</p>
+            <p className="mb-8">Deixe a velocidade da máquina fazer o serviço; se você colocar muito peso, a broca entorta e quebra lá dentro.</p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Usando a Furadeira para Diferentes Tarefas</h2>
+            <p className="mb-4">Cada canto da casa pede um trato diferente.</p>
+            <p className="mb-4">O jeito que você fura a placa do guarda-roupa não é o mesmo jeito que fura o tijolo da sala.</p>
+            <p className="mb-8">Dominar o peso da mão para cada superfície é o que vai deixar o seu reparo com cara de serviço profissional.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Perfuração em Madeira</h3>
+            <p className="mb-4">A madeira é mole, mas engana.</p>
+            <p className="mb-4">Se você entrar com a broca muito rápido de uma vez só, quando ela vazar do outro lado da placa, vai arrancar uma lasca enorme (estourar o fundo).</p>
+            <p className="mb-4">Para não lascar a saída, coloque um pedaço de madeira velha sobrando atrás da peça que está furando, para servir de "escoro".</p>
+            <p className="mb-4">Assim a broca vaza limpa.</p>
+            <p className="mb-8">Mantenha a máquina firme e deixe ela ir no tempo dela.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Perfuração em Metal</h3>
+            <p className="mb-4">O metal assusta, mas é só ter paciência.</p>
+            <p className="mb-4">Antes de ligar, pegue um prego grosso e dê uma batidinha com o martelo bem no ponto marcado, fazendo um "furinho guia".</p>
+            <p className="mb-4">Isso impede a broca de ficar "sambando" no metal liso na hora de começar.</p>
+            <p className="mb-4">Use a furadeira bem devagar, girando lento, e lembre do pingo de óleo.</p>
+            <p className="mb-8">Se a broca esquentar demais e ficar azulada, ela estragou (destemperou).</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Perfuração em Concreto e Alvenaria</h3>
+            <p className="mb-4">Aqui a força bruta não resolve, quem resolve é o martelinho (impacto).</p>
+            <p className="mb-4">Marque o lugar.</p>
+            <p className="mb-4">Se for no rejunte, ótimo, é mais mole.</p>
+            <p className="mb-4">Se for furar o azulejo, um truque mestre: cole um pedaço de fita crepe em cima da marca antes de furar.</p>
+            <p className="mb-4">Isso não deixa a broca lisa escorregar e arranhar o esmalte da cerâmica.</p>
+            <p className="mb-8">Fure a cerâmica sem impacto; ligue o impacto só quando a broca passar do azulejo e alcançar o tijolo.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Como colocar um parafuso na madeira?</h3>
+            <p className="mb-4">Tentar enfiar um parafuso grosso direto na madeira, na força, é a pior ideia: a madeira racha na hora.</p>
+            <p className="mb-4">O segredo do marceneiro? Faça um "furo piloto" primeiro.</p>
+            <p className="mb-4">Pegue uma broca bem mais fina que o parafuso e fure o caminho.</p>
+            <p className="mb-4">Depois, você entra com o parafuso de mão (ou parafusadeira).</p>
+            <p className="mb-8">Esse furinho guia tira a pressão de dentro da madeira e deixa o parafuso assentar firme sem trincar a peça.</p>
+
+            <div className="my-12">
+              <BunnerDoMeio />
+            </div>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Exemplos de Aplicações Comuns</h2>
+            <p className="mb-8">A verdadeira utilidade de ter essa máquina na gaveta aparece naqueles probleminhas chatos de casa que a gente vai adiando por preguiça de chamar alguém.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Pendurar Quadros</h3>
+            <p className="mb-4">Escolha a bucha certa.</p>
+            <p className="mb-4">Para parede normal, a bucha universal tamanho 6 ou 8 resolve a vida.</p>
+            <p className="mb-4">A dica é fazer o furo exatamente na profundidade da bucha (você pode enrolar uma fita crepe na broca para marcar a profundidade certa).</p>
+            <p className="mb-8">Assim, a bucha não fica saltada para fora e o quadro não fica "bambo" encostado na parede.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Montagem de Móveis</h3>
+            <p className="mb-4">Se for usar a ferramenta como parafusadeira para montar rack ou guarda-roupa, reduza a força dela no seletor da ponta (se ela tiver embreagem, coloque nos números menores).</p>
+            <p className="mb-4">Isso é vital para não espanar o buraco da dobradiça da porta do armário.</p>
+            <p className="mb-8">Apertou? O parafuso encostou na madeira? Pare de girar.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Instalação de Prateleiras</h3>
+            <p className="mb-4">A grande bronca de prateleira é ficar torta.</p>
+            <p className="mb-4">Nenhuma prateleira cai por falta de força na parede, mas sim porque furamos torto e a bucha fica folgada.</p>
+            <p className="mb-4">Use um nível de mão baratinho (ou o app do celular) para marcar os pontos.</p>
+            <p className="mb-4">Fure bem retinho.</p>
+            <p className="mb-8">Se você colocar torto, a prateleira vai forçar só os parafusos de cima e acabar arrancando as buchas da parede com o tempo.</p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Dicas de Manutenção e Armazenamento</h2>
+            <p className="mb-4">Ferramenta largada jogada na área de serviço é dinheiro no lixo.</p>
+            <p className="mb-4">A maresia (se você mora no litoral) ou a umidade debaixo do tanque travam o mandril em poucos meses.</p>
+            <p className="mb-8">O zelo garante que a máquina esteja inteira quando aquele vazamento chato aparecer num domingo de noite.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Limpeza e Armazenamento</h3>
+            <p className="mb-4">Bateu na parede? A ferramenta vai ficar cheia de pó branco de cimento, que puxa umidade e enferruja as peças de metal.</p>
+            <p className="mb-4">Passe um pincel seco nela antes de guardar.</p>
+            <p className="mb-4">Nunca jogue a ferramenta solta na caixa com chave de fenda e alicates roçando nela; guarde na maleta ou enrolada num pano grosso.</p>
+            <p className="mb-8">Se o mandril (a boca) começar a ficar duro de girar, pingue um óleozinho desengripante nele e guarde assim.</p>
+
+            <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Verificação de Componentes</h3>
+            <p className="mb-4">Sempre dê uma olhada no cabo de tomada perto da base da furadeira (onde ele dobra mais).</p>
+            <p className="mb-4">Ali o fio costuma quebrar por dentro se você enrolar muito apertado.</p>
+            <p className="mb-4">Fio descascado ali dá choque na mão ou fecha curto.</p>
+            <p className="mb-8">Trate o cabo com carinho, enrole soltinho ao redor da máquina e ela dura décadas.</p>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Conclusão</h2>
-            <p className="mb-6">
-              Aprender como usar furadeira é um passo importante para realizar projetos com mais autonomia e segurança.
-              <br /><br />
-              Com o conhecimento certo sobre tipos de furadeira, brocas e técnicas de perfuração, qualquer pessoa pode obter resultados precisos mesmo sendo iniciante.
-              <br /><br />
-              Seguir boas práticas de manuseio e segurança garante não só um trabalho mais eficiente, mas também evita danos à ferramenta e acidentes.
-              <br /><br />
-              Com treino e atenção, a furadeira se torna uma aliada indispensável em qualquer tipo de reparo ou projeto doméstico.
-            </p>
+            <div className="w-full flex justify-center mb-8">
+              <img 
+                src="/images/blog/1/dicas-manutencao-furadeira.webp" 
+                alt="Dicas extras para uso seguro e prolongado da sua furadeira em casa"
+                title="Dicas extras para uso seguro e prolongado da sua furadeira em casa"
+                width="800"
+                height="533"
+                className="w-full h-auto rounded-xl shadow-lg"
+                loading="lazy"
+              />
+            </div>
+            <p className="mb-4">A diferença entre passar raiva arrumando a casa ou resolver o serviço em cinco minutos não é a força, é o conhecimento.</p>
+            <p className="mb-4">Quando você entende que a broca de madeira não fura ferro, e que o azulejo pede fita crepe antes de furar, você deixa de ser o refém das diárias de manutenção.</p>
+            <p className="mb-4">Com calma, óculos no rosto e a máquina firme na mão, você domina qualquer reparo que a sua casa pedir.</p>
+            <p className="mb-8">Pegue sua furadeira, a bucha certa, aquele quadro que está encostado há meses e faça o seu primeiro furo do jeito correto hoje mesmo!</p>
+
           </div>
         </div>
-      </main>
+      </div>
+      <ExitIntentPopup />
     </div>
   );
 };

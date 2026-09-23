@@ -337,10 +337,10 @@ export const articles: Article[] = [
     excerpt: "Escolher a melhor parafusadeira de impacto pode fazer toda a diferença em seus projetos de DIY ou reforma. Descubra os 8 melhores modelos."
   },
   {
-    title: "Parafusadeira Bosch GSR 1000 Smart é boa? Testei e digo se vale a pena",
+    title: "Parafusadeira Bosch GSR 1000 Smart é Boa? Veja Nosso Teste na Prática",
     url: "/parafusadeira-bosch-gsr-1000-smart-e-boa/",
-    image: "/images/blog/melhor-parafusadeira-custo-beneficio/parafusadeira-bosch-gsr-1000-smart-e-boa.webp",
-    excerpt: "A Bosch GSR 1000 Smart se apresenta como uma opção prática e acessível, mas será que realmente cumpre o que promete? Confira nosso teste."
+    image: "/images/blog/1/parafusadeira-bosch-gsr-1000-smart-e-boa.webp",
+    excerpt: "A Bosch GSR 1000 Smart é a escolha ideal para o seu dia a dia? Descubra se ela entrega a precisão e a ergonomia necessárias para seus reparos domésticos."
   },
   {
     title: "Parafusadeira Bosch GSR 7-14E é boa? Testei e conto se vale a pena",

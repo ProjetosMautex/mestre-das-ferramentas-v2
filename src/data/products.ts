@@ -56,7 +56,8 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-wap-bpf-12k3": {
     name: "Parafusadeira WAP BPF 12K3",
-    link: "https://meli.la/29cbayp"
+    link: "https://meli.la/29cbayp",
+    image: "/images/blog/melhor-parafusadeira/Parafusadeira WAP BPF 12K3.webp"
   },
   "parafusadeira-dewalt-dcd7781d2": {
     name: "Parafusadeira DeWalt DCD7781D2",
@@ -64,7 +65,8 @@ export const products: Record<string, Product> = {
   },
   "DeWalt DCD700LC1": {
     name: "DeWalt DCD700LC1",
-    link: "https://meli.la/2RoFFoF"
+    link: "https://meli.la/2RoFFoF",
+    image: "/images/blog/1/Furadeira e Parafusadeira Dewalt Modelo DCD700LC1.webp"
   },
   "Furadeira-e-Parafusadeira-Dewalt-DCD791D2B2": {
     name: "Furadeira e Parafusadeira Dewalt DCD791D2B2",
@@ -72,7 +74,8 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-vonder-pfv-012i": {
     name: "Parafusadeira Furadeira Vonder Pfv 012i 12 V",
-    link: "https://meli.la/1pzPYBo"
+    link: "https://meli.la/1pzPYBo",
+    image: "/images/blog/melhor-parafusadeira/Parafusadeira Furadeira Vonder Pfv 012i 12 V.webp"
   },
   "Parafusadeira Vonder PFV 120": {
     name: "Parafusadeira Vonder PFV 120",
@@ -80,11 +83,13 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-bosch-gsr-1000": {
     name: "Parafusadeira Furadeira Bosch GSR 1000",
-    link: "https://meli.la/2iZZqkP"
+    link: "https://meli.la/2iZZqkP",
+    image: "/images/blog/melhor-parafusadeira/Parafusadeira Furadeira Bosch GSR 1000.webp"
   },
   "parafusadeira-black-decker-ld12": {
     name: "Parafusadeira Furadeira Black & Decker LD12",
-    link: "https://meli.la/2oZD853"
+    link: "https://meli.la/2oZD853",
+    image: "/images/blog/melhor-parafusadeira/Parafusadeira Furadeira Black & Decker LD12.webp"
   },
   "bosch-gsr-7-14-e-400w": {
     name: "Bosch GSR 7-14 E 400W",
@@ -173,6 +178,11 @@ export const products: Record<string, Product> = {
   "Parafusadeira-e-furadeira-The-Black-Tools-TB12A": {
     name: "Parafusadeira-e-furadeira-The-Black-Tools-TB12A",
     link: "https://meli.la/1mVDi1V"
+  },
+  "bosch-parafusadeira-furadeira-gsr-12v-15": {
+    name: "Bosch Parafusadeira Furadeira GSR 12V-15 FC",
+    link: "https://link.amazon/B08aVeCtM",
+    image: "/images/blog/1/Bosch Parafusadeira Furadeira GSR 12V-15 FC.webp"
   },
   "Bosch GSB 183-LI": {
     name: "Bosch GSB 183-LI",
