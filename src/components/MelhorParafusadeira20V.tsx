@@ -311,38 +311,36 @@ export const MelhorParafusadeira20V = () => {
             </div>
           </section>
 
-          {/* 6. Parafusadeira DeWalt Max XR DCD996B */}
-          <section id="Parafusadeira-DeWalt-Max-XR-DCD996B" className="scroll-mt-24 pt-8 border-t border-gray-100">
+          {/* 6. DeWalt DCD996P2T-BR-1 */}
+          <section id="Parafusadeira-Furadeira-Dcd996-20v" className="scroll-mt-24 pt-8 border-t border-gray-100">
             <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
-              Parafusadeira DeWalt Max XR DCD996B – Melhor parafusadeira 20V
+              DeWalt DCD996P2T-BR-1
             </h2>
             <div className="w-full flex justify-center mb-8">
-               <img src={productImages["Parafusadeira DeWalt Max XR DCD996B – Melhor parafusadeira 20V"]} alt="Parafusadeira DeWalt Max XR DCD996B" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+               <img src={productImages["Parafusadeira Furadeira Dcd996 20v"]} alt="DeWalt DCD996P2T-BR-1" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
             </div>
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
-              <p>A Parafusadeira DeWalt Max XR DCD996B se destaca como a melhor opção na categoria de 20V por sua combinação de potência e tecnologia avançada.</p>
-              <p>Com um motor sem escovas, ela oferece uma durabilidade elevada e maior eficiência energética, ideal para trabalhos prolongados.</p>
-              <p>O seu mandril de 1/2 polegada em metal permite uma troca de acessórios rápida e fácil, aumentando a versatilidade em diversas aplicações.</p>
-              <p>Como também conta com três modos de operação que variam entre desempenho elevado e controle preciso, proporcionando a flexibilidade necessária tanto para montagens delicadas quanto para perfurações em materiais densos.</p>
-              <p>O design robusto e a ergonomia aprimorada garantem conforto ao usuário, mesmo durante longos períodos de uso.</p>
-              <p>Equipada com luz LED e velocidades ajustáveis que vão de 0-450 / 0-1300 / 0-2000 RPM, a DeWalt Max XR DCD996B atende muito bem às expectativas, tornando-se uma ferramenta essencial para profissionais e entusiastas de DIY, entregando eficiência e qualidade em cada projeto.</p>
+              <p>A DeWalt DCD996P2T-BR-1 é uma furadeira, parafusadeira e martelete sem fio equipada com motor Brushless, alimentada por duas baterias Li-Ion de 20V e 5 Ah.</p>
+              <p>O kit acompanha 2 baterias, carregador bivolt e maleta de transporte.</p>
+              <p>A ferramenta possui mandril de 13 mm, controle de torque, função reversa, velocidade variável de 450 a 2.000 rpm e até 38.250 impactos por minuto, além de iluminação LED de 3 modos.</p>
+              <p>A capacidade máxima de perfuração é de 13 mm em madeira e 13 mm em metal, e o conjunto conta com empunhadura Soft Grip para maior conforto durante o uso.</p>
+              <p>A DeWalt informa 3 anos de garantia de fábrica para o produto.</p>
             </div>
-            <AffiliateCard id="Parafusadeira DeWalt Max XR DCD996B – Melhor parafusadeira 20V" />
+            <AffiliateCard id="Parafusadeira Furadeira Dcd996 20v" />
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                 <h4 className="font-bold text-green-800 mb-4 flex items-center gap-2"><Check size={20} /> Prós</h4>
-                <ul className="space-y-2 text-green-700 text-sm">
-                  <li>Motor brushless</li>
-                  <li>Mandril metálico</li>
-                  <li>Três velocidades mecânicas</li>
-                  <li>LED de alta iluminação</li>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-green-700"><Check size={16} className="mt-1 flex-shrink-0" /> <span>Motor Brushless de alta performance</span></li>
+                  <li className="flex items-start gap-2 text-green-700"><Check size={16} className="mt-1 flex-shrink-0" /> <span>Duas baterias de 5 Ah e carregador inclusos</span></li>
+                  <li className="flex items-start gap-2 text-green-700"><Check size={16} className="mt-1 flex-shrink-0" /> <span>Iluminação LED com 3 modos</span></li>
+                  <li className="flex items-start gap-2 text-green-700"><Check size={16} className="mt-1 flex-shrink-0" /> <span>Mandril de 13 mm com até 38.250 IPM</span></li>
                 </ul>
               </div>
               <div className="bg-red-50 p-6 rounded-xl border border-red-100">
                 <h4 className="font-bold text-red-800 mb-4 flex items-center gap-2"><X size={20} /> Contras</h4>
-                <ul className="space-y-2 text-red-700 text-sm">
-                  <li>Não acompanha bateria</li>
-                  <li>Preço elevado</li>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-red-700"><X size={16} className="mt-1 flex-shrink-0" /> <span>Investimento mais elevado</span></li>
                 </ul>
               </div>
             </div>

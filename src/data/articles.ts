@@ -331,10 +331,10 @@ export const articles: Article[] = [
     excerpt: "A Furadeira Titanium ganhou destaque no mercado, prometendo eficiência e durabilidade. Mas será que tudo isso se traduz em uma experiência prática satisfatória?"
   },
   {
-    title: "Melhor Parafusadeira de Impacto: Top 8 modelos para comprar em 2026",
+    title: "7 Melhores Parafusadeiras de Impacto Profissionais em 2026",
     url: "/melhor-parafusadeira-de-impacto/",
-    image: "/images/blog/melhor-parafusadeira/melhor-parafusadeira-de-impacto_.webp",
-    excerpt: "Escolher a melhor parafusadeira de impacto pode fazer toda a diferença em seus projetos de DIY ou reforma. Descubra os 8 melhores modelos."
+    image: "/images/blog/1/melhor-parafusadeira-de-impacto.webp",
+    excerpt: "Cansado de ferramentas que travam ou perdem força na hora H? Descubra como escolher a parafusadeira de impacto profissional ideal e eleve sua produtividade."
   },
   {
     title: "Parafusadeira Bosch GSR 1000 Smart é Boa? Veja Nosso Teste na Prática",

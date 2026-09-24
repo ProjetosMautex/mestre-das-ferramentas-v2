@@ -24,7 +24,8 @@ export const products: Record<string, Product> = {
   },
   "furadeira e parafusadeira Makita DHP485RF1J": {
     name: "furadeira e parafusadeira Makita DHP485RF1J",
-    link: "https://meli.la/2LbihbF"
+    link: "https://meli.la/13FuGVf",
+    image: "/images/blog/1/Parafusadeira e Furadeira de Impacto Makita ｜ DHP485RF1J.webp"
   },
   "Parafusadeira Furadeira Bosch GSB 120-LI.": {
     name: "Parafusadeira Furadeira Bosch GSB 120-LI.",
@@ -61,7 +62,8 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-dewalt-dcd7781d2": {
     name: "Parafusadeira DeWalt DCD7781D2",
-    link: "https://meli.la/1a7tj1T"
+    link: "https://meli.la/1a7tj1T",
+    image: "/images/blog/melhor-parafusadeira/Parafusadeira DeWalt DCD7781D2.webp"
   },
   "DeWalt DCD700LC1": {
     name: "DeWalt DCD700LC1",
@@ -384,7 +386,8 @@ export const products: Record<string, Product> = {
   },
   "Parafusadeira/Furadeira Impacto GBS 18V50": {
     name: "Parafusadeira/Furadeira Impacto GBS 18V50",
-    link: "https://meli.la/14PPqd6"
+    link: "https://meli.la/1EGG3KN",
+    image: "/images/Parafusadeira Furadeira Gsb18v-50 2 Bateria kit Cor Azul Frequência 60Hz Bosch teste.webp"
   },
   "BOSCH Parafusadeira Furadeira GSB 12V-30": {
     name: "BOSCH Parafusadeira Furadeira GSB 12V-30",
@@ -536,7 +539,8 @@ export const products: Record<string, Product> = {
   },
   "Furadeira e Parafusadeira Stanley SCD711C1K": {
     name: "Furadeira e Parafusadeira Stanley SCD711C1K",
-    link: "https://meli.la/16Twh2c"
+    link: "https://meli.la/16Twh2c",
+    image: "/images/blog/melhores-marcas-de-furadeira/Furadeira e Parafusadeira de Impacto Stanley 20V – SCD711C1K.webp"
   },
   "Furadeira e Parafusadeira Stanley SCD121S2K": {
     name: "Furadeira e Parafusadeira Stanley SCD121S2K",
@@ -716,7 +720,8 @@ export const products: Record<string, Product> = {
   },
   "Parafusadeira E Furadeira De Impacto 18v Gsb185 Li Com Trena Azul teste": {
     name: "Bosch GSB 185-LI e Kit 300 Pecas",
-    link: "https://meli.la/1WGZj3s"
+    link: "https://meli.la/1WGZj3s",
+    image: "/images/blog/melhor-parafusadeira/Bosch GSB 185-LI e Kit 300 Pecas-small.webp"
   },
   "Parafusadeira E Furadeira De Impacto 12 Dcd7781b Sbateria Cor Amarelo 20V teste": {
     name: "Parafusadeira E Furadeira De Impacto 12 Dcd7781b Sbateria Cor Amarelo 20V teste",
@@ -846,6 +851,16 @@ export const products: Record<string, Product> = {
   "Plaina-Eletrica-The-Black-Tools-BFP780": {
     name: "Plaina Elétrica The Black Tools BFP780",
     link: "https://meli.la/2qAJwsa"
+  },
+  "Hanabi NW-6003": {
+    name: "Hanabi NW-6003",
+    link: "https://meli.la/1Fn86dh",
+    image: "/images/blog/melhor-parafusadeira/Hanabi NW-6003.webp"
+  },
+  "Parafusadeira Furadeira Dcd996 20v": {
+    name: "Parafusadeira Furadeira Dcd996 20v",
+    link: "https://meli.la/1DaD2DS",
+    image: "/images/blog/Parafusadeira Furadeira Dcd996 20v.webp"
   }
 };
 
