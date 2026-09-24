@@ -80,9 +80,9 @@ export const MelhorParafusadeiraDeImpacto: React.FC = () => {
               <span>Por</span>
               <a href="/author/andre-carvalho/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                 <img 
-                  src="/images/autores/andre-carvalho.webp" 
+                  src="/images/autores/andre-carvalho-thumb.webp" 
                   alt="Andre Carvalho" 
-                  className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
+                  className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform object-cover"
                   onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
                 Andre Carvalho
@@ -217,7 +217,7 @@ export const MelhorParafusadeiraDeImpacto: React.FC = () => {
               </h3>
             <div className="w-full flex justify-center mb-8">
                <img 
-                src="/images/Parafusadeira Furadeira Gsb18v-50 2 Bateria kit Cor Azul Frequência 60Hz Bosch teste.webp" 
+                src="/images/Parafusadeira Furadeira Gsb18v-50 2 Bateria kit Cor Azul Frequência 60Hz Bosch teste-thumb.webp" 
                 alt="Parafusadeira de Impacto Bosch GSB 18V-50 com motor brushless e maleta profissional" 
                 title="Parafusadeira de Impacto Bosch GSB 18V-50 com motor brushless e maleta profissional"
                 className="max-h-80 object-contain mix-blend-multiply" 
@@ -766,7 +766,7 @@ export const MelhorParafusadeiraDeImpacto: React.FC = () => {
                   <td className="p-3 border-b">Marceneiros, instaladores e montadores industriais</td>
                 </tr>
                 <tr className="hover:bg-gray-50">
-                  <td className="p-3 border-b font-bold text-yellow-600">DeWalt</td>
+                  <td className="p-3 border-b font-bold text-yellow-700">DeWalt</td>
                   <td className="p-3 border-b">Força bruta, engrenagens pesadas e tração líder</td>
                   <td className="p-3 border-b">Pedreiros, canteiro pesado e estruturas metálicas</td>
                 </tr>
