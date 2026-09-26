@@ -18,6 +18,9 @@ export const TiposDeParafusadeiraQualAIdealParaCadaTrabalho: React.FC = () => {
             alt="Diferença entre os tipos de parafusadeira: manual, com fio, a bateria e pneumática" 
             title="Diferença entre os tipos de parafusadeira: manual, com fio, a bateria e pneumática"
             className="w-full h-full object-cover opacity-20 blur-sm"
+            width={994}
+            height={848}
+            fetchpriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/80 to-[#1a1a1a]"></div>
         </div>
@@ -37,6 +40,9 @@ export const TiposDeParafusadeiraQualAIdealParaCadaTrabalho: React.FC = () => {
                   alt="André Carvalho" 
                   className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
                   onError={(e) => { e.currentTarget.src = "/images/autores/default.webp"; }}
+                  width={500}
+                  height={680}
+                  loading="lazy"
                 />
                 André Carvalho
               </a>
@@ -99,7 +105,7 @@ export const TiposDeParafusadeiraQualAIdealParaCadaTrabalho: React.FC = () => {
 
         <section className="mt-12">
           <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">Qual a diferença entre os tipos de parafusadeira?</h2>
-          <img src="/images/blog/1/diferenca-entre-os-tipos-de-parafusadeira.webp" alt="Diferença entre os tipos de parafusadeira: manual, com fio, a bateria e pneumática" title="Diferença entre os tipos de parafusadeira: manual, com fio, a bateria e pneumática" className="w-full rounded-lg mb-6 shadow-md" />
+          <img src="/images/blog/1/diferenca-entre-os-tipos-de-parafusadeira.webp" alt="Diferença entre os tipos de parafusadeira: manual, com fio, a bateria e pneumática" title="Diferença entre os tipos de parafusadeira: manual, com fio, a bateria e pneumática" className="w-full rounded-lg mb-6 shadow-md" width={1264} height={848} loading="lazy" />
           <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
             <p>As parafusadeiras apresentam variações brutais de engenharia entre si, e entender essa mecânica é o que separa um amador de um profissional produtivo.</p>
             <p>Cada categoria foi projetada para resolver um gargalo específico no canteiro de obras ou na oficina, e os próximos tópicos vão mapear o uso de cada uma com foco em resultado real.</p>
@@ -115,7 +121,7 @@ export const TiposDeParafusadeiraQualAIdealParaCadaTrabalho: React.FC = () => {
 
         <section className="mt-12">
           <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">Quando usar parafusadeira com fio?</h2>
-          <img src="/images/blog/1/uso-profissional-da-parafusadeira-com-fio.webp" alt="Uso profissional da parafusadeira com fio em instalações e montagens estacionárias" title="Uso profissional da parafusadeira com fio em instalações e montagens estacionárias" className="w-full rounded-lg mb-6 shadow-md" />
+          <img src="/images/blog/1/uso-profissional-da-parafusadeira-com-fio.webp" alt="Uso profissional da parafusadeira com fio em instalações e montagens estacionárias" title="Uso profissional da parafusadeira com fio em instalações e montagens estacionárias" className="w-full rounded-lg mb-6 shadow-md" width={1264} height={848} loading="lazy" />
           <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
             <p>A parafusadeira elétrica com fio é o trator das montagens estacionárias.</p>
             <p>Eu indico essa ferramenta quando você precisa de potência bruta e contínua, sem a dor de cabeça de gerenciar ciclos de recarga.</p>
@@ -127,7 +133,7 @@ export const TiposDeParafusadeiraQualAIdealParaCadaTrabalho: React.FC = () => {
 
         <section className="mt-12">
           <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">Quando usar parafusadeira a bateria?</h2>
-          <img src="/images/blog/1/praticidade-e-mobilidade-da-parafusadeira-a-bateria.webp" alt="Praticidade e mobilidade da parafusadeira a bateria em canteiros de obra e telhados" title="Praticidade e mobilidade da parafusadeira a bateria em canteiros de obra e telhados" className="w-full rounded-lg mb-6 shadow-md" />
+          <img src="/images/blog/1/praticidade-e-mobilidade-da-parafusadeira-a-bateria.webp" alt="Praticidade e mobilidade da parafusadeira a bateria em canteiros de obra e telhados" title="Praticidade e mobilidade da parafusadeira a bateria em canteiros de obra e telhados" className="w-full rounded-lg mb-6 shadow-md" width={1264} height={848} loading="lazy" />
           <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
             <p>A parafusadeira a bateria é a espinha dorsal de qualquer profissional moderno.</p>
             <p>Você precisa dela quando o cenário exige mobilidade extrema e acesso a locais onde puxar uma extensão é inviável ou perigoso.</p>
@@ -153,7 +159,7 @@ export const TiposDeParafusadeiraQualAIdealParaCadaTrabalho: React.FC = () => {
 
         <section className="mt-12">
           <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">Quando usar parafusadeira angular?</h2>
-          <img src="/images/blog/1/uso-de-parafusadeira-angular.webp" alt="Uso de parafusadeira angular para acessar cantos e espaços estreitos na marcenaria" title="Uso de parafusadeira angular para acessar cantos e espaços estreitos na marcenaria" className="w-full rounded-lg mb-6 shadow-md" />
+          <img src="/images/blog/1/uso-de-parafusadeira-angular.webp" alt="Uso de parafusadeira angular para acessar cantos e espaços estreitos na marcenaria" title="Uso de parafusadeira angular para acessar cantos e espaços estreitos na marcenaria" className="w-full rounded-lg mb-6 shadow-md" width={1264} height={848} loading="lazy" />
           <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
             <p>A parafusadeira angular é a ferramenta tática do montador.</p>
             <p>Ela não é feita para ser sua máquina principal, mas é absolutamente insubstituível quando o espaço físico se torna um inimigo.</p>
@@ -176,7 +182,7 @@ export const TiposDeParafusadeiraQualAIdealParaCadaTrabalho: React.FC = () => {
 
         <section className="mt-12">
           <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">Quando usar parafusadeira de precisão?</h2>
-          <img src="/images/blog/1/parafusadeira-de-precisao.webp" alt="Parafusadeira de precisão para manutenção de eletrônicos e componentes delicados" title="Parafusadeira de precisão para manutenção de eletrônicos e componentes delicados" className="w-full rounded-lg mb-6 shadow-md" />
+          <img src="/images/blog/1/parafusadeira-de-precisao.webp" alt="Parafusadeira de precisão para manutenção de eletrônicos e componentes delicados" title="Parafusadeira de precisão para manutenção de eletrônicos e componentes delicados" className="w-full rounded-lg mb-6 shadow-md" width={1264} height={848} loading="lazy" />
           <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
             <p>A força bruta não serve para tudo.</p>
             <p>A parafusadeira de precisão é o bisturi do profissional que lida com eletrônicos, placas de circuito, manutenção de celulares, tablets e pequenos componentes mecânicos.</p>
