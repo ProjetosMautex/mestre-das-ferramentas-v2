@@ -457,10 +457,10 @@ export const articles: Article[] = [
     excerpt: "Você já se perguntou o que faz a função percutor ser tão especial? Aprenda o que é essa função e veja como ela pode facilitar o seu dia a dia."
   },
   {
-    title: "Tipos de parafusadeira: qual a ideal para cada trabalho?",
+    title: "Parafusadeiras: qual a ideal para cada trabalho?",
     url: "/tipos-de-parafusadeira-qual-a-ideal-para-cada-trabalho/",
-    image: "/images/blog/melhor-parafusadeira-custo-beneficio/Tipos-de-parafusadeira-qual-a-ideal-para-cada-trabalho.webp",
-    excerpt: "Com diferentes tipos disponíveis no mercado, é importante saber qual modelo se adapta melhor às suas necessidades."
+    image: "/images/blog/1/tipos-de-parafusadeira-qual-a-ideal-para-cada-trabalho.webp",
+    excerpt: "Qual a parafusadeira ideal para cada trabalho? Entenda as diferenças entre as manuais, a bateria, com fio e pneumáticas e escolha o equipamento certo."
   },
   {
     title: "Como polir carro com parafusadeira (Guia completo e simples)",

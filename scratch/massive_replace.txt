@@ -1,0 +1,55 @@
+          </div>
+
+          {/* Vitrine / Showcase Table */}
+          <div className="mb-16 max-w-[800px] mx-auto bg-slate-50 p-2.5 rounded-lg sm:p-5">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-8 text-center">Escolha rápida: o modelo certo para cada perfil</h2>
+            
+            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden">
+              <tbody>
+                {featuredIds.map((id) => {
+                  const product = products[id];
+                  if (!product) return null;
+                  return (
+                    <tr key={id} className="border-b border-slate-200 last:border-b-0">
+                      <td className="w-[65px] p-2 align-middle text-center sm:w-[80px] sm:p-3">
+                        <div className="w-[40px] h-[40px] border border-slate-100 rounded flex items-center justify-center p-0.5 sm:w-[60px] sm:h-[60px] mx-auto">
+                          <img 
+                            src={productImages[id] || ""}
+                            alt={product.name} 
+                            width="60"
+                            height="60"
+                            className="max-w-full max-h-full block object-contain mix-blend-multiply"
+                            loading="lazy"
+                          />
+                        </div>
+                      </td>
+                      <td className="p-2 align-middle sm:p-4">
+                        <div className="text-[14px] font-bold leading-tight line-clamp-3 text-slate-700 m-0 sm:text-[16px]">
+                          {product.name}
+                        </div>
+                      </td>
+                      <td className="w-[90px] p-2 align-middle text-right sm:w-[140px] sm:p-4">
+                        <a 
+                          href={product.link}
+                          target="_blank"
+                          rel="noopener noreferrer sponsored"
+                          className="bg-[#FFD700] text-[#1a1a1a] font-bold no-underline text-[11px] py-1.5 px-2.5 rounded whitespace-nowrap inline-block hover:opacity-90 sm:py-2.5 sm:px-5 sm:text-[14px]"
+                        >
+                          Ver Preço
+                        </a>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="space-y-4 prose prose-lg max-w-none text-gray-700 mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mt-12 mb-4">Compra segura para uso doméstico</h2>
+            <p>A primeira coisa que você precisa fazer antes de passar o cartão é um exercício sincero sobre a sua rotina: com que frequência você realmente vai usar essa ferramenta?</p>
+            <p>Nem todo mundo precisa de uma parafusadeira pesada de canteiro de obras; na verdade, na montagem de móveis residenciais, o excesso de força bruta é o seu pior inimigo.</p>
+            <p>Comprar com segurança significa entender o tipo de material que você vai encarar — geralmente aglomerado e MDF de 15 mm — e escolher um modelo leve, que não canse o seu punho e ofereça a delicadeza necessária para não transformar o furo do parafuso em pó de madeira.</p>
+          </div>
+
+          {/* Detailed Reviews */}
