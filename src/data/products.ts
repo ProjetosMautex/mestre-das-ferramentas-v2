@@ -399,7 +399,8 @@ export const products: Record<string, Product> = {
   },
   "Furadeira de Impacto GSB 13 RE-M": {
     name: "Furadeira de Impacto GSB 13 RE-M",
-    link: "https://meli.la/2p7vQne"
+    link: "https://meli.la/2p7vQne",
+    image: "/images/blog/melhor-furadeira-e-parafusadeira/Furadeira-de-Impacto-750-W-em-Maleta-127-V-｜-GSB-13-RE-M.webp"
   },
   "Furadeira de Impacto 850 W GSB 16 RE": {
     name: "Furadeira de Impacto 850 W GSB 16 RE",
@@ -503,19 +504,23 @@ export const products: Record<string, Product> = {
   },
   "Furadeira DWT FID-710": {
     name: "Furadeira DWT FID-710",
-    link: "https://amzn.to/4bBo06q"
+    link: "https://meli.la/1eCVXyN",
+    image: "/images/blog/melhores-marcas-de-furadeira/Furadeira-de-Impacto-12-DWT-FID-710.webp"
   },
   "Furadeira DWT FID-550": {
     name: "Furadeira DWT FID-550",
-    link: "https://amzn.to/479qNm4"
+    link: "https://meli.la/13mV3Bu",
+    image: "/images/blog/melhores-marcas-de-furadeira/Furadeira-de-Impacto-12-DWT-FID-550.webp"
   },
   "Furadeira DWT FID-595": {
     name: "Furadeira DWT FID-595",
-    link: "https://amzn.to/4rO7OVz"
+    link: "https://meli.la/1LequqY",
+    image: "/images/blog/melhores-marcas-de-furadeira/Furadeira-de-Impacto-38-DWT-FID-595.webp"
   },
   "Furadeira DWT FSD-450": {
     name: "Furadeira DWT FSD-450",
-    link: "https://amzn.to/47eYe6I"
+    link: "https://meli.la/1XjyVmo",
+    image: "/images/blog/melhores-marcas-de-furadeira/Furadeira-38-DWT-FSD-450.webp"
   },
   "Parafusadeira-DWT-12V": {
     name: "Parafusadeira-DWT-12V",
@@ -861,7 +866,18 @@ export const products: Record<string, Product> = {
     name: "Parafusadeira Furadeira Dcd996 20v",
     link: "https://meli.la/1DaD2DS",
     image: "/images/blog/Parafusadeira Furadeira Dcd996 20v.webp"
+  },
+  "Com Impacto 12″, Fid 852, 220 V – Dwt": {
+    name: "Com Impacto 12″, Fid 852, 220 V – Dwt",
+    link: "https://link.amazon/B04SaBZsC",
+    image: "/images/blog/1/Com Impacto 12″, Fid 852, 220 V – Dwt.webp"
+  },
+  "Furadeira com impacto – Vonder": {
+    name: "Furadeira com impacto – Vonder",
+    link: "https://link.amazon/B09LmpCgq",
+    image: "/images/blog/melhores-marcas-de-furadeira/Furadeira com impacto – Vonder.webp"
   }
+  
 };
 
 export type ProductId = keyof typeof products;

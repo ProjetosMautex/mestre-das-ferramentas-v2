@@ -271,10 +271,10 @@ export const articles: Article[] = [
     excerpt: "Você já se perguntou se a furadeira e parafusadeira da Wesco são realmente boas? Com tantas opções no mercado, é compreensível ficar em dúvida sobre qual escolher."
   },
   {
-    title: "Furadeira e Parafusadeira DWT é boa? Testei e conto se vale a pena",
+    title: "Furadeira DWT é Boa? Vale a Pena?",
     url: "/furadeira-e-parafusadeira-dwt-e-boa/",
-    image: "/images/blog/melhores-marcas-de-furadeira/furadeira-e-parafusadeira-dwt-e-boa.webp",
-    excerpt: "Se você está em busca de ferramentas eficientes para suas tarefas de bricolagem, a furadeira e parafusadeira DWT pode ter chamado sua atenção."
+    image: "/images/blog/1/furadeira-e-parafusadeira-dwt-e-boa.webp",
+    excerpt: "Furadeira DWT é boa? Descubra se os modelos da marca atendem sua necessidade de trabalho ou uso doméstico. Analisamos potência, durabilidade e custo-benefício."
   },
   {
     title: "Furadeira Tramontina é boa? Testei e conto se vale a pena",
