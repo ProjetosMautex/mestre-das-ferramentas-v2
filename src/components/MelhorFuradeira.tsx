@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { AffiliateCard } from './AffiliateCard';
 import { BunnerDoMeio } from './BunnerDoMeio';
 import { products, type ProductId } from '../data/products';
@@ -33,6 +33,9 @@ export const MelhorFuradeira: React.FC = () => {
             <img 
               src="/images/blog/melhor-parafusadeira/melhor-furadeira-hero.webp" 
               alt="Background" 
+              width="1920"
+              height="1080"
+              fetchPriority="high"
               className="w-full h-full object-cover opacity-20 blur-sm"
               onError={(e) => {
                 e.currentTarget.src = "https://picsum.photos/seed/drill/1920/1080?blur=4";
@@ -53,8 +56,10 @@ export const MelhorFuradeira: React.FC = () => {
                 <a href="/author/andre-carvalho/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
                   <img 
                     src="/images/autores/andre-carvalho.webp" 
-                    alt="Andre Carvalho" 
-                    className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
+                    alt="" 
+                    width="28"
+                    height="28"
+                    className="w-8 h-8 object-cover rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
                   />
                   Andre Carvalho
                 </a>
@@ -149,6 +154,7 @@ export const MelhorFuradeira: React.FC = () => {
                           href={product.link}
                           target="_blank"
                           rel="noopener noreferrer sponsored"
+                          aria-label={`Ver preço de ${product.name}`}
                           className="bg-[#FFD700] text-[#1a1a1a] font-bold no-underline text-[11px] py-1.5 px-2.5 rounded whitespace-nowrap inline-block hover:opacity-90 sm:py-2.5 sm:px-5 sm:text-[14px]"
                         >
                           Ver Preço
@@ -209,7 +215,7 @@ export const MelhorFuradeira: React.FC = () => {
                 Furadeira de Impacto 850W – Bosch
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["furadeira-impacto-bosch-850w"].name}.webp`} alt={products["furadeira-impacto-bosch-850w"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={`/images/blog/melhor-parafusadeira/${products["furadeira-impacto-bosch-850w"].name}.webp`} alt={products["furadeira-impacto-bosch-850w"].name} width="800" height="533" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
                 <p>A Bosch GSB 16 RE é aquela máquina que você compra quando precisa furar concreto duro todo santo dia e não pode perder tempo. Com 850W, ela sobra em potência e tem uma precisão eletrônica excelente no gatilho, perfeita para começar furos em azulejos sem escorregar.</p>
@@ -245,7 +251,7 @@ export const MelhorFuradeira: React.FC = () => {
                 Furadeira Impacto 760W – Makita
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["furadeira-impacto-makita-760w"].name}.webp`} alt={products["furadeira-impacto-makita-760w"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={`/images/blog/melhor-parafusadeira/${products["furadeira-impacto-makita-760w"].name}.webp`} alt={products["furadeira-impacto-makita-760w"].name} width="800" height="533" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -283,7 +289,7 @@ export const MelhorFuradeira: React.FC = () => {
                 DeWalt DWD502 – furadeira para uso profissional
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["furadeira-dewalt-dwd502"].name}.webp`} alt={products["furadeira-dewalt-dwd502"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={`/images/blog/melhor-parafusadeira/${products["furadeira-dewalt-dwd502"].name}.webp`} alt={products["furadeira-dewalt-dwd502"].name} width="800" height="533" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -316,28 +322,6 @@ export const MelhorFuradeira: React.FC = () => {
 
 
 
-            {/* Vídeo do YouTube Comparativo */}
-            <div className="my-12 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-xl">
-              <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-[#FFD700]">
-                <Sparkles size={20} className="animate-pulse text-[#FFD700]" /> Teste Prático: Bosch vs Makita no Concreto
-              </h3>
-              <p className="text-sm text-slate-300 mb-6">
-                Assista a este teste prático mostrando o desempenho real de furadeiras de impacto líderes do mercado em perfuração de concreto.
-              </p>
-              <div className="aspect-video w-full rounded-xl overflow-hidden shadow-lg border border-slate-700">
-                <iframe 
-                  width="100%" 
-                  height="100%" 
-                  src="https://www.youtube.com/embed/OVwTMbg9xCw" 
-                  title="Teste Prático: Bosch vs Makita no Concreto" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
-              </div>
-            </div>
-
             <h2 className="text-3xl font-extrabold text-slate-900 border-b-4 border-[#FFD700] pb-2 mt-16 flex items-center gap-2">
               💰 Custo-Benefício e Uso Doméstico
             </h2>
@@ -348,7 +332,7 @@ export const MelhorFuradeira: React.FC = () => {
                 Furadeira de Impacto com Maleta 650W – Mondial
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src="/images/blog/melhor-parafusadeira/Furadeira de Impacto com Maleta 650W – Mondial.webp" alt={products["furadeira-impacto-mondial-650w"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src="/images/blog/melhor-parafusadeira/Furadeira de Impacto com Maleta 650W – Mondial.webp" alt={products["furadeira-impacto-mondial-650w"].name} width="800" height="533" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -386,7 +370,7 @@ export const MelhorFuradeira: React.FC = () => {
                 Furadeira Parafusadeira Impacto 18 V ｜ GSB185LI-1B
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsb-185-li"].name}.webp`} alt={products["parafusadeira-bosch-gsb-185-li"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-bosch-gsb-185-li"].name}.webp`} alt={products["parafusadeira-bosch-gsb-185-li"].name} width="800" height="533" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -422,7 +406,7 @@ export const MelhorFuradeira: React.FC = () => {
                 Bosch GSB 550 RE – Melhor furadeira para uso doméstico
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["furadeira-bosch-gsb-550-re"].name}.webp`} alt={products["furadeira-bosch-gsb-550-re"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={`/images/blog/melhor-parafusadeira/${products["furadeira-bosch-gsb-550-re"].name}.webp`} alt={products["furadeira-bosch-gsb-550-re"].name} width="800" height="533" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -458,7 +442,7 @@ export const MelhorFuradeira: React.FC = () => {
                 Furadeira e Parafusadeira 400W – Bosch
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["bosch-gsr-7-14-e-400w"].name}.webp`} alt={products["bosch-gsr-7-14-e-400w"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={`/images/blog/melhor-parafusadeira/${products["bosch-gsr-7-14-e-400w"].name}.webp`} alt={products["bosch-gsr-7-14-e-400w"].name} width="800" height="533" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -494,7 +478,7 @@ export const MelhorFuradeira: React.FC = () => {
                 Vonder PFV 012
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-vonder-pfv-012i"].name}.webp`} alt={products["parafusadeira-vonder-pfv-012i"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={`/images/blog/melhor-parafusadeira/${products["parafusadeira-vonder-pfv-012i"].name}.webp`} alt={products["parafusadeira-vonder-pfv-012i"].name} width="800" height="533" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -530,7 +514,7 @@ export const MelhorFuradeira: React.FC = () => {
                 Furadeira Mondial FFI-09
               </h3>
               <div className="w-full flex justify-center mb-8">
-                 <img src={`/images/blog/melhor-parafusadeira/${products["furadeira Mondial FFI-09"].name}.webp`} alt={products["furadeira Mondial FFI-09"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img src={`/images/blog/melhor-parafusadeira/${products["furadeira Mondial FFI-09"].name}.webp`} alt={products["furadeira Mondial FFI-09"].name} width="800" height="533" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none">
@@ -588,6 +572,7 @@ export const MelhorFuradeira: React.FC = () => {
                     href={products["Jogo de Brocas mistas 15 peças – Bosch"]?.link || "https://meli.la/1E3Yzex"} 
                     target="_blank" 
                     rel="noopener noreferrer sponsored nofollow" 
+                    aria-label="Ver pre�o do acess�rio" 
                     className="w-full bg-[#FFD700] text-[#1a1a1a] font-bold text-center py-2 rounded-lg text-[11px] hover:bg-[#e6c200] transition-colors"
                   >
                     VER PREÇO
@@ -612,6 +597,7 @@ export const MelhorFuradeira: React.FC = () => {
                     href={products["Conjunto de Brocas e Bits Makita – 34 Peças"]?.link || "https://meli.la/2jcLSKS"} 
                     target="_blank" 
                     rel="noopener noreferrer sponsored nofollow" 
+                    aria-label="Ver pre�o do acess�rio" 
                     className="w-full bg-[#FFD700] text-[#1a1a1a] font-bold text-center py-2 rounded-lg text-[11px] hover:bg-[#e6c200] transition-colors"
                   >
                     VER PREÇO
@@ -636,6 +622,7 @@ export const MelhorFuradeira: React.FC = () => {
                     href={products["Jogo de Brocas e Bits Tramontina com Maleta – 110 Peças"]?.link || "https://meli.la/2zZ3wdx"} 
                     target="_blank" 
                     rel="noopener noreferrer sponsored nofollow" 
+                    aria-label="Ver pre�o do acess�rio" 
                     className="w-full bg-[#FFD700] text-[#1a1a1a] font-bold text-center py-2 rounded-lg text-[11px] hover:bg-[#e6c200] transition-colors"
                   >
                     VER PREÇO
@@ -660,7 +647,7 @@ export const MelhorFuradeira: React.FC = () => {
               <div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-6">Potência e velocidade: O que isso muda na prática?</h3>
                 <div className="my-8">
-                  <img src="/images/blog/melhor-parafusadeira/Potencia-e-velocidade.webp" alt="Potência e velocidade" className="w-full rounded-lg shadow-md" loading="lazy" />
+                  <img src="/images/blog/melhor-parafusadeira/Potencia-e-velocidade.webp" alt="Potência e velocidade" width="800" height="533" className="w-full rounded-lg shadow-md" loading="lazy" />
                 </div>
                 <p className="mb-6">A potência (em Watts) é a força bruta da furadeira. Quanto mais Watts, mais fácil ela vai furar materiais duros, como concreto armado.</p>
                 <p className="mb-6">Já a velocidade (RPM) indica quão rápido a broca gira. Furar metal e madeira geralmente exige mais velocidade, enquanto furar paredes grossas exige mais força (Watts e Torque) para a broca não travar no meio do caminho.</p>
@@ -692,7 +679,7 @@ export const MelhorFuradeira: React.FC = () => {
               <div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-6">Tipos de furadeiras</h3>
                 <div className="my-8">
-                  <img src="/images/blog/melhor-parafusadeira/Tipos de furadeiras.webp" alt="Tipos de furadeiras" className="w-full rounded-lg shadow-md" loading="lazy" />
+                  <img src="/images/blog/melhor-parafusadeira/Tipos de furadeiras.webp" alt="Tipos de furadeiras" width="800" height="533" className="w-full rounded-lg shadow-md" loading="lazy" />
                 </div>
                 
                 <h4 className="text-lg font-bold text-[#1a1a1a] mt-6 mb-4">Para que serve cada tipo?</h4>
@@ -710,7 +697,7 @@ export const MelhorFuradeira: React.FC = () => {
               <div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-6">Dicas práticas antes de furar</h3>
                 <div className="my-8">
-                  <img src="/images/blog/melhor-parafusadeira/As-etapas-para-fazer-um-furo-com-uma-broca.webp" alt="Etapas para fazer um furo" className="w-full rounded-lg shadow-md" loading="lazy" />
+                  <img src="/images/blog/melhor-parafusadeira/As-etapas-para-fazer-um-furo-com-uma-broca.webp" alt="Etapas para fazer um furo" width="800" height="533" className="w-full rounded-lg shadow-md" loading="lazy" />
                 </div>
                 <p className="mb-6">Vai furar azulejo? Cole uma fita crepe no local ou bata levemente com um prego para fazer uma marcaquinha antes. Isso impede que a broca escorregue e risque o piso inteiro.</p>
                 <p className="mb-6">Na hora de furar paredes, comece devagar para firmar a broca e só acelere depois.</p>
@@ -720,7 +707,7 @@ export const MelhorFuradeira: React.FC = () => {
               <div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-6">Como fazer furos perfeitamente retos?</h3>
                 <div className="my-8">
-                  <img src="/images/blog/melhor-parafusadeira/gabarito_furacao_mdf.webp" alt="Gabarito de furação em MDF para perfurar em linha reta" className="w-full rounded-xl shadow-lg hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
+                  <img src="/images/blog/melhor-parafusadeira/gabarito_furacao_mdf.webp" alt="Gabarito de furação em MDF para perfurar em linha reta" width="800" height="533" className="w-full rounded-xl shadow-lg hover:scale-[1.02] transition-transform duration-300" loading="lazy" />
                 </div>
                 <p className="mb-6">Não confie só no olho na hora de montar móveis. O ideal é usar gabaritos de madeira (pequenos blocos com furos retos já feitos na bancada) ou furadeiras que venham com um mini nível bolha embutido na carcaça.</p>
                 <p className="mb-6">Um furo torto na hora de juntar duas madeiras pode estragar o móvel todo.</p>
@@ -818,3 +805,8 @@ export const MelhorFuradeira: React.FC = () => {
     </div>
   );
 };
+
+
+
+
+
