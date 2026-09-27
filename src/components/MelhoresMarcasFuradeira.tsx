@@ -508,25 +508,6 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
             </section>
 
-            {/* VÍDEO COMPLEMENTAR / RETENÇÃO: COMPARATIVO PRÁTICO BOSCH vs MAKITA vs DEWALT */}
-            <div className="my-14 p-6 sm:p-8 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-2xl">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="p-2 bg-red-600 text-white rounded-lg font-bold flex items-center justify-center">
-                  <Zap size={20} />
-                </span>
-                <h3 className="text-xl sm:text-2xl font-extrabold text-white m-0">
-                  Comparativo em Vídeo: Teste de Força Bruta no Concreto
-                </h3>
-              </div>
-              <p className="text-slate-300 text-sm sm:text-base mb-6">
-                Você acabou de conferir as três gigantes líderes do mercado mundial.
-              </p>
-              <p className="text-slate-300 text-sm sm:text-base mb-6">
-                Para tirar a prova real do comportamento mecânico sob esforço máximo, confira este teste prático comparando a velocidade e estabilidade de perfuração em concreto armado:
-              </p>
-              
-            </div>
-
             {/* DIVISOR CUSTO-BENEFÍCIO */}
             <div className="mt-16 mb-10 pb-4 border-b-4 border-[#FFD700]">
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 flex items-center gap-3 m-0">

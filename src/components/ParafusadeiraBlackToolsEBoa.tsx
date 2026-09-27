@@ -129,9 +129,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
           <span className="bg-[#FFD700] text-gray-900 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">
             Simulador Rápido de Escolha
           </span>
-          <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
-            Qual será o uso principal da sua nova ferramenta?
-          </h3>
+          <h2 className="text-xl md:text-2xl font-bold mb-4 text-white">Qual será o uso principal da sua nova ferramenta?</h2>
           <p className="text-gray-400 text-sm md:text-base mb-6 max-w-xl mx-auto">
             Descubra qual perfil de máquina salva seu dia sem queimar o seu suado dinheiro à toa.
           </p>
@@ -163,18 +161,18 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             <div className="mt-6 p-5 rounded-xl bg-white/5 border border-white/10 text-left animate-fadeIn">
               {quizAnswer === 'custo' ? (
                 <div>
-                  <h4 className="text-[#FFD700] font-black text-lg mb-2 flex items-center gap-2">
+                  <h3 className="text-[#FFD700] font-black text-lg mb-2 flex items-center gap-2">
                     <Check className="w-5 h-5" /> A The Black Tools foi feita para você!
-                  </h4>
+                  </h3>
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Sua decisão é racional. Não há motivo para desembolsar valores na casa dos R$ 700 a R$ 1.000 em uma Bosch se a máquina vai ser usada três vezes ao mês. A The Black Tools entrega tudo o que você precisa por uma fração do preço, acompanhando duas baterias e maleta. Para apertar parafusos e furar alvenaria de vez em quando, o desempenho é excepcional.
                   </p>
                 </div>
               ) : (
                 <div>
-                  <h4 className="text-[#FFD700] font-black text-lg mb-2 flex items-center gap-2">
+                  <h3 className="text-[#FFD700] font-black text-lg mb-2 flex items-center gap-2">
                     <Info className="w-5 h-5" /> Você precisa de algo mais robusto!
-                  </h4>
+                  </h3>
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Seja transparente com sua rotina: marcenarias pesadas, construção civil ou uso exaustivo por 8 horas diárias destruirão componentes de entrada em poucos meses. O barato sai caro. Abra a carteira e invista de cara em uma Bosch ou Makita; o preço alto se paga pela resistência absurda dos componentes internos desenvolvidos para obras.
                   </p>
@@ -747,19 +745,13 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
               <span className="text-xs bg-[#FFD700]/20 text-[#b39700] font-black px-3 py-1 rounded-full uppercase tracking-wider">
                 Explore o Ecossistema
               </span>
-              <h4 className="font-bold text-gray-900 text-2xl mt-2">Equipamentos em Destaque</h4>
+              <h3 className="font-bold text-gray-900 text-2xl mt-2">Equipamentos em Destaque</h3>
             </div>
             <div className="flex gap-2">
-              <button 
-                onClick={() => setCarouselIndex((prev) => (prev === 0 ? carouselProducts.length - 1 : prev - 1))}
-                className="p-3 bg-white rounded-full border border-gray-200 hover:bg-slate-100 transition-colors shadow-sm focus:ring-2 ring-[#FFD700]"
-              >
+              <button onClick={() => setCarouselIndex((prev) => (prev === 0 ? carouselProducts.length - 1 : prev - 1))} className="p-3 bg-white rounded-full border border-gray-200 hover:bg-slate-100 transition-colors shadow-sm focus:ring-2 ring-[#FFD700]" aria-label="Imagem Anterior">
                 <ArrowLeft className="w-5 h-5 text-gray-700" />
               </button>
-              <button 
-                onClick={() => setCarouselIndex((prev) => (prev === carouselProducts.length - 1 ? 0 : prev + 1))}
-                className="p-3 bg-white rounded-full border border-gray-200 hover:bg-slate-100 transition-colors shadow-sm focus:ring-2 ring-[#FFD700]"
-              >
+              <button onClick={() => setCarouselIndex((prev) => (prev === carouselProducts.length - 1 ? 0 : prev + 1))} className="p-3 bg-white rounded-full border border-gray-200 hover:bg-slate-100 transition-colors shadow-sm focus:ring-2 ring-[#FFD700]" aria-label="Próxima Imagem">
                 <ArrowRight className="w-5 h-5 text-gray-700" />
               </button>
             </div>
@@ -778,9 +770,9 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
               />
             </div>
             <div className="flex-grow text-center md:text-left">
-              <h5 className="font-bold text-gray-900 text-xl md:text-2xl mb-3">
+              <h4 className="font-bold text-gray-900 text-xl md:text-2xl mb-3">
                 {carouselProducts[carouselIndex].title}
-              </h5>
+              </h4>
               <p className="text-gray-600 text-base leading-relaxed mb-6 h-16 overflow-hidden text-ellipsis">
                 {carouselProducts[carouselIndex].description}
               </p>
@@ -798,13 +790,15 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
           <div className="flex justify-center gap-2 mt-8">
             {carouselProducts.map((_, i) => (
               <button 
-                key={i}
-                onClick={() => setCarouselIndex(i)}
-                className={`h-2.5 rounded-full transition-all ${
-                  carouselIndex === i ? 'w-10 bg-[#FFD700]' : 'w-3 bg-gray-300 hover:bg-gray-400'
-                }`}
-                aria-label={`Ir para o produto ${i + 1}`}
-              />
+    key={i}
+    onClick={() => setCarouselIndex(i)}
+    className="w-10 h-10 flex items-center justify-center focus:outline-none"
+    aria-label={`Ir para o produto ${i + 1}`}
+  >
+    <span className={`h-2.5 rounded-full transition-all ${
+      carouselIndex === i ? 'w-10 bg-[#FFD700]' : 'w-3 bg-gray-300 hover:bg-gray-400'
+    }`} />
+  </button>
             ))}
           </div>
         </section>
@@ -867,17 +861,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             </p>
           </div>
 
-          {/* VÍDEO DO YOUTUBE */}
-          <div className="my-14 bg-gradient-to-b from-slate-100 to-white rounded-3xl p-6 md:p-10 text-center max-w-3xl mx-auto shadow-lg border border-gray-200">
-            <h4 className="font-extrabold text-gray-900 text-2xl mb-3 flex items-center justify-center gap-3">
-              <Play className="w-8 h-8 text-red-600 drop-shadow-md" /> A Máquina "Apanhando" na Prática!
-            </h4>
-            <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-              Veja você mesmo, sem filtros, como as ferramentas The Black Tools se comportam furando alvenaria e testando sua verdadeira força no trabalho real.
-            </p>
-            
-            <p className="text-sm font-bold text-gray-500 mt-5">Dica de mestre: Uma broca cega ou de má qualidade faz qualquer ferramenta potente parecer fraca. Use brocas novas!</p>
-          </div>
+          
         </section>
 
         {/* Especificações e Bateria */}
@@ -924,9 +908,9 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-white rounded-3xl p-8 border-2 border-emerald-200 shadow-lg relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-50 rounded-bl-full -z-10"></div>
-              <h5 className="font-black text-emerald-800 text-2xl mb-6 flex items-center gap-3 border-b-2 border-emerald-100 pb-4">
+              <h3 className="font-black text-emerald-800 text-2xl mb-6 flex items-center gap-3 border-b-2 border-emerald-100 pb-4">
                 <Check className="w-8 h-8 text-emerald-500 flex-shrink-0" /> O que convence (Prós)
-              </h5>
+              </h3>
               <ul className="space-y-5 text-lg text-gray-700 list-none">
                 <li className="flex gap-3">
                   <span className="text-emerald-500 font-bold mt-1">✅</span>
@@ -949,9 +933,9 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             
             <div className="bg-white rounded-3xl p-8 border-2 border-red-200 shadow-lg relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-red-50 rounded-bl-full -z-10"></div>
-              <h5 className="font-black text-red-800 text-2xl mb-6 flex items-center gap-3 border-b-2 border-red-100 pb-4">
+              <h3 className="font-black text-red-800 text-2xl mb-6 flex items-center gap-3 border-b-2 border-red-100 pb-4">
                 <X className="w-8 h-8 text-red-500 flex-shrink-0" /> Limitações Críticas (Contras)
-              </h5>
+              </h3>
               <ul className="space-y-5 text-lg text-gray-700 list-none">
                 <li className="flex gap-3">
                   <span className="text-red-500 font-bold mt-1">❌</span>

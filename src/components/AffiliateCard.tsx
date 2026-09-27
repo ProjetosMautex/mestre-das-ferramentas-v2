@@ -28,7 +28,7 @@ export const AffiliateCard: React.FC<Props> = ({ id, productId, compact = false,
           target="_blank"
           rel="noopener noreferrer sponsored nofollow"
           className="w-full bg-[#FFD700] text-[#1a1a1a] text-xs font-bold py-2 px-3 rounded hover:bg-[#e6c200] transition-colors text-center flex items-center justify-center gap-2 no-underline uppercase"
-        >
+         aria-label={"Ver preço de " + (product.name || "produto")}>
           {buttonText ? buttonText.toUpperCase() : "VER PREÇO"}
         </a>
       </div>
@@ -47,7 +47,7 @@ export const AffiliateCard: React.FC<Props> = ({ id, productId, compact = false,
         target="_blank"
         rel="noopener noreferrer sponsored nofollow"
         className="flex items-center justify-center gap-3 bg-[#FFD700] text-[#1a1a1a] px-10 py-5 rounded-xl font-black text-xl hover:scale-105 transition-all w-full sm:w-auto shadow-lg no-underline uppercase tracking-tight"
-      >
+       aria-label={"Ver preço de " + (product.name || "produto")}>
         <ShoppingCart size={28} strokeWidth={3} />
         {buttonText ? buttonText.toUpperCase() : "CLIQUE AQUI PARA VER O PREÇO"}
       </a>

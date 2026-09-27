@@ -564,13 +564,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
               </div>
             </section>
 
-            <section className="my-12">
-              <h2 className="text-2xl font-bold text-[#1a1a1a] mb-6 text-center">📺 Veja nosso teste na prática:</h2>
-              <div className="relative pb-[56.25%] h-0 rounded-2xl overflow-hidden shadow-lg border border-gray-200">
-                
-              </div>
-              <p className="text-center text-gray-500 text-sm mt-3">Aprenda dicas visuais rápidas no nosso guia em vídeo!</p>
-            </section>
+            
 
             <BunnerDoMeio />
 
