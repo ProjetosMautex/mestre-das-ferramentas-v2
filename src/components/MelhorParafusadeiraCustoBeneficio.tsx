@@ -125,7 +125,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
         {/* Hero Section */}
         <div className="relative bg-[#1a1a1a] text-white py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img 
+            <img height="500" width="500" fetchpriority="high" 
               src="/images/blog/melhor-parafusadeira-custo-beneficio/melhor-parafusadeira-custo-beneficio.webp" 
               alt="Background" 
               className="w-full h-full object-cover opacity-20 blur-sm"
@@ -145,10 +145,10 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base mt-8">
               <div className="flex items-center gap-3 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
                 <span className="font-medium">Por</span>
-                <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
-                  <img 
+                <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group" aria-label="Ver preço do produto 1">
+                  <img height="500" width="500" 
                     src="/images/autores/severino-torquato.webp" 
-                    alt="Severino Torquato" 
+                    alt="" 
                     className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
                   />
                   Severino Torquato
@@ -207,7 +207,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
                       <tr key={id} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                         <td className="p-2 sm:p-3 align-middle text-center">
                           <div className="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] border border-gray-200 rounded-lg flex items-center justify-center p-0.5 bg-white mx-auto">
-                            <img 
+                            <img height="500" width="500" 
                               src={imageSrc}
                               alt={product.name} 
                               className="max-w-full max-h-full object-contain mix-blend-multiply"
@@ -255,7 +255,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
                 WAP BPF 12K3 – A Campeã Nacional
               </h2>
               <div className="w-full flex justify-center mb-8 bg-gray-50 rounded-xl p-4">
-                 <img src={getProductImage("parafusadeira-wap-bpf-12k3")} alt={products["parafusadeira-wap-bpf-12k3"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img height="500" width="500" src={getProductImage("parafusadeira-wap-bpf-12k3")} alt={products["parafusadeira-wap-bpf-12k3"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mb-8">
                 <p>A <strong>WAP BPF 12K3</strong> assume a liderança por um motivo simples: ela entrega um <strong>kit completo na maleta</strong>. Isso elimina a frustração de ter que sair correndo para comprar brocas no meio da montagem.</p>
@@ -334,7 +334,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
                 Bosch GSR 1000 – Qualidade Alemã Acessível
               </h2>
               <div className="w-full flex justify-center mb-8 bg-gray-50 rounded-xl p-4">
-                 <img src={getProductImage("parafusadeira-bosch-gsr-1000")} alt={products["parafusadeira-bosch-gsr-1000"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img height="500" width="500" src={getProductImage("parafusadeira-bosch-gsr-1000")} alt={products["parafusadeira-bosch-gsr-1000"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mb-8">
@@ -413,7 +413,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
                 WAP K21 ID01 – A Força Bruta
               </h2>
               <div className="w-full flex justify-center mb-8 bg-gray-50 rounded-xl p-4">
-                 <img src={getProductImage("WAP K21 ID01")} alt={products["WAP K21 ID01"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img height="500" width="500" src={getProductImage("WAP K21 ID01")} alt={products["WAP K21 ID01"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mb-8">
@@ -492,7 +492,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
                 Bosch GSB 120-LI – Versatilidade Profissional
               </h2>
               <div className="w-full flex justify-center mb-8 bg-gray-50 rounded-xl p-4">
-                 <img src={getProductImage("Parafusadeira Furadeira Bosch GSB 120-LI.")} alt={products["Parafusadeira Furadeira Bosch GSB 120-LI."].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img height="500" width="500" src={getProductImage("Parafusadeira Furadeira Bosch GSB 120-LI.")} alt={products["Parafusadeira Furadeira Bosch GSB 120-LI."].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mb-8">
@@ -567,13 +567,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
             <section className="my-12">
               <h2 className="text-2xl font-bold text-[#1a1a1a] mb-6 text-center">📺 Veja nosso teste na prática:</h2>
               <div className="relative pb-[56.25%] h-0 rounded-2xl overflow-hidden shadow-lg border border-gray-200">
-                <iframe 
-                  className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/h9FWSUjCqLk" 
-                  title="Como escolher a parafusadeira ideal" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
-                ></iframe>
+                
               </div>
               <p className="text-center text-gray-500 text-sm mt-3">Aprenda dicas visuais rápidas no nosso guia em vídeo!</p>
             </section>
@@ -587,7 +581,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
                 Vonder PFV 012I – Com Impacto a Bateria
               </h2>
               <div className="w-full flex justify-center mb-8 bg-gray-50 rounded-xl p-4">
-                 <img src={getProductImage("parafusadeira-vonder-pfv-012i")} alt={products["parafusadeira-vonder-pfv-012i"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img height="500" width="500" src={getProductImage("parafusadeira-vonder-pfv-012i")} alt={products["parafusadeira-vonder-pfv-012i"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mb-8">
@@ -665,7 +659,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
                 Black+Decker LD12SC – Tradição e Confiabilidade
               </h2>
               <div className="w-full flex justify-center mb-8 bg-gray-50 rounded-xl p-4">
-                 <img src={getProductImage("parafusadeira-black-decker-ld12")} alt={products["parafusadeira-black-decker-ld12"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img height="500" width="500" src={getProductImage("parafusadeira-black-decker-ld12")} alt={products["parafusadeira-black-decker-ld12"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mb-8">
@@ -743,7 +737,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
                 Einhell TE-CD 18/2 Li – Tecnologia Europeia
               </h2>
               <div className="w-full flex justify-center mb-8 bg-gray-50 rounded-xl p-4">
-                 <img src={getProductImage("Parafusadeira EINHELL TE-CD 182 LI-I 2B")} alt={products["Parafusadeira EINHELL TE-CD 182 LI-I 2B"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img height="500" width="500" src={getProductImage("Parafusadeira EINHELL TE-CD 182 LI-I 2B")} alt={products["Parafusadeira EINHELL TE-CD 182 LI-I 2B"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mb-8">
@@ -821,7 +815,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
                 The Black Tools TB-21PX
               </h2>
               <div className="w-full flex justify-center mb-8 bg-gray-50 rounded-xl p-4">
-                 <img src={getProductImage("Parafusadeira-The-Black-Tools-TB-21PX")} alt={products["Parafusadeira-The-Black-Tools-TB-21PX"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
+                 <img height="500" width="500" src={getProductImage("Parafusadeira-The-Black-Tools-TB-21PX")} alt={products["Parafusadeira-The-Black-Tools-TB-21PX"].name} className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
               </div>
 
               <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mb-8">
@@ -936,7 +930,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
 
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Kit de Acessórios: A cereja do bolo</h3>
-                <img src="/images/blog/1/Kit de Acessórios.webp" alt="Kit de Acessórios" className="w-full max-w-2xl rounded-xl shadow-sm my-6" />
+                <img height="500" width="500" src="/images/blog/1/Kit de Acessórios.webp" alt="Kit de Acessórios" className="w-full max-w-2xl rounded-xl shadow-sm my-6" />
                 <p>Às vezes, a compra vira um excelente negócio apenas pelo que vem junto na maleta. Uma <strong>luz de LED no gatilho</strong>, por exemplo, é vital quando você vai montar a base de uma pia onde a iluminação não chega.</p>
                 <p>Procure sempre máquinas que venham com um bom sortimento de <strong>bits e soquetes</strong> direto de fábrica. Comprar pecinha por pecinha em loja de material de construção encarece muito o projeto.</p>
               </div>
@@ -1063,7 +1057,7 @@ export const MelhorParafusadeiraCustoBeneficio: React.FC = () => {
             <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mx-auto">
               <div className="flex justify-center mb-6">
                 <div className="flex flex-col items-center">
-                  <img src="/images/autores/severino-torquato.webp" alt="Redator Severino Torquato" className="w-24 h-24 rounded-full border-4 border-white shadow-lg object-cover mb-4" />
+                  <img height="500" width="500" src="/images/autores/severino-torquato.webp" alt="" className="w-24 h-24 rounded-full border-4 border-white shadow-lg object-cover mb-4" />
                   <span className="font-bold text-gray-800">Redator: Severino Torquato</span>
                 </div>
               </div>

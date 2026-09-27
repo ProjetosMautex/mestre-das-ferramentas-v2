@@ -42,7 +42,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
         {/* Hero Section */}
         <div className="relative bg-[#1a1a1a] text-white py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img 
+            <img height="500" width="500" fetchpriority="high" 
               src="/images/blog/melhores-marcas-de-furadeira/melhores-marcas-de-furadeira.webp" 
               alt="Background" 
               className="w-full h-full object-cover opacity-25 blur-sm"
@@ -65,10 +65,10 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <span>Testado em obra e bancada por</span>
-                <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
-                  <img 
+                <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group" aria-label="Ver ofertas do produto 1">
+                  <img height="500" width="500" 
                     src="/images/autores/severino-torquato.webp" 
-                    alt="Severino Torquato" 
+                    alt="" 
                     className="w-9 h-9 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform object-cover"
                     onError={(e) => {
                       e.currentTarget.src = "https://picsum.photos/seed/severino/100/100";
@@ -257,7 +257,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                       <td className="p-3.5">Consagrada pela robustez extrema e durabilidade mecânica em concreto.</td>
                       <td className="p-3.5 font-medium text-slate-800"><span className="px-2.5 py-1 rounded-full bg-teal-100 text-teal-800 text-xs font-bold">Obras Pesadas / Indústria</span></td>
                       <td className="p-3.5 text-center">
-                        <a href={getLink("Principais furadeiras Makita")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm">
+                        <a href={getLink("Principais furadeiras Makita")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm" aria-label="Ver ofertas do produto 2">
                           Ver Ofertas
                         </a>
                       </td>
@@ -269,7 +269,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                       <td className="p-3.5">Foco em engenharia agressiva, alta performance e dissipação de calor.</td>
                       <td className="p-3.5 font-medium text-slate-800"><span className="px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold">Canteiros / Concreto Armado</span></td>
                       <td className="p-3.5 text-center">
-                        <a href={getLink("Principais furadeiras Dewalt")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm">
+                        <a href={getLink("Principais furadeiras Dewalt")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm" aria-label="Ver ofertas do produto 3">
                           Ver Ofertas
                         </a>
                       </td>
@@ -281,7 +281,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                       <td className="p-3.5">Histórico consolidado como criadores da furadeira de uso portátil desde 1910.</td>
                       <td className="p-3.5 font-medium text-slate-800"><span className="px-2.5 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-bold">Uso Doméstico / Bricolagem</span></td>
                       <td className="p-3.5 text-center">
-                        <a href={getLink("Principais Black & Decker")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm">
+                        <a href={getLink("Principais Black & Decker")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm" aria-label="Ver ofertas do produto 4">
                           Ver Ofertas
                         </a>
                       </td>
@@ -293,7 +293,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                       <td className="p-3.5">Marca nacional robusta com manuseio leve, dupla isolação e precisão.</td>
                       <td className="p-3.5 font-medium text-slate-800"><span className="px-2.5 py-1 rounded-full bg-yellow-100 text-yellow-800 text-xs font-bold">Custo-Benefício / Manutenção</span></td>
                       <td className="p-3.5 text-center">
-                        <a href={getLink("Principais Furadeiras Vonder")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm">
+                        <a href={getLink("Principais Furadeiras Vonder")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm" aria-label="Ver ofertas do produto 5">
                           Ver Ofertas
                         </a>
                       </td>
@@ -305,7 +305,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                       <td className="p-3.5">Catálogo focado em economia inteligente, maletas e suporte de excelência.</td>
                       <td className="p-3.5 font-medium text-slate-800"><span className="px-2.5 py-1 rounded-full bg-red-100 text-red-800 text-xs font-bold">Faça-Você-Mesmo / Eventual</span></td>
                       <td className="p-3.5 text-center">
-                        <a href={getLink("Principais Furadeiras Mondial")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm">
+                        <a href={getLink("Principais Furadeiras Mondial")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm" aria-label="Ver ofertas do produto 6">
                           Ver Ofertas
                         </a>
                       </td>
@@ -317,7 +317,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                       <td className="p-3.5">Herança vanguardista (grupo Bosch) unindo durabilidade e preço acessível.</td>
                       <td className="p-3.5 font-medium text-slate-800"><span className="px-2.5 py-1 rounded-full bg-purple-100 text-purple-800 text-xs font-bold">Profissional Leve / Intensivo</span></td>
                       <td className="p-3.5 text-center">
-                        <a href={getLink("Principais Furadeiras Skil")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm">
+                        <a href={getLink("Principais Furadeiras Skil")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm" aria-label="Ver ofertas do produto 7">
                           Ver Ofertas
                         </a>
                       </td>
@@ -329,7 +329,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                       <td className="p-3.5">Praticidade descomplicada com kits prontos para fixações residenciais básicas.</td>
                       <td className="p-3.5 font-medium text-slate-800"><span className="px-2.5 py-1 rounded-full bg-slate-200 text-slate-800 text-xs font-bold">Iniciantes / Lar</span></td>
                       <td className="p-3.5 text-center">
-                        <a href={getLink("Principais Furadeiras Tramontina")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm">
+                        <a href={getLink("Principais Furadeiras Tramontina")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-slate-950 font-bold text-xs py-2 px-3.5 rounded-lg hover:bg-[#e6c200] transition-colors whitespace-nowrap shadow-sm" aria-label="Ver ofertas do produto 8">
                           Ver Ofertas
                         </a>
                       </td>
@@ -375,7 +375,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="w-full flex justify-center mb-8 bg-slate-50 p-6 rounded-xl border border-slate-100">
-                <img src="/images/blog/melhor-parafusadeira/furadeiras-makita.webp" alt="Furadeira Makita HP1640" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
+                <img height="500" width="500" src="/images/blog/melhor-parafusadeira/furadeiras-makita.webp" alt="Furadeira Makita HP1640" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
               </div>
 
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
@@ -406,7 +406,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-100 flex justify-center sm:justify-start">
-                <a href={getLink("Principais furadeiras Makita")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5">
+                <a href={getLink("Principais furadeiras Makita")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5" aria-label="Ver ofertas do produto 9">
                   Ver Ofertas e Modelos Makita <ExternalLink size={18} />
                 </a>
               </div>
@@ -425,7 +425,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="w-full flex justify-center mb-8 bg-slate-50 p-6 rounded-xl border border-slate-100">
-                <img src="/images/blog/melhor-parafusadeira/Furadeira de Impacto 850W – Bosch.webp" alt="Furadeira Bosch GSB" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
+                <img height="500" width="500" src="/images/blog/melhor-parafusadeira/Furadeira de Impacto 850W – Bosch.webp" alt="Furadeira Bosch GSB" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
               </div>
 
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
@@ -453,7 +453,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-100 flex justify-center sm:justify-start">
-                <a href={getLink("Principais furadeiras Bosch")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5">
+                <a href={getLink("Principais furadeiras Bosch")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5" aria-label="Ver ofertas do produto 10">
                   Ver Ofertas e Modelos Bosch <ExternalLink size={18} />
                 </a>
               </div>
@@ -474,7 +474,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="w-full flex justify-center mb-8 bg-slate-50 p-6 rounded-xl border border-slate-100">
-                <img src="/images/blog/melhor-parafusadeira/DeWalt DWD502.webp" alt="Furadeira DeWalt DWD502" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
+                <img height="500" width="500" src="/images/blog/melhor-parafusadeira/DeWalt DWD502.webp" alt="Furadeira DeWalt DWD502" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
               </div>
 
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
@@ -502,7 +502,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-100 flex justify-center sm:justify-start">
-                <a href={getLink("Principais furadeiras Dewalt")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5">
+                <a href={getLink("Principais furadeiras Dewalt")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5" aria-label="Ver ofertas do produto 11">
                   Ver Ofertas e Modelos DeWalt <ExternalLink size={18} />
                 </a>
               </div>
@@ -524,18 +524,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               <p className="text-slate-300 text-sm sm:text-base mb-6">
                 Para tirar a prova real do comportamento mecânico sob esforço máximo, confira este teste prático comparando a velocidade e estabilidade de perfuração em concreto armado:
               </p>
-              <div className="aspect-video w-full rounded-xl overflow-hidden shadow-2xl border border-slate-700 bg-black">
-                <iframe 
-                  width="100%" 
-                  height="100%" 
-                  src="https://www.youtube.com/embed/OVwTMbg9xCw" 
-                  title="Comparativo de Força: Bosch x Makita no Concreto" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
-              </div>
+              
             </div>
 
             {/* DIVISOR CUSTO-BENEFÍCIO */}
@@ -559,7 +548,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="w-full flex justify-center mb-8 bg-slate-50 p-6 rounded-xl border border-slate-100">
-                <img src="/images/blog/melhor-parafusadeira/Furadeira-de-Impacto-Black-Decker-500W-TM-500.webp" alt="Furadeira Black & Decker TM500" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
+                <img height="500" width="500" src="/images/blog/melhor-parafusadeira/Furadeira-de-Impacto-Black-Decker-500W-TM-500.webp" alt="Furadeira Black & Decker TM500" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
               </div>
 
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
@@ -581,7 +570,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-100 flex justify-center sm:justify-start">
-                <a href={getLink("Principais Black & Decker")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5">
+                <a href={getLink("Principais Black & Decker")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5" aria-label="Ver ofertas do produto 12">
                   Ver Ofertas e Modelos Black & Decker <ExternalLink size={18} />
                 </a>
               </div>
@@ -600,7 +589,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="w-full flex justify-center mb-8 bg-slate-50 p-6 rounded-xl border border-slate-100">
-                <img src="/images/blog/melhor-parafusadeira/Furadeira-Vonder-450W-FSV-450.webp" alt="Furadeira Vonder FSV 450" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
+                <img height="500" width="500" src="/images/blog/melhor-parafusadeira/Furadeira-Vonder-450W-FSV-450.webp" alt="Furadeira Vonder FSV 450" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
               </div>
 
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
@@ -625,7 +614,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-100 flex justify-center sm:justify-start">
-                <a href={getLink("Principais Furadeiras Vonder")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5">
+                <a href={getLink("Principais Furadeiras Vonder")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5" aria-label="Ver ofertas do produto 13">
                   Ver Ofertas e Modelos Vonder <ExternalLink size={18} />
                 </a>
               </div>
@@ -644,7 +633,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="w-full flex justify-center mb-8 bg-slate-50 p-6 rounded-xl border border-slate-100">
-                <img src="/images/blog/melhor-parafusadeira/Furadeiras Mondial.webp" alt="Furadeiras Mondial com Maleta" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
+                <img height="500" width="500" src="/images/blog/melhor-parafusadeira/Furadeiras Mondial.webp" alt="Furadeiras Mondial com Maleta" className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" loading="lazy" />
               </div>
 
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
@@ -672,7 +661,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-100 flex justify-center sm:justify-start">
-                <a href={getLink("Principais Furadeiras Mondial")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5">
+                <a href={getLink("Principais Furadeiras Mondial")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5" aria-label="Ver ofertas do produto 14">
                   Ver Ofertas e Maletas Mondial <ExternalLink size={18} />
                 </a>
               </div>
@@ -691,7 +680,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="w-full flex justify-center mb-8 bg-slate-50 p-6 rounded-xl border border-slate-100">
-                <img 
+                <img height="500" width="500" 
                   src="https://cdn.leroymerlin.com.br/contents/15_melhores_marcas_de_furadeira_5225_original.jpg" 
                   alt="Furadeira Skil 6060" 
                   className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" 
@@ -721,7 +710,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-100 flex justify-center sm:justify-start">
-                <a href={getLink("Principais Furadeiras Skil")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5">
+                <a href={getLink("Principais Furadeiras Skil")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5" aria-label="Ver ofertas do produto 15">
                   Ver Ofertas e Modelos Skil <ExternalLink size={18} />
                 </a>
               </div>
@@ -740,7 +729,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="w-full flex justify-center mb-8 bg-slate-50 p-6 rounded-xl border border-slate-100">
-                <img 
+                <img height="500" width="500" 
                   src="https://cdn.leroymerlin.com.br/contents/15_melhores_marcas_de_furadeira_5b83_original.jpg" 
                   alt="Furadeira Tramontina com Maleta" 
                   className="max-h-80 object-contain mix-blend-multiply transition-transform hover:scale-105 duration-300" 
@@ -773,7 +762,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-100 flex justify-center sm:justify-start">
-                <a href={getLink("Principais Furadeiras Tramontina")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5">
+                <a href={getLink("Principais Furadeiras Tramontina")} target="_blank" rel="noopener noreferrer sponsored" className="inline-flex items-center justify-center gap-2 bg-[#FFD700] text-slate-950 font-extrabold py-3.5 px-8 rounded-xl hover:bg-[#e6c200] transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center text-base transform hover:-translate-y-0.5" aria-label="Ver ofertas do produto 16">
                   Ver Ofertas e Kits Tramontina <ExternalLink size={18} />
                 </a>
               </div>
@@ -809,7 +798,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               {/* Card 1: Bosch 15 pcs */}
               <div className="flex flex-col bg-white border border-gray-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all group">
                 <div className="h-32 w-full flex items-center justify-center bg-slate-50 rounded-xl mb-4 p-3 group-hover:scale-105 transition-transform">
-                  <img 
+                  <img height="500" width="500" 
                     src="/images/blog/melhor-furadeira-e-parafusadeira/Jogo-de-Brocas-mistas-15-psecas-Bosch.webp"
                     alt="Jogo de Brocas Mistas Bosch 15 Peças" 
                     className="max-h-full max-w-full object-contain mix-blend-multiply"
@@ -836,7 +825,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               {/* Card 2: Makita 34 pcs */}
               <div className="flex flex-col bg-white border border-gray-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all group">
                 <div className="h-32 w-full flex items-center justify-center bg-slate-50 rounded-xl mb-4 p-3 group-hover:scale-105 transition-transform">
-                  <img 
+                  <img height="500" width="500" 
                     src="/images/blog/melhor-furadeira-e-parafusadeira/Conjunto de Brocas e Bits Makita – 34 Peças.webp"
                     alt="Conjunto de Brocas e Bits Makita 34 Peças" 
                     className="max-h-full max-w-full object-contain mix-blend-multiply"
@@ -863,7 +852,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
               {/* Card 3: Tramontina 110 pcs */}
               <div className="flex flex-col bg-white border border-gray-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all group">
                 <div className="h-32 w-full flex items-center justify-center bg-slate-50 rounded-xl mb-4 p-3 group-hover:scale-105 transition-transform">
-                  <img 
+                  <img height="500" width="500" 
                     src="/images/blog/melhor-furadeira-e-parafusadeira/Jogo de Brocas e Bits Tramontina com Maleta – 110 Peças.webp"
                     alt="Kit Tramontina 110 Peças com Maleta" 
                     className="max-h-full max-w-full object-contain mix-blend-multiply"
@@ -959,7 +948,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
 
               <div className="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm space-y-4">
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 flex items-center gap-2 border-b border-gray-100 pb-3">
-                  <Award className="text-amber-600" size={24} /> 3. Oferta de Garantia e Confiabilidade de Fábrica
+                  <Award className="text-amber-700" size={24} /> 3. Oferta de Garantia e Confiabilidade de Fábrica
                 </h3>
                 <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                   A garantia de fábrica funciona como um selo de confiança inegociável sobre a integridade estrutural do produto.
@@ -980,7 +969,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                   <Wrench className="text-red-600" size={24} /> 4. Suporte Técnico e Capilaridade de Peças
                 </h3>
                 <div className="w-full flex justify-center my-6 bg-slate-50 p-6 rounded-xl border border-slate-100">
-                  <img 
+                  <img height="500" width="500" 
                     src="/images/blog/melhor-furadeira/Suporte técnico com furadeira.webp" 
                     alt="Manutenção e suporte técnico de furadeira em oficina" 
                     className="max-h-80 object-contain mix-blend-multiply" 
@@ -1212,7 +1201,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-6">Potência e velocidade: O que significa na prática?</h2>
             
             <div className="w-full flex justify-center mb-8 bg-slate-50 p-6 rounded-xl border border-slate-100">
-              <img src="/images/blog/melhor-parafusadeira/Potencia-e-velocidade.webp" alt="Diferença técnica entre potência em Watts e velocidade em RPM na furadeira" className="max-h-80 object-contain rounded-lg shadow-sm" loading="lazy" />
+              <img height="500" width="500" src="/images/blog/melhor-parafusadeira/Potencia-e-velocidade.webp" alt="Diferença técnica entre potência em Watts e velocidade em RPM na furadeira" className="max-h-80 object-contain rounded-lg shadow-sm" loading="lazy" />
             </div>
 
             <div className="space-y-4 text-gray-700 text-lg leading-relaxed mb-10">
@@ -1236,7 +1225,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-amber-50/60 p-6 sm:p-8 rounded-2xl border border-amber-200/80 space-y-4">
                 <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
-                  <Zap className="text-amber-600 fill-amber-500" size={24} /> Potência (Watts): A Força da Furadeira
+                  <Zap className="text-amber-700 fill-amber-500" size={24} /> Potência (Watts): A Força da Furadeira
                 </h3>
                 <p className="text-gray-700 text-base leading-relaxed">
                   A potência, expressa em Watts (W), é o coração mecânico da sua furadeira, determinando diretamente sua capacidade de torque mecânico e resistência sob carga contínua.
@@ -1313,7 +1302,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                   <span className="text-lg sm:text-xl flex items-center gap-3">
                     <span className="text-[#FFD700] font-extrabold">🔽</span> Qual é a melhor furadeira para uso doméstico?
                   </span>
-                  {openFaq === 0 ? <ChevronUp className="w-6 h-6 text-gray-500 flex-shrink-0" /> : <ChevronDown className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-amber-600" />}
+                  {openFaq === 0 ? <ChevronUp className="w-6 h-6 text-gray-500 flex-shrink-0" /> : <ChevronDown className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-amber-700" />}
                 </button>
                 {openFaq === 0 && (
                   <div className="p-6 text-gray-700 border-t border-gray-100 bg-white text-base leading-relaxed space-y-3 animate-fadeIn">
@@ -1345,7 +1334,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                   <span className="text-lg sm:text-xl flex items-center gap-3">
                     <span className="text-[#FFD700] font-extrabold">🔽</span> Qual a potência boa para furadeira?
                   </span>
-                  {openFaq === 1 ? <ChevronUp className="w-6 h-6 text-gray-500 flex-shrink-0" /> : <ChevronDown className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-amber-600" />}
+                  {openFaq === 1 ? <ChevronUp className="w-6 h-6 text-gray-500 flex-shrink-0" /> : <ChevronDown className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-amber-700" />}
                 </button>
                 {openFaq === 1 && (
                   <div className="p-6 text-gray-700 border-t border-gray-100 bg-white text-base leading-relaxed space-y-3 animate-fadeIn">
@@ -1376,7 +1365,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                   <span className="text-lg sm:text-xl flex items-center gap-3">
                     <span className="text-[#FFD700] font-extrabold">🔽</span> Furadeira ou parafusadeira: qual comprar primeiro?
                   </span>
-                  {openFaq === 2 ? <ChevronUp className="w-6 h-6 text-gray-500 flex-shrink-0" /> : <ChevronDown className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-amber-600" />}
+                  {openFaq === 2 ? <ChevronUp className="w-6 h-6 text-gray-500 flex-shrink-0" /> : <ChevronDown className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-amber-700" />}
                 </button>
                 {openFaq === 2 && (
                   <div className="p-6 text-gray-700 border-t border-gray-100 bg-white text-base leading-relaxed space-y-3 animate-fadeIn">
@@ -1411,7 +1400,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                   <span className="text-lg sm:text-xl flex items-center gap-3">
                     <span className="text-[#FFD700] font-extrabold">🔽</span> Qual é a diferença entre furadeira de impacto e comum?
                   </span>
-                  {openFaq === 3 ? <ChevronUp className="w-6 h-6 text-gray-500 flex-shrink-0" /> : <ChevronDown className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-amber-600" />}
+                  {openFaq === 3 ? <ChevronUp className="w-6 h-6 text-gray-500 flex-shrink-0" /> : <ChevronDown className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-amber-700" />}
                 </button>
                 {openFaq === 3 && (
                   <div className="p-6 text-gray-700 border-t border-gray-100 bg-white text-base leading-relaxed space-y-3 animate-fadeIn">
@@ -1438,7 +1427,7 @@ export const MelhoresMarcasFuradeira: React.FC = () => {
                   <span className="text-lg sm:text-xl flex items-center gap-3">
                     <span className="text-[#FFD700] font-extrabold">🔽</span> Furadeira a bateria é potente o suficiente?
                   </span>
-                  {openFaq === 4 ? <ChevronUp className="w-6 h-6 text-gray-500 flex-shrink-0" /> : <ChevronDown className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-amber-600" />}
+                  {openFaq === 4 ? <ChevronUp className="w-6 h-6 text-gray-500 flex-shrink-0" /> : <ChevronDown className="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-amber-700" />}
                 </button>
                 {openFaq === 4 && (
                   <div className="p-6 text-gray-700 border-t border-gray-100 bg-white text-base leading-relaxed space-y-3 animate-fadeIn">

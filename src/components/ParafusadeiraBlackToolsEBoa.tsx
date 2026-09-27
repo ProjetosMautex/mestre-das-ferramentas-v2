@@ -74,7 +74,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
       {/* Hero Section */}
       <div className="relative bg-[#1a1a1a] text-white py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
+          <img height="500" width="500" fetchpriority="high" 
             src="/images/blog/melhor-parafusadeira/Parafusadeira-The-Black-Tools-TB-21PX.webp" 
             alt="Parafusadeira The Black Tools" 
             className="w-full h-full object-cover opacity-20 blur-sm mix-blend-overlay"
@@ -90,10 +90,10 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
             <div className="flex items-center gap-2">
               <span>Por</span>
-              <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
-                <img 
+              <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group" aria-label="Ver preço do produto 1">
+                <img height="500" width="500" 
                   src="/images/autores/severino-torquato.webp" 
-                  alt="Severino Torquato" 
+                  alt="" 
                   className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
                   onError={(e) => (e.currentTarget.src = "https://placehold.co/100x100/e2e8f0/1e293b?text=ST")}
                 />
@@ -222,7 +222,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
                     <div className="text-[11px] text-slate-500 mt-1 md:hidden">
                       Hobby / Custo-Benefício
                     </div>
-                    <div className="text-[11px] font-bold text-emerald-600 mt-0.5 sm:hidden">
+                    <div className="text-[11px] font-bold text-emerald-700 mt-0.5 sm:hidden">
                       Nota: 9.4 / 10
                     </div>
                   </td>
@@ -268,7 +268,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
                     <div className="text-[11px] text-slate-500 mt-1 md:hidden">
                       Profissional / Pesado
                     </div>
-                    <div className="text-[11px] font-bold text-amber-600 mt-0.5 sm:hidden">
+                    <div className="text-[11px] font-bold text-amber-700 mt-0.5 sm:hidden">
                       Nota: 9.8 / 10
                     </div>
                   </td>
@@ -286,7 +286,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer sponsored"
                       className="bg-[#FFD700] text-[#1a1a1a] font-bold no-underline text-xs py-2 px-3 rounded whitespace-nowrap inline-block hover:opacity-90 transition-all sm:py-2.5 sm:px-5"
-                    >
+                     aria-label="Ver preço do produto 2">
                       Ver Preço
                     </a>
                   </td>
@@ -332,7 +332,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer sponsored"
                       className="bg-[#FFD700] text-[#1a1a1a] font-bold no-underline text-xs py-2 px-3 rounded whitespace-nowrap inline-block hover:opacity-90 transition-all sm:py-2.5 sm:px-5"
-                    >
+                     aria-label="Ver preço do produto 3">
                       Ver Preço
                     </a>
                   </td>
@@ -359,7 +359,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
           <div>
             <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">The Black Tools TB-21PX (A Queridinha de 21V)</h3>
             <div className="my-6 max-w-xl mx-auto rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
-              <img 
+              <img height="500" width="500" 
                 src="/images/blog/melhor-parafusadeira/Parafusadeira-The-Black-Tools-TB-21PX.webp" 
                 alt="The Black Tools TB-21PX" 
                 className="w-full h-auto object-cover p-4"
@@ -405,7 +405,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Parafusadeiras The Black Tools TB-12E e TB12A (As de 12V)</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white p-4 flex flex-col items-center">
-                <img 
+                <img height="500" width="500" 
                   src="/images/blog/melhor-parafusadeira/Parafusadeira-e-furadeira-The-Black-Tools-TB-12E.webp" 
                   alt="The Black Tools TB-12E" 
                   className="w-full h-48 object-contain mb-4"
@@ -416,12 +416,12 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   className="bg-[#FFD700] text-[#1a1a1a] font-bold no-underline text-sm py-2.5 px-6 rounded whitespace-nowrap inline-block hover:opacity-90 transition-all w-full text-center"
-                >
+                 aria-label="Ver preço do produto 4">
                   Ver Preço
                 </a>
               </div>
               <div className="rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white p-4 flex flex-col items-center">
-                <img 
+                <img height="500" width="500" 
                   src="/images/blog/melhor-parafusadeira/Parafusadeira-e-furadeira-The-Black-Tools-TB12A.webp" 
                   alt="The Black Tools TB-12A" 
                   className="w-full h-48 object-contain mb-4"
@@ -432,7 +432,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   className="bg-[#FFD700] text-[#1a1a1a] font-bold no-underline text-sm py-2.5 px-6 rounded whitespace-nowrap inline-block hover:opacity-90 transition-all w-full text-center"
-                >
+                 aria-label="Ver preço do produto 5">
                   Ver Preço
                 </a>
               </div>
@@ -462,7 +462,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             <div>
               <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Esmerilhadeira The Black Tools é boa?</h3>
               <div className="my-6 max-w-xl mx-auto rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
-                <img 
+                <img height="500" width="500" 
                   src="/images/blog/1/Esmerilhadeira The Black Tools é boa.webp" 
                   alt="Esmerilhadeira The Black Tools" 
                   className="w-full h-auto object-cover p-4"
@@ -519,7 +519,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             <div>
               <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Martelete The Black Tools TRM1000</h3>
               <div className="my-6 max-w-xl mx-auto rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
-                <img 
+                <img height="500" width="500" 
                   src="/images/blog/1/Martelete The Black Tools TRM1000.webp" 
                   alt="Martelete The Black Tools TRM1000" 
                   className="w-full h-auto object-cover p-4"
@@ -573,7 +573,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             <div>
               <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Chave de Impacto The Black Tools TB-21I</h3>
               <div className="my-6 max-w-xl mx-auto rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
-                <img 
+                <img height="500" width="500" 
                   src="/images/blog/1/Chave de Impacto The Black Tools TB-21I.webp" 
                   alt="Chave de Impacto The Black Tools TB-21I" 
                   className="w-full h-auto object-cover p-4"
@@ -630,7 +630,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             <div>
               <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Lixadeira The Black Tools é boa?</h3>
               <div className="my-6 max-w-xl mx-auto rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
-                <img 
+                <img height="500" width="500" 
                   src="/images/blog/1/Lixadeira The Black Tools é boa.webp" 
                   alt="Lixadeira The Black Tools" 
                   className="w-full h-auto object-cover p-4"
@@ -687,7 +687,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             <div>
               <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Plaina Elétrica The Black Tools BFP780</h3>
               <div className="my-6 max-w-xl mx-auto rounded-2xl overflow-hidden shadow-md border border-gray-200 bg-white">
-                <img 
+                <img height="500" width="500" 
                   src="/images/blog/1/Plaina Elétrica The Black Tools BFP780.webp" 
                   alt="Plaina Elétrica The Black Tools BFP780" 
                   className="w-full h-auto object-cover p-4"
@@ -770,7 +770,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#1a1a1a] text-[#FFD700] text-[11px] font-black uppercase px-3 py-1 rounded-full shadow-md whitespace-nowrap">
                 {carouselProducts[carouselIndex].badge}
               </span>
-              <img 
+              <img height="500" width="500" 
                 src={carouselProducts[carouselIndex].image} 
                 alt={carouselProducts[carouselIndex].title}
                 className="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-300"
@@ -823,7 +823,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
           {/* CAIXA DE DESTAQUE (VERDE) */}
           <div className="my-10 border-l-8 border-emerald-500 bg-emerald-50 p-6 md:p-8 rounded-r-2xl shadow-sm">
             <h3 className="font-extrabold text-emerald-900 text-2xl mb-4 flex items-center gap-2">
-              <Check className="w-7 h-7 text-emerald-600" /> Histórico Excelente no Reclame Aqui
+              <Check className="w-7 h-7 text-emerald-700" /> Histórico Excelente no Reclame Aqui
             </h3>
             <p className="text-emerald-800 text-lg leading-relaxed font-medium">
               No Reclame Aqui, a empresa responsável sustenta uma reputação impressionante classificada como "Ótima", ostentando uma <strong>nota de 9.4</strong> — um patamar que deixa muita marca bilionária no chinelo. 
@@ -875,16 +875,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
               Veja você mesmo, sem filtros, como as ferramentas The Black Tools se comportam furando alvenaria e testando sua verdadeira força no trabalho real.
             </p>
-            <div className="relative aspect-video max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl bg-black border-[6px] border-slate-800">
-              <iframe 
-                className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/T2Qgzp88HpY"
-                title="Teste Prático The Black Tools furando concreto ou alvenaria"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            
             <p className="text-sm font-bold text-gray-500 mt-5">Dica de mestre: Uma broca cega ou de má qualidade faz qualquer ferramenta potente parecer fraca. Use brocas novas!</p>
           </div>
         </section>
@@ -991,7 +982,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             <div className="bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-gray-100">
               <div className="flex flex-col md:flex-row gap-8 items-center mb-6">
                 <div className="w-full md:w-1/3 h-56 bg-slate-50 rounded-2xl overflow-hidden flex items-center justify-center p-4">
-                  <img src="/images/blog/melhor-parafusadeira/Bosch GSB 183-LI.webp" alt="Bosch GSB 183-LI" className="max-w-full max-h-full object-contain" onError={(e) => (e.currentTarget.src = "https://placehold.co/200/white/gray?text=BOSCH")} />
+                  <img height="500" width="500" src="/images/blog/melhor-parafusadeira/Bosch GSB 183-LI.webp" alt="Bosch GSB 183-LI" className="max-w-full max-h-full object-contain" onError={(e) => (e.currentTarget.src = "https://placehold.co/200/white/gray?text=BOSCH")} />
                 </div>
                 <div className="w-full md:w-2/3">
                   <h3 className="font-bold text-2xl md:text-3xl text-gray-900 mb-4">Bosch GSB 183-LI (18V)</h3>
@@ -1034,7 +1025,7 @@ export const ParafusadeiraBlackToolsEBoa: React.FC = () => {
             <div className="bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-gray-100">
               <div className="flex flex-col md:flex-row gap-8 items-center mb-6">
                 <div className="w-full md:w-1/3 h-56 bg-slate-50 rounded-2xl overflow-hidden flex items-center justify-center p-4">
-                  <img src="/images/blog/melhor-parafusadeira/Parafusadeira WAP BPF 12K3.webp" alt="WAP BPF 12K3" className="max-w-full max-h-full object-contain" onError={(e) => (e.currentTarget.src = "https://placehold.co/200/white/gray?text=WAP")} />
+                  <img height="500" width="500" src="/images/blog/melhor-parafusadeira/Parafusadeira WAP BPF 12K3.webp" alt="WAP BPF 12K3" className="max-w-full max-h-full object-contain" onError={(e) => (e.currentTarget.src = "https://placehold.co/200/white/gray?text=WAP")} />
                 </div>
                 <div className="w-full md:w-2/3">
                   <h3 className="font-bold text-2xl md:text-3xl text-gray-900 mb-4">WAP BPF 12K3 (12V)</h3>
