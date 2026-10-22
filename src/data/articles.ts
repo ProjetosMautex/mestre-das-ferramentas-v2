@@ -43,10 +43,10 @@ export const articles: Article[] = [
     excerpt: "Descubra se a Parafusadeira Black Tools é boa — desempenho e custo-benefício podem surpreender!"
   },
   {
-    title: "Parafusadeira WAP é boa? Testei os principais modelos",
+    title: "Parafusadeira WAP é Boa? Testamos a Famosa BPF-12K3 e Mais",
     url: "/parafusadeira-wap-e-boa/",
-    image: "/images/blog/melhor-furadeira/parafusadeira-wap-e-boa.webp",
-    excerpt: "O mercado de ferramentas elétricas está repleto de opções, e as parafusadeiras WAP se destacam como uma escolha popular entre os entusiastas do DIY e profissionais."
+    image: "/images/blog/melhor-parafusadeira/Parafusadeira WAP BPF 12K3.webp",
+    excerpt: "A parafusadeira WAP é realmente boa para o seu dia a dia? Descubra se ela entrega a potência e a durabilidade que você precisa antes de fechar sua compra."
   },
   {
     title: "Top 8 Melhores Bits para Parafusadeira — testei Bosch, DeWalt e mais",

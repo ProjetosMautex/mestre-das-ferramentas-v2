@@ -1,13 +1,63 @@
-import React from 'react';
-import { products, type ProductId } from '../data/products';
-import { Check, X } from 'lucide-react';
+import React, { useState } from 'react';
+import { AffiliateCard } from './AffiliateCard';
 import { BunnerDoMeio } from './BunnerDoMeio';
+import { ExitIntentPopup } from './ExitIntentPopup';
+import { products, type ProductId } from '../data/products';
+import { Check, X, HelpCircle, ChevronDown, ChevronUp } from 'lucide-react';
 
 export const ParafusadeiraWapEBoa: React.FC = () => {
-  const getLink = (id: string) => {
-    const product = products[id as ProductId];
-    return product?.link || "#";
+  const [selectedPurpose, setSelectedPurpose] = useState<string | null>(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
+
+  const toggleFaq = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
   };
+
+  const showcaseItems: { id: ProductId; image: string }[] = [
+    {
+      id: "parafusadeira-wap-bpf-12k3",
+      image: "/images/blog/melhor-parafusadeira/Parafusadeira WAP BPF 12K3.webp"
+    },
+    {
+      id: "parafusadeira-wap-bpfi-12k4",
+      image: "/images/blog/melhor-furadeira/Parafusadeira e Furadeira WAP BPFI 12K4.webp"
+    },
+    {
+      id: "furadeira-wap-wf-700k13",
+      image: "/images/blog/melhores-marcas-de-furadeira/Parafusadeira E Furadeira De Impacto Wap Wf 700k13 Kit Maleta 220V.webp"
+    },
+    {
+      id: "furadeira-wap-efpi-1000",
+      image: "/images/blog/melhor-furadeira/Furadeira de Impacto e Parafusadeira WAP EFPI 1000.webp"
+    }
+  ];
+
+  const faqItems = [
+    {
+      question: "🔽 Quais materiais posso perfurar com a WAP BPF 12K3?",
+      paragraphs: [
+        "Ela trabalha com precisão em madeiras macias, MDF, compensados, plásticos rígidos e chapas de metal fino.",
+        "Com o seletor de torque bem ajustado, você monta móveis e fixa prateleiras sem danificar a superfície.",
+        "Como não tem função impacto, não deve ser forçada em concreto ou alvenaria densa, o que preserva a vida útil do motor."
+      ]
+    },
+    {
+      question: "🔽 Qual a diferença entre uma furadeira e uma parafusadeira?",
+      paragraphs: [
+        "A furadeira é feita para abrir furos, priorizando rotação para vencer superfícies rígidas.",
+        "A parafusadeira prioriza o controle de torque e a reversão, garantindo fixações precisas sem espanar a rosca.",
+        "Modelos como a BPF-12K3 unem as duas funções, mas para furos profundos em alvenaria o ideal é um equipamento com impacto."
+      ]
+    },
+    {
+      question: "🔽 A linha WAP possui garantia no Brasil?",
+      paragraphs: [
+        "Sim, todas as ferramentas WAP têm garantia contra defeitos de fabricação, com prazos que variam por modelo.",
+        "Guarde a nota fiscal e confira no manual os prazos de itens como cabos e carregadores, que costumam ser menores.",
+        "Em caso de problema, a rede de assistência técnica nacional facilita diagnósticos e reparos rápidos."
+      ]
+    }
+  ];
 
   return (
     <div className="min-h-screen flex flex-col font-sans bg-gray-50">
@@ -15,31 +65,41 @@ export const ParafusadeiraWapEBoa: React.FC = () => {
         {/* Hero Section */}
         <div className="relative bg-[#1a1a1a] text-white py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img 
-              src="/images/blog/melhor-furadeira/parafusadeira-wap-e-boa.webp" 
-              alt="Background" 
-              className="w-full h-full object-cover opacity-20 blur-sm"
+            <img
+              src="/images/blog/melhor-parafusadeira/Parafusadeira WAP BPF 12K3.webp"
+              alt="Parafusadeira WAP é Boa? Testamos a Famosa BPF-12K3 e Mais"
+              title="Parafusadeira WAP é Boa? Testamos a Famosa BPF-12K3 e Mais"
+              width={800}
+              height={533}
+              fetchPriority="high"
+              loading="eager"
+              className="w-full h-full object-cover opacity-25 blur-sm"
               onError={(e) => {
                 e.currentTarget.src = "https://picsum.photos/seed/wap/1920/1080?blur=4";
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/80 to-[#1a1a1a]"></div>
           </div>
-          
+
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Parafusadeira WAP é boa? <br/>
-              <span className="text-[#FFD700]">Testei os principais modelos</span>
+              Parafusadeira WAP é Boa? <br />
+              <span className="text-[#FFD700]">Testamos a Famosa BPF-12K3 e Mais</span>
             </h1>
-            
+
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300 text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <span>Por</span>
-                <a href="/author/severino-torquato/" className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group">
-                  <img 
-                    src="/images/autores/severino-torquato.webp" 
-                    alt="Severino Torquato" 
-                    className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform"
+                <a
+                  href="/author/severino-torquato/"
+                  className="flex items-center gap-2 hover:text-[#FFD700] transition-colors font-semibold group"
+                >
+                  <img
+                    src="/images/autores/severino-torquato.webp"
+                    alt="Severino Torquato"
+                    width={32}
+                    height={32}
+                    className="w-8 h-8 rounded-full border-2 border-[#FFD700] group-hover:scale-110 transition-transform object-cover"
                   />
                   Severino Torquato
                 </a>
@@ -49,404 +109,982 @@ export const ParafusadeiraWapEBoa: React.FC = () => {
         </div>
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          {/* Introduction */}
-          <div className="space-y-6 prose prose-lg max-w-none text-gray-700 mb-12">
-            <p className="lead text-xl md:text-2xl font-medium text-gray-800 mb-8">
-              As parafusadeiras WAP posicionam-se estrategicamente no segmento de entrada, competindo agressivamente através de seus custos controlados e conjuntos de baterias funcionais.
-            </p>
-            <p>Analisaremos criteriosamente o desempenho real dessas unidades trativas frente aos desafios rotineiros impostos pelos serviços residenciais e manutenções semi-profissionais.</p>
-            <p>Dissecaremos o limite operacional mecânico exato de cada conjunto para constatar a verdadeira durabilidade entregue perante os valores reduzidos praticados no varejo.</p>
+          <ExitIntentPopup />
+
+          {/* SIMULADOR RÁPIDO DE ENGAJAMENTO */}
+          <div className="my-8 p-6 bg-gradient-to-br from-slate-800 to-slate-900 text-white rounded-2xl shadow-xl border border-slate-700">
+            <div className="flex items-center gap-3 mb-4">
+              <HelpCircle className="text-[#FFD700] w-6 h-6 animate-pulse flex-shrink-0" />
+              <h2 className="text-xl font-bold text-white m-0">
+                Para qual finalidade você precisa da parafusadeira?
+              </h2>
+            </div>
+            <div className="space-y-3">
+              <label className="flex items-center space-x-3 cursor-pointer p-3 rounded-xl bg-slate-800/80 border border-slate-600 hover:border-[#FFD700] transition-colors">
+                <input
+                  type="radio"
+                  name="wapPurpose"
+                  value="leve"
+                  checked={selectedPurpose === 'leve'}
+                  onChange={(e) => setSelectedPurpose(e.target.value)}
+                  className="form-radio h-5 w-5 text-[#FFD700]"
+                />
+                <span className="text-slate-100 font-medium">
+                  Reparos leves em casa e montagem de móveis
+                </span>
+              </label>
+              <label className="flex items-center space-x-3 cursor-pointer p-3 rounded-xl bg-slate-800/80 border border-slate-600 hover:border-[#FFD700] transition-colors">
+                <input
+                  type="radio"
+                  name="wapPurpose"
+                  value="pesada"
+                  checked={selectedPurpose === 'pesada'}
+                  onChange={(e) => setSelectedPurpose(e.target.value)}
+                  className="form-radio h-5 w-5 text-[#FFD700]"
+                />
+                <span className="text-slate-100 font-medium">
+                  Reformas pesadas e furos em alvenaria ou concreto
+                </span>
+              </label>
+            </div>
+
+            {selectedPurpose === 'leve' && (
+              <div className="mt-4 p-4 bg-green-50 text-green-900 rounded-xl border border-green-200 space-y-2">
+                <p className="font-bold">🎯 Indicação Ideal: WAP BPF-12K3 (12V)</p>
+                <p>
+                  Para montar móveis, instalar prateleiras e fazer pequenos consertos, a <a href="#wap-bpf-12k3" className="underline font-bold text-green-800">WAP BPF-12K3</a> entrega 17 Nm e 18 níveis de torque com ótimo custo-benefício.
+                </p>
+              </div>
+            )}
+
+            {selectedPurpose === 'pesada' && (
+              <div className="mt-4 p-4 bg-amber-50 text-amber-900 rounded-xl border border-amber-200 space-y-2">
+                <p className="font-bold">⚡ Indicação Ideal: Modelos com Impacto</p>
+                <p>
+                  Para parede e concreto, prefira a <a href="#parafusadeira-wap-bpfi-12k4" className="underline font-bold text-amber-900">WAP BPFI 12K4</a> (bateria com impacto) ou as elétricas <a href="#furadeira-wap-wf-700k13" className="underline font-bold text-amber-900">WAP WF 700K13</a> e <a href="#furadeira-wap-efpi-1000" className="underline font-bold text-amber-900">WAP EFPI 1000</a>.
+                </p>
+              </div>
+            )}
           </div>
 
-          {/* Principais modelos da marca */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Categorias Principais: A linha WAP em Foco</h2>
-            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
-              <p>A linha motora da WAP fragmenta-se deliberadamente em categorias específicas almejando suprir isoladamente tanto consertos ágeis habituais quanto demandas levemente mais estruturadas providas de impactos mecânicos reais.</p>
-              <p>Avaliamos individualmente as arquiteturas mecânicas internas, componentes agregados e tolerâncias de fadiga elétrica dos seus equipamentos mais procurados comercialmente no cenário brasileiro.</p>
-            </div>
+          {/* INTRODUÇÃO */}
+          <div className="space-y-4 prose prose-lg max-w-none text-gray-700 mb-12">
+            <p>
+              Escolher a ferramenta certa para pequenos reparos ou projetos de marcenaria gera muitas dúvidas.
+            </p>
+            <p>
+              Muitas opções prometem versatilidade, mas deixam a desejar na durabilidade ou na potência para o dia a dia.
+            </p>
+            <p>
+              Encontrar o equilíbrio entre custo e eficiência é o principal desafio de quem busca praticidade sem abrir mão da qualidade.
+            </p>
+            <p>
+              Por isso, entender se a <strong>parafusadeira WAP é boa</strong> exige olhar os diferenciais técnicos e a experiência real de quem usa o equipamento.
+            </p>
+            <p>
+              Neste guia, testamos a famosa BPF-12K3 e comparamos com outros modelos da marca e com as principais concorrentes.
+            </p>
+          </div>
 
-            {/* Vitrine / Showcase Table */}
-            <div className="mb-16 max-w-[800px] mx-auto bg-slate-50 p-2.5 rounded-lg sm:p-5">
-              <h2 className="text-3xl font-bold text-[#1a1a1a] mb-8 text-center">A linha WAP em Foco</h2>
-              
-              <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden">
-                <tbody>
-                  {[
-                    { id: "parafusadeira-wap-bpf-12k3", image: "/images/blog/melhor-parafusadeira/Parafusadeira WAP BPF 12K3.webp" },
-                    { id: "parafusadeira-wap-bpfi-12k4", image: "/images/blog/melhor-furadeira/Parafusadeira e Furadeira WAP BPFI 12K4.webp" },
-                    { id: "furadeira-wap-efpi-1000", image: "/images/blog/melhor-furadeira/Furadeira de Impacto e Parafusadeira WAP EFPI 1000.webp" },
-                    { id: "furadeira-wap-efi600k", image: "/images/blog/melhor-furadeira/WAP-EFI600K.webp" },
-                    { id: "furadeira-wap-efi850", image: "/images/blog/melhor-furadeira/WAP-EFI850.webp" }
-                  ].map((item) => {
-                    const product = products[item.id as ProductId];
-                    if (!product) return null;
-                    return (
-                      <tr key={item.id} className="border-b border-slate-200 last:border-b-0">
-                        <td className="w-[65px] p-2 align-middle text-center sm:w-[80px] sm:p-3">
-                          <div className="w-[40px] h-[40px] border border-slate-100 rounded flex items-center justify-center p-0.5 sm:w-[60px] sm:h-[60px] mx-auto bg-white">
-                            <img 
-                              src={item.image}
-                              alt={product.name} 
-                              width="60"
-                              height="60"
-                              className="max-w-full max-h-full block object-contain mix-blend-multiply"
-                              loading="lazy"
-                            />
-                          </div>
-                        </td>
-                        <td className="p-2 align-middle sm:p-4">
-                          <div className="text-[14px] font-bold leading-tight line-clamp-3 text-slate-700 m-0 sm:text-[16px]">
-                            {product.name}
-                          </div>
-                        </td>
-                        <td className="w-[90px] p-2 align-middle text-right sm:w-[140px] sm:p-4">
-                          <a 
-                            href={product.link}
-                            target="_blank"
-                            rel="noopener noreferrer sponsored"
-                            className="bg-[#FFD700] text-[#1a1a1a] font-bold no-underline text-[11px] py-1.5 px-2.5 rounded whitespace-nowrap inline-block hover:opacity-90 sm:py-2.5 sm:px-5 sm:text-[14px]"
-                          >
-                            Ver Preço
-                          </a>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
+          {/* VITRINE COM TODOS OS PRODUTOS QUE TÊM LINK NESTE ARTIGO */}
+          <div className="mb-16 max-w-[800px] mx-auto bg-slate-50 p-2.5 rounded-lg sm:p-5 border border-slate-200 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1a1a1a] mb-6 text-center">
+              Modelos WAP Analisados Neste Guia
+            </h2>
 
-            <div className="space-y-12">
-              {/* WAP BPF 12K3 */}
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24" id="wap-bpf-12k3">
-                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">WAP BPF 12K3</h3>
-                <div className="w-full flex justify-center mb-6">
-                   <img src="/images/blog/melhor-parafusadeira/Parafusadeira WAP BPF 12K3.webp" alt="Parafusadeira WAP BPF 12K3" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
-                </div>
-                <div className="space-y-4 text-gray-700">
-                  <p>A WAP BPF 12K3 concentra virtudes irrefutáveis como equipamento introdutório utilitarista básico focalizado inteiramente aos reparos esporádicos esparsos residenciais rápidos sem impactos rígidos.</p>
-                  <p>Estabelece moderados 17 Nm fracionados por sensíveis 18 níveis de seleção limitante ideal às montagens em chapas compensadas limpas preservando perfeitamente as bases laqueadas.</p>
-                  <p>Trabalha mediante contínua bateria de lítio de 1.5 Ah fornecendo modesto suporte amparado por seu extenso conjunto integrador condicionado contendo dezenas de itens sobressalentes primários práticos.</p>
-                </div>
-                
-                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2"><Check className="w-4 h-4"/> Prós:</h4>
-                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Leve e fácil de manusear</li>
-                      <li>Boa autonomia da bateria</li>
-                      <li>Kit completo com maleta</li>
-                      <li>Iluminação LED integrada</li>
-                    </ul>
-                  </div>
-                  <div className="bg-red-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-red-700 mb-2 flex items-center gap-2"><X className="w-4 h-4"/> Contras:</h4>
-                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Não possui função percussora</li>
-                      <li>Carregamento demorado</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="mt-6 flex justify-center">
-                  <a href={getLink("parafusadeira-wap-bpf-12k3")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:opacity-90 transition-opacity w-full md:w-auto text-center">
-                    Clique aqui para ver o preço
-                  </a>
-                </div>
-              </div>
-
-              {/* WAP BFI 12K4 */}
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24" id="wap-bfi-12k4">
-                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">WAP BFI 12K4</h3>
-                <div className="w-full flex justify-center mb-6">
-                   <img src="/images/blog/melhor-furadeira/Parafusadeira e Furadeira WAP BPFI 12K4.webp" alt="Parafusadeira e Furadeira WAP BPFI 12K4" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
-                </div>
-                <div className="space-y-4 text-gray-700">
-                  <p>A WAP BPFI 12K4 acrescenta agressividade prática efetiva agregando a fundamental capacidade percussiva imediata destinada ao rompimento eventual das secas paredes residenciais cimentícias e lajotas vitrificadas de banheiros fechados.</p>
-                  <p>Suas engrenagens elevam a rotação total constante garantindo furos consistentes ao trespassar 12 mm máximos absolutos limitantes práticos precisos no concreto isolado básico brando mole simples fraco e raso.</p>
-                </div>
-
-                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2"><Check className="w-4 h-4"/> Prós:</h4>
-                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Leve e fácil de manusear</li>
-                      <li>Boa autonomia da bateria</li>
-                      <li>Função impacto eficiente</li>
-                      <li>Maleta e acessórios inclusos</li>
-                    </ul>
-                  </div>
-                  <div className="bg-red-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-red-700 mb-2 flex items-center gap-2"><X className="w-4 h-4"/> Contras:</h4>
-                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Tempo de recarga elevado</li>
-                      <li>Não indicada para uso profissional contínuo</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="mt-6 flex justify-center">
-                  <a href={getLink("parafusadeira-wap-bpfi-12k4")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:opacity-90 transition-opacity w-full md:w-auto text-center">
-                    Clique aqui para ver o preço
-                  </a>
-                </div>
-              </div>
-
-              <BunnerDoMeio />
-
-              {/* WAP EFPI 1000 */}
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24" id="wap-efpi-1000">
-                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">Furadeira de Impacto e Parafusadeira 1000W WAP EFPI 1000</h3>
-                <div className="w-full flex justify-center mb-6">
-                   <img src="/images/blog/melhor-furadeira/Furadeira de Impacto e Parafusadeira WAP EFPI 1000.webp" alt="Furadeira de Impacto e Parafusadeira WAP EFPI 1000" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
-                </div>
-                <div className="space-y-4 text-gray-700">
-                  <p>A Furadeira WAP EFPI 1000 desvencilha-se das modestas atuações caseiras ofertando expressivos 1000W encorpados maciços extraídos diretamente das conexões cabeáveis contínuas da malha elétrica fixa das casas e galpões.</p>
-                  <p>Dota-se de robustíssimo mandril rígido de 13 mm e empunhaduras auxiliares laterais essenciais anulando solavancos imprevistos resultantes dos violentos torques mecânicos desencadeados abruptamente sob impactos diretos aplicados nas superfícies espessas grossas intensas e rígidas.</p>
-                </div>
-
-                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2"><Check className="w-4 h-4"/> Prós:</h4>
-                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Potente</li>
-                      <li>Ergonômica</li>
-                      <li>Função reversa</li>
-                      <li>Acompanha maleta</li>
-                    </ul>
-                  </div>
-                  <div className="bg-red-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-red-700 mb-2 flex items-center gap-2"><X className="w-4 h-4"/> Contras:</h4>
-                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Maleta com pouco espaço interno</li>
-                      <li>Sem luz LED</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="mt-6 flex justify-center">
-                  <a href={getLink("furadeira-wap-efpi-1000")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:opacity-90 transition-opacity w-full md:w-auto text-center">
-                    Clique aqui para ver o preço
-                  </a>
-                </div>
-              </div>
-
-              {/* WAP EFI600K */}
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24" id="wap-efi600k">
-                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">WAP EFI600K</h3>
-                <div className="w-full flex justify-center mb-6">
-                   <img src="/images/blog/melhor-furadeira/WAP-EFI600K.webp" alt="WAP EFI600K" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
-                </div>
-                <div className="space-y-4 text-gray-700">
-                  <p>A WAP EFI600K fornece confiáveis 600 watts elétricos dimensionados especificamente aos consertos civis moderados abrangendo alvenaria padrão não estrutural e fixações metálicas diretas tubulares.</p>
-                  <p>Integra seletores de giro reverso e velocidade linear acionada em robusta carcaça isolada agregando invariavelmente fundamental empunhadura auxiliar estabilizadora fronto-lateral que distribui forças vibratórias residuais.</p>
-                  <p>Fornecida no formato de maleta plena com peças de desgaste primário substitutivas resguardando o investimento imediato inicial prático direto simples e utilitário funcional mecânico prático.</p>
-                </div>
-
-                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2"><Check className="w-4 h-4"/> Prós:</h4>
-                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Boa potência para uso doméstico</li>
-                      <li>Versátil para diferentes materiais</li>
-                      <li>Acompanha maleta com acessórios</li>
-                      <li>Design ergonômico e confortável</li>
-                    </ul>
-                  </div>
-                  <div className="bg-red-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-red-700 mb-2 flex items-center gap-2"><X className="w-4 h-4"/> Contras:</h4>
-                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Possui fio</li>
-                      <li>Pode não ser indicada para uso profissional contínuo</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="mt-6 flex justify-center">
-                  <a href={getLink("furadeira-wap-efi600k")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:opacity-90 transition-opacity w-full md:w-auto text-center">
-                    Clique aqui para ver o preço
-                  </a>
-                </div>
-              </div>
-
-              {/* WAP EFI850 */}
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24" id="wap-efi850">
-                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">WAP EFI850</h3>
-                <div className="w-full flex justify-center mb-6">
-                   <img src="/images/blog/melhor-furadeira/WAP-EFI850.webp" alt="WAP EFI850" className="max-h-80 object-contain mix-blend-multiply" loading="lazy" />
-                </div>
-                <div className="space-y-4 text-gray-700">
-                  <p>A formidável WAP EFI850 avança para escalões maiores tracionando os robustos 850 watts aos ágeis 2700 RPM direcionados unicamente a perfurações intensas nas montagens civis severas duras cimentícias maciças sólidas pesadas grossas rígidas densas fortes e resistentes reais.</p>
-                  <p>Trespassa limites ampliados vencendo 16 mm diretos transfixantes na rígida alvenaria estrutural protegida pelo indestrutível cabeçote integral injetado em puro alumínio dissipador que evita derretimentos mecânicos crônicos internos sob longas trações contínuas travadas.</p>
-                </div>
-
-                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2"><Check className="w-4 h-4"/> Prós:</h4>
-                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Potente e resistente</li>
-                      <li>Empunhadura confortável</li>
-                      <li>Função impacto e reverso</li>
-                      <li>Controle de velocidade</li>
-                    </ul>
-                  </div>
-                  <div className="bg-red-50 p-4 rounded-lg">
-                    <h4 className="font-bold text-red-700 mb-2 flex items-center gap-2"><X className="w-4 h-4"/> Contras:</h4>
-                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-                      <li>Acessórios limitados</li>
-                      <li>Disponível apenas com fio</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="mt-6 flex justify-center">
-                  <a href={getLink("furadeira-wap-efi850")} target="_blank" rel="noopener noreferrer sponsored" className="inline-block bg-[#FFD700] text-[#1a1a1a] font-bold py-3 px-8 rounded-lg hover:opacity-90 transition-opacity w-full md:w-auto text-center">
-                    Clique aqui para ver o preço
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
+            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden">
+              <tbody>
+                {showcaseItems.map((item) => {
+                  const product = products[item.id];
+                  if (!product) return null;
+                  return (
+                    <tr key={item.id} className="border-b border-slate-200 last:border-b-0">
+                      <td className="w-[65px] p-2 align-middle text-center sm:w-[85px] sm:p-3">
+                        <div className="w-[50px] h-[50px] border border-slate-100 rounded flex items-center justify-center p-1 sm:w-[65px] sm:h-[65px] mx-auto bg-white">
+                          <img
+                            src={item.image}
+                            alt={product.name}
+                            title={product.name}
+                            width={65}
+                            height={65}
+                            className="max-w-full max-h-full block object-contain mix-blend-multiply"
+                            loading="lazy"
+                          />
+                        </div>
+                      </td>
+                      <td className="p-2 align-middle sm:p-4">
+                        <div className="text-[14px] font-bold leading-tight line-clamp-3 text-slate-800 m-0 sm:text-[16px]">
+                          {product.name}
+                        </div>
+                      </td>
+                      <td className="w-[100px] p-2 align-middle text-right sm:w-[150px] sm:p-4">
+                        <a
+                          href={product.link}
+                          target="_blank"
+                          rel="noopener noreferrer sponsored nofollow"
+                          className="bg-[#FFD700] text-[#1a1a1a] font-bold no-underline text-[11px] py-2 px-3 rounded whitespace-nowrap inline-block hover:opacity-90 sm:py-2.5 sm:px-5 sm:text-[14px]"
+                        >
+                          Ver Preço
+                        </a>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
 
           {/* O que é a WAP e qual sua especialidade? */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">O que é a WAP e qual sua especialidade?</h2>
-            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-              <p>Sediada firmemente no mercado brasileiro através das suas históricas e potentes lavadoras de hidrojateamento, a tradicional fornecedora nacional expandiu agressivamente sua matriz utilitária focando equipamentos motorizados rotativos elementares baseados em motores elétricos fracionários simples duráveis acessíveis dinâmicos.</p>
-              <p>Democratizou o acesso às ferramentas modulares modernas combinando confiabilidade estrutural básica aos plásticos injetados flexíveis ergonômicos resistentes e moldáveis duráveis reais práticos fáceis simples consistentes.</p>
-            </div>
-          </section>
-
-          {/* Qual a reputação da marca? */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Qual a reputação da marca?</h2>
-            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-              <p>A presença ostensiva de centrais autorizadas de manutenção e ampla cadeia de sobressalentes impulsiona decisivamente sua confiabilidade transacional garantindo estabilidade irrefutável mecânica na rotina imprevisível do brasileiro prático moderado.</p>
-              <p>Ostentando índices exímios na resolução ágil de litígios operacionais defeituosos em centrais independentes de proteção consumerista comprova plenamente a viabilidade de seus robustos manuais de garantia legal formal de grandes meses contratuais inteiros fixos estáveis fortes densos.</p>
-            </div>
-          </section>
-
-          {/* Visão Geral da Parafusadeira Wap BPF 12K3 */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Visão Geral da Parafusadeira Wap BPF 12K3</h2>
-            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-              <p>Sintetiza de forma elementar as funcionalidades básicas mecânicas em um pequeno chassi simplificado integrando comandos duais giratórios torcionais e luminosos fáceis estáticos primários acionados pelo polegar rotineiro regular fácil e leve.</p>
-              <p>Seus mandris curtos e seletor torcional extenso previnem espanamentos plásticos e estragos indesejados nas superfícies laminadas macias durante remontagens moveleiras habituais intermitentes calmas passivas contidas rápidas práticas e esporádicas na oficina estática modesta simples curta.</p>
-            </div>
-          </section>
-
-          {/* Ela também é furadeira */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Opcional Perfuratriz Integrado</h2>
-            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-              <p>Transfere estavelmente todos os seus curtos e moderados torques nominais à cabeça flexível do mandril convertendo seu eixo longitudinal em broqueadora rotativa lisa ideal para sulcos em MDF perfurando precisos 20 mm lenhosos ininterruptos livres perfeitamente controlados e plenos.</p>
-            </div>
-          </section>
-
-          {/* Seletor de reverso e velocidade variável */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Reversão Mecânica Simples Ativa Integrada Local</h2>
-            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-              <p>O pino deslizante transversal atua imediatamente revertendo polos elétricos forçando a imediata inversão magnética rotacional do motor principal sacando longos parafusos atolados e buchas perdidas emperradas retas fixas.</p>
-              <p>Associado intimamente ao gatilho progressivo de curso estendido, afere com rigorosa exatidão graduais rotações contidas que não agridem superfícies cruas nem esfolam as frágeis cabeças dos parafusos dourados zincados planos curtos finos rasos.</p>
-            </div>
-          </section>
-
-          {/* Peso e portabilidade */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Reduzida Densidade Gravitacional Prática Plena</h2>
-            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-              <p>Totalizando escassos 1.100 gramas operacionais absolutos preenchidos inteiros densos puros, mitiga substancialmente e previne a dolorosa fadiga nas longas sessões horizontais continuadas de montagem elevada focadas em prateleiras sobrepostas aéreas pesadas duras.</p>
-            </div>
-          </section>
-
-          {/* Maleta e acessórios */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Organizador Centralizador Rígido Ativo Completo Íntegro</h2>
-            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-              <p>Acondiciona-se providencialmente em um estojo plástico em polipropileno injetado alveolar resguardando a integridade física da unidade principal juntamente de essenciais brocas de aço rápido HSS originais retas puras limpas.</p>
-              <p>A farta provisão milimétrica de extremidades trativas de perfil fenda plana lisa compõe um conjunto independente prático elementar autônomo pleno veloz fixo dinâmico puro sólido prático e leve.</p>
-            </div>
-          </section>
-
-          {/* Ótimo custo-benefício */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Rentabilidade Operacional Primária Prática Plena Justa</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              O que é a WAP e qual sua especialidade?
+            </h2>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
               <p>
-                As métricas invariavelmente constatam um <a href="/melhor-parafusadeira-custo-beneficio/" className="text-blue-600 hover:underline font-medium">alinhamento coerente primário e inquestionável</a> equilibrando justas expectativas produtivas frente ao baixo aporte orçamentário requerido no escasso investimento.
+                A WAP é uma marca brasileira que ficou famosa pelas lavadoras de alta pressão e levou seu DNA industrial para as ferramentas elétricas.
               </p>
-              <p>Sancionada pelas políticas oficiais corporativas de reposição iminente em doze meses ininterruptos diretos, blinda incondicionalmente o investidor leigo limpo frente a falhas construtivas imediatas estendidas exatas isoladas contínuas espessas secas ralas limpas precisas limpas puras frias curtas pequenas lisas.</p>
+              <p>
+                Sua especialidade é o equilíbrio entre robustez e ergonomia, com equipamentos que entregam o torque prometido sem falhas precoces.
+              </p>
+              <p>
+                Nas parafusadeiras, isso aparece em motores que não desistem no meio do serviço e em ajustes de torque que dão controle exato a cada parafuso.
+              </p>
+              <p>
+                Isso faz da marca uma escolha estratégica tanto para hobbistas quanto para quem trabalha com manutenção.
+              </p>
             </div>
           </section>
 
-          {/* Não é boa para Trabalhos Pesadas */}
+          {/* Qual a reputação da marca WAP? */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Restrições Severas Estruturais Práticas Operacionais Limitadas</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Qual a reputação da marca WAP?
+            </h2>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-              <p>Exaurindo velozmente seus breves 17 Nm sob testes mecânicos intensos pontuais transversos rústicos em blocos maciços rústicos inteiros grossos, aborta prematuramente extensões contínuas em madeiras úmidas verdes largas espessas sólidas finas ou secas pesadas.</p>
-              <p>Sua omissão obvia crônica de mecanismos dinâmicos percussivos mecânicos repousa como barreira eliminatória insuperável limitante bloqueando atuações em vigas plenas estáticas grandes pesadas reais prontas reais densas concretadas cruas rústicas frias grossas sujas imensas pesadas profundas rústicas rudes sólidas imponentes contínuas longas e plenas.</p>
+              <p>
+                No Brasil, a WAP construiu uma reputação sólida entre quem busca durabilidade com investimento consciente.
+              </p>
+              <p>
+                Os elogios se concentram na longevidade do motor e na ampla rede de assistência técnica nacional.
+              </p>
+              <p>
+                Ao escolher uma WAP, você não leva só um equipamento, mas também acesso a peças de reposição e suporte técnico em todo o país.
+              </p>
+              <p>
+                É essa credibilidade que separa a marca das opções genéricas importadas.
+              </p>
             </div>
           </section>
 
-          {/* Tempo de Recarga */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Recuperação Elétrica Lenta Constante Pura Progressiva Fixa</h2>
+          {/* O Que Torna a WAP BPF-12K3 Especial no Mercado Brasileiro? */}
+          <section id="wap-bpf-12k3" className="mb-12 scroll-mt-24">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              O Que Torna a WAP BPF-12K3 Especial no Mercado Brasileiro?
+            </h2>
+            <div className="w-full flex justify-center mb-6 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+              <img
+                src="/images/blog/melhor-parafusadeira/Parafusadeira WAP BPF 12K3.webp"
+                alt="Parafusadeira WAP BPF 12K3 com maleta e acessórios"
+                title="Parafusadeira WAP BPF 12K3"
+                width={800}
+                height={533}
+                className="max-h-80 object-contain mix-blend-multiply"
+                loading="lazy"
+              />
+            </div>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
-              <p>Os adaptadores passivos rudimentares exigem morosas e arrastadas extensões temporais esticadas atingindo exasperantes absolutos 300 minutos inteiros cheios na recomposição celular densa integral.</p>
-              <p>Anula-se meramente parte deste estancamento estático restritivo alocando previamente unidades puras avulsas pré-carregadas extras repousando na esteira paralela rotineira pontual ativa contínua focada rápida útil rústica ativa limpa fina breve regular e lisa ágil isolada fixa pontual sólida plena isolada passiva isolada.</p>
+              <p>
+                A WAP BPF-12K3 é o equilíbrio ideal para quem foge do amadorismo, mas não precisa de uma máquina industrial.
+              </p>
+              <p>
+                Com preço competitivo, ela enfrenta concorrentes como Black+Decker e Philco focando no essencial.
+              </p>
+              <p>
+                Seu diferencial é a confiabilidade em tarefas frequentes, como montar móveis, instalar prateleiras e fazer pequenos reparos.
+              </p>
+              <p>
+                Ao evitar a complexidade e o custo de ferramentas profissionais, ela entrega uma solução prática e direta ao ponto.
+              </p>
+              <p>
+                É a escolha certa para quem valoriza funcionalidade e quer que o básico seja feito com segurança e desempenho constante.
+              </p>
             </div>
+
+            <AffiliateCard id="parafusadeira-wap-bpf-12k3" />
           </section>
 
-          {/* Prós e Contras */}
+          {/* Especificações Técnicas Detalhadas */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Balanço Mecânico Dinâmico Focado Útil Limitado Fechado</h2>
-            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-6">
-              <p>Tabulamos pontualmente e estritamente as evidentes restrições inerentes do chassi leve frente às suas absolutas raras pequenas parcas singelas eficientes vantagens pontuais estáticas contidas limpas prontas dinâmicas exclusivas rápidas restritas fáceis ágeis diretas pautas sólidas pautas limpas reais úteis finas.</p>
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Especificações Técnicas Detalhadas
+            </h2>
+            <div className="w-full flex justify-center mb-6">
+              <img
+                src="/images/blog/1/especificacoes-kit-wap-bpf-12k3.webp"
+                alt="Especificações técnicas e kit da Parafusadeira WAP BPF-12K3 12V"
+                title="Especificações técnicas e kit da Parafusadeira WAP BPF-12K3 12V"
+                width={800}
+                height={533}
+                className="rounded-2xl shadow-md max-w-full h-auto"
+                loading="lazy"
+              />
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-green-50 p-6 rounded-xl border border-green-100">
-                <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2"><Check className="w-5 h-5"/> Prós:</h3>
-                <p className="text-gray-700">Compreensíveis na compactação inteiriça estrutural plena realçada ativamente pelo estojo agregador centralizador utilitário pontual funcional provido essencialmente do necessário claro brilhante preciso foco pontual claro focal denso utilitário simples preciso noturno limpo seguro isolado preciso e claro branco e estático.</p>
-              </div>
-              <div className="bg-red-50 p-6 rounded-xl border border-red-100">
-                <h3 className="text-xl font-bold text-red-800 mb-4 flex items-center gap-2"><X className="w-5 h-5"/> Contras:</h3>
-                <p className="text-gray-700">Fracassa terminantemente pelas recargas intoleravelmente lentas extensas pesadas lentas letárgicas inviabilizando brutalmente severas agressivas contínuas sucessivas imensas longas jornadas pesadas extenuantes intensas sólidas isoladas somadas indissociavelmente à ausência constante limitadora eliminatória de estalidos mecânicos percussivos rígidos fixos limpos pesados intensos contínuos.</p>
-              </div>
-            </div>
-          </section>
-
-          {/* Opiniões dos Usuários */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Síntese Empírica Populacional Amostrada Verídica Focada</h2>
             <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
-              <p>Apuramos minuciosa e massivamente os relatos diretos lavrados por dezenas de montadores amadores reais comprovando na prática as severas ressalvas nominais estabelecidas por testes exatos absolutos estritos rígidos e pragmáticos.</p>
+              <p>
+                Veja como os números de engenharia da BPF-12K3 se traduzem em força, precisão e segurança no uso.
+              </p>
             </div>
 
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">Consensos Favoráveis Estruturais Práticos Diretos Unânimes</h3>
-                <p className="text-gray-700">Invariavelmente, parcelas massivas endossam seu irrefutável barateamento focado validado inteiramente no conforto dinâmico tátil provido pela carcaça enxuta balanceada revestida emborrachada densa flexível contínua segura.</p>
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+              Potência e Performance
+            </h3>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                A BPF-12K3 usa bateria de íon de lítio de 12V, o patamar de entrada ideal no universo sem fio.
+              </p>
+              <p>
+                Ela entrega 17 Nm de torque, calibrados para montar móveis, fixar acessórios e fazer ajustes rápidos.
+              </p>
+              <p>
+                Com 740 RPM, prioriza o controle sobre a velocidade, protegendo materiais delicados contra aperto excessivo.
+              </p>
+              <p>
+                Não espere a força bruta de um modelo de 18V ou 20V, mas também não subestime sua capacidade nas tarefas de casa.
+              </p>
+              <p>
+                Em pinus o fôlego é estável e, em madeiras densas como eucalipto, ela funciona com uma cadência mais paciente.
+              </p>
+              <p>
+                O mandril de 3/8" (10 mm) e o peso de cerca de 1,3 kg com bateria completam um conjunto compacto e fácil de controlar.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+              Sistema de Ajuste e Controle
+            </h3>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+              <p>
+                São 18 níveis de torque mais a posição de furação, ideais para apertar dobradiças em MDF sem espanar a rosca.
+              </p>
+              <p>
+                Por outro lado, ela opera em velocidade única, enquanto concorrentes da faixa oferecem duas marchas.
+              </p>
+              <p>
+                Essa simplicidade limita cenários complexos, mas elimina erros de seleção para quem é iniciante.
+              </p>
+              <p>
+                Na prática, a força aplicada fica sempre previsível e segura em cada fixação.
+              </p>
+            </div>
+          </section>
+
+          {/* Design e Ergonomia: Conforto no Dia a Dia */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Design e Ergonomia: Conforto no Dia a Dia
+            </h2>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                Em ferramentas usadas por longos períodos, o design define o nível de controle e o cansaço no final do trabalho.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+              Construção e Materiais
+            </h3>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                A BPF-12K3 é leve e bem equilibrada, com carcaça em polímero de alta densidade que evita a fadiga precoce.
+              </p>
+              <p>
+                Não tem acabamento metálico de linha industrial, mas a resistência é condizente com a proposta doméstica.
+              </p>
+              <p>
+                O revestimento emborrachado nas zonas de contato garante firmeza durante o aperto.
+              </p>
+              <p>
+                Em uma sessão de cerca de duas horas montando estantes, a pegada continuou confortável e sem cansar as mãos.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+              Praticidade de Uso
+            </h3>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+              <p>
+                O mandril de aperto rápido troca bits sem chave, e o LED frontal ilumina áreas escuras, como o interior de armários.
+              </p>
+              <p>
+                O seletor de reversão é intuitivo e a base plana permite deixar a ferramenta em pé com estabilidade.
+              </p>
+              <p>
+                O indicador de bateria com três níveis evita que a carga acabe no meio do serviço.
+              </p>
+            </div>
+          </section>
+
+          {/* Kit Incluso: O Que Vem na Caixa? */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Kit Incluso: O Que Vem na Caixa?
+            </h2>
+            <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg mb-4">
+              <li>1 parafusadeira/furadeira BPF-12K3</li>
+              <li>1 bateria de 12V íon de lítio (1.500 mAh)</li>
+              <li>1 carregador bivolt</li>
+              <li>Bits Phillips e fenda e brocas para madeira</li>
+              <li>1 maleta plástica para transporte</li>
+            </ul>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+              <p>
+                O kit atende ao uso imediato, mas vale investir em bits de melhor qualidade para ampliar as possibilidades.
+              </p>
+            </div>
+          </section>
+
+          {/* Desempenho em Testes Práticos */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Desempenho em Testes Práticos
+            </h2>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                Levamos a BPF-12K3 para situações reais de montagem para validar motor, bateria e versatilidade.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+              Teste em Madeira
+            </h3>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                Em pinus, ela inseriu parafusos de até 50 mm sem sinais de fadiga, e furos com broca de 8 mm foram fluidos.
+              </p>
+              <p>
+                Em madeiras densas como cumaru, parafusos de 40 mm exigiram pré-furação, com a máquina perto do limite de torque.
+              </p>
+              <p>
+                Para montagens casuais ela atende muito bem, desde que o torque seja aplicado de forma gradual.
+              </p>
+              <p>
+                Com carga completa, conseguimos instalar cerca de 150 parafusos em pinus antes de precisar recarregar.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+              Teste em Parede
+            </h3>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                Em tijolo baiano e bloco cerâmico, ela instalou buchas S6 e S8 sem dificuldade usando brocas adequadas.
+              </p>
+              <p>
+                Como não tem função impacto, é ineficaz em concreto armado e paredes estruturais densas.
+              </p>
+              <p>
+                Forçá-la nessas superfícies só gera superaquecimento e desgaste prematuro do motor.
+              </p>
+              <p>
+                Use-a com confiança para quadros, prateleiras leves e acessórios de banheiro em alvenaria comum.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+              Autonomia da Bateria
+            </h3>
+            <div className="w-full flex justify-center my-6">
+              <img
+                src="/images/blog/1/autonomia-bateria-parafusadeira-wap-bpf-12k3.webp"
+                alt="Autonomia da bateria da parafusadeira WAP BPF-12K3 e tempo de recarga"
+                title="Autonomia da bateria da parafusadeira WAP BPF-12K3 e tempo de recarga"
+                width={800}
+                height={533}
+                className="rounded-2xl shadow-md max-w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+              <p>
+                A bateria de 1.500 mAh rende de duas a três horas em montagens leves e cerca de uma hora em furações frequentes.
+              </p>
+              <p>
+                O ponto crítico é a recarga, que leva de três a cinco horas.
+              </p>
+              <p>
+                Em uso intenso, como madeira dura, a autonomia cai para algo entre 45 minutos e uma hora.
+              </p>
+              <p>
+                Em projetos longos, planeje pausas ou considere uma bateria extra para não interromper o trabalho.
+              </p>
+              <p>
+                Como é de íon de lítio, ela mantém a carga por longos períodos parada na maleta.
+              </p>
+            </div>
+          </section>
+
+          {/* Pontos Fortes e Fracos: Análise Honesta */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Pontos Fortes e Fracos: Análise Honesta
+            </h2>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                Nenhum equipamento é perfeito, por isso separamos onde a BPF-12K3 brilha e onde encontra limites.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-green-50 p-6 rounded-2xl border border-green-100">
+                <h3 className="text-2xl font-bold text-green-900 mb-4">
+                  ✅ Principais Vantagens
+                </h3>
+                <div className="space-y-3 text-gray-700">
+                  <p>
+                    O custo-benefício é o seu trunfo, entregando muita funcionalidade por um investimento acessível.
+                  </p>
+                  <p>
+                    É leve e ergonômica, e a bateria de lítio não sofre efeito memória.
+                  </p>
+                  <p>
+                    O LED frontal e o mandril de troca rápida poupam tempo no dia a dia.
+                  </p>
+                  <p>
+                    A ampla rede de assistência no Brasil garante uma compra segura.
+                  </p>
+                </div>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-xl font-bold text-[#1a1a1a] mb-3">Críticas Operacionais Limitantes Destacadas Reiteradas Comprovadas</h3>
-                <p className="text-gray-700">Contrapondo as virtudes modestas exatas citadas acima, despontam críticas ferozes incisivas contundentes referentes ao conjunto secundário precário desgastável contido na maleta demonstrando inconstância trativa sob estresse constante rígido contínuo intenso duro real pesado rústico longo fixo sólido grosso ininterrupto exaustivo tenso ríspido e duro.</p>
+              <div className="bg-red-50 p-6 rounded-2xl border border-red-100">
+                <h3 className="text-2xl font-bold text-red-900 mb-4">
+                  ❌ Pontos de Melhoria
+                </h3>
+                <div className="space-y-3 text-gray-700">
+                  <p>
+                    A recarga de 3 a 5 horas pode travar trabalhos maiores.
+                  </p>
+                  <p>
+                    Não tem segunda marcha nem impacto, o que limita o uso em alvenaria rígida.
+                  </p>
+                  <p>
+                    O torque é insuficiente para aplicações profissionais intensas.
+                  </p>
+                  <p>
+                    A maleta básica deixa a desejar na organização dos acessórios.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
 
-          {/* Conclusão */}
-          <section className="mt-16 text-center">
-            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">Parecer Definitivo Técnico Direto Final Resoluto Preciso</h2>
-            <div className="space-y-6 prose prose-lg text-gray-700 max-w-none mx-auto">
-              <p>A WAP estabeleceu incontestavelmente uma formidável linha motora básica atuando soberana frente aos severos estrangulamentos financeiros restritivos amadores casuais superficiais simples rasos curtos leves leigos simples abertos claros iniciais puros diretos rápidos práticos fixos reais curtos lisos puros.</p>
-              <p>Afastando completamente irrealistas expectativas infundadas voltadas aos ambientes canteiros severos poeirentos e extremos ininterruptos duros, sua linha intro atende de esporádico e ágil perfeitamente sem ceder a rupturas frágeis repentinas catastróficas totais prematuras bruscas drásticas fáceis contínuas.</p>
+          {/* O que diz quem comprou */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              O que diz quem comprou
+            </h2>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                A BPF-12K3 acumula cerca de 17 mil avaliações na Amazon, com média de 4,8 estrelas.
+              </p>
+              <p>
+                Os usuários destacam a leveza e a eficácia em projetos domésticos, especialmente na montagem de móveis.
+              </p>
+              <p>
+                Muitos a chamam de solução ideal para o "marinheiro de primeira viagem".
+              </p>
+              <p>
+                Relatos frequentes apontam que o custo-benefício se justifica logo no primeiro uso.
+              </p>
+              <p>
+                Para reparos leves, a comunidade reforça que ela entrega exatamente o que promete.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+              Recomendações de usuários experientes
+            </h3>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                A dica de ouro é combinar a BPF-12K3 nas montagens com uma furadeira de impacto com fio para alvenaria pesada.
+              </p>
+              <p>
+                Essa dobradinha evita sobrecarregar o motor da parafusadeira e prolonga sua vida útil.
+              </p>
+              <p>
+                Para marcenaria avançada no futuro, vale considerar modelos brushless de 18V ou 21V.
+              </p>
+              <p>
+                Ou seja, foque na tarefa atual, mas monte seu kit pensando em como ele vai crescer junto com seus projetos.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+              Problema identificado e contato com assistência
+            </h3>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+              <p>
+                Em um caso real, uma unidade parou de funcionar e a assistência apontou mau contato no cabo do carregador.
+              </p>
+              <p>
+                Cabos e fontes costumam ter garantia menor, então leia o termo de garantia antes da compra.
+              </p>
+              <p>
+                Se tiver problemas, localize a autorizada mais próxima no site oficial da WAP.
+              </p>
             </div>
           </section>
 
+          <BunnerDoMeio />
+
+          {/* Marcas e modelos alternativos */}
+          <section className="mb-12 mt-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Marcas e modelos alternativos
+            </h2>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-10">
+              <p>
+                Fora da WAP, a <strong>Vonder</strong> se destaca por kits completos, enquanto <strong>Black+Decker</strong> e <strong>Wesco</strong> são opções seguras para uso doméstico.
+              </p>
+              <p>
+                Marcas como a <strong>Mondial</strong> exigem cautela por terem qualidade menos padronizada.
+              </p>
+              <p>
+                Já as genéricas importadas atraem pelo preço, mas a falta de peças e suporte pode virar prejuízo.
+              </p>
+              <p>
+                Dentro da própria WAP, estas são as melhores alternativas à BPF-12K3:
+              </p>
+            </div>
+
+            <div className="space-y-12">
+              {/* PRODUTO 1: Parafusadeira e Furadeira de Impacto WAP BFI 12K4 */}
+              <div
+                id="parafusadeira-wap-bpfi-12k4"
+                className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24"
+              >
+                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                  Parafusadeira e Furadeira de Impacto WAP BFI 12K4
+                </h3>
+                <div className="w-full flex justify-center mb-6">
+                  <img
+                    src="/images/blog/melhor-furadeira/Parafusadeira e Furadeira WAP BPFI 12K4.webp"
+                    alt="Parafusadeira e Furadeira de Impacto WAP BFI 12K4 multifuncional"
+                    title="Parafusadeira e Furadeira de Impacto WAP BFI 12K4 multifuncional"
+                    width={800}
+                    height={533}
+                    className="max-h-80 object-contain mix-blend-multiply"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                  <p>
+                    A BFI 12K4 é a evolução natural para quem quer ir além do parafusamento.
+                  </p>
+                  <p>
+                    Ela soma função impacto e duas velocidades, virando uma verdadeira "faz-tudo".
+                  </p>
+                  <p>
+                    Os 18 níveis de torque garantem precisão nos móveis, e o impacto dá o reforço necessário para furar alvenaria.
+                  </p>
+                  <p>
+                    Ela perfura até 35 mm em madeira e 12 mm em concreto, cobrindo a maioria das necessidades de casa.
+                  </p>
+                  <p>
+                    A bateria removível facilita trocas rápidas, mas o tempo de carga de até 5 horas exige planejamento em projetos longos.
+                  </p>
+                </div>
+
+                <AffiliateCard id="parafusadeira-wap-bpfi-12k4" />
+
+                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-green-50 p-4 rounded-lg">
+                    <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2">
+                      <Check className="w-4 h-4" /> Prós:
+                    </h4>
+                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
+                      <li>Versatilidade 3 em 1 (parafusa, fura e impacta).</li>
+                      <li>Duas velocidades de rotação.</li>
+                      <li>Ajuste preciso de torque.</li>
+                      <li>Ergonomia refinada e leve.</li>
+                    </ul>
+                  </div>
+                  <div className="bg-red-50 p-4 rounded-lg">
+                    <h4 className="font-bold text-red-700 mb-2 flex items-center gap-2">
+                      <X className="w-4 h-4" /> Contras:
+                    </h4>
+                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
+                      <li>Tempo de recarga elevado.</li>
+                      <li>Potência limitada para uso profissional.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* PRODUTO 2: Furadeira De Impacto Wap Wf 700k13 */}
+              <div
+                id="furadeira-wap-wf-700k13"
+                className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24"
+              >
+                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                  Furadeira De Impacto Wap Wf 700k13
+                </h3>
+                <div className="w-full flex justify-center mb-6">
+                  <img
+                    src="/images/blog/melhores-marcas-de-furadeira/Parafusadeira E Furadeira De Impacto Wap Wf 700k13 Kit Maleta 220V.webp"
+                    alt="Furadeira De Impacto Wap WF 700K13 de 700W para alvenaria"
+                    title="Furadeira De Impacto Wap WF 700K13 de 700W para alvenaria"
+                    width={800}
+                    height={533}
+                    className="max-h-80 object-contain mix-blend-multiply"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                  <p>
+                    A WF 700K13 é a alternativa com fio para reformas que exigem força constante.
+                  </p>
+                  <p>
+                    Com 700W, 40 Nm, até 3.000 RPM e mandril de 13 mm, ela fura alvenaria até 16 mm, madeira até 25 mm e aço até 13 mm.
+                  </p>
+                  <p>
+                    Empunhadura auxiliar, limitador de profundidade e botão de trava garantem controle e segurança no uso contínuo.
+                  </p>
+                  <p>
+                    Acompanha maleta com 11 acessórios, mas o cabo de 2 m e o peso de 1,6 kg limitam a mobilidade.
+                  </p>
+                </div>
+
+                <AffiliateCard id="furadeira-wap-wf-700k13" />
+
+                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-green-50 p-4 rounded-lg">
+                    <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2">
+                      <Check className="w-4 h-4" /> Prós:
+                    </h4>
+                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
+                      <li>Potência de 700W constante.</li>
+                      <li>Mandril de 13mm robusto.</li>
+                      <li>Acompanha kit completo.</li>
+                      <li>Estabilidade com empunhadura auxiliar.</li>
+                    </ul>
+                  </div>
+                  <div className="bg-red-50 p-4 rounded-lg">
+                    <h4 className="font-bold text-red-700 mb-2 flex items-center gap-2">
+                      <X className="w-4 h-4" /> Contras:
+                    </h4>
+                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
+                      <li>Dependência de fio elétrico.</li>
+                      <li>Peso superior aos modelos a bateria.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* PRODUTO 3: Furadeira de Impacto e Parafusadeira WAP EFPI 1000 1000W */}
+              <div
+                id="furadeira-wap-efpi-1000"
+                className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 scroll-mt-24"
+              >
+                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6 border-l-4 border-[#FFD700] pl-4">
+                  Furadeira de Impacto e Parafusadeira WAP EFPI 1000 1000W
+                </h3>
+                <div className="w-full flex justify-center mb-6">
+                  <img
+                    src="/images/blog/melhor-furadeira/Furadeira de Impacto e Parafusadeira WAP EFPI 1000.webp"
+                    alt="Furadeira de Impacto e Parafusadeira WAP EFPI 1000 1000W potente"
+                    title="Furadeira de Impacto e Parafusadeira WAP EFPI 1000 1000W potente"
+                    width={800}
+                    height={533}
+                    className="max-h-80 object-contain mix-blend-multiply"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                  <p>
+                    A EFPI 1000 é a escolha para quem encara reformas pesadas sem aceitar limites.
+                  </p>
+                  <p>
+                    Seus 1000W mantêm o fôlego mesmo em concreto denso e metais resistentes.
+                  </p>
+                  <p>
+                    O seletor de impacto e a velocidade variável alternam entre parafusar e furar em segundos.
+                  </p>
+                  <p>
+                    São até 3.000 RPM e 48.000 impactos por minuto, perfurando 25 mm em madeira, 13 mm em concreto e 10 mm em aço.
+                  </p>
+                  <p>
+                    O peso e o fio exigem avaliar o escopo do projeto antes da compra.
+                  </p>
+                </div>
+
+                <AffiliateCard id="furadeira-wap-efpi-1000" />
+
+                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-green-50 p-4 rounded-lg">
+                    <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2">
+                      <Check className="w-4 h-4" /> Prós:
+                    </h4>
+                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
+                      <li>Motor de 1000W para aplicações severas.</li>
+                      <li>Troca simples entre furar e parafusar.</li>
+                      <li>Design ergonômico.</li>
+                      <li>Ótima em alvenaria e metal.</li>
+                    </ul>
+                  </div>
+                  <div className="bg-red-50 p-4 rounded-lg">
+                    <h4 className="font-bold text-red-700 mb-2 flex items-center gap-2">
+                      <X className="w-4 h-4" /> Contras:
+                    </h4>
+                    <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
+                      <li>Peso considerável em uso contínuo.</li>
+                      <li>Acessórios variam conforme o vendedor.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Comparativo com Principais Concorrentes */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Comparativo com Principais Concorrentes
+            </h2>
+            <div className="w-full flex justify-center my-6">
+              <img
+                src="/images/blog/1/comparativo-parafusadeira-wap-concorrentes.webp"
+                alt="Comparativo de parafusadeiras mercado brasileiro WAP, Black+Decker, Philco e Makita"
+                title="Comparativo de parafusadeiras mercado brasileiro WAP, Black+Decker, Philco e Makita"
+                width={800}
+                height={533}
+                className="rounded-2xl shadow-md max-w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                Decidir entre modelos exige olhar além da ficha técnica.
+              </p>
+              <p>
+                Veja como a BPF-12K3 se posiciona frente às rivais mais buscadas em durabilidade, ergonomia e suporte.
+              </p>
+              <p>
+                Para uma visão completa do mercado, confira também nosso ranking das <a href="/melhor-parafusadeira/" className="text-blue-600 hover:underline font-medium">melhores parafusadeiras</a>.
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+                  WAP BPF-12K3 vs Black+Decker CD121K
+                </h3>
+                <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                  <p>
+                    A Black+Decker leva vantagem com duas marchas e um jogo de acessórios maior.
+                  </p>
+                  <p>
+                    No torque, as duas ficam praticamente empatadas, com 17 Nm na WAP e 16 Nm na Black+Decker.
+                  </p>
+                  <p>
+                    A WAP vence em bateria, com 1.500 mAh contra 1.300 mAh, e custa cerca de 20% menos.
+                  </p>
+                  <p>
+                    Se o orçamento pesa, a WAP é imbatível, mas quem precisa de controle de rotação pode preferir a Black+Decker.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+                  WAP BPF-12K3 vs Philco PPF01
+                </h3>
+                <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                  <p>
+                    A Philco atrai pelo preço um pouco menor, sendo uma opção para uso eventual.
+                  </p>
+                  <p>
+                    A WAP entrega mais torque (17 Nm contra 14 Nm), ergonomia mais refinada e construção superior.
+                  </p>
+                  <p>
+                    Em montagens longas, essa diferença de pegada reduz bastante o esforço nas mãos.
+                  </p>
+                  <p>
+                    Com baterias equivalentes, a durabilidade da WAP justifica a pequena diferença de preço.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+                  WAP BPF-12K3 vs Makita DF330DWE
+                </h3>
+                <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+                  <p>
+                    A Makita entrega engenharia superior, com 24 Nm, duas velocidades e carregamento ultrarrápido.
+                  </p>
+                  <p>
+                    Porém, custa no mínimo o dobro, o que raramente se justifica em montagens esporádicas.
+                  </p>
+                  <p>
+                    Já sob carga constante e uso diário, a robustez da japonesa faz diferença real na durabilidade.
+                  </p>
+                  <p>
+                    Escolha a WAP pela economia ou a Makita se o seu uso for semi-profissional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Para Quem Recomendamos Esta Ferramenta? */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Para Quem Recomendamos Esta Ferramenta?
+            </h2>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                A BPF-12K3 foi pensada para quem quer aposentar as chaves manuais sem investir em equipamento industrial.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+              Perfil Ideal de Usuário
+            </h3>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                É ideal para quem mora em apartamento e monta móveis comprados online ou fixa prateleiras.
+              </p>
+              <p>
+                Também atende quem está montando a primeira caixa de ferramentas ou faz marcenaria amadora leve.
+              </p>
+              <p>
+                É uma ótima opção para pessoas com menos força física, graças ao peso reduzido e à pegada confortável.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mb-4">
+              Quando Buscar Alternativas
+            </h3>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+              <p>
+                Evite este modelo se precisar furar concreto com frequência ou trabalhar com madeiras muito densas.
+              </p>
+              <p>
+                Para jornadas profissionais e parafusos grandes, busque modelos brushless de 18V com mais torque.
+              </p>
+            </div>
+          </section>
+
+          {/* Dicas de uso para máximo aproveitamento: */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Dicas de uso para máximo aproveitamento:
+            </h2>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                Pequenos cuidados na operação prolongam a vida útil do motor e melhoram o acabamento.
+              </p>
+            </div>
+
+            <div className="bg-amber-50 p-6 rounded-2xl border-l-4 border-[#FFD700] space-y-4 text-gray-800">
+              <h3 className="text-2xl font-bold text-[#1a1a1a]">
+                Dica Prática
+              </h3>
+              <p>
+                Antes de começar, avalie a dureza do material e ajuste o torque e o bit corretos.
+              </p>
+              <p>
+                Em MDF, use o torque entre 5 e 8 para não afundar o parafuso e estragar o acabamento.
+              </p>
+              <p>
+                Se o parafuso resistir demais, pare, confira o alinhamento ou faça uma pré-furação.
+              </p>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1a1a1a] mt-8 mb-4">
+              Erros comuns que você deve evitar
+            </h3>
+            <ul className="list-disc list-inside space-y-2 text-gray-700 text-lg">
+              <li>Forçar a ferramenta em madeira dura sem pré-furação.</li>
+              <li>Deixar a bateria descarregar totalmente com frequência.</li>
+              <li>Usar brocas cegas e culpar a máquina pelo mau resultado.</li>
+              <li>Tentar furar concreto sem função impacto.</li>
+            </ul>
+          </section>
+
+          <BunnerDoMeio />
+
+          {/* Perguntas Frequentes sobre Ferramentas WAP */}
+          <section className="mb-12 mt-12">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Perguntas Frequentes sobre Ferramentas WAP
+            </h2>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none mb-8">
+              <p>
+                Respondemos às dúvidas mais comuns de quem está prestes a comprar uma ferramenta WAP.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {faqItems.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden"
+                >
+                  <button
+                    type="button"
+                    onClick={() => toggleFaq(idx)}
+                    className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
+                  >
+                    <h3 className="text-lg sm:text-xl font-bold text-[#1a1a1a] m-0">
+                      {item.question}
+                    </h3>
+                    {openFaq === idx ? (
+                      <ChevronUp className="w-6 h-6 text-[#1a1a1a] flex-shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-6 h-6 text-gray-500 flex-shrink-0" />
+                    )}
+                  </button>
+                  {openFaq === idx && (
+                    <div className="px-6 pb-6 pt-2 border-t border-gray-100 space-y-3 text-gray-700">
+                      {item.paragraphs.map((p, pIdx) => (
+                        <p key={pIdx}>{p}</p>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Conclusão: A parafusadeira WAP vale a pena? */}
+          <section className="mt-16 bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
+            <h2 className="text-3xl font-bold text-[#1a1a1a] mb-6">
+              Conclusão: A parafusadeira WAP vale a pena?
+            </h2>
+            <div className="space-y-4 prose prose-lg text-gray-700 max-w-none">
+              <p>
+                Sim, para a grande maioria dos usos domésticos a WAP vale a pena.
+              </p>
+              <p>
+                A BPF-12K3 elimina a frustração das ferramentas descartáveis sem exigir o preço de modelos industriais.
+              </p>
+              <p>
+                Ela entrega controle de torque que protege seus materiais, ergonomia confortável e suporte pós-venda acessível no Brasil.
+              </p>
+              <p>
+                O importante é ter expectativas realistas: ela é feita para uso ocasional a moderado, não para trabalho pesado diário.
+              </p>
+              <p>
+                Com bits de qualidade e respeito aos limites de carga, você terá uma aliada fiel por anos.
+              </p>
+              <p>
+                Se você precisa de impacto ou mais força, a BFI 12K4, a WF 700K13 e a EFPI 1000 completam a linha.
+              </p>
+              <p>
+                Agora é só escolher o modelo que melhor se adapta à escala dos seus projetos.
+              </p>
+            </div>
+          </section>
         </div>
       </div>
     </div>

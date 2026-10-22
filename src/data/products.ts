@@ -107,11 +107,18 @@ export const products: Record<string, Product> = {
   },
   "parafusadeira-wap-bpfi-12k4": {
     name: "Parafusadeira e Furadeira WAP BPFI 12K4",
-    link: "https://meli.la/1EhouoE"
+    link: "https://meli.la/1EhouoE",
+    image: "/images/blog/melhor-furadeira/Parafusadeira e Furadeira WAP BPFI 12K4.webp"
   },
   "furadeira-wap-efpi-1000": {
     name: "Furadeira de Impacto e Parafusadeira WAP EFPI 1000",
-    link: "https://meli.la/2ec7BXw"
+    link: "https://meli.la/1kf5BnU",
+    image: "/images/blog/melhor-furadeira/Furadeira de Impacto e Parafusadeira WAP EFPI 1000.webp"
+  },
+  "furadeira-wap-wf-700k13": {
+    name: "Parafusadeira e Furadeira de Impacto WAP WF 700K13",
+    link: "https://meli.la/1UXZ6w2",
+    image: "/images/blog/melhores-marcas-de-furadeira/Parafusadeira E Furadeira De Impacto Wap Wf 700k13 Kit Maleta 220V.webp"
   },
   "furadeira-wap-efi600k": {
     name: "Furadeira de Impacto WAP EFI600K",
