@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Clock, MessageSquare, AlertCircle, FileText, Handshake } from 'lucide-react';
+import { Mail, MapPin, MessageSquare, AlertCircle, FileText, Handshake } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   return (
@@ -94,18 +94,6 @@ export const Contact: React.FC = () => {
                     <div>
                       <h4 className="font-bold text-gray-900">Endereço</h4>
                       <p className="text-gray-600">Sitio Pedrinhas, 50 – Zona Rural – Venturosa, PE – CEP 55270-000</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="text-[#FFD700] mt-1"><Phone size={20} /></div>
-                    <div>
-                      <h4 className="font-bold text-gray-900">Telefone</h4>
-                      <p className="text-gray-600">(87) 98140-0403</p>
-                      <div className="flex items-center gap-2 mt-1 text-sm text-gray-500 bg-white px-2 py-1 rounded inline-flex border border-gray-100">
-                        <Clock size={14} />
-                        <span>Segunda a sexta, das 9h às 18h</span>
-                      </div>
                     </div>
                   </div>
 

@@ -2,8 +2,6 @@
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { CookieConsent } from '../components/CookieConsent';
-import { ExitIntentPopup } from '../components/ExitIntentPopup';
-import { ExitIntentPopupcentral } from '../components/ExitIntentPopupcentral';
 import '../styles/global.css';
 
 interface Props {
@@ -12,7 +10,7 @@ interface Props {
 	popupType?: 'central' | 'default' | 'none';
 }
 
-const { title, description, popupType = 'default' } = Astro.props;
+const { title, description, popupType: _popupType = 'default' } = Astro.props;
 
 let canonicalPath = Astro.url.pathname;
 if (!canonicalPath.endsWith('/')) {
@@ -46,8 +44,6 @@ const canonicalURL = new URL(canonicalPath, Astro.site);
 		<Footer client:idle />
 
 		<CookieConsent client:idle />
-		{popupType === 'central' && <ExitIntentPopupcentral client:idle />}
-		{popupType === 'default' && <ExitIntentPopup client:idle />}
 	</body>
 </html>
 

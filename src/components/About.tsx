@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, Clock, Smartphone, Mail, MapPin, Wrench, ShieldCheck, Zap } from 'lucide-react';
+import { CheckCircle2, Mail, MapPin, Wrench, ShieldCheck, Zap } from 'lucide-react';
 
 export const About: React.FC = () => {
   const team = [
@@ -233,6 +233,8 @@ export const About: React.FC = () => {
                     <p className="text-gray-600 text-sm">Sitio Pedrinhas, 50 – Zona Rural – Venturosa, PE</p>
                   </div>
                 </div>
+              </div>
+              <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <Mail className="text-[#FFD700] mt-1 shrink-0" />
                   <div>
@@ -240,22 +242,6 @@ export const About: React.FC = () => {
                     <a href="mailto:contato@mestredasferramentas.com.br" className="text-gray-600 text-sm hover:underline block break-all">
                       contato@mestredasferramentas.com.br
                     </a>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <Smartphone className="text-[#FFD700] mt-1 shrink-0" />
-                  <div>
-                    <h4 className="font-bold text-gray-900">Telefone</h4>
-                    <p className="text-gray-600 text-sm">(87) 98140-0403</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <Clock className="text-[#FFD700] mt-1 shrink-0" />
-                  <div>
-                    <h4 className="font-bold text-gray-900">Horário</h4>
-                    <p className="text-gray-600 text-sm">Seg a Sex, 9h às 18h</p>
                   </div>
                 </div>
               </div>
